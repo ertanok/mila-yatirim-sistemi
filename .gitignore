@@ -1,0 +1,9 @@
+# Hassas bilgiler - asla git'e gonderilmez
+config.py
+
+# Python
+__pycache__/
+*.pyc
+
+# Debug ciktilari (gerekirse buraya eklenebilir)
+# *_debug.png
