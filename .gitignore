@@ -5,5 +5,11 @@ config.py
 __pycache__/
 *.pyc
 
-# Debug ciktilari (gerekirse buraya eklenebilir)
-# *_debug.png
+# Debug gorselleri
+*.png
+
+# Log dosyalari
+*.txt
+
+# Veri dosyalari (sinyal, performans)
+*.json
