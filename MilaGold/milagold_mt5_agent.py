@@ -4,7 +4,7 @@ import json
 import os
 import requests
 from datetime import datetime
-from config import LOGIN, SERVER, PASSWORD, TELEGRAM_TOKEN, TELEGRAM_CHAT_ID
+from config import LOGIN, SERVER, PASSWORD, MT5_PATH, TELEGRAM_TOKEN, TELEGRAM_CHAT_ID
 
 # --- AYARLAR ---
 SYMBOL    = "GOLD"
@@ -51,7 +51,9 @@ def log(msg):
 
 
 def connect_mt5():
-    if not mt5.initialize(login=LOGIN, server=SERVER, password=PASSWORD):
+    # MT5 zaten acik ve giris yapilmis olmali (Windows baslangicindan otomatik baslayacak sekilde ayarli).
+    # Parametre vermeden initialize() cagrilarak calisan terminal ornegine baglanilir.
+    if not mt5.initialize():
         log(f"MT5 baglanma hatasi: {mt5.last_error()}")
         return False
     log(f"MT5 baglandi. Bakiye: {mt5.account_info().balance} USD")

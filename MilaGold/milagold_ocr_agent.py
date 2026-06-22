@@ -29,11 +29,11 @@ TP3_DISTANCE = 8.0
 ENTRY_CHANGE_THRESHOLD  = 0.5  # bu kadar fark = "farkli sinyal olabilir"
 ENTRY_CONFIRM_TOLERANCE = 0.5  # 2. okuma bu toleransta ise "dogrulandi" say
 
-# Liste karti koordinatlari
-LIST_LEFT   = 218
-LIST_TOP    = 510
-LIST_RIGHT  = 700
-LIST_BOTTOM = 700
+# Liste karti koordinatlari (1366x768 cozunurluk)
+LIST_LEFT   = 50
+LIST_TOP    = 355
+LIST_RIGHT  = 445
+LIST_BOTTOM = 520
 
 # --- LOGGING ---
 logging.basicConfig(
@@ -173,11 +173,13 @@ def main():
 
     driver.get(SIGNAL_URL)
     log.info("Signal GPT sayfasina gidildi.")
-    log.info("Sayfa yukleniyor, 8 saniye bekleniyor...")
-    time.sleep(8)
+    log.info("Sayfa yukleniyor, 15 saniye bekleniyor...")
+    time.sleep(15)
 
-    screenshot_region(driver, 0, 0, 1456, 816, "fullscreen_debug.png")
+    screenshot_region(driver, 0, 0, 1366, 768, "fullscreen_debug.png")
     log.info("Baslangic screenshot alindi.")
+    log.info("Ilk okuma oncesi 5 saniye bekleniyor...")
+    time.sleep(5)
 
     active_signal = None
     fail_count = 0

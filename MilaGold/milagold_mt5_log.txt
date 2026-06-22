@@ -1,0 +1,178 @@
+[2026-06-22 03:41:44] MilaGold MT5 Agent basliyor...
+[2026-06-22 03:41:48] MT5 baglanma hatasi: (-6, 'Terminal: Authorization failed')
+[2026-06-22 04:11:45] MilaGold MT5 Agent basliyor...
+[2026-06-22 04:11:50] MT5 baglanma hatasi: (-6, 'Terminal: Authorization failed')
+[2026-06-22 04:13:47] MilaGold MT5 Agent basliyor...
+[2026-06-22 04:13:47] MT5 baglanma hatasi: (-6, 'Terminal: Authorization failed')
+[2026-06-22 04:15:54] MilaGold MT5 Agent basliyor...
+[2026-06-22 04:15:57] MT5 baglanma hatasi: (-6, 'Terminal: Authorization failed')
+[2026-06-22 04:19:15] MilaGold MT5 Agent basliyor...
+[2026-06-22 04:19:20] MT5 baglanma hatasi: (-6, 'Terminal: Authorization failed')
+[2026-06-22 04:22:07] MilaGold MT5 Agent basliyor...
+[2026-06-22 04:22:11] MT5 baglanma hatasi: (-6, 'Terminal: Authorization failed')
+[2026-06-22 04:24:17] MilaGold MT5 Agent basliyor...
+[2026-06-22 04:24:22] MT5 baglanma hatasi: (-6, 'Terminal: Authorization failed')
+[2026-06-22 04:26:47] MilaGold MT5 Agent basliyor...
+[2026-06-22 04:26:49] MT5 baglanma hatasi: (-6, 'Terminal: Authorization failed')
+[2026-06-22 04:56:26] MilaGold MT5 Agent basliyor...
+[2026-06-22 04:56:26] MT5 baglanma hatasi: (-6, 'Terminal: Authorization failed')
+[2026-06-22 04:58:42] MilaGold MT5 Agent basliyor...
+[2026-06-22 04:58:44] MT5 baglanma hatasi: (-6, 'Terminal: Authorization failed')
+[2026-06-22 05:22:21] MilaGold MT5 Agent basliyor...
+[2026-06-22 05:22:27] MT5 baglanma hatasi: (-6, 'Terminal: Authorization failed')
+[2026-06-22 11:44:31] MilaGold MT5 Agent basliyor...
+[2026-06-22 11:44:31] MT5 baglandi. Bakiye: 985.34 USD
+[2026-06-22 11:44:31] Baslangic bakiyesi: 985.34 USD
+[2026-06-22 11:44:31] Hazir. 0 aktif islem devralindi. signal.json bekleniyor...
+[2026-06-22 11:44:32] Yeni sinyal alindi: #None SELL @ 4206.0
+[2026-06-22 11:44:32] Islem acildi: 913020463 | SELL @ 4206.0 | SL:4211.0 | TP1:4203.0 TP2:4201.0 TP3:4198.0
+[2026-06-22 11:58:21] Yeni sinyal (yeni entry daha iyi): SELL@4206.0 -> SELL@4209.0. Kapatiliyor: ticket=913020463
+[2026-06-22 11:58:21] Pozisyon piyasadan kapatildi: ticket=913020463 @ 4209.01 (filling=1)
+[2026-06-22 11:58:21] Performans kaydedildi: Exit | -3.01 pip
+[2026-06-22 11:58:21] Islem acildi: 913034297 | SELL @ 4209.0 | SL:4214.0 | TP1:4206.0 TP2:4204.0 TP3:4201.0
+[2026-06-22 12:11:51] Islem kapandi: ticket=913034297
+[2026-06-22 12:11:51] Performans kaydedildi: SL | -4.97 pip
+[2026-06-22 12:19:08] Yeni sinyal alindi: #None SELL @ 4206.0
+[2026-06-22 12:19:08] Islem acildi: 913062442 | SELL @ 4206.0 | SL:4211.0 | TP1:4203.0 TP2:4201.0 TP3:4198.0
+[2026-06-22 12:19:27] Yeni sinyal geldi, bekleyen emir iptal ediliyor: ticket=913062442 (SELL @ 4206.0)
+[2026-06-22 12:19:27] Bekleyen emir iptal edildi: ticket=913062442
+[2026-06-22 12:19:27] Yeni sinyal alindi: #None SELL @ 4211.0
+[2026-06-22 12:19:27] Islem acildi: 913062648 | SELL @ 4211.0 | SL:4216.0 | TP1:4208.0 TP2:4206.0 TP3:4203.0
+[2026-06-22 12:39:46] Yeni sinyal daha kotu entry, sl_level=0. Eski pozisyon tutuldu, sinyal atildi: #None
+[2026-06-22 12:40:52] Yeni sinyal daha kotu entry, sl_level=0. Eski pozisyon tutuldu, sinyal atildi: #None
+[2026-06-22 12:46:48] TP1 gecildi: ticket=913062648 fiyat=4206.45 TP1=4208.0 (SL tasinmiyor)
+[2026-06-22 12:47:28] TP2 gecildi: ticket=913062648 fiyat=4205.98 TP2=4206.0 -> SL girise tasiniyor
+[2026-06-22 12:47:28] SL guncellendi: ticket=913062648 yeni SL=4211.0
+[2026-06-22 12:51:14] Yeni sinyal daha kotu entry, sl_level=1. 2. pozisyon aciliyor: #None @ 4207.5
+[2026-06-22 12:51:14] Islem acildi: 913098325 | SELL @ 4207.5 | SL:4212.5 | TP1:4204.5 TP2:4202.5 TP3:4199.5
+[2026-06-22 12:57:36] TP1 gecildi: ticket=913098325 fiyat=4204.46 TP1=4204.5 (SL tasinmiyor)
+[2026-06-22 13:01:43] Yeni sinyal daha kotu entry, sl_level=1. Ama zaten 2 pozisyon var, sinyal atildi: #None
+[2026-06-22 13:05:11] Islem kapandi: ticket=913062648
+[2026-06-22 13:05:11] Performans kaydedildi: Entry | -0.04 pip
+[2026-06-22 13:05:16] Islem kapandi: ticket=913098325
+[2026-06-22 13:05:16] Performans kaydedildi: SL | -5.29 pip
+[2026-06-22 13:06:04] Yeni sinyal alindi: #None SELL @ 4207.5
+[2026-06-22 13:06:04] Islem acildi: 913121590 | SELL @ 4207.5 | SL:4212.5 | TP1:4204.5 TP2:4202.5 TP3:4199.5
+[2026-06-22 13:29:06] TP1 gecildi: ticket=913121590 fiyat=4204.46 TP1=4204.5 (SL tasinmiyor)
+[2026-06-22 13:33:49] Yeni sinyal daha kotu entry, sl_level=0. Eski pozisyon tutuldu, sinyal atildi: #None
+[2026-06-22 13:37:57] TP2 gecildi: ticket=913121590 fiyat=4202.43 TP2=4202.5 -> SL girise tasiniyor
+[2026-06-22 13:37:57] SL guncellendi: ticket=913121590 yeni SL=4207.5
+[2026-06-22 13:40:18] Islem kapandi: ticket=913121590
+[2026-06-22 13:40:19] Performans kaydedildi: Entry | -0.1 pip
+[2026-06-22 13:55:01] Yeni sinyal alindi: #None SELL @ 4203.5
+[2026-06-22 13:55:01] Islem acildi: 913195385 | SELL @ 4203.5 | SL:4208.5 | TP1:4200.5 TP2:4198.5 TP3:4195.5
+[2026-06-22 14:05:28] Yeni sinyal geldi, bekleyen emir iptal ediliyor: ticket=913195385 (SELL @ 4203.5)
+[2026-06-22 14:05:28] Bekleyen emir iptal edildi: ticket=913195385
+[2026-06-22 14:05:28] Yeni sinyal alindi: #None SELL @ 4206.0
+[2026-06-22 14:05:28] Islem acildi: 913216777 | SELL @ 4206.0 | SL:4211.0 | TP1:4203.0 TP2:4201.0 TP3:4198.0
+[2026-06-22 14:05:48] Yeni sinyal geldi, bekleyen emir iptal ediliyor: ticket=913216777 (SELL @ 4206.0)
+[2026-06-22 14:05:48] Bekleyen emir iptal edildi: ticket=913216777
+[2026-06-22 14:05:48] Yeni sinyal alindi: #None SELL @ 4208.5
+[2026-06-22 14:05:48] Islem acildi: 913217302 | SELL @ 4208.5 | SL:4213.5 | TP1:4205.5 TP2:4203.5 TP3:4200.5
+[2026-06-22 14:10:51] TP1 gecildi: ticket=913217302 fiyat=4205.18 TP1=4205.5 (SL tasinmiyor)
+[2026-06-22 14:16:13] Yeni sinyal daha kotu entry, sl_level=0. Eski pozisyon tutuldu, sinyal atildi: #None
+[2026-06-22 14:31:30] TP2 gecildi: ticket=913217302 fiyat=4203.17 TP2=4203.5 -> SL girise tasiniyor
+[2026-06-22 14:31:30] SL guncellendi: ticket=913217302 yeni SL=4208.5
+[2026-06-22 14:37:13] Yeni sinyal daha kotu entry, sl_level=1. 2. pozisyon aciliyor: #None @ 4205.0
+[2026-06-22 14:37:13] Islem acildi: 913269982 | SELL @ 4205.0 | SL:4210.0 | TP1:4202.0 TP2:4200.0 TP3:4197.0
+[2026-06-22 14:42:52] TP1 gecildi: ticket=913269982 fiyat=4201.88 TP1=4202.0 (SL tasinmiyor)
+[2026-06-22 14:47:37] Islem kapandi: ticket=913217302
+[2026-06-22 14:47:37] Performans kaydedildi: TP3 | 8.2 pip
+[2026-06-22 14:47:37] TP2 gecildi: ticket=913269982 fiyat=4199.62 TP2=4200.0 -> SL girise tasiniyor
+[2026-06-22 14:47:37] SL guncellendi: ticket=913269982 yeni SL=4205.0
+[2026-06-22 14:48:46] Yeni sinyal daha kotu entry, sl_level=1. 2. pozisyon aciliyor: #None @ 4202.5
+[2026-06-22 14:48:46] Islem acildi: 913290353 | SELL @ 4202.5 | SL:4207.5 | TP1:4199.5 TP2:4197.5 TP3:4194.5
+[2026-06-22 14:55:35] Islem kapandi: ticket=913269982
+[2026-06-22 14:55:35] Performans kaydedildi: TP3 | 8.01 pip
+[2026-06-22 14:57:57] Yeni sinyal geldi, bekleyen emir iptal ediliyor: ticket=913290353 (SELL @ 4202.5)
+[2026-06-22 14:57:57] Bekleyen emir iptal edildi: ticket=913290353
+[2026-06-22 14:57:57] Yeni sinyal alindi: #None SELL @ 4206.0
+[2026-06-22 14:57:57] Islem acildi: 913314835 | SELL @ 4206.0 | SL:4211.0 | TP1:4203.0 TP2:4201.0 TP3:4198.0
+[2026-06-22 14:58:31] Yeni sinyal geldi, bekleyen emir iptal ediliyor: ticket=913314835 (SELL @ 4206.0)
+[2026-06-22 14:58:31] Bekleyen emir iptal edildi: ticket=913314835
+[2026-06-22 14:58:31] Yeni sinyal alindi: #None SELL @ 4196.0
+[2026-06-22 14:58:31] Islem acildi: 913315833 | SELL @ 4196.0 | SL:4201.0 | TP1:4193.0 TP2:4191.0 TP3:4188.0
+[2026-06-22 15:00:28] TP1 gecildi: ticket=913315833 fiyat=4192.62 TP1=4193.0 (SL tasinmiyor)
+[2026-06-22 15:01:45] TP2 gecildi: ticket=913315833 fiyat=4190.95 TP2=4191.0 -> SL girise tasiniyor
+[2026-06-22 15:01:45] SL guncellendi: ticket=913315833 yeni SL=4196.0
+[2026-06-22 15:04:15] Islem kapandi: ticket=913315833
+[2026-06-22 15:04:15] Performans kaydedildi: Entry | -0.06 pip
+[2026-06-22 15:09:26] Yeni sinyal alindi: #None SELL @ 4191.5
+[2026-06-22 15:09:26] Islem acildi: 913347400 | SELL @ 4191.5 | SL:4196.5 | TP1:4188.5 TP2:4186.5 TP3:4183.5
+[2026-06-22 15:15:44] Islem kapandi: ticket=913347400
+[2026-06-22 15:15:44] Performans kaydedildi: SL | -5.24 pip
+[2026-06-22 15:18:53] Yeni sinyal alindi: #None SELL @ 4196.0
+[2026-06-22 15:18:54] Islem acildi: 913367150 | SELL @ 4196.0 | SL:4201.0 | TP1:4193.0 TP2:4191.0 TP3:4188.0
+[2026-06-22 15:19:43] Yeni sinyal geldi, bekleyen emir iptal ediliyor: ticket=913367150 (SELL @ 4196.0)
+[2026-06-22 15:19:44] Bekleyen emir iptal edildi: ticket=913367150
+[2026-06-22 15:19:44] Yeni sinyal alindi: #None SELL @ 4194.5
+[2026-06-22 15:19:44] Islem acildi: 913368653 | SELL @ 4194.5 | SL:4199.5 | TP1:4191.5 TP2:4189.5 TP3:4186.5
+[2026-06-22 15:20:46] TP1 gecildi: ticket=913368653 fiyat=4191.48 TP1=4191.5 (SL tasinmiyor)
+[2026-06-22 15:21:12] TP2 gecildi: ticket=913368653 fiyat=4189.31 TP2=4189.5 -> SL girise tasiniyor
+[2026-06-22 15:21:12] SL guncellendi: ticket=913368653 yeni SL=4194.5
+[2026-06-22 15:28:53] Islem kapandi: ticket=913368653
+[2026-06-22 15:28:53] Performans kaydedildi: TP3 | 8.17 pip
+[2026-06-22 15:30:25] Yeni sinyal alindi: #None SELL @ 4206.0
+[2026-06-22 15:30:25] Islem acildi: 913396763 | SELL @ 4206.0 | SL:4211.0 | TP1:4203.0 TP2:4201.0 TP3:4198.0
+[2026-06-22 15:30:45] Yeni sinyal geldi, bekleyen emir iptal ediliyor: ticket=913396763 (SELL @ 4206.0)
+[2026-06-22 15:30:45] Bekleyen emir iptal edildi: ticket=913396763
+[2026-06-22 15:30:45] Yeni sinyal alindi: #None SELL @ 4186.5
+[2026-06-22 15:30:45] Islem acildi: 913397740 | SELL @ 4186.5 | SL:4191.5 | TP1:4183.5 TP2:4181.5 TP3:4178.5
+[2026-06-22 15:33:07] TP1 gecildi: ticket=913397740 fiyat=4183.29 TP1=4183.5 (SL tasinmiyor)
+[2026-06-22 15:36:22] Islem kapandi: ticket=913397740
+[2026-06-22 15:36:22] Performans kaydedildi: SL | -5.06 pip
+[2026-06-22 15:41:26] Yeni sinyal alindi: #None SELL @ 4192.0
+[2026-06-22 15:41:26] Islem acildi: 913427842 | SELL @ 4192.0 | SL:4197.0 | TP1:4189.0 TP2:4187.0 TP3:4184.0
+[2026-06-22 15:45:15] TP1 gecildi: ticket=913427842 fiyat=4188.66 TP1=4189.0 (SL tasinmiyor)
+[2026-06-22 15:46:46] Islem kapandi: ticket=913427842
+[2026-06-22 15:46:46] Performans kaydedildi: SL | -5.0 pip
+[2026-06-22 15:51:43] Yeni sinyal alindi: #None SELL @ 4200.0
+[2026-06-22 15:51:43] Islem acildi: 913456855 | SELL @ 4200.0 | SL:4205.0 | TP1:4197.0 TP2:4195.0 TP3:4192.0
+[2026-06-22 15:54:46] Islem kapandi: ticket=913456855
+[2026-06-22 15:54:46] Performans kaydedildi: SL | -5.19 pip
+[2026-06-22 15:55:41] Yeni sinyal alindi: #None SELL @ 4192.0
+[2026-06-22 15:55:41] Islem acildi: 913467359 | SELL @ 4192.0 | SL:4197.0 | TP1:4189.0 TP2:4187.0 TP3:4184.0
+[2026-06-22 16:03:10] Yeni sinyal geldi, bekleyen emir iptal ediliyor: ticket=913467359 (SELL @ 4192.0)
+[2026-06-22 16:03:10] Bekleyen emir iptal edildi: ticket=913467359
+[2026-06-22 16:03:10] Yeni sinyal alindi: #None SELL @ 4197.5
+[2026-06-22 16:03:11] Islem acildi: 913488554 | SELL @ 4197.5 | SL:4202.5 | TP1:4194.5 TP2:4192.5 TP3:4189.5
+[2026-06-22 16:07:35] Islem kapandi: ticket=913488554
+[2026-06-22 16:07:37] Performans kaydedildi: SL | -5.12 pip
+[2026-06-22 16:12:43] Yeni sinyal alindi: #None SELL @ 4203.0
+[2026-06-22 16:12:43] Islem acildi: 913519640 | SELL @ 4203.0 | SL:4208.0 | TP1:4200.0 TP2:4198.0 TP3:4195.0
+[2026-06-22 16:17:43] TP1 gecildi: ticket=913519640 fiyat=4199.8 TP1=4200.0 (SL tasinmiyor)
+[2026-06-22 16:18:58] TP2 gecildi: ticket=913519640 fiyat=4197.97 TP2=4198.0 -> SL girise tasiniyor
+[2026-06-22 16:18:58] SL guncellendi: ticket=913519640 yeni SL=4203.0
+[2026-06-22 16:20:13] Islem kapandi: ticket=913519640
+[2026-06-22 16:20:13] Performans kaydedildi: TP3 | 8.08 pip
+[2026-06-22 16:21:07] Yeni sinyal alindi: #None SELL @ 4192.0
+[2026-06-22 16:21:07] Islem acildi: 913541159 | SELL @ 4192.0 | SL:4197.0 | TP1:4189.0 TP2:4187.0 TP3:4184.0
+[2026-06-22 16:27:53] Islem kapandi: ticket=913541159
+[2026-06-22 16:27:56] Performans kaydedildi: SL | -5.0 pip
+[2026-06-22 17:11:59] Yeni sinyal alindi: #None SELL @ 4197.5
+[2026-06-22 17:11:59] Islem acildi: 913642167 | SELL @ 4197.5 | SL:4202.5 | TP1:4194.5 TP2:4192.5 TP3:4189.5
+[2026-06-22 17:16:30] TP1 gecildi: ticket=913642167 fiyat=4193.98 TP1=4194.5 (SL tasinmiyor)
+[2026-06-22 17:19:39] TP2 gecildi: ticket=913642167 fiyat=4190.72 TP2=4192.5 -> SL girise tasiniyor
+[2026-06-22 17:19:43] SL guncellendi: ticket=913642167 yeni SL=4197.5
+[2026-06-22 17:22:58] Islem kapandi: ticket=913642167
+[2026-06-22 17:22:59] Performans kaydedildi: TP3 | 8.01 pip
+[2026-06-22 20:47:41] MilaGold MT5 Agent basliyor...
+[2026-06-22 20:47:44] MT5 baglandi. Bakiye: 982.04 USD
+[2026-06-22 20:47:44] Baslangic bakiyesi: 982.04 USD
+[2026-06-22 20:47:44] Hazir. 0 aktif islem devralindi. signal.json bekleniyor...
+[2026-06-22 21:07:03] MilaGold MT5 Agent basliyor...
+[2026-06-22 21:07:05] MT5 baglandi. Bakiye: 982.04 USD
+[2026-06-22 21:07:05] Baslangic bakiyesi: 982.04 USD
+[2026-06-22 21:07:05] Hazir. 0 aktif islem devralindi. signal.json bekleniyor...
+[2026-06-22 21:26:36] Yeni sinyal alindi: #None SELL @ 4189.5
+[2026-06-22 21:26:36] Islem acildi: 914009616 | SELL @ 4189.5 | SL:4194.5 | TP1:4186.5 TP2:4184.5 TP3:4181.5
+[2026-06-22 21:39:53] MilaGold MT5 Agent basliyor...
+[2026-06-22 21:39:56] MT5 baglandi. Bakiye: 982.04 USD
+[2026-06-22 21:39:56] Orphan pozisyon alindi: ticket=914009616 SELL @ 4189.51 sl_level=0
+[2026-06-22 21:39:56] Baslangic bakiyesi: 982.04 USD
+[2026-06-22 21:39:56] Hazir. 1 aktif islem devralindi. signal.json bekleniyor...
+[2026-06-22 21:41:30] TP1 gecildi: ticket=914009616 fiyat=4186.41 TP1=4186.51 (SL tasinmiyor)
+[2026-06-22 21:43:32] TP2 gecildi: ticket=914009616 fiyat=4184.51 TP2=4184.51 -> SL girise tasiniyor
+[2026-06-22 21:43:32] SL guncellendi: ticket=914009616 yeni SL=4189.51
+[2026-06-22 21:55:18] Islem kapandi: ticket=914009616
+[2026-06-22 21:55:18] Performans kaydedildi: Entry | -0.1 pip
