@@ -459,6 +459,7 @@ def main():
 
     last_heartbeat = time.time()
     HEARTBEAT_INTERVAL = 30  # saniye
+    last_skipped_signal = None  # SL/Entry kapanisinda yeniden denenecek sinyal
 
     while True:
         try:
@@ -625,9 +626,18 @@ def main():
                     else:
                         if ana["sl_level"] == 0:
                             log(f"Yeni sinyal daha kotu entry, sl_level=0. "
-                                f"Eski pozisyon tutuldu, sinyal atildi: #{signal_no}")
-                            telegram(f"[MilaGold] ℹ️ Sinyal atildi (kotu entry, sl_level=0): "
+                                f"Eski pozisyon tutuldu, sinyal hafizaya alindi: #{signal_no}@{entry}")
+                            telegram(f"[MilaGold] ℹ️ Sinyal hafizaya alindi (kotu entry, sl_level=0): "
                                      f"{ana['direction']}@{ana['entry']} devam | Atlanan: #{signal_no}@{entry}")
+                            last_skipped_signal = {
+                                "direction": direction,
+                                "entry":     entry,
+                                "sl":        sl,
+                                "tp1":       tp1,
+                                "tp2":       tp2,
+                                "tp3":       tp3,
+                                "signal_no": signal_no,
+                            }
                             clear_signal()
                         else:
                             if len(active_trades) >= 2:
@@ -669,9 +679,44 @@ def main():
                 if not positions and not orders:
                     log(f"Islem kapandi: ticket={ticket}")
                     deal = get_deal_info(ticket)
+                    sonuc = None
                     if deal:
-                        record_close(trade, deal["close_price"], deal, forced_close=False)
+                        sonuc, pip, profit = record_close(trade, deal["close_price"], deal, forced_close=False)
                     kapanan_tickets.append(ticket)
+
+                    # SL veya Entry kapanisinda last_skipped_signal varsa yeniden dene
+                    if sonuc in ("SL", "Entry") and last_skipped_signal:
+                        sk = last_skipped_signal
+                        current_price = get_current_price(sk["direction"])
+                        # Fiyat hala uygun mu kontrol et
+                        price_ok = (sk["direction"] == "SELL" and current_price > sk["entry"]) or \
+                                   (sk["direction"] == "BUY"  and current_price < sk["entry"])
+                        if price_ok:
+                            log(f"Kapanis sonrasi hafizadaki sinyal deneniyor: "
+                                f"#{sk['signal_no']} {sk['direction']} @ {sk['entry']}")
+                            ticket2 = open_trade(sk["direction"], sk["entry"],
+                                                 sk["sl"], sk["tp1"], sk["tp2"], sk["tp3"])
+                            if isinstance(ticket2, int):
+                                active_trades.append(
+                                    build_active(ticket2, sk["signal_no"], sk["direction"],
+                                                 sk["entry"], sk["sl"], sk["tp1"], sk["tp2"], sk["tp3"]))
+                                telegram(f"[MilaGold] ♻️ Hafizadaki sinyal girildi: "
+                                         f"#{sk['signal_no']} {sk['direction']} @ {sk['entry']} | ticket={ticket2}")
+                                log(f"Hafizadaki sinyal girildi: ticket={ticket2}")
+                            elif ticket2 == "SKIP":
+                                log("Hafizadaki sinyal: fiyat artik uygun degil (SKIP).")
+                            else:
+                                log("Hafizadaki sinyal: order_send basarisiz.")
+                        else:
+                            log(f"Hafizadaki sinyal artik gecersiz (fiyat uzaklasti): "
+                                f"{sk['direction']}@{sk['entry']} | guncel={current_price:.2f}")
+                        last_skipped_signal = None
+
+                    elif sonuc == "TP3" and last_skipped_signal:
+                        log(f"TP3 kapanisi, hafizadaki sinyal temizlendi: "
+                            f"#{last_skipped_signal['signal_no']}")
+                        last_skipped_signal = None
+
                     continue
 
                 if not positions:
