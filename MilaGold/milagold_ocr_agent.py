@@ -25,14 +25,14 @@ TP1_DISTANCE = 3.0
 TP2_DISTANCE = 5.0
 TP3_DISTANCE = 8.0
 
-# Entry degisikligi tespiti (Oncelik 1)
-ENTRY_CHANGE_THRESHOLD  = 0.5  # bu kadar fark = "farkli sinyal olabilir"
-ENTRY_CONFIRM_TOLERANCE = 0.5  # 2. okuma bu toleransta ise "dogrulandi" say
+# Entry degisikligi tespiti
+ENTRY_CHANGE_THRESHOLD  = 0.5
+ENTRY_CONFIRM_TOLERANCE = 0.5
 
 # Liste karti koordinatlari (1366x768 cozunurluk)
 LIST_LEFT   = 50
 LIST_TOP    = 355
-LIST_RIGHT  = 445
+LIST_RIGHT  = 490
 LIST_BOTTOM = 520
 
 # --- LOGGING ---
@@ -88,9 +88,9 @@ def parse_list_card(texts):
 
     card["has_signal"] = True
 
-    if "RUNNING" in full:
+    if "RUNN" in full:
         card["status"] = "RUNNING"
-    elif "WAITING" in full or "NOT MATCHED" in full:
+    elif "WAITING" in full or "WAITIN" in full or "NOT MATCHED" in full:
         card["status"] = "WAITING"
     elif "COMPLETED" in full or "CLOSED" in full:
         card["status"] = "CLOSED"
@@ -135,9 +135,8 @@ def calculate_levels(direction, entry):
         }
 
 
-def signal_from_card(card):
-    """Karttan yeni sinyal sozlugu olustur.
-    Status RUNNING/WAITING degilse veya entry/direction yoksa None doner."""
+def signal_from_card(card, confirmed=False):
+    """Karttan yeni sinyal sozlugu olustur."""
     if card["status"] in ("RUNNING", "WAITING") and card["entry"] and card["direction"]:
         levels = calculate_levels(card["direction"], card["entry"])
         return {
@@ -151,6 +150,8 @@ def signal_from_card(card):
             "status":    card["status"],
             "time":      datetime.now().strftime("%H:%M:%S"),
             "processed": False,
+            "confirmed": confirmed,
+            "cancel":    False,
         }
     return None
 
@@ -162,6 +163,18 @@ def write_signal(signal):
         log.info("signal.json yazildi.")
     except Exception as e:
         log.warning(f"signal.json yazma hatasi: {e}")
+
+
+def update_signal_field(field, value):
+    """signal.json'daki tek bir alani guncelle."""
+    try:
+        with open(SIGNAL_FILE, "r") as f:
+            data = json.load(f)
+        data[field] = value
+        with open(SIGNAL_FILE, "w") as f:
+            json.dump(data, f, indent=2)
+    except Exception as e:
+        log.warning(f"signal.json guncelleme hatasi ({field}={value}): {e}")
 
 
 def main():
@@ -184,9 +197,11 @@ def main():
     active_signal = None
     fail_count = 0
 
-    # Entry-degisikligi debounce takibi (Oncelik 1):
-    # yeni deger 2 ardisik okumada gorulmeden "yeni sinyal" kabul edilmez.
-    # OCR'in tek seferlik yanlis okumasina (orn. 4203.0 misread) karsi guvenlik.
+    # Erken emir + arka plan dogrulama:
+    # pending_entry: ilk okumada gorduğumuz yeni entry (henuz dogrulanmadi)
+    # confirmed: False → MT5 emri acti ama dogrulama bekleniyor
+    # confirmed: True  → dogrulandi, devam
+    # cancel: True     → dogrulanamadi, MT5 iptal etmeli
     pending_entry     = None
     pending_direction = None
 
@@ -225,18 +240,19 @@ def main():
 
             if active_signal is None:
                 # Yeni sinyal bekle
-                new_sig = signal_from_card(card)
+                new_sig = signal_from_card(card, confirmed=False)
                 if new_sig:
                     active_signal = new_sig
-                    log.info(f"YENi SiNYAL: #{active_signal['signal_no']} | "
-                             f"{active_signal['direction']} @ {active_signal['entry']} | "
-                             f"SL:{active_signal['sl']} | "
-                             f"TP1:{active_signal['tp1']} TP2:{active_signal['tp2']} TP3:{active_signal['tp3']}")
+                    log.info(f"Olasi yeni sinyal, HEMEN yazildi (dogrulama bekleniyor 1/2): "
+                             f"#{active_signal['signal_no']} | "
+                             f"{active_signal['direction']} @ {active_signal['entry']}")
                     write_signal(active_signal)
+                    pending_entry     = card["entry"]
+                    pending_direction = card["direction"]
                 else:
                     log.info(f"Sinyal bekleniyor... Status:{card['status']} Entry:{card['entry']}")
-                pending_entry     = None
-                pending_direction = None
+                    pending_entry     = None
+                    pending_direction = None
 
             else:
                 # Aktif sinyal var - entry degisti mi?
@@ -247,32 +263,48 @@ def main():
                     if (pending_entry is not None
                             and abs(card["entry"] - pending_entry) <= ENTRY_CONFIRM_TOLERANCE
                             and card["direction"] == pending_direction):
-                        # 2. ardisik okuma da ayni yeni degeri gosterdi -> dogrulandi
+                        # 2. ardisik okuma da ayni yeni degeri gosterdi -> DOGRULANDI
                         log.info(f"Yeni sinyal DOGRULANDI (2 okuma): "
                                  f"{active_signal['entry']} -> {card['entry']}")
-                        active_signal     = None
+                        update_signal_field("confirmed", True)
+                        active_signal["confirmed"] = True
+
                         pending_entry     = None
                         pending_direction = None
 
-                        # Bu okumayi hemen yeni sinyal olarak isle (ekstra dongu bekleme)
-                        new_sig = signal_from_card(card)
-                        if new_sig:
-                            active_signal = new_sig
-                            log.info(f"YENi SiNYAL: #{active_signal['signal_no']} | "
-                                     f"{active_signal['direction']} @ {active_signal['entry']} | "
-                                     f"SL:{active_signal['sl']} | "
-                                     f"TP1:{active_signal['tp1']} TP2:{active_signal['tp2']} TP3:{active_signal['tp3']}")
-                            write_signal(active_signal)
                     else:
-                        # Ilk farkli okuma - dogrulama bekleniyor
-                        log.info(f"Olasi yeni sinyal, dogrulama bekleniyor (1/2): "
-                                 f"{active_signal['entry']} -> {card['entry']}")
+                        # Ilk farkli okuma - HEMEN signal.json'a yaz (confirmed=False)
+                        # MT5 agent emri hemen acar, biz arkaplanda dogrulama yapariz
+                        new_sig = signal_from_card(card, confirmed=False)
+                        if new_sig:
+                            log.info(f"Olasi yeni sinyal, HEMEN yazildi (dogrulama bekleniyor 1/2): "
+                                     f"{active_signal['entry']} -> {card['entry']}")
+                            active_signal = new_sig
+                            write_signal(active_signal)
                         pending_entry     = card["entry"]
                         pending_direction = card["direction"]
+
                 else:
-                    pending_entry     = None
-                    pending_direction = None
-                    log.info(f"Takip: {card['direction']} @ {card['entry']} | Status:{card['status']}")
+                    # Entry ayni gorunuyor - pending varsa dogrulama kontrolu yap
+                    if pending_entry is not None:
+                        if abs(card["entry"] - pending_entry) <= ENTRY_CONFIRM_TOLERANCE                                 and card["direction"] == pending_direction:
+                            # 2. okuma pending_entry ile uyustu -> DOGRULANDI
+                            log.info(f"Yeni sinyal DOGRULANDI (2 okuma): "
+                                     f"entry={card['entry']} pending={pending_entry}")
+                            update_signal_field("confirmed", True)
+                            active_signal["confirmed"] = True
+                            pending_entry     = None
+                            pending_direction = None
+                        else:
+                            # Gercekten dogrulanamadi
+                            log.info(f"Dogrulama basarisiz: pending={pending_entry} "
+                                     f"ama simdi entry={card['entry']}. cancel=True yaziliyor.")
+                            update_signal_field("cancel", True)
+                            active_signal["cancel"] = True
+                            pending_entry     = None
+                            pending_direction = None
+                    else:
+                        log.info(f"Takip: {card['direction']} @ {card['entry']} | Status:{card['status']}")
 
             time.sleep(CHECK_INTERVAL)
 

@@ -105,13 +105,13 @@ def open_trade(direction, entry, sl, tp1, tp2, tp3):
         current_price = tick.bid
         if current_price <= entry:
             log(f"Sinyal atlandi: SELL_LIMIT riski (fiyat={current_price} <= entry={entry})")
-            return None
+            return "SKIP"
         order_type = mt5.ORDER_TYPE_SELL_STOP
     else:
         current_price = tick.ask
         if current_price >= entry:
             log(f"Sinyal atlandi: BUY_LIMIT riski (fiyat={current_price} >= entry={entry})")
-            return None
+            return "SKIP"
         order_type = mt5.ORDER_TYPE_BUY_STOP
 
     request = {
@@ -122,16 +122,16 @@ def open_trade(direction, entry, sl, tp1, tp2, tp3):
         "price":        entry,
         "sl":           sl,
         "tp":           tp3,
-        "deviation":    20,
         "magic":        999999,
         "comment":      "Mila",
         "type_time":    mt5.ORDER_TIME_GTC,
         "type_filling": mt5.ORDER_FILLING_RETURN,
     }
 
-    result = mt5_call(mt5.order_send, request, timeout=15)
+    result = mt5.order_send(request)
     if result is None:
-        log("open_trade: order_send None dondu")
+        last_err = mt5.last_error()
+        log(f"open_trade: order_send None dondu | last_error={last_err}")
         return None
     if result.retcode == mt5.TRADE_RETCODE_DONE:
         log(f"Islem acildi: {result.order} | {direction} @ {entry} | SL:{sl} | TP1:{tp1} TP2:{tp2} TP3:{tp3}")
@@ -178,9 +178,10 @@ def close_position_at_market(ticket, direction):
     result = None
     for filling_mode in DEAL_FILLING_MODES:
         request["type_filling"] = filling_mode
-        result = mt5_call(mt5.order_send, request, timeout=15)
+        result = mt5.order_send(request)
         if result is None:
-            log(f"close_position: order_send timeout, ticket={ticket}")
+            last_err = mt5.last_error()
+            log(f"close_position: order_send None | last_error={last_err} | ticket={ticket}")
             check = mt5_call(mt5.positions_get, ticket=ticket)
             if check is not None and not check:
                 log(f"Timeout sonrasi pozisyon zaten kapanmis: ticket={ticket}")
@@ -214,7 +215,7 @@ def update_sl(ticket, new_sl):
             "sl":       new_sl,
             "tp":       position.tp,
         }
-        result = mt5_call(mt5.order_send, request, timeout=15)
+        result = mt5.order_send(request)
         if result and result.retcode == mt5.TRADE_RETCODE_DONE:
             log(f"SL guncellendi: ticket={ticket} yeni SL={new_sl}")
         else:
@@ -233,7 +234,7 @@ def update_sl(ticket, new_sl):
                 "tp":           order.tp,
                 "type_filling": mt5.ORDER_FILLING_RETURN,
             }
-            result = mt5_call(mt5.order_send, request, timeout=15)
+            result = mt5.order_send(request)
             if result and result.retcode == mt5.TRADE_RETCODE_DONE:
                 log(f"Bekleyen emir SL guncellendi: ticket={ticket} yeni SL={new_sl}")
             else:
@@ -504,10 +505,10 @@ def main():
                 bekleyenler = [t for t in active_trades
                                if mt5_call(mt5.orders_get, ticket=t["ticket"])]
                 for bekleyen in bekleyenler:
-                    cancel_result = mt5_call(mt5.order_send, {
+                    cancel_result = mt5.order_send({
                         "action": mt5.TRADE_ACTION_REMOVE,
                         "order":  bekleyen["ticket"],
-                    }, timeout=15)
+                    })
                     if cancel_result and cancel_result.retcode == mt5.TRADE_RETCODE_DONE:
                         log(f"Dogrulama basarisiz - emir iptal edildi: ticket={bekleyen['ticket']}")
                         active_trades = [t for t in active_trades
@@ -538,10 +539,10 @@ def main():
                     for bekleyen in bekleyenler:
                         log(f"Yeni sinyal geldi, bekleyen emir iptal ediliyor: "
                             f"ticket={bekleyen['ticket']} ({bekleyen['direction']} @ {bekleyen['entry']})")
-                        cancel_result = mt5_call(mt5.order_send, {
+                        cancel_result = mt5.order_send({
                             "action": mt5.TRADE_ACTION_REMOVE,
                             "order":  bekleyen["ticket"],
-                        }, timeout=15)
+                        })
                         if cancel_result and cancel_result.retcode == mt5.TRADE_RETCODE_DONE:
                             log(f"Bekleyen emir iptal edildi: ticket={bekleyen['ticket']}")
                             active_trades = [t for t in active_trades
@@ -552,10 +553,17 @@ def main():
 
                     log(f"Yeni sinyal alindi: #{signal_no} {direction} @ {entry}")
                     ticket = open_trade(direction, entry, sl, tp1, tp2, tp3)
-                    if ticket:
+                    if isinstance(ticket, int):
                         active_trades.append(
                             build_active(ticket, signal_no, direction, entry, sl, tp1, tp2, tp3))
-                    clear_signal()
+                        clear_signal()
+                    elif ticket == "SKIP":
+                        clear_signal()
+                    else:  # None - MT5 yanit vermedi
+                        alarm = (f"[MilaGold] UYARI: Emir gonderilemedi (order_send None): "
+                                 f"{direction} @ {entry}. Sonraki dongude tekrar denenecek.")
+                        log(alarm)
+                        telegram(alarm)
 
                 else:
                     yon_degisti   = (direction != ana["direction"])
@@ -602,10 +610,17 @@ def main():
                             active_trades = [t for t in active_trades
                                              if t["ticket"] != ana["ticket"]]
                             ticket = open_trade(direction, entry, sl, tp1, tp2, tp3)
-                            if ticket:
+                            if isinstance(ticket, int):
                                 active_trades.append(
                                     build_active(ticket, signal_no, direction, entry, sl, tp1, tp2, tp3))
-                            clear_signal()
+                                clear_signal()
+                            elif ticket == "SKIP":
+                                clear_signal()
+                            else:  # None - MT5 yanit vermedi
+                                alarm = (f"[MilaGold] UYARI: Eski pozisyon kapandi ama yeni emir gonderilemedi "
+                                         f"(order_send None): {direction} @ {entry}. Sonraki dongude tekrar denenecek.")
+                                log(alarm)
+                                telegram(alarm)
 
                     else:
                         if ana["sl_level"] == 0:
@@ -618,17 +633,26 @@ def main():
                             if len(active_trades) >= 2:
                                 log(f"Yeni sinyal daha kotu entry, sl_level={ana['sl_level']}. "
                                     f"Ama zaten 2 pozisyon var, sinyal atildi: #{signal_no}")
-                                telegram(f"[MilaGold] ℹ️ Sinyal atildi (max 2 pozisyon): #{signal_no}@{entry}")
+                                telegram(f"[MilaGold] Sinyal atildi (max 2 pozisyon): #{signal_no}@{entry}")
+                                clear_signal()
                             else:
                                 log(f"Yeni sinyal daha kotu entry, sl_level={ana['sl_level']}. "
                                     f"2. pozisyon aciliyor: #{signal_no} @ {entry}")
                                 ticket2 = open_trade(direction, entry, sl, tp1, tp2, tp3)
-                                if ticket2:
+                                if isinstance(ticket2, int):
                                     active_trades.append(
                                         build_active(ticket2, signal_no, direction, entry, sl, tp1, tp2, tp3))
-                                    telegram(f"[MilaGold] 📊 2. pozisyon acildi: "
+                                    telegram(f"[MilaGold] 2. pozisyon acildi: "
                                              f"#{signal_no} {direction} @ {entry} | ticket={ticket2}")
-                            clear_signal()
+                                    clear_signal()
+                                elif ticket2 == "SKIP":
+                                    clear_signal()
+                                else:  # None - MT5 yanit vermedi
+                                    alarm = (f"[MilaGold] UYARI: 2. emir gonderilemedi "
+                                             f"(order_send None): {direction} @ {entry}. Sonraki dongude tekrar denenecek.")
+                                    log(alarm)
+                                    telegram(alarm)
+                                    # clear_signal cagirilmiyor - sonraki dongude tekrar denenir
 
             # --- AKTiF iSLEMLERi TAKiP ET ---
             kapanan_tickets = []
