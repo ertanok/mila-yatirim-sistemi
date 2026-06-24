@@ -500,6 +500,22 @@ def main():
                 time.sleep(5)
                 continue
 
+
+            # --- PIYASA KAPANIS KURALLARI ---
+            simdi_k = datetime.now()
+            kapanis_saati = simdi_k.hour == 23 and simdi_k.minute >= 45
+
+            # 23:55'te acik pozisyon varsa kapat (gap riski)
+            if simdi_k.hour == 23 and simdi_k.minute >= 55:
+                if active_trades:
+                    log("23:55 gap koruma: tum acik pozisyonlar kapatiliyor.")
+                    telegram("[MilaGold] ⚠️ 23:55 gap koruma: pozisyonlar kapatiliyor.")
+                    for trade in list(active_trades):
+                        close_position_at_market(trade["ticket"], trade["direction"])
+                    active_trades = []
+                time.sleep(5)
+                continue
+
             # --- CANCEL KONTROLU ---
             if signal and signal.get("cancel") and not signal.get("processed"):
                 log("signal.json cancel=True alindi. Bekleyen emir iptal ediliyor...")
@@ -521,6 +537,13 @@ def main():
                             f"ticket={bekleyen['ticket']} | {code} - {comment}")
 
             # --- YENI SiNYAL iSLEME ---
+            # 23:45'ten sonra yeni islem alma
+            if kapanis_saati and signal and not signal.get("processed"):
+                log("23:45 sonrasi yeni islem alinmiyor, sinyal atlandi.")
+                clear_signal()
+                time.sleep(5)
+                continue
+
             if signal and not signal.get("processed") and signal.get("status") in ("RUNNING", "WAITING") \
                     and not signal.get("cancel", False):
                 direction = signal["direction"]
@@ -725,15 +748,56 @@ def main():
                 if not trade["tp1_hit"]:
                     if (direction == "SELL" and current <= tp1) or \
                        (direction == "BUY"  and current >= tp1):
-                        log(f"TP1 gecildi: ticket={ticket} fiyat={current} TP1={tp1} (SL tasinmiyor)")
+                        log(f"TP1 gecildi: ticket={ticket} fiyat={current} TP1={tp1} -> SL -2 ye tasiniyor")
+                        yeni_sl = round(trade["entry"] + 2.0, 2) if direction == "SELL" else round(trade["entry"] - 2.0, 2)
+                        update_sl(ticket, yeni_sl)
                         trade["tp1_hit"] = True
 
                 if trade["sl_level"] < 1:
                     if (direction == "SELL" and current <= tp2) or \
                        (direction == "BUY"  and current >= tp2):
-                        log(f"TP2 gecildi: ticket={ticket} fiyat={current} TP2={tp2} -> SL girise tasiniyor")
+                        log(f"TP2 gecildi: ticket={ticket} fiyat={current} TP2={tp2} -> SL girise tasiniyor, trailing basliyor")
                         update_sl(ticket, trade["entry"])
                         trade["sl_level"] = 1
+
+                # --- TRAILING STOP (TP2 sonrasi) ---
+                if trade["sl_level"] >= 1:
+                    entry = trade["entry"]
+                    # Kar mesafesini hesapla (entry'den itibaren)
+                    if direction == "SELL":
+                        kar = round(entry - current, 2)
+                    else:
+                        kar = round(current - entry, 2)
+
+                    # Tablodan trailing mesafesi ve min SL belirle
+                    if kar >= 9.0:
+                        trailing = 2.0
+                    elif kar >= 8.0:   # TP3
+                        trailing = 3.0
+                    elif kar >= 7.0:
+                        trailing = 3.0
+                    elif kar >= 6.0:
+                        trailing = 4.0
+                    else:              # 5-6 arasi (TP2 sonrasi)
+                        trailing = 5.0
+
+                    # Yeni SL hesapla
+                    if direction == "SELL":
+                        yeni_sl = round(current + trailing, 2)
+                    else:
+                        yeni_sl = round(current - trailing, 2)
+
+                    # Mevcut SL'i al
+                    pos_list = mt5_call(mt5.positions_get, ticket=ticket)
+                    if pos_list:
+                        mevcut_sl = pos_list[0].sl
+                        # Sadece SL lehte ilerliyorsa taşı (SELL: yeni_sl < mevcut_sl, BUY: yeni_sl > mevcut_sl)
+                        if direction == "SELL" and yeni_sl < mevcut_sl - 0.05:
+                            log(f"Trailing SL: ticket={ticket} kar={kar:.2f} trailing={trailing} | {mevcut_sl} -> {yeni_sl}")
+                            update_sl(ticket, yeni_sl)
+                        elif direction == "BUY" and yeni_sl > mevcut_sl + 0.05:
+                            log(f"Trailing SL: ticket={ticket} kar={kar:.2f} trailing={trailing} | {mevcut_sl} -> {yeni_sl}")
+                            update_sl(ticket, yeni_sl)
 
             active_trades = [t for t in active_trades if t["ticket"] not in kapanan_tickets]
 
