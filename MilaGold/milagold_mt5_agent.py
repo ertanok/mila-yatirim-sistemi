@@ -3,7 +3,9 @@ import time
 import json
 import os
 import requests
+import threading
 from datetime import datetime
+from concurrent.futures import ThreadPoolExecutor, TimeoutError as FuturesTimeout
 from config import LOGIN, SERVER, PASSWORD, MT5_PATH, TELEGRAM_TOKEN, TELEGRAM_CHAT_ID
 
 # --- AYARLAR ---
@@ -14,32 +16,19 @@ SIGNAL_FILE      = "C:\\MilaYatirim\\mila-yatirim-sistemi\\MilaGold\\signal.json
 PERFORMANCE_FILE = "C:\\MilaYatirim\\mila-yatirim-sistemi\\MilaGold\\milagold_trades.json"
 PRICE_OFFSET     = 0.0
 
-# SL/TP mesafeleri (sabit) - orphan adoption icin de kullanilir
 SL_DISTANCE  = 5.0
 TP1_DISTANCE = 3.0
 TP2_DISTANCE = 5.0
 TP3_DISTANCE = 8.0
 
-# Oncelik 1: dolu pozisyon varken yeni sinyal geldiginde
-# entry/yon farkinin "farkli sinyal" sayilmasi icin esik
 ENTRY_CHANGE_THRESHOLD = 0.5
 
-# Piyasadan kapatma (TRADE_ACTION_DEAL) icin denenecek filling modlari, sirayla.
-# Bu broker/sembolde RETURN, TRADE_ACTION_DEAL icin reddediliyor (10030 - Unsupported
-# filling mode); IOC/FOK market emirlerinde daha yaygin desteklenir.
 DEAL_FILLING_MODES = [mt5.ORDER_FILLING_IOC, mt5.ORDER_FILLING_FOK, mt5.ORDER_FILLING_RETURN]
 
-# --- TELEGRAM ---
-DRAWDOWN_LIMIT = 0.20  # %20 kasa dusunce dur
+DRAWDOWN_LIMIT   = 0.20
+MT5_CALL_TIMEOUT = 10   # saniye - MT5 API cagrilari icin max bekleme suresi
 
-
-def telegram(msg):
-    """Telegram mesaji gonder."""
-    try:
-        url = f"https://api.telegram.org/bot{TELEGRAM_TOKEN}/sendMessage"
-        requests.get(url, params={"chat_id": TELEGRAM_CHAT_ID, "text": msg}, timeout=5)
-    except Exception as e:
-        log(f"Telegram hatasi: {e}")
+_mt5_pool = ThreadPoolExecutor(max_workers=1)
 
 
 def log(msg):
@@ -50,18 +39,55 @@ def log(msg):
         f.write(line + "\n")
 
 
+def telegram(msg):
+    try:
+        url = f"https://api.telegram.org/bot{TELEGRAM_TOKEN}/sendMessage"
+        requests.get(url, params={"chat_id": TELEGRAM_CHAT_ID, "text": msg}, timeout=5)
+    except Exception as e:
+        log(f"Telegram hatasi: {e}")
+
+
+def mt5_call(fn, *args, timeout=MT5_CALL_TIMEOUT, **kwargs):
+    """MT5 fonksiyonunu ayri thread'de calistir, timeout'ta RuntimeError firlatir.
+    Timeout olusmasi durumunda executor yenilenir; arka planda MT5 yeniden baglanti denenir."""
+    global _mt5_pool
+    future = _mt5_pool.submit(fn, *args, **kwargs)
+    try:
+        return future.result(timeout=timeout)
+    except FuturesTimeout:
+        msg = f"MT5 TIMEOUT: {fn.__name__} {timeout}sn icinde yanit vermedi"
+        log(msg)
+        # Eski pool'u birak (takili thread daemon olarak calisir, process kapaninca olur)
+        _mt5_pool.shutdown(wait=False)
+        _mt5_pool = ThreadPoolExecutor(max_workers=1)
+        # Yeniden baglanti denemesini arka planda yap - bloke etme
+        def _reconnect():
+            try:
+                mt5.shutdown()
+                time.sleep(2)
+                if mt5.initialize():
+                    log("MT5 yeniden baglandi.")
+                else:
+                    log(f"MT5 yeniden baglanti basarisiz: {mt5.last_error()}")
+            except Exception as e:
+                log(f"MT5 reconnect hatasi: {e}")
+        threading.Thread(target=_reconnect, daemon=True).start()
+        raise RuntimeError(msg)
+
+
 def connect_mt5():
-    # MT5 zaten acik ve giris yapilmis olmali (Windows baslangicindan otomatik baslayacak sekilde ayarli).
-    # Parametre vermeden initialize() cagrilarak calisan terminal ornegine baglanilir.
-    if not mt5.initialize():
+    if not mt5_call(mt5.initialize):
         log(f"MT5 baglanma hatasi: {mt5.last_error()}")
         return False
-    log(f"MT5 baglandi. Bakiye: {mt5.account_info().balance} USD")
+    info = mt5_call(mt5.account_info)
+    log(f"MT5 baglandi. Bakiye: {info.balance if info else '?'} USD")
     return True
 
 
 def get_current_price(direction):
-    tick = mt5.symbol_info_tick(SYMBOL)
+    tick = mt5_call(mt5.symbol_info_tick, SYMBOL)
+    if tick is None:
+        raise RuntimeError("symbol_info_tick None dondu")
     return tick.bid if direction == "SELL" else tick.ask
 
 
@@ -69,15 +95,24 @@ def open_trade(direction, entry, sl, tp1, tp2, tp3):
     entry = round(entry + PRICE_OFFSET, 2)
     sl    = round(sl + PRICE_OFFSET, 2)
     tp3   = round(tp3 + PRICE_OFFSET, 2)
-    mt5.symbol_select(SYMBOL, True)
-    tick = mt5.symbol_info_tick(SYMBOL)
+    mt5_call(mt5.symbol_select, SYMBOL, True)
+    tick = mt5_call(mt5.symbol_info_tick, SYMBOL)
+    if tick is None:
+        log("open_trade: tick alinamadi")
+        return None
 
     if direction == "SELL":
         current_price = tick.bid
-        order_type = mt5.ORDER_TYPE_SELL_STOP if current_price > entry else mt5.ORDER_TYPE_SELL_LIMIT
+        if current_price <= entry:
+            log(f"Sinyal atlandi: SELL_LIMIT riski (fiyat={current_price} <= entry={entry})")
+            return None
+        order_type = mt5.ORDER_TYPE_SELL_STOP
     else:
         current_price = tick.ask
-        order_type = mt5.ORDER_TYPE_BUY_STOP if current_price < entry else mt5.ORDER_TYPE_BUY_LIMIT
+        if current_price >= entry:
+            log(f"Sinyal atlandi: BUY_LIMIT riski (fiyat={current_price} >= entry={entry})")
+            return None
+        order_type = mt5.ORDER_TYPE_BUY_STOP
 
     request = {
         "action":       mt5.TRADE_ACTION_PENDING,
@@ -94,7 +129,10 @@ def open_trade(direction, entry, sl, tp1, tp2, tp3):
         "type_filling": mt5.ORDER_FILLING_RETURN,
     }
 
-    result = mt5.order_send(request)
+    result = mt5_call(mt5.order_send, request, timeout=15)
+    if result is None:
+        log("open_trade: order_send None dondu")
+        return None
     if result.retcode == mt5.TRADE_RETCODE_DONE:
         log(f"Islem acildi: {result.order} | {direction} @ {entry} | SL:{sl} | TP1:{tp1} TP2:{tp2} TP3:{tp3}")
         return result.order
@@ -105,23 +143,18 @@ def open_trade(direction, entry, sl, tp1, tp2, tp3):
 
 def close_position_at_market(ticket, direction):
     """Acik pozisyonu piyasa fiyatindan kapat.
-
-    Oncelik 1: Yeni sinyal geldiginde (Lisa'nin entry'si degisti, dolayisiyla
-    Lisa eski pozisyonunu kapattigi anlasildi) bizim pozisyonumuzu da
-    piyasadan kapatip Lisa'nin "temiz cikis" davranisini izlemek icin kullanilir.
-
-    Donus degerleri:
-      "closed_by_us"   -> pozisyon acikti, biz kapattik (forced_close=True icin kullanilir)
-      "already_closed" -> pozisyon zaten kapanmisti (dogal SL/TP - bizim aksiyonumuz degil)
-      "failed"         -> pozisyon acik ama kapatma emri reddedildi, tekrar denenmeli
+    Donus: "closed_by_us" | "already_closed" | "failed"
     """
-    positions = mt5.positions_get(ticket=ticket)
+    positions = mt5_call(mt5.positions_get, ticket=ticket)
     if not positions:
         log(f"Pozisyon zaten kapali (kapatma denenmeden once): ticket={ticket}")
         return "already_closed"
 
     position = positions[0]
-    tick = mt5.symbol_info_tick(SYMBOL)
+    tick = mt5_call(mt5.symbol_info_tick, SYMBOL)
+    if tick is None:
+        log(f"close_position: tick alinamadi, ticket={ticket}")
+        return "failed"
 
     if direction == "SELL":
         close_type = mt5.ORDER_TYPE_BUY
@@ -142,35 +175,37 @@ def close_position_at_market(ticket, direction):
         "comment":      "Mila-NewSignal",
     }
 
-    # TRADE_ACTION_DEAL (piyasadan kapatma) icin filling mode'u sirayla dene.
-    # Bu broker/sembolde RETURN reddediliyor (10030 - Unsupported filling mode);
-    # market emirlerinde IOC/FOK genelde desteklenir. Ilk basariliyi/farkli-hatayi
-    # verende dur.
     result = None
     for filling_mode in DEAL_FILLING_MODES:
         request["type_filling"] = filling_mode
-        result = mt5.order_send(request)
+        result = mt5_call(mt5.order_send, request, timeout=15)
+        if result is None:
+            log(f"close_position: order_send timeout, ticket={ticket}")
+            check = mt5_call(mt5.positions_get, ticket=ticket)
+            if check is not None and not check:
+                log(f"Timeout sonrasi pozisyon zaten kapanmis: ticket={ticket}")
+                return "already_closed"
+            return "failed"
         if result.retcode == mt5.TRADE_RETCODE_DONE:
             log(f"Pozisyon piyasadan kapatildi: ticket={ticket} @ {price} (filling={filling_mode})")
             return "closed_by_us"
         if result.retcode != mt5.TRADE_RETCODE_INVALID_FILL:
-            # Reddedilme nedeni filling mode degil - baska filling modlari denemeye
-            # gerek yok, asagidaki "zaten kapanmis mi" kontroluyle devam et.
             break
 
-    # Kapatma reddedildi - bu sirada pozisyon zaten kapanmis olabilir mi?
-    if not mt5.positions_get(ticket=ticket):
+    check = mt5_call(mt5.positions_get, ticket=ticket)
+    if check is not None and not check:
         log(f"Pozisyon kapatma denemesi reddedildi ama zaten kapanmis: ticket={ticket} "
-            f"({result.retcode} - {result.comment})")
+            f"({result.retcode if result else '?'} - {result.comment if result else '?'})")
         return "already_closed"
 
-    log(f"Pozisyon kapatilamadi: ticket={ticket} | {result.retcode} - {result.comment}")
+    log(f"Pozisyon kapatilamadi: ticket={ticket} | "
+        f"{result.retcode if result else '?'} - {result.comment if result else '?'}")
     return "failed"
 
 
 def update_sl(ticket, new_sl):
     new_sl = round(new_sl, 2)
-    positions = mt5.positions_get(ticket=ticket)
+    positions = mt5_call(mt5.positions_get, ticket=ticket)
     if positions:
         position = positions[0]
         request = {
@@ -179,13 +214,15 @@ def update_sl(ticket, new_sl):
             "sl":       new_sl,
             "tp":       position.tp,
         }
-        result = mt5.order_send(request)
-        if result.retcode == mt5.TRADE_RETCODE_DONE:
+        result = mt5_call(mt5.order_send, request, timeout=15)
+        if result and result.retcode == mt5.TRADE_RETCODE_DONE:
             log(f"SL guncellendi: ticket={ticket} yeni SL={new_sl}")
         else:
-            log(f"SL guncellenemedi: {result.retcode} - {result.comment}")
+            code    = result.retcode if result else "timeout"
+            comment = result.comment if result else ""
+            log(f"SL guncellenemedi: {code} - {comment}")
     else:
-        orders = mt5.orders_get(ticket=ticket)
+        orders = mt5_call(mt5.orders_get, ticket=ticket)
         if orders:
             order = orders[0]
             request = {
@@ -196,15 +233,15 @@ def update_sl(ticket, new_sl):
                 "tp":           order.tp,
                 "type_filling": mt5.ORDER_FILLING_RETURN,
             }
-            result = mt5.order_send(request)
-            if result.retcode == mt5.TRADE_RETCODE_DONE:
+            result = mt5_call(mt5.order_send, request, timeout=15)
+            if result and result.retcode == mt5.TRADE_RETCODE_DONE:
                 log(f"Bekleyen emir SL guncellendi: ticket={ticket} yeni SL={new_sl}")
             else:
-                log(f"Bekleyen emir SL guncellenemedi: {result.comment}")
+                comment = result.comment if result else "timeout"
+                log(f"Bekleyen emir SL guncellenemedi: {comment}")
 
 
 def save_performance(record):
-    """Performance kaydini JSON dosyasina ekle."""
     try:
         if os.path.exists(PERFORMANCE_FILE):
             with open(PERFORMANCE_FILE, "r", encoding="utf-8") as f:
@@ -220,9 +257,8 @@ def save_performance(record):
 
 
 def get_deal_info(ticket):
-    """Kapanan islemin deal bilgilerini MT5'ten al."""
     try:
-        deals = mt5.history_deals_get(position=ticket)
+        deals = mt5_call(mt5.history_deals_get, position=ticket)
         if deals and len(deals) >= 2:
             close_deal = deals[-1]
             return {
@@ -230,20 +266,13 @@ def get_deal_info(ticket):
                 "close_time":  datetime.fromtimestamp(close_deal.time).strftime("%Y-%m-%d %H:%M:%S"),
                 "profit":      close_deal.profit,
             }
-    except:
+    except Exception:
         pass
     return None
 
 
 def determine_result(active, close_price, forced_close=False):
-    """Kapanış sonucunu sl_level'a gore belirle (fiyat esitsizligine guvenme - slippage payi var).
-
-    forced_close=True: Oncelik 1 - yeni sinyal geldigi icin bizim piyasadan
-    kapattigimiz erken cikis. Bu durumda sl_level==0 ve TP3'e ulasilmamissa
-    sonuc "SL" degil "Exit" olarak kaydedilir (Lisa'nin kucuk kar/zararla
-    erken cikis tanimina denk gelir). sl_level>=1 ise (TP1/TP2 zaten gecilmis,
-    kar kilitlenmis) etiket aynen TP1/Entry kalir - bu zaten dogru bilgi.
-    """
+    """Kapanis sonucunu sl_level'a gore belirle."""
     direction = active["direction"]
     entry     = active["entry"]
     tp3       = active["tp3"]
@@ -259,18 +288,14 @@ def determine_result(active, close_price, forced_close=False):
     if ulasti_tp3:
         return "TP3", pip
     elif sl_level >= 1:
-        # SL, girise tasinmisti (TP2 goruldu) -> basabas (Entry) ile kapandi
         return "Entry", pip
     elif forced_close:
-        # TP2'ye ulasilmadan, yeni sinyal nedeniyle erken kapatildi -> Exit
         return "Exit", pip
     else:
-        # SL hic tasinmadi, dogal kapanis -> orijinal SL ile kapandi
         return "SL", pip
 
 
 def build_active(ticket, signal_no, direction, entry, sl, tp1, tp2, tp3):
-    """Yeni acilan islem icin active sozlugu olustur."""
     return {
         "ticket":    ticket,
         "signal_no": signal_no,
@@ -287,7 +312,6 @@ def build_active(ticket, signal_no, direction, entry, sl, tp1, tp2, tp3):
 
 
 def record_close(active, close_price, deal, forced_close=False):
-    """Kapanan islem icin performance kaydi olustur ve kaydet. (sonuc, pip, profit) doner."""
     sonuc, pip = determine_result(active, close_price, forced_close=forced_close)
     record = {
         "signal_no":   active["signal_no"],
@@ -306,38 +330,6 @@ def record_close(active, close_price, deal, forced_close=False):
     }
     save_performance(record)
     return sonuc, pip, deal["profit"]
-
-
-def handle_closed_position_and_open_new(active, signal_no, direction, entry, sl, tp1, tp2, tp3, forced_close):
-    """Eski islem (active) artik MT5'te yok - dogal kapanmis veya biz piyasadan
-    kapatmisiz. Kapanis bilgisini al, performansa kaydet, Telegram'a bildir,
-    ardindan yeni sinyali ac. Yeni active sozlugunu (veya acilamadiysa None) doner.
-
-    forced_close=True  -> Oncelik 1: biz piyasadan kapattik (close_position_at_market basarili)
-    forced_close=False -> dogal kapanis (Lisa'nin sinyali degisirken bizim SL/TP'imiz de
-                           tetiklenmis olabilir, veya kapatma denemeden once zaten kapanmisti)
-    """
-    deal = None
-    for _ in range(5):
-        deal = get_deal_info(active["ticket"])
-        if deal:
-            break
-        time.sleep(0.3)
-
-    if deal:
-        sonuc, pip, profit = record_close(active, deal["close_price"], deal, forced_close=forced_close)
-        telegram(f"[MilaGold] 🔄 Eski islem kapandi: {sonuc} {pip:+.2f} pip ({profit:+.2f} USD) | "
-                 f"Yeni sinyal: #{signal_no} {direction} @ {entry}")
-    else:
-        log(f"Uyari: kapanis bilgisi alinamadi, performans kaydedilemedi: ticket={active['ticket']}")
-        telegram(f"[MilaGold] ⚠️ Eski islem (ticket={active['ticket']}) kapandi ama kapanis bilgisi "
-                 f"okunamadi. Yeni sinyal: #{signal_no} {direction} @ {entry}")
-
-    log(f"Yeni sinyal aciliyor: #{signal_no} {direction} @ {entry}")
-    ticket = open_trade(direction, entry, sl, tp1, tp2, tp3)
-    if ticket:
-        return build_active(ticket, signal_no, direction, entry, sl, tp1, tp2, tp3)
-    return None
 
 
 def read_signal():
@@ -363,43 +355,25 @@ def clear_signal():
 
 
 def guess_sl_level(position, tp1_dist=TP1_DISTANCE, tp2_dist=TP2_DISTANCE, sl_dist=SL_DISTANCE):
-    """Mevcut SL pozisyonundan sl_level tahmin et.
-    MT5 pozisyonundan okunur - entry ve sl bilgisi zaten var.
-
-    sl_level=0: SL orijinal yerde (entry'den SL_DISTANCE uzakta)
-    sl_level=1: SL girise tasinmis (TP2 goruldu)
-    """
     entry = position.price_open
     sl    = position.sl
 
     if position.type == mt5.ORDER_TYPE_SELL:
-        original_sl = entry + sl_dist
-        entry_sl    = entry
-        tp1         = entry - tp1_dist
+        entry_sl = entry
     else:
-        original_sl = entry - sl_dist
-        entry_sl    = entry
-        tp1         = entry + tp1_dist
+        entry_sl = entry
 
-    dist_original = abs(sl - original_sl)
-    dist_entry    = abs(sl - entry_sl)
-    dist_tp1      = abs(sl - tp1)
-
+    dist_entry = abs(sl - entry_sl)
     if dist_entry < 0.6:
         return 1
-    else:
-        return 0
+    return 0
 
 
 def adopt_orphans():
-    """Restart sonrasi MT5'teki magic=999999 pozisyon/emirleri tara,
-    active_trades listesine yukle (orphan adoption).
-    Yeni bir liste doner."""
     adopted = []
     now_str = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
 
-    # Acik pozisyonlar
-    positions = mt5.positions_get(symbol=SYMBOL)
+    positions = mt5_call(mt5.positions_get, symbol=SYMBOL)
     if positions:
         for pos in positions:
             if pos.magic != 999999:
@@ -421,12 +395,11 @@ def adopt_orphans():
 
             rec = build_active(pos.ticket, "orphan", direction, entry, sl, tp1, tp2, tp3)
             rec["sl_level"]  = sl_level
-            rec["open_time"] = now_str  # gercek open_time bilinmiyor
+            rec["open_time"] = now_str
             adopted.append(rec)
             log(f"Orphan pozisyon alindi: ticket={pos.ticket} {direction} @ {entry} sl_level={sl_level}")
 
-    # Bekleyen emirler
-    orders = mt5.orders_get(symbol=SYMBOL)
+    orders = mt5_call(mt5.orders_get, symbol=SYMBOL)
     if orders:
         for ord_ in orders:
             if ord_.magic != 999999:
@@ -452,8 +425,7 @@ def adopt_orphans():
             log(f"Orphan bekleyen emir alindi: ticket={ord_.ticket} {direction} @ {entry}")
 
     if adopted:
-        telegram(f"[MilaGold] 🔄 {len(adopted)} orphan pozisyon/emir devralindi. "
-                 f"Takip basladi.")
+        telegram(f"[MilaGold] 🔄 {len(adopted)} orphan pozisyon/emir devralindi. Takip basladi.")
     return adopted
 
 
@@ -462,25 +434,48 @@ def main():
     if not connect_mt5():
         return
 
-    # active_trades: tum takip edilen pozisyon/emirlerin listesi
-    # (tekil active dict'in yerini aldi - Oncelik 2)
     active_trades = adopt_orphans()
 
-    baslangic_bakiye = mt5.account_info().balance
+    try:
+        if os.path.exists(SIGNAL_FILE):
+            with open(SIGNAL_FILE, "r") as f:
+                startup_signal = json.load(f)
+            if not startup_signal.get("confirmed", True) or startup_signal.get("cancel", False):
+                startup_signal["processed"] = True
+                with open(SIGNAL_FILE, "w") as f:
+                    json.dump(startup_signal, f, indent=2)
+                log("Baslatma: yarim/iptal sinyal temizlendi (processed=True yapildi).")
+    except Exception as e:
+        log(f"Baslatma sinyal temizleme hatasi: {e}")
+
+    info = mt5_call(mt5.account_info)
+    baslangic_bakiye = info.balance if info else 0
     drawdown_durdur  = False
     log(f"Baslangic bakiyesi: {baslangic_bakiye} USD")
     log(f"Hazir. {len(active_trades)} aktif islem devralindi. signal.json bekleniyor...")
     telegram(f"[MilaGold] ✅ MilaGold MT5 Agent basladi. Bakiye: {baslangic_bakiye} USD | "
              f"Devralınan: {len(active_trades)} islem")
 
+    last_heartbeat = time.time()
+    HEARTBEAT_INTERVAL = 30  # saniye
+
     while True:
         try:
+            # Heartbeat - watchdog icin periyodik log
+            now_ts = time.time()
+            if now_ts - last_heartbeat >= HEARTBEAT_INTERVAL:
+                hb_info = mt5_call(mt5.account_info)
+                bakiye_str = f"{hb_info.balance:.2f}" if hb_info else "?"
+                log(f"Heartbeat: {len(active_trades)} aktif islem | Bakiye: {bakiye_str} USD")
+                last_heartbeat = now_ts
+
             signal = read_signal()
 
             # Gunluk sifirlama
             simdi = datetime.now()
             if simdi.hour == 0 and simdi.minute == 0 and simdi.second < 5:
-                yeni_bakiye = mt5.account_info().balance
+                reset_info = mt5_call(mt5.account_info)
+                yeni_bakiye = reset_info.balance if reset_info else baslangic_bakiye
                 if yeni_bakiye != baslangic_bakiye:
                     log(f"Gunluk sifirlama: yeni baslangic bakiyesi = {yeni_bakiye} USD")
                     telegram(f"[MilaGold] 🔄 Yeni gun. Baslangic bakiyesi: {yeni_bakiye} USD")
@@ -488,21 +483,44 @@ def main():
                     drawdown_durdur = False
 
             # Drawdown kontrolu
-            guncel_bakiye = mt5.account_info().balance
-            dusus = (baslangic_bakiye - guncel_bakiye) / baslangic_bakiye
-            if dusus >= DRAWDOWN_LIMIT and not drawdown_durdur:
-                mesaj = (f"[MilaGold] ⚠️ EMNiYET STOPU! Kasa %{dusus*100:.1f} dusus. "
-                         f"Islem alma durduruldu. Bakiye: {guncel_bakiye} USD")
-                log(mesaj)
-                telegram(mesaj)
-                drawdown_durdur = True
+            dd_info = mt5_call(mt5.account_info)
+            if dd_info:
+                guncel_bakiye = dd_info.balance
+                dusus = (baslangic_bakiye - guncel_bakiye) / baslangic_bakiye if baslangic_bakiye else 0
+                if dusus >= DRAWDOWN_LIMIT and not drawdown_durdur:
+                    mesaj = (f"[MilaGold] ⚠️ EMNiYET STOPU! Kasa %{dusus*100:.1f} dusus. "
+                             f"Islem alma durduruldu. Bakiye: {guncel_bakiye} USD")
+                    log(mesaj)
+                    telegram(mesaj)
+                    drawdown_durdur = True
 
             if drawdown_durdur:
                 time.sleep(5)
                 continue
 
+            # --- CANCEL KONTROLU ---
+            if signal and signal.get("cancel") and not signal.get("processed"):
+                log("signal.json cancel=True alindi. Bekleyen emir iptal ediliyor...")
+                bekleyenler = [t for t in active_trades
+                               if mt5_call(mt5.orders_get, ticket=t["ticket"])]
+                for bekleyen in bekleyenler:
+                    cancel_result = mt5_call(mt5.order_send, {
+                        "action": mt5.TRADE_ACTION_REMOVE,
+                        "order":  bekleyen["ticket"],
+                    }, timeout=15)
+                    if cancel_result and cancel_result.retcode == mt5.TRADE_RETCODE_DONE:
+                        log(f"Dogrulama basarisiz - emir iptal edildi: ticket={bekleyen['ticket']}")
+                        active_trades = [t for t in active_trades
+                                         if t["ticket"] != bekleyen["ticket"]]
+                    else:
+                        code    = cancel_result.retcode if cancel_result else "timeout"
+                        comment = cancel_result.comment if cancel_result else ""
+                        log(f"Emir iptal edilemedi (zaten dolmus olabilir): "
+                            f"ticket={bekleyen['ticket']} | {code} - {comment}")
+
             # --- YENI SiNYAL iSLEME ---
-            if signal and not signal.get("processed") and signal.get("status") in ("RUNNING", "WAITING"):
+            if signal and not signal.get("processed") and signal.get("status") in ("RUNNING", "WAITING") \
+                    and not signal.get("cancel", False):
                 direction = signal["direction"]
                 entry     = signal["entry"]
                 sl        = signal["sl"]
@@ -511,30 +529,26 @@ def main():
                 tp3       = signal["tp3"]
                 signal_no = signal.get("signal_no", "?")
 
-                # "Ana" pozisyon: listede ilk pozisyona-donusmus islem
-                # (bekleyen emirler sinyal kararinda kullanilmaz, sadece takip edilir)
                 ana = next((t for t in active_trades
-                            if mt5.positions_get(ticket=t["ticket"])), None)
+                            if mt5_call(mt5.positions_get, ticket=t["ticket"])), None)
 
                 if ana is None:
-                    # Hicbir aktif pozisyon yok - bekleyen emirler var mi?
-                    # Hepsini iptal et (birden fazla olabilir - orn. fiyat uzaklasmis
-                    # eski LIMIT emirler listede kalabilir)
                     bekleyenler = [t for t in active_trades
-                                   if mt5.orders_get(ticket=t["ticket"])]
+                                   if mt5_call(mt5.orders_get, ticket=t["ticket"])]
                     for bekleyen in bekleyenler:
                         log(f"Yeni sinyal geldi, bekleyen emir iptal ediliyor: "
                             f"ticket={bekleyen['ticket']} ({bekleyen['direction']} @ {bekleyen['entry']})")
-                        cancel_result = mt5.order_send({
+                        cancel_result = mt5_call(mt5.order_send, {
                             "action": mt5.TRADE_ACTION_REMOVE,
                             "order":  bekleyen["ticket"],
-                        })
-                        if cancel_result.retcode == mt5.TRADE_RETCODE_DONE:
+                        }, timeout=15)
+                        if cancel_result and cancel_result.retcode == mt5.TRADE_RETCODE_DONE:
                             log(f"Bekleyen emir iptal edildi: ticket={bekleyen['ticket']}")
                             active_trades = [t for t in active_trades
                                              if t["ticket"] != bekleyen["ticket"]]
                         else:
-                            log(f"Emir iptal edilemedi: ticket={bekleyen['ticket']} | {cancel_result.comment}")
+                            code = cancel_result.retcode if cancel_result else "timeout"
+                            log(f"Emir iptal edilemedi: ticket={bekleyen['ticket']} | {code}")
 
                     log(f"Yeni sinyal alindi: #{signal_no} {direction} @ {entry}")
                     ticket = open_trade(direction, entry, sl, tp1, tp2, tp3)
@@ -544,9 +558,8 @@ def main():
                     clear_signal()
 
                 else:
-                    # Ana pozisyon var - Exit karar mantigi
-                    yon_degisti  = (direction != ana["direction"])
-                    fark         = entry - ana["entry"]
+                    yon_degisti   = (direction != ana["direction"])
+                    fark          = entry - ana["entry"]
 
                     if ana["direction"] == "SELL":
                         yeni_daha_iyi = fark > ENTRY_CHANGE_THRESHOLD
@@ -560,7 +573,6 @@ def main():
                         clear_signal()
 
                     elif yon_degisti or yeni_daha_iyi:
-                        # Kapat ve yeni sinyali ac
                         neden = "yon degisti" if yon_degisti else "yeni entry daha iyi"
                         log(f"Yeni sinyal ({neden}): "
                             f"{ana['direction']}@{ana['entry']} -> {direction}@{entry}. "
@@ -596,16 +608,13 @@ def main():
                             clear_signal()
 
                     else:
-                        # Yeni entry daha kotu
                         if ana["sl_level"] == 0:
-                            # Durum 3: tam risk var, yeni islemi alma
                             log(f"Yeni sinyal daha kotu entry, sl_level=0. "
                                 f"Eski pozisyon tutuldu, sinyal atildi: #{signal_no}")
                             telegram(f"[MilaGold] ℹ️ Sinyal atildi (kotu entry, sl_level=0): "
                                      f"{ana['direction']}@{ana['entry']} devam | Atlanan: #{signal_no}@{entry}")
                             clear_signal()
                         else:
-                            # Durum 4: risk kalmadi, yeniyi de ac (max 2 pozisyon)
                             if len(active_trades) >= 2:
                                 log(f"Yeni sinyal daha kotu entry, sl_level={ana['sl_level']}. "
                                     f"Ama zaten 2 pozisyon var, sinyal atildi: #{signal_no}")
@@ -630,8 +639,8 @@ def main():
                 tp2       = trade["tp2"]
                 current   = get_current_price(direction)
 
-                positions = mt5.positions_get(ticket=ticket)
-                orders    = mt5.orders_get(ticket=ticket)
+                positions = mt5_call(mt5.positions_get, ticket=ticket)
+                orders    = mt5_call(mt5.orders_get, ticket=ticket)
 
                 if not positions and not orders:
                     log(f"Islem kapandi: ticket={ticket}")
@@ -642,17 +651,14 @@ def main():
                     continue
 
                 if not positions:
-                    # Hala bekleyen emir - TP takibi yapma
                     continue
 
-                # TP1 takibi - sadece log (bir kez), SL tasinmiyor
                 if not trade["tp1_hit"]:
                     if (direction == "SELL" and current <= tp1) or \
                        (direction == "BUY"  and current >= tp1):
                         log(f"TP1 gecildi: ticket={ticket} fiyat={current} TP1={tp1} (SL tasinmiyor)")
                         trade["tp1_hit"] = True
 
-                # TP2 takibi - SL girise tas
                 if trade["sl_level"] < 1:
                     if (direction == "SELL" and current <= tp2) or \
                        (direction == "BUY"  and current >= tp2):
@@ -660,7 +666,6 @@ def main():
                         update_sl(ticket, trade["entry"])
                         trade["sl_level"] = 1
 
-            # Kapananlari listeden cikar
             active_trades = [t for t in active_trades if t["ticket"] not in kapanan_tickets]
 
             time.sleep(1)
