@@ -550,6 +550,7 @@ def main():
 
             if signal and not signal.get("processed") and signal.get("status") in ("RUNNING", "WAITING") \
                     and not signal.get("cancel", False):
+                direction = signal["direction"]
                 entry     = signal["entry"]
                 sl        = signal["sl"]
                 tp1       = signal["tp1"]
