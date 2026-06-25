@@ -104,15 +104,19 @@ def open_trade(direction, entry, sl, tp1, tp2, tp3):
     if direction == "SELL":
         current_price = tick.bid
         if current_price <= entry:
-            log(f"Sinyal atlandi: SELL_LIMIT riski (fiyat={current_price} <= entry={entry})")
-            return "SKIP"
-        order_type = mt5.ORDER_TYPE_SELL_STOP
+            order_type = mt5.ORDER_TYPE_SELL_LIMIT
+            log(f"Emir turu: SELL_LIMIT (fiyat={current_price} <= entry={entry})")
+        else:
+            order_type = mt5.ORDER_TYPE_SELL_STOP
+            log(f"Emir turu: SELL_STOP (fiyat={current_price} > entry={entry})")
     else:
         current_price = tick.ask
         if current_price >= entry:
-            log(f"Sinyal atlandi: BUY_LIMIT riski (fiyat={current_price} >= entry={entry})")
-            return "SKIP"
-        order_type = mt5.ORDER_TYPE_BUY_STOP
+            order_type = mt5.ORDER_TYPE_BUY_LIMIT
+            log(f"Emir turu: BUY_LIMIT (fiyat={current_price} >= entry={entry})")
+        else:
+            order_type = mt5.ORDER_TYPE_BUY_STOP
+            log(f"Emir turu: BUY_STOP (fiyat={current_price} < entry={entry})")
 
     request = {
         "action":       mt5.TRADE_ACTION_PENDING,
@@ -546,7 +550,6 @@ def main():
 
             if signal and not signal.get("processed") and signal.get("status") in ("RUNNING", "WAITING") \
                     and not signal.get("cancel", False):
-                direction = signal["direction"]
                 entry     = signal["entry"]
                 sl        = signal["sl"]
                 tp1       = signal["tp1"]
