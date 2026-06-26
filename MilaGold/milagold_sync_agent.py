@@ -117,7 +117,7 @@ def build_agent_status() -> str:
         return time.time() - os.path.getmtime(path)
 
     ocr_age = age_seconds(os.path.join(BASE_DIR, "milagold_ocr_log.txt"))
-    mt5_age = age_seconds(os.path.join(BASE_DIR, "milagold_log.txt"))
+    mt5_age = age_seconds(os.path.join(BASE_DIR, "milagold_mt5_log.txt"))
 
     def status(age):
         if age is None:
