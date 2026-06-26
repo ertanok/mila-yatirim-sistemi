@@ -24,7 +24,7 @@ GITHUB_REPO   = "mila-yatirim-sistemi"
 GITHUB_BRANCH = "main"
 SYNC_INTERVAL = 120  # saniye
 
-BASE_DIR = r"C:\MilaGold"
+BASE_DIR = r"C:\MilaYatirim\mila-yatirim-sistemi\MilaGold"
 
 # GitHub'a yüklenecek dosyalar: (yerel yol, repo'daki yol)
 SYNC_FILES = [
