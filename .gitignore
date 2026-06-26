@@ -1,15 +1,14 @@
-# Hassas bilgiler - asla git'e gonderilmez
+# Hassas konfigürasyon
 config.py
+vps_config.env
 
-# Python
+# Veri dosyalari
+*.json
+*.log
+*.png
+data/
+
+# Python cache
 __pycache__/
 *.pyc
-
-# Debug gorselleri
-*.png
-
-# Log dosyalari
-*.txt
-
-# Veri dosyalari (sinyal, performans)
-*.json
+*.pyo
