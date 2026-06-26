@@ -155,7 +155,7 @@ def open_trade(direction, entry, sl, tp1, tp2, tp3):
         "type":         order_type,
         "price":        entry,
         "sl":           sl,
-        "tp":           tp3,
+        "tp":           0,      # TP yok — trailing stop TP3 sonrasini da yonetir
         "magic":        999999,
         "comment":      "Mila",
         "type_time":    mt5.ORDER_TIME_GTC,
@@ -813,11 +813,11 @@ def main():
                     else:
                         kar = round(current - entry, 2)
 
-                    # Tablodan trailing mesafesi ve min SL belirle
+                    # Tablodan trailing mesafesi belirle
                     if kar >= 9.0:
                         trailing = 2.0
-                    elif kar >= 8.0:   # TP3
-                        trailing = 3.0
+                    elif kar >= 8.0:   # TP3 seviyesi — trailing devam eder, kapatmaz
+                        trailing = 2.0
                     elif kar >= 7.0:
                         trailing = 3.0
                     elif kar >= 6.0:
