@@ -25,7 +25,7 @@ ENTRY_CHANGE_THRESHOLD = 0.5
 
 DEAL_FILLING_MODES = [mt5.ORDER_FILLING_IOC, mt5.ORDER_FILLING_FOK, mt5.ORDER_FILLING_RETURN]
 
-DRAWDOWN_LIMIT   = 0.20
+DRAWDOWN_LIMIT   = 0.15
 MT5_CALL_TIMEOUT = 10   # saniye - MT5 API cagrilari icin max bekleme suresi
 
 _mt5_pool = ThreadPoolExecutor(max_workers=1)
