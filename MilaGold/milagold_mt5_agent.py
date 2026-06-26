@@ -91,6 +91,36 @@ def get_current_price(direction):
     return tick.bid if direction == "SELL" else tick.ask
 
 
+def ema_filtresi_gecti_mi(direction):
+    """M5 EMA20 filtresi: SELL sinyali geldiginde fiyat EMA20 üzerindeyse False (alma) döner.
+    MT5'ten son 25 M5 mumu cekerek gercek EMA20 hesaplar (k=2/21).
+    Filtre sadece SELL için geçerli — BUY sinyalleri filtrelenmez.
+    Hata durumunda True döner (filtre devre dışı kalır, islem açılır)."""
+    if direction != "SELL":
+        return True
+    try:
+        rates = mt5_call(mt5.copy_rates_from_pos, SYMBOL, mt5.TIMEFRAME_M5, 0, 25)
+        if rates is None or len(rates) < 20:
+            log("EMA filtresi: M5 verisi alinamadi, filtre atlanıyor.")
+            return True
+        closes = [r[4] for r in rates]  # close fiyatlari
+        # Gercek EMA20 hesapla (k = 2/(20+1))
+        k = 2 / (20 + 1)
+        ema20 = sum(closes[:5]) / 5  # ilk 5 bar ile baslatma (warmup)
+        for c in closes[5:]:
+            ema20 = c * k + ema20 * (1 - k)
+        guncel_fiyat = closes[-1]
+        if guncel_fiyat > ema20:
+            log(f"EMA filtresi: SELL ATLANDI — fiyat={guncel_fiyat:.2f} > EMA20={ema20:.2f} (yukari momentum)")
+            return False
+        else:
+            log(f"EMA filtresi: SELL ONAYLANDI — fiyat={guncel_fiyat:.2f} <= EMA20={ema20:.2f}")
+            return True
+    except Exception as e:
+        log(f"EMA filtresi hatasi: {e} — filtre atlanıyor.")
+        return True
+
+
 def open_trade(direction, entry, sl, tp1, tp2, tp3):
     entry = round(entry + PRICE_OFFSET, 2)
     sl    = round(sl + PRICE_OFFSET, 2)
@@ -580,6 +610,11 @@ def main():
                             log(f"Emir iptal edilemedi: ticket={bekleyen['ticket']} | {code}")
 
                     log(f"Yeni sinyal alindi: #{signal_no} {direction} @ {entry}")
+                    if not ema_filtresi_gecti_mi(direction):
+                        log(f"EMA filtresi: sinyal atlandi #{signal_no} {direction} @ {entry}")
+                        telegram(f"[MilaGold] EMA filtresi: sinyal atlandi — {direction} @ {entry} (yukari momentum)")
+                        clear_signal()
+                        continue
                     ticket = open_trade(direction, entry, sl, tp1, tp2, tp3)
                     if isinstance(ticket, int):
                         active_trades.append(
@@ -721,6 +756,11 @@ def main():
                         if price_ok:
                             log(f"Kapanis sonrasi hafizadaki sinyal deneniyor: "
                                 f"#{sk['signal_no']} {sk['direction']} @ {sk['entry']}")
+                            if not ema_filtresi_gecti_mi(sk["direction"]):
+                                log(f"EMA filtresi: hafizadaki sinyal da atlandi — {sk['direction']} @ {sk['entry']}")
+                                telegram(f"[MilaGold] EMA filtresi: hafizadaki sinyal atlandi — {sk['direction']} @ {sk['entry']}")
+                                last_skipped_signal = None
+                                continue
                             ticket2 = open_trade(sk["direction"], sk["entry"],
                                                  sk["sl"], sk["tp1"], sk["tp2"], sk["tp3"])
                             if isinstance(ticket2, int):

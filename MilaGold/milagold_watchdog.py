@@ -107,13 +107,19 @@ def kill_agent(script_name):
 
 
 def kill_window(window_title):
+    """Basliginda window_title gecen tum cmd pencerelerini kapatir.
+    Administrator: on-eki nedeniyle taskkill /FI yerine PowerShell kullanilir."""
     try:
-        subprocess.run(
-            ["taskkill", "/FI", f"WINDOWTITLE eq {window_title}", "/F"],
-            capture_output=True
+        ps_cmd = (
+            f"Get-Process | Where-Object {{ $_.MainWindowTitle -like '*{window_title}*' }} | "
+            f"Stop-Process -Force -ErrorAction SilentlyContinue"
         )
-    except Exception:
-        pass
+        subprocess.run(
+            ["powershell", "-NoProfile", "-NonInteractive", "-Command", ps_cmd],
+            capture_output=True, timeout=10
+        )
+    except Exception as e:
+        log(f"  Pencere kapatma hatasi: {e}")
 
 
 def restart_agent(script_name, label, window_title, agent_key, neden=""):
@@ -128,7 +134,7 @@ def restart_agent(script_name, label, window_title, agent_key, neden=""):
         if killed:
             log(f"  {killed} eski process kapatildi.")
         kill_window(window_title)
-        time.sleep(2)
+        time.sleep(3)
         cmd = f'start "{window_title}" cmd /k "cd /d {MILAGOLD_DIR} && py {script_name}"'
         subprocess.Popen(cmd, shell=True, cwd=MILAGOLD_DIR)
         _last_restart[agent_key] = now_ts
@@ -232,12 +238,24 @@ def kontrol_mt5_terminal():
 
 # ─── ANA DONGU ───────────────────────────────────────────────────────────────
 
+def startup_cleanup():
+    """Watchdog baslarken mevcut tum eski agent process ve pencerelerini temizler."""
+    log("[Startup] Eski agent process'leri temizleniyor...")
+    ocr_killed = kill_agent(OCR_SCRIPT)
+    mt5_killed = kill_agent(MT5_SCRIPT)
+    kill_window(OCR_WINDOW_TITLE)
+    kill_window(MT5_WINDOW_TITLE)
+    time.sleep(2)
+    log(f"[Startup] Temizlik tamamlandi. OCR: {ocr_killed} process, MT5: {mt5_killed} process kapatildi.")
+
+
 def main():
     log("=" * 55)
     log("MilaGold Watchdog v2 basliyor...")
     log(f"Check: {CHECK_INTERVAL}sn | Agent timeout: {AGENT_LOG_TIMEOUT}sn | Signal stale: {SIGNAL_STALE_MINUTES}dk")
     log("=" * 55)
     telegram_bildir("[MilaGold Watchdog] Watchdog v2 baslatildi.")
+    startup_cleanup()
 
     while True:
         try:
