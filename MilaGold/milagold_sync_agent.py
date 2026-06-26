@@ -6,6 +6,7 @@ Dashboard bu verileri GitHub API uzerinden okur.
 """
 
 import os
+import sys
 import json
 import time
 import base64
@@ -14,6 +15,7 @@ import logging
 from datetime import datetime
 
 # ── Config ──────────────────────────────────────────────────────────────────
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 try:
     from config import GITHUB_TOKEN
 except ImportError:
