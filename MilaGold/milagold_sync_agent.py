@@ -37,7 +37,7 @@ SYNC_FILES = [
 # Log dosyasindan son N satiri al
 LOG_TAIL_LINES = 80
 SYNC_LOG_FILES = [
-    (os.path.join(BASE_DIR, "milagold_log.txt"),     "data/milagold_log_tail.txt"),
+    (os.path.join(BASE_DIR, "milagold_mt5_log.txt"), "data/milagold_log_tail.txt"),
     (os.path.join(BASE_DIR, "milagold_ocr_log.txt"), "data/milagold_ocr_log_tail.txt"),
 ]
 
