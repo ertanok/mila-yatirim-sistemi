@@ -1768,5 +1768,20 @@
     "sonuc": "Entry",
     "pip": 0.08,
     "profit_usd": 0.14
+  },
+  {
+    "signal_no": null,
+    "direction": "SELL",
+    "entry": 4066.5,
+    "sl": 4071.5,
+    "tp1": 4063.5,
+    "tp2": 4061.5,
+    "tp3": 4058.5,
+    "close_price": 4068.81,
+    "open_time": "2026-06-26 22:23:53",
+    "close_time": "2026-06-27 01:47:31",
+    "sonuc": "Exit",
+    "pip": -2.31,
+    "profit_usd": -2.31
   }
 ]
