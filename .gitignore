@@ -6,6 +6,7 @@ vps_config.env
 *.json
 *.log
 *.png
+data/
 # Python cache
 __pycache__/
 *.pyc
