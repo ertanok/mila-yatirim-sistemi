@@ -155,7 +155,6 @@ def open_trade(direction, entry, sl, tp1, tp2, tp3):
         "type":         order_type,
         "price":        entry,
         "sl":           sl,
-        "tp":           0,      # TP yok — trailing stop TP3 sonrasini da yonetir
         "magic":        999999,
         "comment":      "Mila",
         "type_time":    mt5.ORDER_TIME_GTC,
