@@ -1,18 +1,3 @@
-[2026-06-29 21:55:54] SL guncellendi: ticket=923157220 yeni SL=4017.87
-[2026-06-29 21:56:09] Heartbeat: 1 aktif islem | Bakiye: 939.14 USD
-[2026-06-29 21:56:15] Trailing SL: ticket=923157220 kar=6.72 trailing=4.0 | 4017.87 -> 4017.78
-[2026-06-29 21:56:15] SL guncellendi: ticket=923157220 yeni SL=4017.78
-[2026-06-29 21:56:31] Trailing SL: ticket=923157220 kar=7.14 trailing=3.0 | 4017.78 -> 4016.36
-[2026-06-29 21:56:31] SL guncellendi: ticket=923157220 yeni SL=4016.36
-[2026-06-29 21:56:34] Trailing SL: ticket=923157220 kar=7.23 trailing=3.0 | 4016.36 -> 4016.27
-[2026-06-29 21:56:34] SL guncellendi: ticket=923157220 yeni SL=4016.27
-[2026-06-29 21:56:37] Trailing SL: ticket=923157220 kar=7.38 trailing=3.0 | 4016.27 -> 4016.12
-[2026-06-29 21:56:37] SL guncellendi: ticket=923157220 yeni SL=4016.12
-[2026-06-29 21:56:39] Heartbeat: 1 aktif islem | Bakiye: 939.14 USD
-[2026-06-29 21:56:39] Trailing SL: ticket=923157220 kar=7.86 trailing=3.0 | 4016.12 -> 4015.64
-[2026-06-29 21:56:39] SL guncellendi: ticket=923157220 yeni SL=4015.64
-[2026-06-29 21:56:40] Trailing SL: ticket=923157220 kar=8.35 trailing=2.0 | 4015.64 -> 4014.15
-[2026-06-29 21:56:40] SL guncellendi: ticket=923157220 yeni SL=4014.15
 [2026-06-29 21:56:57] Trailing SL: ticket=923157220 kar=8.42 trailing=2.0 | 4014.15 -> 4014.08
 [2026-06-29 21:56:57] SL guncellendi: ticket=923157220 yeni SL=4014.08
 [2026-06-29 21:56:59] Trailing SL: ticket=923157220 kar=8.62 trailing=2.0 | 4014.08 -> 4013.88
@@ -78,3 +63,18 @@
 [2026-06-29 22:15:43] Heartbeat: 1 aktif islem | Bakiye: 945.76 USD
 [2026-06-29 22:16:13] Heartbeat: 1 aktif islem | Bakiye: 945.76 USD
 [2026-06-29 22:16:18] Yeni sinyal daha kotu entry, sl_level=0. Eski pozisyon tutuldu, sinyal hafizaya alindi: #None@4010.0
+[2026-06-29 22:16:43] Heartbeat: 1 aktif islem | Bakiye: 945.76 USD
+[2026-06-29 22:17:13] Heartbeat: 1 aktif islem | Bakiye: 945.76 USD
+[2026-06-29 22:17:43] Heartbeat: 1 aktif islem | Bakiye: 945.76 USD
+[2026-06-29 22:17:43] TP2 gecildi: ticket=923188703 fiyat=4006.81 TP2=4007.0 -> SL girise tasiniyor, trailing basliyor
+[2026-06-29 22:17:43] SL guncellendi: ticket=923188703 yeni SL=4012.0
+[2026-06-29 22:17:43] Trailing SL: ticket=923188703 kar=5.19 trailing=5.0 | 4012.0 -> 4011.81
+[2026-06-29 22:17:43] SL guncellendi: ticket=923188703 yeni SL=4011.81
+[2026-06-29 22:17:49] Trailing SL: ticket=923188703 kar=5.59 trailing=5.0 | 4011.81 -> 4011.41
+[2026-06-29 22:17:50] SL guncellendi: ticket=923188703 yeni SL=4011.41
+[2026-06-29 22:18:03] Trailing SL: ticket=923188703 kar=5.86 trailing=5.0 | 4011.41 -> 4011.14
+[2026-06-29 22:18:03] SL guncellendi: ticket=923188703 yeni SL=4011.14
+[2026-06-29 22:18:12] Trailing SL: ticket=923188703 kar=6.72 trailing=4.0 | 4011.14 -> 4009.28
+[2026-06-29 22:18:12] SL guncellendi: ticket=923188703 yeni SL=4009.28
+[2026-06-29 22:18:14] Heartbeat: 1 aktif islem | Bakiye: 945.76 USD
+[2026-06-29 22:18:44] Heartbeat: 1 aktif islem | Bakiye: 945.76 USD
