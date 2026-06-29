@@ -1,14 +1,3 @@
-[2026-06-29 21:18:02] Heartbeat: 0 aktif islem | Bakiye: 939.14 USD
-[2026-06-29 21:18:32] Heartbeat: 0 aktif islem | Bakiye: 939.14 USD
-[2026-06-29 21:19:02] Heartbeat: 0 aktif islem | Bakiye: 939.14 USD
-[2026-06-29 21:19:32] Heartbeat: 0 aktif islem | Bakiye: 939.14 USD
-[2026-06-29 21:20:02] Heartbeat: 0 aktif islem | Bakiye: 939.14 USD
-[2026-06-29 21:20:32] Heartbeat: 0 aktif islem | Bakiye: 939.14 USD
-[2026-06-29 21:21:02] Heartbeat: 0 aktif islem | Bakiye: 939.14 USD
-[2026-06-29 21:21:32] Heartbeat: 0 aktif islem | Bakiye: 939.14 USD
-[2026-06-29 21:22:02] Heartbeat: 0 aktif islem | Bakiye: 939.14 USD
-[2026-06-29 21:22:32] Heartbeat: 0 aktif islem | Bakiye: 939.14 USD
-[2026-06-29 21:23:02] Heartbeat: 0 aktif islem | Bakiye: 939.14 USD
 [2026-06-29 21:23:33] Heartbeat: 0 aktif islem | Bakiye: 939.14 USD
 [2026-06-29 21:24:03] Heartbeat: 0 aktif islem | Bakiye: 939.14 USD
 [2026-06-29 21:24:33] Heartbeat: 0 aktif islem | Bakiye: 939.14 USD
@@ -78,3 +67,14 @@
 [2026-06-29 21:52:08] Heartbeat: 1 aktif islem | Bakiye: 939.14 USD
 [2026-06-29 21:52:38] Heartbeat: 1 aktif islem | Bakiye: 939.14 USD
 [2026-06-29 21:53:08] Heartbeat: 1 aktif islem | Bakiye: 939.14 USD
+[2026-06-29 21:53:38] Heartbeat: 1 aktif islem | Bakiye: 939.14 USD
+[2026-06-29 21:54:08] Heartbeat: 1 aktif islem | Bakiye: 939.14 USD
+[2026-06-29 21:54:38] Heartbeat: 1 aktif islem | Bakiye: 939.14 USD
+[2026-06-29 21:54:39] Yeni sinyal daha kotu entry, sl_level=0. Eski pozisyon tutuldu, sinyal hafizaya alindi: #None@4017.5
+[2026-06-29 21:55:09] Heartbeat: 1 aktif islem | Bakiye: 939.14 USD
+[2026-06-29 21:55:37] TP2 gecildi: ticket=923157220 fiyat=4015.36 TP2=4015.5 -> SL girise tasiniyor, trailing basliyor
+[2026-06-29 21:55:37] SL guncellendi: ticket=923157220 yeni SL=4020.5
+[2026-06-29 21:55:37] Trailing SL: ticket=923157220 kar=5.14 trailing=5.0 | 4020.5 -> 4020.36
+[2026-06-29 21:55:37] SL guncellendi: ticket=923157220 yeni SL=4020.36
+[2026-06-29 21:55:38] Trailing SL: ticket=923157220 kar=5.37 trailing=5.0 | 4020.36 -> 4020.13
+[2026-06-29 21:55:38] SL guncellendi: ticket=923157220 yeni SL=4020.13
