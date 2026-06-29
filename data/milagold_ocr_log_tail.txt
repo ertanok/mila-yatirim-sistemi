@@ -1,80 +1,80 @@
-	chromedriver!(No symbol) [0x5bdb2e]
-	chromedriver!(No symbol) [0x5be0ce]
-	chromedriver!(No symbol) [0x5be5ad]
-	chromedriver!GetHandleVerifier [0xa74bba+29aa6a]
-	chromedriver!GetHandleVerifier [0xa70119+295fc9]
-	chromedriver!GetHandleVerifier [0xa9103e+2b6eee]
-	chromedriver!GetHandleVerifier [0x8037f6+296a6]
-	chromedriver!GetHandleVerifier [0x80a91d+307cd]
-	chromedriver!(No symbol) [0x5bd6a6]
-	chromedriver!(No symbol) [0x5bcd02]
-	chromedriver!GetHandleVerifier [0xbdbe1f+401ccf]
-	KERNEL32!BaseThreadInitThunk [0x77106709+19]
-	ntdll!RtlGetFullPathName_UEx [0x7756791d+ad]
-	ntdll!RtlGetFullPathName_UEx [0x775678eb+7b]
-
-2026-06-29 23:27:32,712 | Dongu hatasi: Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
-Stacktrace:
-	chromedriver!GetHandleVerifier [0x7ea543+103f3]
-	chromedriver!GetHandleVerifier [0x7ea584+10434]
-	chromedriver!(No symbol) [0x5ea53e]
-	chromedriver!(No symbol) [0x6283e7]
-	chromedriver!(No symbol) [0x655f86]
-	chromedriver!(No symbol) [0x651192]
-	chromedriver!(No symbol) [0x650b71]
-	chromedriver!(No symbol) [0x5bdb2e]
-	chromedriver!(No symbol) [0x5be0ce]
-	chromedriver!(No symbol) [0x5be5ad]
-	chromedriver!GetHandleVerifier [0xa74bba+29aa6a]
-	chromedriver!GetHandleVerifier [0xa70119+295fc9]
-	chromedriver!GetHandleVerifier [0xa9103e+2b6eee]
-	chromedriver!GetHandleVerifier [0x8037f6+296a6]
-	chromedriver!GetHandleVerifier [0x80a91d+307cd]
-	chromedriver!(No symbol) [0x5bd6a6]
-	chromedriver!(No symbol) [0x5bcd02]
-	chromedriver!GetHandleVerifier [0xbdbe1f+401ccf]
-	KERNEL32!BaseThreadInitThunk [0x77106709+19]
-	ntdll!RtlGetFullPathName_UEx [0x7756791d+ad]
-	ntdll!RtlGetFullPathName_UEx [0x775678eb+7b]
-
-2026-06-29 23:27:35,716 | Dongu hatasi: Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
-Stacktrace:
-	chromedriver!GetHandleVerifier [0x7ea543+103f3]
-	chromedriver!GetHandleVerifier [0x7ea584+10434]
-	chromedriver!(No symbol) [0x5ea53e]
-	chromedriver!(No symbol) [0x6283e7]
-	chromedriver!(No symbol) [0x655f86]
-	chromedriver!(No symbol) [0x651192]
-	chromedriver!(No symbol) [0x650b71]
-	chromedriver!(No symbol) [0x5bdb2e]
-	chromedriver!(No symbol) [0x5be0ce]
-	chromedriver!(No symbol) [0x5be5ad]
-	chromedriver!GetHandleVerifier [0xa74bba+29aa6a]
-	chromedriver!GetHandleVerifier [0xa70119+295fc9]
-	chromedriver!GetHandleVerifier [0xa9103e+2b6eee]
-	chromedriver!GetHandleVerifier [0x8037f6+296a6]
-	chromedriver!GetHandleVerifier [0x80a91d+307cd]
-	chromedriver!(No symbol) [0x5bd6a6]
-	chromedriver!(No symbol) [0x5bcd02]
-	chromedriver!GetHandleVerifier [0xbdbe1f+401ccf]
-	KERNEL32!BaseThreadInitThunk [0x77106709+19]
-	ntdll!RtlGetFullPathName_UEx [0x7756791d+ad]
-	ntdll!RtlGetFullPathName_UEx [0x775678eb+7b]
-
-2026-06-29 23:31:45,596 | EasyOCR yukleniyor...
-2026-06-29 23:31:45,597 | Using CPU. Note: This module is much faster with a GPU.
-2026-06-29 23:31:49,184 | EasyOCR hazir.
-2026-06-29 23:31:49,184 | ==================================================
-2026-06-29 23:31:49,184 | MilaGold OCR Agent - Signal GPT versiyonu
-2026-06-29 23:31:49,184 | ==================================================
-2026-06-29 23:31:49,261 | Chromedriver is already installed.
-2026-06-29 23:31:51,268 | Signal GPT sayfasina gidildi.
-2026-06-29 23:31:51,268 | Sayfa yukleniyor, 15 saniye bekleniyor...
-2026-06-29 23:32:06,565 | Baslangic screenshot alindi.
-2026-06-29 23:32:06,566 | Ilk okuma oncesi 5 saniye bekleniyor...
-2026-06-29 23:32:11,567 | Okuma dongusune giriliyor...
-2026-06-29 23:32:12,575 | GOLD karti okunamadi (1). Ham: ['AII Assets', 'Disclaimer']
-2026-06-29 23:32:16,821 | Sinyal tarihi okundu: 30/06/2026 03:18
-2026-06-29 23:32:16,821 | Sinyal bekleniyor... Status:None Entry:None
-2026-06-29 23:32:19,644 | Sinyal tarihi okundu: 30/06/2026 03:18
-2026-06-29 23:32:19,645 | Sinyal bekleniyor... Status:None Entry:None
+2026-06-29 23:32:33,927 | Sinyal tarihi okundu: 30/06/2026 03:18
+2026-06-29 23:32:33,928 | Sinyal bekleniyor... Status:None Entry:None
+2026-06-29 23:32:39,293 | Sinyal tarihi okundu: 30/06/2026 03:18
+2026-06-29 23:32:39,294 | Sinyal bekleniyor... Status:None Entry:None
+2026-06-29 23:32:42,019 | Sinyal tarihi okundu: 30/06/2026 03:18
+2026-06-29 23:32:42,020 | Sinyal bekleniyor... Status:None Entry:None
+2026-06-29 23:32:44,703 | Sinyal tarihi okundu: 30/06/2026 03:18
+2026-06-29 23:32:44,704 | Sinyal bekleniyor... Status:None Entry:None
+2026-06-29 23:32:47,557 | Sinyal tarihi okundu: 30/06/2026 03:18
+2026-06-29 23:32:47,558 | Sinyal bekleniyor... Status:None Entry:None
+2026-06-29 23:32:50,405 | Sinyal tarihi okundu: 30/06/2026 03:18
+2026-06-29 23:32:50,406 | Sinyal bekleniyor... Status:None Entry:None
+2026-06-29 23:32:53,133 | Sinyal tarihi okundu: 30/06/2026 03:18
+2026-06-29 23:32:53,134 | Sinyal bekleniyor... Status:None Entry:None
+2026-06-29 23:32:55,894 | Sinyal tarihi okundu: 30/06/2026 03:18
+2026-06-29 23:32:55,895 | Sinyal bekleniyor... Status:None Entry:None
+2026-06-29 23:32:58,699 | Sinyal tarihi okundu: 30/06/2026 03:18
+2026-06-29 23:32:58,699 | Sinyal bekleniyor... Status:None Entry:None
+2026-06-29 23:33:01,560 | Sinyal tarihi okundu: 30/06/2026 03:18
+2026-06-29 23:33:01,561 | Sinyal bekleniyor... Status:None Entry:None
+2026-06-29 23:33:04,335 | Sinyal tarihi okundu: 30/06/2026 03:18
+2026-06-29 23:33:04,336 | Sinyal bekleniyor... Status:None Entry:None
+2026-06-29 23:33:07,114 | Sinyal tarihi okundu: 30/06/2026 03:18
+2026-06-29 23:33:07,114 | Sinyal bekleniyor... Status:None Entry:None
+2026-06-29 23:33:09,837 | Sinyal tarihi okundu: 30/06/2026 03:18
+2026-06-29 23:33:09,837 | Sinyal bekleniyor... Status:None Entry:None
+2026-06-29 23:33:12,555 | Sinyal tarihi okundu: 30/06/2026 03:18
+2026-06-29 23:33:12,555 | Sinyal bekleniyor... Status:None Entry:None
+2026-06-29 23:33:15,384 | Sinyal tarihi okundu: 30/06/2026 03:18
+2026-06-29 23:33:15,385 | Sinyal bekleniyor... Status:None Entry:None
+2026-06-29 23:33:18,211 | Sinyal tarihi okundu: 30/06/2026 03:18
+2026-06-29 23:33:18,211 | Sinyal bekleniyor... Status:None Entry:None
+2026-06-29 23:33:21,159 | Sinyal tarihi okundu: 30/06/2026 03:18
+2026-06-29 23:33:21,160 | Sinyal bekleniyor... Status:None Entry:None
+2026-06-29 23:33:23,964 | Sinyal tarihi okundu: 30/06/2026 03:18
+2026-06-29 23:33:23,965 | Sinyal bekleniyor... Status:None Entry:None
+2026-06-29 23:33:26,780 | Sinyal tarihi okundu: 30/06/2026 03:18
+2026-06-29 23:33:26,781 | Sinyal bekleniyor... Status:None Entry:None
+2026-06-29 23:33:29,522 | Sinyal tarihi okundu: 30/06/2026 03:18
+2026-06-29 23:33:29,523 | Sinyal bekleniyor... Status:None Entry:None
+2026-06-29 23:33:32,453 | Sinyal tarihi okundu: 30/06/2026 03:18
+2026-06-29 23:33:32,454 | Sinyal bekleniyor... Status:None Entry:None
+2026-06-29 23:33:35,246 | Sinyal tarihi okundu: 30/06/2026 03:18
+2026-06-29 23:33:35,246 | Sinyal bekleniyor... Status:None Entry:None
+2026-06-29 23:33:37,992 | Sinyal tarihi okundu: 30/06/2026 03:18
+2026-06-29 23:33:37,993 | Sinyal bekleniyor... Status:None Entry:None
+2026-06-29 23:33:40,893 | Sinyal tarihi okundu: 30/06/2026 03:18
+2026-06-29 23:33:40,893 | Sinyal bekleniyor... Status:None Entry:None
+2026-06-29 23:33:43,740 | Sinyal tarihi okundu: 30/06/2026 03:18
+2026-06-29 23:33:43,740 | Sinyal bekleniyor... Status:None Entry:None
+2026-06-29 23:33:46,573 | Sinyal tarihi okundu: 30/06/2026 03:18
+2026-06-29 23:33:46,573 | Sinyal bekleniyor... Status:None Entry:None
+2026-06-29 23:33:49,288 | Sinyal tarihi okundu: 30/06/2026 03:18
+2026-06-29 23:33:49,289 | Sinyal bekleniyor... Status:None Entry:None
+2026-06-29 23:33:52,185 | Sinyal tarihi okundu: 30/06/2026 03:18
+2026-06-29 23:33:52,185 | Sinyal bekleniyor... Status:None Entry:None
+2026-06-29 23:33:54,935 | Sinyal tarihi okundu: 30/06/2026 03:18
+2026-06-29 23:33:54,936 | Sinyal bekleniyor... Status:None Entry:None
+2026-06-29 23:33:57,849 | Sinyal tarihi okundu: 30/06/2026 03:18
+2026-06-29 23:33:57,849 | Sinyal bekleniyor... Status:None Entry:None
+2026-06-29 23:34:00,903 | Sinyal tarihi okundu: 30/06/2026 03:18
+2026-06-29 23:34:00,903 | Sinyal bekleniyor... Status:None Entry:None
+2026-06-29 23:34:03,741 | Sinyal tarihi okundu: 30/06/2026 03:18
+2026-06-29 23:34:03,741 | Sinyal bekleniyor... Status:None Entry:None
+2026-06-29 23:34:06,784 | Sinyal tarihi okundu: 30/06/2026 03:18
+2026-06-29 23:34:06,785 | Sinyal bekleniyor... Status:None Entry:None
+2026-06-29 23:34:09,579 | Sinyal tarihi okundu: 30/06/2026 03:18
+2026-06-29 23:34:09,580 | Sinyal bekleniyor... Status:None Entry:None
+2026-06-29 23:34:12,393 | Sinyal tarihi okundu: 30/06/2026 03:18
+2026-06-29 23:34:12,394 | Sinyal bekleniyor... Status:None Entry:None
+2026-06-29 23:34:15,138 | Sinyal tarihi okundu: 30/06/2026 03:18
+2026-06-29 23:34:15,138 | Sinyal bekleniyor... Status:None Entry:None
+2026-06-29 23:34:17,886 | Sinyal tarihi okundu: 30/06/2026 03:18
+2026-06-29 23:34:17,887 | Sinyal bekleniyor... Status:None Entry:None
+2026-06-29 23:34:20,626 | Sinyal tarihi okundu: 30/06/2026 03:18
+2026-06-29 23:34:20,627 | Sinyal bekleniyor... Status:None Entry:None
+2026-06-29 23:34:23,316 | Sinyal tarihi okundu: 30/06/2026 03:18
+2026-06-29 23:34:23,316 | Sinyal bekleniyor... Status:None Entry:None
+2026-06-29 23:34:26,175 | Sinyal tarihi okundu: 30/06/2026 03:18
+2026-06-29 23:34:26,175 | Sinyal bekleniyor... Status:None Entry:None
