@@ -1,1 +1,14 @@
-{"signal_no": null, "direction": "SELL", "entry": 4022.0, "sl": 4027.0, "tp1": 4019.0, "tp2": 4017.0, "tp3": 4014.0, "status": "RUNNING", "time": "20:52:37", "processed": true, "confirmed": true, "cancel": false}
+{
+  "signal_no": null,
+  "direction": "SELL",
+  "entry": 4023.0,
+  "sl": 4028.0,
+  "tp1": 4020.0,
+  "tp2": 4018.0,
+  "tp3": 4015.0,
+  "status": "RUNNING",
+  "time": "21:14:41",
+  "processed": true,
+  "confirmed": true,
+  "cancel": false
+}
