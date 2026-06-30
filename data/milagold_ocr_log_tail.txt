@@ -1,12 +1,5 @@
-	chromedriver!GetHandleVerifier [0x116a91d+307cd]
-	chromedriver!(No symbol) [0xf1d6a6]
-	chromedriver!(No symbol) [0xf1cd02]
-	chromedriver!GetHandleVerifier [0x153be1f+401ccf]
-	KERNEL32!BaseThreadInitThunk [0x75bf6709+19]
-	ntdll!RtlGetFullPathName_UEx [0x7719791d+ad]
-	ntdll!RtlGetFullPathName_UEx [0x771978eb+7b]
 
-2026-06-30 23:05:39,037 | Dongu hatasi: Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
+2026-06-30 23:06:30,205 | Dongu hatasi: Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
 Stacktrace:
 	chromedriver!GetHandleVerifier [0x114a543+103f3]
 	chromedriver!GetHandleVerifier [0x114a584+10434]
@@ -30,7 +23,7 @@ Stacktrace:
 	ntdll!RtlGetFullPathName_UEx [0x7719791d+ad]
 	ntdll!RtlGetFullPathName_UEx [0x771978eb+7b]
 
-2026-06-30 23:05:41,408 | Dongu hatasi: Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
+2026-06-30 23:06:32,511 | Dongu hatasi: Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
 Stacktrace:
 	chromedriver!GetHandleVerifier [0x114a543+103f3]
 	chromedriver!GetHandleVerifier [0x114a584+10434]
@@ -54,7 +47,7 @@ Stacktrace:
 	ntdll!RtlGetFullPathName_UEx [0x7719791d+ad]
 	ntdll!RtlGetFullPathName_UEx [0x771978eb+7b]
 
-2026-06-30 23:05:42,042 | Dongu hatasi: Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
+2026-06-30 23:06:33,210 | Dongu hatasi: Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
 Stacktrace:
 	chromedriver!GetHandleVerifier [0x114a543+103f3]
 	chromedriver!GetHandleVerifier [0x114a584+10434]
@@ -77,3 +70,11 @@ Stacktrace:
 	KERNEL32!BaseThreadInitThunk [0x75bf6709+19]
 	ntdll!RtlGetFullPathName_UEx [0x7719791d+ad]
 	ntdll!RtlGetFullPathName_UEx [0x771978eb+7b]
+
+2026-06-30 23:06:44,233 | EasyOCR yukleniyor...
+2026-06-30 23:06:44,234 | Using CPU. Note: This module is much faster with a GPU.
+2026-06-30 23:06:47,020 | EasyOCR hazir.
+2026-06-30 23:06:47,020 | ==================================================
+2026-06-30 23:06:47,021 | MilaGold OCR Agent - Signal GPT versiyonu
+2026-06-30 23:06:47,021 | ==================================================
+2026-06-30 23:06:47,106 | Chromedriver is already installed.
