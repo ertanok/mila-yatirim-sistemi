@@ -1,73 +1,3 @@
-	chromedriver!GetHandleVerifier [0x13f103e+2b6eee]
-	chromedriver!GetHandleVerifier [0x11637f6+296a6]
-	chromedriver!GetHandleVerifier [0x116a91d+307cd]
-	chromedriver!(No symbol) [0xf1d6a6]
-	chromedriver!(No symbol) [0xf1cd02]
-	chromedriver!GetHandleVerifier [0x153be1f+401ccf]
-	KERNEL32!BaseThreadInitThunk [0x75bf6709+19]
-	ntdll!RtlGetFullPathName_UEx [0x7719791d+ad]
-	ntdll!RtlGetFullPathName_UEx [0x771978eb+7b]
-
-2026-06-30 23:06:44,233 | EasyOCR yukleniyor...
-2026-06-30 23:06:44,234 | Using CPU. Note: This module is much faster with a GPU.
-2026-06-30 23:06:47,020 | EasyOCR hazir.
-2026-06-30 23:06:47,020 | ==================================================
-2026-06-30 23:06:47,021 | MilaGold OCR Agent - Signal GPT versiyonu
-2026-06-30 23:06:47,021 | ==================================================
-2026-06-30 23:06:47,106 | Chromedriver is already installed.
-2026-06-30 23:15:57,024 | EasyOCR yukleniyor...
-2026-06-30 23:15:57,025 | Using CPU. Note: This module is much faster with a GPU.
-2026-06-30 23:15:59,908 | EasyOCR hazir.
-2026-06-30 23:15:59,908 | ==================================================
-2026-06-30 23:15:59,908 | MilaGold OCR Agent - Signal GPT versiyonu
-2026-06-30 23:15:59,908 | ==================================================
-2026-06-30 23:16:00,029 | Chromedriver is already installed.
-2026-06-30 23:36:59,354 | EasyOCR yukleniyor...
-2026-06-30 23:36:59,356 | Using CPU. Note: This module is much faster with a GPU.
-2026-06-30 23:37:02,434 | EasyOCR hazir.
-2026-06-30 23:37:02,435 | ==================================================
-2026-06-30 23:37:02,435 | MilaGold OCR Agent - Signal GPT versiyonu
-2026-06-30 23:37:02,436 | ==================================================
-2026-06-30 23:37:02,539 | Chromedriver is already installed.
-2026-06-30 23:46:10,268 | EasyOCR yukleniyor...
-2026-06-30 23:46:10,269 | Using CPU. Note: This module is much faster with a GPU.
-2026-06-30 23:46:13,256 | EasyOCR hazir.
-2026-06-30 23:46:13,256 | ==================================================
-2026-06-30 23:46:13,257 | MilaGold OCR Agent - Signal GPT versiyonu
-2026-06-30 23:46:13,257 | ==================================================
-2026-06-30 23:46:13,358 | Chromedriver is already installed.
-2026-07-01 00:16:21,628 | EasyOCR yukleniyor...
-2026-07-01 00:16:21,629 | Using CPU. Note: This module is much faster with a GPU.
-2026-07-01 00:16:24,624 | EasyOCR hazir.
-2026-07-01 00:16:24,624 | ==================================================
-2026-07-01 00:16:24,624 | MilaGold OCR Agent - Signal GPT versiyonu
-2026-07-01 00:16:24,624 | ==================================================
-2026-07-01 00:16:24,717 | Chromedriver is already installed.
-2026-07-01 00:46:33,601 | EasyOCR yukleniyor...
-2026-07-01 00:46:33,602 | Using CPU. Note: This module is much faster with a GPU.
-2026-07-01 00:46:37,558 | EasyOCR hazir.
-2026-07-01 00:46:37,558 | ==================================================
-2026-07-01 00:46:37,559 | MilaGold OCR Agent - Signal GPT versiyonu
-2026-07-01 00:46:37,559 | ==================================================
-2026-07-01 00:46:37,653 | Chromedriver is already installed.
-2026-07-01 01:16:47,940 | EasyOCR yukleniyor...
-2026-07-01 01:16:47,941 | Using CPU. Note: This module is much faster with a GPU.
-2026-07-01 01:16:52,064 | EasyOCR hazir.
-2026-07-01 01:16:52,064 | ==================================================
-2026-07-01 01:16:52,065 | MilaGold OCR Agent - Signal GPT versiyonu
-2026-07-01 01:16:52,065 | ==================================================
-2026-07-01 01:16:52,155 | Chromedriver is already installed.
-2026-07-01 01:47:00,819 | EasyOCR yukleniyor...
-2026-07-01 01:47:00,820 | Using CPU. Note: This module is much faster with a GPU.
-2026-07-01 01:47:05,027 | EasyOCR hazir.
-2026-07-01 01:47:05,027 | ==================================================
-2026-07-01 01:47:05,028 | MilaGold OCR Agent - Signal GPT versiyonu
-2026-07-01 01:47:05,028 | ==================================================
-2026-07-01 01:47:05,115 | Chromedriver is already installed.
-2026-07-01 02:06:35,878 | EasyOCR yukleniyor...
-2026-07-01 02:06:35,880 | Using CPU. Note: This module is much faster with a GPU.
-2026-07-01 02:06:39,099 | EasyOCR hazir.
-2026-07-01 02:06:39,099 | ==================================================
 2026-07-01 02:06:39,099 | MilaGold OCR Agent - Signal GPT versiyonu
 2026-07-01 02:06:39,099 | ==================================================
 2026-07-01 02:06:40,131 | Chromedriver is already installed.
@@ -78,3 +8,73 @@
 2026-07-01 02:36:46,569 | MilaGold OCR Agent - Signal GPT versiyonu
 2026-07-01 02:36:46,569 | ==================================================
 2026-07-01 02:36:47,371 | Chromedriver is already installed.
+2026-07-01 02:40:43,051 | EasyOCR yukleniyor...
+2026-07-01 02:40:43,052 | Using CPU. Note: This module is much faster with a GPU.
+2026-07-01 02:40:47,275 | EasyOCR hazir.
+2026-07-01 02:40:47,276 | ==================================================
+2026-07-01 02:40:47,276 | MilaGold OCR Agent - Signal GPT versiyonu
+2026-07-01 02:40:47,276 | ==================================================
+2026-07-01 02:40:47,363 | Chromedriver is already installed.
+2026-07-01 02:40:48,711 | Signal GPT sayfasina gidildi.
+2026-07-01 02:40:48,711 | Sayfa yukleniyor, 15 saniye bekleniyor...
+2026-07-01 02:40:54,910 | EasyOCR yukleniyor...
+2026-07-01 02:40:54,911 | Using CPU. Note: This module is much faster with a GPU.
+2026-07-01 02:40:59,499 | EasyOCR hazir.
+2026-07-01 02:40:59,499 | ==================================================
+2026-07-01 02:40:59,499 | MilaGold OCR Agent - Signal GPT versiyonu
+2026-07-01 02:40:59,500 | ==================================================
+2026-07-01 02:40:59,591 | Chromedriver is already installed.
+2026-07-01 02:41:00,717 | Signal GPT sayfasina gidildi.
+2026-07-01 02:41:00,718 | Sayfa yukleniyor, 15 saniye bekleniyor...
+2026-07-01 02:41:03,972 | Baslangic screenshot alindi.
+2026-07-01 02:41:03,973 | Ilk okuma oncesi 5 saniye bekleniyor...
+2026-07-01 02:41:08,975 | Okuma dongusune giriliyor...
+2026-07-01 02:41:10,660 | GOLD karti okunamadi (1). Ham: ['Disclaimer']
+2026-07-01 02:41:13,415 | GOLD karti okunamadi (2). Ham: ['Disclaimer']
+2026-07-01 02:41:15,999 | Baslangic screenshot alindi.
+2026-07-01 02:41:16,000 | Ilk okuma oncesi 5 saniye bekleniyor...
+2026-07-01 02:41:16,228 | GOLD karti okunamadi (3). Ham: ['Disclaimer']
+2026-07-01 02:41:19,490 | GOLD karti okunamadi (4). Ham: ['Disclaimer']
+2026-07-01 02:41:21,001 | Okuma dongusune giriliyor...
+2026-07-01 02:41:21,840 | GOLD karti okunamadi (1). Ham: ['Disclaimer']
+2026-07-01 02:41:22,392 | GOLD karti okunamadi (5). Ham: ['Disclaimer']
+2026-07-01 02:41:24,660 | GOLD karti okunamadi (2). Ham: ['Disclaimer']
+2026-07-01 02:41:25,249 | GOLD karti okunamadi (6). Ham: ['Disclaimer']
+2026-07-01 02:41:28,671 | Dongu hatasi: 'NoneType' object has no attribute 'shape'
+2026-07-01 02:41:29,125 | Sinyal tarihi okundu: 01/07/2026 06:30
+2026-07-01 02:41:29,125 | Olasi yeni sinyal, HEMEN yazildi (dogrulama bekleniyor 1/2): #None | SELL @ 4010.0
+2026-07-01 02:41:29,126 | signal.json yazildi.
+2026-07-01 02:41:33,086 | Sinyal tarihi okundu: 01/07/2026 06:09
+2026-07-01 02:41:33,086 | Sinyal bekleniyor... Status:None Entry:None
+2026-07-01 02:41:33,371 | Sinyal tarihi okundu: 01/07/2026 06:09
+2026-07-01 02:41:33,371 | Dongu hatasi: unsupported operand type(s) for -: 'NoneType' and 'float'
+2026-07-01 02:41:36,328 | Sinyal tarihi okundu: 01/07/2026 06:09
+2026-07-01 02:41:36,329 | Sinyal bekleniyor... Status:None Entry:None
+2026-07-01 02:41:37,293 | Sinyal tarihi okundu: 01/07/2026 06:09
+2026-07-01 02:41:37,293 | Dongu hatasi: unsupported operand type(s) for -: 'NoneType' and 'float'
+2026-07-01 02:41:39,301 | Sinyal tarihi okundu: 01/07/2026 06:09
+2026-07-01 02:41:39,301 | Sinyal bekleniyor... Status:None Entry:None
+2026-07-01 02:41:41,211 | Sinyal tarihi okundu: 01/07/2026 06:09
+2026-07-01 02:41:41,211 | Dongu hatasi: unsupported operand type(s) for -: 'NoneType' and 'float'
+2026-07-01 02:41:42,253 | Sinyal tarihi okundu: 01/07/2026 06:09
+2026-07-01 02:41:42,253 | Sinyal bekleniyor... Status:None Entry:None
+2026-07-01 02:41:45,808 | Sinyal tarihi okundu: 01/07/2026 06:09
+2026-07-01 02:41:45,809 | Sinyal bekleniyor... Status:None Entry:None
+2026-07-01 02:41:46,573 | Sinyal tarihi okundu: 01/07/2026 06:09
+2026-07-01 02:41:46,573 | Dongu hatasi: unsupported operand type(s) for -: 'NoneType' and 'float'
+2026-07-01 02:41:49,262 | Sinyal tarihi okundu: 01/07/2026 02:09
+2026-07-01 02:41:49,262 | Sinyal bekleniyor... Status:None Entry:None
+2026-07-01 02:41:50,938 | Sinyal tarihi okundu: 01/07/2026 02:09
+2026-07-01 02:41:50,939 | Dongu hatasi: unsupported operand type(s) for -: 'NoneType' and 'float'
+2026-07-01 02:41:52,731 | Sinyal tarihi okundu: 30/06/2026 22:30
+2026-07-01 02:41:52,732 | Sinyal bekleniyor... Status:None Entry:None
+2026-07-01 02:41:56,065 | Sinyal tarihi okundu: 30/06/2026 22:30
+2026-07-01 02:41:56,065 | Sinyal bekleniyor... Status:None Entry:None
+2026-07-01 02:41:56,242 | Sinyal tarihi okundu: 30/06/2026 22:30
+2026-07-01 02:41:56,243 | Dongu hatasi: unsupported operand type(s) for -: 'NoneType' and 'float'
+2026-07-01 02:41:59,568 | Sinyal tarihi okundu: 30/06/2026 17:56
+2026-07-01 02:41:59,568 | Sinyal bekleniyor... Status:None Entry:None
+2026-07-01 02:42:01,542 | Sinyal tarihi okundu: 30/06/2026 17:56
+2026-07-01 02:42:01,543 | Dongu hatasi: unsupported operand type(s) for -: 'NoneType' and 'float'
+2026-07-01 02:42:02,973 | Sinyal tarihi okundu: 30/06/2026 17:56
+2026-07-01 02:42:02,974 | Sinyal bekleniyor... Status:None Entry:None
