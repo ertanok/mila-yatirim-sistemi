@@ -1,10 +1,3 @@
-2026-06-30 17:07:21,207 | Olasi yeni sinyal, HEMEN yazildi (dogrulama bekleniyor 1/2): 4026.5 -> 4016.0
-2026-06-30 17:07:21,209 | signal.json yazildi.
-2026-06-30 17:07:24,951 | Sinyal tarihi okundu: 30/06/2026 19:38
-2026-06-30 17:07:24,951 | Yeni sinyal DOGRULANDI (2 okuma): entry=4016.0 pending=4016.0
-2026-06-30 17:07:29,140 | Sinyal tarihi okundu: 30/06/2026 19:38
-2026-06-30 17:07:29,140 | Takip: SELL @ 4016.0 | Status:RUNNING
-2026-06-30 17:07:33,417 | Sinyal tarihi okundu: 30/06/2026 19:38
 2026-06-30 17:07:33,417 | Takip: SELL @ 4016.0 | Status:RUNNING
 2026-06-30 17:07:37,696 | Sinyal tarihi okundu: 30/06/2026 19:38
 2026-06-30 17:07:37,701 | Takip: SELL @ 4016.0 | Status:RUNNING
@@ -78,3 +71,10 @@
 2026-06-30 17:42:17,156 | MilaGold OCR Agent - Signal GPT versiyonu
 2026-06-30 17:42:17,156 | ==================================================
 2026-06-30 17:42:19,024 | Chromedriver is already installed.
+2026-06-30 18:12:29,304 | EasyOCR yukleniyor...
+2026-06-30 18:12:29,305 | Using CPU. Note: This module is much faster with a GPU.
+2026-06-30 18:12:32,246 | EasyOCR hazir.
+2026-06-30 18:12:32,246 | ==================================================
+2026-06-30 18:12:32,247 | MilaGold OCR Agent - Signal GPT versiyonu
+2026-06-30 18:12:32,247 | ==================================================
+2026-06-30 18:12:32,396 | Chromedriver is already installed.
