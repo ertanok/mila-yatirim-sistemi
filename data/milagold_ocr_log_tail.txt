@@ -6,7 +6,7 @@
 	ntdll!RtlGetFullPathName_UEx [0x7719791d+ad]
 	ntdll!RtlGetFullPathName_UEx [0x771978eb+7b]
 
-2026-06-30 22:55:03,876 | Dongu hatasi: Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
+2026-06-30 22:57:10,333 | Dongu hatasi: Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
 Stacktrace:
 	chromedriver!GetHandleVerifier [0x114a543+103f3]
 	chromedriver!GetHandleVerifier [0x114a584+10434]
@@ -30,7 +30,7 @@ Stacktrace:
 	ntdll!RtlGetFullPathName_UEx [0x7719791d+ad]
 	ntdll!RtlGetFullPathName_UEx [0x771978eb+7b]
 
-2026-06-30 22:55:05,758 | Dongu hatasi: Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
+2026-06-30 22:57:12,538 | Dongu hatasi: Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
 Stacktrace:
 	chromedriver!GetHandleVerifier [0x114a543+103f3]
 	chromedriver!GetHandleVerifier [0x114a584+10434]
@@ -54,7 +54,7 @@ Stacktrace:
 	ntdll!RtlGetFullPathName_UEx [0x7719791d+ad]
 	ntdll!RtlGetFullPathName_UEx [0x771978eb+7b]
 
-2026-06-30 22:55:06,883 | Dongu hatasi: Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
+2026-06-30 22:57:13,346 | Dongu hatasi: Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
 Stacktrace:
 	chromedriver!GetHandleVerifier [0x114a543+103f3]
 	chromedriver!GetHandleVerifier [0x114a584+10434]
