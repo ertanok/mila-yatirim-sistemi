@@ -1,10 +1,3 @@
-	chromedriver!GetHandleVerifier [0x13d0119+295fc9]
-	chromedriver!GetHandleVerifier [0x13f103e+2b6eee]
-	chromedriver!GetHandleVerifier [0x11637f6+296a6]
-	chromedriver!GetHandleVerifier [0x116a91d+307cd]
-	chromedriver!(No symbol) [0xf1d6a6]
-	chromedriver!(No symbol) [0xf1cd02]
-	chromedriver!GetHandleVerifier [0x153be1f+401ccf]
 	KERNEL32!BaseThreadInitThunk [0x75bf6709+19]
 	ntdll!RtlGetFullPathName_UEx [0x7719791d+ad]
 	ntdll!RtlGetFullPathName_UEx [0x771978eb+7b]
@@ -78,3 +71,10 @@ Stacktrace:
 2026-06-30 23:37:02,435 | MilaGold OCR Agent - Signal GPT versiyonu
 2026-06-30 23:37:02,436 | ==================================================
 2026-06-30 23:37:02,539 | Chromedriver is already installed.
+2026-06-30 23:46:10,268 | EasyOCR yukleniyor...
+2026-06-30 23:46:10,269 | Using CPU. Note: This module is much faster with a GPU.
+2026-06-30 23:46:13,256 | EasyOCR hazir.
+2026-06-30 23:46:13,256 | ==================================================
+2026-06-30 23:46:13,257 | MilaGold OCR Agent - Signal GPT versiyonu
+2026-06-30 23:46:13,257 | ==================================================
+2026-06-30 23:46:13,358 | Chromedriver is already installed.
