@@ -1,5 +1,3 @@
-[2026-06-30 22:06:29] Trailing SL: ticket=924774648 kar=6.90 trailing=4.0 | 4029.27 -> 4029.11
-[2026-06-30 22:06:29] SL guncellendi: ticket=924774648 yeni SL=4029.11
 [2026-06-30 22:06:43] Trailing SL: ticket=924774648 kar=6.99 trailing=4.0 | 4029.11 -> 4029.02
 [2026-06-30 22:06:43] SL guncellendi: ticket=924774648 yeni SL=4029.02
 [2026-06-30 22:06:44] Trailing SL: ticket=924774648 kar=7.01 trailing=3.0 | 4029.02 -> 4028.0
@@ -78,3 +76,5 @@
 [2026-06-30 22:32:18] Baslangic bakiyesi: 927.9 USD
 [2026-06-30 22:32:18] Hazir. 0 aktif islem devralindi. signal.json bekleniyor...
 [2026-06-30 22:32:49] Heartbeat: 0 aktif islem | Bakiye: 927.90 USD
+[2026-06-30 22:33:19] Heartbeat: 0 aktif islem | Bakiye: 927.90 USD
+[2026-06-30 22:33:49] Heartbeat: 0 aktif islem | Bakiye: 927.90 USD
