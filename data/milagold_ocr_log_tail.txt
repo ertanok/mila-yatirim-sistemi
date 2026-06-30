@@ -1,10 +1,3 @@
-	KERNEL32!BaseThreadInitThunk [0x75bf6709+19]
-	ntdll!RtlGetFullPathName_UEx [0x7719791d+ad]
-	ntdll!RtlGetFullPathName_UEx [0x771978eb+7b]
-
-2026-06-30 23:06:32,511 | Dongu hatasi: Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
-Stacktrace:
-	chromedriver!GetHandleVerifier [0x114a543+103f3]
 	chromedriver!GetHandleVerifier [0x114a584+10434]
 	chromedriver!(No symbol) [0xf4a53e]
 	chromedriver!(No symbol) [0xf883e7]
@@ -78,3 +71,10 @@ Stacktrace:
 2026-06-30 23:46:13,257 | MilaGold OCR Agent - Signal GPT versiyonu
 2026-06-30 23:46:13,257 | ==================================================
 2026-06-30 23:46:13,358 | Chromedriver is already installed.
+2026-07-01 00:16:21,628 | EasyOCR yukleniyor...
+2026-07-01 00:16:21,629 | Using CPU. Note: This module is much faster with a GPU.
+2026-07-01 00:16:24,624 | EasyOCR hazir.
+2026-07-01 00:16:24,624 | ==================================================
+2026-07-01 00:16:24,624 | MilaGold OCR Agent - Signal GPT versiyonu
+2026-07-01 00:16:24,624 | ==================================================
+2026-07-01 00:16:24,717 | Chromedriver is already installed.
