@@ -1,38 +1,3 @@
-2026-07-01 07:41:53,812 | EasyOCR yukleniyor...
-2026-07-01 07:41:53,813 | Using CPU. Note: This module is much faster with a GPU.
-2026-07-01 07:41:57,872 | EasyOCR hazir.
-2026-07-01 07:41:57,873 | ==================================================
-2026-07-01 07:41:57,873 | MilaGold OCR Agent - Signal GPT versiyonu
-2026-07-01 07:41:57,873 | ==================================================
-2026-07-01 07:41:57,954 | Chromedriver is already installed.
-2026-07-01 07:41:58,455 | The chromedriver version (150.0.7871.46) detected in PATH at C:\Users\Administrator\AppData\Local\Programs\Python\Python314\Lib\site-packages\chromedriver_autoinstaller\150\chromedriver.exe might not be compatible with the detected chrome version (149.0.7827.201); currently, chromedriver 149.0.7827.155 is recommended for chrome 149.*, so it is advised to delete the driver in PATH and retry
-2026-07-01 08:12:09,952 | EasyOCR yukleniyor...
-2026-07-01 08:12:09,953 | Using CPU. Note: This module is much faster with a GPU.
-2026-07-01 08:12:14,071 | EasyOCR hazir.
-2026-07-01 08:12:14,071 | ==================================================
-2026-07-01 08:12:14,072 | MilaGold OCR Agent - Signal GPT versiyonu
-2026-07-01 08:12:14,072 | ==================================================
-2026-07-01 08:12:14,155 | Chromedriver is already installed.
-2026-07-01 08:12:14,487 | The chromedriver version (150.0.7871.46) detected in PATH at C:\Users\Administrator\AppData\Local\Programs\Python\Python314\Lib\site-packages\chromedriver_autoinstaller\150\chromedriver.exe might not be compatible with the detected chrome version (149.0.7827.201); currently, chromedriver 149.0.7827.155 is recommended for chrome 149.*, so it is advised to delete the driver in PATH and retry
-2026-07-01 08:42:27,497 | EasyOCR yukleniyor...
-2026-07-01 08:42:27,498 | Using CPU. Note: This module is much faster with a GPU.
-2026-07-01 08:42:31,975 | EasyOCR hazir.
-2026-07-01 08:42:31,976 | ==================================================
-2026-07-01 08:42:31,976 | MilaGold OCR Agent - Signal GPT versiyonu
-2026-07-01 08:42:31,976 | ==================================================
-2026-07-01 08:42:32,084 | Chromedriver is already installed.
-2026-07-01 08:42:32,691 | The chromedriver version (150.0.7871.46) detected in PATH at C:\Users\Administrator\AppData\Local\Programs\Python\Python314\Lib\site-packages\chromedriver_autoinstaller\150\chromedriver.exe might not be compatible with the detected chrome version (149.0.7827.201); currently, chromedriver 149.0.7827.155 is recommended for chrome 149.*, so it is advised to delete the driver in PATH and retry
-2026-07-01 09:12:46,136 | EasyOCR yukleniyor...
-2026-07-01 09:12:46,139 | Using CPU. Note: This module is much faster with a GPU.
-2026-07-01 09:12:50,479 | EasyOCR hazir.
-2026-07-01 09:12:50,479 | ==================================================
-2026-07-01 09:12:50,479 | MilaGold OCR Agent - Signal GPT versiyonu
-2026-07-01 09:12:50,480 | ==================================================
-2026-07-01 09:12:50,577 | Chromedriver is already installed.
-2026-07-01 09:12:50,990 | The chromedriver version (150.0.7871.46) detected in PATH at C:\Users\Administrator\AppData\Local\Programs\Python\Python314\Lib\site-packages\chromedriver_autoinstaller\150\chromedriver.exe might not be compatible with the detected chrome version (149.0.7827.201); currently, chromedriver 149.0.7827.155 is recommended for chrome 149.*, so it is advised to delete the driver in PATH and retry
-2026-07-01 09:43:02,011 | EasyOCR yukleniyor...
-2026-07-01 09:43:02,012 | Using CPU. Note: This module is much faster with a GPU.
-2026-07-01 09:43:06,847 | EasyOCR hazir.
 2026-07-01 09:43:06,848 | ==================================================
 2026-07-01 09:43:06,848 | MilaGold OCR Agent - Signal GPT versiyonu
 2026-07-01 09:43:06,848 | ==================================================
@@ -78,3 +43,38 @@
 2026-07-01 12:14:38,035 | ==================================================
 2026-07-01 12:14:38,160 | Chromedriver is already installed.
 2026-07-01 12:14:38,614 | The chromedriver version (150.0.7871.46) detected in PATH at C:\Users\Administrator\AppData\Local\Programs\Python\Python314\Lib\site-packages\chromedriver_autoinstaller\150\chromedriver.exe might not be compatible with the detected chrome version (149.0.7827.201); currently, chromedriver 149.0.7827.155 is recommended for chrome 149.*, so it is advised to delete the driver in PATH and retry
+2026-07-01 12:44:49,762 | EasyOCR yukleniyor...
+2026-07-01 12:44:49,763 | Using CPU. Note: This module is much faster with a GPU.
+2026-07-01 12:44:54,271 | EasyOCR hazir.
+2026-07-01 12:44:54,271 | ==================================================
+2026-07-01 12:44:54,271 | MilaGold OCR Agent - Signal GPT versiyonu
+2026-07-01 12:44:54,271 | ==================================================
+2026-07-01 12:44:54,702 | Chrome versiyonu (exe): 149.0.7827.201
+2026-07-01 12:44:54,703 | ChromeDriver 149.0.7827.201 indiriliyor (Chrome for Testing API)...
+2026-07-01 12:44:54,931 | Indiriliyor: https://storage.googleapis.com/chrome-for-testing-public/149.0.7827.155/win64/chromedriver-win64.zip
+2026-07-01 12:44:56,335 | ChromeDriver indirildi: C:\MilaYatirim\mila-yatirim-sistemi\MilaGold\chromedriver_cache\149.0.7827.201\chromedriver.exe
+2026-07-01 12:44:56,350 | ChromeDriver: C:\MilaYatirim\mila-yatirim-sistemi\MilaGold\chromedriver_cache\149.0.7827.201\chromedriver.exe
+2026-07-01 12:44:58,485 | Signal GPT sayfasina gidildi.
+2026-07-01 12:44:58,485 | Sayfa yukleniyor, 15 saniye bekleniyor...
+2026-07-01 12:45:13,647 | Baslangic screenshot alindi.
+2026-07-01 12:45:13,647 | Ilk okuma oncesi 5 saniye bekleniyor...
+2026-07-01 12:45:18,649 | Okuma dongusune giriliyor...
+2026-07-01 12:45:20,370 | GOLD karti okunamadi (1). Ham: ['ttion on signalgpt ai is for reference and knowledge-sharing purposes only; anc', 'isions']
+2026-07-01 12:45:23,628 | GOLD karti okunamadi (2). Ham: ['ttion on signalgpt ai is for reference and knowledge-sharing purposes only; anc', 'isions']
+2026-07-01 12:45:29,131 | GOLD karti okunamadi (3). Ham: ['Entry: 3980', 'Nosignalsav', '5 16.44']
+2026-07-01 12:45:32,016 | GOLD karti okunamadi (4). Ham: ['Entry: 3980', 'Nosignalsav', '5 16.44']
+2026-07-01 12:45:34,912 | GOLD karti okunamadi (5). Ham: ['Entry: 3980', 'Nosignalsav', '5 16.44']
+2026-07-01 12:45:37,767 | GOLD karti okunamadi (6). Ham: ['Entry: 3980', 'Nosignalsav', '5 16.44']
+2026-07-01 12:45:41,253 | GOLD karti okunamadi (7). Ham: ['Entry: 3980', 'Nosignalsav', '5 16.44']
+2026-07-01 12:45:44,449 | GOLD karti okunamadi (8). Ham: ['Entry: 3980', 'Nosignalsav', '5 16.44']
+2026-07-01 12:45:47,559 | GOLD karti okunamadi (9). Ham: ['Entry: 3980', 'Nosignalsav', '5 16.44']
+2026-07-01 12:45:50,579 | GOLD karti okunamadi (10). Ham: ['Entry: 3980', 'Nosignalsav', '5 16.44']
+2026-07-01 12:45:50,579 | 10 kez ust uste okunamadi - sayfa yenileniyor...
+2026-07-01 12:45:58,798 | Sayfa yenilendi.
+2026-07-01 12:46:02,258 | GOLD karti okunamadi (1). Ham: ['ttion on signalgpt ai is for reference and knowledge-sharing purposes only; anc', 'isions']
+2026-07-01 12:46:05,403 | GOLD karti okunamadi (2). Ham: ['ttion on signalgpt ai is for reference and knowledge-sharing purposes only; anc', 'isions']
+2026-07-01 12:46:08,419 | GOLD karti okunamadi (3). Ham: ['ttion on signalgpt ai is for reference and knowledge-sharing purposes only; anc', 'isions']
+2026-07-01 12:46:11,562 | GOLD karti okunamadi (4). Ham: ['ttion on signalgpt ai is for reference and knowledge-sharing purposes only; anc', 'isions']
+2026-07-01 12:46:15,269 | GOLD karti okunamadi (5). Ham: ['ttion on signalgpt ai is for reference and knowledge-sharing purposes only; anc', 'isions']
+2026-07-01 12:46:20,156 | GOLD karti okunamadi (6). Ham: ['Entry: 3980', 'Nosignalsav', '5 16.44']
+2026-07-01 12:46:22,771 | GOLD karti okunamadi (7). Ham: ['Entry: 3980', 'Nosignalsav', '5 16.44']
