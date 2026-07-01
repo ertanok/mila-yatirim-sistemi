@@ -1,44 +1,3 @@
-	chromedriver!GetHandleVerifier [0x780119+295fc9]
-	chromedriver!GetHandleVerifier [0x7a103e+2b6eee]
-	chromedriver!GetHandleVerifier [0x5137f6+296a6]
-	chromedriver!GetHandleVerifier [0x51a91d+307cd]
-	chromedriver!(No symbol) [0x2cd6a6]
-	chromedriver!(No symbol) [0x2ccd02]
-	chromedriver!GetHandleVerifier [0x8ebe1f+401ccf]
-	KERNEL32!BaseThreadInitThunk [0x75d86709+19]
-	ntdll!RtlGetFullPathName_UEx [0x76fa791d+ad]
-	ntdll!RtlGetFullPathName_UEx [0x76fa78eb+7b]
-
-2026-07-01 02:44:45,118 | Dongu hatasi: Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
-Stacktrace:
-	chromedriver!GetHandleVerifier [0x4fa543+103f3]
-	chromedriver!GetHandleVerifier [0x4fa584+10434]
-	chromedriver!(No symbol) [0x2fa53e]
-	chromedriver!(No symbol) [0x3383e7]
-	chromedriver!(No symbol) [0x365f86]
-	chromedriver!(No symbol) [0x361192]
-	chromedriver!(No symbol) [0x360b71]
-	chromedriver!(No symbol) [0x2cdb2e]
-	chromedriver!(No symbol) [0x2ce0ce]
-	chromedriver!(No symbol) [0x2ce5ad]
-	chromedriver!GetHandleVerifier [0x784bba+29aa6a]
-	chromedriver!GetHandleVerifier [0x780119+295fc9]
-	chromedriver!GetHandleVerifier [0x7a103e+2b6eee]
-	chromedriver!GetHandleVerifier [0x5137f6+296a6]
-	chromedriver!GetHandleVerifier [0x51a91d+307cd]
-	chromedriver!(No symbol) [0x2cd6a6]
-	chromedriver!(No symbol) [0x2ccd02]
-	chromedriver!GetHandleVerifier [0x8ebe1f+401ccf]
-	KERNEL32!BaseThreadInitThunk [0x75d86709+19]
-	ntdll!RtlGetFullPathName_UEx [0x76fa791d+ad]
-	ntdll!RtlGetFullPathName_UEx [0x76fa78eb+7b]
-
-2026-07-01 02:44:48,124 | Dongu hatasi: Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
-Stacktrace:
-	chromedriver!GetHandleVerifier [0x4fa543+103f3]
-	chromedriver!GetHandleVerifier [0x4fa584+10434]
-	chromedriver!(No symbol) [0x2fa53e]
-	chromedriver!(No symbol) [0x3383e7]
 	chromedriver!(No symbol) [0x365f86]
 	chromedriver!(No symbol) [0x361192]
 	chromedriver!(No symbol) [0x360b71]
@@ -78,3 +37,44 @@ Stacktrace:
 2026-07-01 03:36:42,698 | MilaGold OCR Agent - Signal GPT versiyonu
 2026-07-01 03:36:42,699 | ==================================================
 2026-07-01 03:36:43,983 | Chromedriver is already installed.
+2026-07-01 03:39:52,863 | EasyOCR yukleniyor...
+2026-07-01 03:39:52,867 | Using CPU. Note: This module is much faster with a GPU.
+2026-07-01 03:39:56,287 | EasyOCR hazir.
+2026-07-01 03:39:56,287 | ==================================================
+2026-07-01 03:39:56,288 | MilaGold OCR Agent - Signal GPT versiyonu
+2026-07-01 03:39:56,288 | ==================================================
+2026-07-01 03:39:57,539 | Chromedriver is already installed.
+2026-07-01 03:39:59,314 | Signal GPT sayfasina gidildi.
+2026-07-01 03:39:59,315 | Sayfa yukleniyor, 15 saniye bekleniyor...
+2026-07-01 03:40:14,575 | Baslangic screenshot alindi.
+2026-07-01 03:40:14,575 | Ilk okuma oncesi 5 saniye bekleniyor...
+2026-07-01 03:40:19,570 | Okuma dongusune giriliyor...
+2026-07-01 03:40:21,739 | GOLD karti okunamadi (1). Ham: ['signalgpt ai is for reference and', 'knowledge-sharing purposes only, and does n']
+2026-07-01 03:40:25,292 | EasyOCR yukleniyor...
+2026-07-01 03:40:25,293 | Using CPU. Note: This module is much faster with a GPU.
+2026-07-01 03:40:25,562 | GOLD karti okunamadi (2). Ham: ['signalgpt ai is for reference and', 'knowledge-sharing purposes only, and does n']
+2026-07-01 03:40:29,165 | GOLD karti okunamadi (3). Ham: ['signalgpt ai is for reference and', 'knowledge-sharing purposes only, and does n']
+2026-07-01 03:40:29,446 | EasyOCR hazir.
+2026-07-01 03:40:29,447 | ==================================================
+2026-07-01 03:40:29,447 | MilaGold OCR Agent - Signal GPT versiyonu
+2026-07-01 03:40:29,447 | ==================================================
+2026-07-01 03:40:30,371 | Chromedriver is already installed.
+2026-07-01 03:40:32,021 | Signal GPT sayfasina gidildi.
+2026-07-01 03:40:32,022 | Sayfa yukleniyor, 15 saniye bekleniyor...
+2026-07-01 03:40:34,308 | GOLD karti okunamadi (4). Ham: ['Enbry: 4003.5', 'Nosignals available', 'Signals will appear here when av']
+2026-07-01 03:40:37,824 | GOLD karti okunamadi (5). Ham: ['signalgpt ai is for reference and', 'knowledge-sharing purposes only, and does n']
+2026-07-01 03:40:41,207 | GOLD karti okunamadi (6). Ham: ['signalgpt ai is for reference and', 'knowledge-sharing purposes only, and does n']
+2026-07-01 03:40:44,557 | GOLD karti okunamadi (7). Ham: ['signalgpt ai is for reference and', 'knowledge-sharing purposes only, and does n']
+2026-07-01 03:40:47,307 | Baslangic screenshot alindi.
+2026-07-01 03:40:47,307 | Ilk okuma oncesi 5 saniye bekleniyor...
+2026-07-01 03:40:48,173 | GOLD karti okunamadi (8). Ham: ['signalgpt ai is for reference and', 'knowledge-sharing purposes only, and does n']
+2026-07-01 03:40:51,140 | GOLD karti okunamadi (9). Ham: ['signalgpt ai is for reference and', 'knowledge-sharing purposes only, and does n']
+2026-07-01 03:40:52,312 | Okuma dongusune giriliyor...
+2026-07-01 03:40:54,428 | GOLD karti okunamadi (1). Ham: ['signalgpt ai is for reference and', 'knowledge-sharing purposes only, and does n']
+2026-07-01 03:40:54,716 | GOLD karti okunamadi (10). Ham: ['signalgpt ai is for reference and', 'knowledge-sharing purposes only, and does n']
+2026-07-01 03:40:54,717 | 10 kez ust uste okunamadi - sayfa yenileniyor...
+2026-07-01 03:40:57,999 | GOLD karti okunamadi (2). Ham: ['signalgpt ai is for reference and', 'knowledge-sharing purposes only, and does n']
+2026-07-01 03:41:02,903 | Sayfa yenilendi.
+2026-07-01 03:41:04,470 | GOLD karti okunamadi (3). Ham: ['signalgpt ai is for reference and', 'knowledge-sharing purposes only, and does n']
+2026-07-01 03:41:06,070 | GOLD karti okunamadi (1). Ham: ['signalgpt ai is for reference and', 'knowledge-sharing purposes only, and does n']
+2026-07-01 03:41:07,854 | GOLD karti okunamadi (4). Ham: ['signalgpt ai is for reference and', 'knowledge-sharing purposes only, and does n']
