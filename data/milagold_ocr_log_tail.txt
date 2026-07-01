@@ -1,56 +1,3 @@
-2026-07-01 22:51:33,744 | Dongu hatasi: Message: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=149.0.7827.201)
-Stacktrace:
-	chromedriver!GetHandleVerifier [0x7ff750c23fa5+14925]
-	chromedriver!GetHandleVerifier [0x7ff750c24000+14980]
-	chromedriver!(No symbol) [0x7ff75076793d]
-	chromedriver!(No symbol) [0x7ff75073e362]
-	chromedriver!(No symbol) [0x7ff7507f1846]
-	chromedriver!(No symbol) [0x7ff75080ec82]
-	chromedriver!(No symbol) [0x7ff7507b401c]
-	chromedriver!(No symbol) [0x7ff7507b4f43]
-	chromedriver!GetHandleVerifier [0x7ff751207591+5f7f11]
-	chromedriver!GetHandleVerifier [0x7ff751201902+5f2282]
-	chromedriver!GetHandleVerifier [0x7ff751227115+617a95]
-	chromedriver!GetHandleVerifier [0x7ff750c41dce+3274e]
-	chromedriver!GetHandleVerifier [0x7ff750c4a82c+3b1ac]
-	chromedriver!GetHandleVerifier [0x7ff750c2d744+1e0c4]
-	chromedriver!GetHandleVerifier [0x7ff750c2d8d4+1e254]
-	chromedriver!GetHandleVerifier [0x7ff750c11447+1dc7]
-	KERNEL32!BaseThreadInitThunk [0x7ffcb7b34ed0+10]
-	ntdll!RtlUserThreadStart [0x7ffcb942e20b+2b]
-
-2026-07-01 22:51:36,754 | Dongu hatasi: Message: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=149.0.7827.201)
-Stacktrace:
-	chromedriver!GetHandleVerifier [0x7ff750c23fa5+14925]
-	chromedriver!GetHandleVerifier [0x7ff750c24000+14980]
-	chromedriver!(No symbol) [0x7ff75076793d]
-	chromedriver!(No symbol) [0x7ff75073e362]
-	chromedriver!(No symbol) [0x7ff7507f1846]
-	chromedriver!(No symbol) [0x7ff75080ec82]
-	chromedriver!(No symbol) [0x7ff7507b401c]
-	chromedriver!(No symbol) [0x7ff7507b4f43]
-	chromedriver!GetHandleVerifier [0x7ff751207591+5f7f11]
-	chromedriver!GetHandleVerifier [0x7ff751201902+5f2282]
-	chromedriver!GetHandleVerifier [0x7ff751227115+617a95]
-	chromedriver!GetHandleVerifier [0x7ff750c41dce+3274e]
-	chromedriver!GetHandleVerifier [0x7ff750c4a82c+3b1ac]
-	chromedriver!GetHandleVerifier [0x7ff750c2d744+1e0c4]
-	chromedriver!GetHandleVerifier [0x7ff750c2d8d4+1e254]
-	chromedriver!GetHandleVerifier [0x7ff750c11447+1dc7]
-	KERNEL32!BaseThreadInitThunk [0x7ffcb7b34ed0+10]
-	ntdll!RtlUserThreadStart [0x7ffcb942e20b+2b]
-
-2026-07-01 22:51:39,759 | Dongu hatasi: Message: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=149.0.7827.201)
-Stacktrace:
-	chromedriver!GetHandleVerifier [0x7ff750c23fa5+14925]
-	chromedriver!GetHandleVerifier [0x7ff750c24000+14980]
-	chromedriver!(No symbol) [0x7ff75076793d]
 	chromedriver!(No symbol) [0x7ff75073e362]
 	chromedriver!(No symbol) [0x7ff7507f1846]
 	chromedriver!(No symbol) [0x7ff75080ec82]
@@ -78,3 +25,56 @@ Stacktrace:
 2026-07-01 22:51:58,533 | Indiriliyor: https://storage.googleapis.com/chrome-for-testing-public/150.0.7871.46/win64/chromedriver-win64.zip
 2026-07-01 22:52:00,312 | ChromeDriver indirildi: C:\MilaYatirim\mila-yatirim-sistemi\MilaGold\chromedriver_cache\150.0.7871.46\chromedriver.exe
 2026-07-01 22:52:00,343 | ChromeDriver: C:\MilaYatirim\mila-yatirim-sistemi\MilaGold\chromedriver_cache\150.0.7871.46\chromedriver.exe
+2026-07-01 23:19:12,406 | EasyOCR yukleniyor...
+2026-07-01 23:19:12,420 | Using CPU. Note: This module is much faster with a GPU.
+2026-07-01 23:19:15,907 | EasyOCR hazir.
+2026-07-01 23:19:15,907 | ==================================================
+2026-07-01 23:19:15,908 | MilaGold OCR Agent - Signal GPT versiyonu
+2026-07-01 23:19:15,908 | ==================================================
+2026-07-01 23:19:16,261 | Chrome versiyonu (exe): 150.0.7871.46
+2026-07-01 23:19:16,262 | ChromeDriver cache'den: C:\MilaYatirim\mila-yatirim-sistemi\MilaGold\chromedriver_cache\150.0.7871.46\chromedriver.exe
+2026-07-01 23:19:16,263 | ChromeDriver: C:\MilaYatirim\mila-yatirim-sistemi\MilaGold\chromedriver_cache\150.0.7871.46\chromedriver.exe
+2026-07-01 23:19:18,663 | Signal GPT sayfasina gidildi.
+2026-07-01 23:19:18,664 | Sayfa yukleniyor, 15 saniye bekleniyor...
+2026-07-01 23:19:33,816 | Baslangic screenshot alindi.
+2026-07-01 23:19:33,816 | Ilk okuma oncesi 5 saniye bekleniyor...
+2026-07-01 23:19:38,809 | Okuma dongusune giriliyor...
+2026-07-01 23:19:39,507 | EasyOCR yukleniyor...
+2026-07-01 23:19:39,507 | Using CPU. Note: This module is much faster with a GPU.
+2026-07-01 23:19:40,375 | GOLD karti okunamadi (1). Ham: ['signalgpt ai is for reference and', 'knowledge-sharing purposes only, and does']
+2026-07-01 23:19:42,142 | EasyOCR hazir.
+2026-07-01 23:19:42,143 | ==================================================
+2026-07-01 23:19:42,143 | MilaGold OCR Agent - Signal GPT versiyonu
+2026-07-01 23:19:42,143 | ==================================================
+2026-07-01 23:19:42,855 | Chrome versiyonu (exe): 150.0.7871.46
+2026-07-01 23:19:42,856 | ChromeDriver cache'den: C:\MilaYatirim\mila-yatirim-sistemi\MilaGold\chromedriver_cache\150.0.7871.46\chromedriver.exe
+2026-07-01 23:19:42,856 | ChromeDriver: C:\MilaYatirim\mila-yatirim-sistemi\MilaGold\chromedriver_cache\150.0.7871.46\chromedriver.exe
+2026-07-01 23:19:43,349 | GOLD karti okunamadi (2). Ham: ['signalgpt ai is for reference and', 'knowledge-sharing purposes only, and does']
+2026-07-01 23:19:44,047 | Signal GPT sayfasina gidildi.
+2026-07-01 23:19:44,048 | Sayfa yukleniyor, 15 saniye bekleniyor...
+2026-07-01 23:19:46,582 | GOLD karti okunamadi (3). Ham: ['signalgpt ai is for reference and', 'knowledge-sharing purposes only, and does']
+2026-07-01 23:19:49,587 | GOLD karti okunamadi (4). Ham: ['signalgpt ai is for reference and', 'knowledge-sharing purposes only, and does']
+2026-07-01 23:19:52,604 | GOLD karti okunamadi (5). Ham: ['signalgpt ai is for reference and', 'knowledge-sharing purposes only, and does']
+2026-07-01 23:19:55,710 | GOLD karti okunamadi (6). Ham: ['signalgpt ai is for reference and', 'knowledge-sharing purposes only, and does']
+2026-07-01 23:19:58,645 | GOLD karti okunamadi (7). Ham: ['signalgpt ai is for reference and', 'knowledge-sharing purposes only, and does']
+2026-07-01 23:19:59,211 | Baslangic screenshot alindi.
+2026-07-01 23:19:59,212 | Ilk okuma oncesi 5 saniye bekleniyor...
+2026-07-01 23:20:01,504 | GOLD karti okunamadi (8). Ham: ['signalgpt ai is for reference and', 'knowledge-sharing purposes only, and does']
+2026-07-01 23:20:04,208 | Okuma dongusune giriliyor...
+2026-07-01 23:20:05,119 | GOLD karti okunamadi (9). Ham: ['signalgpt ai is for reference and', 'knowledge-sharing purposes only, and does']
+2026-07-01 23:20:05,421 | GOLD karti okunamadi (1). Ham: ['signalgpt ai is for reference and', 'knowledge-sharing purposes only, and does']
+2026-07-01 23:20:08,513 | GOLD karti okunamadi (10). Ham: ['signalgpt ai is for reference and', 'knowledge-sharing purposes only, and does']
+2026-07-01 23:20:08,514 | 10 kez ust uste okunamadi - sayfa yenileniyor...
+2026-07-01 23:20:08,664 | GOLD karti okunamadi (2). Ham: ['signalgpt ai is for reference and', 'knowledge-sharing purposes only, and does']
+2026-07-01 23:20:11,058 | GOLD karti okunamadi (3). Ham: []
+2026-07-01 23:20:13,535 | GOLD karti okunamadi (4). Ham: []
+2026-07-01 23:20:16,559 | Sayfa yenilendi.
+2026-07-01 23:20:16,678 | GOLD karti okunamadi (5). Ham: ['signalgpt ai is for reference and', 'knowledge-sharing purposes only, and does']
+2026-07-01 23:20:20,052 | GOLD karti okunamadi (1). Ham: ['signalgpt ai is for reference and', 'knowledge-sharing purposes only, and does']
+2026-07-01 23:20:20,088 | GOLD karti okunamadi (6). Ham: ['signalgpt ai is for reference and', 'knowledge-sharing purposes only, and does']
+2026-07-01 23:20:23,622 | GOLD karti okunamadi (7). Ham: ['signalgpt ai is for reference and', 'knowledge-sharing purposes only, and does']
+2026-07-01 23:20:23,632 | GOLD karti okunamadi (2). Ham: ['signalgpt ai is for reference and', 'knowledge-sharing purposes only, and does']
+2026-07-01 23:20:28,259 | GOLD karti okunamadi (8). Ham: ['signalgpt ai is for reference and', 'knowledge-sharing purposes only, and does']
+2026-07-01 23:20:28,277 | GOLD karti okunamadi (3). Ham: ['signalgpt ai is for reference and', 'knowledge-sharing purposes only, and does']
+2026-07-01 23:20:31,873 | GOLD karti okunamadi (4). Ham: ['signalgpt ai is for reference and', 'knowledge-sharing purposes only, and does']
+2026-07-01 23:20:31,881 | GOLD karti okunamadi (9). Ham: ['signalgpt ai is for reference and', 'knowledge-sharing purposes only, and does']
