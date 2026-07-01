@@ -1,15 +1,4 @@
-	chromedriver!GetHandleVerifier [0x7ff751207591+5f7f11]
-	chromedriver!GetHandleVerifier [0x7ff751201902+5f2282]
-	chromedriver!GetHandleVerifier [0x7ff751227115+617a95]
-	chromedriver!GetHandleVerifier [0x7ff750c41dce+3274e]
-	chromedriver!GetHandleVerifier [0x7ff750c4a82c+3b1ac]
-	chromedriver!GetHandleVerifier [0x7ff750c2d744+1e0c4]
-	chromedriver!GetHandleVerifier [0x7ff750c2d8d4+1e254]
-	chromedriver!GetHandleVerifier [0x7ff750c11447+1dc7]
-	KERNEL32!BaseThreadInitThunk [0x7ffcb7b34ed0+10]
-	ntdll!RtlUserThreadStart [0x7ffcb942e20b+2b]
-
-2026-07-01 22:50:33,568 | Dongu hatasi: Message: no such window: target window already closed
+2026-07-01 22:51:33,744 | Dongu hatasi: Message: no such window: target window already closed
 from unknown error: web view not found
   (Session info: chrome=149.0.7827.201)
 Stacktrace:
@@ -32,7 +21,7 @@ Stacktrace:
 	KERNEL32!BaseThreadInitThunk [0x7ffcb7b34ed0+10]
 	ntdll!RtlUserThreadStart [0x7ffcb942e20b+2b]
 
-2026-07-01 22:50:36,573 | Dongu hatasi: Message: no such window: target window already closed
+2026-07-01 22:51:36,754 | Dongu hatasi: Message: no such window: target window already closed
 from unknown error: web view not found
   (Session info: chrome=149.0.7827.201)
 Stacktrace:
@@ -55,7 +44,7 @@ Stacktrace:
 	KERNEL32!BaseThreadInitThunk [0x7ffcb7b34ed0+10]
 	ntdll!RtlUserThreadStart [0x7ffcb942e20b+2b]
 
-2026-07-01 22:50:39,582 | Dongu hatasi: Message: no such window: target window already closed
+2026-07-01 22:51:39,759 | Dongu hatasi: Message: no such window: target window already closed
 from unknown error: web view not found
   (Session info: chrome=149.0.7827.201)
 Stacktrace:
@@ -77,3 +66,15 @@ Stacktrace:
 	chromedriver!GetHandleVerifier [0x7ff750c11447+1dc7]
 	KERNEL32!BaseThreadInitThunk [0x7ffcb7b34ed0+10]
 	ntdll!RtlUserThreadStart [0x7ffcb942e20b+2b]
+
+2026-07-01 22:51:55,135 | EasyOCR yukleniyor...
+2026-07-01 22:51:55,136 | Using CPU. Note: This module is much faster with a GPU.
+2026-07-01 22:51:57,958 | EasyOCR hazir.
+2026-07-01 22:51:57,958 | ==================================================
+2026-07-01 22:51:57,958 | MilaGold OCR Agent - Signal GPT versiyonu
+2026-07-01 22:51:57,958 | ==================================================
+2026-07-01 22:51:58,295 | Chrome versiyonu (exe): 150.0.7871.46
+2026-07-01 22:51:58,296 | ChromeDriver 150.0.7871.46 indiriliyor (Chrome for Testing API)...
+2026-07-01 22:51:58,533 | Indiriliyor: https://storage.googleapis.com/chrome-for-testing-public/150.0.7871.46/win64/chromedriver-win64.zip
+2026-07-01 22:52:00,312 | ChromeDriver indirildi: C:\MilaYatirim\mila-yatirim-sistemi\MilaGold\chromedriver_cache\150.0.7871.46\chromedriver.exe
+2026-07-01 22:52:00,343 | ChromeDriver: C:\MilaYatirim\mila-yatirim-sistemi\MilaGold\chromedriver_cache\150.0.7871.46\chromedriver.exe
