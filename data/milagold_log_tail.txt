@@ -1,7 +1,3 @@
-[2026-07-01 02:41:08] MT5 baglandi. Bakiye: 927.9 USD
-[2026-07-01 02:41:08] Baslangic bakiyesi: 927.9 USD
-[2026-07-01 02:41:08] Hazir. 0 aktif islem devralindi. signal.json bekleniyor...
-[2026-07-01 02:41:29] Yeni sinyal alindi: #None SELL @ 4010.0
 [2026-07-01 02:41:29] EMA filtresi: M5 verisi alinamadi, filtre atlanıyor.
 [2026-07-01 02:41:29] Emir turu: SELL_LIMIT (fiyat=4009.85 <= entry=4010.0)
 [2026-07-01 02:41:29] Islem acildi: 924905660 | SELL @ 4010.0 | SL:4015.0 | TP1:4007.0 TP2:4005.0 TP3:4002.0
@@ -78,3 +74,7 @@
 [2026-07-01 03:14:34] Heartbeat: 1 aktif islem | Bakiye: 927.90 USD
 [2026-07-01 03:15:04] Heartbeat: 1 aktif islem | Bakiye: 927.90 USD
 [2026-07-01 03:15:34] Heartbeat: 1 aktif islem | Bakiye: 927.90 USD
+[2026-07-01 03:16:04] Heartbeat: 1 aktif islem | Bakiye: 927.90 USD
+[2026-07-01 03:16:34] Heartbeat: 1 aktif islem | Bakiye: 927.90 USD
+[2026-07-01 03:17:04] Heartbeat: 1 aktif islem | Bakiye: 927.90 USD
+[2026-07-01 03:17:35] Heartbeat: 1 aktif islem | Bakiye: 927.90 USD
