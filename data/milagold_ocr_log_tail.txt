@@ -1,80 +1,80 @@
-	chromedriver!(No symbol) [0x7ff75073e362]
-	chromedriver!(No symbol) [0x7ff7507f1846]
-	chromedriver!(No symbol) [0x7ff75080ec82]
-	chromedriver!(No symbol) [0x7ff7507b401c]
-	chromedriver!(No symbol) [0x7ff7507b4f43]
-	chromedriver!GetHandleVerifier [0x7ff751207591+5f7f11]
-	chromedriver!GetHandleVerifier [0x7ff751201902+5f2282]
-	chromedriver!GetHandleVerifier [0x7ff751227115+617a95]
-	chromedriver!GetHandleVerifier [0x7ff750c41dce+3274e]
-	chromedriver!GetHandleVerifier [0x7ff750c4a82c+3b1ac]
-	chromedriver!GetHandleVerifier [0x7ff750c2d744+1e0c4]
-	chromedriver!GetHandleVerifier [0x7ff750c2d8d4+1e254]
-	chromedriver!GetHandleVerifier [0x7ff750c11447+1dc7]
-	KERNEL32!BaseThreadInitThunk [0x7ffcb7b34ed0+10]
-	ntdll!RtlUserThreadStart [0x7ffcb942e20b+2b]
-
-2026-07-01 22:51:55,135 | EasyOCR yukleniyor...
-2026-07-01 22:51:55,136 | Using CPU. Note: This module is much faster with a GPU.
-2026-07-01 22:51:57,958 | EasyOCR hazir.
-2026-07-01 22:51:57,958 | ==================================================
-2026-07-01 22:51:57,958 | MilaGold OCR Agent - Signal GPT versiyonu
-2026-07-01 22:51:57,958 | ==================================================
-2026-07-01 22:51:58,295 | Chrome versiyonu (exe): 150.0.7871.46
-2026-07-01 22:51:58,296 | ChromeDriver 150.0.7871.46 indiriliyor (Chrome for Testing API)...
-2026-07-01 22:51:58,533 | Indiriliyor: https://storage.googleapis.com/chrome-for-testing-public/150.0.7871.46/win64/chromedriver-win64.zip
-2026-07-01 22:52:00,312 | ChromeDriver indirildi: C:\MilaYatirim\mila-yatirim-sistemi\MilaGold\chromedriver_cache\150.0.7871.46\chromedriver.exe
-2026-07-01 22:52:00,343 | ChromeDriver: C:\MilaYatirim\mila-yatirim-sistemi\MilaGold\chromedriver_cache\150.0.7871.46\chromedriver.exe
-2026-07-01 23:19:12,406 | EasyOCR yukleniyor...
-2026-07-01 23:19:12,420 | Using CPU. Note: This module is much faster with a GPU.
-2026-07-01 23:19:15,907 | EasyOCR hazir.
-2026-07-01 23:19:15,907 | ==================================================
-2026-07-01 23:19:15,908 | MilaGold OCR Agent - Signal GPT versiyonu
-2026-07-01 23:19:15,908 | ==================================================
-2026-07-01 23:19:16,261 | Chrome versiyonu (exe): 150.0.7871.46
-2026-07-01 23:19:16,262 | ChromeDriver cache'den: C:\MilaYatirim\mila-yatirim-sistemi\MilaGold\chromedriver_cache\150.0.7871.46\chromedriver.exe
-2026-07-01 23:19:16,263 | ChromeDriver: C:\MilaYatirim\mila-yatirim-sistemi\MilaGold\chromedriver_cache\150.0.7871.46\chromedriver.exe
-2026-07-01 23:19:18,663 | Signal GPT sayfasina gidildi.
-2026-07-01 23:19:18,664 | Sayfa yukleniyor, 15 saniye bekleniyor...
-2026-07-01 23:19:33,816 | Baslangic screenshot alindi.
-2026-07-01 23:19:33,816 | Ilk okuma oncesi 5 saniye bekleniyor...
-2026-07-01 23:19:38,809 | Okuma dongusune giriliyor...
-2026-07-01 23:19:39,507 | EasyOCR yukleniyor...
-2026-07-01 23:19:39,507 | Using CPU. Note: This module is much faster with a GPU.
-2026-07-01 23:19:40,375 | GOLD karti okunamadi (1). Ham: ['signalgpt ai is for reference and', 'knowledge-sharing purposes only, and does']
-2026-07-01 23:19:42,142 | EasyOCR hazir.
-2026-07-01 23:19:42,143 | ==================================================
-2026-07-01 23:19:42,143 | MilaGold OCR Agent - Signal GPT versiyonu
-2026-07-01 23:19:42,143 | ==================================================
-2026-07-01 23:19:42,855 | Chrome versiyonu (exe): 150.0.7871.46
-2026-07-01 23:19:42,856 | ChromeDriver cache'den: C:\MilaYatirim\mila-yatirim-sistemi\MilaGold\chromedriver_cache\150.0.7871.46\chromedriver.exe
-2026-07-01 23:19:42,856 | ChromeDriver: C:\MilaYatirim\mila-yatirim-sistemi\MilaGold\chromedriver_cache\150.0.7871.46\chromedriver.exe
-2026-07-01 23:19:43,349 | GOLD karti okunamadi (2). Ham: ['signalgpt ai is for reference and', 'knowledge-sharing purposes only, and does']
-2026-07-01 23:19:44,047 | Signal GPT sayfasina gidildi.
-2026-07-01 23:19:44,048 | Sayfa yukleniyor, 15 saniye bekleniyor...
-2026-07-01 23:19:46,582 | GOLD karti okunamadi (3). Ham: ['signalgpt ai is for reference and', 'knowledge-sharing purposes only, and does']
-2026-07-01 23:19:49,587 | GOLD karti okunamadi (4). Ham: ['signalgpt ai is for reference and', 'knowledge-sharing purposes only, and does']
-2026-07-01 23:19:52,604 | GOLD karti okunamadi (5). Ham: ['signalgpt ai is for reference and', 'knowledge-sharing purposes only, and does']
-2026-07-01 23:19:55,710 | GOLD karti okunamadi (6). Ham: ['signalgpt ai is for reference and', 'knowledge-sharing purposes only, and does']
-2026-07-01 23:19:58,645 | GOLD karti okunamadi (7). Ham: ['signalgpt ai is for reference and', 'knowledge-sharing purposes only, and does']
-2026-07-01 23:19:59,211 | Baslangic screenshot alindi.
-2026-07-01 23:19:59,212 | Ilk okuma oncesi 5 saniye bekleniyor...
-2026-07-01 23:20:01,504 | GOLD karti okunamadi (8). Ham: ['signalgpt ai is for reference and', 'knowledge-sharing purposes only, and does']
-2026-07-01 23:20:04,208 | Okuma dongusune giriliyor...
-2026-07-01 23:20:05,119 | GOLD karti okunamadi (9). Ham: ['signalgpt ai is for reference and', 'knowledge-sharing purposes only, and does']
-2026-07-01 23:20:05,421 | GOLD karti okunamadi (1). Ham: ['signalgpt ai is for reference and', 'knowledge-sharing purposes only, and does']
-2026-07-01 23:20:08,513 | GOLD karti okunamadi (10). Ham: ['signalgpt ai is for reference and', 'knowledge-sharing purposes only, and does']
-2026-07-01 23:20:08,514 | 10 kez ust uste okunamadi - sayfa yenileniyor...
-2026-07-01 23:20:08,664 | GOLD karti okunamadi (2). Ham: ['signalgpt ai is for reference and', 'knowledge-sharing purposes only, and does']
-2026-07-01 23:20:11,058 | GOLD karti okunamadi (3). Ham: []
-2026-07-01 23:20:13,535 | GOLD karti okunamadi (4). Ham: []
-2026-07-01 23:20:16,559 | Sayfa yenilendi.
-2026-07-01 23:20:16,678 | GOLD karti okunamadi (5). Ham: ['signalgpt ai is for reference and', 'knowledge-sharing purposes only, and does']
-2026-07-01 23:20:20,052 | GOLD karti okunamadi (1). Ham: ['signalgpt ai is for reference and', 'knowledge-sharing purposes only, and does']
-2026-07-01 23:20:20,088 | GOLD karti okunamadi (6). Ham: ['signalgpt ai is for reference and', 'knowledge-sharing purposes only, and does']
-2026-07-01 23:20:23,622 | GOLD karti okunamadi (7). Ham: ['signalgpt ai is for reference and', 'knowledge-sharing purposes only, and does']
-2026-07-01 23:20:23,632 | GOLD karti okunamadi (2). Ham: ['signalgpt ai is for reference and', 'knowledge-sharing purposes only, and does']
-2026-07-01 23:20:28,259 | GOLD karti okunamadi (8). Ham: ['signalgpt ai is for reference and', 'knowledge-sharing purposes only, and does']
 2026-07-01 23:20:28,277 | GOLD karti okunamadi (3). Ham: ['signalgpt ai is for reference and', 'knowledge-sharing purposes only, and does']
 2026-07-01 23:20:31,873 | GOLD karti okunamadi (4). Ham: ['signalgpt ai is for reference and', 'knowledge-sharing purposes only, and does']
 2026-07-01 23:20:31,881 | GOLD karti okunamadi (9). Ham: ['signalgpt ai is for reference and', 'knowledge-sharing purposes only, and does']
+2026-07-01 23:20:35,382 | GOLD karti okunamadi (5). Ham: ['signalgpt ai is for reference and', 'knowledge-sharing purposes only, and does']
+2026-07-01 23:20:35,390 | GOLD karti okunamadi (10). Ham: ['signalgpt ai is for reference and', 'knowledge-sharing purposes only, and does']
+2026-07-01 23:20:35,391 | 10 kez ust uste okunamadi - sayfa yenileniyor...
+2026-07-01 23:20:38,776 | GOLD karti okunamadi (6). Ham: ['signalgpt ai is for reference and', 'knowledge-sharing purposes only, and does']
+2026-07-01 23:20:41,764 | GOLD karti okunamadi (7). Ham: ['signalgpt ai is for reference and', 'knowledge-sharing purposes only, and does']
+2026-07-01 23:20:43,535 | Sayfa yenilendi.
+2026-07-01 23:20:44,817 | GOLD karti okunamadi (8). Ham: ['signalgpt ai is for reference and', 'knowledge-sharing purposes only, and does']
+2026-07-01 23:20:46,686 | GOLD karti okunamadi (1). Ham: ['signalgpt ai is for reference and', 'knowledge-sharing purposes only, and does']
+2026-07-01 23:20:47,742 | GOLD karti okunamadi (9). Ham: ['signalgpt ai is for reference and', 'knowledge-sharing purposes only, and does']
+2026-07-01 23:20:49,689 | GOLD karti okunamadi (2). Ham: ['signalgpt ai is for reference and', 'knowledge-sharing purposes only, and does']
+2026-07-01 23:20:50,585 | GOLD karti okunamadi (10). Ham: ['signalgpt ai is for reference and', 'knowledge-sharing purposes only, and does']
+2026-07-01 23:20:50,585 | 10 kez ust uste okunamadi - sayfa yenileniyor...
+2026-07-01 23:20:52,684 | GOLD karti okunamadi (3). Ham: []
+2026-07-01 23:20:57,580 | GOLD karti okunamadi (4). Ham: ['Entry: 4035', 'Nosignals availabl', 'Signals will appearhere when (']
+2026-07-01 23:20:58,679 | Sayfa yenilendi.
+2026-07-01 23:21:00,379 | GOLD karti okunamadi (5). Ham: ['Entry: 4035', 'Nosignals availabl', 'Signals will appearhere when (']
+2026-07-01 23:21:01,547 | GOLD karti okunamadi (1). Ham: ['Entry: 4035', 'Nosignals availabl', 'Signals will appearhere when (']
+2026-07-01 23:21:03,059 | GOLD karti okunamadi (6). Ham: ['Entry: 4035', 'Nosignals availabl', 'Signals will appearhere when (']
+2026-07-01 23:21:04,190 | GOLD karti okunamadi (2). Ham: ['Entry: 4035', 'Nosignals availabl', 'Signals will appearhere when (']
+2026-07-01 23:21:05,791 | GOLD karti okunamadi (7). Ham: ['Entry: 4035', 'Nosignals availabl', 'Signals will appearhere when (']
+2026-07-01 23:21:06,895 | GOLD karti okunamadi (3). Ham: ['Entry: 4035', 'Nosignals availabl', 'Signals will appearhere when (']
+2026-07-01 23:21:08,457 | GOLD karti okunamadi (8). Ham: ['Entry: 4035', 'Nosignals availabl', 'Signals will appearhere when (']
+2026-07-01 23:21:09,525 | GOLD karti okunamadi (4). Ham: ['Entry: 4035', 'Nosignals availabl', 'Signals will appearhere when (']
+2026-07-01 23:21:11,050 | GOLD karti okunamadi (9). Ham: ['Entry: 4035', 'Nosignals availabl', 'Signals will appearhere when (']
+2026-07-01 23:21:12,063 | GOLD karti okunamadi (5). Ham: ['Entry: 4035', 'Nosignals availabl', 'Signals will appearhere when (']
+2026-07-01 23:21:13,556 | GOLD karti okunamadi (10). Ham: ['Entry: 4035', 'Nosignals availabl', 'Signals will appearhere when (']
+2026-07-01 23:21:13,557 | 10 kez ust uste okunamadi - sayfa yenileniyor...
+2026-07-01 23:21:15,010 | GOLD karti okunamadi (6). Ham: []
+2026-07-01 23:21:17,935 | GOLD karti okunamadi (7). Ham: ['signalgpt ai is for reference and', 'knowledge-sharing purposes only, and does']
+2026-07-01 23:21:20,924 | GOLD karti okunamadi (8). Ham: ['signalgpt ai is for reference and', 'knowledge-sharing purposes only, and does']
+2026-07-01 23:21:21,688 | Sayfa yenilendi.
+2026-07-01 23:21:24,567 | GOLD karti okunamadi (9). Ham: ['signalgpt ai is for reference and', 'knowledge-sharing purposes only, and does']
+2026-07-01 23:21:24,970 | GOLD karti okunamadi (1). Ham: ['signalgpt ai is for reference and', 'knowledge-sharing purposes only, and does']
+2026-07-01 23:21:28,106 | GOLD karti okunamadi (10). Ham: ['signalgpt ai is for reference and', 'knowledge-sharing purposes only, and does']
+2026-07-01 23:21:28,107 | 10 kez ust uste okunamadi - sayfa yenileniyor...
+2026-07-01 23:21:28,317 | GOLD karti okunamadi (2). Ham: ['signalgpt ai is for reference and', 'knowledge-sharing purposes only, and does']
+2026-07-01 23:21:31,361 | GOLD karti okunamadi (3). Ham: ['signalgpt ai is for reference and', 'knowledge-sharing purposes only, and does']
+2026-07-01 23:21:34,272 | GOLD karti okunamadi (4). Ham: ['signalgpt ai is for reference and', 'knowledge-sharing purposes only, and does']
+2026-07-01 23:21:36,244 | Sayfa yenilendi.
+2026-07-01 23:21:37,474 | GOLD karti okunamadi (5). Ham: ['signalgpt ai is for reference and', 'knowledge-sharing purposes only, and does']
+2026-07-01 23:21:39,231 | GOLD karti okunamadi (1). Ham: ['signalgpt ai is for reference and', 'knowledge-sharing purposes only, and does']
+2026-07-01 23:21:40,388 | GOLD karti okunamadi (6). Ham: ['signalgpt ai is for reference and', 'knowledge-sharing purposes only, and does']
+2026-07-01 23:21:42,324 | GOLD karti okunamadi (2). Ham: ['signalgpt ai is for reference and', 'knowledge-sharing purposes only, and does']
+2026-07-01 23:21:43,446 | GOLD karti okunamadi (7). Ham: ['signalgpt ai is for reference and', 'knowledge-sharing purposes only, and does']
+2026-07-01 23:21:45,311 | GOLD karti okunamadi (3). Ham: ['signalgpt ai is for reference and', 'knowledge-sharing purposes only, and does']
+2026-07-01 23:21:46,394 | GOLD karti okunamadi (8). Ham: ['signalgpt ai is for reference and', 'knowledge-sharing purposes only, and does']
+2026-07-01 23:21:48,215 | GOLD karti okunamadi (4). Ham: ['signalgpt ai is for reference and', 'knowledge-sharing purposes only, and does']
+2026-07-01 23:21:49,563 | GOLD karti okunamadi (9). Ham: ['signalgpt ai is for reference and', 'knowledge-sharing purposes only, and does']
+2026-07-01 23:21:51,185 | GOLD karti okunamadi (5). Ham: ['signalgpt ai is for reference and', 'knowledge-sharing purposes only, and does']
+2026-07-01 23:21:52,587 | GOLD karti okunamadi (10). Ham: ['signalgpt ai is for reference and', 'knowledge-sharing purposes only, and does']
+2026-07-01 23:21:52,587 | 10 kez ust uste okunamadi - sayfa yenileniyor...
+2026-07-01 23:21:54,129 | GOLD karti okunamadi (6). Ham: []
+2026-07-01 23:21:57,228 | GOLD karti okunamadi (7). Ham: ['signalgpt ai is for reference and', 'knowledge-sharing purposes only, and does']
+2026-07-01 23:22:00,449 | GOLD karti okunamadi (8). Ham: ['signalgpt ai is for reference and', 'knowledge-sharing purposes only, and does']
+2026-07-01 23:22:00,756 | Sayfa yenilendi.
+2026-07-01 23:22:03,884 | GOLD karti okunamadi (9). Ham: ['signalgpt ai is for reference and', 'knowledge-sharing purposes only, and does']
+2026-07-01 23:22:03,948 | GOLD karti okunamadi (1). Ham: ['signalgpt ai is for reference and', 'knowledge-sharing purposes only, and does']
+2026-07-01 23:22:07,488 | GOLD karti okunamadi (10). Ham: ['signalgpt ai is for reference and', 'knowledge-sharing purposes only, and does']
+2026-07-01 23:22:07,489 | 10 kez ust uste okunamadi - sayfa yenileniyor...
+2026-07-01 23:22:07,528 | GOLD karti okunamadi (2). Ham: ['signalgpt ai is for reference and', 'knowledge-sharing purposes only, and does']
+2026-07-01 23:22:10,720 | GOLD karti okunamadi (3). Ham: ['signalgpt ai is for reference and', 'knowledge-sharing purposes only, and does']
+2026-07-01 23:22:14,074 | GOLD karti okunamadi (4). Ham: ['signalgpt ai is for reference and', 'knowledge-sharing purposes only, and does']
+2026-07-01 23:22:15,528 | Sayfa yenilendi.
+2026-07-01 23:22:17,101 | GOLD karti okunamadi (5). Ham: ['signalgpt ai is for reference and', 'knowledge-sharing purposes only, and does']
+2026-07-01 23:22:18,504 | GOLD karti okunamadi (1). Ham: ['signalgpt ai is for reference and', 'knowledge-sharing purposes only, and does']
+2026-07-01 23:22:20,048 | GOLD karti okunamadi (6). Ham: ['signalgpt ai is for reference and', 'knowledge-sharing purposes only, and does']
+2026-07-01 23:22:21,698 | GOLD karti okunamadi (2). Ham: ['signalgpt ai is for reference and', 'knowledge-sharing purposes only, and does']
+2026-07-01 23:22:23,233 | GOLD karti okunamadi (7). Ham: ['signalgpt ai is for reference and', 'knowledge-sharing purposes only, and does']
+2026-07-01 23:22:24,699 | GOLD karti okunamadi (3). Ham: ['signalgpt ai is for reference and', 'knowledge-sharing purposes only, and does']
+2026-07-01 23:22:26,337 | GOLD karti okunamadi (8). Ham: ['signalgpt ai is for reference and', 'knowledge-sharing purposes only, and does']
+2026-07-01 23:22:27,792 | GOLD karti okunamadi (4). Ham: ['signalgpt ai is for reference and', 'knowledge-sharing purposes only, and does']
+2026-07-01 23:22:29,514 | GOLD karti okunamadi (9). Ham: ['signalgpt ai is for reference and', 'knowledge-sharing purposes only, and does']
+2026-07-01 23:22:30,964 | GOLD karti okunamadi (5). Ham: ['signalgpt ai is for reference and', 'knowledge-sharing purposes only, and does']
+2026-07-01 23:22:32,706 | GOLD karti okunamadi (10). Ham: ['signalgpt ai is for reference and', 'knowledge-sharing purposes only, and does']
+2026-07-01 23:22:32,707 | 10 kez ust uste okunamadi - sayfa yenileniyor...
+2026-07-01 23:22:33,763 | GOLD karti okunamadi (6). Ham: []
+2026-07-01 23:22:36,741 | GOLD karti okunamadi (7). Ham: ['signalgpt ai is for reference and', 'knowledge-sharing purposes only, and does']
