@@ -1,41 +1,3 @@
-2026-07-01 21:19:56,255 | GOLD karti okunamadi (9). Ham: ['Entry: 4069.5', 'Nosignalsav', '6 01.05']
-2026-07-01 21:19:58,980 | GOLD karti okunamadi (10). Ham: ['Entry: 4069.5', 'Nosignalsav', '6 01.05']
-2026-07-01 21:19:58,981 | 10 kez ust uste okunamadi - sayfa yenileniyor...
-2026-07-01 21:20:07,117 | Sayfa yenilendi.
-2026-07-01 21:20:10,458 | GOLD karti okunamadi (1). Ham: ['ttion on signalgpt ai is for reference and knowledge-sharing purposes only; anc', 'isions']
-2026-07-01 21:20:13,736 | GOLD karti okunamadi (2). Ham: ['ttion on signalgpt ai is for reference and knowledge-sharing purposes only; anc', 'isions']
-2026-07-01 21:20:16,912 | GOLD karti okunamadi (3). Ham: ['ttion on signalgpt ai is for reference and knowledge-sharing purposes only; anc', 'isions']
-2026-07-01 21:20:19,994 | GOLD karti okunamadi (4). Ham: ['ttion on signalgpt ai is for reference and knowledge-sharing purposes only; anc', 'isions']
-2026-07-01 21:20:22,964 | GOLD karti okunamadi (5). Ham: ['ttion on signalgpt ai is for reference and knowledge-sharing purposes only; anc', 'isions']
-2026-07-01 21:20:28,136 | GOLD karti okunamadi (6). Ham: ['Entry: 4069.5', 'Nosignalsav', '6 01.05']
-2026-07-01 21:20:30,944 | GOLD karti okunamadi (7). Ham: ['Entry: 4069.5', 'Nosignalsav', '6 01.05']
-2026-07-01 21:20:33,694 | GOLD karti okunamadi (8). Ham: ['Entry: 4069.5', 'Nosignalsav', '6 01.05']
-2026-07-01 21:20:36,445 | GOLD karti okunamadi (9). Ham: ['Entry: 4069.5', 'Nosignalsav', '6 01.05']
-2026-07-01 21:20:39,138 | GOLD karti okunamadi (10). Ham: ['Entry: 4069.5', 'Nosignalsav', '6 01.05']
-2026-07-01 21:20:39,139 | 10 kez ust uste okunamadi - sayfa yenileniyor...
-2026-07-01 21:20:47,343 | Sayfa yenilendi.
-2026-07-01 21:21:02,693 | EasyOCR yukleniyor...
-2026-07-01 21:21:02,694 | Using CPU. Note: This module is much faster with a GPU.
-2026-07-01 21:21:06,886 | EasyOCR hazir.
-2026-07-01 21:21:06,887 | ==================================================
-2026-07-01 21:21:06,887 | MilaGold OCR Agent - Signal GPT versiyonu
-2026-07-01 21:21:06,887 | ==================================================
-2026-07-01 21:21:07,305 | Chrome versiyonu (exe): 149.0.7827.201
-2026-07-01 21:21:07,306 | ChromeDriver cache'den: C:\MilaYatirim\mila-yatirim-sistemi\MilaGold\chromedriver_cache\149.0.7827.201\chromedriver.exe
-2026-07-01 21:21:07,308 | ChromeDriver: C:\MilaYatirim\mila-yatirim-sistemi\MilaGold\chromedriver_cache\149.0.7827.201\chromedriver.exe
-2026-07-01 21:21:08,347 | Signal GPT sayfasina gidildi.
-2026-07-01 21:21:08,348 | Sayfa yukleniyor, 15 saniye bekleniyor...
-2026-07-01 21:21:23,473 | Baslangic screenshot alindi.
-2026-07-01 21:21:23,473 | Ilk okuma oncesi 5 saniye bekleniyor...
-2026-07-01 21:21:28,474 | Okuma dongusune giriliyor...
-2026-07-01 21:21:29,664 | GOLD karti okunamadi (1). Ham: ['Entry: 4069.5', 'Nosignalsav', '6 01.05']
-2026-07-01 21:21:32,453 | GOLD karti okunamadi (2). Ham: ['Entry: 4069.5', 'Nosignalsav', '6 01.05']
-2026-07-01 21:21:35,536 | GOLD karti okunamadi (3). Ham: ['Entry: 4069.5', 'Nosignalsav', '6 01.05']
-2026-07-01 21:21:38,196 | GOLD karti okunamadi (4). Ham: ['Entry: 4069.5', 'Nosignalsav', '6 01.05']
-2026-07-01 21:21:40,886 | GOLD karti okunamadi (5). Ham: ['Entry: 4069.5', 'Nosignalsav', '6 01.05']
-2026-07-01 21:21:43,495 | GOLD karti okunamadi (6). Ham: ['Entry: 4069.5', 'Nosignalsav', '6 01.05']
-2026-07-01 21:21:46,129 | GOLD karti okunamadi (7). Ham: ['Entry: 4069.5', 'Nosignalsav', '6 01.05']
-2026-07-01 21:21:48,833 | GOLD karti okunamadi (8). Ham: ['Entry: 4069.5', 'Nosignalsav', '6 01.05']
 2026-07-01 21:21:51,451 | GOLD karti okunamadi (9). Ham: ['Entry: 4069.5', 'Nosignalsav', '6 01.05']
 2026-07-01 21:21:54,116 | GOLD karti okunamadi (10). Ham: ['Entry: 4069.5', 'Nosignalsav', '6 01.05']
 2026-07-01 21:21:54,116 | 10 kez ust uste okunamadi - sayfa yenileniyor...
@@ -78,3 +40,41 @@
 2026-07-01 21:24:00,119 | Sayfa yenilendi.
 2026-07-01 21:24:03,316 | GOLD karti okunamadi (1). Ham: ['ttion on signalgpt ai is for reference and knowledge-sharing purposes only; anc', 'isions']
 2026-07-01 21:24:06,853 | GOLD karti okunamadi (2). Ham: ['ttion on signalgpt ai is for reference and knowledge-sharing purposes only; anc', 'isions']
+2026-07-01 21:24:10,360 | GOLD karti okunamadi (3). Ham: ['ttion on signalgpt ai is for reference and knowledge-sharing purposes only; anc', 'isions']
+2026-07-01 21:24:13,806 | GOLD karti okunamadi (4). Ham: ['ttion on signalgpt ai is for reference and knowledge-sharing purposes only; anc', 'isions']
+2026-07-01 21:24:17,600 | GOLD karti okunamadi (5). Ham: ['ttion on signalgpt ai is for reference and knowledge-sharing purposes only; anc', 'isions']
+2026-07-01 21:24:22,511 | GOLD karti okunamadi (6). Ham: ['Entry: 4069.5', 'Nosignalsav', '6 01.05']
+2026-07-01 21:24:25,115 | GOLD karti okunamadi (7). Ham: ['Entry: 4069.5', 'Nosignalsav', '6 01.05']
+2026-07-01 21:24:27,808 | GOLD karti okunamadi (8). Ham: ['Entry: 4069.5', 'Nosignalsav', '6 01.05']
+2026-07-01 21:24:30,573 | GOLD karti okunamadi (9). Ham: ['Entry: 4069.5', 'Nosignalsav', '6 01.05']
+2026-07-01 21:24:33,304 | GOLD karti okunamadi (10). Ham: ['Entry: 4069.5', 'Nosignalsav', '6 01.05']
+2026-07-01 21:24:33,304 | 10 kez ust uste okunamadi - sayfa yenileniyor...
+2026-07-01 21:24:41,504 | Sayfa yenilendi.
+2026-07-01 21:24:44,522 | GOLD karti okunamadi (1). Ham: ['ttion on signalgpt ai is for reference and knowledge-sharing purposes only; anc', 'isions']
+2026-07-01 21:24:47,682 | GOLD karti okunamadi (2). Ham: ['ttion on signalgpt ai is for reference and knowledge-sharing purposes only; anc', 'isions']
+2026-07-01 21:24:50,695 | GOLD karti okunamadi (3). Ham: ['ttion on signalgpt ai is for reference and knowledge-sharing purposes only; anc', 'isions']
+2026-07-01 21:24:54,041 | GOLD karti okunamadi (4). Ham: ['ttion on signalgpt ai is for reference and knowledge-sharing purposes only; anc', 'isions']
+2026-07-01 21:24:57,461 | GOLD karti okunamadi (5). Ham: ['ttion on signalgpt ai is for reference and knowledge-sharing purposes only; anc', 'isions']
+2026-07-01 21:25:02,904 | GOLD karti okunamadi (6). Ham: ['Entry: 4069.5', 'Nosignalsav', '6 01.05']
+2026-07-01 21:25:05,578 | GOLD karti okunamadi (7). Ham: ['Entry: 4069.5', 'Nosignalsav', '6 01.05']
+2026-07-01 21:25:08,405 | GOLD karti okunamadi (8). Ham: ['Entry: 4069.5', 'Nosignalsav', '6 01.05']
+2026-07-01 21:25:11,394 | GOLD karti okunamadi (9). Ham: ['Entry: 4069.5', 'Nosignalsav', '6 01.05']
+2026-07-01 21:25:14,046 | GOLD karti okunamadi (10). Ham: ['Entry: 4069.5', 'Nosignalsav', '6 01.05']
+2026-07-01 21:25:14,046 | 10 kez ust uste okunamadi - sayfa yenileniyor...
+2026-07-01 21:25:22,198 | Sayfa yenilendi.
+2026-07-01 21:25:25,518 | GOLD karti okunamadi (1). Ham: ['ttion on signalgpt ai is for reference and knowledge-sharing purposes only; anc', 'isions']
+2026-07-01 21:25:28,690 | GOLD karti okunamadi (2). Ham: ['ttion on signalgpt ai is for reference and knowledge-sharing purposes only; anc', 'isions']
+2026-07-01 21:25:31,943 | GOLD karti okunamadi (3). Ham: ['ttion on signalgpt ai is for reference and knowledge-sharing purposes only; anc', 'isions']
+2026-07-01 21:25:35,189 | GOLD karti okunamadi (4). Ham: ['ttion on signalgpt ai is for reference and knowledge-sharing purposes only; anc', 'isions']
+2026-07-01 21:25:38,287 | GOLD karti okunamadi (5). Ham: ['ttion on signalgpt ai is for reference and knowledge-sharing purposes only; anc', 'isions']
+2026-07-01 21:25:41,462 | GOLD karti okunamadi (6). Ham: ['ttion on signalgpt ai is for reference and knowledge-sharing purposes only; anc', 'isions']
+2026-07-01 21:25:44,827 | GOLD karti okunamadi (7). Ham: ['Entry: 4069.5', 'Nosignalsav', '6 01.05']
+2026-07-01 21:25:47,532 | GOLD karti okunamadi (8). Ham: ['Entry: 4069.5', 'Nosignalsav', '6 01.05']
+2026-07-01 21:25:50,185 | GOLD karti okunamadi (9). Ham: ['Entry: 4069.5', 'Nosignalsav', '6 01.05']
+2026-07-01 21:25:52,941 | GOLD karti okunamadi (10). Ham: ['Entry: 4069.5', 'Nosignalsav', '6 01.05']
+2026-07-01 21:25:52,942 | 10 kez ust uste okunamadi - sayfa yenileniyor...
+2026-07-01 21:26:01,172 | Sayfa yenilendi.
+2026-07-01 21:26:04,561 | GOLD karti okunamadi (1). Ham: ['ttion on signalgpt ai is for reference and knowledge-sharing purposes only; anc', 'isions']
+2026-07-01 21:26:07,649 | GOLD karti okunamadi (2). Ham: ['ttion on signalgpt ai is for reference and knowledge-sharing purposes only; anc', 'isions']
+2026-07-01 21:26:10,790 | GOLD karti okunamadi (3). Ham: ['ttion on signalgpt ai is for reference and knowledge-sharing purposes only; anc', 'isions']
+2026-07-01 21:26:13,895 | GOLD karti okunamadi (4). Ham: ['ttion on signalgpt ai is for reference and knowledge-sharing purposes only; anc', 'isions']
