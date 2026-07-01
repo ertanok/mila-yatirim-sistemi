@@ -1,80 +1,80 @@
-2026-07-02 01:41:52,560 | EasyOCR yukleniyor...
-2026-07-02 01:41:52,561 | Using CPU. Note: This module is much faster with a GPU.
-2026-07-02 01:41:55,528 | EasyOCR hazir.
-2026-07-02 01:41:55,528 | ==================================================
-2026-07-02 01:41:55,528 | MilaGold OCR Agent - Signal GPT versiyonu
-2026-07-02 01:41:55,529 | ==================================================
-2026-07-02 01:41:55,776 | Chrome versiyonu (exe): 150.0.7871.46
-2026-07-02 01:41:55,777 | ChromeDriver cache'den: C:\MilaYatirim\mila-yatirim-sistemi\MilaGold\chromedriver_cache\150.0.7871.46\chromedriver.exe
-2026-07-02 01:41:55,777 | ChromeDriver: C:\MilaYatirim\mila-yatirim-sistemi\MilaGold\chromedriver_cache\150.0.7871.46\chromedriver.exe
-2026-07-02 01:41:56,660 | Signal GPT sayfasina gidildi.
-2026-07-02 01:41:56,661 | Sayfa yukleniyor, 15 saniye bekleniyor...
-2026-07-02 01:42:11,824 | Baslangic screenshot alindi.
-2026-07-02 01:42:11,824 | Ilk okuma oncesi 5 saniye bekleniyor...
-2026-07-02 01:42:16,826 | Okuma dongusune giriliyor...
-2026-07-02 01:42:17,652 | GOLD karti okunamadi (1). Ham: ['signalgpt ai is for reference andknowlec']
-2026-07-02 01:42:20,361 | GOLD karti okunamadi (2). Ham: ['signalgpt ai is for reference andknowlec']
-2026-07-02 01:42:23,024 | GOLD karti okunamadi (3). Ham: ['signalgpt ai is for reference andknowlec']
-2026-07-02 01:42:27,777 | GOLD karti okunamadi (4). Ham: ['SD', 'RUNNIG', 'Entry: 4038.5']
-2026-07-02 01:42:30,268 | GOLD karti okunamadi (5). Ham: ['SD', 'RUNNIG', 'Entry: 4038.5']
-2026-07-02 01:42:32,745 | GOLD karti okunamadi (6). Ham: ['SD', 'RUNNIG', 'Entry: 4038.5']
-2026-07-02 01:42:35,280 | GOLD karti okunamadi (7). Ham: ['SD', 'RUNNIG', 'Entry: 4038.5']
-2026-07-02 01:42:37,711 | GOLD karti okunamadi (8). Ham: ['SD', 'RUNNIG', 'Entry: 4038.5']
-2026-07-02 01:42:40,149 | GOLD karti okunamadi (9). Ham: ['SD', 'RUNNIG', 'Entry: 4038.5']
-2026-07-02 01:42:42,602 | GOLD karti okunamadi (10). Ham: ['SD', 'RUNNIG', 'Entry: 4038.5']
-2026-07-02 01:42:42,602 | 10 kez ust uste okunamadi - sayfa yenileniyor...
-2026-07-02 01:42:50,697 | Sayfa yenilendi.
-2026-07-02 01:42:53,412 | GOLD karti okunamadi (1). Ham: ['signalgpt ai is for reference andknowlec']
-2026-07-02 01:42:56,181 | GOLD karti okunamadi (2). Ham: ['signalgpt ai is for reference andknowlec']
-2026-07-02 01:42:58,915 | GOLD karti okunamadi (3). Ham: ['signalgpt ai is for reference andknowlec']
-2026-07-02 01:43:01,679 | GOLD karti okunamadi (4). Ham: ['signalgpt ai is for reference andknowlec']
-2026-07-02 01:43:04,461 | GOLD karti okunamadi (5). Ham: ['signalgpt ai is for reference andknowlec']
-2026-07-02 01:43:07,236 | GOLD karti okunamadi (6). Ham: ['signalgpt ai is for reference andknowlec']
-2026-07-02 01:43:10,618 | GOLD karti okunamadi (7). Ham: ['SD', 'RUNNIG', 'Entry: 4038.5']
-2026-07-02 01:43:12,997 | GOLD karti okunamadi (8). Ham: ['SD', 'RUNNIG', 'Entry: 4038.5']
-2026-07-02 01:43:15,458 | GOLD karti okunamadi (9). Ham: ['SD', 'RUNNIG', 'Entry: 4038.5']
-2026-07-02 01:43:17,924 | GOLD karti okunamadi (10). Ham: ['SD', 'RUNNIG', 'Entry: 4038.5']
-2026-07-02 01:43:17,924 | 10 kez ust uste okunamadi - sayfa yenileniyor...
-2026-07-02 01:43:26,010 | Sayfa yenilendi.
-2026-07-02 01:43:28,513 | GOLD karti okunamadi (1). Ham: ['SD', 'RUNNIG', 'Entry: 4038.5']
-2026-07-02 01:43:30,940 | GOLD karti okunamadi (2). Ham: ['SD', 'RUNNIG', 'Entry: 4038.5']
-2026-07-02 01:43:33,357 | GOLD karti okunamadi (3). Ham: ['SD', 'RUNNIG', 'Entry: 4038.5']
-2026-07-02 01:43:35,811 | GOLD karti okunamadi (4). Ham: ['SD', 'RUNNIG', 'Entry: 4038.5']
-2026-07-02 01:43:38,276 | GOLD karti okunamadi (5). Ham: ['SD', 'RUNNIG', 'Entry: 4038.5']
-2026-07-02 01:43:40,762 | GOLD karti okunamadi (6). Ham: ['SD', 'RUNNIG', 'Entry: 4038.5']
-2026-07-02 01:43:43,221 | GOLD karti okunamadi (7). Ham: ['SD', 'RUNNIG', 'Entry: 4038.5']
-2026-07-02 01:43:45,674 | GOLD karti okunamadi (8). Ham: ['SD', 'RUNNIG', 'Entry: 4038.5']
-2026-07-02 01:43:48,111 | GOLD karti okunamadi (9). Ham: ['SD', 'RUNNIG', 'Entry: 4038.5']
-2026-07-02 01:43:50,578 | GOLD karti okunamadi (10). Ham: ['SD', 'RUNNIG', 'Entry: 4038.5']
-2026-07-02 01:43:50,579 | 10 kez ust uste okunamadi - sayfa yenileniyor...
-2026-07-02 01:43:58,665 | Sayfa yenilendi.
-2026-07-02 01:44:01,397 | GOLD karti okunamadi (1). Ham: ['signalgpt ai is for reference andknowlec']
-2026-07-02 01:44:04,073 | GOLD karti okunamadi (2). Ham: ['signalgpt ai is for reference andknowlec']
-2026-07-02 01:44:06,773 | GOLD karti okunamadi (3). Ham: ['signalgpt ai is for reference andknowlec']
-2026-07-02 01:44:09,553 | GOLD karti okunamadi (4). Ham: ['signalgpt ai is for reference andknowlec']
-2026-07-02 01:44:12,229 | GOLD karti okunamadi (5). Ham: ['signalgpt ai is for reference andknowlec']
-2026-07-02 01:44:14,942 | GOLD karti okunamadi (6). Ham: ['signalgpt ai is for reference andknowlec']
-2026-07-02 01:44:19,682 | GOLD karti okunamadi (7). Ham: ['signalgpt ai is for reference andknowlec']
-2026-07-02 01:44:22,129 | GOLD karti okunamadi (8). Ham: ['SD', 'RUNNIG', 'Entry: 4038.5']
-2026-07-02 01:44:24,595 | GOLD karti okunamadi (9). Ham: ['SD', 'RUNNIG', 'Entry: 4038.5']
-2026-07-02 01:44:27,036 | GOLD karti okunamadi (10). Ham: ['SD', 'RUNNIG', 'Entry: 4038.5']
-2026-07-02 01:44:27,036 | 10 kez ust uste okunamadi - sayfa yenileniyor...
-2026-07-02 01:44:35,135 | Sayfa yenilendi.
-2026-07-02 01:44:37,860 | GOLD karti okunamadi (1). Ham: ['signalgpt ai is for reference andknowlec']
-2026-07-02 01:44:40,548 | GOLD karti okunamadi (2). Ham: ['signalgpt ai is for reference andknowlec']
-2026-07-02 01:44:43,309 | GOLD karti okunamadi (3). Ham: ['signalgpt ai is for reference andknowlec']
-2026-07-02 01:44:45,943 | GOLD karti okunamadi (4). Ham: ['signalgpt ai is for reference andknowlec']
-2026-07-02 01:44:48,606 | GOLD karti okunamadi (5). Ham: ['signalgpt ai is for reference andknowlec']
-2026-07-02 01:44:51,336 | GOLD karti okunamadi (6). Ham: ['signalgpt ai is for reference andknowlec']
-2026-07-02 01:44:55,691 | GOLD karti okunamadi (7). Ham: ['SD', 'RUNNIG', 'Entry: 4038.5']
-2026-07-02 01:44:58,154 | GOLD karti okunamadi (8). Ham: ['SD', 'RUNNIG', 'Entry: 4038.5']
-2026-07-02 01:45:00,726 | GOLD karti okunamadi (9). Ham: ['SD', 'RUNNIG', 'Entry: 4038.5']
-2026-07-02 01:45:03,166 | GOLD karti okunamadi (10). Ham: ['SD', 'RUNNIG', 'Entry: 4038.5']
-2026-07-02 01:45:03,166 | 10 kez ust uste okunamadi - sayfa yenileniyor...
-2026-07-02 01:45:11,257 | Sayfa yenilendi.
-2026-07-02 01:45:13,876 | GOLD karti okunamadi (1). Ham: ['signalgpt ai is for reference andknowlec']
-2026-07-02 01:45:16,554 | GOLD karti okunamadi (2). Ham: ['signalgpt ai is for reference andknowlec']
-2026-07-02 01:45:19,242 | GOLD karti okunamadi (3). Ham: ['signalgpt ai is for reference andknowlec']
-2026-07-02 01:45:21,847 | GOLD karti okunamadi (4). Ham: ['signalgpt ai is for reference andknowlec']
-2026-07-02 01:45:24,525 | GOLD karti okunamadi (5). Ham: ['signalgpt ai is for reference andknowlec']
-2026-07-02 01:45:27,184 | GOLD karti okunamadi (6). Ham: ['signalgpt ai is for reference andknowlec']
+2026-07-02 01:45:40,059 | Using CPU. Note: This module is much faster with a GPU.
+2026-07-02 01:45:42,655 | EasyOCR hazir.
+2026-07-02 01:45:42,655 | ==================================================
+2026-07-02 01:45:42,655 | MilaGold OCR Agent - Signal GPT versiyonu
+2026-07-02 01:45:42,655 | ==================================================
+2026-07-02 01:45:42,899 | Chrome versiyonu (exe): 150.0.7871.46
+2026-07-02 01:45:42,900 | ChromeDriver cache'den: C:\MilaYatirim\mila-yatirim-sistemi\MilaGold\chromedriver_cache\150.0.7871.46\chromedriver.exe
+2026-07-02 01:45:42,900 | ChromeDriver: C:\MilaYatirim\mila-yatirim-sistemi\MilaGold\chromedriver_cache\150.0.7871.46\chromedriver.exe
+2026-07-02 01:45:43,818 | Signal GPT sayfasina gidildi.
+2026-07-02 01:45:43,818 | Sayfa yukleniyor, 15 saniye bekleniyor...
+2026-07-02 01:45:58,972 | Baslangic screenshot alindi.
+2026-07-02 01:45:58,972 | Ilk okuma oncesi 5 saniye bekleniyor...
+2026-07-02 01:46:03,973 | Okuma dongusune giriliyor...
+2026-07-02 01:46:05,145 | GOLD karti okunamadi (1). Ham: ['Disclaimer', 'The information on signalgpt ai is for reference and knowlec', 'trading decisions:']
+2026-07-02 01:46:08,167 | GOLD karti okunamadi (2). Ham: ['Disclaimer', 'The information on signalgpt ai is for reference and knowlec', 'trading decisions:']
+2026-07-02 01:46:11,095 | Sinyal tarihi okundu: 02/07/2026 05:36
+2026-07-02 01:46:11,095 | Olasi yeni sinyal, HEMEN yazildi (dogrulama bekleniyor 1/2): #None | SELL @ 4038.5
+2026-07-02 01:46:11,097 | signal.json yazildi.
+2026-07-02 01:46:13,785 | Sinyal tarihi okundu: 02/07/2026 05:36
+2026-07-02 01:46:13,785 | Yeni sinyal DOGRULANDI (2 okuma): entry=4038.5 pending=4038.5
+2026-07-02 01:46:16,524 | Sinyal tarihi okundu: 02/07/2026 05:36
+2026-07-02 01:46:16,524 | Takip: SELL @ 4038.5 | Status:RUNNING
+2026-07-02 01:46:19,963 | Sinyal tarihi okundu: 02/07/2026 05:36
+2026-07-02 01:46:19,964 | Takip: SELL @ 4038.5 | Status:RUNNING
+2026-07-02 01:46:22,692 | Sinyal tarihi okundu: 02/07/2026 05:36
+2026-07-02 01:46:22,692 | Takip: SELL @ 4038.5 | Status:RUNNING
+2026-07-02 01:46:25,468 | Sinyal tarihi okundu: 02/07/2026 05:36
+2026-07-02 01:46:25,468 | Takip: SELL @ 4038.5 | Status:RUNNING
+2026-07-02 01:46:28,175 | Sinyal tarihi okundu: 02/07/2026 05:36
+2026-07-02 01:46:28,176 | Takip: SELL @ 4038.5 | Status:RUNNING
+2026-07-02 01:46:30,905 | Sinyal tarihi okundu: 02/07/2026 05:36
+2026-07-02 01:46:30,905 | Takip: SELL @ 4038.5 | Status:RUNNING
+2026-07-02 01:46:33,668 | Sinyal tarihi okundu: 02/07/2026 05:36
+2026-07-02 01:46:33,668 | Takip: SELL @ 4038.5 | Status:RUNNING
+2026-07-02 01:46:36,330 | Sinyal tarihi okundu: 02/07/2026 05:36
+2026-07-02 01:46:36,331 | Takip: SELL @ 4038.5 | Status:RUNNING
+2026-07-02 01:46:38,971 | Sinyal tarihi okundu: 02/07/2026 05:36
+2026-07-02 01:46:38,971 | Takip: SELL @ 4038.5 | Status:RUNNING
+2026-07-02 01:46:41,667 | Sinyal tarihi okundu: 02/07/2026 05:36
+2026-07-02 01:46:41,668 | Takip: SELL @ 4038.5 | Status:RUNNING
+2026-07-02 01:46:44,276 | Sinyal tarihi okundu: 02/07/2026 05:36
+2026-07-02 01:46:44,277 | Takip: SELL @ 4038.5 | Status:RUNNING
+2026-07-02 01:46:46,951 | Sinyal tarihi okundu: 02/07/2026 05:36
+2026-07-02 01:46:46,952 | Takip: SELL @ 4038.5 | Status:RUNNING
+2026-07-02 01:46:49,689 | Sinyal tarihi okundu: 02/07/2026 05:36
+2026-07-02 01:46:49,689 | Takip: SELL @ 4038.5 | Status:RUNNING
+2026-07-02 01:46:52,499 | Sinyal tarihi okundu: 02/07/2026 05:36
+2026-07-02 01:46:52,499 | Takip: SELL @ 4038.5 | Status:RUNNING
+2026-07-02 01:46:55,171 | Sinyal tarihi okundu: 02/07/2026 05:36
+2026-07-02 01:46:55,172 | Takip: SELL @ 4038.5 | Status:RUNNING
+2026-07-02 01:46:57,945 | Sinyal tarihi okundu: 02/07/2026 05:36
+2026-07-02 01:46:57,945 | Takip: SELL @ 4038.5 | Status:RUNNING
+2026-07-02 01:47:00,817 | Sinyal tarihi okundu: 02/07/2026 05:36
+2026-07-02 01:47:00,818 | Takip: SELL @ 4038.5 | Status:RUNNING
+2026-07-02 01:47:03,470 | Sinyal tarihi okundu: 02/07/2026 05:36
+2026-07-02 01:47:03,470 | Takip: SELL @ 4038.5 | Status:RUNNING
+2026-07-02 01:47:06,143 | Sinyal tarihi okundu: 02/07/2026 05:36
+2026-07-02 01:47:06,143 | Takip: SELL @ 4038.5 | Status:RUNNING
+2026-07-02 01:47:08,877 | Sinyal tarihi okundu: 02/07/2026 05:36
+2026-07-02 01:47:08,877 | Takip: SELL @ 4038.5 | Status:RUNNING
+2026-07-02 01:47:11,713 | Sinyal tarihi okundu: 02/07/2026 05:36
+2026-07-02 01:47:11,714 | Takip: SELL @ 4038.5 | Status:RUNNING
+2026-07-02 01:47:14,509 | Sinyal tarihi okundu: 02/07/2026 05:36
+2026-07-02 01:47:14,510 | Takip: SELL @ 4038.5 | Status:RUNNING
+2026-07-02 01:47:17,262 | Sinyal tarihi okundu: 02/07/2026 05:36
+2026-07-02 01:47:17,263 | Takip: SELL @ 4038.5 | Status:RUNNING
+2026-07-02 01:47:19,926 | Sinyal tarihi okundu: 02/07/2026 05:36
+2026-07-02 01:47:19,926 | Takip: SELL @ 4038.5 | Status:RUNNING
+2026-07-02 01:47:22,617 | Sinyal tarihi okundu: 02/07/2026 05:36
+2026-07-02 01:47:22,617 | Takip: SELL @ 4038.5 | Status:RUNNING
+2026-07-02 01:47:25,281 | Sinyal tarihi okundu: 02/07/2026 05:36
+2026-07-02 01:47:25,282 | Takip: SELL @ 4038.5 | Status:RUNNING
+2026-07-02 01:47:27,957 | Sinyal tarihi okundu: 02/07/2026 05:36
+2026-07-02 01:47:27,958 | Takip: SELL @ 4038.5 | Status:RUNNING
+2026-07-02 01:47:30,718 | Sinyal tarihi okundu: 02/07/2026 05:36
+2026-07-02 01:47:30,719 | Takip: SELL @ 4038.5 | Status:RUNNING
+2026-07-02 01:47:33,492 | Sinyal tarihi okundu: 02/07/2026 05:36
+2026-07-02 01:47:33,492 | Takip: SELL @ 4038.5 | Status:RUNNING
+2026-07-02 01:47:36,254 | Sinyal tarihi okundu: 02/07/2026 05:36
+2026-07-02 01:47:36,260 | Takip: SELL @ 4038.5 | Status:RUNNING
