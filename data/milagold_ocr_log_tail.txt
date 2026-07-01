@@ -1,41 +1,3 @@
-2026-07-01 15:47:06,822 | Chrome versiyonu (exe): 149.0.7827.201
-2026-07-01 15:47:06,823 | ChromeDriver cache'den: C:\MilaYatirim\mila-yatirim-sistemi\MilaGold\chromedriver_cache\149.0.7827.201\chromedriver.exe
-2026-07-01 15:47:06,823 | ChromeDriver: C:\MilaYatirim\mila-yatirim-sistemi\MilaGold\chromedriver_cache\149.0.7827.201\chromedriver.exe
-2026-07-01 15:47:07,833 | Signal GPT sayfasina gidildi.
-2026-07-01 15:47:07,834 | Sayfa yukleniyor, 15 saniye bekleniyor...
-2026-07-01 15:47:23,236 | Baslangic screenshot alindi.
-2026-07-01 15:47:23,238 | Ilk okuma oncesi 5 saniye bekleniyor...
-2026-07-01 15:47:28,241 | Okuma dongusune giriliyor...
-2026-07-01 15:47:30,337 | GOLD karti okunamadi (1). Ham: ['ttion on signalgpt ai is for reference and knowledge-sharing purposes only; anc', 'isions']
-2026-07-01 15:47:34,186 | GOLD karti okunamadi (2). Ham: ['ttion on signalgpt ai is for reference and knowledge-sharing purposes only; anc', 'isions']
-2026-07-01 15:47:38,099 | GOLD karti okunamadi (3). Ham: ['ttion on signalgpt ai is for reference and knowledge-sharing purposes only; anc', 'isions']
-2026-07-01 15:47:42,757 | GOLD karti okunamadi (4). Ham: ['4026.5', 'Nosignalsav', '5 19.43']
-2026-07-01 15:47:46,762 | GOLD karti okunamadi (5). Ham: ['4026.5', 'Nosignalsav', '5 19.43']
-2026-07-01 15:47:51,279 | GOLD karti okunamadi (6). Ham: ['4026.5', 'Nosignalsav', '5 19.43']
-2026-07-01 15:47:54,702 | GOLD karti okunamadi (7). Ham: ['4026.5', 'Nosignalsav', '5 19.43']
-2026-07-01 15:47:58,020 | GOLD karti okunamadi (8). Ham: ['4026.5', 'Nosignalsav', '5 19.43']
-2026-07-01 15:48:01,373 | GOLD karti okunamadi (9). Ham: ['4026.5', 'Nosignalsav', '5 19.43']
-2026-07-01 15:48:06,249 | GOLD karti okunamadi (10). Ham: ['4026.5', 'Nosignalsav', '5 19.43']
-2026-07-01 15:48:06,250 | 10 kez ust uste okunamadi - sayfa yenileniyor...
-2026-07-01 15:48:14,640 | Sayfa yenilendi.
-2026-07-01 15:48:18,095 | GOLD karti okunamadi (1). Ham: ['ttion on signalgpt ai is for reference and knowledge-sharing purposes only; anc', 'isions']
-2026-07-01 15:48:21,691 | GOLD karti okunamadi (2). Ham: ['ttion on signalgpt ai is for reference and knowledge-sharing purposes only; anc', 'isions']
-2026-07-01 15:48:25,138 | GOLD karti okunamadi (3). Ham: ['ttion on signalgpt ai is for reference and knowledge-sharing purposes only; anc', 'isions']
-2026-07-01 15:48:28,480 | GOLD karti okunamadi (4). Ham: ['ttion on signalgpt ai is for reference and knowledge-sharing purposes only; anc', 'isions']
-2026-07-01 15:48:31,892 | GOLD karti okunamadi (5). Ham: ['ttion on signalgpt ai is for reference and knowledge-sharing purposes only; anc', 'isions']
-2026-07-01 15:48:37,006 | GOLD karti okunamadi (6). Ham: ['4026.5', 'Nosignalsav', '5 19.43']
-2026-07-01 15:48:40,319 | GOLD karti okunamadi (7). Ham: ['4026.5', 'Nosignalsav', '5 19.43']
-2026-07-01 15:48:43,794 | GOLD karti okunamadi (8). Ham: ['4026.5', 'Nosignalsav', '5 19.43']
-2026-07-01 15:48:46,763 | GOLD karti okunamadi (9). Ham: ['4026.5', 'Nosignalsav', '5 19.43']
-2026-07-01 15:48:49,759 | GOLD karti okunamadi (10). Ham: ['4026.5', 'Nosignalsav', '5 19.43']
-2026-07-01 15:48:49,759 | 10 kez ust uste okunamadi - sayfa yenileniyor...
-2026-07-01 15:48:57,905 | Sayfa yenilendi.
-2026-07-01 15:49:01,663 | GOLD karti okunamadi (1). Ham: ['ttion on signalgpt ai is for reference and knowledge-sharing purposes only; anc', 'isions']
-2026-07-01 15:49:05,826 | GOLD karti okunamadi (2). Ham: ['ttion on signalgpt ai is for reference and knowledge-sharing purposes only; anc', 'isions']
-2026-07-01 15:49:09,530 | GOLD karti okunamadi (3). Ham: ['ttion on signalgpt ai is for reference and knowledge-sharing purposes only; anc', 'isions']
-2026-07-01 15:49:13,042 | GOLD karti okunamadi (4). Ham: ['ttion on signalgpt ai is for reference and knowledge-sharing purposes only; anc', 'isions']
-2026-07-01 15:49:17,350 | GOLD karti okunamadi (5). Ham: ['ttion on signalgpt ai is for reference and knowledge-sharing purposes only; anc', 'isions']
-2026-07-01 15:49:22,803 | GOLD karti okunamadi (6). Ham: ['4026.5', 'Nosignalsav', '5 19.43']
 2026-07-01 15:49:26,482 | GOLD karti okunamadi (7). Ham: ['4026.5', 'Nosignalsav', '5 19.43']
 2026-07-01 15:49:29,773 | GOLD karti okunamadi (8). Ham: ['4026.5', 'Nosignalsav', '5 19.43']
 2026-07-01 15:49:33,088 | GOLD karti okunamadi (9). Ham: ['4026.5', 'Nosignalsav', '5 19.43']
@@ -78,3 +40,41 @@
 2026-07-01 15:51:57,891 | GOLD karti okunamadi (10). Ham: ['4026.5', 'Nosignalsav', '5 19.43']
 2026-07-01 15:51:57,892 | 10 kez ust uste okunamadi - sayfa yenileniyor...
 2026-07-01 15:52:06,403 | Sayfa yenilendi.
+2026-07-01 15:52:10,305 | GOLD karti okunamadi (1). Ham: ['ttion on signalgpt ai is for reference and knowledge-sharing purposes only; anc', 'isions']
+2026-07-01 15:52:14,070 | GOLD karti okunamadi (2). Ham: ['ttion on signalgpt ai is for reference and knowledge-sharing purposes only; anc', 'isions']
+2026-07-01 15:52:17,639 | GOLD karti okunamadi (3). Ham: ['ttion on signalgpt ai is for reference and knowledge-sharing purposes only; anc', 'isions']
+2026-07-01 15:52:21,041 | GOLD karti okunamadi (4). Ham: ['ttion on signalgpt ai is for reference and knowledge-sharing purposes only; anc', 'isions']
+2026-07-01 15:52:24,320 | GOLD karti okunamadi (5). Ham: ['ttion on signalgpt ai is for reference and knowledge-sharing purposes only; anc', 'isions']
+2026-07-01 15:52:29,679 | GOLD karti okunamadi (6). Ham: ['4026.5', 'Nosignalsav', '5 19.43']
+2026-07-01 15:52:32,554 | GOLD karti okunamadi (7). Ham: ['4026.5', 'Nosignalsav', '5 19.43']
+2026-07-01 15:52:35,576 | GOLD karti okunamadi (8). Ham: ['4026.5', 'Nosignalsav', '5 19.43']
+2026-07-01 15:52:38,280 | GOLD karti okunamadi (9). Ham: ['4026.5', 'Nosignalsav', '5 19.43']
+2026-07-01 15:52:40,938 | GOLD karti okunamadi (10). Ham: ['4026.5', 'Nosignalsav', '5 19.43']
+2026-07-01 15:52:40,938 | 10 kez ust uste okunamadi - sayfa yenileniyor...
+2026-07-01 15:52:49,041 | Sayfa yenilendi.
+2026-07-01 15:52:52,174 | GOLD karti okunamadi (1). Ham: ['4026.5', 'Nosignalsav', '5 19.43']
+2026-07-01 15:52:55,369 | GOLD karti okunamadi (2). Ham: ['4026.5', 'Nosignalsav', '5 19.43']
+2026-07-01 15:52:58,165 | GOLD karti okunamadi (3). Ham: ['4026.5', 'Nosignalsav', '5 19.43']
+2026-07-01 15:53:00,966 | GOLD karti okunamadi (4). Ham: ['4026.5', 'Nosignalsav', '5 19.43']
+2026-07-01 15:53:04,336 | GOLD karti okunamadi (5). Ham: ['4026.5', 'Nosignalsav', '5 19.43']
+2026-07-01 15:53:07,988 | GOLD karti okunamadi (6). Ham: ['4026.5', 'Nosignalsav', '5 19.43']
+2026-07-01 15:53:11,232 | GOLD karti okunamadi (7). Ham: ['4026.5', 'Nosignalsav', '5 19.43']
+2026-07-01 15:53:14,449 | GOLD karti okunamadi (8). Ham: ['4026.5', 'Nosignalsav', '5 19.43']
+2026-07-01 15:53:18,687 | GOLD karti okunamadi (9). Ham: ['4026.5', 'Nosignalsav', '5 19.43']
+2026-07-01 15:53:21,746 | GOLD karti okunamadi (10). Ham: ['4026.5', 'Nosignalsav', '5 19.43']
+2026-07-01 15:53:21,746 | 10 kez ust uste okunamadi - sayfa yenileniyor...
+2026-07-01 15:53:29,846 | Sayfa yenilendi.
+2026-07-01 15:53:32,784 | GOLD karti okunamadi (1). Ham: ['4026.5', 'Nosignalsav', '5 19.43']
+2026-07-01 15:53:35,984 | GOLD karti okunamadi (2). Ham: ['4026.5', 'Nosignalsav', '5 19.43']
+2026-07-01 15:53:39,889 | GOLD karti okunamadi (3). Ham: ['4026.5', 'Nosignalsav', '5 19.43']
+2026-07-01 15:53:42,845 | GOLD karti okunamadi (4). Ham: ['4026.5', 'Nosignalsav', '5 19.43']
+2026-07-01 15:53:45,607 | GOLD karti okunamadi (5). Ham: ['4026.5', 'Nosignalsav', '5 19.43']
+2026-07-01 15:53:48,870 | GOLD karti okunamadi (6). Ham: ['4026.5', 'Nosignalsav', '5 19.43']
+2026-07-01 15:53:52,129 | GOLD karti okunamadi (7). Ham: ['4026.5', 'Nosignalsav', '5 19.43']
+2026-07-01 15:53:55,743 | GOLD karti okunamadi (8). Ham: ['4026.5', 'Nosignalsav', '5 19.43']
+2026-07-01 15:53:58,361 | GOLD karti okunamadi (9). Ham: ['4026.5', 'Nosignalsav', '5 19.43']
+2026-07-01 15:54:01,323 | GOLD karti okunamadi (10). Ham: ['4026.5', 'Nosignalsav', '5 19.43']
+2026-07-01 15:54:01,323 | 10 kez ust uste okunamadi - sayfa yenileniyor...
+2026-07-01 15:54:09,464 | Sayfa yenilendi.
+2026-07-01 15:54:12,770 | GOLD karti okunamadi (1). Ham: ['4026.5', 'Nosignalsav', '5 19.43']
+2026-07-01 15:54:15,743 | GOLD karti okunamadi (2). Ham: ['4026.5', 'Nosignalsav', '5 19.43']
