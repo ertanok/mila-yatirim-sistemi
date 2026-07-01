@@ -1,45 +1,3 @@
-2026-07-01 04:17:16,644 | GOLD karti okunamadi (8). Ham: ['Entry: 4016', 'Nosignalsav', '6 19.38']
-2026-07-01 04:17:19,657 | GOLD karti okunamadi (9). Ham: ['Entry: 4016', 'Nosignalsav', '6 19.38']
-2026-07-01 04:17:22,322 | GOLD karti okunamadi (10). Ham: ['Entry: 4016', 'Nosignalsav', '6 19.38']
-2026-07-01 04:17:22,323 | 10 kez ust uste okunamadi - sayfa yenileniyor...
-2026-07-01 04:17:30,448 | Sayfa yenilendi.
-2026-07-01 04:17:33,218 | GOLD karti okunamadi (1). Ham: ['Entry: 4016', 'Nosignalsav', '6 19.38']
-2026-07-01 04:17:36,380 | GOLD karti okunamadi (2). Ham: ['Entry: 4016', 'Nosignalsav', '6 19.38']
-2026-07-01 04:17:39,729 | GOLD karti okunamadi (3). Ham: ['Entry: 4016', 'Nosignalsav', '6 19.38']
-2026-07-01 04:17:42,938 | GOLD karti okunamadi (4). Ham: ['Entry: 4016', 'Nosignalsav', '6 19.38']
-2026-07-01 04:17:46,073 | GOLD karti okunamadi (5). Ham: ['Entry: 4016', 'Nosignalsav', '6 19.38']
-2026-07-01 04:17:49,284 | GOLD karti okunamadi (6). Ham: ['Entry: 4016', 'Nosignalsav', '6 19.38']
-2026-07-01 04:17:52,058 | GOLD karti okunamadi (7). Ham: ['Entry: 4016', 'Nosignalsav', '6 19.38']
-2026-07-01 04:17:55,338 | GOLD karti okunamadi (8). Ham: ['Entry: 4016', 'Nosignalsav', '6 19.38']
-2026-07-01 04:17:58,197 | GOLD karti okunamadi (9). Ham: ['Entry: 4016', 'Nosignalsav', '6 19.38']
-2026-07-01 04:18:01,595 | GOLD karti okunamadi (10). Ham: ['Entry: 4016', 'Nosignalsav', '6 19.38']
-2026-07-01 04:18:01,600 | 10 kez ust uste okunamadi - sayfa yenileniyor...
-2026-07-01 04:18:10,021 | Sayfa yenilendi.
-2026-07-01 04:18:14,078 | GOLD karti okunamadi (1). Ham: ['ttion on signalgpt ai is for reference and knowledge-sharing purposes only; anc', 'isions']
-2026-07-01 04:18:18,104 | GOLD karti okunamadi (2). Ham: ['ttion on signalgpt ai is for reference and knowledge-sharing purposes only; anc', 'isions']
-2026-07-01 04:18:35,549 | EasyOCR yukleniyor...
-2026-07-01 04:18:35,551 | Using CPU. Note: This module is much faster with a GPU.
-2026-07-01 04:18:38,407 | EasyOCR hazir.
-2026-07-01 04:18:38,407 | ==================================================
-2026-07-01 04:18:38,407 | MilaGold OCR Agent - Signal GPT versiyonu
-2026-07-01 04:18:38,407 | ==================================================
-2026-07-01 04:18:38,539 | Chromedriver is already installed.
-2026-07-01 04:18:39,963 | Signal GPT sayfasina gidildi.
-2026-07-01 04:18:39,963 | Sayfa yukleniyor, 15 saniye bekleniyor...
-2026-07-01 04:18:55,021 | Viewport 1366x768 olarak ayarlandi.
-2026-07-01 04:18:58,368 | GMT+3 secildi.
-2026-07-01 04:25:02,993 | EasyOCR yukleniyor...
-2026-07-01 04:25:02,994 | Using CPU. Note: This module is much faster with a GPU.
-2026-07-01 04:25:06,572 | EasyOCR hazir.
-2026-07-01 04:25:06,573 | ==================================================
-2026-07-01 04:25:06,573 | MilaGold OCR Agent - Signal GPT versiyonu
-2026-07-01 04:25:06,573 | ==================================================
-2026-07-01 04:25:06,654 | Chromedriver is already installed.
-2026-07-01 04:25:07,841 | Signal GPT sayfasina gidildi.
-2026-07-01 04:25:07,842 | Sayfa yukleniyor, 15 saniye bekleniyor...
-2026-07-01 04:25:22,881 | Viewport 1366x768 olarak ayarlandi.
-2026-07-01 04:25:26,231 | GMT+3 secildi.
-2026-07-01 04:25:28,599 | Baslangic screenshot hatasi (devam): [Errno 2] No such file or directory: 'C:\\MilaYatirim\\mila-yatarim-sistemi\\MilaGold\\fullscreen_debug.png'
 2026-07-01 04:25:28,602 | Ilk okuma oncesi 5 saniye bekleniyor...
 2026-07-01 04:25:33,605 | Okuma dongusune giriliyor...
 2026-07-01 04:25:33,885 | Dongu hatasi: [Errno 2] No such file or directory: 'C:\\MilaYatirim\\mila-yatarim-sistemi\\MilaGold\\list_debug.png'
@@ -78,3 +36,45 @@
 2026-07-01 04:27:19,179 | Dongu hatasi: [Errno 2] No such file or directory: 'C:\\MilaYatirim\\mila-yatarim-sistemi\\MilaGold\\list_debug.png'
 2026-07-01 04:27:22,255 | Dongu hatasi: [Errno 2] No such file or directory: 'C:\\MilaYatirim\\mila-yatarim-sistemi\\MilaGold\\list_debug.png'
 2026-07-01 04:27:25,337 | Dongu hatasi: [Errno 2] No such file or directory: 'C:\\MilaYatirim\\mila-yatarim-sistemi\\MilaGold\\list_debug.png'
+2026-07-01 04:27:28,454 | Dongu hatasi: [Errno 2] No such file or directory: 'C:\\MilaYatirim\\mila-yatarim-sistemi\\MilaGold\\list_debug.png'
+2026-07-01 04:27:31,545 | Dongu hatasi: [Errno 2] No such file or directory: 'C:\\MilaYatirim\\mila-yatarim-sistemi\\MilaGold\\list_debug.png'
+2026-07-01 04:27:34,628 | Dongu hatasi: [Errno 2] No such file or directory: 'C:\\MilaYatirim\\mila-yatarim-sistemi\\MilaGold\\list_debug.png'
+2026-07-01 04:27:37,942 | Dongu hatasi: [Errno 2] No such file or directory: 'C:\\MilaYatirim\\mila-yatarim-sistemi\\MilaGold\\list_debug.png'
+2026-07-01 04:27:41,024 | Dongu hatasi: [Errno 2] No such file or directory: 'C:\\MilaYatirim\\mila-yatarim-sistemi\\MilaGold\\list_debug.png'
+2026-07-01 04:27:44,114 | Dongu hatasi: [Errno 2] No such file or directory: 'C:\\MilaYatirim\\mila-yatarim-sistemi\\MilaGold\\list_debug.png'
+2026-07-01 04:27:47,203 | Dongu hatasi: [Errno 2] No such file or directory: 'C:\\MilaYatirim\\mila-yatarim-sistemi\\MilaGold\\list_debug.png'
+2026-07-01 04:27:50,291 | Dongu hatasi: [Errno 2] No such file or directory: 'C:\\MilaYatirim\\mila-yatarim-sistemi\\MilaGold\\list_debug.png'
+2026-07-01 04:27:53,375 | Dongu hatasi: [Errno 2] No such file or directory: 'C:\\MilaYatirim\\mila-yatarim-sistemi\\MilaGold\\list_debug.png'
+2026-07-01 04:27:56,472 | Dongu hatasi: [Errno 2] No such file or directory: 'C:\\MilaYatirim\\mila-yatarim-sistemi\\MilaGold\\list_debug.png'
+2026-07-01 04:27:59,572 | Dongu hatasi: [Errno 2] No such file or directory: 'C:\\MilaYatirim\\mila-yatarim-sistemi\\MilaGold\\list_debug.png'
+2026-07-01 04:28:02,731 | Dongu hatasi: [Errno 2] No such file or directory: 'C:\\MilaYatirim\\mila-yatarim-sistemi\\MilaGold\\list_debug.png'
+2026-07-01 04:28:05,808 | Dongu hatasi: [Errno 2] No such file or directory: 'C:\\MilaYatirim\\mila-yatarim-sistemi\\MilaGold\\list_debug.png'
+2026-07-01 04:28:08,895 | Dongu hatasi: [Errno 2] No such file or directory: 'C:\\MilaYatirim\\mila-yatarim-sistemi\\MilaGold\\list_debug.png'
+2026-07-01 04:28:11,987 | Dongu hatasi: [Errno 2] No such file or directory: 'C:\\MilaYatirim\\mila-yatarim-sistemi\\MilaGold\\list_debug.png'
+2026-07-01 04:28:15,104 | Dongu hatasi: [Errno 2] No such file or directory: 'C:\\MilaYatirim\\mila-yatarim-sistemi\\MilaGold\\list_debug.png'
+2026-07-01 04:28:18,201 | Dongu hatasi: [Errno 2] No such file or directory: 'C:\\MilaYatirim\\mila-yatarim-sistemi\\MilaGold\\list_debug.png'
+2026-07-01 04:28:21,281 | Dongu hatasi: [Errno 2] No such file or directory: 'C:\\MilaYatirim\\mila-yatarim-sistemi\\MilaGold\\list_debug.png'
+2026-07-01 04:28:24,376 | Dongu hatasi: [Errno 2] No such file or directory: 'C:\\MilaYatirim\\mila-yatarim-sistemi\\MilaGold\\list_debug.png'
+2026-07-01 04:28:27,479 | Dongu hatasi: [Errno 2] No such file or directory: 'C:\\MilaYatirim\\mila-yatarim-sistemi\\MilaGold\\list_debug.png'
+2026-07-01 04:28:30,564 | Dongu hatasi: [Errno 2] No such file or directory: 'C:\\MilaYatirim\\mila-yatarim-sistemi\\MilaGold\\list_debug.png'
+2026-07-01 04:28:33,671 | Dongu hatasi: [Errno 2] No such file or directory: 'C:\\MilaYatirim\\mila-yatarim-sistemi\\MilaGold\\list_debug.png'
+2026-07-01 04:28:36,747 | Dongu hatasi: [Errno 2] No such file or directory: 'C:\\MilaYatirim\\mila-yatarim-sistemi\\MilaGold\\list_debug.png'
+2026-07-01 04:28:39,827 | Dongu hatasi: [Errno 2] No such file or directory: 'C:\\MilaYatirim\\mila-yatarim-sistemi\\MilaGold\\list_debug.png'
+2026-07-01 04:28:42,923 | Dongu hatasi: [Errno 2] No such file or directory: 'C:\\MilaYatirim\\mila-yatarim-sistemi\\MilaGold\\list_debug.png'
+2026-07-01 04:28:45,997 | Dongu hatasi: [Errno 2] No such file or directory: 'C:\\MilaYatirim\\mila-yatarim-sistemi\\MilaGold\\list_debug.png'
+2026-07-01 04:28:49,098 | Dongu hatasi: [Errno 2] No such file or directory: 'C:\\MilaYatirim\\mila-yatarim-sistemi\\MilaGold\\list_debug.png'
+2026-07-01 04:28:52,228 | Dongu hatasi: [Errno 2] No such file or directory: 'C:\\MilaYatirim\\mila-yatarim-sistemi\\MilaGold\\list_debug.png'
+2026-07-01 04:28:55,313 | Dongu hatasi: [Errno 2] No such file or directory: 'C:\\MilaYatirim\\mila-yatarim-sistemi\\MilaGold\\list_debug.png'
+2026-07-01 04:28:58,392 | Dongu hatasi: [Errno 2] No such file or directory: 'C:\\MilaYatirim\\mila-yatarim-sistemi\\MilaGold\\list_debug.png'
+2026-07-01 04:29:01,488 | Dongu hatasi: [Errno 2] No such file or directory: 'C:\\MilaYatirim\\mila-yatarim-sistemi\\MilaGold\\list_debug.png'
+2026-07-01 04:29:04,618 | Dongu hatasi: [Errno 2] No such file or directory: 'C:\\MilaYatirim\\mila-yatarim-sistemi\\MilaGold\\list_debug.png'
+2026-07-01 04:29:07,698 | Dongu hatasi: [Errno 2] No such file or directory: 'C:\\MilaYatirim\\mila-yatarim-sistemi\\MilaGold\\list_debug.png'
+2026-07-01 04:29:10,780 | Dongu hatasi: [Errno 2] No such file or directory: 'C:\\MilaYatirim\\mila-yatarim-sistemi\\MilaGold\\list_debug.png'
+2026-07-01 04:29:13,856 | Dongu hatasi: [Errno 2] No such file or directory: 'C:\\MilaYatirim\\mila-yatarim-sistemi\\MilaGold\\list_debug.png'
+2026-07-01 04:29:31,199 | EasyOCR yukleniyor...
+2026-07-01 04:29:31,200 | Using CPU. Note: This module is much faster with a GPU.
+2026-07-01 04:29:34,006 | EasyOCR hazir.
+2026-07-01 04:29:34,007 | ==================================================
+2026-07-01 04:29:34,007 | MilaGold OCR Agent - Signal GPT versiyonu
+2026-07-01 04:29:34,007 | ==================================================
+2026-07-01 04:29:34,130 | Chromedriver is already installed.
