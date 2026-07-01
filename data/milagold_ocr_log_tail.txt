@@ -1,45 +1,3 @@
-2026-07-01 23:45:07,479 | 10 kez ust uste okunamadi - sayfa yenileniyor...
-2026-07-01 23:45:07,493 | GOLD karti okunamadi (4). Ham: ['signalgpt ai is for reference and', 'knowledge-sharing purposes only, and does']
-2026-07-01 23:45:10,878 | GOLD karti okunamadi (5). Ham: ['signalgpt ai is for reference and', 'knowledge-sharing purposes only, and does']
-2026-07-01 23:45:13,774 | GOLD karti okunamadi (6). Ham: ['signalgpt ai is for reference and', 'knowledge-sharing purposes only, and does']
-2026-07-01 23:45:15,672 | Sayfa yenilendi.
-2026-07-01 23:45:16,798 | GOLD karti okunamadi (7). Ham: ['signalgpt ai is for reference and', 'knowledge-sharing purposes only, and does']
-2026-07-01 23:45:18,535 | GOLD karti okunamadi (1). Ham: ['signalgpt ai is for reference and', 'knowledge-sharing purposes only, and does']
-2026-07-01 23:45:19,749 | GOLD karti okunamadi (8). Ham: ['signalgpt ai is for reference and', 'knowledge-sharing purposes only, and does']
-2026-07-01 23:45:21,505 | GOLD karti okunamadi (2). Ham: ['signalgpt ai is for reference and', 'knowledge-sharing purposes only, and does']
-2026-07-01 23:45:23,079 | GOLD karti okunamadi (9). Ham: ['signalgpt ai is for reference and', 'knowledge-sharing purposes only, and does']
-2026-07-01 23:45:24,611 | GOLD karti okunamadi (3). Ham: ['signalgpt ai is for reference and', 'knowledge-sharing purposes only, and does']
-2026-07-01 23:45:26,110 | GOLD karti okunamadi (10). Ham: ['signalgpt ai is for reference and', 'knowledge-sharing purposes only, and does']
-2026-07-01 23:45:26,111 | 10 kez ust uste okunamadi - sayfa yenileniyor...
-2026-07-01 23:45:27,534 | GOLD karti okunamadi (4). Ham: []
-2026-07-01 23:45:33,044 | GOLD karti okunamadi (5). Ham: ['Entry: 4035', 'Nosignals availabl', 'Signals will appearhere when (']
-2026-07-01 23:45:34,305 | Sayfa yenilendi.
-2026-07-01 23:45:35,775 | GOLD karti okunamadi (6). Ham: ['Entry: 4035', 'Nosignals availabl', 'Signals will appearhere when (']
-2026-07-01 23:45:37,013 | GOLD karti okunamadi (1). Ham: ['Entry: 4035', 'Nosignals availabl', 'Signals will appearhere when (']
-2026-07-01 23:45:38,391 | GOLD karti okunamadi (7). Ham: ['Entry: 4035', 'Nosignals availabl', 'Signals will appearhere when (']
-2026-07-01 23:49:17,354 | EasyOCR yukleniyor...
-2026-07-01 23:49:17,355 | Using CPU. Note: This module is much faster with a GPU.
-2026-07-01 23:49:19,945 | EasyOCR hazir.
-2026-07-01 23:49:19,945 | ==================================================
-2026-07-01 23:49:19,946 | MilaGold OCR Agent - Signal GPT versiyonu
-2026-07-01 23:49:19,946 | ==================================================
-2026-07-01 23:49:20,237 | Chrome versiyonu (exe): 150.0.7871.46
-2026-07-01 23:49:20,238 | ChromeDriver cache'den: C:\MilaYatirim\mila-yatirim-sistemi\MilaGold\chromedriver_cache\150.0.7871.46\chromedriver.exe
-2026-07-01 23:49:20,238 | ChromeDriver: C:\MilaYatirim\mila-yatirim-sistemi\MilaGold\chromedriver_cache\150.0.7871.46\chromedriver.exe
-2026-07-01 23:49:21,358 | Signal GPT sayfasina gidildi.
-2026-07-01 23:49:21,359 | Sayfa yukleniyor, 15 saniye bekleniyor...
-2026-07-01 23:49:36,601 | Baslangic screenshot alindi.
-2026-07-01 23:49:36,601 | Ilk okuma oncesi 5 saniye bekleniyor...
-2026-07-01 23:49:41,603 | Okuma dongusune giriliyor...
-2026-07-01 23:49:42,632 | GOLD karti okunamadi (1). Ham: ['signalgpt ai is for reference and', 'knowledge-sharing purposes only, and does']
-2026-07-01 23:49:45,535 | GOLD karti okunamadi (2). Ham: ['signalgpt ai is for reference and', 'knowledge-sharing purposes only, and does']
-2026-07-01 23:49:48,409 | GOLD karti okunamadi (3). Ham: ['signalgpt ai is for reference and', 'knowledge-sharing purposes only, and does']
-2026-07-01 23:49:51,107 | GOLD karti okunamadi (4). Ham: ['Entry: 4035', 'Nosignals availabl', 'Signals will appearhere when (']
-2026-07-01 23:49:53,625 | GOLD karti okunamadi (5). Ham: ['Entry: 4035', 'Nosignals availabl', 'Signals will appearhere when (']
-2026-07-01 23:49:56,185 | GOLD karti okunamadi (6). Ham: ['Entry: 4035', 'Nosignals availabl', 'Signals will appearhere when (']
-2026-07-01 23:49:58,769 | GOLD karti okunamadi (7). Ham: ['Entry: 4035', 'Nosignals availabl', 'Signals will appearhere when (']
-2026-07-01 23:50:01,601 | GOLD karti okunamadi (8). Ham: ['Entry: 4035', 'Nosignals availabl', 'Signals will appearhere when (']
-2026-07-01 23:50:04,170 | GOLD karti okunamadi (9). Ham: ['Entry: 4035', 'Nosignals availabl', 'Signals will appearhere when (']
 2026-07-01 23:50:06,822 | GOLD karti okunamadi (10). Ham: ['Entry: 4035', 'Nosignals availabl', 'Signals will appearhere when (']
 2026-07-01 23:50:06,822 | 10 kez ust uste okunamadi - sayfa yenileniyor...
 2026-07-01 23:50:14,935 | Sayfa yenilendi.
@@ -78,3 +36,45 @@
 2026-07-01 23:51:56,121 | GOLD karti okunamadi (9). Ham: ['Entry: 4035', 'Nosignals availabl', 'Signals will appearhere when (']
 2026-07-01 23:51:58,686 | GOLD karti okunamadi (10). Ham: ['Entry: 4035', 'Nosignals availabl', 'Signals will appearhere when (']
 2026-07-01 23:51:58,686 | 10 kez ust uste okunamadi - sayfa yenileniyor...
+2026-07-01 23:52:06,762 | Sayfa yenilendi.
+2026-07-01 23:52:09,365 | GOLD karti okunamadi (1). Ham: ['Entry: 4035', 'Nosignals availabl', 'Signals will appearhere when (']
+2026-07-01 23:52:11,995 | GOLD karti okunamadi (2). Ham: ['Entry: 4035', 'Nosignals availabl', 'Signals will appearhere when (']
+2026-07-01 23:52:14,595 | GOLD karti okunamadi (3). Ham: ['Entry: 4035', 'Nosignals availabl', 'Signals will appearhere when (']
+2026-07-01 23:52:17,202 | GOLD karti okunamadi (4). Ham: ['Entry: 4035', 'Nosignals availabl', 'Signals will appearhere when (']
+2026-07-01 23:52:19,742 | GOLD karti okunamadi (5). Ham: ['Entry: 4035', 'Nosignals availabl', 'Signals will appearhere when (']
+2026-07-01 23:52:22,342 | GOLD karti okunamadi (6). Ham: ['Entry: 4035', 'Nosignals availabl', 'Signals will appearhere when (']
+2026-07-01 23:52:24,855 | GOLD karti okunamadi (7). Ham: ['Entry: 4035', 'Nosignals availabl', 'Signals will appearhere when (']
+2026-07-01 23:52:27,497 | GOLD karti okunamadi (8). Ham: ['Entry: 4035', 'Nosignals availabl', 'Signals will appearhere when (']
+2026-07-01 23:52:30,044 | GOLD karti okunamadi (9). Ham: ['Entry: 4035', 'Nosignals availabl', 'Signals will appearhere when (']
+2026-07-01 23:52:32,616 | GOLD karti okunamadi (10). Ham: ['Entry: 4035', 'Nosignals availabl', 'Signals will appearhere when (']
+2026-07-01 23:52:32,616 | 10 kez ust uste okunamadi - sayfa yenileniyor...
+2026-07-01 23:52:40,712 | Sayfa yenilendi.
+2026-07-01 23:52:43,352 | GOLD karti okunamadi (1). Ham: ['Entry: 4035', 'Nosignals availabl', 'Signals will appearhere when (']
+2026-07-01 23:52:46,081 | GOLD karti okunamadi (2). Ham: ['Entry: 4035', 'Nosignals availabl', 'Signals will appearhere when (']
+2026-07-01 23:52:48,691 | GOLD karti okunamadi (3). Ham: ['Entry: 4035', 'Nosignals availabl', 'Signals will appearhere when (']
+2026-07-01 23:52:51,329 | GOLD karti okunamadi (4). Ham: ['Entry: 4035', 'Nosignals availabl', 'Signals will appearhere when (']
+2026-07-01 23:52:54,052 | GOLD karti okunamadi (5). Ham: ['Entry: 4035', 'Nosignals availabl', 'Signals will appearhere when (']
+2026-07-01 23:52:56,943 | GOLD karti okunamadi (6). Ham: ['Entry: 4035', 'Nosignals availabl', 'Signals will appearhere when (']
+2026-07-01 23:52:59,726 | GOLD karti okunamadi (7). Ham: ['Entry: 4035', 'Nosignals availabl', 'Signals will appearhere when (']
+2026-07-01 23:53:02,375 | GOLD karti okunamadi (8). Ham: ['Entry: 4035', 'Nosignals availabl', 'Signals will appearhere when (']
+2026-07-01 23:53:04,933 | GOLD karti okunamadi (9). Ham: ['Entry: 4035', 'Nosignals availabl', 'Signals will appearhere when (']
+2026-07-01 23:53:07,504 | GOLD karti okunamadi (10). Ham: ['Entry: 4035', 'Nosignals availabl', 'Signals will appearhere when (']
+2026-07-01 23:53:07,505 | 10 kez ust uste okunamadi - sayfa yenileniyor...
+2026-07-01 23:53:15,607 | Sayfa yenilendi.
+2026-07-01 23:53:18,613 | GOLD karti okunamadi (1). Ham: ['signalgpt ai is for reference and', 'knowledge-sharing purposes only, and does']
+2026-07-01 23:53:21,680 | GOLD karti okunamadi (2). Ham: ['signalgpt ai is for reference and', 'knowledge-sharing purposes only, and does']
+2026-07-01 23:53:24,652 | GOLD karti okunamadi (3). Ham: ['signalgpt ai is for reference and', 'knowledge-sharing purposes only, and does']
+2026-07-01 23:53:27,624 | GOLD karti okunamadi (4). Ham: ['signalgpt ai is for reference and', 'knowledge-sharing purposes only, and does']
+2026-07-01 23:53:30,503 | GOLD karti okunamadi (5). Ham: ['signalgpt ai is for reference and', 'knowledge-sharing purposes only, and does']
+2026-07-01 23:53:33,333 | GOLD karti okunamadi (6). Ham: ['signalgpt ai is for reference and', 'knowledge-sharing purposes only, and does']
+2026-07-01 23:53:37,239 | GOLD karti okunamadi (7). Ham: ['Entry: 4035', 'Nosignals availabl', 'Signals will appearhere when (']
+2026-07-01 23:53:39,992 | GOLD karti okunamadi (8). Ham: ['Entry: 4035', 'Nosignals availabl', 'Signals will appearhere when (']
+2026-07-01 23:53:42,637 | GOLD karti okunamadi (9). Ham: ['Entry: 4035', 'Nosignals availabl', 'Signals will appearhere when (']
+2026-07-01 23:53:45,339 | GOLD karti okunamadi (10). Ham: ['Entry: 4035', 'Nosignals availabl', 'Signals will appearhere when (']
+2026-07-01 23:53:45,339 | 10 kez ust uste okunamadi - sayfa yenileniyor...
+2026-07-01 23:53:53,425 | Sayfa yenilendi.
+2026-07-01 23:53:56,411 | GOLD karti okunamadi (1). Ham: ['signalgpt ai is for reference and', 'knowledge-sharing purposes only, and does']
+2026-07-01 23:53:59,323 | GOLD karti okunamadi (2). Ham: ['signalgpt ai is for reference and', 'knowledge-sharing purposes only, and does']
+2026-07-01 23:54:02,245 | GOLD karti okunamadi (3). Ham: ['signalgpt ai is for reference and', 'knowledge-sharing purposes only, and does']
+2026-07-01 23:54:05,092 | GOLD karti okunamadi (4). Ham: ['signalgpt ai is for reference and', 'knowledge-sharing purposes only, and does']
+2026-07-01 23:54:08,097 | GOLD karti okunamadi (5). Ham: ['signalgpt ai is for reference and', 'knowledge-sharing purposes only, and does']
