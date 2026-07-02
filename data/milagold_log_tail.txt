@@ -1,11 +1,3 @@
-[2026-07-02 20:42:19] Heartbeat: 1 aktif islem | Bakiye: 906.29 USD
-[2026-07-02 20:42:39] Heartbeat: 0 aktif islem | Bakiye: 906.29 USD
-[2026-07-02 20:42:40] Yeni sinyal alindi: #None SELL @ 4108.5
-[2026-07-02 20:42:40] EMA filtresi: SELL ONAYLANDI — fiyat=4108.91 <= EMA20=4115.70
-[2026-07-02 20:42:40] Emir turu: SELL_STOP (fiyat=4108.91 > entry=4108.5)
-[2026-07-02 20:42:40] Islem acildi: 928280503 | SELL @ 4108.5 | SL:4113.5 | TP1:4105.5 TP2:4103.5 TP3:4100.5
-[2026-07-02 20:42:40] Yeni sinyal daha kotu entry, sl_level=1. 2. pozisyon aciliyor: #None @ 4108.5
-[2026-07-02 20:42:40] Emir turu: SELL_STOP (fiyat=4108.85 > entry=4108.5)
 [2026-07-02 20:42:40] open_trade: Ayni entry (4108.5) ile zaten bekleyen emir var (ticket=928280503), yeni emir acilmiyor.
 [2026-07-02 20:42:49] Heartbeat: 1 aktif islem | Bakiye: 906.29 USD
 [2026-07-02 20:43:09] Heartbeat: 1 aktif islem | Bakiye: 906.29 USD
@@ -78,3 +70,11 @@
 [2026-07-02 20:57:53] Heartbeat: 0 aktif islem | Bakiye: 911.18 USD
 [2026-07-02 20:58:14] Heartbeat: 1 aktif islem | Bakiye: 911.18 USD
 [2026-07-02 20:58:23] Heartbeat: 0 aktif islem | Bakiye: 911.18 USD
+[2026-07-02 20:58:44] Heartbeat: 1 aktif islem | Bakiye: 911.18 USD
+[2026-07-02 20:58:53] Heartbeat: 0 aktif islem | Bakiye: 911.18 USD
+[2026-07-02 20:59:14] Heartbeat: 1 aktif islem | Bakiye: 911.18 USD
+[2026-07-02 20:59:23] Heartbeat: 0 aktif islem | Bakiye: 911.18 USD
+[2026-07-02 20:59:44] Heartbeat: 1 aktif islem | Bakiye: 911.18 USD
+[2026-07-02 20:59:53] Heartbeat: 0 aktif islem | Bakiye: 911.18 USD
+[2026-07-02 21:00:14] Heartbeat: 1 aktif islem | Bakiye: 911.18 USD
+[2026-07-02 21:00:23] Heartbeat: 0 aktif islem | Bakiye: 911.18 USD
