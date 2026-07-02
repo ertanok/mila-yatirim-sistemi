@@ -1,12 +1,3 @@
-[2026-07-03 02:14:13] Heartbeat: 1 aktif islem | Bakiye: 890.76 USD
-[2026-07-03 02:14:17] Heartbeat: 0 aktif islem | Bakiye: 890.76 USD
-[2026-07-03 02:14:43] Heartbeat: 1 aktif islem | Bakiye: 890.76 USD
-[2026-07-03 02:14:47] Heartbeat: 0 aktif islem | Bakiye: 890.76 USD
-[2026-07-03 02:15:13] Heartbeat: 1 aktif islem | Bakiye: 890.76 USD
-[2026-07-03 02:15:17] Heartbeat: 0 aktif islem | Bakiye: 890.76 USD
-[2026-07-03 02:15:21] Yeni sinyal alindi: #None SELL @ 4125.7
-[2026-07-03 02:15:21] EMA filtresi: SELL ATLANDI — fiyat=4125.48 > EMA20=4124.33 (yukari momentum)
-[2026-07-03 02:15:21] EMA filtresi: sinyal atlandi #None SELL @ 4125.7
 [2026-07-03 02:15:38] Yeni sinyal alindi: #None SELL @ 4126.5
 [2026-07-03 02:15:38] EMA filtresi: SELL ATLANDI — fiyat=4125.37 > EMA20=4124.32 (yukari momentum)
 [2026-07-03 02:15:38] EMA filtresi: sinyal atlandi #None SELL @ 4126.5
@@ -78,3 +69,12 @@
 [2026-07-03 02:30:19] Heartbeat: 0 aktif islem | Bakiye: 889.89 USD
 [2026-07-03 02:30:46] Heartbeat: 1 aktif islem | Bakiye: 889.89 USD
 [2026-07-03 02:30:49] Heartbeat: 0 aktif islem | Bakiye: 889.89 USD
+[2026-07-03 02:31:16] Heartbeat: 1 aktif islem | Bakiye: 889.89 USD
+[2026-07-03 02:31:19] Heartbeat: 0 aktif islem | Bakiye: 889.89 USD
+[2026-07-03 02:31:46] Heartbeat: 1 aktif islem | Bakiye: 889.89 USD
+[2026-07-03 02:31:50] Heartbeat: 0 aktif islem | Bakiye: 889.89 USD
+[2026-07-03 02:33:07] MilaGold MT5 Agent basliyor...
+[2026-07-03 02:33:07] MT5 baglandi. Bakiye: 889.89 USD
+[2026-07-03 02:33:07] Orphan pozisyon alindi: ticket=928451593 SELL @ 4126.51 sl_level=0
+[2026-07-03 02:33:07] Baslangic bakiyesi: 889.89 USD
+[2026-07-03 02:33:07] Hazir. 1 aktif islem devralindi. signal.json bekleniyor...
