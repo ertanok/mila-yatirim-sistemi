@@ -1,7 +1,3 @@
-[2026-07-02 10:56:04] EMA filtresi: SELL ONAYLANDI — fiyat=4065.18 <= EMA20=4068.54
-[2026-07-02 10:56:04] Emir turu: SELL_LIMIT (fiyat=4065.18 <= entry=4073.0)
-[2026-07-02 10:56:05] Islem acildi: 927261820 | SELL @ 4073.0 | SL:4078.0 | TP1:4070.0 TP2:4068.0 TP3:4065.0
-[2026-07-02 10:56:08] Yeni sinyal geldi, bekleyen emir iptal ediliyor: ticket=927261820 (SELL @ 4073.0)
 [2026-07-02 10:56:08] Bekleyen emir iptal edildi: ticket=927261820
 [2026-07-02 10:56:08] Yeni sinyal alindi: #None SELL @ 4067.0
 [2026-07-02 10:56:08] EMA filtresi: SELL ONAYLANDI — fiyat=4065.40 <= EMA20=4068.56
@@ -78,3 +74,7 @@
 [2026-07-02 11:26:57] EMA filtresi: SELL ATLANDI — fiyat=4074.63 > EMA20=4070.27 (yukari momentum)
 [2026-07-02 11:26:57] EMA filtresi: sinyal atlandi #None SELL @ 4074.0
 [2026-07-02 11:27:28] Heartbeat: 0 aktif islem | Bakiye: 906.96 USD
+[2026-07-02 11:27:58] Heartbeat: 0 aktif islem | Bakiye: 906.96 USD
+[2026-07-02 11:28:28] Heartbeat: 0 aktif islem | Bakiye: 906.96 USD
+[2026-07-02 11:28:58] Heartbeat: 0 aktif islem | Bakiye: 906.96 USD
+[2026-07-02 11:29:28] Heartbeat: 0 aktif islem | Bakiye: 906.96 USD
