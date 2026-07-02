@@ -1,80 +1,80 @@
-2026-07-03 00:40:15,898 | EasyOCR yukleniyor...
-2026-07-03 00:40:15,899 | Using CPU. Note: This module is much faster with a GPU.
-2026-07-03 00:40:19,095 | EasyOCR hazir.
-2026-07-03 00:40:19,095 | ==================================================
-2026-07-03 00:40:19,096 | MilaGold OCR Agent - Signal GPT versiyonu
-2026-07-03 00:40:19,096 | ==================================================
-2026-07-03 00:40:19,361 | Chrome versiyonu (exe): 150.0.7871.46
-2026-07-03 00:40:19,361 | ChromeDriver cache'den: C:\MilaYatirim\mila-yatirim-sistemi\MilaGold\chromedriver_cache\150.0.7871.46\chromedriver.exe
-2026-07-03 00:40:19,362 | ChromeDriver: C:\MilaYatirim\mila-yatirim-sistemi\MilaGold\chromedriver_cache\150.0.7871.46\chromedriver.exe
-2026-07-03 00:40:20,311 | Signal GPT sayfasina gidildi.
-2026-07-03 00:40:20,312 | Sayfa yukleniyor, 15 saniye bekleniyor...
-2026-07-03 00:40:35,472 | Baslangic screenshot alindi.
-2026-07-03 00:40:35,472 | Ilk okuma oncesi 5 saniye bekleniyor...
-2026-07-03 00:40:40,473 | Okuma dongusune giriliyor...
-2026-07-03 00:40:41,426 | GOLD karti okunamadi (1). Ham: ['Disclaimer', 'The information on signalgpt ai is for reference and knowlec', 'trading decisions:']
-2026-07-03 00:40:44,475 | GOLD karti okunamadi (2). Ham: ['Disclaimer', 'The information on signalgpt ai is for reference and knowlec', 'trading decisions:']
-2026-07-03 00:40:47,557 | GOLD karti okunamadi (3). Ham: ['Disclaimer', 'The information on signalgpt ai is for reference and knowlec', 'trading decisions:']
-2026-07-03 00:40:50,725 | Sinyal tarihi okundu: 03/07/2026 03:29
-2026-07-03 00:40:50,726 | SINYAL ATLANDI — Piyasa kapali (00:40). Gecerli aralik: 01:05 - 23:30.
-2026-07-03 00:40:50,726 | Sinyal bekleniyor... Status:RUNNING Entry:4120.5
-2026-07-03 00:40:53,545 | Sinyal tarihi okundu: 03/07/2026 03:29
-2026-07-03 00:40:53,545 | SINYAL ATLANDI — Piyasa kapali (00:40). Gecerli aralik: 01:05 - 23:30.
-2026-07-03 00:40:53,545 | Sinyal bekleniyor... Status:RUNNING Entry:4120.5
-2026-07-03 00:40:56,267 | Sinyal tarihi okundu: 03/07/2026 03:29
-2026-07-03 00:40:56,267 | SINYAL ATLANDI — Piyasa kapali (00:40). Gecerli aralik: 01:05 - 23:30.
-2026-07-03 00:40:56,268 | Sinyal bekleniyor... Status:RUNNING Entry:4120.5
-2026-07-03 00:40:59,066 | Sinyal tarihi okundu: 03/07/2026 03:29
-2026-07-03 00:40:59,066 | SINYAL ATLANDI — Piyasa kapali (00:40). Gecerli aralik: 01:05 - 23:30.
-2026-07-03 00:40:59,067 | Sinyal bekleniyor... Status:RUNNING Entry:4120.5
-2026-07-03 00:41:01,835 | Sinyal tarihi okundu: 03/07/2026 03:29
-2026-07-03 00:41:01,836 | SINYAL ATLANDI — Piyasa kapali (00:41). Gecerli aralik: 01:05 - 23:30.
-2026-07-03 00:41:01,836 | Sinyal bekleniyor... Status:RUNNING Entry:4120.5
-2026-07-03 00:41:04,588 | Sinyal tarihi okundu: 03/07/2026 03:29
-2026-07-03 00:41:04,588 | SINYAL ATLANDI — Piyasa kapali (00:41). Gecerli aralik: 01:05 - 23:30.
-2026-07-03 00:41:04,589 | Sinyal bekleniyor... Status:RUNNING Entry:4120.5
-2026-07-03 00:41:07,325 | Sinyal tarihi okundu: 03/07/2026 03:29
-2026-07-03 00:41:07,326 | SINYAL ATLANDI — Piyasa kapali (00:41). Gecerli aralik: 01:05 - 23:30.
-2026-07-03 00:41:07,326 | Sinyal bekleniyor... Status:RUNNING Entry:4120.5
-2026-07-03 00:41:10,177 | Sinyal tarihi okundu: 03/07/2026 03:29
-2026-07-03 00:41:10,177 | SINYAL ATLANDI — Piyasa kapali (00:41). Gecerli aralik: 01:05 - 23:30.
-2026-07-03 00:41:10,177 | Sinyal bekleniyor... Status:RUNNING Entry:4120.5
-2026-07-03 00:41:13,069 | Sinyal tarihi okundu: 03/07/2026 03:29
-2026-07-03 00:41:13,070 | SINYAL ATLANDI — Piyasa kapali (00:41). Gecerli aralik: 01:05 - 23:30.
-2026-07-03 00:41:13,070 | Sinyal bekleniyor... Status:RUNNING Entry:4120.5
-2026-07-03 00:41:15,793 | Sinyal tarihi okundu: 03/07/2026 03:29
-2026-07-03 00:41:15,793 | SINYAL ATLANDI — Piyasa kapali (00:41). Gecerli aralik: 01:05 - 23:30.
-2026-07-03 00:41:15,793 | Sinyal bekleniyor... Status:RUNNING Entry:4120.5
-2026-07-03 00:41:18,575 | Sinyal tarihi okundu: 03/07/2026 03:29
-2026-07-03 00:41:18,575 | SINYAL ATLANDI — Piyasa kapali (00:41). Gecerli aralik: 01:05 - 23:30.
-2026-07-03 00:41:18,576 | Sinyal bekleniyor... Status:RUNNING Entry:4120.5
-2026-07-03 00:41:21,338 | Sinyal tarihi okundu: 03/07/2026 03:29
-2026-07-03 00:41:21,338 | SINYAL ATLANDI — Piyasa kapali (00:41). Gecerli aralik: 01:05 - 23:30.
-2026-07-03 00:41:21,339 | Sinyal bekleniyor... Status:RUNNING Entry:4120.5
-2026-07-03 00:41:24,177 | Sinyal tarihi okundu: 03/07/2026 03:29
-2026-07-03 00:41:24,177 | SINYAL ATLANDI — Piyasa kapali (00:41). Gecerli aralik: 01:05 - 23:30.
-2026-07-03 00:41:24,178 | Sinyal bekleniyor... Status:RUNNING Entry:4120.5
-2026-07-03 00:41:26,893 | Sinyal tarihi okundu: 03/07/2026 03:29
-2026-07-03 00:41:26,894 | SINYAL ATLANDI — Piyasa kapali (00:41). Gecerli aralik: 01:05 - 23:30.
-2026-07-03 00:41:26,894 | Sinyal bekleniyor... Status:RUNNING Entry:4120.5
-2026-07-03 00:41:29,607 | Sinyal tarihi okundu: 03/07/2026 03:29
-2026-07-03 00:41:29,607 | SINYAL ATLANDI — Piyasa kapali (00:41). Gecerli aralik: 01:05 - 23:30.
-2026-07-03 00:41:29,607 | Sinyal bekleniyor... Status:RUNNING Entry:4120.5
-2026-07-03 00:41:32,285 | Sinyal tarihi okundu: 03/07/2026 03:29
-2026-07-03 00:41:32,285 | SINYAL ATLANDI — Piyasa kapali (00:41). Gecerli aralik: 01:05 - 23:30.
-2026-07-03 00:41:32,285 | Sinyal bekleniyor... Status:RUNNING Entry:4120.5
-2026-07-03 00:41:34,954 | Sinyal tarihi okundu: 03/07/2026 03:29
-2026-07-03 00:41:34,954 | SINYAL ATLANDI — Piyasa kapali (00:41). Gecerli aralik: 01:05 - 23:30.
-2026-07-03 00:41:34,955 | Sinyal bekleniyor... Status:RUNNING Entry:4120.5
-2026-07-03 00:41:37,696 | Sinyal tarihi okundu: 03/07/2026 03:29
-2026-07-03 00:41:37,697 | SINYAL ATLANDI — Piyasa kapali (00:41). Gecerli aralik: 01:05 - 23:30.
-2026-07-03 00:41:37,697 | Sinyal bekleniyor... Status:RUNNING Entry:4120.5
-2026-07-03 00:41:40,451 | Sinyal tarihi okundu: 03/07/2026 03:29
-2026-07-03 00:41:40,452 | SINYAL ATLANDI — Piyasa kapali (00:41). Gecerli aralik: 01:05 - 23:30.
-2026-07-03 00:41:40,452 | Sinyal bekleniyor... Status:RUNNING Entry:4120.5
-2026-07-03 00:41:43,200 | Sinyal tarihi okundu: 03/07/2026 03:29
-2026-07-03 00:41:43,200 | SINYAL ATLANDI — Piyasa kapali (00:41). Gecerli aralik: 01:05 - 23:30.
-2026-07-03 00:41:43,201 | Sinyal bekleniyor... Status:RUNNING Entry:4120.5
-2026-07-03 00:41:45,848 | Sinyal tarihi okundu: 03/07/2026 03:29
-2026-07-03 00:41:45,848 | SINYAL ATLANDI — Piyasa kapali (00:41). Gecerli aralik: 01:05 - 23:30.
-2026-07-03 00:41:45,849 | Sinyal bekleniyor... Status:RUNNING Entry:4120.5
+2026-07-03 00:42:43,220 | SINYAL ATLANDI — Piyasa kapali (00:42). Gecerli aralik: 01:05 - 23:30.
+2026-07-03 00:42:43,221 | Sinyal bekleniyor... Status:RUNNING Entry:4120.5
+2026-07-03 00:42:45,937 | Sinyal tarihi okundu: 03/07/2026 03:29
+2026-07-03 00:42:45,938 | SINYAL ATLANDI — Piyasa kapali (00:42). Gecerli aralik: 01:05 - 23:30.
+2026-07-03 00:42:45,938 | Sinyal bekleniyor... Status:RUNNING Entry:4120.5
+2026-07-03 00:42:48,626 | Sinyal tarihi okundu: 03/07/2026 03:29
+2026-07-03 00:42:48,626 | SINYAL ATLANDI — Piyasa kapali (00:42). Gecerli aralik: 01:05 - 23:30.
+2026-07-03 00:42:48,626 | Sinyal bekleniyor... Status:RUNNING Entry:4120.5
+2026-07-03 00:42:51,269 | Sinyal tarihi okundu: 03/07/2026 03:29
+2026-07-03 00:42:51,269 | SINYAL ATLANDI — Piyasa kapali (00:42). Gecerli aralik: 01:05 - 23:30.
+2026-07-03 00:42:51,270 | Sinyal bekleniyor... Status:RUNNING Entry:4120.5
+2026-07-03 00:42:54,024 | Sinyal tarihi okundu: 03/07/2026 03:29
+2026-07-03 00:42:54,024 | SINYAL ATLANDI — Piyasa kapali (00:42). Gecerli aralik: 01:05 - 23:30.
+2026-07-03 00:42:54,024 | Sinyal bekleniyor... Status:RUNNING Entry:4120.5
+2026-07-03 00:42:56,684 | Sinyal tarihi okundu: 03/07/2026 03:29
+2026-07-03 00:42:56,685 | SINYAL ATLANDI — Piyasa kapali (00:42). Gecerli aralik: 01:05 - 23:30.
+2026-07-03 00:42:56,685 | Sinyal bekleniyor... Status:RUNNING Entry:4120.5
+2026-07-03 00:42:59,412 | Sinyal tarihi okundu: 03/07/2026 03:29
+2026-07-03 00:42:59,412 | SINYAL ATLANDI — Piyasa kapali (00:42). Gecerli aralik: 01:05 - 23:30.
+2026-07-03 00:42:59,412 | Sinyal bekleniyor... Status:RUNNING Entry:4120.5
+2026-07-03 00:43:02,065 | Sinyal tarihi okundu: 03/07/2026 03:29
+2026-07-03 00:43:02,066 | SINYAL ATLANDI — Piyasa kapali (00:43). Gecerli aralik: 01:05 - 23:30.
+2026-07-03 00:43:02,066 | Sinyal bekleniyor... Status:RUNNING Entry:4120.5
+2026-07-03 00:43:04,764 | Sinyal tarihi okundu: 03/07/2026 03:29
+2026-07-03 00:43:04,764 | SINYAL ATLANDI — Piyasa kapali (00:43). Gecerli aralik: 01:05 - 23:30.
+2026-07-03 00:43:04,765 | Sinyal bekleniyor... Status:RUNNING Entry:4120.5
+2026-07-03 00:43:07,429 | Sinyal tarihi okundu: 03/07/2026 03:29
+2026-07-03 00:43:07,429 | SINYAL ATLANDI — Piyasa kapali (00:43). Gecerli aralik: 01:05 - 23:30.
+2026-07-03 00:43:07,430 | Sinyal bekleniyor... Status:RUNNING Entry:4120.5
+2026-07-03 00:43:10,174 | Sinyal tarihi okundu: 03/07/2026 03:29
+2026-07-03 00:43:10,174 | SINYAL ATLANDI — Piyasa kapali (00:43). Gecerli aralik: 01:05 - 23:30.
+2026-07-03 00:43:10,174 | Sinyal bekleniyor... Status:RUNNING Entry:4120.5
+2026-07-03 00:43:12,808 | Sinyal tarihi okundu: 03/07/2026 03:29
+2026-07-03 00:43:12,808 | SINYAL ATLANDI — Piyasa kapali (00:43). Gecerli aralik: 01:05 - 23:30.
+2026-07-03 00:43:12,809 | Sinyal bekleniyor... Status:RUNNING Entry:4120.5
+2026-07-03 00:43:15,564 | Sinyal tarihi okundu: 03/07/2026 03:29
+2026-07-03 00:43:15,564 | SINYAL ATLANDI — Piyasa kapali (00:43). Gecerli aralik: 01:05 - 23:30.
+2026-07-03 00:43:15,565 | Sinyal bekleniyor... Status:RUNNING Entry:4120.5
+2026-07-03 00:43:18,256 | Sinyal tarihi okundu: 03/07/2026 03:29
+2026-07-03 00:43:18,256 | SINYAL ATLANDI — Piyasa kapali (00:43). Gecerli aralik: 01:05 - 23:30.
+2026-07-03 00:43:18,256 | Sinyal bekleniyor... Status:RUNNING Entry:4120.5
+2026-07-03 00:43:21,006 | Sinyal tarihi okundu: 03/07/2026 03:29
+2026-07-03 00:43:21,006 | SINYAL ATLANDI — Piyasa kapali (00:43). Gecerli aralik: 01:05 - 23:30.
+2026-07-03 00:43:21,007 | Sinyal bekleniyor... Status:RUNNING Entry:4120.5
+2026-07-03 00:43:23,720 | Sinyal tarihi okundu: 03/07/2026 03:29
+2026-07-03 00:43:23,720 | SINYAL ATLANDI — Piyasa kapali (00:43). Gecerli aralik: 01:05 - 23:30.
+2026-07-03 00:43:23,721 | Sinyal bekleniyor... Status:RUNNING Entry:4120.5
+2026-07-03 00:43:26,468 | Sinyal tarihi okundu: 03/07/2026 03:29
+2026-07-03 00:43:26,469 | SINYAL ATLANDI — Piyasa kapali (00:43). Gecerli aralik: 01:05 - 23:30.
+2026-07-03 00:43:26,469 | Sinyal bekleniyor... Status:RUNNING Entry:4120.5
+2026-07-03 00:43:29,158 | Sinyal tarihi okundu: 03/07/2026 03:29
+2026-07-03 00:43:29,159 | SINYAL ATLANDI — Piyasa kapali (00:43). Gecerli aralik: 01:05 - 23:30.
+2026-07-03 00:43:29,159 | Sinyal bekleniyor... Status:RUNNING Entry:4120.5
+2026-07-03 00:43:31,937 | Sinyal tarihi okundu: 03/07/2026 03:29
+2026-07-03 00:43:31,938 | SINYAL ATLANDI — Piyasa kapali (00:43). Gecerli aralik: 01:05 - 23:30.
+2026-07-03 00:43:31,938 | Sinyal bekleniyor... Status:RUNNING Entry:4120.5
+2026-07-03 00:43:34,703 | Sinyal tarihi okundu: 03/07/2026 03:29
+2026-07-03 00:43:34,703 | SINYAL ATLANDI — Piyasa kapali (00:43). Gecerli aralik: 01:05 - 23:30.
+2026-07-03 00:43:34,703 | Sinyal bekleniyor... Status:RUNNING Entry:4120.5
+2026-07-03 00:43:37,357 | Sinyal tarihi okundu: 03/07/2026 03:29
+2026-07-03 00:43:37,358 | SINYAL ATLANDI — Piyasa kapali (00:43). Gecerli aralik: 01:05 - 23:30.
+2026-07-03 00:43:37,358 | Sinyal bekleniyor... Status:RUNNING Entry:4120.5
+2026-07-03 00:43:40,073 | Sinyal tarihi okundu: 03/07/2026 03:29
+2026-07-03 00:43:40,074 | SINYAL ATLANDI — Piyasa kapali (00:43). Gecerli aralik: 01:05 - 23:30.
+2026-07-03 00:43:40,074 | Sinyal bekleniyor... Status:RUNNING Entry:4120.5
+2026-07-03 00:43:42,771 | Sinyal tarihi okundu: 03/07/2026 03:29
+2026-07-03 00:43:42,771 | SINYAL ATLANDI — Piyasa kapali (00:43). Gecerli aralik: 01:05 - 23:30.
+2026-07-03 00:43:42,771 | Sinyal bekleniyor... Status:RUNNING Entry:4120.5
+2026-07-03 00:43:45,449 | Sinyal tarihi okundu: 03/07/2026 03:29
+2026-07-03 00:43:45,449 | SINYAL ATLANDI — Piyasa kapali (00:43). Gecerli aralik: 01:05 - 23:30.
+2026-07-03 00:43:45,449 | Sinyal bekleniyor... Status:RUNNING Entry:4120.5
+2026-07-03 00:43:48,084 | Sinyal tarihi okundu: 03/07/2026 03:29
+2026-07-03 00:43:48,084 | SINYAL ATLANDI — Piyasa kapali (00:43). Gecerli aralik: 01:05 - 23:30.
+2026-07-03 00:43:48,084 | Sinyal bekleniyor... Status:RUNNING Entry:4120.5
+2026-07-03 00:43:50,861 | Sinyal tarihi okundu: 03/07/2026 03:29
+2026-07-03 00:43:50,862 | SINYAL ATLANDI — Piyasa kapali (00:43). Gecerli aralik: 01:05 - 23:30.
+2026-07-03 00:43:50,862 | Sinyal bekleniyor... Status:RUNNING Entry:4120.5
+2026-07-03 00:43:53,555 | Sinyal tarihi okundu: 03/07/2026 03:29
+2026-07-03 00:43:53,556 | SINYAL ATLANDI — Piyasa kapali (00:43). Gecerli aralik: 01:05 - 23:30.
+2026-07-03 00:43:53,556 | Sinyal bekleniyor... Status:RUNNING Entry:4120.5
