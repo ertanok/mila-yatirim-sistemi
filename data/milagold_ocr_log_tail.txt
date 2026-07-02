@@ -1,53 +1,3 @@
-2026-07-02 14:18:57,842 | Sinyal tarihi okundu: 02/07/2026 18:05
-2026-07-02 14:18:57,842 | Takip: SELL @ 4061.5 | Status:RUNNING
-2026-07-02 14:19:00,871 | Sinyal tarihi okundu: 02/07/2026 18:05
-2026-07-02 14:19:00,872 | Takip: SELL @ 4061.5 | Status:RUNNING
-2026-07-02 14:19:03,997 | Sinyal tarihi okundu: 02/07/2026 18:05
-2026-07-02 14:19:03,998 | Takip: SELL @ 4061.5 | Status:RUNNING
-2026-07-02 14:19:06,857 | Sinyal tarihi okundu: 02/07/2026 18:05
-2026-07-02 14:19:06,857 | Takip: SELL @ 4061.5 | Status:RUNNING
-2026-07-02 14:19:09,619 | Sinyal tarihi okundu: 02/07/2026 18:05
-2026-07-02 14:19:09,620 | Takip: SELL @ 4061.5 | Status:RUNNING
-2026-07-02 14:19:12,351 | Sinyal tarihi okundu: 02/07/2026 18:05
-2026-07-02 14:19:12,352 | Takip: SELL @ 4061.5 | Status:RUNNING
-2026-07-02 14:19:15,150 | Sinyal tarihi okundu: 02/07/2026 18:05
-2026-07-02 14:19:15,151 | Takip: SELL @ 4061.5 | Status:RUNNING
-2026-07-02 14:19:18,528 | Sinyal tarihi okundu: 02/07/2026 18:05
-2026-07-02 14:19:18,528 | Takip: SELL @ 4061.5 | Status:RUNNING
-2026-07-02 14:19:21,384 | Sinyal tarihi okundu: 02/07/2026 18:05
-2026-07-02 14:19:21,385 | Takip: SELL @ 4061.5 | Status:RUNNING
-2026-07-02 14:19:24,358 | Sinyal tarihi okundu: 02/07/2026 18:05
-2026-07-02 14:19:24,358 | Takip: SELL @ 4061.5 | Status:RUNNING
-2026-07-02 14:19:27,380 | Sinyal tarihi okundu: 02/07/2026 18:05
-2026-07-02 14:19:27,381 | Takip: SELL @ 4061.5 | Status:RUNNING
-2026-07-02 14:19:30,339 | Sinyal tarihi okundu: 02/07/2026 18:05
-2026-07-02 14:19:30,339 | Takip: SELL @ 4061.5 | Status:RUNNING
-2026-07-02 14:19:33,359 | Sinyal tarihi okundu: 02/07/2026 18:05
-2026-07-02 14:19:33,359 | Takip: SELL @ 4061.5 | Status:RUNNING
-2026-07-02 14:19:36,189 | Sinyal tarihi okundu: 02/07/2026 18:05
-2026-07-02 14:19:36,189 | Takip: SELL @ 4061.5 | Status:RUNNING
-2026-07-02 14:19:39,442 | Sinyal tarihi okundu: 02/07/2026 18:05
-2026-07-02 14:19:39,443 | Takip: SELL @ 4061.5 | Status:RUNNING
-2026-07-02 14:19:42,650 | Sinyal tarihi okundu: 02/07/2026 18:05
-2026-07-02 14:19:42,651 | Takip: SELL @ 4061.5 | Status:RUNNING
-2026-07-02 14:19:45,638 | Sinyal tarihi okundu: 02/07/2026 18:05
-2026-07-02 14:19:45,639 | Takip: SELL @ 4061.5 | Status:RUNNING
-2026-07-02 14:19:48,752 | Sinyal tarihi okundu: 02/07/2026 18:05
-2026-07-02 14:19:48,752 | Takip: SELL @ 4061.5 | Status:RUNNING
-2026-07-02 14:19:50,851 | Dongu hatasi: Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
-Stacktrace:
-	chromedriver!GetHandleVerifier [0x7ff65903e1b5+153f5]
-	chromedriver!GetHandleVerifier [0x7ff65903e210+15450]
-	chromedriver!(No symbol) [0x7ff658b759a6]
-	chromedriver!(No symbol) [0x7ff658bc2683]
-	chromedriver!(No symbol) [0x7ff658bf9882]
-	chromedriver!(No symbol) [0x7ff658bf3692]
-	chromedriver!(No symbol) [0x7ff658bf2e53]
-	chromedriver!(No symbol) [0x7ff658b3e07b]
-	chromedriver!(No symbol) [0x7ff658b3e6d2]
-	chromedriver!(No symbol) [0x7ff658b3ec95]
-	chromedriver!GetHandleVerifier [0x7ff659609791+5e09d1]
-	chromedriver!GetHandleVerifier [0x7ff659603b3b+5dad7b]
 	chromedriver!GetHandleVerifier [0x7ff659629315+600555]
 	chromedriver!GetHandleVerifier [0x7ff65905bf5e+3319e]
 	chromedriver!GetHandleVerifier [0x7ff65906474c+3b98c]
@@ -56,24 +6,75 @@ Stacktrace:
 	KERNEL32!BaseThreadInitThunk [0x7fff68134ed0+10]
 	ntdll!RtlUserThreadStart [0x7fff68dae20b+2b]
 
-2026-07-02 14:19:53,857 | Dongu hatasi: Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
-Stacktrace:
-	chromedriver!GetHandleVerifier [0x7ff65903e1b5+153f5]
-	chromedriver!GetHandleVerifier [0x7ff65903e210+15450]
-	chromedriver!(No symbol) [0x7ff658b759a6]
-	chromedriver!(No symbol) [0x7ff658bc2683]
-	chromedriver!(No symbol) [0x7ff658bf9882]
-	chromedriver!(No symbol) [0x7ff658bf3692]
-	chromedriver!(No symbol) [0x7ff658bf2e53]
-	chromedriver!(No symbol) [0x7ff658b3e07b]
-	chromedriver!(No symbol) [0x7ff658b3e6d2]
-	chromedriver!(No symbol) [0x7ff658b3ec95]
-	chromedriver!GetHandleVerifier [0x7ff659609791+5e09d1]
-	chromedriver!GetHandleVerifier [0x7ff659603b3b+5dad7b]
-	chromedriver!GetHandleVerifier [0x7ff659629315+600555]
-	chromedriver!GetHandleVerifier [0x7ff65905bf5e+3319e]
-	chromedriver!GetHandleVerifier [0x7ff65906474c+3b98c]
-	chromedriver!(No symbol) [0x7ff658b3d5fc]
-	chromedriver!GetHandleVerifier [0x7ff6597ccbf8+7a3e38]
-	KERNEL32!BaseThreadInitThunk [0x7fff68134ed0+10]
-	ntdll!RtlUserThreadStart [0x7fff68dae20b+2b]
+2026-07-02 14:21:11,323 | EasyOCR yukleniyor...
+2026-07-02 14:21:11,325 | Using CPU. Note: This module is much faster with a GPU.
+2026-07-02 14:21:15,234 | EasyOCR hazir.
+2026-07-02 14:21:15,235 | ==================================================
+2026-07-02 14:21:15,235 | MilaGold OCR Agent - Signal GPT versiyonu
+2026-07-02 14:21:15,235 | ==================================================
+2026-07-02 14:21:15,630 | Chrome versiyonu (exe): 150.0.7871.46
+2026-07-02 14:21:15,631 | ChromeDriver cache'den: C:\MilaYatirim\mila-yatirim-sistemi\MilaGold\chromedriver_cache\150.0.7871.46\chromedriver.exe
+2026-07-02 14:21:15,632 | ChromeDriver: C:\MilaYatirim\mila-yatirim-sistemi\MilaGold\chromedriver_cache\150.0.7871.46\chromedriver.exe
+2026-07-02 14:21:17,238 | Signal GPT sayfasina gidildi.
+2026-07-02 14:21:17,238 | Sayfa yukleniyor, 15 saniye bekleniyor...
+2026-07-02 14:21:32,502 | Baslangic screenshot alindi.
+2026-07-02 14:21:32,502 | Ilk okuma oncesi 5 saniye bekleniyor...
+2026-07-02 14:21:37,498 | Okuma dongusune giriliyor...
+2026-07-02 14:21:39,626 | GOLD karti okunamadi (1). Ham: ['Disclaimer', 'The information on signalgpt ai is for reference and knowlec', 'trading decisions:']
+2026-07-02 14:21:43,142 | GOLD karti okunamadi (2). Ham: ['Disclaimer', 'The information on signalgpt ai is for reference and knowlec', 'trading decisions:']
+2026-07-02 14:21:46,787 | GOLD karti okunamadi (3). Ham: ['Disclaimer', 'The information on signalgpt ai is for reference and knowlec', 'trading decisions:']
+2026-07-02 14:21:51,438 | Sinyal tarihi okundu: 02/07/2026 17:43
+2026-07-02 14:21:51,438 | Olasi yeni sinyal, HEMEN yazildi (dogrulama bekleniyor 1/2): #None | SELL @ 4066.0
+2026-07-02 14:21:51,439 | signal.json yazildi.
+2026-07-02 14:21:54,416 | Sinyal tarihi okundu: 02/07/2026 17:43
+2026-07-02 14:21:54,416 | Yeni sinyal DOGRULANDI (2 okuma): entry=4066.0 pending=4066.0
+2026-07-02 14:21:57,493 | Sinyal tarihi okundu: 02/07/2026 17:43
+2026-07-02 14:21:57,493 | Takip: SELL @ 4066.0 | Status:RUNNING
+2026-07-02 14:22:00,734 | Sinyal tarihi okundu: 02/07/2026 17:43
+2026-07-02 14:22:00,735 | Takip: SELL @ 4066.0 | Status:RUNNING
+2026-07-02 14:22:03,853 | Sinyal tarihi okundu: 02/07/2026 17:43
+2026-07-02 14:22:03,853 | Takip: SELL @ 4066.0 | Status:RUNNING
+2026-07-02 14:22:06,935 | Sinyal tarihi okundu: 02/07/2026 17:43
+2026-07-02 14:22:06,935 | Takip: SELL @ 4066.0 | Status:RUNNING
+2026-07-02 14:22:10,040 | Sinyal tarihi okundu: 02/07/2026 17:43
+2026-07-02 14:22:10,040 | Takip: SELL @ 4066.0 | Status:RUNNING
+2026-07-02 14:22:12,836 | Sinyal tarihi okundu: 02/07/2026 17:43
+2026-07-02 14:22:12,837 | Takip: SELL @ 4066.0 | Status:RUNNING
+2026-07-02 14:22:15,801 | Sinyal tarihi okundu: 02/07/2026 17:43
+2026-07-02 14:22:15,802 | Takip: SELL @ 4066.0 | Status:RUNNING
+2026-07-02 14:22:19,157 | Sinyal tarihi okundu: 02/07/2026 17:43
+2026-07-02 14:22:19,157 | Takip: SELL @ 4066.0 | Status:RUNNING
+2026-07-02 14:22:22,017 | Sinyal tarihi okundu: 02/07/2026 17:43
+2026-07-02 14:22:22,017 | Takip: SELL @ 4066.0 | Status:RUNNING
+2026-07-02 14:22:25,333 | Sinyal tarihi okundu: 02/07/2026 17:43
+2026-07-02 14:22:25,333 | Takip: SELL @ 4066.0 | Status:RUNNING
+2026-07-02 14:22:28,324 | Sinyal tarihi okundu: 02/07/2026 17:43
+2026-07-02 14:22:28,324 | Takip: SELL @ 4066.0 | Status:RUNNING
+2026-07-02 14:22:31,833 | Sinyal tarihi okundu: 02/07/2026 17:43
+2026-07-02 14:22:31,833 | Takip: SELL @ 4066.0 | Status:RUNNING
+2026-07-02 14:22:34,683 | Sinyal tarihi okundu: 02/07/2026 17:43
+2026-07-02 14:22:34,683 | Takip: SELL @ 4066.0 | Status:RUNNING
+2026-07-02 14:22:37,704 | Sinyal tarihi okundu: 02/07/2026 17:43
+2026-07-02 14:22:37,704 | Takip: SELL @ 4066.0 | Status:RUNNING
+2026-07-02 14:22:40,667 | Sinyal tarihi okundu: 02/07/2026 17:43
+2026-07-02 14:22:40,668 | Takip: SELL @ 4066.0 | Status:RUNNING
+2026-07-02 14:22:43,620 | Sinyal tarihi okundu: 02/07/2026 17:43
+2026-07-02 14:22:43,620 | Takip: SELL @ 4066.0 | Status:RUNNING
+2026-07-02 14:22:46,641 | Sinyal tarihi okundu: 02/07/2026 17:43
+2026-07-02 14:22:46,642 | Takip: SELL @ 4066.0 | Status:RUNNING
+2026-07-02 14:22:50,077 | Sinyal tarihi okundu: 02/07/2026 17:43
+2026-07-02 14:22:50,077 | Takip: SELL @ 4066.0 | Status:RUNNING
+2026-07-02 14:22:52,998 | Sinyal tarihi okundu: 02/07/2026 17:43
+2026-07-02 14:22:52,998 | Takip: SELL @ 4066.0 | Status:RUNNING
+2026-07-02 14:22:56,160 | Sinyal tarihi okundu: 02/07/2026 17:43
+2026-07-02 14:22:56,161 | Takip: SELL @ 4066.0 | Status:RUNNING
+2026-07-02 14:22:59,078 | Sinyal tarihi okundu: 02/07/2026 17:43
+2026-07-02 14:22:59,078 | Takip: SELL @ 4066.0 | Status:RUNNING
+2026-07-02 14:23:02,649 | Sinyal tarihi okundu: 02/07/2026 17:43
+2026-07-02 14:23:02,649 | Takip: SELL @ 4066.0 | Status:RUNNING
+2026-07-02 14:23:05,492 | Sinyal tarihi okundu: 02/07/2026 17:43
+2026-07-02 14:23:05,493 | Takip: SELL @ 4066.0 | Status:RUNNING
+2026-07-02 14:23:08,842 | Sinyal tarihi okundu: 02/07/2026 17:43
+2026-07-02 14:23:08,842 | Takip: SELL @ 4066.0 | Status:RUNNING
+2026-07-02 14:23:12,297 | Sinyal tarihi okundu: 02/07/2026 17:43
+2026-07-02 14:23:12,299 | Takip: SELL @ 4066.0 | Status:RUNNING
