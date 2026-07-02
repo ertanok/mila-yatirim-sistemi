@@ -1,7 +1,3 @@
-[2026-07-02 12:30:30] Trailing SL: ticket=927348799 kar=6.94 trailing=4.0 | 4069.24 -> 4069.06
-[2026-07-02 12:30:30] SL guncellendi: ticket=927348799 yeni SL=4069.06
-[2026-07-02 12:30:31] Trailing SL: ticket=927348799 kar=7.06 trailing=3.0 | 4069.06 -> 4067.94
-[2026-07-02 12:30:31] SL guncellendi: ticket=927348799 yeni SL=4067.94
 [2026-07-02 12:30:32] Trailing SL: ticket=927348799 kar=7.22 trailing=3.0 | 4067.94 -> 4067.78
 [2026-07-02 12:30:32] SL guncellendi: ticket=927348799 yeni SL=4067.78
 [2026-07-02 12:30:33] Yeni sinyal daha kotu entry, sl_level=1. 2. pozisyon aciliyor: #None @ 4067.0
@@ -78,3 +74,7 @@
 [2026-07-02 12:51:23] Emir turu: SELL_STOP (fiyat=4069.87 > entry=4069.5)
 [2026-07-02 12:51:23] Islem acildi: 927397683 | SELL @ 4069.5 | SL:4074.5 | TP1:4066.5 TP2:4064.5 TP3:4061.5
 [2026-07-02 12:51:49] Heartbeat: 1 aktif islem | Bakiye: 907.66 USD
+[2026-07-02 12:52:20] Heartbeat: 1 aktif islem | Bakiye: 907.66 USD
+[2026-07-02 12:52:50] Heartbeat: 1 aktif islem | Bakiye: 907.66 USD
+[2026-07-02 12:53:20] Heartbeat: 1 aktif islem | Bakiye: 907.66 USD
+[2026-07-02 12:53:50] Heartbeat: 1 aktif islem | Bakiye: 907.66 USD
