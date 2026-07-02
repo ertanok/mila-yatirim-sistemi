@@ -2683,5 +2683,35 @@
     "sonuc": "Entry",
     "pip": 0.18,
     "profit_usd": 0.14
+  },
+  {
+    "signal_no": null,
+    "direction": "SELL",
+    "entry": 4118.5,
+    "sl": 4123.5,
+    "tp1": 4115.5,
+    "tp2": 4113.5,
+    "tp3": 4110.5,
+    "close_price": 4123.77,
+    "open_time": "2026-07-02 17:44:55",
+    "close_time": "2026-07-02 17:50:00",
+    "sonuc": "SL",
+    "pip": -5.27,
+    "profit_usd": -5.27
+  },
+  {
+    "signal_no": null,
+    "direction": "SELL",
+    "entry": 4118.5,
+    "sl": 4123.5,
+    "tp1": 4115.5,
+    "tp2": 4113.5,
+    "tp3": 4110.5,
+    "close_price": 4123.77,
+    "open_time": "2026-07-02 17:44:08",
+    "close_time": "2026-07-02 17:50:00",
+    "sonuc": "SL",
+    "pip": -5.27,
+    "profit_usd": -5.12
   }
 ]
