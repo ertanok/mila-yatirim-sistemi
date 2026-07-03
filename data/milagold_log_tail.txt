@@ -1,42 +1,3 @@
-[2026-07-03 16:36:53] MilaGold MT5 Agent basliyor...
-[2026-07-03 16:36:53] MT5 baglandi. Bakiye: 883.91 USD
-[2026-07-03 16:36:53] Baslangic bakiyesi: 883.91 USD
-[2026-07-03 16:36:53] Hazir. 0 aktif islem devralindi. signal.json bekleniyor...
-[2026-07-03 16:37:24] Heartbeat: 0 aktif islem | Bakiye: 883.91 USD
-[2026-07-03 16:37:54] Heartbeat: 0 aktif islem | Bakiye: 883.91 USD
-[2026-07-03 16:38:24] Heartbeat: 0 aktif islem | Bakiye: 883.91 USD
-[2026-07-03 16:38:54] Heartbeat: 0 aktif islem | Bakiye: 883.91 USD
-[2026-07-03 16:39:24] Heartbeat: 0 aktif islem | Bakiye: 883.91 USD
-[2026-07-03 16:39:54] Heartbeat: 0 aktif islem | Bakiye: 883.91 USD
-[2026-07-03 16:40:24] Heartbeat: 0 aktif islem | Bakiye: 883.91 USD
-[2026-07-03 16:40:55] Heartbeat: 0 aktif islem | Bakiye: 883.91 USD
-[2026-07-03 16:41:25] Heartbeat: 0 aktif islem | Bakiye: 883.91 USD
-[2026-07-03 16:41:55] Heartbeat: 0 aktif islem | Bakiye: 883.91 USD
-[2026-07-03 16:42:25] Heartbeat: 0 aktif islem | Bakiye: 883.91 USD
-[2026-07-03 16:42:55] Heartbeat: 0 aktif islem | Bakiye: 883.91 USD
-[2026-07-03 16:43:25] Heartbeat: 0 aktif islem | Bakiye: 883.91 USD
-[2026-07-03 16:43:56] Heartbeat: 0 aktif islem | Bakiye: 883.91 USD
-[2026-07-03 16:44:26] Heartbeat: 0 aktif islem | Bakiye: 883.91 USD
-[2026-07-03 16:44:56] Heartbeat: 0 aktif islem | Bakiye: 883.91 USD
-[2026-07-03 16:45:26] Heartbeat: 0 aktif islem | Bakiye: 883.91 USD
-[2026-07-03 16:45:56] Heartbeat: 0 aktif islem | Bakiye: 883.91 USD
-[2026-07-03 16:46:26] Heartbeat: 0 aktif islem | Bakiye: 883.91 USD
-[2026-07-03 16:46:57] Heartbeat: 0 aktif islem | Bakiye: 883.91 USD
-[2026-07-03 16:47:27] Heartbeat: 0 aktif islem | Bakiye: 883.91 USD
-[2026-07-03 16:47:57] Heartbeat: 0 aktif islem | Bakiye: 883.91 USD
-[2026-07-03 16:48:27] Heartbeat: 0 aktif islem | Bakiye: 883.91 USD
-[2026-07-03 16:48:54] Yeni sinyal alindi: #None SELL @ 4168.0
-[2026-07-03 16:48:54] EMA filtresi: SELL ONAYLANDI — fiyat=4163.72 <= EMA20=4171.35
-[2026-07-03 16:48:54] Streak filtresi: SELL ATLANDI — EMA100 streak=10 < 13 (trend yeterince guclu degil)
-[2026-07-03 16:48:54] Streak filtresi: sinyal atlandi #None SELL @ 4168.0
-[2026-07-03 16:48:57] Heartbeat: 0 aktif islem | Bakiye: 883.91 USD
-[2026-07-03 16:49:28] Heartbeat: 0 aktif islem | Bakiye: 883.91 USD
-[2026-07-03 16:49:37] Yeni sinyal alindi: #None SELL @ 4165.0
-[2026-07-03 16:49:37] EMA filtresi: SELL ONAYLANDI — fiyat=4164.72 <= EMA20=4171.45
-[2026-07-03 16:49:37] Streak filtresi: SELL ATLANDI — EMA100 streak=10 < 13 (trend yeterince guclu degil)
-[2026-07-03 16:49:37] Streak filtresi: sinyal atlandi #None SELL @ 4165.0
-[2026-07-03 16:49:58] Heartbeat: 0 aktif islem | Bakiye: 883.91 USD
-[2026-07-03 16:50:28] Heartbeat: 0 aktif islem | Bakiye: 883.91 USD
 [2026-07-03 16:50:58] Heartbeat: 0 aktif islem | Bakiye: 883.91 USD
 [2026-07-03 16:51:29] Heartbeat: 0 aktif islem | Bakiye: 883.91 USD
 [2026-07-03 16:51:59] Heartbeat: 0 aktif islem | Bakiye: 883.91 USD
@@ -78,3 +39,42 @@
 [2026-07-03 17:05:34] Heartbeat: 1 aktif islem | Bakiye: 883.91 USD
 [2026-07-03 17:06:04] Heartbeat: 1 aktif islem | Bakiye: 883.91 USD
 [2026-07-03 17:06:34] Heartbeat: 1 aktif islem | Bakiye: 883.91 USD
+[2026-07-03 17:07:04] Heartbeat: 1 aktif islem | Bakiye: 883.91 USD
+[2026-07-03 17:07:14] TP1 gecildi: ticket=929306080 fiyat=4161.26 TP1=4162.0 -> SL -2 ye tasiniyor
+[2026-07-03 17:07:14] SL guncellendi: ticket=929306080 yeni SL=4167.0
+[2026-07-03 17:07:34] Heartbeat: 1 aktif islem | Bakiye: 883.91 USD
+[2026-07-03 17:08:05] Heartbeat: 1 aktif islem | Bakiye: 883.91 USD
+[2026-07-03 17:08:26] TP2 gecildi: ticket=929306080 fiyat=4159.9 TP2=4160.0 -> SL girise tasiniyor, trailing basliyor
+[2026-07-03 17:08:26] SL guncellendi: ticket=929306080 yeni SL=4165.0
+[2026-07-03 17:08:26] Trailing SL: ticket=929306080 kar=5.10 trailing=5.0 | 4165.0 -> 4164.9
+[2026-07-03 17:08:26] SL guncellendi: ticket=929306080 yeni SL=4164.9
+[2026-07-03 17:08:35] Heartbeat: 1 aktif islem | Bakiye: 883.91 USD
+[2026-07-03 17:08:41] Trailing SL: ticket=929306080 kar=5.94 trailing=5.0 | 4164.9 -> 4164.06
+[2026-07-03 17:08:41] SL guncellendi: ticket=929306080 yeni SL=4164.06
+[2026-07-03 17:08:42] Trailing SL: ticket=929306080 kar=6.16 trailing=4.0 | 4164.06 -> 4162.84
+[2026-07-03 17:08:42] SL guncellendi: ticket=929306080 yeni SL=4162.84
+[2026-07-03 17:08:47] Trailing SL: ticket=929306080 kar=6.23 trailing=4.0 | 4162.84 -> 4162.77
+[2026-07-03 17:08:47] SL guncellendi: ticket=929306080 yeni SL=4162.77
+[2026-07-03 17:08:54] Trailing SL: ticket=929306080 kar=6.46 trailing=4.0 | 4162.77 -> 4162.54
+[2026-07-03 17:08:54] SL guncellendi: ticket=929306080 yeni SL=4162.54
+[2026-07-03 17:08:55] Trailing SL: ticket=929306080 kar=6.99 trailing=4.0 | 4162.54 -> 4162.01
+[2026-07-03 17:08:55] SL guncellendi: ticket=929306080 yeni SL=4162.01
+[2026-07-03 17:08:57] Trailing SL: ticket=929306080 kar=7.13 trailing=3.0 | 4162.01 -> 4160.87
+[2026-07-03 17:08:57] SL guncellendi: ticket=929306080 yeni SL=4160.87
+[2026-07-03 17:08:58] Trailing SL: ticket=929306080 kar=7.61 trailing=3.0 | 4160.87 -> 4160.39
+[2026-07-03 17:08:58] SL guncellendi: ticket=929306080 yeni SL=4160.39
+[2026-07-03 17:08:59] Trailing SL: ticket=929306080 kar=8.29 trailing=2.0 | 4160.39 -> 4158.71
+[2026-07-03 17:08:59] SL guncellendi: ticket=929306080 yeni SL=4158.71
+[2026-07-03 17:09:01] Trailing SL: ticket=929306080 kar=8.42 trailing=2.0 | 4158.71 -> 4158.58
+[2026-07-03 17:09:01] SL guncellendi: ticket=929306080 yeni SL=4158.58
+[2026-07-03 17:09:03] Trailing SL: ticket=929306080 kar=8.90 trailing=2.0 | 4158.58 -> 4158.1
+[2026-07-03 17:09:03] SL guncellendi: ticket=929306080 yeni SL=4158.1
+[2026-07-03 17:09:04] Trailing SL: ticket=929306080 kar=9.11 trailing=2.0 | 4158.1 -> 4157.89
+[2026-07-03 17:09:04] SL guncellendi: ticket=929306080 yeni SL=4157.89
+[2026-07-03 17:09:05] Trailing SL: ticket=929306080 kar=9.20 trailing=2.0 | 4157.89 -> 4157.8
+[2026-07-03 17:09:05] SL guncellendi: ticket=929306080 yeni SL=4157.8
+[2026-07-03 17:09:06] Heartbeat: 1 aktif islem | Bakiye: 883.91 USD
+[2026-07-03 17:09:06] Trailing SL: ticket=929306080 kar=9.31 trailing=2.0 | 4157.8 -> 4157.69
+[2026-07-03 17:09:06] SL guncellendi: ticket=929306080 yeni SL=4157.69
+[2026-07-03 17:09:07] Trailing SL: ticket=929306080 kar=9.65 trailing=2.0 | 4157.69 -> 4157.35
+[2026-07-03 17:09:07] SL guncellendi: ticket=929306080 yeni SL=4157.35
