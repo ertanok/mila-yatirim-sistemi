@@ -1,80 +1,80 @@
-2026-07-03 06:37:50,802 | Using CPU. Note: This module is much faster with a GPU.
-2026-07-03 06:37:54,213 | EasyOCR hazir.
-2026-07-03 06:37:54,214 | ==================================================
-2026-07-03 06:37:54,214 | MilaGold OCR Agent - Signal GPT versiyonu
-2026-07-03 06:37:54,214 | ==================================================
-2026-07-03 06:37:54,508 | Chrome versiyonu (exe): 150.0.7871.46
-2026-07-03 06:37:54,509 | ChromeDriver cache'den: C:\MilaYatirim\mila-yatirim-sistemi\MilaGold\chromedriver_cache\150.0.7871.46\chromedriver.exe
-2026-07-03 06:37:54,509 | ChromeDriver: C:\MilaYatirim\mila-yatirim-sistemi\MilaGold\chromedriver_cache\150.0.7871.46\chromedriver.exe
-2026-07-03 06:37:55,562 | Signal GPT sayfasina gidildi.
-2026-07-03 06:37:55,562 | Sayfa yukleniyor, 15 saniye bekleniyor...
-2026-07-03 06:38:11,053 | Baslangic screenshot alindi.
-2026-07-03 06:38:11,053 | Ilk okuma oncesi 5 saniye bekleniyor...
-2026-07-03 06:38:16,054 | Okuma dongusune giriliyor...
-2026-07-03 06:38:17,034 | GOLD karti okunamadi (1). Ham: ['Disclaimer', 'The information on signalgpt aiis fon', 'trading decisions_']
-2026-07-03 06:38:19,889 | GOLD karti okunamadi (2). Ham: ['Disclaimer', 'The information on signalgpt aiis fon', 'trading decisions_']
-2026-07-03 06:38:22,609 | GOLD karti okunamadi (3). Ham: ['Disclaimer', 'The information on signalgpt aiis fon', 'trading decisions_']
-2026-07-03 06:38:30,064 | Sinyal tarihi okunamadi (filtre devrede degil).
-2026-07-03 06:38:30,064 | Sinyal bekleniyor... Status:None Entry:None
-2026-07-03 06:38:32,741 | Sinyal tarihi okunamadi (filtre devrede degil).
-2026-07-03 06:38:32,742 | Sinyal bekleniyor... Status:None Entry:None
-2026-07-03 06:38:35,614 | Sinyal tarihi okunamadi (filtre devrede degil).
-2026-07-03 06:38:35,615 | Sinyal bekleniyor... Status:None Entry:None
-2026-07-03 06:38:38,344 | Sinyal tarihi okunamadi (filtre devrede degil).
-2026-07-03 06:38:38,344 | Sinyal bekleniyor... Status:None Entry:None
-2026-07-03 06:38:41,709 | Sinyal tarihi okunamadi (filtre devrede degil).
-2026-07-03 06:38:41,709 | Sinyal bekleniyor... Status:None Entry:None
-2026-07-03 06:38:44,472 | Sinyal tarihi okunamadi (filtre devrede degil).
-2026-07-03 06:38:44,472 | Sinyal bekleniyor... Status:None Entry:None
-2026-07-03 06:38:47,211 | Sinyal tarihi okunamadi (filtre devrede degil).
-2026-07-03 06:38:47,211 | Sinyal bekleniyor... Status:None Entry:None
-2026-07-03 06:38:49,984 | Sinyal tarihi okunamadi (filtre devrede degil).
-2026-07-03 06:38:49,984 | Sinyal bekleniyor... Status:None Entry:None
-2026-07-03 06:38:52,816 | Sinyal tarihi okunamadi (filtre devrede degil).
-2026-07-03 06:38:52,816 | Sinyal bekleniyor... Status:None Entry:None
-2026-07-03 06:38:55,589 | Sinyal tarihi okunamadi (filtre devrede degil).
-2026-07-03 06:38:55,590 | Sinyal bekleniyor... Status:None Entry:None
-2026-07-03 06:38:58,358 | Sinyal tarihi okunamadi (filtre devrede degil).
-2026-07-03 06:38:58,359 | Sinyal bekleniyor... Status:None Entry:None
-2026-07-03 06:39:01,623 | Sinyal tarihi okunamadi (filtre devrede degil).
-2026-07-03 06:39:01,623 | Sinyal bekleniyor... Status:None Entry:None
-2026-07-03 06:39:04,318 | Sinyal tarihi okunamadi (filtre devrede degil).
-2026-07-03 06:39:04,318 | Sinyal bekleniyor... Status:None Entry:None
-2026-07-03 06:39:07,086 | Sinyal tarihi okunamadi (filtre devrede degil).
-2026-07-03 06:39:07,087 | Sinyal bekleniyor... Status:None Entry:None
-2026-07-03 06:39:09,875 | Sinyal tarihi okunamadi (filtre devrede degil).
-2026-07-03 06:39:09,876 | Sinyal bekleniyor... Status:None Entry:None
-2026-07-03 06:39:12,553 | Sinyal tarihi okunamadi (filtre devrede degil).
-2026-07-03 06:39:12,554 | Sinyal bekleniyor... Status:None Entry:None
-2026-07-03 06:39:15,257 | Sinyal tarihi okunamadi (filtre devrede degil).
-2026-07-03 06:39:15,258 | Sinyal bekleniyor... Status:None Entry:None
-2026-07-03 06:39:17,945 | Sinyal tarihi okunamadi (filtre devrede degil).
-2026-07-03 06:39:17,946 | Sinyal bekleniyor... Status:None Entry:None
-2026-07-03 06:39:20,640 | Sinyal tarihi okunamadi (filtre devrede degil).
-2026-07-03 06:39:20,640 | Sinyal bekleniyor... Status:None Entry:None
-2026-07-03 06:39:23,327 | Sinyal tarihi okunamadi (filtre devrede degil).
-2026-07-03 06:39:23,327 | Sinyal bekleniyor... Status:None Entry:None
-2026-07-03 06:39:26,311 | Sinyal tarihi okunamadi (filtre devrede degil).
-2026-07-03 06:39:26,311 | Sinyal bekleniyor... Status:None Entry:None
-2026-07-03 06:39:28,982 | Sinyal tarihi okunamadi (filtre devrede degil).
-2026-07-03 06:39:28,983 | Sinyal bekleniyor... Status:None Entry:None
-2026-07-03 06:39:31,927 | Sinyal tarihi okunamadi (filtre devrede degil).
-2026-07-03 06:39:31,928 | Sinyal bekleniyor... Status:None Entry:None
-2026-07-03 06:39:34,781 | Sinyal tarihi okunamadi (filtre devrede degil).
-2026-07-03 06:39:34,781 | Sinyal bekleniyor... Status:None Entry:None
-2026-07-03 06:39:37,521 | Sinyal tarihi okunamadi (filtre devrede degil).
-2026-07-03 06:39:37,522 | Sinyal bekleniyor... Status:None Entry:None
-2026-07-03 06:39:40,315 | Sinyal tarihi okunamadi (filtre devrede degil).
-2026-07-03 06:39:40,316 | Sinyal bekleniyor... Status:None Entry:None
-2026-07-03 06:39:43,021 | Sinyal tarihi okunamadi (filtre devrede degil).
-2026-07-03 06:39:43,021 | Sinyal bekleniyor... Status:None Entry:None
-2026-07-03 06:39:45,673 | Sinyal tarihi okunamadi (filtre devrede degil).
-2026-07-03 06:39:45,674 | Sinyal bekleniyor... Status:None Entry:None
-2026-07-03 06:39:48,353 | Sinyal tarihi okunamadi (filtre devrede degil).
-2026-07-03 06:39:48,354 | Sinyal bekleniyor... Status:None Entry:None
-2026-07-03 06:39:51,061 | Sinyal tarihi okunamadi (filtre devrede degil).
-2026-07-03 06:39:51,062 | Sinyal bekleniyor... Status:None Entry:None
-2026-07-03 06:39:53,880 | Sinyal tarihi okunamadi (filtre devrede degil).
-2026-07-03 06:39:53,881 | Sinyal bekleniyor... Status:None Entry:None
-2026-07-03 06:39:56,696 | Sinyal tarihi okunamadi (filtre devrede degil).
-2026-07-03 06:39:56,697 | Sinyal bekleniyor... Status:None Entry:None
+2026-07-03 06:40:11,211 | Sinyal tarihi okunamadi (filtre devrede degil).
+2026-07-03 06:40:11,212 | Sinyal bekleniyor... Status:None Entry:None
+2026-07-03 06:40:14,263 | Sinyal tarihi okunamadi (filtre devrede degil).
+2026-07-03 06:40:14,263 | Sinyal bekleniyor... Status:None Entry:None
+2026-07-03 06:40:17,114 | Sinyal tarihi okunamadi (filtre devrede degil).
+2026-07-03 06:40:17,114 | Sinyal bekleniyor... Status:None Entry:None
+2026-07-03 06:40:19,930 | Sinyal tarihi okunamadi (filtre devrede degil).
+2026-07-03 06:40:19,930 | Sinyal bekleniyor... Status:None Entry:None
+2026-07-03 06:40:22,730 | Sinyal tarihi okunamadi (filtre devrede degil).
+2026-07-03 06:40:22,730 | Sinyal bekleniyor... Status:None Entry:None
+2026-07-03 06:40:25,512 | Sinyal tarihi okunamadi (filtre devrede degil).
+2026-07-03 06:40:25,513 | Sinyal bekleniyor... Status:None Entry:None
+2026-07-03 06:40:28,591 | Sinyal tarihi okunamadi (filtre devrede degil).
+2026-07-03 06:40:28,592 | Sinyal bekleniyor... Status:None Entry:None
+2026-07-03 06:40:31,751 | Sinyal tarihi okunamadi (filtre devrede degil).
+2026-07-03 06:40:31,751 | Sinyal bekleniyor... Status:None Entry:None
+2026-07-03 06:40:34,575 | Sinyal tarihi okunamadi (filtre devrede degil).
+2026-07-03 06:40:34,575 | Sinyal bekleniyor... Status:None Entry:None
+2026-07-03 06:40:37,324 | Sinyal tarihi okunamadi (filtre devrede degil).
+2026-07-03 06:40:37,325 | Sinyal bekleniyor... Status:None Entry:None
+2026-07-03 06:40:40,178 | Sinyal tarihi okunamadi (filtre devrede degil).
+2026-07-03 06:40:40,178 | Sinyal bekleniyor... Status:None Entry:None
+2026-07-03 06:40:42,957 | Sinyal tarihi okunamadi (filtre devrede degil).
+2026-07-03 06:40:42,958 | Sinyal bekleniyor... Status:None Entry:None
+2026-07-03 06:40:45,878 | Sinyal tarihi okunamadi (filtre devrede degil).
+2026-07-03 06:40:45,879 | Sinyal bekleniyor... Status:None Entry:None
+2026-07-03 06:40:48,884 | Sinyal tarihi okunamadi (filtre devrede degil).
+2026-07-03 06:40:48,884 | Sinyal bekleniyor... Status:None Entry:None
+2026-07-03 06:40:51,631 | Sinyal tarihi okunamadi (filtre devrede degil).
+2026-07-03 06:40:51,631 | Sinyal bekleniyor... Status:None Entry:None
+2026-07-03 06:40:54,420 | Sinyal tarihi okunamadi (filtre devrede degil).
+2026-07-03 06:40:54,420 | Sinyal bekleniyor... Status:None Entry:None
+2026-07-03 06:40:57,149 | Sinyal tarihi okunamadi (filtre devrede degil).
+2026-07-03 06:40:57,150 | Sinyal bekleniyor... Status:None Entry:None
+2026-07-03 06:41:00,272 | Sinyal tarihi okunamadi (filtre devrede degil).
+2026-07-03 06:41:00,273 | Sinyal bekleniyor... Status:None Entry:None
+2026-07-03 06:41:03,209 | Sinyal tarihi okunamadi (filtre devrede degil).
+2026-07-03 06:41:03,209 | Sinyal bekleniyor... Status:None Entry:None
+2026-07-03 06:41:05,924 | Sinyal tarihi okunamadi (filtre devrede degil).
+2026-07-03 06:41:05,925 | Sinyal bekleniyor... Status:None Entry:None
+2026-07-03 06:41:08,685 | Sinyal tarihi okunamadi (filtre devrede degil).
+2026-07-03 06:41:08,685 | Sinyal bekleniyor... Status:None Entry:None
+2026-07-03 06:41:11,405 | Sinyal tarihi okunamadi (filtre devrede degil).
+2026-07-03 06:41:11,405 | Sinyal bekleniyor... Status:None Entry:None
+2026-07-03 06:41:14,215 | Sinyal tarihi okunamadi (filtre devrede degil).
+2026-07-03 06:41:14,215 | Sinyal bekleniyor... Status:None Entry:None
+2026-07-03 06:41:16,955 | Sinyal tarihi okunamadi (filtre devrede degil).
+2026-07-03 06:41:16,955 | Sinyal bekleniyor... Status:None Entry:None
+2026-07-03 06:41:19,887 | Sinyal tarihi okunamadi (filtre devrede degil).
+2026-07-03 06:41:19,888 | Sinyal bekleniyor... Status:None Entry:None
+2026-07-03 06:41:22,658 | Sinyal tarihi okunamadi (filtre devrede degil).
+2026-07-03 06:41:22,658 | Sinyal bekleniyor... Status:None Entry:None
+2026-07-03 06:41:25,742 | Sinyal tarihi okunamadi (filtre devrede degil).
+2026-07-03 06:41:25,743 | Sinyal bekleniyor... Status:None Entry:None
+2026-07-03 06:41:28,620 | Sinyal tarihi okunamadi (filtre devrede degil).
+2026-07-03 06:41:28,620 | Sinyal bekleniyor... Status:None Entry:None
+2026-07-03 06:41:31,480 | Sinyal tarihi okunamadi (filtre devrede degil).
+2026-07-03 06:41:31,481 | Sinyal bekleniyor... Status:None Entry:None
+2026-07-03 06:41:34,276 | Sinyal tarihi okunamadi (filtre devrede degil).
+2026-07-03 06:41:34,276 | Sinyal bekleniyor... Status:None Entry:None
+2026-07-03 06:41:37,236 | Sinyal tarihi okunamadi (filtre devrede degil).
+2026-07-03 06:41:37,236 | Sinyal bekleniyor... Status:None Entry:None
+2026-07-03 06:41:40,003 | Sinyal tarihi okunamadi (filtre devrede degil).
+2026-07-03 06:41:40,003 | Sinyal bekleniyor... Status:None Entry:None
+2026-07-03 06:41:42,892 | Sinyal tarihi okunamadi (filtre devrede degil).
+2026-07-03 06:41:42,892 | Sinyal bekleniyor... Status:None Entry:None
+2026-07-03 06:41:45,859 | Sinyal tarihi okunamadi (filtre devrede degil).
+2026-07-03 06:41:45,859 | Sinyal bekleniyor... Status:None Entry:None
+2026-07-03 06:41:48,779 | Sinyal tarihi okunamadi (filtre devrede degil).
+2026-07-03 06:41:48,779 | Sinyal bekleniyor... Status:None Entry:None
+2026-07-03 06:41:51,534 | Sinyal tarihi okunamadi (filtre devrede degil).
+2026-07-03 06:41:51,534 | Sinyal bekleniyor... Status:None Entry:None
+2026-07-03 06:41:54,284 | Sinyal tarihi okunamadi (filtre devrede degil).
+2026-07-03 06:41:54,285 | Sinyal bekleniyor... Status:None Entry:None
+2026-07-03 06:41:57,203 | Sinyal tarihi okunamadi (filtre devrede degil).
+2026-07-03 06:41:57,203 | Sinyal bekleniyor... Status:None Entry:None
+2026-07-03 06:42:00,002 | Sinyal tarihi okunamadi (filtre devrede degil).
+2026-07-03 06:42:00,002 | Sinyal bekleniyor... Status:None Entry:None
+2026-07-03 06:42:02,891 | Sinyal tarihi okunamadi (filtre devrede degil).
+2026-07-03 06:42:02,891 | Sinyal bekleniyor... Status:None Entry:None
