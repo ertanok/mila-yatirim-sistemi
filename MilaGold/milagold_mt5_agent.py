@@ -13,7 +13,9 @@ SYMBOL    = "GOLD"
 LOT_SIZE  = 0.01
 LOG_FILE         = "C:\\MilaYatirim\\mila-yatirim-sistemi\\MilaGold\\milagold_mt5_log.txt"
 SIGNAL_FILE      = "C:\\MilaYatirim\\mila-yatirim-sistemi\\MilaGold\\signal.json"
-PERFORMANCE_FILE = "C:\\MilaYatirim\\mila-yatirim-sistemi\\MilaGold\\milagold_trades.json"
+PERFORMANCE_FILE      = "C:\\MilaYatirim\\mila-yatirim-sistemi\\MilaGold\\milagold_trades.json"
+CONTROL_FILE          = "C:\\MilaYatirim\\mila-yatirim-sistemi\\data\\milagold_control.json"
+POSITIONS_STATUS_FILE = "C:\\MilaYatirim\\mila-yatirim-sistemi\\MilaGold\\positions_status.json"
 PRICE_OFFSET     = 0.0
 
 SL_DISTANCE  = 5.0
@@ -121,6 +123,40 @@ def ema_filtresi_gecti_mi(direction):
         return True
 
 
+def streak_filtresi_gecti_mi(direction):
+    """EMA100 streak filtresi: SELL sinyalinde fiyatin EMA100 altinda kaldigi
+    ardisik M5 mum sayisi >= 13 olmali. Hata durumunda True doner (filtre atlanir)."""
+    if direction != "SELL":
+        return True
+    try:
+        rates = mt5_call(mt5.copy_rates_from_pos, SYMBOL, mt5.TIMEFRAME_M5, 0, 250)
+        if rates is None or len(rates) < 110:
+            log("Streak filtresi: M5 verisi yetersiz, filtre atlanıyor.")
+            return True
+        closes = [r[4] for r in rates]
+        k = 2 / 101
+        ema = sum(closes[:10]) / 10
+        ema_list = [None] * 10
+        for c in closes[10:]:
+            ema = c * k + ema * (1 - k)
+            ema_list.append(ema)
+        streak = 0
+        for i in range(len(closes) - 1, 9, -1):
+            if closes[i] < ema_list[i]:
+                streak += 1
+            else:
+                break
+        if streak < 13:
+            log(f"Streak filtresi: SELL ATLANDI — EMA100 streak={streak} < 13 (trend yeterince guclu degil)")
+            return False
+        else:
+            log(f"Streak filtresi: SELL ONAYLANDI — EMA100 streak={streak} >= 13")
+            return True
+    except Exception as e:
+        log(f"Streak filtresi hatasi: {e} — filtre atlanıyor.")
+        return True
+
+
 def open_trade(direction, entry, sl, tp1, tp2, tp3):
     entry = round(entry + PRICE_OFFSET, 2)
     sl    = round(sl + PRICE_OFFSET, 2)
@@ -147,6 +183,15 @@ def open_trade(direction, entry, sl, tp1, tp2, tp3):
         else:
             order_type = mt5.ORDER_TYPE_BUY_STOP
             log(f"Emir turu: BUY_STOP (fiyat={current_price} < entry={entry})")
+
+    # Ayni entry'de zaten bekleyen emir var mi kontrol et
+    mevcut_emirler = mt5_call(mt5.orders_get, symbol=SYMBOL)
+    if mevcut_emirler:
+        for emir in mevcut_emirler:
+            if emir.magic == 999999 and abs(emir.price_open - entry) < 0.1:
+                log(f"open_trade: Ayni entry ({entry}) ile zaten bekleyen emir var "
+                    f"(ticket={emir.ticket}), yeni emir acilmiyor.")
+                return "SKIP"
 
     request = {
         "action":       mt5.TRADE_ACTION_PENDING,
@@ -290,6 +335,18 @@ def save_performance(record):
         log(f"Performans kayit hatasi: {e}")
 
 
+def write_positions_status(active_trades):
+    try:
+        data = {
+            "acik_pozisyon_var": len(active_trades) > 0,
+            "guncelleme": datetime.now().isoformat(timespec="seconds")
+        }
+        with open(POSITIONS_STATUS_FILE, "w") as f:
+            json.dump(data, f)
+    except Exception as e:
+        log(f"positions_status.json yazma hatasi: {e}")
+
+
 def get_deal_info(ticket):
     try:
         deals = mt5_call(mt5.history_deals_get, position=ticket)
@@ -297,7 +354,7 @@ def get_deal_info(ticket):
             close_deal = deals[-1]
             return {
                 "close_price": close_deal.price,
-                "close_time":  datetime.fromtimestamp(close_deal.time).strftime("%Y-%m-%d %H:%M:%S"),
+                "close_time":  datetime.utcfromtimestamp(close_deal.time).strftime("%Y-%m-%d %H:%M:%S"),
                 "profit":      close_deal.profit,
             }
     except Exception:
@@ -374,6 +431,16 @@ def read_signal():
             return json.load(f)
     except:
         return None
+
+
+def read_control():
+    try:
+        if not os.path.exists(CONTROL_FILE):
+            return {"pause": False}
+        with open(CONTROL_FILE, "r") as f:
+            return json.load(f)
+    except:
+        return {"pause": False}
 
 
 def clear_signal():
@@ -493,6 +560,7 @@ def main():
     last_heartbeat = time.time()
     HEARTBEAT_INTERVAL = 30  # saniye
     last_skipped_signal = None  # SL/Entry kapanisinda yeniden denenecek sinyal
+    sistem_duraklatildi_prev = False
 
     while True:
         try:
@@ -533,6 +601,15 @@ def main():
                 time.sleep(5)
                 continue
 
+            # --- KONTROL DOSYASI ---
+            control = read_control()
+            sistem_duraklatildi = control.get("pause", False)
+            if sistem_duraklatildi != sistem_duraklatildi_prev:
+                if sistem_duraklatildi:
+                    log("Sistem duraklatildi — yeni emir alinmiyor")
+                else:
+                    log("Sistem aktif — yeni emir alinmaya devam ediyor")
+                sistem_duraklatildi_prev = sistem_duraklatildi
 
             # --- PIYASA KAPANIS KURALLARI ---
             simdi_k = datetime.now()
@@ -577,7 +654,8 @@ def main():
                 time.sleep(5)
                 continue
 
-            if signal and not signal.get("processed") and signal.get("status") in ("RUNNING", "WAITING") \
+            if not sistem_duraklatildi and signal and not signal.get("processed") \
+                    and signal.get("status") in ("RUNNING", "WAITING") \
                     and not signal.get("cancel", False):
                 direction = signal["direction"]
                 entry     = signal["entry"]
@@ -612,6 +690,11 @@ def main():
                     if not ema_filtresi_gecti_mi(direction):
                         log(f"EMA filtresi: sinyal atlandi #{signal_no} {direction} @ {entry}")
                         telegram(f"[MilaGold] EMA filtresi: sinyal atlandi — {direction} @ {entry} (yukari momentum)")
+                        clear_signal()
+                        continue
+                    if not streak_filtresi_gecti_mi(direction):
+                        log(f"Streak filtresi: sinyal atlandi #{signal_no} {direction} @ {entry}")
+                        telegram(f"[MilaGold] Streak filtresi: sinyal atlandi — {direction} @ {entry} (EMA100 streak yetersiz)")
                         clear_signal()
                         continue
                     ticket = open_trade(direction, entry, sl, tp1, tp2, tp3)
@@ -760,6 +843,11 @@ def main():
                                 telegram(f"[MilaGold] EMA filtresi: hafizadaki sinyal atlandi — {sk['direction']} @ {sk['entry']}")
                                 last_skipped_signal = None
                                 continue
+                            if not streak_filtresi_gecti_mi(sk["direction"]):
+                                log(f"Streak filtresi: hafizadaki sinyal da atlandi — {sk['direction']} @ {sk['entry']}")
+                                telegram(f"[MilaGold] Streak filtresi: hafizadaki sinyal atlandi — {sk['direction']} @ {sk['entry']}")
+                                last_skipped_signal = None
+                                continue
                             ticket2 = open_trade(sk["direction"], sk["entry"],
                                                  sk["sl"], sk["tp1"], sk["tp2"], sk["tp3"])
                             if isinstance(ticket2, int):
@@ -844,6 +932,7 @@ def main():
 
             active_trades = [t for t in active_trades if t["ticket"] not in kapanan_tickets]
 
+            write_positions_status(active_trades)
             time.sleep(1)
 
         except KeyboardInterrupt:

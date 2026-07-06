@@ -12,6 +12,20 @@ import time
 import base64
 import requests
 import logging
+import msvcrt
+
+# --- TEK INSTANCE KILIDI ---
+_SYNC_LOCK_PATH = os.path.join(
+    os.path.dirname(os.path.abspath(__file__)), "milagold_sync_agent.lock"
+)
+_sync_lock_fh = open(_SYNC_LOCK_PATH, "w")
+try:
+    msvcrt.locking(_sync_lock_fh.fileno(), msvcrt.LK_NBLCK, 1)
+except OSError:
+    print("[Sync Agent] Baska bir instance zaten calisiyor. Bu process sonlandiriliyor.")
+    _sync_lock_fh.close()
+    raise SystemExit(0)
+
 from datetime import datetime
 
 # ── Config ──────────────────────────────────────────────────────────────────
@@ -26,12 +40,15 @@ GITHUB_REPO   = "mila-yatirim-sistemi"
 GITHUB_BRANCH = "main"
 SYNC_INTERVAL = 120  # saniye
 
-BASE_DIR = r"C:\MilaYatirim\mila-yatirim-sistemi\MilaGold"
+BASE_DIR     = r"C:\MilaYatirim\mila-yatirim-sistemi\MilaGold"
+DATA_DIR     = r"C:\MilaYatirim\mila-yatirim-sistemi\data"
+CONTROL_FILE = os.path.join(DATA_DIR, "milagold_control.json")
 
 # GitHub'a yüklenecek dosyalar: (yerel yol, repo'daki yol)
 SYNC_FILES = [
     (os.path.join(BASE_DIR, "signal.json"),          "data/signal.json"),
     (os.path.join(BASE_DIR, "milagold_trades.json"), "data/milagold_trades.json"),
+    (CONTROL_FILE,                                    "data/milagold_control.json"),
 ]
 
 # Log dosyasindan son N satiri al
@@ -140,6 +157,13 @@ def build_agent_status() -> str:
 def sync_once():
     now = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
     errors = 0
+
+    # control.json yoksa olustur
+    if not os.path.exists(CONTROL_FILE):
+        os.makedirs(DATA_DIR, exist_ok=True)
+        with open(CONTROL_FILE, "w", encoding="utf-8") as f:
+            json.dump({"pause": False}, f, indent=2)
+        log.info("control.json olusturuldu (varsayilan: pause=false)")
 
     # 1) JSON dosyalari
     for local_path, repo_path in SYNC_FILES:

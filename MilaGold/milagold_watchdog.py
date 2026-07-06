@@ -80,23 +80,24 @@ def get_last_log_time(log_path):
 
 def kill_agent(script_name):
     try:
-        result = subprocess.run(
-            ["wmic", "process", "where",
-             f"name='py.exe' and CommandLine like '%{script_name}%'",
-             "get", "ProcessId", "/FORMAT:CSV"],
-            capture_output=True, text=True
-        )
         pids = []
-        for line in result.stdout.splitlines():
-            line = line.strip()
-            if not line or "ProcessId" in line or "Node" in line:
-                continue
-            parts = line.split(",")
-            if len(parts) >= 2:
-                try:
-                    pids.append(int(parts[-1].strip()))
-                except Exception:
-                    pass
+        for exe_name in ["py.exe", "python.exe", "python3.exe"]:
+            result = subprocess.run(
+                ["wmic", "process", "where",
+                 f"name='{exe_name}' and CommandLine like '%{script_name}%'",
+                 "get", "ProcessId", "/FORMAT:CSV"],
+                capture_output=True, text=True
+            )
+            for line in result.stdout.splitlines():
+                line = line.strip()
+                if not line or "ProcessId" in line or "Node" in line:
+                    continue
+                parts = line.split(",")
+                if len(parts) >= 2:
+                    try:
+                        pids.append(int(parts[-1].strip()))
+                    except Exception:
+                        pass
         for pid in pids:
             subprocess.run(["taskkill", "/PID", str(pid), "/F"], capture_output=True)
             log(f"  Process kapatildi: PID={pid} ({script_name})")
