@@ -1,7 +1,3 @@
-[2026-07-06 17:44:10] TP2 gecildi: ticket=931056871 fiyat=4131.35 TP2=4131.5 -> SL girise tasiniyor, trailing basliyor
-[2026-07-06 17:44:10] SL guncellendi: ticket=931056871 yeni SL=4136.5
-[2026-07-06 17:44:10] Trailing SL: ticket=931056871 kar=5.15 trailing=5.0 | 4136.5 -> 4136.35
-[2026-07-06 17:44:10] SL guncellendi: ticket=931056871 yeni SL=4136.35
 [2026-07-06 17:44:13] Trailing SL: ticket=931056871 kar=5.84 trailing=5.0 | 4136.35 -> 4135.66
 [2026-07-06 17:44:13] SL guncellendi: ticket=931056871 yeni SL=4135.66
 [2026-07-06 17:44:14] Trailing SL: ticket=931056871 kar=7.34 trailing=3.0 | 4135.66 -> 4132.16
@@ -78,3 +74,7 @@
 [2026-07-06 18:07:51] Heartbeat: 0 aktif islem | Bakiye: 882.78 USD
 [2026-07-06 18:08:21] Heartbeat: 0 aktif islem | Bakiye: 882.78 USD
 [2026-07-06 18:08:52] Heartbeat: 0 aktif islem | Bakiye: 882.78 USD
+[2026-07-06 18:09:22] Heartbeat: 0 aktif islem | Bakiye: 882.78 USD
+[2026-07-06 18:09:52] Heartbeat: 0 aktif islem | Bakiye: 882.78 USD
+[2026-07-06 18:10:22] Heartbeat: 0 aktif islem | Bakiye: 882.78 USD
+[2026-07-06 18:10:52] Heartbeat: 0 aktif islem | Bakiye: 882.78 USD
