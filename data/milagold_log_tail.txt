@@ -1,15 +1,3 @@
-[2026-07-07 05:23:21] Heartbeat: 0 aktif islem | Bakiye: 882.78 USD
-[2026-07-07 05:23:31] Heartbeat: 0 aktif islem | Bakiye: 882.78 USD
-[2026-07-07 05:23:51] Heartbeat: 0 aktif islem | Bakiye: 882.78 USD
-[2026-07-07 05:24:01] Heartbeat: 0 aktif islem | Bakiye: 882.78 USD
-[2026-07-07 05:24:21] Heartbeat: 0 aktif islem | Bakiye: 882.78 USD
-[2026-07-07 05:24:31] Heartbeat: 0 aktif islem | Bakiye: 882.78 USD
-[2026-07-07 05:24:52] Heartbeat: 0 aktif islem | Bakiye: 882.78 USD
-[2026-07-07 05:25:02] Heartbeat: 0 aktif islem | Bakiye: 882.78 USD
-[2026-07-07 05:25:22] Heartbeat: 0 aktif islem | Bakiye: 882.78 USD
-[2026-07-07 05:25:32] Heartbeat: 0 aktif islem | Bakiye: 882.78 USD
-[2026-07-07 05:25:52] Heartbeat: 0 aktif islem | Bakiye: 882.78 USD
-[2026-07-07 05:26:02] Heartbeat: 0 aktif islem | Bakiye: 882.78 USD
 [2026-07-07 05:26:22] Heartbeat: 0 aktif islem | Bakiye: 882.78 USD
 [2026-07-07 05:26:32] Heartbeat: 0 aktif islem | Bakiye: 882.78 USD
 [2026-07-07 05:26:52] Heartbeat: 0 aktif islem | Bakiye: 882.78 USD
@@ -78,3 +66,15 @@
 [2026-07-07 05:44:27] Heartbeat: 0 aktif islem | Bakiye: 882.78 USD
 [2026-07-07 05:44:57] Heartbeat: 0 aktif islem | Bakiye: 882.78 USD
 [2026-07-07 05:45:27] Heartbeat: 0 aktif islem | Bakiye: ? USD
+[2026-07-07 05:46:36] MilaGold MT5 Agent basliyor...
+[2026-07-07 05:46:36] MT5 baglandi. Bakiye: 882.78 USD
+[2026-07-07 05:46:36] Baslangic bakiyesi: 882.78 USD
+[2026-07-07 05:46:36] Hazir. 0 aktif islem devralindi. signal.json bekleniyor...
+[2026-07-07 05:47:06] Heartbeat: 0 aktif islem | Bakiye: 882.78 USD
+[2026-07-07 05:47:36] Heartbeat: 0 aktif islem | Bakiye: 882.78 USD
+[2026-07-07 05:47:43] Yeni sinyal alindi: #None SELL @ 4139.5
+[2026-07-07 05:47:43] EMA filtresi: SELL ONAYLANDI — fiyat=4138.33 <= EMA20=4141.16
+[2026-07-07 05:47:43] Streak filtresi: SELL ONAYLANDI — EMA100 streak=28 >= 13
+[2026-07-07 05:47:43] Emir turu: SELL_LIMIT (fiyat=4138.33 <= entry=4139.5)
+[2026-07-07 05:47:43] Islem acildi: 931684916 | SELL @ 4139.5 | SL:4144.5 | TP1:4136.5 TP2:4134.5 TP3:4131.5
+[2026-07-07 05:48:07] Heartbeat: 1 aktif islem | Bakiye: 882.78 USD
