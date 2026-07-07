@@ -41,6 +41,16 @@ def log(msg):
         f.write(line + "\n")
 
 
+def log_timing(tag, direction, entry, aciklama):
+    """Gecikme olcumu icin milisaniye hassasiyetli log satiri (T1-T5 tanı amacli).
+    Mevcut log() fonksiyonu saniye hassasiyetinde oldugu icin ayri tutuluyor."""
+    timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S.%f")[:-3]
+    line = f"{timestamp} | {tag} | {direction}@{entry} | {aciklama}"
+    print(line)
+    with open(LOG_FILE, "a", encoding="utf-8") as f:
+        f.write(line + "\n")
+
+
 def telegram(msg):
     try:
         url = f"https://api.telegram.org/bot{TELEGRAM_TOKEN}/sendMessage"
@@ -214,7 +224,10 @@ def open_trade(direction, entry, sl, tp1, tp2, tp3):
         "type_filling": mt5.ORDER_FILLING_RETURN,
     }
 
+    log_timing("T4", direction, entry, "order_send cagrilacak")
     result = mt5.order_send(request)
+    log_timing("T5", direction, entry,
+               f"order_send sonucu: {'basarili' if result and result.retcode == mt5.TRADE_RETCODE_DONE else 'basarisiz'}")
     if result is None:
         last_err = mt5.last_error()
         log(f"open_trade: order_send None dondu | last_error={last_err}")
@@ -569,6 +582,7 @@ def main():
     HEARTBEAT_INTERVAL = 30  # saniye
     last_skipped_signal = None  # SL/Entry kapanisinda yeniden denenecek sinyal
     sistem_duraklatildi_prev = False
+    last_t3_key = None  # T3 dedup: (signal_no, time, direction, entry) - ayni sinyalin retry'inde tekrar loglanmasin
 
     while True:
         try:
@@ -672,6 +686,11 @@ def main():
                 tp2       = signal["tp2"]
                 tp3       = signal["tp3"]
                 signal_no = signal.get("signal_no", "?")
+
+                t3_key = (signal_no, signal.get("time"), direction, entry)
+                if t3_key != last_t3_key:
+                    log_timing("T3", direction, entry, "signal.json okundu (MT5 agent)")
+                    last_t3_key = t3_key
 
                 ana = next((t for t in active_trades
                             if mt5_call(mt5.positions_get, ticket=t["ticket"])), None)

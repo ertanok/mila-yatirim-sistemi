@@ -412,6 +412,7 @@ def write_signal(signal):
         with open(SIGNAL_FILE, "w") as f:
             json.dump(signal, f, indent=2)
         log.info("signal.json yazildi.")
+        log.info(f"T2 | {signal['direction']}@{signal['entry']} | signal.json yazildi")
     except Exception as e:
         log.warning(f"signal.json yazma hatasi: {e}")
 
@@ -613,6 +614,7 @@ def main():
                 new_sig = signal_from_card(card, confirmed=False)
                 if new_sig:
                     active_signal = new_sig
+                    log.info(f"T1 | {new_sig['direction']}@{new_sig['entry']} | sinyal tespit edildi")
                     log.info(f"Olasi yeni sinyal, HEMEN yazildi (dogrulama bekleniyor 1/2): "
                              f"#{active_signal['signal_no']} | "
                              f"{active_signal['direction']} @ {active_signal['entry']}")
@@ -647,6 +649,7 @@ def main():
                         # MT5 agent emri hemen acar, biz arkaplanda dogrulama yapariz
                         new_sig = signal_from_card(card, confirmed=False)
                         if new_sig:
+                            log.info(f"T1 | {new_sig['direction']}@{new_sig['entry']} | sinyal tespit edildi")
                             log.info(f"Olasi yeni sinyal, HEMEN yazildi (dogrulama bekleniyor 1/2): "
                                      f"{active_signal['entry']} -> {card['entry']}")
                             active_signal = new_sig
