@@ -1,10 +1,3 @@
-[2026-07-07 20:05:09] Yeni sinyal (yeni entry daha iyi): SELL@4143.0 -> SELL@4150.5. Kapatiliyor: ticket=932874385
-[2026-07-07 20:05:09] Pozisyon piyasadan kapatildi: ticket=932874385 @ 4146.99 (filling=1)
-[2026-07-07 20:05:09] Performans kaydedildi: Exit | -3.99 pip
-[2026-07-07 20:05:09] Emir turu: SELL_LIMIT (fiyat=4146.44 <= entry=4150.5)
-[2026-07-07 20:05:09] Islem acildi: 932894678 | SELL @ 4150.5 | SL:4155.5 | TP1:4147.5 TP2:4145.5 TP3:4142.5
-[2026-07-07 20:05:15] Heartbeat: 1 aktif islem | Bakiye: 853.59 USD
-[2026-07-07 20:05:42] Yeni sinyal geldi, bekleyen emir iptal ediliyor: ticket=932894678 (SELL @ 4150.5)
 [2026-07-07 20:05:42] Bekleyen emir iptal edildi: ticket=932894678
 [2026-07-07 20:05:42] Yeni sinyal alindi: #None SELL @ 4145.0
 [2026-07-07 20:05:42] EMA filtresi: SELL ATLANDI — fiyat=4146.05 > EMA20=4144.30 (yukari momentum)
@@ -78,3 +71,10 @@
 [2026-07-07 20:33:57] Heartbeat: 0 aktif islem | Bakiye: 848.57 USD
 [2026-07-07 20:34:27] Heartbeat: 0 aktif islem | Bakiye: 848.57 USD
 [2026-07-07 20:34:58] Heartbeat: 0 aktif islem | Bakiye: 848.57 USD
+[2026-07-07 20:35:28] Heartbeat: 0 aktif islem | Bakiye: 848.57 USD
+[2026-07-07 20:35:32] Yeni sinyal alindi: #None SELL @ 4146.0
+[2026-07-07 20:35:32] EMA filtresi: SELL ATLANDI — fiyat=4145.52 > EMA20=4144.18 (yukari momentum)
+[2026-07-07 20:35:32] EMA filtresi: sinyal atlandi #None SELL @ 4146.0
+[2026-07-07 20:35:58] Heartbeat: 0 aktif islem | Bakiye: 848.57 USD
+[2026-07-07 20:36:28] Heartbeat: 0 aktif islem | Bakiye: 848.57 USD
+[2026-07-07 20:36:58] Heartbeat: 0 aktif islem | Bakiye: 848.57 USD
