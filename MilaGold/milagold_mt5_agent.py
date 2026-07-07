@@ -94,12 +94,11 @@ def get_current_price(direction):
 
 
 def ema_filtresi_gecti_mi(direction):
-    """M5 EMA20 filtresi: SELL sinyali geldiginde fiyat EMA20 üzerindeyse False (alma) döner.
+    """M5 EMA20 filtresi: fiyat, sinyal yonunun tersi tarafta kalirsa sinyal atlanir.
+    SELL: fiyat EMA20 uzerindeyse ATLANIR (yukari momentum).
+    BUY:  fiyat EMA20 altindaysa ATLANIR (asagi momentum) — SELL ile simetrik.
     MT5'ten son 25 M5 mumu cekerek gercek EMA20 hesaplar (k=2/21).
-    Filtre sadece SELL için geçerli — BUY sinyalleri filtrelenmez.
     Hata durumunda True döner (filtre devre dışı kalır, islem açılır)."""
-    if direction != "SELL":
-        return True
     try:
         rates = mt5_call(mt5.copy_rates_from_pos, SYMBOL, mt5.TIMEFRAME_M5, 0, 25)
         if rates is None or len(rates) < 20:
@@ -112,22 +111,30 @@ def ema_filtresi_gecti_mi(direction):
         for c in closes[5:]:
             ema20 = c * k + ema20 * (1 - k)
         guncel_fiyat = closes[-1]
-        if guncel_fiyat > ema20:
-            log(f"EMA filtresi: SELL ATLANDI — fiyat={guncel_fiyat:.2f} > EMA20={ema20:.2f} (yukari momentum)")
-            return False
+        if direction == "SELL":
+            if guncel_fiyat > ema20:
+                log(f"EMA filtresi: SELL ATLANDI — fiyat={guncel_fiyat:.2f} > EMA20={ema20:.2f} (yukari momentum)")
+                return False
+            else:
+                log(f"EMA filtresi: SELL ONAYLANDI — fiyat={guncel_fiyat:.2f} <= EMA20={ema20:.2f}")
+                return True
         else:
-            log(f"EMA filtresi: SELL ONAYLANDI — fiyat={guncel_fiyat:.2f} <= EMA20={ema20:.2f}")
-            return True
+            if guncel_fiyat < ema20:
+                log(f"EMA filtresi: BUY ATLANDI — fiyat={guncel_fiyat:.2f} < EMA20={ema20:.2f} (asagi momentum)")
+                return False
+            else:
+                log(f"EMA filtresi: BUY ONAYLANDI — fiyat={guncel_fiyat:.2f} >= EMA20={ema20:.2f}")
+                return True
     except Exception as e:
         log(f"EMA filtresi hatasi: {e} — filtre atlanıyor.")
         return True
 
 
 def streak_filtresi_gecti_mi(direction):
-    """EMA100 streak filtresi: SELL sinyalinde fiyatin EMA100 altinda kaldigi
-    ardisik M5 mum sayisi >= 13 olmali. Hata durumunda True doner (filtre atlanir)."""
-    if direction != "SELL":
-        return True
+    """EMA100 streak filtresi: fiyatin sinyal yonunde EMA100'e gore kaldigi
+    ardisik M5 mum sayisi >= 13 olmali.
+    SELL: fiyat EMA100 altinda. BUY: fiyat EMA100 ustunde — SELL ile simetrik.
+    Hata durumunda True doner (filtre atlanir)."""
     try:
         rates = mt5_call(mt5.copy_rates_from_pos, SYMBOL, mt5.TIMEFRAME_M5, 0, 250)
         if rates is None or len(rates) < 110:
@@ -142,15 +149,16 @@ def streak_filtresi_gecti_mi(direction):
             ema_list.append(ema)
         streak = 0
         for i in range(len(closes) - 1, 9, -1):
-            if closes[i] < ema_list[i]:
+            uygun = (closes[i] < ema_list[i]) if direction == "SELL" else (closes[i] > ema_list[i])
+            if uygun:
                 streak += 1
             else:
                 break
         if streak < 13:
-            log(f"Streak filtresi: SELL ATLANDI — EMA100 streak={streak} < 13 (trend yeterince guclu degil)")
+            log(f"Streak filtresi: {direction} ATLANDI — EMA100 streak={streak} < 13 (trend yeterince guclu degil)")
             return False
         else:
-            log(f"Streak filtresi: SELL ONAYLANDI — EMA100 streak={streak} >= 13")
+            log(f"Streak filtresi: {direction} ONAYLANDI — EMA100 streak={streak} >= 13")
             return True
     except Exception as e:
         log(f"Streak filtresi hatasi: {e} — filtre atlanıyor.")
