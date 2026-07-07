@@ -1,22 +1,3 @@
-[2026-07-08 00:58:35] Heartbeat: 0 aktif islem | Bakiye: 841.67 USD
-[2026-07-08 00:59:05] Heartbeat: 0 aktif islem | Bakiye: 841.67 USD
-[2026-07-08 00:59:35] Heartbeat: 0 aktif islem | Bakiye: 841.67 USD
-[2026-07-08 01:00:05] Heartbeat: 0 aktif islem | Bakiye: 841.67 USD
-[2026-07-08 01:00:36] Heartbeat: 0 aktif islem | Bakiye: 841.67 USD
-[2026-07-08 01:01:06] Heartbeat: 0 aktif islem | Bakiye: 841.67 USD
-[2026-07-08 01:01:36] Heartbeat: 0 aktif islem | Bakiye: 841.67 USD
-[2026-07-08 01:02:06] Heartbeat: 0 aktif islem | Bakiye: 841.67 USD
-[2026-07-08 01:02:36] Heartbeat: 0 aktif islem | Bakiye: 841.67 USD
-[2026-07-08 01:03:06] Heartbeat: 0 aktif islem | Bakiye: 841.67 USD
-[2026-07-08 01:03:36] Heartbeat: 0 aktif islem | Bakiye: 841.67 USD
-[2026-07-08 01:04:06] Heartbeat: 0 aktif islem | Bakiye: 841.67 USD
-[2026-07-08 01:04:36] Heartbeat: 0 aktif islem | Bakiye: 841.67 USD
-[2026-07-08 01:05:02] Yeni sinyal alindi: #None SELL @ 4106.0
-[2026-07-08 01:05:02] EMA filtresi: SELL ONAYLANDI — fiyat=4105.03 <= EMA20=4107.17
-[2026-07-08 01:05:02] Streak filtresi: SELL ONAYLANDI — EMA100 streak=41 >= 13
-[2026-07-08 01:05:02] Emir turu: SELL_LIMIT (fiyat=4105.03 <= entry=4106.0)
-[2026-07-08 01:05:02] Islem acildi: 933126721 | SELL @ 4106.0 | SL:4111.0 | TP1:4103.0 TP2:4101.0 TP3:4098.0
-[2026-07-08 01:05:07] Heartbeat: 1 aktif islem | Bakiye: 841.67 USD
 [2026-07-08 01:05:37] Heartbeat: 1 aktif islem | Bakiye: 841.67 USD
 [2026-07-08 01:05:56] TP1 gecildi: ticket=933126721 fiyat=4102.91 TP1=4103.0 -> SL -2 ye tasiniyor
 [2026-07-08 01:05:56] SL guncellendi: ticket=933126721 yeni SL=4108.0
@@ -78,3 +59,22 @@
 [2026-07-08 01:26:43] Heartbeat: 2 aktif islem | Bakiye: 841.67 USD
 [2026-07-08 01:27:13] Heartbeat: 2 aktif islem | Bakiye: 841.67 USD
 [2026-07-08 01:27:43] Heartbeat: 2 aktif islem | Bakiye: 841.67 USD
+[2026-07-08 01:29:03] MilaGold MT5 Agent basliyor...
+[2026-07-08 01:29:03] MT5 baglandi. Bakiye: 841.67 USD
+[2026-07-08 01:29:03] Orphan pozisyon alindi: ticket=933126721 SELL @ 4106.07 sl_level=1
+[2026-07-08 01:29:03] Orphan pozisyon alindi: ticket=933132283 SELL @ 4102.93 sl_level=0
+[2026-07-08 01:29:03] Baslangic bakiyesi: 841.67 USD
+[2026-07-08 01:29:03] Hazir. 2 aktif islem devralindi. signal.json bekleniyor...
+[2026-07-08 01:29:03] TP1 gecildi: ticket=933126721 fiyat=4101.38 TP1=4103.07 -> SL -2 ye tasiniyor
+[2026-07-08 01:29:03] SL guncellendi: ticket=933126721 yeni SL=4108.07
+[2026-07-08 01:29:03] Trailing SL: ticket=933126721 kar=4.69 trailing=5.0 | 4108.07 -> 4106.38
+[2026-07-08 01:29:03] SL guncellendi: ticket=933126721 yeni SL=4106.38
+[2026-07-08 01:29:29] Trailing SL: ticket=933126721 kar=5.71 trailing=5.0 | 4106.38 -> 4105.36
+[2026-07-08 01:29:29] SL guncellendi: ticket=933126721 yeni SL=4105.36
+[2026-07-08 01:29:33] Heartbeat: 2 aktif islem | Bakiye: 841.67 USD
+[2026-07-08 01:29:33] Trailing SL: ticket=933126721 kar=6.18 trailing=4.0 | 4105.36 -> 4103.89
+[2026-07-08 01:29:33] SL guncellendi: ticket=933126721 yeni SL=4103.89
+[2026-07-08 01:29:33] TP1 gecildi: ticket=933132283 fiyat=4099.89 TP1=4099.93 -> SL -2 ye tasiniyor
+[2026-07-08 01:29:33] SL guncellendi: ticket=933132283 yeni SL=4104.93
+[2026-07-08 01:29:35] Trailing SL: ticket=933126721 kar=6.28 trailing=4.0 | 4103.89 -> 4103.79
+[2026-07-08 01:29:35] SL guncellendi: ticket=933126721 yeni SL=4103.79
