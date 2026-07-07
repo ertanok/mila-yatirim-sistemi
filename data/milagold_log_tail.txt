@@ -1,21 +1,3 @@
-[2026-07-07 21:38:19] Heartbeat: 0 aktif islem | Bakiye: 848.57 USD
-[2026-07-07 21:38:49] Heartbeat: 0 aktif islem | Bakiye: 848.57 USD
-[2026-07-07 21:39:19] Heartbeat: 0 aktif islem | Bakiye: 848.57 USD
-[2026-07-07 21:39:49] Heartbeat: 0 aktif islem | Bakiye: 848.57 USD
-[2026-07-07 21:40:19] Heartbeat: 0 aktif islem | Bakiye: 848.57 USD
-[2026-07-07 21:40:50] Heartbeat: 0 aktif islem | Bakiye: 848.57 USD
-[2026-07-07 21:41:20] Heartbeat: 0 aktif islem | Bakiye: 848.57 USD
-[2026-07-07 21:41:50] Heartbeat: 0 aktif islem | Bakiye: 848.57 USD
-[2026-07-07 21:42:20] Heartbeat: 0 aktif islem | Bakiye: 848.57 USD
-[2026-07-07 21:42:50] Heartbeat: 0 aktif islem | Bakiye: 848.57 USD
-[2026-07-07 21:43:20] Heartbeat: 0 aktif islem | Bakiye: 848.57 USD
-[2026-07-07 21:43:50] Heartbeat: 0 aktif islem | Bakiye: 848.57 USD
-[2026-07-07 21:44:20] Heartbeat: 0 aktif islem | Bakiye: 848.57 USD
-[2026-07-07 21:44:51] Heartbeat: 0 aktif islem | Bakiye: 848.57 USD
-[2026-07-07 21:45:21] Heartbeat: 0 aktif islem | Bakiye: 848.57 USD
-[2026-07-07 21:45:51] Heartbeat: 0 aktif islem | Bakiye: 848.57 USD
-[2026-07-07 21:46:21] Heartbeat: 0 aktif islem | Bakiye: 848.57 USD
-[2026-07-07 21:46:51] Heartbeat: 0 aktif islem | Bakiye: 848.57 USD
 [2026-07-07 21:47:21] Heartbeat: 0 aktif islem | Bakiye: 848.57 USD
 [2026-07-07 21:47:52] Heartbeat: 0 aktif islem | Bakiye: 848.57 USD
 [2026-07-07 21:48:22] Heartbeat: 0 aktif islem | Bakiye: 848.57 USD
@@ -78,3 +60,21 @@
 [2026-07-07 22:07:35] Heartbeat: 1 aktif islem | Bakiye: 848.57 USD
 [2026-07-07 22:08:06] Heartbeat: 1 aktif islem | Bakiye: 848.57 USD
 [2026-07-07 22:08:36] Heartbeat: 1 aktif islem | Bakiye: 848.57 USD
+[2026-07-07 22:09:06] Heartbeat: 1 aktif islem | Bakiye: 848.57 USD
+[2026-07-07 22:09:36] Heartbeat: 1 aktif islem | Bakiye: 848.57 USD
+[2026-07-07 22:10:05] Yeni sinyal geldi, bekleyen emir iptal ediliyor: ticket=932998753 (SELL @ 4129.0)
+[2026-07-07 22:10:05] Bekleyen emir iptal edildi: ticket=932998753
+[2026-07-07 22:10:05] Yeni sinyal alindi: #None SELL @ 4150.5
+[2026-07-07 22:10:05] EMA filtresi: SELL ONAYLANDI — fiyat=4110.66 <= EMA20=4132.70
+[2026-07-07 22:10:05] Streak filtresi: SELL ONAYLANDI — EMA100 streak=18 >= 13
+[2026-07-07 22:10:05] Emir turu: SELL_LIMIT (fiyat=4110.66 <= entry=4150.5)
+[2026-07-07 22:10:05] Islem acildi: 933022733 | SELL @ 4150.5 | SL:4155.5 | TP1:4147.5 TP2:4145.5 TP3:4142.5
+[2026-07-07 22:10:07] Heartbeat: 1 aktif islem | Bakiye: 848.57 USD
+[2026-07-07 22:10:37] Heartbeat: 1 aktif islem | Bakiye: 848.57 USD
+[2026-07-07 22:10:38] Yeni sinyal geldi, bekleyen emir iptal ediliyor: ticket=933022733 (SELL @ 4150.5)
+[2026-07-07 22:10:38] Bekleyen emir iptal edildi: ticket=933022733
+[2026-07-07 22:10:38] Yeni sinyal alindi: #None SELL @ 4110.0
+[2026-07-07 22:10:38] EMA filtresi: SELL ONAYLANDI — fiyat=4108.11 <= EMA20=4132.46
+[2026-07-07 22:10:38] Streak filtresi: SELL ONAYLANDI — EMA100 streak=18 >= 13
+[2026-07-07 22:10:38] Emir turu: SELL_LIMIT (fiyat=4108.11 <= entry=4110.0)
+[2026-07-07 22:10:38] Islem acildi: 933024078 | SELL @ 4110.0 | SL:4115.0 | TP1:4107.0 TP2:4105.0 TP3:4102.0
