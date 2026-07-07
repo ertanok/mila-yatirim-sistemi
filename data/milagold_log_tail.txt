@@ -1,11 +1,3 @@
-[2026-07-07 06:43:15] Trailing SL: ticket=931717486 kar=5.24 trailing=5.0 | 4133.4 -> 4133.26
-[2026-07-07 06:43:15] SL guncellendi: ticket=931717486 yeni SL=4133.26
-[2026-07-07 06:43:16] Trailing SL: ticket=931717486 kar=5.44 trailing=5.0 | 4133.26 -> 4133.06
-[2026-07-07 06:43:16] SL guncellendi: ticket=931717486 yeni SL=4133.06
-[2026-07-07 06:43:19] Trailing SL: ticket=931717486 kar=5.56 trailing=5.0 | 4133.06 -> 4132.94
-[2026-07-07 06:43:19] SL guncellendi: ticket=931717486 yeni SL=4132.94
-[2026-07-07 06:43:22] Trailing SL: ticket=931717486 kar=5.82 trailing=5.0 | 4132.94 -> 4132.68
-[2026-07-07 06:43:22] SL guncellendi: ticket=931717486 yeni SL=4132.68
 [2026-07-07 06:43:23] Heartbeat: 1 aktif islem | Bakiye: 885.54 USD
 [2026-07-07 06:43:34] Trailing SL: ticket=931717486 kar=6.62 trailing=4.0 | 4132.68 -> 4130.88
 [2026-07-07 06:43:34] SL guncellendi: ticket=931717486 yeni SL=4130.88
@@ -78,3 +70,11 @@
 [2026-07-07 07:06:59] Heartbeat: 0 aktif islem | Bakiye: 887.41 USD
 [2026-07-07 07:07:30] Heartbeat: 0 aktif islem | Bakiye: 887.41 USD
 [2026-07-07 07:08:00] Heartbeat: 0 aktif islem | Bakiye: 887.41 USD
+[2026-07-07 07:08:30] Heartbeat: 0 aktif islem | Bakiye: 887.41 USD
+[2026-07-07 07:09:00] Heartbeat: 0 aktif islem | Bakiye: 887.41 USD
+[2026-07-07 07:09:15] Yeni sinyal alindi: #None SELL @ 4135.0
+[2026-07-07 07:09:15] EMA filtresi: SELL ATLANDI — fiyat=4138.80 > EMA20=4134.33 (yukari momentum)
+[2026-07-07 07:09:15] EMA filtresi: sinyal atlandi #None SELL @ 4135.0
+[2026-07-07 07:09:30] Heartbeat: 0 aktif islem | Bakiye: 887.41 USD
+[2026-07-07 07:10:00] Heartbeat: 0 aktif islem | Bakiye: 887.41 USD
+[2026-07-07 07:10:30] Heartbeat: 0 aktif islem | Bakiye: 887.41 USD
