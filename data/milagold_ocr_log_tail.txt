@@ -1,80 +1,80 @@
-2026-07-07 08:32:16,017 | Sinyal tarihi okunamadi (filtre devrede degil).
-2026-07-07 08:32:16,018 | Takip: SELL @ 4122.0 | Status:RUNNING
-2026-07-07 08:32:19,688 | Sinyal tarihi okunamadi (filtre devrede degil).
-2026-07-07 08:32:19,688 | Takip: SELL @ 4122.0 | Status:RUNNING
-2026-07-07 08:32:23,444 | Sinyal tarihi okunamadi (filtre devrede degil).
-2026-07-07 08:32:23,444 | Takip: SELL @ 4122.0 | Status:RUNNING
-2026-07-07 08:32:26,391 | Sinyal tarihi okunamadi (filtre devrede degil).
-2026-07-07 08:32:26,391 | Takip: SELL @ 4122.0 | Status:RUNNING
-2026-07-07 08:32:30,287 | Sinyal tarihi okunamadi (filtre devrede degil).
-2026-07-07 08:32:30,288 | Takip: SELL @ 4122.0 | Status:RUNNING
-2026-07-07 08:32:33,654 | Sinyal tarihi okunamadi (filtre devrede degil).
-2026-07-07 08:32:33,654 | Takip: SELL @ 4122.0 | Status:RUNNING
-2026-07-07 08:32:36,894 | Sinyal tarihi okunamadi (filtre devrede degil).
-2026-07-07 08:32:36,894 | Takip: SELL @ 4122.0 | Status:RUNNING
-2026-07-07 08:32:39,999 | Sinyal tarihi okunamadi (filtre devrede degil).
-2026-07-07 08:32:39,999 | Takip: SELL @ 4122.0 | Status:RUNNING
-2026-07-07 08:32:43,183 | Sinyal tarihi okunamadi (filtre devrede degil).
-2026-07-07 08:32:43,184 | Takip: SELL @ 4122.0 | Status:RUNNING
-2026-07-07 08:32:46,392 | Sinyal tarihi okunamadi (filtre devrede degil).
-2026-07-07 08:32:46,392 | Takip: SELL @ 4122.0 | Status:RUNNING
-2026-07-07 08:32:49,601 | Sinyal tarihi okunamadi (filtre devrede degil).
-2026-07-07 08:32:49,601 | Takip: SELL @ 4122.0 | Status:RUNNING
-2026-07-07 08:32:53,020 | Sinyal tarihi okunamadi (filtre devrede degil).
-2026-07-07 08:32:53,020 | Takip: SELL @ 4122.0 | Status:RUNNING
-2026-07-07 08:33:10,280 | EasyOCR yukleniyor...
-2026-07-07 08:33:10,281 | Using CPU. Note: This module is much faster with a GPU.
-2026-07-07 08:33:13,713 | EasyOCR hazir.
-2026-07-07 08:33:13,713 | ==================================================
-2026-07-07 08:33:13,713 | MilaGold OCR Agent - Signal GPT versiyonu
-2026-07-07 08:33:13,713 | ==================================================
-2026-07-07 08:33:14,039 | Chrome versiyonu (exe): 150.0.7871.46
-2026-07-07 08:33:14,040 | ChromeDriver cache'den: C:\MilaYatirim\mila-yatirim-sistemi\MilaGold\chromedriver_cache\150.0.7871.46\chromedriver.exe
-2026-07-07 08:33:14,040 | ChromeDriver: C:\MilaYatirim\mila-yatirim-sistemi\MilaGold\chromedriver_cache\150.0.7871.46\chromedriver.exe
-2026-07-07 08:33:15,209 | Signal GPT sayfasina gidildi.
-2026-07-07 08:33:15,209 | Sayfa yukleniyor, 15 saniye bekleniyor...
-2026-07-07 08:33:30,447 | Baslangic screenshot alindi.
-2026-07-07 08:33:30,448 | Ilk okuma oncesi 5 saniye bekleniyor...
-2026-07-07 08:33:35,451 | Okuma dongusune giriliyor...
-2026-07-07 08:33:37,390 | GOLD karti okunamadi (1). Ham: ['isclaimer', 'he information on signalgpt ai is for reference and', 'knowledge-sharing purpose']
-2026-07-07 08:33:41,334 | GOLD karti okunamadi (2). Ham: ['isclaimer', 'he information on signalgpt ai is for reference and', 'knowledge-sharing purpose']
-2026-07-07 08:33:45,189 | GOLD karti okunamadi (3). Ham: ['isclaimer', 'he information on signalgpt ai is for reference and', 'knowledge-sharing purpose']
-2026-07-07 08:33:50,488 | Sinyal tarihi okunamadi (filtre devrede degil).
-2026-07-07 08:33:50,489 | Olasi yeni sinyal, HEMEN yazildi (dogrulama bekleniyor 1/2): #None | SELL @ 4122.0
-2026-07-07 08:33:50,490 | signal.json yazildi.
-2026-07-07 08:33:54,229 | Sinyal tarihi okunamadi (filtre devrede degil).
-2026-07-07 08:33:54,230 | Yeni sinyal DOGRULANDI (2 okuma): entry=4122.0 pending=4122.0
-2026-07-07 08:33:58,119 | Sinyal tarihi okunamadi (filtre devrede degil).
-2026-07-07 08:33:58,120 | Takip: SELL @ 4122.0 | Status:RUNNING
-2026-07-07 08:34:01,917 | Sinyal tarihi okunamadi (filtre devrede degil).
-2026-07-07 08:34:01,917 | Takip: SELL @ 4122.0 | Status:RUNNING
-2026-07-07 08:34:05,797 | Sinyal tarihi okunamadi (filtre devrede degil).
-2026-07-07 08:34:05,798 | Takip: SELL @ 4122.0 | Status:RUNNING
-2026-07-07 08:34:09,696 | Sinyal tarihi okunamadi (filtre devrede degil).
-2026-07-07 08:34:09,697 | Takip: SELL @ 4122.0 | Status:RUNNING
-2026-07-07 08:34:12,984 | Sinyal tarihi okunamadi (filtre devrede degil).
-2026-07-07 08:34:12,984 | Takip: SELL @ 4122.0 | Status:RUNNING
-2026-07-07 08:34:17,407 | Sinyal tarihi okunamadi (filtre devrede degil).
-2026-07-07 08:34:17,408 | Takip: SELL @ 4122.0 | Status:RUNNING
-2026-07-07 08:34:20,818 | Sinyal tarihi okunamadi (filtre devrede degil).
-2026-07-07 08:34:20,819 | Takip: SELL @ 4122.0 | Status:RUNNING
-2026-07-07 08:34:24,142 | Sinyal tarihi okunamadi (filtre devrede degil).
-2026-07-07 08:34:24,142 | Takip: SELL @ 4122.0 | Status:RUNNING
-2026-07-07 08:34:27,411 | Sinyal tarihi okunamadi (filtre devrede degil).
-2026-07-07 08:34:27,411 | Takip: SELL @ 4122.0 | Status:RUNNING
-2026-07-07 08:34:30,352 | Sinyal tarihi okunamadi (filtre devrede degil).
-2026-07-07 08:34:30,352 | Takip: SELL @ 4122.0 | Status:RUNNING
-2026-07-07 08:34:33,452 | Sinyal tarihi okunamadi (filtre devrede degil).
-2026-07-07 08:34:33,452 | Takip: SELL @ 4122.0 | Status:RUNNING
-2026-07-07 08:34:36,910 | Sinyal tarihi okunamadi (filtre devrede degil).
-2026-07-07 08:34:36,911 | Takip: SELL @ 4122.0 | Status:RUNNING
-2026-07-07 08:34:40,138 | Sinyal tarihi okunamadi (filtre devrede degil).
-2026-07-07 08:34:40,138 | Takip: SELL @ 4122.0 | Status:RUNNING
-2026-07-07 08:34:43,754 | Sinyal tarihi okunamadi (filtre devrede degil).
-2026-07-07 08:34:43,754 | Takip: SELL @ 4122.0 | Status:RUNNING
 2026-07-07 08:34:47,333 | Sinyal tarihi okunamadi (filtre devrede degil).
 2026-07-07 08:34:47,333 | Takip: SELL @ 4122.0 | Status:RUNNING
 2026-07-07 08:34:50,414 | Sinyal tarihi okunamadi (filtre devrede degil).
 2026-07-07 08:34:50,415 | Takip: SELL @ 4122.0 | Status:RUNNING
 2026-07-07 08:34:54,045 | Sinyal tarihi okunamadi (filtre devrede degil).
 2026-07-07 08:34:54,045 | Takip: SELL @ 4122.0 | Status:RUNNING
+2026-07-07 08:34:57,837 | Sinyal tarihi okunamadi (filtre devrede degil).
+2026-07-07 08:34:57,837 | Takip: SELL @ 4122.0 | Status:RUNNING
+2026-07-07 08:35:02,039 | Sinyal tarihi okunamadi (filtre devrede degil).
+2026-07-07 08:35:02,040 | Takip: SELL @ 4122.0 | Status:RUNNING
+2026-07-07 08:35:06,032 | Sinyal tarihi okunamadi (filtre devrede degil).
+2026-07-07 08:35:06,033 | Takip: SELL @ 4122.0 | Status:RUNNING
+2026-07-07 08:35:09,526 | Sinyal tarihi okunamadi (filtre devrede degil).
+2026-07-07 08:35:09,527 | Takip: SELL @ 4122.0 | Status:RUNNING
+2026-07-07 08:35:13,139 | Sinyal tarihi okunamadi (filtre devrede degil).
+2026-07-07 08:35:13,139 | Takip: SELL @ 4122.0 | Status:RUNNING
+2026-07-07 08:35:16,711 | Sinyal tarihi okunamadi (filtre devrede degil).
+2026-07-07 08:35:16,711 | Takip: SELL @ 4122.0 | Status:RUNNING
+2026-07-07 08:35:20,164 | Sinyal tarihi okunamadi (filtre devrede degil).
+2026-07-07 08:35:20,165 | Takip: SELL @ 4122.0 | Status:RUNNING
+2026-07-07 08:35:23,418 | Sinyal tarihi okunamadi (filtre devrede degil).
+2026-07-07 08:35:23,419 | Takip: SELL @ 4122.0 | Status:RUNNING
+2026-07-07 08:35:26,953 | Sinyal tarihi okunamadi (filtre devrede degil).
+2026-07-07 08:35:26,953 | Takip: SELL @ 4122.0 | Status:RUNNING
+2026-07-07 08:35:30,306 | Sinyal tarihi okunamadi (filtre devrede degil).
+2026-07-07 08:35:30,306 | Takip: SELL @ 4122.0 | Status:RUNNING
+2026-07-07 08:35:33,445 | Sinyal tarihi okunamadi (filtre devrede degil).
+2026-07-07 08:35:33,446 | Takip: SELL @ 4122.0 | Status:RUNNING
+2026-07-07 08:35:36,875 | Sinyal tarihi okunamadi (filtre devrede degil).
+2026-07-07 08:35:36,876 | Takip: SELL @ 4122.0 | Status:RUNNING
+2026-07-07 08:35:40,157 | Sinyal tarihi okunamadi (filtre devrede degil).
+2026-07-07 08:35:40,157 | Takip: SELL @ 4122.0 | Status:RUNNING
+2026-07-07 08:35:43,711 | Sinyal tarihi okunamadi (filtre devrede degil).
+2026-07-07 08:35:43,711 | Takip: SELL @ 4122.0 | Status:RUNNING
+2026-07-07 08:35:46,981 | Sinyal tarihi okunamadi (filtre devrede degil).
+2026-07-07 08:35:46,982 | Takip: SELL @ 4122.0 | Status:RUNNING
+2026-07-07 08:35:50,459 | Sinyal tarihi okunamadi (filtre devrede degil).
+2026-07-07 08:35:50,460 | Takip: SELL @ 4122.0 | Status:RUNNING
+2026-07-07 08:35:54,688 | Sinyal tarihi okunamadi (filtre devrede degil).
+2026-07-07 08:35:54,689 | Takip: SELL @ 4122.0 | Status:RUNNING
+2026-07-07 08:35:57,737 | Sinyal tarihi okunamadi (filtre devrede degil).
+2026-07-07 08:35:57,737 | Takip: SELL @ 4122.0 | Status:RUNNING
+2026-07-07 08:36:01,204 | Sinyal tarihi okunamadi (filtre devrede degil).
+2026-07-07 08:36:01,205 | Takip: SELL @ 4122.0 | Status:RUNNING
+2026-07-07 08:36:04,255 | Sinyal tarihi okunamadi (filtre devrede degil).
+2026-07-07 08:36:04,255 | Takip: SELL @ 4122.0 | Status:RUNNING
+2026-07-07 08:36:07,647 | Sinyal tarihi okunamadi (filtre devrede degil).
+2026-07-07 08:36:07,647 | Takip: SELL @ 4122.0 | Status:RUNNING
+2026-07-07 08:36:11,254 | Sinyal tarihi okunamadi (filtre devrede degil).
+2026-07-07 08:36:11,254 | Takip: SELL @ 4122.0 | Status:RUNNING
+2026-07-07 08:36:14,231 | Sinyal tarihi okunamadi (filtre devrede degil).
+2026-07-07 08:36:14,231 | Takip: SELL @ 4122.0 | Status:RUNNING
+2026-07-07 08:36:17,654 | Sinyal tarihi okunamadi (filtre devrede degil).
+2026-07-07 08:36:17,654 | Takip: SELL @ 4122.0 | Status:RUNNING
+2026-07-07 08:36:20,683 | Sinyal tarihi okunamadi (filtre devrede degil).
+2026-07-07 08:36:20,684 | Takip: SELL @ 4122.0 | Status:RUNNING
+2026-07-07 08:36:23,870 | Sinyal tarihi okunamadi (filtre devrede degil).
+2026-07-07 08:36:23,870 | Takip: SELL @ 4122.0 | Status:RUNNING
+2026-07-07 08:36:26,941 | Sinyal tarihi okunamadi (filtre devrede degil).
+2026-07-07 08:36:26,942 | Takip: SELL @ 4122.0 | Status:RUNNING
+2026-07-07 08:36:30,070 | Sinyal tarihi okunamadi (filtre devrede degil).
+2026-07-07 08:36:30,070 | Takip: SELL @ 4122.0 | Status:RUNNING
+2026-07-07 08:36:33,209 | Sinyal tarihi okunamadi (filtre devrede degil).
+2026-07-07 08:36:33,209 | Takip: SELL @ 4122.0 | Status:RUNNING
+2026-07-07 08:36:36,493 | Sinyal tarihi okunamadi (filtre devrede degil).
+2026-07-07 08:36:36,494 | Takip: SELL @ 4122.0 | Status:RUNNING
+2026-07-07 08:36:39,725 | Sinyal tarihi okunamadi (filtre devrede degil).
+2026-07-07 08:36:39,726 | Takip: SELL @ 4122.0 | Status:RUNNING
+2026-07-07 08:36:43,348 | Sinyal tarihi okunamadi (filtre devrede degil).
+2026-07-07 08:36:43,349 | Takip: SELL @ 4122.0 | Status:RUNNING
+2026-07-07 08:36:46,685 | Sinyal tarihi okunamadi (filtre devrede degil).
+2026-07-07 08:36:46,685 | Takip: SELL @ 4122.0 | Status:RUNNING
+2026-07-07 08:36:50,010 | Sinyal tarihi okunamadi (filtre devrede degil).
+2026-07-07 08:36:50,010 | Takip: SELL @ 4122.0 | Status:RUNNING
+2026-07-07 08:36:53,321 | Sinyal tarihi okunamadi (filtre devrede degil).
+2026-07-07 08:36:53,322 | Takip: SELL @ 4122.0 | Status:RUNNING
+2026-07-07 08:36:56,356 | Sinyal tarihi okunamadi (filtre devrede degil).
+2026-07-07 08:36:56,357 | Takip: SELL @ 4122.0 | Status:RUNNING
+2026-07-07 08:36:59,550 | Sinyal tarihi okunamadi (filtre devrede degil).
+2026-07-07 08:36:59,551 | Takip: SELL @ 4122.0 | Status:RUNNING
