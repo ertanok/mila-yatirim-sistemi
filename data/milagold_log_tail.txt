@@ -1,7 +1,3 @@
-[2026-07-07 22:20:12] Heartbeat: 1 aktif islem | Bakiye: 848.57 USD
-[2026-07-07 22:20:42] Heartbeat: 1 aktif islem | Bakiye: 848.57 USD
-[2026-07-07 22:21:00] Yeni sinyal geldi, bekleyen emir iptal ediliyor: ticket=933038881 (SELL @ 4150.5)
-[2026-07-07 22:21:00] Bekleyen emir iptal edildi: ticket=933038881
 [2026-07-07 22:21:00] Yeni sinyal alindi: #None SELL @ 4098.5
 [2026-07-07 22:21:00] EMA filtresi: SELL ONAYLANDI — fiyat=4096.76 <= EMA20=4126.10
 [2026-07-07 22:21:00] Streak filtresi: SELL ONAYLANDI — EMA100 streak=20 >= 13
@@ -78,3 +74,7 @@
 [2026-07-07 22:42:07] Emir turu: SELL_STOP (fiyat=4111.09 > entry=4110.5)
 [2026-07-07 22:42:07] Islem acildi: 933080008 | SELL @ 4110.5 | SL:4115.5 | TP1:4107.5 TP2:4105.5 TP3:4102.5
 [2026-07-07 22:42:27] Heartbeat: 1 aktif islem | Bakiye: 838.31 USD
+[2026-07-07 22:42:57] Heartbeat: 1 aktif islem | Bakiye: 838.31 USD
+[2026-07-07 22:43:28] Heartbeat: 1 aktif islem | Bakiye: 838.31 USD
+[2026-07-07 22:43:58] Heartbeat: 1 aktif islem | Bakiye: 838.31 USD
+[2026-07-07 22:44:28] Heartbeat: 1 aktif islem | Bakiye: 838.31 USD
