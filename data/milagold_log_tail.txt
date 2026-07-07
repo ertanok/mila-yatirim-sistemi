@@ -1,9 +1,3 @@
-[2026-07-07 04:27:55] positions_status.json yazma hatasi: [Errno 13] Permission denied: 'C:\\MilaYatirim\\mila-yatirim-sistemi\\MilaGold\\positions_status.json'
-[2026-07-07 04:27:56] positions_status.json yazma hatasi: [Errno 13] Permission denied: 'C:\\MilaYatirim\\mila-yatirim-sistemi\\MilaGold\\positions_status.json'
-[2026-07-07 04:27:57] positions_status.json yazma hatasi: [Errno 13] Permission denied: 'C:\\MilaYatirim\\mila-yatirim-sistemi\\MilaGold\\positions_status.json'
-[2026-07-07 04:27:58] positions_status.json yazma hatasi: [Errno 13] Permission denied: 'C:\\MilaYatirim\\mila-yatirim-sistemi\\MilaGold\\positions_status.json'
-[2026-07-07 04:27:58] Heartbeat: 0 aktif islem | Bakiye: 882.78 USD
-[2026-07-07 04:27:59] positions_status.json yazma hatasi: [Errno 13] Permission denied: 'C:\\MilaYatirim\\mila-yatirim-sistemi\\MilaGold\\positions_status.json'
 [2026-07-07 04:28:00] positions_status.json yazma hatasi: [Errno 13] Permission denied: 'C:\\MilaYatirim\\mila-yatirim-sistemi\\MilaGold\\positions_status.json'
 [2026-07-07 04:28:01] positions_status.json yazma hatasi: [Errno 13] Permission denied: 'C:\\MilaYatirim\\mila-yatirim-sistemi\\MilaGold\\positions_status.json'
 [2026-07-07 04:28:02] positions_status.json yazma hatasi: [Errno 13] Permission denied: 'C:\\MilaYatirim\\mila-yatirim-sistemi\\MilaGold\\positions_status.json'
@@ -78,3 +72,9 @@
 [2026-07-07 04:42:01] Heartbeat: 0 aktif islem | Bakiye: 882.78 USD
 [2026-07-07 04:42:32] Heartbeat: 0 aktif islem | Bakiye: 882.78 USD
 [2026-07-07 04:43:02] Heartbeat: 0 aktif islem | Bakiye: 882.78 USD
+[2026-07-07 04:43:32] Heartbeat: 0 aktif islem | Bakiye: 882.78 USD
+[2026-07-07 04:44:02] Heartbeat: 0 aktif islem | Bakiye: 882.78 USD
+[2026-07-07 04:45:10] MilaGold MT5 Agent basliyor...
+[2026-07-07 04:45:10] MT5 baglandi. Bakiye: 882.78 USD
+[2026-07-07 04:45:10] Baslangic bakiyesi: 882.78 USD
+[2026-07-07 04:45:10] Hazir. 0 aktif islem devralindi. signal.json bekleniyor...
