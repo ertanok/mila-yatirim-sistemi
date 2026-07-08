@@ -1,80 +1,80 @@
-2026-07-08 06:13:10,127 | T1 | SELL@4128.0 | sinyal tespit edildi
-2026-07-08 06:13:10,127 | Olasi yeni sinyal, HEMEN yazildi (dogrulama bekleniyor 1/2): #None | SELL @ 4128.0
-2026-07-08 06:13:10,127 | signal.json yazildi.
-2026-07-08 06:13:10,127 | T2 | SELL@4128.0 | signal.json yazildi
-2026-07-08 06:13:13,413 | Sinyal tarihi okundu: 08/07/2026 10:12
-2026-07-08 06:13:13,413 | Yeni sinyal DOGRULANDI (2 okuma): entry=4128.0 pending=4128.0
-2026-07-08 06:13:16,635 | Sinyal tarihi okundu: 08/07/2026 10:12
-2026-07-08 06:13:16,635 | Takip: SELL @ 4128.0 | Status:RUNNING
-2026-07-08 06:13:19,897 | Sinyal tarihi okundu: 08/07/2026 10:12
-2026-07-08 06:13:19,897 | Takip: SELL @ 4128.0 | Status:RUNNING
-2026-07-08 06:13:22,964 | Sinyal tarihi okundu: 08/07/2026 10:12
-2026-07-08 06:13:22,964 | Takip: SELL @ 4128.0 | Status:RUNNING
-2026-07-08 06:13:26,584 | Sinyal tarihi okundu: 08/07/2026 10:12
-2026-07-08 06:13:26,585 | Takip: SELL @ 4128.0 | Status:RUNNING
-2026-07-08 06:13:29,834 | Sinyal tarihi okundu: 08/07/2026 10:12
-2026-07-08 06:13:29,835 | Takip: SELL @ 4128.0 | Status:RUNNING
-2026-07-08 06:13:32,972 | Sinyal tarihi okundu: 08/07/2026 10:12
-2026-07-08 06:13:32,973 | Takip: SELL @ 4128.0 | Status:RUNNING
-2026-07-08 06:13:35,988 | Sinyal tarihi okundu: 08/07/2026 10:12
-2026-07-08 06:13:35,988 | Takip: SELL @ 4128.0 | Status:RUNNING
-2026-07-08 06:13:39,016 | Sinyal tarihi okundu: 08/07/2026 10:12
-2026-07-08 06:13:39,016 | Takip: SELL @ 4128.0 | Status:RUNNING
-2026-07-08 06:13:41,949 | Sinyal tarihi okundu: 08/07/2026 10:12
-2026-07-08 06:13:41,949 | Takip: SELL @ 4128.0 | Status:RUNNING
-2026-07-08 06:13:45,291 | Sinyal tarihi okundu: 08/07/2026 10:12
-2026-07-08 06:13:45,292 | Takip: SELL @ 4128.0 | Status:RUNNING
-2026-07-08 06:13:48,559 | Sinyal tarihi okundu: 08/07/2026 10:12
-2026-07-08 06:13:48,560 | Takip: SELL @ 4128.0 | Status:RUNNING
-2026-07-08 06:13:51,482 | Sinyal tarihi okundu: 08/07/2026 10:12
-2026-07-08 06:13:51,482 | Takip: SELL @ 4128.0 | Status:RUNNING
-2026-07-08 06:13:55,457 | Sinyal tarihi okundu: 08/07/2026 10:12
-2026-07-08 06:13:55,457 | Takip: SELL @ 4128.0 | Status:RUNNING
-2026-07-08 06:13:58,639 | Sinyal tarihi okundu: 08/07/2026 10:12
-2026-07-08 06:13:58,640 | Takip: SELL @ 4128.0 | Status:RUNNING
-2026-07-08 06:14:02,098 | Sinyal tarihi okundu: 08/07/2026 10:12
-2026-07-08 06:14:02,099 | Takip: SELL @ 4128.0 | Status:RUNNING
-2026-07-08 06:14:05,092 | Sinyal tarihi okundu: 08/07/2026 10:12
-2026-07-08 06:14:05,092 | Takip: SELL @ 4128.0 | Status:RUNNING
-2026-07-08 06:14:08,197 | Sinyal tarihi okundu: 08/07/2026 10:12
-2026-07-08 06:14:08,198 | Takip: SELL @ 4128.0 | Status:RUNNING
-2026-07-08 06:14:11,669 | Sinyal tarihi okundu: 08/07/2026 10:12
-2026-07-08 06:14:11,669 | Takip: SELL @ 4128.0 | Status:RUNNING
-2026-07-08 06:14:14,667 | Sinyal tarihi okundu: 08/07/2026 10:12
-2026-07-08 06:14:14,668 | Takip: SELL @ 4128.0 | Status:RUNNING
-2026-07-08 06:14:17,886 | Sinyal tarihi okundu: 08/07/2026 10:12
-2026-07-08 06:14:17,886 | Takip: SELL @ 4128.0 | Status:RUNNING
-2026-07-08 06:14:21,392 | Sinyal tarihi okundu: 08/07/2026 10:12
-2026-07-08 06:14:21,393 | Takip: SELL @ 4128.0 | Status:RUNNING
-2026-07-08 06:14:24,381 | Sinyal tarihi okundu: 08/07/2026 10:12
-2026-07-08 06:14:24,381 | Takip: SELL @ 4128.0 | Status:RUNNING
-2026-07-08 06:14:27,438 | Sinyal tarihi okundu: 08/07/2026 10:12
-2026-07-08 06:14:27,439 | Takip: SELL @ 4128.0 | Status:RUNNING
-2026-07-08 06:14:30,663 | Sinyal tarihi okundu: 08/07/2026 10:12
-2026-07-08 06:14:30,663 | Takip: SELL @ 4128.0 | Status:RUNNING
-2026-07-08 06:14:33,704 | Sinyal tarihi okundu: 08/07/2026 10:12
-2026-07-08 06:14:33,704 | Takip: SELL @ 4128.0 | Status:RUNNING
-2026-07-08 06:14:36,780 | Sinyal tarihi okundu: 08/07/2026 10:12
-2026-07-08 06:14:36,781 | Takip: SELL @ 4128.0 | Status:RUNNING
-2026-07-08 06:14:39,780 | Sinyal tarihi okundu: 08/07/2026 10:12
-2026-07-08 06:14:39,781 | Takip: SELL @ 4128.0 | Status:RUNNING
-2026-07-08 06:14:42,733 | Sinyal tarihi okundu: 08/07/2026 10:12
-2026-07-08 06:14:42,733 | Takip: SELL @ 4128.0 | Status:RUNNING
-2026-07-08 06:14:45,608 | Sinyal tarihi okundu: 08/07/2026 10:12
-2026-07-08 06:14:45,608 | Takip: SELL @ 4128.0 | Status:RUNNING
-2026-07-08 06:14:48,721 | Sinyal tarihi okundu: 08/07/2026 10:12
-2026-07-08 06:14:48,722 | Takip: SELL @ 4128.0 | Status:RUNNING
-2026-07-08 06:14:52,075 | Sinyal tarihi okundu: 08/07/2026 10:12
-2026-07-08 06:14:52,075 | Takip: SELL @ 4128.0 | Status:RUNNING
-2026-07-08 06:14:55,183 | Sinyal tarihi okundu: 08/07/2026 10:12
-2026-07-08 06:14:55,184 | Takip: SELL @ 4128.0 | Status:RUNNING
-2026-07-08 06:14:58,548 | Sinyal tarihi okundu: 08/07/2026 10:12
-2026-07-08 06:14:58,548 | Takip: SELL @ 4128.0 | Status:RUNNING
-2026-07-08 06:15:01,913 | Sinyal tarihi okundu: 08/07/2026 10:12
-2026-07-08 06:15:01,913 | Takip: SELL @ 4128.0 | Status:RUNNING
-2026-07-08 06:15:05,400 | Sinyal tarihi okundu: 08/07/2026 10:12
-2026-07-08 06:15:05,400 | Takip: SELL @ 4128.0 | Status:RUNNING
-2026-07-08 06:15:08,352 | Sinyal tarihi okundu: 08/07/2026 10:12
-2026-07-08 06:15:08,352 | Takip: SELL @ 4128.0 | Status:RUNNING
 2026-07-08 06:15:11,540 | Sinyal tarihi okundu: 08/07/2026 10:12
 2026-07-08 06:15:11,541 | Takip: SELL @ 4128.0 | Status:RUNNING
+2026-07-08 06:15:14,797 | Sinyal tarihi okundu: 08/07/2026 10:12
+2026-07-08 06:15:14,798 | Takip: SELL @ 4128.0 | Status:RUNNING
+2026-07-08 06:15:17,983 | Sinyal tarihi okundu: 08/07/2026 10:12
+2026-07-08 06:15:17,984 | Takip: SELL @ 4128.0 | Status:RUNNING
+2026-07-08 06:15:21,221 | Sinyal tarihi okundu: 08/07/2026 10:12
+2026-07-08 06:15:21,222 | Takip: SELL @ 4128.0 | Status:RUNNING
+2026-07-08 06:15:24,501 | Sinyal tarihi okundu: 08/07/2026 10:12
+2026-07-08 06:15:24,502 | Takip: SELL @ 4128.0 | Status:RUNNING
+2026-07-08 06:15:27,612 | Sinyal tarihi okundu: 08/07/2026 10:12
+2026-07-08 06:15:27,612 | Takip: SELL @ 4128.0 | Status:RUNNING
+2026-07-08 06:15:31,205 | Sinyal tarihi okundu: 08/07/2026 10:12
+2026-07-08 06:15:31,205 | Takip: SELL @ 4128.0 | Status:RUNNING
+2026-07-08 06:15:34,166 | Sinyal tarihi okundu: 08/07/2026 10:12
+2026-07-08 06:15:34,167 | Takip: SELL @ 4128.0 | Status:RUNNING
+2026-07-08 06:15:37,043 | Sinyal tarihi okundu: 08/07/2026 10:12
+2026-07-08 06:15:37,043 | Takip: SELL @ 4128.0 | Status:RUNNING
+2026-07-08 06:15:40,122 | Sinyal tarihi okundu: 08/07/2026 10:12
+2026-07-08 06:15:40,123 | Takip: SELL @ 4128.0 | Status:RUNNING
+2026-07-08 06:15:43,306 | Sinyal tarihi okundu: 08/07/2026 10:12
+2026-07-08 06:15:43,306 | Takip: SELL @ 4128.0 | Status:RUNNING
+2026-07-08 06:15:46,379 | Sinyal tarihi okundu: 08/07/2026 10:12
+2026-07-08 06:15:46,380 | Takip: SELL @ 4128.0 | Status:RUNNING
+2026-07-08 06:15:49,361 | Sinyal tarihi okundu: 08/07/2026 10:12
+2026-07-08 06:15:49,362 | Takip: SELL @ 4128.0 | Status:RUNNING
+2026-07-08 06:15:52,768 | Sinyal tarihi okundu: 08/07/2026 10:12
+2026-07-08 06:15:52,769 | Takip: SELL @ 4128.0 | Status:RUNNING
+2026-07-08 06:15:56,104 | Sinyal tarihi okundu: 08/07/2026 10:12
+2026-07-08 06:15:56,104 | Takip: SELL @ 4128.0 | Status:RUNNING
+2026-07-08 06:15:59,230 | Sinyal tarihi okundu: 08/07/2026 10:12
+2026-07-08 06:15:59,230 | Takip: SELL @ 4128.0 | Status:RUNNING
+2026-07-08 06:16:02,891 | Sinyal tarihi okundu: 08/07/2026 10:12
+2026-07-08 06:16:02,891 | Takip: SELL @ 4128.0 | Status:RUNNING
+2026-07-08 06:16:05,908 | Sinyal tarihi okundu: 08/07/2026 10:12
+2026-07-08 06:16:05,908 | Takip: SELL @ 4128.0 | Status:RUNNING
+2026-07-08 06:16:09,012 | Sinyal tarihi okundu: 08/07/2026 10:12
+2026-07-08 06:16:09,012 | Takip: SELL @ 4128.0 | Status:RUNNING
+2026-07-08 06:16:12,647 | Sinyal tarihi okundu: 08/07/2026 10:12
+2026-07-08 06:16:12,647 | Takip: SELL @ 4128.0 | Status:RUNNING
+2026-07-08 06:16:15,596 | Sinyal tarihi okundu: 08/07/2026 10:12
+2026-07-08 06:16:15,597 | Takip: SELL @ 4128.0 | Status:RUNNING
+2026-07-08 06:16:18,829 | Sinyal tarihi okundu: 08/07/2026 10:12
+2026-07-08 06:16:18,829 | Takip: SELL @ 4128.0 | Status:RUNNING
+2026-07-08 06:16:22,571 | Sinyal tarihi okundu: 08/07/2026 10:12
+2026-07-08 06:16:22,572 | Takip: SELL @ 4128.0 | Status:RUNNING
+2026-07-08 06:16:26,536 | Sinyal tarihi okundu: 08/07/2026 10:12
+2026-07-08 06:16:26,536 | Takip: SELL @ 4128.0 | Status:RUNNING
+2026-07-08 06:16:29,649 | Sinyal tarihi okundu: 08/07/2026 10:12
+2026-07-08 06:16:29,650 | Takip: SELL @ 4128.0 | Status:RUNNING
+2026-07-08 06:16:33,561 | Sinyal tarihi okundu: 08/07/2026 10:12
+2026-07-08 06:16:33,562 | Takip: SELL @ 4128.0 | Status:RUNNING
+2026-07-08 06:16:36,600 | Sinyal tarihi okundu: 08/07/2026 10:12
+2026-07-08 06:16:36,600 | Takip: SELL @ 4128.0 | Status:RUNNING
+2026-07-08 06:16:39,562 | Sinyal tarihi okundu: 08/07/2026 10:12
+2026-07-08 06:16:39,562 | Takip: SELL @ 4128.0 | Status:RUNNING
+2026-07-08 06:16:43,176 | Sinyal tarihi okundu: 08/07/2026 10:12
+2026-07-08 06:16:43,176 | Takip: SELL @ 4128.0 | Status:RUNNING
+2026-07-08 06:16:46,307 | Sinyal tarihi okundu: 08/07/2026 10:12
+2026-07-08 06:16:46,307 | Takip: SELL @ 4128.0 | Status:RUNNING
+2026-07-08 06:16:49,470 | Sinyal tarihi okundu: 08/07/2026 10:12
+2026-07-08 06:16:49,470 | Takip: SELL @ 4128.0 | Status:RUNNING
+2026-07-08 06:16:52,843 | Sinyal tarihi okundu: 08/07/2026 10:12
+2026-07-08 06:16:52,843 | Takip: SELL @ 4128.0 | Status:RUNNING
+2026-07-08 06:16:55,837 | Sinyal tarihi okundu: 08/07/2026 10:12
+2026-07-08 06:16:55,837 | Takip: SELL @ 4128.0 | Status:RUNNING
+2026-07-08 06:16:58,894 | Sinyal tarihi okundu: 08/07/2026 10:12
+2026-07-08 06:16:58,894 | Takip: SELL @ 4128.0 | Status:RUNNING
+2026-07-08 06:17:02,116 | Sinyal tarihi okundu: 08/07/2026 10:12
+2026-07-08 06:17:02,116 | Takip: SELL @ 4128.0 | Status:RUNNING
+2026-07-08 06:17:05,258 | Sinyal tarihi okundu: 08/07/2026 10:12
+2026-07-08 06:17:05,258 | Takip: SELL @ 4128.0 | Status:RUNNING
+2026-07-08 06:17:08,325 | Sinyal tarihi okundu: 08/07/2026 10:12
+2026-07-08 06:17:08,326 | Takip: SELL @ 4128.0 | Status:RUNNING
+2026-07-08 06:17:11,878 | Sinyal tarihi okundu: 08/07/2026 10:12
+2026-07-08 06:17:11,878 | Takip: SELL @ 4128.0 | Status:RUNNING
+2026-07-08 06:17:14,975 | Sinyal tarihi okundu: 08/07/2026 10:12
+2026-07-08 06:17:14,976 | Takip: SELL @ 4128.0 | Status:RUNNING
+2026-07-08 06:17:17,902 | Sinyal tarihi okundu: 08/07/2026 10:12
+2026-07-08 06:17:17,902 | Takip: SELL @ 4128.0 | Status:RUNNING
