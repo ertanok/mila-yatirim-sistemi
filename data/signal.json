@@ -8,7 +8,7 @@
   "tp3": 4021.5,
   "status": "RUNNING",
   "time": "18:26:52",
-  "processed": false,
-  "confirmed": false,
+  "processed": true,
+  "confirmed": true,
   "cancel": false
 }
