@@ -90,6 +90,11 @@ Stratejist bu verileri kullanarak hipotez kurar.
 - **Gozlem uret, tavsiye verme.** "Bu kosul filtrelenmeli" → senin isin degil. "%48 surekliligi, en dusuk deger" → senin isin.
 - **Her sayinin kaynagini goster.** Kac ornek? Hangi tarih araligi? Hangi yontem/kod?
 - **Mevcut bulgulari tekrar etme.** Gecmis calisma dosyasina bak, ustune ekle.
+- **Veri yoksa hemen bildir, konuyu genisletme.** Istenen bir karsilastirma/olcum icin veri
+  bulunmuyorsa (orn. bir taraf/kosul icin hic ornek yok), bunu bir BULGU olarak kabul et ve
+  raporu hemen yaz — "veri yok, olcum yapilamiyor" gecerli bir arastirma sonucudur. Ilgili
+  ama istenmeyen konulara (orn. baska bir tarafin/kosulun ayrintili analizi) kendiliginden
+  gecme; bu, ayri bir gorev olarak sonradan talep edilebilir.
 - **Sinirlari belirt.** "Bu analiz [X] verisine dayanmaktadir, [Y] donemini kapsamiyor."
 - **Web arastirmasi icin kaynak goster.** URL veya kaynak ismiyle birlikte.
 - **Ham veriyi degistirme.** Ciktiyi guzellestirmek icin sayilari yorumlama — Stratejist ham sayiyi ister.
