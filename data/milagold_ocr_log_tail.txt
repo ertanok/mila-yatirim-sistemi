@@ -1,64 +1,3 @@
-2026-07-09 03:03:57,121 | ==================================================
-2026-07-09 03:03:57,121 | MilaGold OCR Agent - Signal GPT versiyonu
-2026-07-09 03:03:57,121 | ==================================================
-2026-07-09 03:03:57,408 | Chrome versiyonu (exe): 150.0.7871.46
-2026-07-09 03:03:57,409 | ChromeDriver cache'den: C:\MilaYatirim\mila-yatirim-sistemi\MilaGold\chromedriver_cache\150.0.7871.46\chromedriver.exe
-2026-07-09 03:03:57,409 | ChromeDriver: C:\MilaYatirim\mila-yatirim-sistemi\MilaGold\chromedriver_cache\150.0.7871.46\chromedriver.exe
-2026-07-09 03:03:58,450 | Signal GPT sayfasina gidildi.
-2026-07-09 03:03:58,450 | Sayfa yukleniyor, 15 saniye bekleniyor...
-2026-07-09 03:04:13,978 | Baslangic screenshot alindi.
-2026-07-09 03:04:13,978 | Ilk okuma oncesi 5 saniye bekleniyor...
-2026-07-09 03:04:18,979 | Okuma dongusune giriliyor...
-2026-07-09 03:04:20,310 | GOLD karti okunamadi (1). Ham: ['isclaimer', 'he information on signalgpt ai is for reference and', 'knowledge-sharing purpose']
-2026-07-09 03:04:23,429 | GOLD karti okunamadi (2). Ham: ['isclaimer', 'he information on signalgpt ai is for reference and', 'knowledge-sharing purpose']
-2026-07-09 03:04:26,547 | GOLD karti okunamadi (3). Ham: ['isclaimer', 'he information on signalgpt ai is for reference and', 'knowledge-sharing purpose']
-2026-07-09 03:04:29,737 | GOLD karti okunamadi (4). Ham: ['isclaimer', 'he information on signalgpt ai is for reference and', 'knowledge-sharing purpose']
-2026-07-09 03:04:34,838 | Sinyal tarihi okundu: 09/07/2026 03:21
-2026-07-09 03:04:34,838 | T1 | SELL@4076.5 | sinyal tespit edildi
-2026-07-09 03:04:34,839 | Olasi yeni sinyal, HEMEN yazildi (dogrulama bekleniyor 1/2): #None | SELL @ 4076.5
-2026-07-09 03:04:34,840 | signal.json yazildi.
-2026-07-09 03:04:34,840 | T2 | SELL@4076.5 | signal.json yazildi
-2026-07-09 03:04:37,794 | Sinyal tarihi okundu: 09/07/2026 03:21
-2026-07-09 03:04:37,794 | Yeni sinyal DOGRULANDI (2 okuma): entry=4076.5 pending=4076.5
-2026-07-09 03:04:40,669 | Sinyal tarihi okundu: 09/07/2026 03:21
-2026-07-09 03:04:40,669 | Takip: SELL @ 4076.5 | Status:RUNNING
-2026-07-09 03:04:43,522 | Sinyal tarihi okundu: 09/07/2026 03:21
-2026-07-09 03:04:43,522 | Takip: SELL @ 4076.5 | Status:RUNNING
-2026-07-09 03:04:46,629 | Sinyal tarihi okundu: 09/07/2026 03:21
-2026-07-09 03:04:46,629 | Takip: SELL @ 4076.5 | Status:RUNNING
-2026-07-09 03:04:50,127 | Sinyal tarihi okundu: 09/07/2026 03:21
-2026-07-09 03:04:50,127 | Takip: SELL @ 4076.5 | Status:RUNNING
-2026-07-09 03:04:53,263 | Sinyal tarihi okundu: 09/07/2026 03:21
-2026-07-09 03:04:53,263 | Takip: SELL @ 4076.5 | Status:RUNNING
-2026-07-09 03:04:56,592 | Sinyal tarihi okundu: 09/07/2026 03:21
-2026-07-09 03:04:56,593 | Takip: SELL @ 4076.5 | Status:RUNNING
-2026-07-09 03:04:59,665 | Sinyal tarihi okundu: 09/07/2026 03:21
-2026-07-09 03:04:59,665 | Takip: SELL @ 4076.5 | Status:RUNNING
-2026-07-09 03:05:03,940 | Sinyal tarihi okundu: 09/07/2026 03:21
-2026-07-09 03:05:03,940 | Takip: SELL @ 4076.5 | Status:RUNNING
-2026-07-09 03:05:07,033 | Sinyal tarihi okundu: 09/07/2026 03:21
-2026-07-09 03:05:07,033 | Takip: SELL @ 4076.5 | Status:RUNNING
-2026-07-09 03:05:10,182 | Sinyal tarihi okundu: 09/07/2026 03:21
-2026-07-09 03:05:10,183 | Takip: SELL @ 4076.5 | Status:RUNNING
-2026-07-09 03:05:14,239 | Sinyal tarihi okundu: 09/07/2026 03:21
-2026-07-09 03:05:14,240 | Takip: SELL @ 4076.5 | Status:RUNNING
-2026-07-09 03:05:17,618 | Sinyal tarihi okundu: 09/07/2026 03:21
-2026-07-09 03:05:17,618 | Takip: SELL @ 4076.5 | Status:RUNNING
-2026-07-09 03:05:21,520 | Sinyal tarihi okundu: 09/07/2026 03:21
-2026-07-09 03:05:21,520 | Takip: SELL @ 4076.5 | Status:RUNNING
-2026-07-09 03:05:25,903 | Sinyal tarihi okundu: 09/07/2026 03:21
-2026-07-09 03:05:25,903 | Takip: SELL @ 4076.5 | Status:RUNNING
-2026-07-09 03:05:30,130 | Sinyal tarihi okundu: 09/07/2026 03:21
-2026-07-09 03:05:30,131 | Takip: SELL @ 4076.5 | Status:RUNNING
-2026-07-09 03:05:33,462 | Sinyal tarihi okundu: 09/07/2026 03:21
-2026-07-09 03:05:33,462 | Takip: SELL @ 4076.5 | Status:RUNNING
-2026-07-09 03:05:37,254 | Sinyal tarihi okundu: 09/07/2026 03:21
-2026-07-09 03:05:37,255 | Takip: SELL @ 4076.5 | Status:RUNNING
-2026-07-09 03:05:40,448 | Sinyal tarihi okundu: 09/07/2026 03:21
-2026-07-09 03:05:40,449 | Takip: SELL @ 4076.5 | Status:RUNNING
-2026-07-09 03:05:43,880 | Sinyal tarihi okundu: 09/07/2026 03:21
-2026-07-09 03:05:43,880 | Takip: SELL @ 4076.5 | Status:RUNNING
-2026-07-09 03:05:47,336 | Sinyal tarihi okundu: 09/07/2026 03:21
 2026-07-09 03:05:47,337 | Takip: SELL @ 4076.5 | Status:RUNNING
 2026-07-09 03:05:50,309 | Sinyal tarihi okundu: 09/07/2026 03:21
 2026-07-09 03:05:50,310 | Takip: SELL @ 4076.5 | Status:RUNNING
@@ -78,3 +17,64 @@
 2026-07-09 03:06:13,523 | Takip: SELL @ 4076.5 | Status:RUNNING
 2026-07-09 03:06:18,057 | Sinyal tarihi okundu: 09/07/2026 03:21
 2026-07-09 03:06:18,058 | Takip: SELL @ 4076.5 | Status:RUNNING
+2026-07-09 03:06:21,174 | Sinyal tarihi okundu: 09/07/2026 03:21
+2026-07-09 03:06:21,175 | Takip: SELL @ 4076.5 | Status:RUNNING
+2026-07-09 03:06:24,773 | Sinyal tarihi okundu: 09/07/2026 03:21
+2026-07-09 03:06:24,773 | Takip: SELL @ 4076.5 | Status:RUNNING
+2026-07-09 03:06:27,870 | Sinyal tarihi okundu: 09/07/2026 03:21
+2026-07-09 03:06:27,870 | Takip: SELL @ 4076.5 | Status:RUNNING
+2026-07-09 03:06:30,958 | Sinyal tarihi okundu: 09/07/2026 03:21
+2026-07-09 03:06:30,959 | Takip: SELL @ 4076.5 | Status:RUNNING
+2026-07-09 03:06:34,196 | Sinyal tarihi okundu: 09/07/2026 03:21
+2026-07-09 03:06:34,196 | Takip: SELL @ 4076.5 | Status:RUNNING
+2026-07-09 03:06:37,325 | Sinyal tarihi okundu: 09/07/2026 03:21
+2026-07-09 03:06:37,325 | Takip: SELL @ 4076.5 | Status:RUNNING
+2026-07-09 03:06:40,523 | Sinyal tarihi okundu: 09/07/2026 03:21
+2026-07-09 03:06:40,523 | Takip: SELL @ 4076.5 | Status:RUNNING
+2026-07-09 03:06:44,184 | Sinyal tarihi okundu: 09/07/2026 03:21
+2026-07-09 03:06:44,184 | Takip: SELL @ 4076.5 | Status:RUNNING
+2026-07-09 03:06:47,401 | Sinyal tarihi okundu: 09/07/2026 03:21
+2026-07-09 03:06:47,402 | Takip: SELL @ 4076.5 | Status:RUNNING
+2026-07-09 03:06:50,597 | Sinyal tarihi okundu: 09/07/2026 03:21
+2026-07-09 03:06:50,598 | Takip: SELL @ 4076.5 | Status:RUNNING
+2026-07-09 03:06:53,680 | Sinyal tarihi okundu: 09/07/2026 03:21
+2026-07-09 03:06:53,680 | Takip: SELL @ 4076.5 | Status:RUNNING
+2026-07-09 03:06:56,719 | Sinyal tarihi okundu: 09/07/2026 03:21
+2026-07-09 03:06:56,719 | Takip: SELL @ 4076.5 | Status:RUNNING
+2026-07-09 03:06:59,917 | Sinyal tarihi okundu: 09/07/2026 03:21
+2026-07-09 03:06:59,917 | Takip: SELL @ 4076.5 | Status:RUNNING
+2026-07-09 03:07:03,628 | Sinyal tarihi okundu: 09/07/2026 03:21
+2026-07-09 03:07:03,628 | Takip: SELL @ 4076.5 | Status:RUNNING
+2026-07-09 03:07:07,446 | Sinyal tarihi okundu: 09/07/2026 03:21
+2026-07-09 03:07:07,447 | Takip: SELL @ 4076.5 | Status:RUNNING
+2026-07-09 03:07:12,124 | GOLD karti okunamadi (1). Ham: ['B3 Capital Management', 'Structure & trend: M3O price below EMAIOO by', 'Il Momentum: RSI(MI)-35 bearish, MACD(M5) neg']
+2026-07-09 03:07:16,256 | GOLD karti okunamadi (2). Ham: ['B3 Capital Management', 'Structure & trend: M3O price below EMAIOO by', 'Il Momentum: RSI(MI)-35 bearish, MACD(M5) neg']
+2026-07-09 03:07:20,432 | GOLD karti okunamadi (3). Ham: ['B3 Capital Management', 'Structure & trend: M3O price below EMAIOO by', 'Il Momentum: RSI(MI)-35 bearish, MACD(M5) neg']
+2026-07-09 03:07:24,076 | GOLD karti okunamadi (4). Ham: ['B3 Capital Management', 'Structure & trend: M3O price below EMAIOO by', 'Il Momentum: RSI(MI)-35 bearish, MACD(M5) neg']
+2026-07-09 03:07:27,857 | GOLD karti okunamadi (5). Ham: ['B3 Capital Management', 'Structure & trend: M3O price below EMAIOO by', 'Il Momentum: RSI(MI)-35 bearish, MACD(M5) neg']
+2026-07-09 03:07:31,531 | GOLD karti okunamadi (6). Ham: ['B3 Capital Management', 'Structure & trend: M3O price below EMAIOO by', 'Il Momentum: RSI(MI)-35 bearish, MACD(M5) neg']
+2026-07-09 03:07:35,006 | GOLD karti okunamadi (7). Ham: ['B3 Capital Management', 'Structure & trend: M3O price below EMAIOO by', 'Il Momentum: RSI(MI)-35 bearish, MACD(M5) neg']
+2026-07-09 03:07:38,852 | GOLD karti okunamadi (8). Ham: ['B3 Capital Management', 'Structure & trend: M3O price below EMAIOO by', 'Il Momentum: RSI(MI)-35 bearish, MACD(M5) neg']
+2026-07-09 03:07:43,244 | GOLD karti okunamadi (9). Ham: ['B3 Capital Management', 'Structure & trend: M3O price below EMAIOO by', 'Il Momentum: RSI(MI)-35 bearish, MACD(M5) neg']
+2026-07-09 03:07:46,220 | Sinyal tarihi okundu: 09/07/2026 03:21
+2026-07-09 03:07:46,221 | Takip: SELL @ 4076.5 | Status:RUNNING
+2026-07-09 03:07:49,488 | Sinyal tarihi okundu: 09/07/2026 03:21
+2026-07-09 03:07:49,488 | Takip: SELL @ 4076.5 | Status:RUNNING
+2026-07-09 03:07:53,554 | GOLD karti okunamadi (1). Ham: ['B3 Capital Management', 'Structure & trend: M3O price below EMAIOO by', 'Il Momentum: RSI(MI)-35 bearish, MACD(M5) neg']
+2026-07-09 03:07:57,663 | GOLD karti okunamadi (2). Ham: ['B3 Capital Management', 'Structure & trend: M3O price below EMAIOO by', 'Il Momentum: RSI(MI)-35 bearish, MACD(M5) neg']
+2026-07-09 03:08:01,361 | Sinyal tarihi okundu: 09/07/2026 03:21
+2026-07-09 03:08:01,361 | Takip: SELL @ 4076.5 | Status:RUNNING
+2026-07-09 03:08:05,206 | Sinyal tarihi okundu: 09/07/2026 03:21
+2026-07-09 03:08:05,206 | Takip: SELL @ 4076.5 | Status:RUNNING
+2026-07-09 03:08:08,254 | Sinyal tarihi okundu: 09/07/2026 03:21
+2026-07-09 03:08:08,255 | Takip: SELL @ 4076.5 | Status:RUNNING
+2026-07-09 03:08:11,323 | Sinyal tarihi okundu: 09/07/2026 03:21
+2026-07-09 03:08:11,324 | Takip: SELL @ 4076.5 | Status:RUNNING
+2026-07-09 03:08:15,674 | Sinyal tarihi okundu: 09/07/2026 03:21
+2026-07-09 03:08:15,675 | Takip: SELL @ 4076.5 | Status:RUNNING
+2026-07-09 03:08:19,967 | Sinyal tarihi okundu: 09/07/2026 03:21
+2026-07-09 03:08:19,967 | Takip: SELL @ 4076.5 | Status:RUNNING
+2026-07-09 03:08:23,060 | Sinyal tarihi okundu: 09/07/2026 03:21
+2026-07-09 03:08:23,060 | Takip: SELL @ 4076.5 | Status:RUNNING
+2026-07-09 03:08:26,261 | Sinyal tarihi okundu: 09/07/2026 03:21
+2026-07-09 03:08:26,261 | Takip: SELL @ 4076.5 | Status:RUNNING
