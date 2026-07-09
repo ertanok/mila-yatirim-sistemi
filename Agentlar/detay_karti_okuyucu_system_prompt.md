@@ -59,9 +59,14 @@ Hangi tetikleyiciyle alindigi (saatlik/fiyat_esigi) dosya adinda bilgi olarak du
 
 ---
 
-## 6. Sirali Erisim (cakisma onleme)
+## 6. Yakalama Sureci (bilgi icin — 9 Temmuz'de Model B olarak dogrulandi)
 
-Seni cagiran wrapper, mevcut liste-OCR ile ayni tarayici penceresini kullaniyor. Sira: **liste oku → json yaz → detay kartina gir → screenshot al → (sen burada cagrilirsin) → listeye don.** Bu, senin sorumlulugun disinda ama bilmen faydali — goruntu geldiginde, o an kartin acik oldugu tek an, tekrar deneme sansi olmayabilir. Okuyamadigin bir alan icin `null` yaz, cagirani bekletme.
+Bu goruntuler, OCR agent'tan tamamen bagimsiz calisan Detay Karti Okuyucu
+script'i tarafindan toplanir — ayri Selenium oturumu, ayri sekme, ayni
+Chrome. OCR'in liste okumasi bu sirada hic kesilmez (test edildi, guvenli).
+Sen (vision), bu surecin nasil calistigini bilmene gerek yok — sana toplu
+halde (canli degil) verilen PNG'leri dogru okumaya odaklan. Okuyamadigin
+bir alan icin null yaz, tahmin etme.
 
 ---
 

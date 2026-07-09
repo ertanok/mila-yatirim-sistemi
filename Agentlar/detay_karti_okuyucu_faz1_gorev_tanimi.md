@@ -10,13 +10,29 @@ Detay kartinin (Structure&Trend, Momentum, Volatility, Price Plan, Risk) ekran g
 
 ---
 
-## 2. Adimlar (sirali erisim, mevcut liste-OCR ile cakismamak icin)
+## 2. Adimlar (Detay Karti Okuyucu, OCR'dan bagimsiz — 9 Temmuz test ile dogrulandi)
 
-1. Liste oku (mevcut OCR agent akisi)
-2. signal.json yaz
-3. Detay kartina gir
-4. **Screenshot al, kaydet** (bu fazda yapilan tek yeni is)
-5. Listeye don
+Detay Karti Okuyucu, OCR agent'tan tamamen ayri bir script/surec. Ayni
+Chrome'a (debug port 9222) kendi Selenium oturumuyla baglanir, KENDI
+sekmesini kullanir. OCR agent'in liste okumasi bu sure boyunca hic
+kesilmez (9 Temmuz testinde 150 sn, 15/15 kontrol, kesinti yok).
+
+1. Tetiklenince (saatlik veya fiyat_esigi): signal.json'u OKU — aktif/
+   RUNNING sinyal var mi kontrol et. Yoksa: log satiri ("kart yok"), bitir.
+2. Kendi Selenium oturumunu port 9222'ye baglat, kendi sekmesinde
+   signalgpt.ai/ai-signals'i ac (veya acik sekmeyi kullan)
+3. CDP Input.dispatchMouseEvent ile detay karti seridine tikla (test
+   edilmis koordinat: ~x=280, y=520, pencere 1382x744 icin — "Detail"
+   yazisina/oka denk gelmek sart degil, genis bir yatay serit calisiyor).
+   Selenium'un standart .click()/ActionChains yontemleri Flutter canvas'ta
+   calismiyor — mutlaka CDP kullanilmali.
+4. Detay ekraninin acildigini dogrula (sabit bekleme, ~2-3 sn)
+5. Screenshot al (driver.save_screenshot, kendi sekmenin kendi render'i),
+   dosya adi formatiyla kaydet (bkz. Bolum 3)
+6. "Go back" tikla (ayni CDP yontemi), liste ekranina don
+
+Not: signal.json'u yazan OCR agent'tir, kendi akisinin bir parcasi —
+Detay Karti Okuyucu sadece okur, hic yazmaz.
 
 ---
 
