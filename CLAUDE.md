@@ -27,6 +27,7 @@ Detay: Project Instructions, "MULTI-AGENT MiMARiSi — MiMARi BOYUTLAR" bolumu. 
 - **A) Orkestrasyon:** Hiyerarsik-hibrit (runtime: supervisor, arastirma: pipeline)
 - **B) Yetki:** STOP genis, START/CHANGE dar, en-kotu-boyut-kazanir kurali
 - **C) Iletisim:** Dosya-tabanli (tek yazici + stale-safe), anomali-sonrasi-durus (15 dk baslangic, TBD), Ekonomik Takvim Agent'i (yeni, TBD)
+  - **Agent gorevlendirme/sonuc bildirimi (10 Temmuz, KESiN):** Orkestrator bir agent'i gorevlendirdiginde ve o agent sonuc/rapor urettiginde Ertan'a Telegram bilgi notu gonderir + Orkestrator_Loglar'a kayit yazar. Onay talebi degil, sadece bilgilendirme (STOP-genis/bilgi-notu kategorisi).
 - **D) Onay Katmani
 Izleme ve onay/karar ayri fonksiyonlar, ikisi de bir arayuz gerektirir. Kanal secimi (Telegram vs Dashboard) daha once ertelendi, Dashboard Layer 2 (onay mekanizmasi) ile ortusuyor.
 - **E) Escalation:** 4 seviye — otomatik restart → Telegram → Claude Code uzaktan mudahale → bagimsiz uptime servisi + Contabo panel + onayli reboot
@@ -85,6 +86,9 @@ Izleme ve onay/karar ayri fonksiyonlar, ikisi de bir arayuz gerektirir. Kanal se
 - MilaGold oturunca baslatilacak
 - Ayri XM hesabi (hesap tipi belirlenmedi — MilaGold low-spread testi sonucuna bagli)
 - 5 Temmuz Multi-Agent Mimarisi tartismasinda profil netlesti — sifirdan, dis kaynaksiz, farkli AI aileleri (klasik ML/derin ogrenme/RL) denenecek bir proje.
+
+### Veri Izolasyonu (10 Temmuz, KESiN)
+Justin'de calisan hicbir agent, Lisa/Signal GPT/MilaGold'un bulgu, veri, indikator veya performansina erisemez/basvuramaz. Tek kaynak: XM/MT5 fiyat verisi (dogrudan MetaTrader5 kutuphanesiyle). Yapisal izolasyon: Justin gorevleri calisma dizini olarak yalnizca Justin'e ait klasoru (C:\MilaYatirim\Justin\) kullanir — MilaGold dosyalarini (milagold_trades.json, lisa_performance.json, stratejici_gold_gecmis_calisma.md vb.) fiziksel olarak icermez.
 
 ### PROJE 3: COPY TRADiNG (Hazir — Beklemede)
 - XM Strategy Manager, "Mila Gold" hesabi
