@@ -90,6 +90,8 @@ Izleme ve onay/karar ayri fonksiyonlar, ikisi de bir arayuz gerektirir. Kanal se
 ### Veri Izolasyonu (10 Temmuz, KESiN)
 Justin'de calisan hicbir agent, Lisa/Signal GPT/MilaGold'un bulgu, veri, indikator veya performansina erisemez/basvuramaz. Tek kaynak: XM/MT5 fiyat verisi (dogrudan MetaTrader5 kutuphanesiyle). Yapisal izolasyon: Justin gorevleri calisma dizini olarak yalnizca Justin'e ait klasoru (C:\MilaYatirim\Justin\) kullanir — MilaGold dosyalarini (milagold_trades.json, lisa_performance.json, stratejici_gold_gecmis_calisma.md vb.) fiziksel olarak icermez.
 
+Not (10 Temmuz, netlestirme): Bu izolasyon MilaGold/Signal GPT'nin KENDI bulgu/veri/parametrelerine yoneliktir (dosyalari, ayarlanmis esik degerleri, Lisa'nin ozel mekanizmasi) — EMA, RSI, ATR gibi genel/evrensel teknik kavramlarin kullanimini yasaklamaz; Justin bunlari kendi bagimsiz analiziyle yeniden kesfedip kullanabilir. Bir agent'a "X'i kullanma" talimati verilirken X'in Signal GPT/MilaGold'a ait oldugu veya nasil calistigi aciklanmaz/isimlendirilmez (izolasyonu uygularken bilgi sizdirmamak icin) — sadece "tamamen bagimsiz/orijinal analiz yap" denir.
+
 ### PROJE 3: COPY TRADiNG (Hazir — Beklemede)
 - XM Strategy Manager, "Mila Gold" hesabi
 - Min yatirim: ~200 USD, Ucret: ~%20
