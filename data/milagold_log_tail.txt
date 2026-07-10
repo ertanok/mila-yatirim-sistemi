@@ -1,15 +1,3 @@
-[2026-07-10 16:45:00] Streak filtresi: SELL ONAYLANDI — EMA100 streak=19 >= 13
-[2026-07-10 16:45:00] Emir turu: SELL_STOP (fiyat=4098.81 > entry=4098.5)
-2026-07-10 16:45:00.522 | T4 | SELL@4098.5 | order_send cagrilacak
-2026-07-10 16:45:00.563 | T5 | SELL@4098.5 | order_send sonucu: basarili
-[2026-07-10 16:45:00] Islem acildi: 937259027 | SELL @ 4098.5 | SL:4103.5 | TP1:4095.5 TP2:4093.5 TP3:4090.5
-[2026-07-10 16:45:22] Heartbeat: 1 aktif islem | Bakiye: 817.43 USD
-[2026-07-10 16:45:53] Heartbeat: 1 aktif islem | Bakiye: 817.43 USD
-[2026-07-10 16:46:24] Heartbeat: 1 aktif islem | Bakiye: 817.43 USD
-[2026-07-10 16:46:54] Heartbeat: 1 aktif islem | Bakiye: 817.43 USD
-[2026-07-10 16:47:25] Heartbeat: 1 aktif islem | Bakiye: 817.43 USD
-[2026-07-10 16:47:55] Heartbeat: 1 aktif islem | Bakiye: 817.43 USD
-[2026-07-10 16:48:25] Heartbeat: 1 aktif islem | Bakiye: 817.43 USD
 [2026-07-10 16:48:56] Heartbeat: 1 aktif islem | Bakiye: 817.43 USD
 [2026-07-10 16:49:26] Heartbeat: 1 aktif islem | Bakiye: 817.43 USD
 [2026-07-10 16:49:57] Heartbeat: 1 aktif islem | Bakiye: 817.43 USD
@@ -78,3 +66,15 @@
 [2026-07-10 17:14:44] Heartbeat: 0 aktif islem | Bakiye: 812.36 USD
 [2026-07-10 17:15:14] Heartbeat: 0 aktif islem | Bakiye: 812.36 USD
 [2026-07-10 17:15:45] Heartbeat: 0 aktif islem | Bakiye: 812.36 USD
+[2026-07-10 17:16:15] Heartbeat: 0 aktif islem | Bakiye: 812.36 USD
+[2026-07-10 17:16:45] Heartbeat: 0 aktif islem | Bakiye: 812.36 USD
+[2026-07-10 17:17:16] Heartbeat: 0 aktif islem | Bakiye: 812.36 USD
+[2026-07-10 17:17:46] Heartbeat: 0 aktif islem | Bakiye: 812.36 USD
+2026-07-10 17:17:52.480 | T3 | SELL@4100.0 | signal.json okundu (MT5 agent)
+[2026-07-10 17:17:52] Yeni sinyal alindi: #None SELL @ 4100.0
+[2026-07-10 17:17:52] EMA filtresi: SELL ONAYLANDI — fiyat=4099.72 <= EMA20=4100.11
+[2026-07-10 17:17:52] Streak filtresi: SELL ONAYLANDI — EMA100 streak=25 >= 13
+[2026-07-10 17:17:52] Emir turu: SELL_LIMIT (fiyat=4099.72 <= entry=4100.0)
+2026-07-10 17:17:52.494 | T4 | SELL@4100.0 | order_send cagrilacak
+2026-07-10 17:17:52.529 | T5 | SELL@4100.0 | order_send sonucu: basarili
+[2026-07-10 17:17:52] Islem acildi: 937318929 | SELL @ 4100.0 | SL:4105.0 | TP1:4097.0 TP2:4095.0 TP3:4092.0
