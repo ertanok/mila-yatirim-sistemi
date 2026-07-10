@@ -1,8 +1,3 @@
-[2026-07-10 17:40:37] Performans kaydedildi: SL | -5.0 pip
-[2026-07-10 17:40:38] Heartbeat: 0 aktif islem | Bakiye: 802.69 USD
-2026-07-10 17:41:08.241 | T3 | SELL@4102.0 | signal.json okundu (MT5 agent)
-[2026-07-10 17:41:08] Yeni sinyal alindi: #None SELL @ 4102.0
-[2026-07-10 17:41:08] EMA filtresi: SELL ONAYLANDI — fiyat=4096.61 <= EMA20=4098.98
 [2026-07-10 17:41:08] Streak filtresi: SELL ONAYLANDI — EMA100 streak=30 >= 13
 [2026-07-10 17:41:08] Emir turu: SELL_LIMIT (fiyat=4096.61 <= entry=4102.0)
 2026-07-10 17:41:08.256 | T4 | SELL@4102.0 | order_send cagrilacak
@@ -78,3 +73,8 @@
 [2026-07-10 18:04:03] Heartbeat: 0 aktif islem | Bakiye: 797.65 USD
 [2026-07-10 18:04:34] Heartbeat: 0 aktif islem | Bakiye: 797.65 USD
 [2026-07-10 18:05:04] Heartbeat: 0 aktif islem | Bakiye: 797.65 USD
+[2026-07-10 18:05:35] Heartbeat: 0 aktif islem | Bakiye: 797.65 USD
+[2026-07-10 18:06:05] Heartbeat: 0 aktif islem | Bakiye: 797.65 USD
+[2026-07-10 18:06:36] Heartbeat: 0 aktif islem | Bakiye: 797.65 USD
+[2026-07-10 18:07:06] Heartbeat: 0 aktif islem | Bakiye: 797.65 USD
+[2026-07-10 18:07:36] Heartbeat: 0 aktif islem | Bakiye: 797.65 USD
