@@ -1,65 +1,3 @@
-2026-07-10 10:02:24,549 | T2 | SELL@4115.5 | signal.json yazildi
-2026-07-10 10:02:28,419 | Sinyal tarihi okundu: 10/07/2026 13:20
-2026-07-10 10:02:28,419 | Yeni sinyal DOGRULANDI (2 okuma): entry=4115.5 pending=4115.5
-2026-07-10 10:02:32,098 | Sinyal tarihi okundu: 10/07/2026 13:20
-2026-07-10 10:02:32,099 | Takip: SELL @ 4115.5 | Status:RUNNING
-2026-07-10 10:02:38,638 | Sinyal tarihi okundu: 10/07/2026 13:20
-2026-07-10 10:02:38,638 | Takip: SELL @ 4115.5 | Status:RUNNING
-2026-07-10 10:02:43,327 | Sinyal tarihi okundu: 10/07/2026 13:20
-2026-07-10 10:02:43,343 | Takip: SELL @ 4115.5 | Status:RUNNING
-2026-07-10 10:02:47,276 | Sinyal tarihi okundu: 10/07/2026 13:20
-2026-07-10 10:02:47,277 | Takip: SELL @ 4115.5 | Status:RUNNING
-2026-07-10 10:02:50,959 | Sinyal tarihi okundu: 10/07/2026 13:20
-2026-07-10 10:02:50,960 | Takip: SELL @ 4115.5 | Status:RUNNING
-2026-07-10 10:02:54,607 | Sinyal tarihi okundu: 10/07/2026 13:20
-2026-07-10 10:02:54,608 | Takip: SELL @ 4115.5 | Status:RUNNING
-2026-07-10 10:02:59,576 | Sinyal tarihi okundu: 10/07/2026 13:20
-2026-07-10 10:02:59,576 | Takip: SELL @ 4115.5 | Status:RUNNING
-2026-07-10 10:03:03,473 | Sinyal tarihi okundu: 10/07/2026 13:20
-2026-07-10 10:03:03,493 | Takip: SELL @ 4115.5 | Status:RUNNING
-2026-07-10 10:03:09,314 | Sinyal tarihi okundu: 10/07/2026 13:20
-2026-07-10 10:03:09,315 | Takip: SELL @ 4115.5 | Status:RUNNING
-2026-07-10 10:03:13,135 | Sinyal tarihi okundu: 10/07/2026 13:20
-2026-07-10 10:03:13,135 | Takip: SELL @ 4115.5 | Status:RUNNING
-2026-07-10 10:03:18,347 | Sinyal tarihi okundu: 10/07/2026 13:20
-2026-07-10 10:03:18,348 | Takip: SELL @ 4115.5 | Status:RUNNING
-2026-07-10 10:03:21,797 | Sinyal tarihi okundu: 10/07/2026 13:20
-2026-07-10 10:03:21,798 | Takip: SELL @ 4115.5 | Status:RUNNING
-2026-07-10 10:03:25,336 | Sinyal tarihi okundu: 10/07/2026 13:20
-2026-07-10 10:03:25,336 | Takip: SELL @ 4115.5 | Status:RUNNING
-2026-07-10 10:03:29,662 | Sinyal tarihi okundu: 10/07/2026 13:20
-2026-07-10 10:03:29,663 | Takip: SELL @ 4115.5 | Status:RUNNING
-2026-07-10 10:03:33,620 | Sinyal tarihi okundu: 10/07/2026 13:20
-2026-07-10 10:03:33,621 | Takip: SELL @ 4115.5 | Status:RUNNING
-2026-07-10 10:03:38,010 | Sinyal tarihi okundu: 10/07/2026 13:20
-2026-07-10 10:03:38,010 | Takip: SELL @ 4115.5 | Status:RUNNING
-2026-07-10 10:03:43,144 | Sinyal tarihi okundu: 10/07/2026 13:20
-2026-07-10 10:03:43,144 | Takip: SELL @ 4115.5 | Status:RUNNING
-2026-07-10 10:03:47,277 | Sinyal tarihi okundu: 10/07/2026 13:20
-2026-07-10 10:03:47,278 | Takip: SELL @ 4115.5 | Status:RUNNING
-2026-07-10 10:03:50,685 | Sinyal tarihi okundu: 10/07/2026 13:20
-2026-07-10 10:03:50,686 | Takip: SELL @ 4115.5 | Status:RUNNING
-2026-07-10 10:03:54,525 | Sinyal tarihi okundu: 10/07/2026 13:20
-2026-07-10 10:03:54,525 | Takip: SELL @ 4115.5 | Status:RUNNING
-2026-07-10 10:03:58,038 | Sinyal tarihi okundu: 10/07/2026 13:20
-2026-07-10 10:03:58,038 | Takip: SELL @ 4115.5 | Status:RUNNING
-2026-07-10 10:04:01,995 | Sinyal tarihi okundu: 10/07/2026 13:20
-2026-07-10 10:04:01,996 | Takip: SELL @ 4115.5 | Status:RUNNING
-2026-07-10 10:04:05,794 | Sinyal tarihi okundu: 10/07/2026 13:20
-2026-07-10 10:04:05,794 | Takip: SELL @ 4115.5 | Status:RUNNING
-2026-07-10 10:04:11,051 | Sinyal tarihi okundu: 10/07/2026 13:20
-2026-07-10 10:04:11,052 | Takip: SELL @ 4115.5 | Status:RUNNING
-2026-07-10 10:04:15,689 | Sinyal tarihi okunamadi (filtre devrede degil).
-2026-07-10 10:04:15,689 | T1 | SELL@4111.4 | sinyal tespit edildi
-2026-07-10 10:04:15,689 | Olasi yeni sinyal, HEMEN yazildi (dogrulama bekleniyor 1/2): 4115.5 -> 4111.4
-2026-07-10 10:04:15,690 | signal.json yazildi.
-2026-07-10 10:04:15,690 | T2 | SELL@4111.4 | signal.json yazildi
-2026-07-10 10:04:20,791 | Sinyal tarihi okunamadi (filtre devrede degil).
-2026-07-10 10:04:20,792 | Yeni sinyal DOGRULANDI (2 okuma): entry=4111.4 pending=4111.4
-2026-07-10 10:04:25,210 | Sinyal tarihi okunamadi (filtre devrede degil).
-2026-07-10 10:04:25,211 | Takip: SELL @ 4111.4 | Status:RUNNING
-2026-07-10 10:04:28,935 | Sinyal tarihi okunamadi (filtre devrede degil).
-2026-07-10 10:04:28,935 | Takip: SELL @ 4111.4 | Status:RUNNING
 2026-07-10 10:04:32,456 | Sinyal tarihi okunamadi (filtre devrede degil).
 2026-07-10 10:04:32,457 | Takip: SELL @ 4111.4 | Status:RUNNING
 2026-07-10 10:04:36,020 | Sinyal tarihi okunamadi (filtre devrede degil).
@@ -78,3 +16,65 @@
 2026-07-10 10:04:57,594 | Takip: SELL @ 4111.4 | Status:RUNNING
 2026-07-10 10:05:01,162 | Sinyal tarihi okunamadi (filtre devrede degil).
 2026-07-10 10:05:01,162 | Takip: SELL @ 4111.4 | Status:RUNNING
+2026-07-10 10:05:06,584 | Sinyal tarihi okunamadi (filtre devrede degil).
+2026-07-10 10:05:06,584 | Takip: SELL @ 4111.4 | Status:RUNNING
+2026-07-10 10:05:10,594 | Sinyal tarihi okunamadi (filtre devrede degil).
+2026-07-10 10:05:10,594 | Takip: SELL @ 4111.4 | Status:RUNNING
+2026-07-10 10:05:16,316 | Sinyal tarihi okunamadi (filtre devrede degil).
+2026-07-10 10:05:16,317 | Takip: SELL @ 4111.4 | Status:RUNNING
+2026-07-10 10:05:21,908 | Sinyal tarihi okunamadi (filtre devrede degil).
+2026-07-10 10:05:21,909 | Takip: SELL @ 4111.4 | Status:RUNNING
+2026-07-10 10:05:25,337 | Sinyal tarihi okunamadi (filtre devrede degil).
+2026-07-10 10:05:25,337 | Takip: SELL @ 4111.4 | Status:RUNNING
+2026-07-10 10:05:29,099 | Sinyal tarihi okunamadi (filtre devrede degil).
+2026-07-10 10:05:29,099 | Takip: SELL @ 4111.4 | Status:RUNNING
+2026-07-10 10:05:35,209 | Sinyal tarihi okunamadi (filtre devrede degil).
+2026-07-10 10:05:35,209 | Takip: SELL @ 4111.4 | Status:RUNNING
+2026-07-10 10:05:39,098 | Sinyal tarihi okunamadi (filtre devrede degil).
+2026-07-10 10:05:39,100 | Takip: SELL @ 4111.4 | Status:RUNNING
+2026-07-10 10:05:42,592 | Sinyal tarihi okunamadi (filtre devrede degil).
+2026-07-10 10:05:42,592 | Takip: SELL @ 4111.4 | Status:RUNNING
+2026-07-10 10:05:46,377 | Sinyal tarihi okunamadi (filtre devrede degil).
+2026-07-10 10:05:46,377 | Takip: SELL @ 4111.4 | Status:RUNNING
+2026-07-10 10:05:50,942 | Sinyal tarihi okunamadi (filtre devrede degil).
+2026-07-10 10:05:50,942 | Takip: SELL @ 4111.4 | Status:RUNNING
+2026-07-10 10:05:54,669 | Sinyal tarihi okunamadi (filtre devrede degil).
+2026-07-10 10:05:54,669 | Takip: SELL @ 4111.4 | Status:RUNNING
+2026-07-10 10:05:58,989 | Sinyal tarihi okunamadi (filtre devrede degil).
+2026-07-10 10:05:58,989 | Takip: SELL @ 4111.4 | Status:RUNNING
+2026-07-10 10:06:02,628 | Sinyal tarihi okunamadi (filtre devrede degil).
+2026-07-10 10:06:02,629 | Takip: SELL @ 4111.4 | Status:RUNNING
+2026-07-10 10:06:06,292 | Sinyal tarihi okunamadi (filtre devrede degil).
+2026-07-10 10:06:06,292 | Takip: SELL @ 4111.4 | Status:RUNNING
+2026-07-10 10:06:11,227 | Sinyal tarihi okunamadi (filtre devrede degil).
+2026-07-10 10:06:11,228 | Takip: SELL @ 4111.4 | Status:RUNNING
+2026-07-10 10:06:15,127 | Sinyal tarihi okunamadi (filtre devrede degil).
+2026-07-10 10:06:15,127 | Takip: SELL @ 4111.4 | Status:RUNNING
+2026-07-10 10:06:20,686 | Sinyal tarihi okunamadi (filtre devrede degil).
+2026-07-10 10:06:20,686 | Takip: SELL @ 4111.4 | Status:RUNNING
+2026-07-10 10:06:24,161 | Sinyal tarihi okunamadi (filtre devrede degil).
+2026-07-10 10:06:24,162 | Takip: SELL @ 4111.4 | Status:RUNNING
+2026-07-10 10:06:27,805 | Sinyal tarihi okunamadi (filtre devrede degil).
+2026-07-10 10:06:27,805 | Takip: SELL @ 4111.4 | Status:RUNNING
+2026-07-10 10:06:31,458 | Sinyal tarihi okunamadi (filtre devrede degil).
+2026-07-10 10:06:31,458 | Takip: SELL @ 4111.4 | Status:RUNNING
+2026-07-10 10:06:35,444 | Sinyal tarihi okunamadi (filtre devrede degil).
+2026-07-10 10:06:35,444 | Takip: SELL @ 4111.4 | Status:RUNNING
+2026-07-10 10:06:39,760 | Sinyal tarihi okunamadi (filtre devrede degil).
+2026-07-10 10:06:39,761 | Takip: SELL @ 4111.4 | Status:RUNNING
+2026-07-10 10:06:43,561 | Sinyal tarihi okunamadi (filtre devrede degil).
+2026-07-10 10:06:43,561 | Takip: SELL @ 4111.4 | Status:RUNNING
+2026-07-10 10:06:47,556 | Sinyal tarihi okunamadi (filtre devrede degil).
+2026-07-10 10:06:47,556 | Takip: SELL @ 4111.4 | Status:RUNNING
+2026-07-10 10:06:50,923 | Sinyal tarihi okunamadi (filtre devrede degil).
+2026-07-10 10:06:50,923 | Takip: SELL @ 4111.4 | Status:RUNNING
+2026-07-10 10:06:54,169 | Sinyal tarihi okunamadi (filtre devrede degil).
+2026-07-10 10:06:54,170 | Takip: SELL @ 4111.4 | Status:RUNNING
+2026-07-10 10:06:58,072 | Sinyal tarihi okunamadi (filtre devrede degil).
+2026-07-10 10:06:58,072 | Takip: SELL @ 4111.4 | Status:RUNNING
+2026-07-10 10:07:02,092 | Sinyal tarihi okunamadi (filtre devrede degil).
+2026-07-10 10:07:02,093 | Takip: SELL @ 4111.4 | Status:RUNNING
+2026-07-10 10:07:05,579 | Sinyal tarihi okunamadi (filtre devrede degil).
+2026-07-10 10:07:05,580 | Takip: SELL @ 4111.4 | Status:RUNNING
+2026-07-10 10:07:09,379 | Sinyal tarihi okunamadi (filtre devrede degil).
+2026-07-10 10:07:09,380 | Takip: SELL @ 4111.4 | Status:RUNNING
