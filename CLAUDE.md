@@ -31,6 +31,8 @@ Detay: Project Instructions, "MULTI-AGENT MiMARiSi — MiMARi BOYUTLAR" bolumu. 
 - **D) Onay Katmani
 Izleme ve onay/karar ayri fonksiyonlar, ikisi de bir arayuz gerektirir. Kanal secimi (Telegram vs Dashboard) daha once ertelendi, Dashboard Layer 2 (onay mekanizmasi) ile ortusuyor.
 - **E) Escalation:** 4 seviye — otomatik restart → Telegram → Claude Code uzaktan mudahale → bagimsiz uptime servisi + Contabo panel + onayli reboot
+  - **Not (10 Temmuz, netlestirme — 3 ardisik RED esigi):** "3 ardisik RED" esigi tetiklenip Stratejist'e genis-capli yaklasim degisikligi onerisi sunulursa, bu oneri ve onu takip eden backtest/arastirma turlari hala arastirma/backtest asamasi sayilir — canli sisteme/hesaba hicbir etkisi olmadigi surece bilgi notu yeterlidir, onay gerekmez (B boyutundaki STOP-genis kategorisi). Onay sinirini degistiren sey yaklasimin genisligi degil, canliya/demo/gercek hesaba gecis adimidir — o adim her zaman ayrica ve acikca onay gerektirir.
+  - **Gunluk Pipeline Dongu Siniri (10 Temmuz, KESiN):** Proje basina, gunluk (00:00'da sifirlanan) bir tam-tur sayaci tutulur (Stratejist cagrisi = 1 tur). Sayac 5'in altindaysa otomatik devam + Telegram bilgi notu (onay degil). Sayac 5'e ulasmis/gecmisse: sistem durur, Ertan'a Telegram'dan somut onay sorusu gider ("N tur denendi, hepsi RED, devam edeyim mi?") — otomatik devam etmez. Bu, Emniyet Stopu'ndaki STOP-otomatik/START-onayli kaliniyla ayni mantik, arastirma maliyetine uygulanmis hali.
 - **F) Rollback:** Her deploy sonrasi Orkestrator belirli sureligine (TBD) sonuclari izler; anomali saptanirsa STOP otomatik, geri alma/devam onayli
 
 ## Dosya Yapisi
