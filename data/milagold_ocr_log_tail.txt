@@ -1,44 +1,3 @@
-2026-07-10 17:35:19,213 | Sinyal tarihi okundu: 10/07/2026 21:27
-2026-07-10 17:35:19,213 | Takip: SELL @ 4102.0 | Status:RUNNING
-2026-07-10 17:35:25,694 | Sinyal tarihi okundu: 10/07/2026 21:27
-2026-07-10 17:35:25,694 | Takip: SELL @ 4102.0 | Status:RUNNING
-2026-07-10 17:35:36,295 | Sinyal tarihi okundu: 10/07/2026 21:27
-2026-07-10 17:35:36,295 | Takip: SELL @ 4102.0 | Status:RUNNING
-2026-07-10 17:35:46,355 | Sinyal tarihi okundu: 10/07/2026 21:27
-2026-07-10 17:35:46,355 | Takip: SELL @ 4102.0 | Status:RUNNING
-2026-07-10 17:35:57,002 | Sinyal tarihi okundu: 10/07/2026 21:27
-2026-07-10 17:35:57,003 | Takip: SELL @ 4102.0 | Status:RUNNING
-2026-07-10 17:36:28,691 | EasyOCR yukleniyor...
-2026-07-10 17:36:28,696 | Using CPU. Note: This module is much faster with a GPU.
-2026-07-10 17:36:34,954 | EasyOCR hazir.
-2026-07-10 17:36:34,954 | ==================================================
-2026-07-10 17:36:34,955 | MilaGold OCR Agent - Signal GPT versiyonu
-2026-07-10 17:36:34,955 | ==================================================
-2026-07-10 17:36:37,549 | Chrome versiyonu (exe): 150.0.7871.46
-2026-07-10 17:36:37,553 | ChromeDriver cache'den: C:\MilaYatirim\mila-yatirim-sistemi\MilaGold\chromedriver_cache\150.0.7871.46\chromedriver.exe
-2026-07-10 17:36:37,560 | ChromeDriver: C:\MilaYatirim\mila-yatirim-sistemi\MilaGold\chromedriver_cache\150.0.7871.46\chromedriver.exe
-2026-07-10 17:36:41,268 | Signal GPT sayfasina gidildi.
-2026-07-10 17:36:41,268 | Sayfa yukleniyor, 15 saniye bekleniyor...
-2026-07-10 17:36:58,226 | Baslangic screenshot alindi.
-2026-07-10 17:36:58,227 | Ilk okuma oncesi 5 saniye bekleniyor...
-2026-07-10 17:37:03,228 | Okuma dongusune giriliyor...
-2026-07-10 17:37:10,425 | Sinyal tarihi okundu: 10/07/2026 21:27
-2026-07-10 17:37:10,426 | T1 | SELL@4102.0 | sinyal tespit edildi
-2026-07-10 17:37:10,426 | Olasi yeni sinyal, HEMEN yazildi (dogrulama bekleniyor 1/2): #None | SELL @ 4102.0
-2026-07-10 17:37:10,427 | signal.json yazildi.
-2026-07-10 17:37:10,427 | T2 | SELL@4102.0 | signal.json yazildi
-2026-07-10 17:37:16,600 | Sinyal tarihi okundu: 10/07/2026 21:27
-2026-07-10 17:37:16,601 | Yeni sinyal DOGRULANDI (2 okuma): entry=4102.0 pending=4102.0
-2026-07-10 17:37:23,663 | Sinyal tarihi okundu: 10/07/2026 21:27
-2026-07-10 17:37:23,664 | Takip: SELL @ 4102.0 | Status:RUNNING
-2026-07-10 17:37:30,998 | Sinyal tarihi okundu: 10/07/2026 21:27
-2026-07-10 17:37:30,999 | Takip: SELL @ 4102.0 | Status:RUNNING
-2026-07-10 17:37:34,983 | Sinyal tarihi okundu: 10/07/2026 20:55
-2026-07-10 17:37:34,983 | Takip: SELL @ 4102.0 | Status:RUNNING
-2026-07-10 17:37:39,797 | Sinyal tarihi okundu: 10/07/2026 20:55
-2026-07-10 17:37:39,797 | Takip: SELL @ 4102.0 | Status:RUNNING
-2026-07-10 17:37:48,612 | Sinyal tarihi okundu: 10/07/2026 20:55
-2026-07-10 17:37:48,612 | Takip: SELL @ 4102.0 | Status:RUNNING
 2026-07-10 17:37:52,294 | Sinyal tarihi okundu: 10/07/2026 21:37
 2026-07-10 17:37:52,295 | T1 | SELL@4093.0 | sinyal tespit edildi
 2026-07-10 17:37:52,295 | Olasi yeni sinyal, HEMEN yazildi (dogrulama bekleniyor 1/2): 4102.0 -> 4093.0
@@ -78,3 +37,44 @@
 2026-07-10 17:39:34,597 | Takip: SELL @ 4093.0 | Status:RUNNING
 2026-07-10 17:39:39,349 | Sinyal tarihi okundu: 10/07/2026 21:37
 2026-07-10 17:39:39,349 | Takip: SELL @ 4093.0 | Status:RUNNING
+2026-07-10 17:39:43,032 | Sinyal tarihi okundu: 10/07/2026 21:37
+2026-07-10 17:39:43,033 | Takip: SELL @ 4093.0 | Status:RUNNING
+2026-07-10 17:39:49,373 | Sinyal tarihi okundu: 10/07/2026 21:37
+2026-07-10 17:39:49,374 | Takip: SELL @ 4093.0 | Status:RUNNING
+2026-07-10 17:39:54,658 | Sinyal tarihi okundu: 10/07/2026 21:37
+2026-07-10 17:39:54,659 | Takip: SELL @ 4093.0 | Status:RUNNING
+2026-07-10 17:40:03,573 | Sinyal tarihi okundu: 10/07/2026 21:37
+2026-07-10 17:40:03,573 | Takip: SELL @ 4093.0 | Status:RUNNING
+2026-07-10 17:40:11,897 | Sinyal tarihi okundu: 10/07/2026 21:37
+2026-07-10 17:40:11,897 | Takip: SELL @ 4093.0 | Status:RUNNING
+2026-07-10 17:40:19,206 | Sinyal tarihi okundu: 10/07/2026 21:37
+2026-07-10 17:40:19,206 | Takip: SELL @ 4093.0 | Status:RUNNING
+2026-07-10 17:40:28,500 | Sinyal tarihi okundu: 10/07/2026 21:37
+2026-07-10 17:40:28,500 | Takip: SELL @ 4093.0 | Status:RUNNING
+2026-07-10 17:40:34,147 | Sinyal tarihi okundu: 10/07/2026 21:37
+2026-07-10 17:40:34,148 | Takip: SELL @ 4093.0 | Status:RUNNING
+2026-07-10 17:40:39,234 | Sinyal tarihi okundu: 10/07/2026 21:37
+2026-07-10 17:40:39,235 | Takip: SELL @ 4093.0 | Status:RUNNING
+2026-07-10 17:40:44,961 | Sinyal tarihi okundu: 10/07/2026 21:37
+2026-07-10 17:40:44,962 | Takip: SELL @ 4093.0 | Status:RUNNING
+2026-07-10 17:40:50,314 | Sinyal tarihi okundu: 10/07/2026 21:37
+2026-07-10 17:40:50,315 | Takip: SELL @ 4093.0 | Status:RUNNING
+2026-07-10 17:40:58,445 | Sinyal tarihi okundu: 10/07/2026 21:37
+2026-07-10 17:40:58,445 | Takip: SELL @ 4093.0 | Status:RUNNING
+2026-07-10 17:41:07,739 | Sinyal tarihi okundu: 10/07/2026 20:55
+2026-07-10 17:41:07,740 | T1 | SELL@4102.0 | sinyal tespit edildi
+2026-07-10 17:41:07,740 | Olasi yeni sinyal, HEMEN yazildi (dogrulama bekleniyor 1/2): 4093.0 -> 4102.0
+2026-07-10 17:41:07,741 | signal.json yazildi.
+2026-07-10 17:41:07,741 | T2 | SELL@4102.0 | signal.json yazildi
+2026-07-10 17:41:15,185 | Sinyal tarihi okundu: 10/07/2026 20:55
+2026-07-10 17:41:15,185 | Yeni sinyal DOGRULANDI (2 okuma): entry=4102.0 pending=4102.0
+2026-07-10 17:41:20,763 | Sinyal tarihi okundu: 10/07/2026 20:55
+2026-07-10 17:41:20,764 | Takip: SELL @ 4102.0 | Status:RUNNING
+2026-07-10 17:41:31,083 | Sinyal tarihi okundu: 10/07/2026 20:55
+2026-07-10 17:41:31,083 | Takip: SELL @ 4102.0 | Status:RUNNING
+2026-07-10 17:41:36,164 | Sinyal tarihi okundu: 10/07/2026 20:55
+2026-07-10 17:41:36,165 | Takip: SELL @ 4102.0 | Status:RUNNING
+2026-07-10 17:41:40,373 | Sinyal tarihi okundu: 10/07/2026 20:55
+2026-07-10 17:41:40,373 | Takip: SELL @ 4102.0 | Status:RUNNING
+2026-07-10 17:41:47,173 | Sinyal tarihi okundu: 10/07/2026 20:55
+2026-07-10 17:41:47,173 | Takip: SELL @ 4102.0 | Status:RUNNING
