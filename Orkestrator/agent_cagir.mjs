@@ -1,5 +1,5 @@
 import { spawn } from 'node:child_process';
-import { readdir, rename, mkdir, readFile } from 'node:fs/promises';
+import { readdir, rename, mkdir, readFile, writeFile } from 'node:fs/promises';
 import { existsSync } from 'node:fs';
 import path from 'node:path';
 import { tool, createSdkMcpServer } from '@anthropic-ai/claude-agent-sdk';
@@ -10,9 +10,11 @@ const AGENTLAR_DIR = path.join(REPO_ROOT, 'Agentlar');
 const ORK_DIR = path.join(REPO_ROOT, 'Orkestrator');
 const GOREV_DURUMU_DIR = path.join(ORK_DIR, 'agent_gorev_durumu');
 const ISLENMIS_DIR = path.join(GOREV_DURUMU_DIR, 'islenmis');
+const BASARISIZ_DIR = path.join(GOREV_DURUMU_DIR, 'basarisiz');
 const WORKER_SCRIPT = path.join(ORK_DIR, 'agent_calistir_worker.mjs');
 
 const ES_ZAMANLI_SINIR = 2;
+const MAX_DENEME = 3; // Orkestrator islemeyi bu kadar basarisiz denemeden sonra basarisiz/ klasorune tasir
 
 let acikCagriSayisi = 0;
 const bekleyenKuyruk = []; // { agentAdi, gorevDosyasiYolu, gorevId }
@@ -106,34 +108,78 @@ export const agentCagirTool = tool(
   }
 );
 
+/**
+ * agent_gorev_durumu/ klasorunu tarar, 'tamamlandi' veya 'hata' durumundaki gorev dosyalarini
+ * bulur ve bulunan kayitlarin listesini doner (her kayitta orijinal dosya yolu _dosyaYolu
+ * alaninda bulunur). DOSYALARI TASIMAZ - tasima, cagiran taraf gorev uzerinde basariyla aksiyon
+ * aldiktan SONRA gorevBasariylaTamamlandi() ile yapilir (bkz. gorevDenemeBasarisizOldu() basarisiz
+ * durum icin). SAF FONKSIYON - hicbir LLM/API cagrisi icermez, hem MCP tool'dan hem de dogrudan
+ * (orn. orkestrator_dongu.mjs'den, LLM'siz) cagrilabilir.
+ */
+export async function taraGorevDurumu() {
+  await mkdir(GOREV_DURUMU_DIR, { recursive: true });
+
+  const tumDosyalar = await readdir(GOREV_DURUMU_DIR, { withFileTypes: true });
+  const jsonDosyalari = tumDosyalar.filter((d) => d.isFile() && d.name.endsWith('.json')).map((d) => d.name);
+
+  const sonuclar = [];
+  for (const dosyaAdi of jsonDosyalari) {
+    const tamYol = path.join(GOREV_DURUMU_DIR, dosyaAdi);
+    let icerik;
+    try {
+      icerik = JSON.parse(await readFile(tamYol, 'utf-8'));
+    } catch {
+      continue; // bozuk/yaziliyor olabilecek dosyayi atla, sonraki taramada tekrar denenir
+    }
+    if (icerik.durum === 'tamamlandi' || icerik.durum === 'hata') {
+      sonuclar.push({ gorev_id: dosyaAdi.replace(/\.json$/, ''), ...icerik, _dosyaYolu: tamYol });
+    }
+  }
+  return sonuclar;
+}
+
+/**
+ * Orkestrator bir gorev uzerinde basariyla aksiyon aldiktan sonra cagrilir: dosyayi
+ * islenmis/ klasorune tasir (bir sonraki taramada tekrar gelmesin diye).
+ */
+export async function gorevBasariylaTamamlandi(sonuc) {
+  await mkdir(ISLENMIS_DIR, { recursive: true });
+  await rename(sonuc._dosyaYolu, path.join(ISLENMIS_DIR, path.basename(sonuc._dosyaYolu)));
+}
+
+/**
+ * Orkestrator bir gorev uzerinde aksiyon almaya calisirken hata aldiginda cagrilir. Dosyaya
+ * deneme sayacini ve son hatayi yazar; MAX_DENEME'e ulasilmadiysa dosya YERINDE KALIR (bir
+ * sonraki dongude otomatik tekrar denenir). MAX_DENEME'e ulasildiysa basarisiz/ klasorune
+ * tasinir (kaybolmaz, gorunur kalir) ve tasindi:true doner ki cagiran taraf Telegram uyarisi
+ * gonderebilsin.
+ */
+export async function gorevDenemeBasarisizOldu(sonuc, hataMesaji) {
+  const { gorev_id, _dosyaYolu, ...orijinalIcerik } = sonuc;
+  const denemeSayisi = (orijinalIcerik._orkestrator_deneme_sayisi || 0) + 1;
+  const guncelIcerik = {
+    ...orijinalIcerik,
+    _orkestrator_deneme_sayisi: denemeSayisi,
+    _orkestrator_son_hata: hataMesaji,
+  };
+  await writeFile(_dosyaYolu, JSON.stringify(guncelIcerik, null, 2), 'utf-8');
+
+  if (denemeSayisi >= MAX_DENEME) {
+    await mkdir(BASARISIZ_DIR, { recursive: true });
+    await rename(_dosyaYolu, path.join(BASARISIZ_DIR, path.basename(_dosyaYolu)));
+    return { tasindi: true, denemeSayisi };
+  }
+  return { tasindi: false, denemeSayisi };
+}
+
 export const agentGorevDurumuTaraTool = tool(
   'agent_gorev_durumu_tara',
-  "agent_gorev_durumu/ klasorunu tarar, 'tamamlandi' veya 'hata' durumundaki gorev dosyalarini bulur, " +
-    'iceriklerini rapor olarak doner ve islenmis/ alt-klasorune tasir (bir sonraki taramada tekrar gelmesinler diye). ' +
-    'Bunu her turda cagirip donen gorevler icin gerekirse Ertan a bilgi notu / sonraki adim degerlendirmesi yap.',
+  "agent_gorev_durumu/ klasorunu tarar, 'tamamlandi' veya 'hata' durumundaki gorev dosyalarini bulur ve " +
+    'iceriklerini rapor olarak doner. Dosyalari TASIMAZ (islenmis/basarisiz ayrimi sadece ' +
+    'orkestrator_dongu.mjs surekli surecinde, aksiyon basari/basarisizligina gore yapilir).',
   {},
   async () => {
-    await mkdir(GOREV_DURUMU_DIR, { recursive: true });
-    await mkdir(ISLENMIS_DIR, { recursive: true });
-
-    const tumDosyalar = await readdir(GOREV_DURUMU_DIR, { withFileTypes: true });
-    const jsonDosyalari = tumDosyalar.filter((d) => d.isFile() && d.name.endsWith('.json')).map((d) => d.name);
-
-    const sonuclar = [];
-    for (const dosyaAdi of jsonDosyalari) {
-      const tamYol = path.join(GOREV_DURUMU_DIR, dosyaAdi);
-      let icerik;
-      try {
-        icerik = JSON.parse(await readFile(tamYol, 'utf-8'));
-      } catch {
-        continue; // bozuk/yaziliyor olabilecek dosyayi atla, sonraki taramada tekrar denenir
-      }
-      if (icerik.durum === 'tamamlandi' || icerik.durum === 'hata') {
-        sonuclar.push({ gorev_id: dosyaAdi.replace(/\.json$/, ''), ...icerik });
-        await rename(tamYol, path.join(ISLENMIS_DIR, dosyaAdi));
-      }
-    }
-
+    const sonuclar = await taraGorevDurumu();
     return {
       content: [
         {
