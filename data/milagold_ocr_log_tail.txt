@@ -1,80 +1,80 @@
-2026-07-11 02:17:34,730 | Sinyal tarihi okundu: 11/07/2026 03:58
-2026-07-11 02:17:34,730 | Takip: SELL @ 4118.5 | Status:RUNNING
-2026-07-11 02:17:37,645 | Sinyal tarihi okundu: 11/07/2026 03:58
-2026-07-11 02:17:37,646 | Takip: SELL @ 4118.5 | Status:RUNNING
-2026-07-11 02:17:40,716 | Sinyal tarihi okundu: 11/07/2026 03:58
-2026-07-11 02:17:40,716 | Takip: SELL @ 4118.5 | Status:RUNNING
-2026-07-11 02:17:43,787 | Sinyal tarihi okundu: 11/07/2026 03:58
-2026-07-11 02:17:43,788 | Takip: SELL @ 4118.5 | Status:RUNNING
-2026-07-11 02:17:46,884 | Sinyal tarihi okundu: 11/07/2026 03:58
-2026-07-11 02:17:46,885 | Takip: SELL @ 4118.5 | Status:RUNNING
-2026-07-11 02:17:49,819 | Sinyal tarihi okundu: 11/07/2026 03:58
-2026-07-11 02:17:49,820 | Takip: SELL @ 4118.5 | Status:RUNNING
-2026-07-11 02:17:52,710 | Sinyal tarihi okundu: 11/07/2026 03:58
-2026-07-11 02:17:52,711 | Takip: SELL @ 4118.5 | Status:RUNNING
-2026-07-11 02:17:55,848 | Sinyal tarihi okundu: 11/07/2026 03:58
-2026-07-11 02:17:55,848 | Takip: SELL @ 4118.5 | Status:RUNNING
-2026-07-11 02:17:58,757 | Sinyal tarihi okundu: 11/07/2026 03:58
-2026-07-11 02:17:58,757 | Takip: SELL @ 4118.5 | Status:RUNNING
-2026-07-11 02:18:01,820 | Sinyal tarihi okundu: 11/07/2026 03:58
-2026-07-11 02:18:01,821 | Takip: SELL @ 4118.5 | Status:RUNNING
-2026-07-11 02:18:04,736 | Sinyal tarihi okundu: 11/07/2026 03:58
-2026-07-11 02:18:04,736 | Takip: SELL @ 4118.5 | Status:RUNNING
-2026-07-11 02:18:07,704 | Sinyal tarihi okundu: 11/07/2026 03:58
-2026-07-11 02:18:07,704 | Takip: SELL @ 4118.5 | Status:RUNNING
-2026-07-11 02:18:10,639 | Sinyal tarihi okundu: 11/07/2026 03:58
-2026-07-11 02:18:10,640 | Takip: SELL @ 4118.5 | Status:RUNNING
-2026-07-11 02:18:13,663 | Sinyal tarihi okundu: 11/07/2026 03:58
-2026-07-11 02:18:13,663 | Takip: SELL @ 4118.5 | Status:RUNNING
-2026-07-11 02:18:28,722 | EasyOCR yukleniyor...
-2026-07-11 02:18:28,723 | Using CPU. Note: This module is much faster with a GPU.
-2026-07-11 02:18:31,484 | EasyOCR hazir.
-2026-07-11 02:18:31,485 | ==================================================
-2026-07-11 02:18:31,485 | MilaGold OCR Agent - Signal GPT versiyonu
-2026-07-11 02:18:31,485 | ==================================================
-2026-07-11 02:18:31,784 | Chrome versiyonu (exe): 150.0.7871.46
-2026-07-11 02:18:31,785 | ChromeDriver cache'den: C:\MilaYatirim\mila-yatirim-sistemi\MilaGold\chromedriver_cache\150.0.7871.46\chromedriver.exe
-2026-07-11 02:18:31,785 | ChromeDriver: C:\MilaYatirim\mila-yatirim-sistemi\MilaGold\chromedriver_cache\150.0.7871.46\chromedriver.exe
-2026-07-11 02:18:32,827 | Signal GPT sayfasina gidildi.
-2026-07-11 02:18:32,828 | Sayfa yukleniyor, 15 saniye bekleniyor...
-2026-07-11 02:18:48,338 | Baslangic screenshot alindi.
-2026-07-11 02:18:48,338 | Ilk okuma oncesi 5 saniye bekleniyor...
-2026-07-11 02:18:53,339 | Okuma dongusune giriliyor...
-2026-07-11 02:18:54,535 | GOLD karti okunamadi (1). Ham: ['Disclaimer', 'The information on signalgpt ai is for reference and', 'Iknowledge-sharing [']
-2026-07-11 02:18:57,623 | GOLD karti okunamadi (2). Ham: ['Disclaimer', 'The information on signalgpt ai is for reference and', 'Iknowledge-sharing [']
-2026-07-11 02:19:00,673 | GOLD karti okunamadi (3). Ham: ['Disclaimer', 'The information on signalgpt ai is for reference and', 'Iknowledge-sharing [']
-2026-07-11 02:19:07,965 | Sinyal tarihi okundu: 11/07/2026 03:58
-2026-07-11 02:19:07,966 | T1 | SELL@4118.5 | sinyal tespit edildi
-2026-07-11 02:19:07,966 | Olasi yeni sinyal, HEMEN yazildi (dogrulama bekleniyor 1/2): #None | SELL @ 4118.5
-2026-07-11 02:19:07,967 | signal.json yazildi.
-2026-07-11 02:19:07,967 | T2 | SELL@4118.5 | signal.json yazildi
-2026-07-11 02:19:11,007 | Sinyal tarihi okundu: 11/07/2026 03:58
-2026-07-11 02:19:11,007 | Yeni sinyal DOGRULANDI (2 okuma): entry=4118.5 pending=4118.5
-2026-07-11 02:19:14,000 | Sinyal tarihi okundu: 11/07/2026 03:58
-2026-07-11 02:19:14,000 | Takip: SELL @ 4118.5 | Status:RUNNING
-2026-07-11 02:19:17,073 | Sinyal tarihi okundu: 11/07/2026 03:58
-2026-07-11 02:19:17,073 | Takip: SELL @ 4118.5 | Status:RUNNING
-2026-07-11 02:19:19,989 | Sinyal tarihi okundu: 11/07/2026 03:58
-2026-07-11 02:19:19,990 | Takip: SELL @ 4118.5 | Status:RUNNING
-2026-07-11 02:19:23,142 | Sinyal tarihi okundu: 11/07/2026 03:58
-2026-07-11 02:19:23,143 | Takip: SELL @ 4118.5 | Status:RUNNING
-2026-07-11 02:19:26,207 | Sinyal tarihi okundu: 11/07/2026 03:58
-2026-07-11 02:19:26,207 | Takip: SELL @ 4118.5 | Status:RUNNING
-2026-07-11 02:19:29,418 | Sinyal tarihi okundu: 11/07/2026 03:58
-2026-07-11 02:19:29,419 | Takip: SELL @ 4118.5 | Status:RUNNING
-2026-07-11 02:19:32,391 | Sinyal tarihi okundu: 11/07/2026 03:58
-2026-07-11 02:19:32,392 | Takip: SELL @ 4118.5 | Status:RUNNING
-2026-07-11 02:19:35,547 | Sinyal tarihi okundu: 11/07/2026 03:58
-2026-07-11 02:19:35,548 | Takip: SELL @ 4118.5 | Status:RUNNING
-2026-07-11 02:19:38,463 | Sinyal tarihi okundu: 11/07/2026 03:58
-2026-07-11 02:19:38,464 | Takip: SELL @ 4118.5 | Status:RUNNING
-2026-07-11 02:19:41,505 | Sinyal tarihi okundu: 11/07/2026 03:58
-2026-07-11 02:19:41,505 | Takip: SELL @ 4118.5 | Status:RUNNING
-2026-07-11 02:19:44,494 | Sinyal tarihi okundu: 11/07/2026 03:58
-2026-07-11 02:19:44,495 | Takip: SELL @ 4118.5 | Status:RUNNING
-2026-07-11 02:19:47,471 | Sinyal tarihi okundu: 11/07/2026 03:58
-2026-07-11 02:19:47,471 | Takip: SELL @ 4118.5 | Status:RUNNING
-2026-07-11 02:19:50,588 | Sinyal tarihi okundu: 11/07/2026 03:58
-2026-07-11 02:19:50,589 | Takip: SELL @ 4118.5 | Status:RUNNING
-2026-07-11 02:19:53,683 | Sinyal tarihi okundu: 11/07/2026 03:58
-2026-07-11 02:19:53,684 | Takip: SELL @ 4118.5 | Status:RUNNING
+2026-07-11 02:20:02,949 | Sinyal tarihi okundu: 11/07/2026 03:58
+2026-07-11 02:20:02,949 | Takip: SELL @ 4118.5 | Status:RUNNING
+2026-07-11 02:20:06,192 | Sinyal tarihi okundu: 11/07/2026 03:58
+2026-07-11 02:20:06,193 | Takip: SELL @ 4118.5 | Status:RUNNING
+2026-07-11 02:20:09,131 | Sinyal tarihi okundu: 11/07/2026 03:58
+2026-07-11 02:20:09,132 | Takip: SELL @ 4118.5 | Status:RUNNING
+2026-07-11 02:20:12,095 | Sinyal tarihi okundu: 11/07/2026 03:58
+2026-07-11 02:20:12,096 | Takip: SELL @ 4118.5 | Status:RUNNING
+2026-07-11 02:20:15,097 | Sinyal tarihi okundu: 11/07/2026 03:58
+2026-07-11 02:20:15,098 | Takip: SELL @ 4118.5 | Status:RUNNING
+2026-07-11 02:20:18,228 | Sinyal tarihi okundu: 11/07/2026 03:58
+2026-07-11 02:20:18,228 | Takip: SELL @ 4118.5 | Status:RUNNING
+2026-07-11 02:20:21,453 | Sinyal tarihi okundu: 11/07/2026 03:58
+2026-07-11 02:20:21,453 | Takip: SELL @ 4118.5 | Status:RUNNING
+2026-07-11 02:20:24,593 | Sinyal tarihi okundu: 11/07/2026 03:58
+2026-07-11 02:20:24,594 | Takip: SELL @ 4118.5 | Status:RUNNING
+2026-07-11 02:20:27,664 | Sinyal tarihi okundu: 11/07/2026 03:58
+2026-07-11 02:20:27,665 | Takip: SELL @ 4118.5 | Status:RUNNING
+2026-07-11 02:20:30,691 | Sinyal tarihi okundu: 11/07/2026 03:58
+2026-07-11 02:20:30,692 | Takip: SELL @ 4118.5 | Status:RUNNING
+2026-07-11 02:20:33,759 | Sinyal tarihi okundu: 11/07/2026 03:58
+2026-07-11 02:20:33,759 | Takip: SELL @ 4118.5 | Status:RUNNING
+2026-07-11 02:20:36,896 | Sinyal tarihi okundu: 11/07/2026 03:58
+2026-07-11 02:20:36,896 | Takip: SELL @ 4118.5 | Status:RUNNING
+2026-07-11 02:20:39,774 | Sinyal tarihi okundu: 11/07/2026 03:58
+2026-07-11 02:20:39,775 | Takip: SELL @ 4118.5 | Status:RUNNING
+2026-07-11 02:20:42,779 | Sinyal tarihi okundu: 11/07/2026 03:58
+2026-07-11 02:20:42,780 | Takip: SELL @ 4118.5 | Status:RUNNING
+2026-07-11 02:20:45,761 | Sinyal tarihi okundu: 11/07/2026 03:58
+2026-07-11 02:20:45,761 | Takip: SELL @ 4118.5 | Status:RUNNING
+2026-07-11 02:20:48,895 | Sinyal tarihi okundu: 11/07/2026 03:58
+2026-07-11 02:20:48,896 | Takip: SELL @ 4118.5 | Status:RUNNING
+2026-07-11 02:20:52,175 | Sinyal tarihi okundu: 11/07/2026 03:58
+2026-07-11 02:20:52,176 | Takip: SELL @ 4118.5 | Status:RUNNING
+2026-07-11 02:20:55,264 | Sinyal tarihi okundu: 11/07/2026 03:58
+2026-07-11 02:20:55,264 | Takip: SELL @ 4118.5 | Status:RUNNING
+2026-07-11 02:20:58,279 | Sinyal tarihi okundu: 11/07/2026 03:58
+2026-07-11 02:20:58,279 | Takip: SELL @ 4118.5 | Status:RUNNING
+2026-07-11 02:21:01,251 | Sinyal tarihi okundu: 11/07/2026 03:58
+2026-07-11 02:21:01,251 | Takip: SELL @ 4118.5 | Status:RUNNING
+2026-07-11 02:21:04,297 | Sinyal tarihi okundu: 11/07/2026 03:58
+2026-07-11 02:21:04,298 | Takip: SELL @ 4118.5 | Status:RUNNING
+2026-07-11 02:21:07,540 | Sinyal tarihi okundu: 11/07/2026 03:58
+2026-07-11 02:21:07,541 | Takip: SELL @ 4118.5 | Status:RUNNING
+2026-07-11 02:21:10,425 | Sinyal tarihi okundu: 11/07/2026 03:58
+2026-07-11 02:21:10,426 | Takip: SELL @ 4118.5 | Status:RUNNING
+2026-07-11 02:21:13,462 | Sinyal tarihi okundu: 11/07/2026 03:58
+2026-07-11 02:21:13,462 | Takip: SELL @ 4118.5 | Status:RUNNING
+2026-07-11 02:21:16,601 | Sinyal tarihi okundu: 11/07/2026 03:58
+2026-07-11 02:21:16,602 | Takip: SELL @ 4118.5 | Status:RUNNING
+2026-07-11 02:21:19,713 | Sinyal tarihi okundu: 11/07/2026 03:58
+2026-07-11 02:21:19,714 | Takip: SELL @ 4118.5 | Status:RUNNING
+2026-07-11 02:21:22,742 | Sinyal tarihi okundu: 11/07/2026 03:58
+2026-07-11 02:21:22,742 | Takip: SELL @ 4118.5 | Status:RUNNING
+2026-07-11 02:21:25,786 | Sinyal tarihi okundu: 11/07/2026 03:58
+2026-07-11 02:21:25,787 | Takip: SELL @ 4118.5 | Status:RUNNING
+2026-07-11 02:21:28,636 | Sinyal tarihi okundu: 11/07/2026 03:58
+2026-07-11 02:21:28,636 | Takip: SELL @ 4118.5 | Status:RUNNING
+2026-07-11 02:21:31,587 | Sinyal tarihi okundu: 11/07/2026 03:58
+2026-07-11 02:21:31,588 | Takip: SELL @ 4118.5 | Status:RUNNING
+2026-07-11 02:21:34,584 | Sinyal tarihi okundu: 11/07/2026 03:58
+2026-07-11 02:21:34,584 | Takip: SELL @ 4118.5 | Status:RUNNING
+2026-07-11 02:21:37,687 | Sinyal tarihi okundu: 11/07/2026 03:58
+2026-07-11 02:21:37,688 | Takip: SELL @ 4118.5 | Status:RUNNING
+2026-07-11 02:21:40,622 | Sinyal tarihi okundu: 11/07/2026 03:58
+2026-07-11 02:21:40,623 | Takip: SELL @ 4118.5 | Status:RUNNING
+2026-07-11 02:21:43,540 | Sinyal tarihi okundu: 11/07/2026 03:58
+2026-07-11 02:21:43,540 | Takip: SELL @ 4118.5 | Status:RUNNING
+2026-07-11 02:21:46,575 | Sinyal tarihi okundu: 11/07/2026 03:58
+2026-07-11 02:21:46,576 | Takip: SELL @ 4118.5 | Status:RUNNING
+2026-07-11 02:21:49,596 | Sinyal tarihi okundu: 11/07/2026 03:58
+2026-07-11 02:21:49,597 | Takip: SELL @ 4118.5 | Status:RUNNING
+2026-07-11 02:21:52,584 | Sinyal tarihi okundu: 11/07/2026 03:58
+2026-07-11 02:21:52,585 | Takip: SELL @ 4118.5 | Status:RUNNING
+2026-07-11 02:21:55,558 | Sinyal tarihi okundu: 11/07/2026 03:58
+2026-07-11 02:21:55,559 | Takip: SELL @ 4118.5 | Status:RUNNING
+2026-07-11 02:21:58,530 | Sinyal tarihi okundu: 11/07/2026 03:58
+2026-07-11 02:21:58,531 | Takip: SELL @ 4118.5 | Status:RUNNING
+2026-07-11 02:22:01,696 | Sinyal tarihi okundu: 11/07/2026 03:58
+2026-07-11 02:22:01,696 | Takip: SELL @ 4118.5 | Status:RUNNING
