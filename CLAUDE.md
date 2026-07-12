@@ -28,6 +28,7 @@ Detay: Project Instructions, "MULTI-AGENT MiMARiSi — MiMARi BOYUTLAR" bolumu. 
 - **B) Yetki:** STOP genis, START/CHANGE dar, en-kotu-boyut-kazanir kurali
 - **C) Iletisim:** Dosya-tabanli (tek yazici + stale-safe), anomali-sonrasi-durus (15 dk baslangic, TBD), Ekonomik Takvim Agent'i (yeni, TBD)
   - **Agent gorevlendirme/sonuc bildirimi (10 Temmuz, KESiN):** Orkestrator bir agent'i gorevlendirdiginde ve o agent sonuc/rapor urettiginde Ertan'a Telegram bilgi notu gonderir + Orkestrator_Loglar'a kayit yazar. Onay talebi degil, sadece bilgilendirme (STOP-genis/bilgi-notu kategorisi).
+  - **Agent'lar arasi sayisal tutarlilik (10 Temmuz, KESiN):** Bir agent'in urettigi sayisal bulgu (orn. ornek buyuklugu, oran, esik-gecen olay sayisi) bir sonraki agent tarafindan referans alinacaksa/karsilastirilacaksa, sadece kopyalanmaz — hangi hesaplama/tanimdan geldigi (orn. sabit/global ortalama vs hareketli/nedensel ortalama, farkli veri araligi) once teyit edilir. Farkli agent'larin ayni metrigi farkli (ama kendi icinde gecerli) yontemle hesaplamis olmasi mumkundur; bu fark fark edilmeden tasinirsa, bir hesaplamanin sonucu yanlislikla digerinin "bagimsiz dogrulamasi" olarak sunulabilir.
 - **D) Onay Katmani
 Izleme ve onay/karar ayri fonksiyonlar, ikisi de bir arayuz gerektirir. Kanal secimi (Telegram vs Dashboard) daha once ertelendi, Dashboard Layer 2 (onay mekanizmasi) ile ortusuyor.
 - **E) Escalation:** 4 seviye — otomatik restart → Telegram → Claude Code uzaktan mudahale → bagimsiz uptime servisi + Contabo panel + onayli reboot
