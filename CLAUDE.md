@@ -95,6 +95,8 @@ Justin'de calisan hicbir agent, Lisa/Signal GPT/MilaGold'un bulgu, veri, indikat
 
 Not (10 Temmuz, netlestirme): Bu izolasyon MilaGold/Signal GPT'nin KENDI bulgu/veri/parametrelerine yoneliktir (dosyalari, ayarlanmis esik degerleri, Lisa'nin ozel mekanizmasi) — EMA, RSI, ATR gibi genel/evrensel teknik kavramlarin kullanimini yasaklamaz; Justin bunlari kendi bagimsiz analiziyle yeniden kesfedip kullanabilir. Bir agent'a "X'i kullanma" talimati verilirken X'in Signal GPT/MilaGold'a ait oldugu veya nasil calistigi aciklanmaz/isimlendirilmez (izolasyonu uygularken bilgi sizdirmamak icin) — sadece "tamamen bagimsiz/orijinal analiz yap" denir.
 
+Ek netlestirme (14 Temmuz): Izolasyon kurali sadece sayisal icerige degil, format/cumle-kalibi kopyalamaya da uygulanir — bir dosyayi "yapi/sablon referansi" icin acmak da izolasyon kapsamindadir, sadece parametre/veri kopyalamak degil. Orkestrator kendi sablonunu MilaGold dosyasina bakmadan bagimsiz turetmelidir.
+
 ### PROJE 3: COPY TRADiNG (Hazir — Beklemede)
 - XM Strategy Manager, "Mila Gold" hesabi
 - Min yatirim: ~200 USD, Ucret: ~%20
