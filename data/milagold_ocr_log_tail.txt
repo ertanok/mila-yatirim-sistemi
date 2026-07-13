@@ -1,12 +1,3 @@
-	chromedriver!(No symbol) [0x7ff762655756]
-	chromedriver!(No symbol) [0x7ff7626a1ba6]
-	chromedriver!(No symbol) [0x7ff7626d8d72]
-	chromedriver!(No symbol) [0x7ff7626d2b92]
-	chromedriver!(No symbol) [0x7ff7626d2352]
-	chromedriver!(No symbol) [0x7ff76261de1b]
-	chromedriver!(No symbol) [0x7ff76261e472]
-	chromedriver!(No symbol) [0x7ff76261ea35]
-	chromedriver!GetHandleVerifier [0x7ff7630dd3a1+5f7de1]
 	chromedriver!GetHandleVerifier [0x7ff7630d7a3b+5f247b]
 	chromedriver!GetHandleVerifier [0x7ff7630fbca5+6166e5]
 	chromedriver!GetHandleVerifier [0x7ff762b172ae+31cee]
@@ -78,3 +69,12 @@ Stacktrace:
 2026-07-14 00:20:11,487 | Chrome versiyonu (exe): 150.0.7871.114
 2026-07-14 00:20:11,487 | ChromeDriver cache'den: C:\MilaYatirim\mila-yatirim-sistemi\MilaGold\chromedriver_cache\150.0.7871.114\chromedriver.exe
 2026-07-14 00:20:11,488 | ChromeDriver: C:\MilaYatirim\mila-yatirim-sistemi\MilaGold\chromedriver_cache\150.0.7871.114\chromedriver.exe
+2026-07-14 00:50:38,778 | EasyOCR yukleniyor...
+2026-07-14 00:50:38,779 | Using CPU. Note: This module is much faster with a GPU.
+2026-07-14 00:50:41,326 | EasyOCR hazir.
+2026-07-14 00:50:41,327 | ==================================================
+2026-07-14 00:50:41,327 | MilaGold OCR Agent - Signal GPT versiyonu
+2026-07-14 00:50:41,327 | ==================================================
+2026-07-14 00:50:41,625 | Chrome versiyonu (exe): 150.0.7871.114
+2026-07-14 00:50:41,625 | ChromeDriver cache'den: C:\MilaYatirim\mila-yatirim-sistemi\MilaGold\chromedriver_cache\150.0.7871.114\chromedriver.exe
+2026-07-14 00:50:41,626 | ChromeDriver: C:\MilaYatirim\mila-yatirim-sistemi\MilaGold\chromedriver_cache\150.0.7871.114\chromedriver.exe
