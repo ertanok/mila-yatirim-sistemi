@@ -1,7 +1,3 @@
-[2026-07-13 06:18:32] Bekleyen emir iptal edildi: ticket=938455302
-[2026-07-13 06:18:32] Yeni sinyal alindi: #None SELL @ 4078.0
-[2026-07-13 06:18:32] EMA filtresi: SELL ONAYLANDI — fiyat=4060.05 <= EMA20=4069.35
-[2026-07-13 06:18:33] Streak filtresi: SELL ONAYLANDI — EMA100 streak=64 >= 13
 [2026-07-13 06:18:33] Emir turu: SELL_LIMIT (fiyat=4060.05 <= entry=4078.0)
 2026-07-13 06:18:33.004 | T4 | SELL@4078.0 | order_send cagrilacak
 2026-07-13 06:18:33.018 | T5 | SELL@4078.0 | order_send sonucu: basarili
@@ -78,3 +74,7 @@
 2026-07-13 06:40:37.833 | T4 | SELL@4059.0 | order_send cagrilacak
 2026-07-13 06:40:37.868 | T5 | SELL@4059.0 | order_send sonucu: basarili
 [2026-07-13 06:40:37] Islem acildi: 938486939 | SELL @ 4059.0 | SL:4064.0 | TP1:4056.0 TP2:4054.0 TP3:4051.0
+[2026-07-13 06:41:07] Heartbeat: 1 aktif islem | Bakiye: 780.61 USD
+[2026-07-13 06:41:37] Heartbeat: 1 aktif islem | Bakiye: 780.61 USD
+[2026-07-13 06:42:07] Heartbeat: 1 aktif islem | Bakiye: 780.61 USD
+[2026-07-13 06:42:37] Heartbeat: 1 aktif islem | Bakiye: 780.61 USD
