@@ -1,80 +1,80 @@
-	chromedriver!GetHandleVerifier [0x7ff7ed77bf5e+3319e]
-	chromedriver!GetHandleVerifier [0x7ff7ed78474c+3b98c]
-	chromedriver!(No symbol) [0x7ff7ed25d5fc]
-	chromedriver!GetHandleVerifier [0x7ff7edeecbf8+7a3e38]
-	KERNEL32!BaseThreadInitThunk [0x7ffdc5b34ed0+10]
-	ntdll!RtlUserThreadStart [0x7ffdc748e20b+2b]
-
-2026-07-13 23:16:47,235 | Dongu hatasi: Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
-Stacktrace:
-	chromedriver!GetHandleVerifier [0x7ff7ed75e1b5+153f5]
-	chromedriver!GetHandleVerifier [0x7ff7ed75e210+15450]
-	chromedriver!(No symbol) [0x7ff7ed2959a6]
-	chromedriver!(No symbol) [0x7ff7ed2e2683]
-	chromedriver!(No symbol) [0x7ff7ed319882]
-	chromedriver!(No symbol) [0x7ff7ed313692]
-	chromedriver!(No symbol) [0x7ff7ed312e53]
-	chromedriver!(No symbol) [0x7ff7ed25e07b]
-	chromedriver!(No symbol) [0x7ff7ed25e6d2]
-	chromedriver!(No symbol) [0x7ff7ed25ec95]
-	chromedriver!GetHandleVerifier [0x7ff7edd29791+5e09d1]
-	chromedriver!GetHandleVerifier [0x7ff7edd23b3b+5dad7b]
-	chromedriver!GetHandleVerifier [0x7ff7edd49315+600555]
-	chromedriver!GetHandleVerifier [0x7ff7ed77bf5e+3319e]
-	chromedriver!GetHandleVerifier [0x7ff7ed78474c+3b98c]
-	chromedriver!(No symbol) [0x7ff7ed25d5fc]
-	chromedriver!GetHandleVerifier [0x7ff7edeecbf8+7a3e38]
-	KERNEL32!BaseThreadInitThunk [0x7ffdc5b34ed0+10]
-	ntdll!RtlUserThreadStart [0x7ffdc748e20b+2b]
-
-2026-07-13 23:16:50,244 | Dongu hatasi: Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
-Stacktrace:
-	chromedriver!GetHandleVerifier [0x7ff7ed75e1b5+153f5]
-	chromedriver!GetHandleVerifier [0x7ff7ed75e210+15450]
-	chromedriver!(No symbol) [0x7ff7ed2959a6]
-	chromedriver!(No symbol) [0x7ff7ed2e2683]
-	chromedriver!(No symbol) [0x7ff7ed319882]
-	chromedriver!(No symbol) [0x7ff7ed313692]
-	chromedriver!(No symbol) [0x7ff7ed312e53]
-	chromedriver!(No symbol) [0x7ff7ed25e07b]
-	chromedriver!(No symbol) [0x7ff7ed25e6d2]
-	chromedriver!(No symbol) [0x7ff7ed25ec95]
-	chromedriver!GetHandleVerifier [0x7ff7edd29791+5e09d1]
-	chromedriver!GetHandleVerifier [0x7ff7edd23b3b+5dad7b]
-	chromedriver!GetHandleVerifier [0x7ff7edd49315+600555]
-	chromedriver!GetHandleVerifier [0x7ff7ed77bf5e+3319e]
-	chromedriver!GetHandleVerifier [0x7ff7ed78474c+3b98c]
-	chromedriver!(No symbol) [0x7ff7ed25d5fc]
-	chromedriver!GetHandleVerifier [0x7ff7edeecbf8+7a3e38]
-	KERNEL32!BaseThreadInitThunk [0x7ffdc5b34ed0+10]
-	ntdll!RtlUserThreadStart [0x7ffdc748e20b+2b]
-
-2026-07-13 23:18:22,636 | EasyOCR yukleniyor...
-2026-07-13 23:18:22,638 | Using CPU. Note: This module is much faster with a GPU.
-2026-07-13 23:18:26,478 | EasyOCR hazir.
-2026-07-13 23:18:26,478 | ==================================================
-2026-07-13 23:18:26,478 | MilaGold OCR Agent - Signal GPT versiyonu
-2026-07-13 23:18:26,478 | ==================================================
-2026-07-13 23:18:27,203 | Chrome versiyonu (exe): 150.0.7871.114
-2026-07-13 23:18:27,204 | ChromeDriver 150.0.7871.114 indiriliyor (Chrome for Testing API)...
-2026-07-13 23:18:27,432 | Indiriliyor: https://storage.googleapis.com/chrome-for-testing-public/150.0.7871.115/win64/chromedriver-win64.zip
-2026-07-13 23:18:28,837 | ChromeDriver indirildi: C:\MilaYatirim\mila-yatirim-sistemi\MilaGold\chromedriver_cache\150.0.7871.114\chromedriver.exe
-2026-07-13 23:18:28,849 | ChromeDriver: C:\MilaYatirim\mila-yatirim-sistemi\MilaGold\chromedriver_cache\150.0.7871.114\chromedriver.exe
-2026-07-13 23:18:30,353 | Signal GPT sayfasina gidildi.
-2026-07-13 23:18:30,354 | Sayfa yukleniyor, 15 saniye bekleniyor...
-2026-07-13 23:18:45,752 | Baslangic screenshot alindi.
-2026-07-13 23:18:45,755 | Ilk okuma oncesi 5 saniye bekleniyor...
-2026-07-13 23:18:50,756 | Okuma dongusune giriliyor...
-2026-07-13 23:18:52,748 | GOLD karti okunamadi (1). Ham: ['Disclaimer', 'The information on signalgpt ai is for reference and', 'Iknowledge-sharing [']
-2026-07-13 23:18:56,192 | GOLD karti okunamadi (2). Ham: ['Disclaimer', 'The information on signalgpt ai is for reference and', 'Iknowledge-sharing [']
-2026-07-13 23:19:00,354 | GOLD karti okunamadi (3). Ham: ['Disclaimer', 'The information on signalgpt ai is for reference and', 'Iknowledge-sharing [']
-2026-07-13 23:19:03,722 | GOLD karti okunamadi (4). Ham: ['Disclaimer', 'The information on signalgpt ai is for reference and', 'Iknowledge-sharing [']
-2026-07-13 23:19:09,352 | Sinyal tarihi okundu: 14/07/2026 03:18
-2026-07-13 23:19:09,352 | T1 | SELL@3998.3 | sinyal tespit edildi
-2026-07-13 23:19:09,353 | Olasi yeni sinyal, HEMEN yazildi (dogrulama bekleniyor 1/2): #None | SELL @ 3998.3
-2026-07-13 23:19:09,353 | signal.json yazildi.
-2026-07-13 23:19:09,353 | T2 | SELL@3998.3 | signal.json yazildi
 2026-07-13 23:19:13,305 | Sinyal tarihi okundu: 14/07/2026 03:18
 2026-07-13 23:19:13,306 | Yeni sinyal DOGRULANDI (2 okuma): entry=3998.3 pending=3998.3
 2026-07-13 23:19:16,896 | Sinyal tarihi okundu: 14/07/2026 03:18
 2026-07-13 23:19:16,896 | Takip: SELL @ 3998.3 | Status:RUNNING
+2026-07-13 23:19:20,119 | Sinyal tarihi okundu: 14/07/2026 03:18
+2026-07-13 23:19:20,119 | Takip: SELL @ 3998.3 | Status:RUNNING
+2026-07-13 23:19:23,036 | Sinyal tarihi okundu: 14/07/2026 03:18
+2026-07-13 23:19:23,037 | Takip: SELL @ 3998.3 | Status:RUNNING
+2026-07-13 23:19:25,907 | Sinyal tarihi okundu: 14/07/2026 03:18
+2026-07-13 23:19:25,907 | Takip: SELL @ 3998.3 | Status:RUNNING
+2026-07-13 23:19:28,865 | Sinyal tarihi okundu: 14/07/2026 03:18
+2026-07-13 23:19:28,865 | Takip: SELL @ 3998.3 | Status:RUNNING
+2026-07-13 23:19:32,055 | Sinyal tarihi okundu: 14/07/2026 03:18
+2026-07-13 23:19:32,055 | Takip: SELL @ 3998.3 | Status:RUNNING
+2026-07-13 23:19:35,337 | Sinyal tarihi okundu: 14/07/2026 03:18
+2026-07-13 23:19:35,337 | Takip: SELL @ 3998.3 | Status:RUNNING
+2026-07-13 23:19:38,669 | Sinyal tarihi okundu: 14/07/2026 03:18
+2026-07-13 23:19:38,669 | Takip: SELL @ 3998.3 | Status:RUNNING
+2026-07-13 23:19:41,850 | Sinyal tarihi okundu: 14/07/2026 03:18
+2026-07-13 23:19:41,851 | Takip: SELL @ 3998.3 | Status:RUNNING
+2026-07-13 23:19:45,085 | Sinyal tarihi okundu: 14/07/2026 03:18
+2026-07-13 23:19:45,086 | Takip: SELL @ 3998.3 | Status:RUNNING
+2026-07-13 23:19:48,621 | Sinyal tarihi okundu: 14/07/2026 03:18
+2026-07-13 23:19:48,622 | Takip: SELL @ 3998.3 | Status:RUNNING
+2026-07-13 23:19:51,881 | Sinyal tarihi okundu: 14/07/2026 03:18
+2026-07-13 23:19:51,882 | Takip: SELL @ 3998.3 | Status:RUNNING
+2026-07-13 23:19:55,164 | Sinyal tarihi okundu: 14/07/2026 03:18
+2026-07-13 23:19:55,164 | Takip: SELL @ 3998.3 | Status:RUNNING
+2026-07-13 23:19:58,564 | Sinyal tarihi okundu: 14/07/2026 03:18
+2026-07-13 23:19:58,565 | Takip: SELL @ 3998.3 | Status:RUNNING
+2026-07-13 23:20:02,685 | Sinyal tarihi okundu: 14/07/2026 03:18
+2026-07-13 23:20:02,685 | Takip: SELL @ 3998.3 | Status:RUNNING
+2026-07-13 23:20:05,973 | Sinyal tarihi okundu: 14/07/2026 03:18
+2026-07-13 23:20:05,974 | Takip: SELL @ 3998.3 | Status:RUNNING
+2026-07-13 23:20:09,482 | Sinyal tarihi okundu: 14/07/2026 03:18
+2026-07-13 23:20:09,483 | Takip: SELL @ 3998.3 | Status:RUNNING
+2026-07-13 23:20:13,377 | Sinyal tarihi okundu: 14/07/2026 03:18
+2026-07-13 23:20:13,378 | Takip: SELL @ 3998.3 | Status:RUNNING
+2026-07-13 23:20:16,811 | Sinyal tarihi okundu: 14/07/2026 03:18
+2026-07-13 23:20:16,812 | Takip: SELL @ 3998.3 | Status:RUNNING
+2026-07-13 23:20:20,249 | Sinyal tarihi okundu: 14/07/2026 03:18
+2026-07-13 23:20:20,249 | Takip: SELL @ 3998.3 | Status:RUNNING
+2026-07-13 23:20:23,746 | Sinyal tarihi okundu: 14/07/2026 03:18
+2026-07-13 23:20:23,747 | Takip: SELL @ 3998.3 | Status:RUNNING
+2026-07-13 23:20:26,933 | Sinyal tarihi okundu: 14/07/2026 03:18
+2026-07-13 23:20:26,933 | Takip: SELL @ 3998.3 | Status:RUNNING
+2026-07-13 23:20:30,363 | Sinyal tarihi okundu: 14/07/2026 03:18
+2026-07-13 23:20:30,363 | Takip: SELL @ 3998.3 | Status:RUNNING
+2026-07-13 23:20:33,446 | Sinyal tarihi okundu: 14/07/2026 03:18
+2026-07-13 23:20:33,447 | Takip: SELL @ 3998.3 | Status:RUNNING
+2026-07-13 23:20:36,735 | Sinyal tarihi okundu: 14/07/2026 03:18
+2026-07-13 23:20:36,736 | Takip: SELL @ 3998.3 | Status:RUNNING
+2026-07-13 23:20:39,926 | Sinyal tarihi okundu: 14/07/2026 03:18
+2026-07-13 23:20:39,926 | Takip: SELL @ 3998.3 | Status:RUNNING
+2026-07-13 23:20:42,985 | Sinyal tarihi okundu: 14/07/2026 03:18
+2026-07-13 23:20:42,985 | Takip: SELL @ 3998.3 | Status:RUNNING
+2026-07-13 23:20:46,081 | Sinyal tarihi okundu: 14/07/2026 03:18
+2026-07-13 23:20:46,082 | Takip: SELL @ 3998.3 | Status:RUNNING
+2026-07-13 23:20:49,452 | Sinyal tarihi okundu: 14/07/2026 03:18
+2026-07-13 23:20:49,452 | Takip: SELL @ 3998.3 | Status:RUNNING
+2026-07-13 23:20:52,937 | Sinyal tarihi okundu: 14/07/2026 03:18
+2026-07-13 23:20:52,938 | Takip: SELL @ 3998.3 | Status:RUNNING
+2026-07-13 23:20:56,045 | Sinyal tarihi okundu: 14/07/2026 03:18
+2026-07-13 23:20:56,046 | Takip: SELL @ 3998.3 | Status:RUNNING
+2026-07-13 23:20:59,125 | Sinyal tarihi okundu: 14/07/2026 03:18
+2026-07-13 23:20:59,126 | Takip: SELL @ 3998.3 | Status:RUNNING
+2026-07-13 23:21:02,554 | Sinyal tarihi okundu: 14/07/2026 03:18
+2026-07-13 23:21:02,554 | Takip: SELL @ 3998.3 | Status:RUNNING
+2026-07-13 23:21:06,031 | Sinyal tarihi okundu: 14/07/2026 03:18
+2026-07-13 23:21:06,032 | Takip: SELL @ 3998.3 | Status:RUNNING
+2026-07-13 23:21:09,234 | Sinyal tarihi okundu: 14/07/2026 03:18
+2026-07-13 23:21:09,234 | Takip: SELL @ 3998.3 | Status:RUNNING
+2026-07-13 23:21:12,266 | Sinyal tarihi okundu: 14/07/2026 03:18
+2026-07-13 23:21:12,267 | Takip: SELL @ 3998.3 | Status:RUNNING
+2026-07-13 23:21:15,620 | Sinyal tarihi okundu: 14/07/2026 03:18
+2026-07-13 23:21:15,620 | Takip: SELL @ 3998.3 | Status:RUNNING
+2026-07-13 23:21:19,287 | Sinyal tarihi okundu: 14/07/2026 03:18
+2026-07-13 23:21:19,288 | Takip: SELL @ 3998.3 | Status:RUNNING
+2026-07-13 23:21:22,371 | Sinyal tarihi okundu: 14/07/2026 03:18
+2026-07-13 23:21:22,371 | Takip: SELL @ 3998.3 | Status:RUNNING
