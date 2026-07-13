@@ -12,7 +12,7 @@
 	KERNEL32!BaseThreadInitThunk [0x7ffdc5b34ed0+10]
 	ntdll!RtlUserThreadStart [0x7ffdc748e20b+2b]
 
-2026-07-13 22:19:52,001 | Dongu hatasi: Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
+2026-07-13 22:22:01,520 | Dongu hatasi: Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
 Stacktrace:
 	chromedriver!GetHandleVerifier [0x7ff7ed75e1b5+153f5]
 	chromedriver!GetHandleVerifier [0x7ff7ed75e210+15450]
@@ -34,7 +34,7 @@ Stacktrace:
 	KERNEL32!BaseThreadInitThunk [0x7ffdc5b34ed0+10]
 	ntdll!RtlUserThreadStart [0x7ffdc748e20b+2b]
 
-2026-07-13 22:19:55,006 | Dongu hatasi: Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
+2026-07-13 22:22:04,526 | Dongu hatasi: Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
 Stacktrace:
 	chromedriver!GetHandleVerifier [0x7ff7ed75e1b5+153f5]
 	chromedriver!GetHandleVerifier [0x7ff7ed75e210+15450]
@@ -56,7 +56,7 @@ Stacktrace:
 	KERNEL32!BaseThreadInitThunk [0x7ffdc5b34ed0+10]
 	ntdll!RtlUserThreadStart [0x7ffdc748e20b+2b]
 
-2026-07-13 22:19:58,033 | Dongu hatasi: Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
+2026-07-13 22:22:07,539 | Dongu hatasi: Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
 Stacktrace:
 	chromedriver!GetHandleVerifier [0x7ff7ed75e1b5+153f5]
 	chromedriver!GetHandleVerifier [0x7ff7ed75e210+15450]
