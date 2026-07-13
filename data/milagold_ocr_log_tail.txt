@@ -1,80 +1,80 @@
-	chromedriver!(No symbol) [0x7ff76261ea35]
-	chromedriver!GetHandleVerifier [0x7ff7630dd3a1+5f7de1]
-	chromedriver!GetHandleVerifier [0x7ff7630d7a3b+5f247b]
-	chromedriver!GetHandleVerifier [0x7ff7630fbca5+6166e5]
-	chromedriver!GetHandleVerifier [0x7ff762b172ae+31cee]
-	chromedriver!GetHandleVerifier [0x7ff762b1fe3c+3a87c]
-	chromedriver!(No symbol) [0x7ff76261d39c]
-	chromedriver!GetHandleVerifier [0x7ff7632ba558+7d4f98]
-	KERNEL32!BaseThreadInitThunk [0x7ff9c5854ed0+10]
-	ntdll!RtlUserThreadStart [0x7ff9c6a0e20b+2b]
-
-2026-07-13 23:50:11,873 | EasyOCR yukleniyor...
-2026-07-13 23:50:11,876 | Using CPU. Note: This module is much faster with a GPU.
-2026-07-13 23:50:14,538 | EasyOCR hazir.
-2026-07-13 23:50:14,538 | ==================================================
-2026-07-13 23:50:14,539 | MilaGold OCR Agent - Signal GPT versiyonu
-2026-07-13 23:50:14,539 | ==================================================
-2026-07-13 23:50:14,892 | Chrome versiyonu (exe): 150.0.7871.114
-2026-07-13 23:50:14,893 | ChromeDriver cache'den: C:\MilaYatirim\mila-yatirim-sistemi\MilaGold\chromedriver_cache\150.0.7871.114\chromedriver.exe
-2026-07-13 23:50:14,893 | ChromeDriver: C:\MilaYatirim\mila-yatirim-sistemi\MilaGold\chromedriver_cache\150.0.7871.114\chromedriver.exe
-2026-07-14 00:20:08,424 | EasyOCR yukleniyor...
-2026-07-14 00:20:08,426 | Using CPU. Note: This module is much faster with a GPU.
-2026-07-14 00:20:11,143 | EasyOCR hazir.
-2026-07-14 00:20:11,143 | ==================================================
-2026-07-14 00:20:11,144 | MilaGold OCR Agent - Signal GPT versiyonu
-2026-07-14 00:20:11,144 | ==================================================
-2026-07-14 00:20:11,487 | Chrome versiyonu (exe): 150.0.7871.114
-2026-07-14 00:20:11,487 | ChromeDriver cache'den: C:\MilaYatirim\mila-yatirim-sistemi\MilaGold\chromedriver_cache\150.0.7871.114\chromedriver.exe
-2026-07-14 00:20:11,488 | ChromeDriver: C:\MilaYatirim\mila-yatirim-sistemi\MilaGold\chromedriver_cache\150.0.7871.114\chromedriver.exe
-2026-07-14 00:50:38,778 | EasyOCR yukleniyor...
-2026-07-14 00:50:38,779 | Using CPU. Note: This module is much faster with a GPU.
-2026-07-14 00:50:41,326 | EasyOCR hazir.
-2026-07-14 00:50:41,327 | ==================================================
-2026-07-14 00:50:41,327 | MilaGold OCR Agent - Signal GPT versiyonu
-2026-07-14 00:50:41,327 | ==================================================
-2026-07-14 00:50:41,625 | Chrome versiyonu (exe): 150.0.7871.114
-2026-07-14 00:50:41,625 | ChromeDriver cache'den: C:\MilaYatirim\mila-yatirim-sistemi\MilaGold\chromedriver_cache\150.0.7871.114\chromedriver.exe
-2026-07-14 00:50:41,626 | ChromeDriver: C:\MilaYatirim\mila-yatirim-sistemi\MilaGold\chromedriver_cache\150.0.7871.114\chromedriver.exe
-2026-07-14 01:20:44,299 | EasyOCR yukleniyor...
-2026-07-14 01:20:44,300 | Using CPU. Note: This module is much faster with a GPU.
-2026-07-14 01:20:47,279 | EasyOCR hazir.
-2026-07-14 01:20:47,279 | ==================================================
-2026-07-14 01:20:47,280 | MilaGold OCR Agent - Signal GPT versiyonu
-2026-07-14 01:20:47,280 | ==================================================
-2026-07-14 01:20:47,655 | Chrome versiyonu (exe): 150.0.7871.114
-2026-07-14 01:20:47,656 | ChromeDriver cache'den: C:\MilaYatirim\mila-yatirim-sistemi\MilaGold\chromedriver_cache\150.0.7871.114\chromedriver.exe
-2026-07-14 01:20:47,657 | ChromeDriver: C:\MilaYatirim\mila-yatirim-sistemi\MilaGold\chromedriver_cache\150.0.7871.114\chromedriver.exe
-2026-07-14 01:50:52,390 | EasyOCR yukleniyor...
-2026-07-14 01:50:52,392 | Using CPU. Note: This module is much faster with a GPU.
-2026-07-14 01:50:56,084 | EasyOCR hazir.
-2026-07-14 01:50:56,084 | ==================================================
-2026-07-14 01:50:56,085 | MilaGold OCR Agent - Signal GPT versiyonu
-2026-07-14 01:50:56,085 | ==================================================
-2026-07-14 01:50:56,539 | Chrome versiyonu (exe): 150.0.7871.114
-2026-07-14 01:50:56,540 | ChromeDriver cache'den: C:\MilaYatirim\mila-yatirim-sistemi\MilaGold\chromedriver_cache\150.0.7871.114\chromedriver.exe
-2026-07-14 01:50:56,541 | ChromeDriver: C:\MilaYatirim\mila-yatirim-sistemi\MilaGold\chromedriver_cache\150.0.7871.114\chromedriver.exe
-2026-07-14 02:21:11,530 | EasyOCR yukleniyor...
-2026-07-14 02:21:11,531 | Using CPU. Note: This module is much faster with a GPU.
-2026-07-14 02:21:15,062 | EasyOCR hazir.
-2026-07-14 02:21:15,062 | ==================================================
-2026-07-14 02:21:15,063 | MilaGold OCR Agent - Signal GPT versiyonu
-2026-07-14 02:21:15,063 | ==================================================
-2026-07-14 02:21:15,430 | Chrome versiyonu (exe): 150.0.7871.114
-2026-07-14 02:21:15,431 | ChromeDriver cache'den: C:\MilaYatirim\mila-yatirim-sistemi\MilaGold\chromedriver_cache\150.0.7871.114\chromedriver.exe
-2026-07-14 02:21:15,432 | ChromeDriver: C:\MilaYatirim\mila-yatirim-sistemi\MilaGold\chromedriver_cache\150.0.7871.114\chromedriver.exe
-2026-07-14 02:21:16,592 | Signal GPT sayfasina gidildi.
-2026-07-14 02:21:16,593 | Sayfa yukleniyor, 15 saniye bekleniyor...
-2026-07-14 02:21:31,867 | Baslangic screenshot alindi.
-2026-07-14 02:21:31,867 | Ilk okuma oncesi 5 saniye bekleniyor...
-2026-07-14 02:21:36,868 | Okuma dongusune giriliyor...
-2026-07-14 02:21:38,554 | GOLD karti okunamadi (1). Ham: ['Disclaimer', 'The information on signalgpt ai is for reference and', 'Iknowledge-sharing [']
-2026-07-14 02:21:42,114 | GOLD karti okunamadi (2). Ham: ['Disclaimer', 'The information on signalgpt ai is for reference and', 'Iknowledge-sharing [']
-2026-07-14 02:21:46,008 | GOLD karti okunamadi (3). Ham: ['Disclaimer', 'The information on signalgpt ai is for reference and', 'Iknowledge-sharing [']
-2026-07-14 02:21:51,388 | Sinyal tarihi okundu: 14/07/2026 06:04
-2026-07-14 02:21:51,389 | T1 | SELL@4002.0 | sinyal tespit edildi
-2026-07-14 02:21:51,389 | Olasi yeni sinyal, HEMEN yazildi (dogrulama bekleniyor 1/2): #None | SELL @ 4002.0
-2026-07-14 02:21:51,389 | signal.json yazildi.
-2026-07-14 02:21:51,390 | T2 | SELL@4002.0 | signal.json yazildi
 2026-07-14 02:21:54,957 | Sinyal tarihi okundu: 14/07/2026 06:04
 2026-07-14 02:21:54,957 | Yeni sinyal DOGRULANDI (2 okuma): entry=4002.0 pending=4002.0
+2026-07-14 02:21:58,822 | Sinyal tarihi okundu: 14/07/2026 06:04
+2026-07-14 02:21:58,822 | Takip: SELL @ 4002.0 | Status:RUNNING
+2026-07-14 02:22:02,162 | Sinyal tarihi okundu: 14/07/2026 06:04
+2026-07-14 02:22:02,163 | Takip: SELL @ 4002.0 | Status:RUNNING
+2026-07-14 02:22:05,440 | Sinyal tarihi okundu: 14/07/2026 06:04
+2026-07-14 02:22:05,440 | Takip: SELL @ 4002.0 | Status:RUNNING
+2026-07-14 02:22:09,452 | Sinyal tarihi okundu: 14/07/2026 06:04
+2026-07-14 02:22:09,452 | Takip: SELL @ 4002.0 | Status:RUNNING
+2026-07-14 02:22:12,769 | Sinyal tarihi okundu: 14/07/2026 06:04
+2026-07-14 02:22:12,769 | Takip: SELL @ 4002.0 | Status:RUNNING
+2026-07-14 02:22:15,703 | Sinyal tarihi okundu: 14/07/2026 06:04
+2026-07-14 02:22:15,704 | Takip: SELL @ 4002.0 | Status:RUNNING
+2026-07-14 02:22:19,083 | Sinyal tarihi okundu: 14/07/2026 06:04
+2026-07-14 02:22:19,083 | Takip: SELL @ 4002.0 | Status:RUNNING
+2026-07-14 02:22:22,188 | Sinyal tarihi okundu: 14/07/2026 06:04
+2026-07-14 02:22:22,188 | Takip: SELL @ 4002.0 | Status:RUNNING
+2026-07-14 02:22:25,346 | Sinyal tarihi okundu: 14/07/2026 06:04
+2026-07-14 02:22:25,346 | Takip: SELL @ 4002.0 | Status:RUNNING
+2026-07-14 02:22:28,608 | Sinyal tarihi okundu: 14/07/2026 06:04
+2026-07-14 02:22:28,608 | Takip: SELL @ 4002.0 | Status:RUNNING
+2026-07-14 02:22:31,917 | Sinyal tarihi okundu: 14/07/2026 06:04
+2026-07-14 02:22:31,918 | Takip: SELL @ 4002.0 | Status:RUNNING
+2026-07-14 02:22:35,121 | Sinyal tarihi okundu: 14/07/2026 06:04
+2026-07-14 02:22:35,122 | Takip: SELL @ 4002.0 | Status:RUNNING
+2026-07-14 02:22:38,208 | Sinyal tarihi okundu: 14/07/2026 06:04
+2026-07-14 02:22:38,209 | Takip: SELL @ 4002.0 | Status:RUNNING
+2026-07-14 02:22:41,117 | Sinyal tarihi okundu: 14/07/2026 06:04
+2026-07-14 02:22:41,117 | Takip: SELL @ 4002.0 | Status:RUNNING
+2026-07-14 02:22:44,132 | Sinyal tarihi okundu: 14/07/2026 06:04
+2026-07-14 02:22:44,133 | Takip: SELL @ 4002.0 | Status:RUNNING
+2026-07-14 02:22:47,047 | Sinyal tarihi okundu: 14/07/2026 06:04
+2026-07-14 02:22:47,047 | Takip: SELL @ 4002.0 | Status:RUNNING
+2026-07-14 02:22:50,163 | Sinyal tarihi okundu: 14/07/2026 06:04
+2026-07-14 02:22:50,164 | Takip: SELL @ 4002.0 | Status:RUNNING
+2026-07-14 02:22:53,347 | Sinyal tarihi okundu: 14/07/2026 06:04
+2026-07-14 02:22:53,348 | Takip: SELL @ 4002.0 | Status:RUNNING
+2026-07-14 02:22:56,368 | Sinyal tarihi okundu: 14/07/2026 06:04
+2026-07-14 02:22:56,368 | Takip: SELL @ 4002.0 | Status:RUNNING
+2026-07-14 02:23:00,280 | Sinyal tarihi okundu: 14/07/2026 06:04
+2026-07-14 02:23:00,281 | Takip: SELL @ 4002.0 | Status:RUNNING
+2026-07-14 02:23:03,953 | Sinyal tarihi okundu: 14/07/2026 06:04
+2026-07-14 02:23:03,954 | Takip: SELL @ 4002.0 | Status:RUNNING
+2026-07-14 02:23:06,971 | Sinyal tarihi okundu: 14/07/2026 06:04
+2026-07-14 02:23:06,972 | Takip: SELL @ 4002.0 | Status:RUNNING
+2026-07-14 02:23:10,273 | Sinyal tarihi okundu: 14/07/2026 06:04
+2026-07-14 02:23:10,273 | Takip: SELL @ 4002.0 | Status:RUNNING
+2026-07-14 02:23:13,782 | Sinyal tarihi okundu: 14/07/2026 06:04
+2026-07-14 02:23:13,783 | Takip: SELL @ 4002.0 | Status:RUNNING
+2026-07-14 02:23:17,822 | Sinyal tarihi okundu: 14/07/2026 06:04
+2026-07-14 02:23:17,822 | Takip: SELL @ 4002.0 | Status:RUNNING
+2026-07-14 02:23:20,985 | Sinyal tarihi okundu: 14/07/2026 06:04
+2026-07-14 02:23:20,986 | Takip: SELL @ 4002.0 | Status:RUNNING
+2026-07-14 02:23:23,949 | Sinyal tarihi okundu: 14/07/2026 06:04
+2026-07-14 02:23:23,950 | Takip: SELL @ 4002.0 | Status:RUNNING
+2026-07-14 02:23:27,112 | Sinyal tarihi okundu: 14/07/2026 06:04
+2026-07-14 02:23:27,113 | Takip: SELL @ 4002.0 | Status:RUNNING
+2026-07-14 02:23:30,093 | Sinyal tarihi okundu: 14/07/2026 06:04
+2026-07-14 02:23:30,094 | Takip: SELL @ 4002.0 | Status:RUNNING
+2026-07-14 02:23:33,415 | Sinyal tarihi okundu: 14/07/2026 06:04
+2026-07-14 02:23:33,415 | Takip: SELL @ 4002.0 | Status:RUNNING
+2026-07-14 02:23:36,514 | Sinyal tarihi okundu: 14/07/2026 06:04
+2026-07-14 02:23:36,515 | Takip: SELL @ 4002.0 | Status:RUNNING
+2026-07-14 02:23:39,738 | Sinyal tarihi okundu: 14/07/2026 06:04
+2026-07-14 02:23:39,738 | Takip: SELL @ 4002.0 | Status:RUNNING
+2026-07-14 02:23:42,888 | Sinyal tarihi okundu: 14/07/2026 06:04
+2026-07-14 02:23:42,889 | Takip: SELL @ 4002.0 | Status:RUNNING
+2026-07-14 02:23:45,973 | Sinyal tarihi okundu: 14/07/2026 06:04
+2026-07-14 02:23:45,974 | Takip: SELL @ 4002.0 | Status:RUNNING
+2026-07-14 02:23:49,801 | Sinyal tarihi okundu: 14/07/2026 06:04
+2026-07-14 02:23:49,802 | Takip: SELL @ 4002.0 | Status:RUNNING
+2026-07-14 02:23:52,816 | Sinyal tarihi okundu: 14/07/2026 06:04
+2026-07-14 02:23:52,816 | Takip: SELL @ 4002.0 | Status:RUNNING
+2026-07-14 02:23:55,846 | Sinyal tarihi okundu: 14/07/2026 06:04
+2026-07-14 02:23:55,847 | Takip: SELL @ 4002.0 | Status:RUNNING
+2026-07-14 02:23:59,006 | Sinyal tarihi okundu: 14/07/2026 06:04
+2026-07-14 02:23:59,007 | Takip: SELL @ 4002.0 | Status:RUNNING
+2026-07-14 02:24:02,180 | Sinyal tarihi okundu: 14/07/2026 06:04
+2026-07-14 02:24:02,180 | Takip: SELL @ 4002.0 | Status:RUNNING
