@@ -1,27 +1,3 @@
-	chromedriver!(No symbol) [0x7ff76261de1b]
-	chromedriver!(No symbol) [0x7ff76261e472]
-	chromedriver!(No symbol) [0x7ff76261ea35]
-	chromedriver!GetHandleVerifier [0x7ff7630dd3a1+5f7de1]
-	chromedriver!GetHandleVerifier [0x7ff7630d7a3b+5f247b]
-	chromedriver!GetHandleVerifier [0x7ff7630fbca5+6166e5]
-	chromedriver!GetHandleVerifier [0x7ff762b172ae+31cee]
-	chromedriver!GetHandleVerifier [0x7ff762b1fe3c+3a87c]
-	chromedriver!(No symbol) [0x7ff76261d39c]
-	chromedriver!GetHandleVerifier [0x7ff7632ba558+7d4f98]
-	KERNEL32!BaseThreadInitThunk [0x7ff9c5854ed0+10]
-	ntdll!RtlUserThreadStart [0x7ff9c6a0e20b+2b]
-
-2026-07-13 23:49:55,591 | Dongu hatasi: Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
-Stacktrace:
-	chromedriver!GetHandleVerifier [0x7ff762afa865+152a5]
-	chromedriver!GetHandleVerifier [0x7ff762afa8c0+15300]
-	chromedriver!(No symbol) [0x7ff762655756]
-	chromedriver!(No symbol) [0x7ff7626a1ba6]
-	chromedriver!(No symbol) [0x7ff7626d8d72]
-	chromedriver!(No symbol) [0x7ff7626d2b92]
-	chromedriver!(No symbol) [0x7ff7626d2352]
-	chromedriver!(No symbol) [0x7ff76261de1b]
-	chromedriver!(No symbol) [0x7ff76261e472]
 	chromedriver!(No symbol) [0x7ff76261ea35]
 	chromedriver!GetHandleVerifier [0x7ff7630dd3a1+5f7de1]
 	chromedriver!GetHandleVerifier [0x7ff7630d7a3b+5f247b]
@@ -78,3 +54,27 @@ Stacktrace:
 2026-07-14 01:50:56,539 | Chrome versiyonu (exe): 150.0.7871.114
 2026-07-14 01:50:56,540 | ChromeDriver cache'den: C:\MilaYatirim\mila-yatirim-sistemi\MilaGold\chromedriver_cache\150.0.7871.114\chromedriver.exe
 2026-07-14 01:50:56,541 | ChromeDriver: C:\MilaYatirim\mila-yatirim-sistemi\MilaGold\chromedriver_cache\150.0.7871.114\chromedriver.exe
+2026-07-14 02:21:11,530 | EasyOCR yukleniyor...
+2026-07-14 02:21:11,531 | Using CPU. Note: This module is much faster with a GPU.
+2026-07-14 02:21:15,062 | EasyOCR hazir.
+2026-07-14 02:21:15,062 | ==================================================
+2026-07-14 02:21:15,063 | MilaGold OCR Agent - Signal GPT versiyonu
+2026-07-14 02:21:15,063 | ==================================================
+2026-07-14 02:21:15,430 | Chrome versiyonu (exe): 150.0.7871.114
+2026-07-14 02:21:15,431 | ChromeDriver cache'den: C:\MilaYatirim\mila-yatirim-sistemi\MilaGold\chromedriver_cache\150.0.7871.114\chromedriver.exe
+2026-07-14 02:21:15,432 | ChromeDriver: C:\MilaYatirim\mila-yatirim-sistemi\MilaGold\chromedriver_cache\150.0.7871.114\chromedriver.exe
+2026-07-14 02:21:16,592 | Signal GPT sayfasina gidildi.
+2026-07-14 02:21:16,593 | Sayfa yukleniyor, 15 saniye bekleniyor...
+2026-07-14 02:21:31,867 | Baslangic screenshot alindi.
+2026-07-14 02:21:31,867 | Ilk okuma oncesi 5 saniye bekleniyor...
+2026-07-14 02:21:36,868 | Okuma dongusune giriliyor...
+2026-07-14 02:21:38,554 | GOLD karti okunamadi (1). Ham: ['Disclaimer', 'The information on signalgpt ai is for reference and', 'Iknowledge-sharing [']
+2026-07-14 02:21:42,114 | GOLD karti okunamadi (2). Ham: ['Disclaimer', 'The information on signalgpt ai is for reference and', 'Iknowledge-sharing [']
+2026-07-14 02:21:46,008 | GOLD karti okunamadi (3). Ham: ['Disclaimer', 'The information on signalgpt ai is for reference and', 'Iknowledge-sharing [']
+2026-07-14 02:21:51,388 | Sinyal tarihi okundu: 14/07/2026 06:04
+2026-07-14 02:21:51,389 | T1 | SELL@4002.0 | sinyal tespit edildi
+2026-07-14 02:21:51,389 | Olasi yeni sinyal, HEMEN yazildi (dogrulama bekleniyor 1/2): #None | SELL @ 4002.0
+2026-07-14 02:21:51,389 | signal.json yazildi.
+2026-07-14 02:21:51,390 | T2 | SELL@4002.0 | signal.json yazildi
+2026-07-14 02:21:54,957 | Sinyal tarihi okundu: 14/07/2026 06:04
+2026-07-14 02:21:54,957 | Yeni sinyal DOGRULANDI (2 okuma): entry=4002.0 pending=4002.0
