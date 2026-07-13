@@ -1,7 +1,3 @@
-[2026-07-13 06:59:42] Heartbeat: 1 aktif islem | Bakiye: 780.61 USD
-[2026-07-13 07:00:12] Heartbeat: 1 aktif islem | Bakiye: 780.61 USD
-[2026-07-13 07:00:43] Heartbeat: 1 aktif islem | Bakiye: 780.61 USD
-2026-07-13 07:00:53.116 | T3 | SELL@4078.0 | signal.json okundu (MT5 agent)
 [2026-07-13 07:00:53] Yeni sinyal (yeni entry daha iyi): SELL@4059.0 -> SELL@4078.0. Kapatiliyor: ticket=938486939
 [2026-07-13 07:00:53] Pozisyon piyasadan kapatildi: ticket=938486939 @ 4059.58 (filling=1)
 [2026-07-13 07:00:53] Performans kaydedildi: Exit | -0.58 pip
@@ -78,3 +74,7 @@
 [2026-07-13 07:28:26] SL guncellendi: ticket=938507871 yeni SL=4059.0
 [2026-07-13 07:28:53] Heartbeat: 1 aktif islem | Bakiye: 780.09 USD
 [2026-07-13 07:29:23] Heartbeat: 1 aktif islem | Bakiye: 780.09 USD
+[2026-07-13 07:29:53] Heartbeat: 1 aktif islem | Bakiye: 780.09 USD
+[2026-07-13 07:30:23] Heartbeat: 1 aktif islem | Bakiye: 780.09 USD
+[2026-07-13 07:30:53] Heartbeat: 1 aktif islem | Bakiye: 780.09 USD
+[2026-07-13 07:31:24] Heartbeat: 1 aktif islem | Bakiye: 780.09 USD
