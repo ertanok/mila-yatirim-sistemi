@@ -1,16 +1,3 @@
-2026-07-13 17:30:27.357 | T5 | SELL@4017.0 | order_send sonucu: basarili
-[2026-07-13 17:30:27] Islem acildi: 939400012 | SELL @ 4017.0 | SL:4022.0 | TP1:4014.0 TP2:4012.0 TP3:4009.0
-[2026-07-13 17:30:33] Heartbeat: 1 aktif islem | Bakiye: 789.94 USD
-[2026-07-13 17:31:03] Heartbeat: 1 aktif islem | Bakiye: 789.94 USD
-[2026-07-13 17:31:34] Heartbeat: 1 aktif islem | Bakiye: 789.94 USD
-[2026-07-13 17:32:04] Heartbeat: 1 aktif islem | Bakiye: 789.94 USD
-[2026-07-13 17:32:34] Heartbeat: 1 aktif islem | Bakiye: 789.94 USD
-2026-07-13 17:32:52.225 | T3 | SELL@4057.5 | signal.json okundu (MT5 agent)
-[2026-07-13 17:32:52] Yeni sinyal geldi, bekleyen emir iptal ediliyor: ticket=939400012 (SELL @ 4017.0)
-[2026-07-13 17:32:52] Bekleyen emir iptal edildi: ticket=939400012
-[2026-07-13 17:32:52] Yeni sinyal alindi: #None SELL @ 4057.5
-[2026-07-13 17:32:52] EMA filtresi: SELL ONAYLANDI — fiyat=4009.47 <= EMA20=4040.64
-[2026-07-13 17:32:52] Streak filtresi: SELL ONAYLANDI — EMA100 streak=19 >= 13
 [2026-07-13 17:32:52] Emir turu: SELL_LIMIT (fiyat=4009.47 <= entry=4057.5)
 2026-07-13 17:32:52.266 | T4 | SELL@4057.5 | order_send cagrilacak
 2026-07-13 17:32:52.286 | T5 | SELL@4057.5 | order_send sonucu: basarili
@@ -78,3 +65,16 @@
 [2026-07-13 17:56:20] Heartbeat: 0 aktif islem | Bakiye: 788.21 USD
 [2026-07-13 17:56:50] Heartbeat: 0 aktif islem | Bakiye: 788.21 USD
 [2026-07-13 17:57:21] Heartbeat: 0 aktif islem | Bakiye: 788.21 USD
+[2026-07-13 17:57:51] Heartbeat: 0 aktif islem | Bakiye: 788.21 USD
+[2026-07-13 17:58:21] Heartbeat: 0 aktif islem | Bakiye: 788.21 USD
+2026-07-13 17:58:22.727 | T3 | SELL@4057.5 | signal.json okundu (MT5 agent)
+[2026-07-13 17:58:22] Yeni sinyal alindi: #None SELL @ 4057.5
+[2026-07-13 17:58:22] EMA filtresi: SELL ONAYLANDI — fiyat=4012.06 <= EMA20=4027.95
+[2026-07-13 17:58:22] Streak filtresi: SELL ONAYLANDI — EMA100 streak=24 >= 13
+[2026-07-13 17:58:22] Emir turu: SELL_LIMIT (fiyat=4012.06 <= entry=4057.5)
+2026-07-13 17:58:22.740 | T4 | SELL@4057.5 | order_send cagrilacak
+2026-07-13 17:58:22.753 | T5 | SELL@4057.5 | order_send sonucu: basarili
+[2026-07-13 17:58:22] Islem acildi: 939465046 | SELL @ 4057.5 | SL:4062.5 | TP1:4054.5 TP2:4052.5 TP3:4049.5
+[2026-07-13 17:58:52] Heartbeat: 1 aktif islem | Bakiye: 788.21 USD
+[2026-07-13 17:59:22] Heartbeat: 1 aktif islem | Bakiye: 788.21 USD
+[2026-07-13 17:59:52] Heartbeat: 1 aktif islem | Bakiye: 788.21 USD
