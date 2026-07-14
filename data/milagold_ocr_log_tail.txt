@@ -1,18 +1,9 @@
-	chromedriver!(No symbol) [0x7ff77fd72352]
-	chromedriver!(No symbol) [0x7ff77fcbde1b]
-	chromedriver!(No symbol) [0x7ff77fcbe472]
-	chromedriver!(No symbol) [0x7ff77fcbea35]
-	chromedriver!GetHandleVerifier [0x7ff78077d3a1+5f7de1]
-	chromedriver!GetHandleVerifier [0x7ff780777a3b+5f247b]
-	chromedriver!GetHandleVerifier [0x7ff78079bca5+6166e5]
-	chromedriver!GetHandleVerifier [0x7ff7801b72ae+31cee]
-	chromedriver!GetHandleVerifier [0x7ff7801bfe3c+3a87c]
 	chromedriver!(No symbol) [0x7ff77fcbd39c]
 	chromedriver!GetHandleVerifier [0x7ff78095a558+7d4f98]
 	KERNEL32!BaseThreadInitThunk [0x7ffd28994ed0+10]
 	ntdll!RtlUserThreadStart [0x7ffd296ee20b+2b]
 
-2026-07-14 05:02:01,944 | Dongu hatasi: Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
+2026-07-14 05:03:05,215 | Dongu hatasi: Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
 Stacktrace:
 	chromedriver!GetHandleVerifier [0x7ff78019a865+152a5]
 	chromedriver!GetHandleVerifier [0x7ff78019a8c0+15300]
@@ -34,7 +25,7 @@ Stacktrace:
 	KERNEL32!BaseThreadInitThunk [0x7ffd28994ed0+10]
 	ntdll!RtlUserThreadStart [0x7ffd296ee20b+2b]
 
-2026-07-14 05:02:04,950 | Dongu hatasi: Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
+2026-07-14 05:03:08,227 | Dongu hatasi: Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
 Stacktrace:
 	chromedriver!GetHandleVerifier [0x7ff78019a865+152a5]
 	chromedriver!GetHandleVerifier [0x7ff78019a8c0+15300]
@@ -56,7 +47,7 @@ Stacktrace:
 	KERNEL32!BaseThreadInitThunk [0x7ffd28994ed0+10]
 	ntdll!RtlUserThreadStart [0x7ffd296ee20b+2b]
 
-2026-07-14 05:02:07,970 | Dongu hatasi: Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
+2026-07-14 05:03:11,251 | Dongu hatasi: Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
 Stacktrace:
 	chromedriver!GetHandleVerifier [0x7ff78019a865+152a5]
 	chromedriver!GetHandleVerifier [0x7ff78019a8c0+15300]
@@ -77,3 +68,13 @@ Stacktrace:
 	chromedriver!GetHandleVerifier [0x7ff78095a558+7d4f98]
 	KERNEL32!BaseThreadInitThunk [0x7ffd28994ed0+10]
 	ntdll!RtlUserThreadStart [0x7ffd296ee20b+2b]
+
+2026-07-14 05:03:25,968 | EasyOCR yukleniyor...
+2026-07-14 05:03:25,969 | Using CPU. Note: This module is much faster with a GPU.
+2026-07-14 05:03:28,767 | EasyOCR hazir.
+2026-07-14 05:03:28,768 | ==================================================
+2026-07-14 05:03:28,768 | MilaGold OCR Agent - Signal GPT versiyonu
+2026-07-14 05:03:28,768 | ==================================================
+2026-07-14 05:03:29,109 | Chrome versiyonu (exe): 150.0.7871.115
+2026-07-14 05:03:29,111 | ChromeDriver cache'den: C:\MilaYatirim\mila-yatirim-sistemi\MilaGold\chromedriver_cache\150.0.7871.115\chromedriver.exe
+2026-07-14 05:03:29,124 | ChromeDriver: C:\MilaYatirim\mila-yatirim-sistemi\MilaGold\chromedriver_cache\150.0.7871.115\chromedriver.exe
