@@ -1,24 +1,3 @@
-	chromedriver!(No symbol) [0x7ff62b81d39c]
-	chromedriver!GetHandleVerifier [0x7ff62c4ba558+7d4f98]
-	KERNEL32!BaseThreadInitThunk [0x7ffdc3b44ed0+10]
-	ntdll!RtlUserThreadStart [0x7ffdc3f0e20b+2b]
-
-2026-07-14 03:55:25,723 | Dongu hatasi: Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
-Stacktrace:
-	chromedriver!GetHandleVerifier [0x7ff62bcfa865+152a5]
-	chromedriver!GetHandleVerifier [0x7ff62bcfa8c0+15300]
-	chromedriver!(No symbol) [0x7ff62b855756]
-	chromedriver!(No symbol) [0x7ff62b8a1ba6]
-	chromedriver!(No symbol) [0x7ff62b8d8d72]
-	chromedriver!(No symbol) [0x7ff62b8d2b92]
-	chromedriver!(No symbol) [0x7ff62b8d2352]
-	chromedriver!(No symbol) [0x7ff62b81de1b]
-	chromedriver!(No symbol) [0x7ff62b81e472]
-	chromedriver!(No symbol) [0x7ff62b81ea35]
-	chromedriver!GetHandleVerifier [0x7ff62c2dd3a1+5f7de1]
-	chromedriver!GetHandleVerifier [0x7ff62c2d7a3b+5f247b]
-	chromedriver!GetHandleVerifier [0x7ff62c2fbca5+6166e5]
-	chromedriver!GetHandleVerifier [0x7ff62bd172ae+31cee]
 	chromedriver!GetHandleVerifier [0x7ff62bd1fe3c+3a87c]
 	chromedriver!(No symbol) [0x7ff62b81d39c]
 	chromedriver!GetHandleVerifier [0x7ff62c4ba558+7d4f98]
@@ -78,3 +57,24 @@ Stacktrace:
 2026-07-14 03:55:52,688 | Chrome versiyonu (exe): 150.0.7871.115
 2026-07-14 03:55:52,689 | ChromeDriver cache'den: C:\MilaYatirim\mila-yatirim-sistemi\MilaGold\chromedriver_cache\150.0.7871.115\chromedriver.exe
 2026-07-14 03:55:52,689 | ChromeDriver: C:\MilaYatirim\mila-yatirim-sistemi\MilaGold\chromedriver_cache\150.0.7871.115\chromedriver.exe
+2026-07-14 04:27:36,277 | EasyOCR yukleniyor...
+2026-07-14 04:27:36,279 | Using CPU. Note: This module is much faster with a GPU.
+2026-07-14 04:27:40,754 | EasyOCR hazir.
+2026-07-14 04:27:40,755 | ==================================================
+2026-07-14 04:27:40,755 | MilaGold OCR Agent - Signal GPT versiyonu
+2026-07-14 04:27:40,755 | ==================================================
+2026-07-14 04:27:41,558 | Chrome versiyonu (exe): 150.0.7871.115
+2026-07-14 04:27:41,560 | ChromeDriver cache'den: C:\MilaYatirim\mila-yatirim-sistemi\MilaGold\chromedriver_cache\150.0.7871.115\chromedriver.exe
+2026-07-14 04:27:41,560 | ChromeDriver: C:\MilaYatirim\mila-yatirim-sistemi\MilaGold\chromedriver_cache\150.0.7871.115\chromedriver.exe
+2026-07-14 04:27:43,461 | Signal GPT sayfasina gidildi.
+2026-07-14 04:27:43,463 | Sayfa yukleniyor, 15 saniye bekleniyor...
+2026-07-14 04:27:58,642 | Baslangic screenshot alindi.
+2026-07-14 04:27:58,643 | Ilk okuma oncesi 5 saniye bekleniyor...
+2026-07-14 04:28:03,643 | Okuma dongusune giriliyor...
+2026-07-14 04:28:06,110 | Sinyal tarihi okundu: 14/07/2026 08:21
+2026-07-14 04:28:06,110 | T1 | SELL@4001.5 | sinyal tespit edildi
+2026-07-14 04:28:06,111 | Olasi yeni sinyal, HEMEN yazildi (dogrulama bekleniyor 1/2): #None | SELL @ 4001.5
+2026-07-14 04:28:06,112 | signal.json yazildi.
+2026-07-14 04:28:06,112 | T2 | SELL@4001.5 | signal.json yazildi
+2026-07-14 04:28:09,853 | Sinyal tarihi okundu: 14/07/2026 08:21
+2026-07-14 04:28:09,854 | Yeni sinyal DOGRULANDI (2 okuma): entry=4001.5 pending=4001.5
