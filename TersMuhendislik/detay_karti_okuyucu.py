@@ -97,7 +97,7 @@ def get_driver():
 
     driver.get(SIGNAL_URL)
     log.info("Signal GPT sayfasina gidildi (kendi sekme).")
-    time.sleep(15)
+    time.sleep(30)
     return driver
 
 
