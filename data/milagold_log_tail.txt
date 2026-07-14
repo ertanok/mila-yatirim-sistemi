@@ -1,7 +1,3 @@
-2026-07-14 03:26:55.445 | T3 | SELL@3991.0 | signal.json okundu (MT5 agent)
-[2026-07-14 03:26:55] Yeni sinyal alindi: #None SELL @ 3991.0
-[2026-07-14 03:26:55] EMA filtresi: SELL ONAYLANDI — fiyat=3990.46 <= EMA20=3996.10
-[2026-07-14 03:26:55] Streak filtresi: SELL ONAYLANDI — EMA100 streak=126 >= 13
 [2026-07-14 03:26:55] Emir turu: SELL_LIMIT (fiyat=3990.46 <= entry=3991.0)
 2026-07-14 03:26:55.489 | T4 | SELL@3991.0 | order_send cagrilacak
 2026-07-14 03:26:55.523 | T5 | SELL@3991.0 | order_send sonucu: basarili
@@ -78,3 +74,7 @@
 [2026-07-14 03:58:56] Heartbeat: 0 aktif islem | Bakiye: 780.75 USD
 [2026-07-14 03:59:26] Heartbeat: 0 aktif islem | Bakiye: 780.75 USD
 [2026-07-14 03:59:56] Heartbeat: 0 aktif islem | Bakiye: 780.75 USD
+[2026-07-14 04:00:26] Heartbeat: 0 aktif islem | Bakiye: 780.75 USD
+[2026-07-14 04:00:57] Heartbeat: 0 aktif islem | Bakiye: 780.75 USD
+[2026-07-14 04:01:27] Heartbeat: 0 aktif islem | Bakiye: 780.75 USD
+[2026-07-14 04:01:57] Heartbeat: 0 aktif islem | Bakiye: 780.75 USD
