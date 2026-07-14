@@ -1,64 +1,3 @@
-2026-07-14 15:51:53,466 | Dongu hatasi: Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
-Stacktrace:
-	chromedriver!GetHandleVerifier [0x7ff73ba9a865+152a5]
-	chromedriver!GetHandleVerifier [0x7ff73ba9a8c0+15300]
-	chromedriver!(No symbol) [0x7ff73b5f5756]
-	chromedriver!(No symbol) [0x7ff73b641ba6]
-	chromedriver!(No symbol) [0x7ff73b678d72]
-	chromedriver!(No symbol) [0x7ff73b672b92]
-	chromedriver!(No symbol) [0x7ff73b672352]
-	chromedriver!(No symbol) [0x7ff73b5bde1b]
-	chromedriver!(No symbol) [0x7ff73b5be472]
-	chromedriver!(No symbol) [0x7ff73b5bea35]
-	chromedriver!GetHandleVerifier [0x7ff73c07d3a1+5f7de1]
-	chromedriver!GetHandleVerifier [0x7ff73c077a3b+5f247b]
-	chromedriver!GetHandleVerifier [0x7ff73c09bca5+6166e5]
-	chromedriver!GetHandleVerifier [0x7ff73bab72ae+31cee]
-	chromedriver!GetHandleVerifier [0x7ff73babfe3c+3a87c]
-	chromedriver!(No symbol) [0x7ff73b5bd39c]
-	chromedriver!GetHandleVerifier [0x7ff73c25a558+7d4f98]
-	KERNEL32!BaseThreadInitThunk [0x7ffc42b04ed0+10]
-	ntdll!RtlUserThreadStart [0x7ffc4448e20b+2b]
-
-2026-07-14 15:51:56,472 | Dongu hatasi: Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
-Stacktrace:
-	chromedriver!GetHandleVerifier [0x7ff73ba9a865+152a5]
-	chromedriver!GetHandleVerifier [0x7ff73ba9a8c0+15300]
-	chromedriver!(No symbol) [0x7ff73b5f5756]
-	chromedriver!(No symbol) [0x7ff73b641ba6]
-	chromedriver!(No symbol) [0x7ff73b678d72]
-	chromedriver!(No symbol) [0x7ff73b672b92]
-	chromedriver!(No symbol) [0x7ff73b672352]
-	chromedriver!(No symbol) [0x7ff73b5bde1b]
-	chromedriver!(No symbol) [0x7ff73b5be472]
-	chromedriver!(No symbol) [0x7ff73b5bea35]
-	chromedriver!GetHandleVerifier [0x7ff73c07d3a1+5f7de1]
-	chromedriver!GetHandleVerifier [0x7ff73c077a3b+5f247b]
-	chromedriver!GetHandleVerifier [0x7ff73c09bca5+6166e5]
-	chromedriver!GetHandleVerifier [0x7ff73bab72ae+31cee]
-	chromedriver!GetHandleVerifier [0x7ff73babfe3c+3a87c]
-	chromedriver!(No symbol) [0x7ff73b5bd39c]
-	chromedriver!GetHandleVerifier [0x7ff73c25a558+7d4f98]
-	KERNEL32!BaseThreadInitThunk [0x7ffc42b04ed0+10]
-	ntdll!RtlUserThreadStart [0x7ffc4448e20b+2b]
-
-2026-07-14 15:51:59,483 | Dongu hatasi: Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
-Stacktrace:
-	chromedriver!GetHandleVerifier [0x7ff73ba9a865+152a5]
-	chromedriver!GetHandleVerifier [0x7ff73ba9a8c0+15300]
-	chromedriver!(No symbol) [0x7ff73b5f5756]
-	chromedriver!(No symbol) [0x7ff73b641ba6]
-	chromedriver!(No symbol) [0x7ff73b678d72]
-	chromedriver!(No symbol) [0x7ff73b672b92]
-	chromedriver!(No symbol) [0x7ff73b672352]
-	chromedriver!(No symbol) [0x7ff73b5bde1b]
-	chromedriver!(No symbol) [0x7ff73b5be472]
-	chromedriver!(No symbol) [0x7ff73b5bea35]
-	chromedriver!GetHandleVerifier [0x7ff73c07d3a1+5f7de1]
-	chromedriver!GetHandleVerifier [0x7ff73c077a3b+5f247b]
-	chromedriver!GetHandleVerifier [0x7ff73c09bca5+6166e5]
-	chromedriver!GetHandleVerifier [0x7ff73bab72ae+31cee]
-	chromedriver!GetHandleVerifier [0x7ff73babfe3c+3a87c]
 	chromedriver!(No symbol) [0x7ff73b5bd39c]
 	chromedriver!GetHandleVerifier [0x7ff73c25a558+7d4f98]
 	KERNEL32!BaseThreadInitThunk [0x7ffc42b04ed0+10]
@@ -78,3 +17,64 @@ Stacktrace:
 2026-07-14 15:54:24,512 | Baslangic screenshot alindi.
 2026-07-14 15:54:24,512 | Ilk okuma oncesi 5 saniye bekleniyor...
 2026-07-14 15:54:29,513 | Okuma dongusune giriliyor...
+2026-07-14 15:54:33,030 | Sinyal tarihi okundu: 14/07/2026 19:48
+2026-07-14 15:54:33,031 | T1 | SELL@4027.0 | sinyal tespit edildi
+2026-07-14 15:54:33,031 | Olasi yeni sinyal, HEMEN yazildi (dogrulama bekleniyor 1/2): #None | SELL @ 4027.0
+2026-07-14 15:54:33,032 | signal.json yazildi.
+2026-07-14 15:54:33,033 | T2 | SELL@4027.0 | signal.json yazildi
+2026-07-14 15:54:37,105 | Sinyal tarihi okundu: 14/07/2026 19:48
+2026-07-14 15:54:37,105 | Yeni sinyal DOGRULANDI (2 okuma): entry=4027.0 pending=4027.0
+2026-07-14 15:54:40,797 | Sinyal tarihi okundu: 14/07/2026 19:48
+2026-07-14 15:54:40,797 | Takip: SELL @ 4027.0 | Status:RUNNING
+2026-07-14 15:54:44,331 | Sinyal tarihi okundu: 14/07/2026 19:48
+2026-07-14 15:54:44,331 | Takip: SELL @ 4027.0 | Status:RUNNING
+2026-07-14 15:54:47,783 | Sinyal tarihi okundu: 14/07/2026 19:48
+2026-07-14 15:54:47,784 | Takip: SELL @ 4027.0 | Status:RUNNING
+2026-07-14 15:54:52,588 | Sinyal tarihi okundu: 14/07/2026 19:48
+2026-07-14 15:54:52,589 | Takip: SELL @ 4027.0 | Status:RUNNING
+2026-07-14 15:54:57,156 | Sinyal tarihi okundu: 14/07/2026 19:48
+2026-07-14 15:54:57,156 | Takip: SELL @ 4027.0 | Status:RUNNING
+2026-07-14 15:55:03,291 | Sinyal tarihi okundu: 14/07/2026 19:48
+2026-07-14 15:55:03,291 | Takip: SELL @ 4027.0 | Status:RUNNING
+2026-07-14 15:55:07,824 | Sinyal tarihi okundu: 14/07/2026 19:48
+2026-07-14 15:55:07,825 | Takip: SELL @ 4027.0 | Status:RUNNING
+2026-07-14 15:55:11,946 | Sinyal tarihi okundu: 14/07/2026 19:48
+2026-07-14 15:55:11,946 | Takip: SELL @ 4027.0 | Status:RUNNING
+2026-07-14 15:55:17,076 | Sinyal tarihi okundu: 14/07/2026 19:48
+2026-07-14 15:55:17,077 | Takip: SELL @ 4027.0 | Status:RUNNING
+2026-07-14 15:55:22,758 | Sinyal tarihi okundu: 14/07/2026 19:48
+2026-07-14 15:55:22,759 | Takip: SELL @ 4027.0 | Status:RUNNING
+2026-07-14 15:55:26,303 | Sinyal tarihi okundu: 14/07/2026 19:48
+2026-07-14 15:55:26,303 | Takip: SELL @ 4027.0 | Status:RUNNING
+2026-07-14 15:55:30,530 | Sinyal tarihi okundu: 14/07/2026 19:48
+2026-07-14 15:55:30,531 | Takip: SELL @ 4027.0 | Status:RUNNING
+2026-07-14 15:55:34,563 | Sinyal tarihi okundu: 14/07/2026 19:48
+2026-07-14 15:55:34,563 | Takip: SELL @ 4027.0 | Status:RUNNING
+2026-07-14 15:55:38,896 | Sinyal tarihi okundu: 14/07/2026 19:48
+2026-07-14 15:55:38,896 | Takip: SELL @ 4027.0 | Status:RUNNING
+2026-07-14 15:55:43,660 | Sinyal tarihi okundu: 14/07/2026 19:48
+2026-07-14 15:55:43,661 | Takip: SELL @ 4027.0 | Status:RUNNING
+2026-07-14 15:55:48,746 | Sinyal tarihi okundu: 14/07/2026 19:48
+2026-07-14 15:55:48,746 | Takip: SELL @ 4027.0 | Status:RUNNING
+2026-07-14 15:55:52,993 | Sinyal tarihi okundu: 14/07/2026 19:48
+2026-07-14 15:55:52,994 | Takip: SELL @ 4027.0 | Status:RUNNING
+2026-07-14 15:55:56,865 | Sinyal tarihi okundu: 14/07/2026 19:48
+2026-07-14 15:55:56,866 | Takip: SELL @ 4027.0 | Status:RUNNING
+2026-07-14 15:56:02,509 | Sinyal tarihi okundu: 14/07/2026 19:48
+2026-07-14 15:56:02,509 | Takip: SELL @ 4027.0 | Status:RUNNING
+2026-07-14 15:56:06,589 | Sinyal tarihi okundu: 14/07/2026 19:48
+2026-07-14 15:56:06,590 | Takip: SELL @ 4027.0 | Status:RUNNING
+2026-07-14 15:56:10,658 | Sinyal tarihi okundu: 14/07/2026 19:48
+2026-07-14 15:56:10,658 | Takip: SELL @ 4027.0 | Status:RUNNING
+2026-07-14 15:56:14,127 | Sinyal tarihi okundu: 14/07/2026 19:48
+2026-07-14 15:56:14,127 | Takip: SELL @ 4027.0 | Status:RUNNING
+2026-07-14 15:56:17,742 | Sinyal tarihi okundu: 14/07/2026 19:48
+2026-07-14 15:56:17,743 | Takip: SELL @ 4027.0 | Status:RUNNING
+2026-07-14 15:56:23,387 | Sinyal tarihi okundu: 14/07/2026 19:48
+2026-07-14 15:56:23,387 | Takip: SELL @ 4027.0 | Status:RUNNING
+2026-07-14 15:56:27,737 | Sinyal tarihi okundu: 14/07/2026 19:48
+2026-07-14 15:56:27,738 | Takip: SELL @ 4027.0 | Status:RUNNING
+2026-07-14 15:56:31,967 | Sinyal tarihi okundu: 14/07/2026 19:48
+2026-07-14 15:56:31,967 | Takip: SELL @ 4027.0 | Status:RUNNING
+2026-07-14 15:56:36,316 | Sinyal tarihi okundu: 14/07/2026 19:48
+2026-07-14 15:56:36,316 | Takip: SELL @ 4027.0 | Status:RUNNING
