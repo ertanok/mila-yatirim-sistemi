@@ -1,7 +1,3 @@
-[2026-07-15 01:29:32] Performans kaydedildi: Exit | 0.43 pip
-[2026-07-15 01:29:32] Emir turu: SELL_LIMIT (fiyat=4050.5 <= entry=4054.5)
-2026-07-15 01:29:32.258 | T4 | SELL@4054.5 | order_send cagrilacak
-2026-07-15 01:29:32.266 | T5 | SELL@4054.5 | order_send sonucu: basarili
 [2026-07-15 01:29:32] Islem acildi: 941416924 | SELL @ 4054.5 | SL:4059.5 | TP1:4051.5 TP2:4049.5 TP3:4046.5
 [2026-07-15 01:29:34] Heartbeat: 1 aktif islem | Bakiye: 783.81 USD
 2026-07-15 01:29:59.565 | T3 | SELL@4050.5 | signal.json okundu (MT5 agent)
@@ -78,3 +74,7 @@
 2026-07-15 01:56:35.496 | T5 | SELL@4054.5 | order_send sonucu: basarili
 [2026-07-15 01:56:35] Islem acildi: 941422991 | SELL @ 4054.5 | SL:4059.5 | TP1:4051.5 TP2:4049.5 TP3:4046.5
 [2026-07-15 01:56:47] Heartbeat: 1 aktif islem | Bakiye: 784.37 USD
+[2026-07-15 01:57:17] Heartbeat: 1 aktif islem | Bakiye: 784.37 USD
+[2026-07-15 01:57:48] Heartbeat: 1 aktif islem | Bakiye: 784.37 USD
+[2026-07-15 01:58:18] Heartbeat: 1 aktif islem | Bakiye: 784.37 USD
+[2026-07-15 01:58:48] Heartbeat: 1 aktif islem | Bakiye: 784.37 USD
