@@ -3,16 +3,18 @@ milagold_api.py
 VPS'te calisan hafif HTTP API servisi.
 Dashboard'dan gelen POST /control istekleriyle milagold_control.json'u gunceller.
 Port: 5000
-Auth: X-Api-Key header
+Auth: Authorization: Bearer <oturum-token> — dogrulama milaboard_api.py'nin
+/verify endpoint'ine (localhost:5001) sorularak yapilir. Bu dosya token
+formatini/secret'ini hic bilmez, doguluk kararini milaboard_api.py verir.
 """
 
 import json
 import os
 import sys
+import urllib.request
 from http.server import BaseHTTPRequestHandler, HTTPServer
 
-sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-from config import API_TOKEN
+MILABOARD_VERIFY_URL = "http://localhost:5001/verify"
 
 DATA_DIR     = r"C:\MilaYatirim\mila-yatirim-sistemi\data"
 CONTROL_FILES = {
@@ -20,6 +22,24 @@ CONTROL_FILES = {
 }
 
 PORT = 5000
+
+
+def token_gecerli_mi(token):
+    if not token:
+        return False
+    try:
+        req = urllib.request.Request(
+            MILABOARD_VERIFY_URL,
+            data=json.dumps({"token": token}).encode("utf-8"),
+            headers={"Content-Type": "application/json"},
+            method="POST",
+        )
+        with urllib.request.urlopen(req, timeout=3) as resp:
+            result = json.loads(resp.read())
+            return bool(result.get("valid", False))
+    except Exception as e:
+        print(f"[API] milaboard_api /verify hatasi: {e}")
+        return False
 
 
 class ApiHandler(BaseHTTPRequestHandler):
@@ -33,7 +53,7 @@ class ApiHandler(BaseHTTPRequestHandler):
         self.send_header("Content-Type", "application/json")
         self.send_header("Content-Length", str(len(data)))
         self.send_header("Access-Control-Allow-Origin", "*")
-        self.send_header("Access-Control-Allow-Headers", "Content-Type, X-Api-Key")
+        self.send_header("Access-Control-Allow-Headers", "Content-Type, Authorization")
         self.send_header("Access-Control-Allow-Methods", "POST, OPTIONS")
         self.end_headers()
         self.wfile.write(data)
@@ -42,7 +62,7 @@ class ApiHandler(BaseHTTPRequestHandler):
         # CORS preflight
         self.send_response(204)
         self.send_header("Access-Control-Allow-Origin", "*")
-        self.send_header("Access-Control-Allow-Headers", "Content-Type, X-Api-Key")
+        self.send_header("Access-Control-Allow-Headers", "Content-Type, Authorization")
         self.send_header("Access-Control-Allow-Methods", "POST, OPTIONS")
         self.end_headers()
 
@@ -51,9 +71,10 @@ class ApiHandler(BaseHTTPRequestHandler):
             self.send_json(404, {"error": "not found"})
             return
 
-        # Token kontrol
-        token = self.headers.get("X-Api-Key", "")
-        if token != API_TOKEN:
+        # Oturum token kontrolu - milaboard_api.py'ye sorulur
+        auth_header = self.headers.get("Authorization", "")
+        token = auth_header[7:] if auth_header.startswith("Bearer ") else ""
+        if not token_gecerli_mi(token):
             self.send_json(401, {"error": "unauthorized"})
             return
 
