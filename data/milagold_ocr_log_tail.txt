@@ -1,65 +1,3 @@
-	chromedriver!GetHandleVerifier [0x7ff6ff04fe3c+3a87c]
-	chromedriver!(No symbol) [0x7ff6feb4d39c]
-	chromedriver!GetHandleVerifier [0x7ff6ff7ea558+7d4f98]
-	KERNEL32!BaseThreadInitThunk [0x7ffd417f4ed0+10]
-	ntdll!RtlUserThreadStart [0x7ffd41cae20b+2b]
-
-2026-07-15 14:13:11,502 | Dongu hatasi: Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
-Stacktrace:
-	chromedriver!GetHandleVerifier [0x7ff6ff02a865+152a5]
-	chromedriver!GetHandleVerifier [0x7ff6ff02a8c0+15300]
-	chromedriver!(No symbol) [0x7ff6feb85756]
-	chromedriver!(No symbol) [0x7ff6febd1ba6]
-	chromedriver!(No symbol) [0x7ff6fec08d72]
-	chromedriver!(No symbol) [0x7ff6fec02b92]
-	chromedriver!(No symbol) [0x7ff6fec02352]
-	chromedriver!(No symbol) [0x7ff6feb4de1b]
-	chromedriver!(No symbol) [0x7ff6feb4e472]
-	chromedriver!(No symbol) [0x7ff6feb4ea35]
-	chromedriver!GetHandleVerifier [0x7ff6ff60d3a1+5f7de1]
-	chromedriver!GetHandleVerifier [0x7ff6ff607a3b+5f247b]
-	chromedriver!GetHandleVerifier [0x7ff6ff62bca5+6166e5]
-	chromedriver!GetHandleVerifier [0x7ff6ff0472ae+31cee]
-	chromedriver!GetHandleVerifier [0x7ff6ff04fe3c+3a87c]
-	chromedriver!(No symbol) [0x7ff6feb4d39c]
-	chromedriver!GetHandleVerifier [0x7ff6ff7ea558+7d4f98]
-	KERNEL32!BaseThreadInitThunk [0x7ffd417f4ed0+10]
-	ntdll!RtlUserThreadStart [0x7ffd41cae20b+2b]
-
-2026-07-15 14:13:14,512 | Dongu hatasi: Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
-Stacktrace:
-	chromedriver!GetHandleVerifier [0x7ff6ff02a865+152a5]
-	chromedriver!GetHandleVerifier [0x7ff6ff02a8c0+15300]
-	chromedriver!(No symbol) [0x7ff6feb85756]
-	chromedriver!(No symbol) [0x7ff6febd1ba6]
-	chromedriver!(No symbol) [0x7ff6fec08d72]
-	chromedriver!(No symbol) [0x7ff6fec02b92]
-	chromedriver!(No symbol) [0x7ff6fec02352]
-	chromedriver!(No symbol) [0x7ff6feb4de1b]
-	chromedriver!(No symbol) [0x7ff6feb4e472]
-	chromedriver!(No symbol) [0x7ff6feb4ea35]
-	chromedriver!GetHandleVerifier [0x7ff6ff60d3a1+5f7de1]
-	chromedriver!GetHandleVerifier [0x7ff6ff607a3b+5f247b]
-	chromedriver!GetHandleVerifier [0x7ff6ff62bca5+6166e5]
-	chromedriver!GetHandleVerifier [0x7ff6ff0472ae+31cee]
-	chromedriver!GetHandleVerifier [0x7ff6ff04fe3c+3a87c]
-	chromedriver!(No symbol) [0x7ff6feb4d39c]
-	chromedriver!GetHandleVerifier [0x7ff6ff7ea558+7d4f98]
-	KERNEL32!BaseThreadInitThunk [0x7ffd417f4ed0+10]
-	ntdll!RtlUserThreadStart [0x7ffd41cae20b+2b]
-
-2026-07-15 14:13:31,589 | EasyOCR yukleniyor...
-2026-07-15 14:13:31,591 | Using CPU. Note: This module is much faster with a GPU.
-2026-07-15 14:13:34,763 | EasyOCR hazir.
-2026-07-15 14:13:34,763 | ==================================================
-2026-07-15 14:13:34,764 | MilaGold OCR Agent - Signal GPT versiyonu
-2026-07-15 14:13:34,764 | ==================================================
-2026-07-15 14:13:35,123 | Chrome versiyonu (exe): 150.0.7871.116
-2026-07-15 14:13:35,124 | ChromeDriver 150.0.7871.116 indiriliyor (Chrome for Testing API)...
-2026-07-15 14:13:35,436 | Indiriliyor: https://storage.googleapis.com/chrome-for-testing-public/150.0.7871.124/win64/chromedriver-win64.zip
-2026-07-15 14:13:36,867 | ChromeDriver indirildi: C:\MilaYatirim\mila-yatirim-sistemi\MilaGold\chromedriver_cache\150.0.7871.116\chromedriver.exe
-2026-07-15 14:13:36,879 | ChromeDriver: C:\MilaYatirim\mila-yatirim-sistemi\MilaGold\chromedriver_cache\150.0.7871.116\chromedriver.exe
-2026-07-15 14:19:25,146 | EasyOCR yukleniyor...
 2026-07-15 14:19:25,148 | Using CPU. Note: This module is much faster with a GPU.
 2026-07-15 14:19:29,993 | EasyOCR hazir.
 2026-07-15 14:19:29,994 | ==================================================
@@ -78,3 +16,65 @@ Stacktrace:
 2026-07-15 14:19:55,322 | Olasi yeni sinyal, HEMEN yazildi (dogrulama bekleniyor 1/2): #None | SELL @ 4029.0
 2026-07-15 14:19:55,323 | signal.json yazildi.
 2026-07-15 14:19:55,323 | T2 | SELL@4029.0 | signal.json yazildi
+2026-07-15 14:20:00,541 | Sinyal tarihi okundu: 16/07/2026 17:29
+2026-07-15 14:20:00,541 | Yeni sinyal DOGRULANDI (2 okuma): entry=4029.0 pending=4029.0
+2026-07-15 14:20:05,174 | Sinyal tarihi okundu: 16/07/2026 17:29
+2026-07-15 14:20:05,175 | Takip: SELL @ 4029.0 | Status:RUNNING
+2026-07-15 14:20:10,013 | Sinyal tarihi okundu: 16/07/2026 17:29
+2026-07-15 14:20:10,013 | Takip: SELL @ 4029.0 | Status:RUNNING
+2026-07-15 14:20:16,873 | Sinyal tarihi okundu: 16/07/2026 17:29
+2026-07-15 14:20:16,873 | Takip: SELL @ 4029.0 | Status:RUNNING
+2026-07-15 14:20:21,550 | Sinyal tarihi okundu: 16/07/2026 17:29
+2026-07-15 14:20:21,551 | Takip: SELL @ 4029.0 | Status:RUNNING
+2026-07-15 14:20:25,337 | Sinyal tarihi okundu: 16/07/2026 17:29
+2026-07-15 14:20:25,337 | Takip: SELL @ 4029.0 | Status:RUNNING
+2026-07-15 14:20:28,703 | Sinyal tarihi okundu: 16/07/2026 17:29
+2026-07-15 14:20:28,703 | Takip: SELL @ 4029.0 | Status:RUNNING
+2026-07-15 14:20:33,026 | Sinyal tarihi okundu: 16/07/2026 17:29
+2026-07-15 14:20:33,026 | Takip: SELL @ 4029.0 | Status:RUNNING
+2026-07-15 14:20:37,875 | Sinyal tarihi okundu: 16/07/2026 17:29
+2026-07-15 14:20:37,876 | Takip: SELL @ 4029.0 | Status:RUNNING
+2026-07-15 14:20:42,776 | Sinyal tarihi okundu: 16/07/2026 17:29
+2026-07-15 14:20:42,776 | Takip: SELL @ 4029.0 | Status:RUNNING
+2026-07-15 14:20:46,903 | Sinyal tarihi okundu: 16/07/2026 17:29
+2026-07-15 14:20:46,903 | Takip: SELL @ 4029.0 | Status:RUNNING
+2026-07-15 14:20:50,679 | Sinyal tarihi okundu: 16/07/2026 17:29
+2026-07-15 14:20:50,679 | Takip: SELL @ 4029.0 | Status:RUNNING
+2026-07-15 14:20:53,975 | Sinyal tarihi okundu: 16/07/2026 17:29
+2026-07-15 14:20:53,975 | Takip: SELL @ 4029.0 | Status:RUNNING
+2026-07-15 14:20:57,410 | Sinyal tarihi okundu: 16/07/2026 17:29
+2026-07-15 14:20:57,410 | Takip: SELL @ 4029.0 | Status:RUNNING
+2026-07-15 14:21:01,714 | Sinyal tarihi okundu: 16/07/2026 17:29
+2026-07-15 14:21:01,715 | Takip: SELL @ 4029.0 | Status:RUNNING
+2026-07-15 14:21:05,309 | Sinyal tarihi okundu: 16/07/2026 17:29
+2026-07-15 14:21:05,310 | Takip: SELL @ 4029.0 | Status:RUNNING
+2026-07-15 14:21:08,970 | Sinyal tarihi okundu: 16/07/2026 17:29
+2026-07-15 14:21:08,970 | Takip: SELL @ 4029.0 | Status:RUNNING
+2026-07-15 14:21:13,630 | Sinyal tarihi okundu: 16/07/2026 17:29
+2026-07-15 14:21:13,630 | Takip: SELL @ 4029.0 | Status:RUNNING
+2026-07-15 14:21:17,747 | Sinyal tarihi okundu: 16/07/2026 17:29
+2026-07-15 14:21:17,748 | Takip: SELL @ 4029.0 | Status:RUNNING
+2026-07-15 14:21:21,140 | Sinyal tarihi okundu: 16/07/2026 17:29
+2026-07-15 14:21:21,140 | Takip: SELL @ 4029.0 | Status:RUNNING
+2026-07-15 14:21:24,743 | Sinyal tarihi okundu: 16/07/2026 17:29
+2026-07-15 14:21:24,744 | Takip: SELL @ 4029.0 | Status:RUNNING
+2026-07-15 14:21:28,268 | Sinyal tarihi okundu: 16/07/2026 17:29
+2026-07-15 14:21:28,268 | Takip: SELL @ 4029.0 | Status:RUNNING
+2026-07-15 14:21:32,353 | Sinyal tarihi okundu: 16/07/2026 17:29
+2026-07-15 14:21:32,354 | Takip: SELL @ 4029.0 | Status:RUNNING
+2026-07-15 14:21:36,393 | Sinyal tarihi okundu: 16/07/2026 17:29
+2026-07-15 14:21:36,393 | Takip: SELL @ 4029.0 | Status:RUNNING
+2026-07-15 14:21:39,767 | Sinyal tarihi okundu: 16/07/2026 17:29
+2026-07-15 14:21:39,767 | Takip: SELL @ 4029.0 | Status:RUNNING
+2026-07-15 14:21:43,220 | Sinyal tarihi okundu: 16/07/2026 17:29
+2026-07-15 14:21:43,220 | Takip: SELL @ 4029.0 | Status:RUNNING
+2026-07-15 14:21:46,970 | Sinyal tarihi okundu: 16/07/2026 17:29
+2026-07-15 14:21:46,970 | Takip: SELL @ 4029.0 | Status:RUNNING
+2026-07-15 14:21:51,080 | Sinyal tarihi okundu: 16/07/2026 17:29
+2026-07-15 14:21:51,080 | Takip: SELL @ 4029.0 | Status:RUNNING
+2026-07-15 14:21:55,582 | Sinyal tarihi okundu: 16/07/2026 17:29
+2026-07-15 14:21:55,583 | Takip: SELL @ 4029.0 | Status:RUNNING
+2026-07-15 14:21:58,952 | Sinyal tarihi okundu: 16/07/2026 17:29
+2026-07-15 14:21:58,952 | Takip: SELL @ 4029.0 | Status:RUNNING
+2026-07-15 14:22:03,271 | Sinyal tarihi okundu: 16/07/2026 17:29
+2026-07-15 14:22:03,272 | Takip: SELL @ 4029.0 | Status:RUNNING
