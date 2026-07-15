@@ -1,19 +1,22 @@
 """
 milaboard_api.py
-Proje-geneli kontrol katmani: giris (/login) ve oturum-token dogrulama.
-MilaGold'a ozgu degil - gelecekteki proje-genel endpoint'ler (Breakout Order
-girisi, ileride durdur/baslat vb.) burada yasayacak.
+Proje-geneli kontrol katmani: giris (/login), oturum-token dogrulama (/verify)
+ve proje-genel endpoint'ler. MilaGold'a ozgu degil.
 Port: 5001
 """
 import json
 import os
 import sys
+from datetime import datetime, timezone
 from http.server import BaseHTTPRequestHandler, HTTPServer
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import mila_auth
 
 PORT = 5001
+
+DATA_DIR = r"C:\MilaYatirim\mila-yatirim-sistemi\data"
+BREAKOUT_LEVELS_FILE = os.path.join(DATA_DIR, "breakout_levels.json")
 
 
 class BoardApiHandler(BaseHTTPRequestHandler):
@@ -44,8 +47,19 @@ class BoardApiHandler(BaseHTTPRequestHandler):
             self._handle_login()
         elif self.path == "/verify":
             self._handle_verify()
+        elif self.path == "/breakout/levels":
+            self._handle_breakout_levels()
         else:
             self.send_json(404, {"error": "not found"})
+
+    def _oturum_token_gecerli_mi(self):
+        """Bu istegin Authorization: Bearer header'inda gecerli bir oturum
+        token'i olup olmadigini kontrol eder. Dusuk-riskli endpoint'ler icin
+        yeterli dogrulama seviyesi - milaboard_api.py zaten mila_auth'u
+        dogrudan import ettigi icin ag cagrisina gerek yok."""
+        auth_header = self.headers.get("Authorization", "")
+        token = auth_header[7:] if auth_header.startswith("Bearer ") else ""
+        return bool(token) and mila_auth.oturum_tokeni_gecerli_mi(token)
 
     def _handle_login(self):
         ip = self.client_address[0]
@@ -82,6 +96,56 @@ class BoardApiHandler(BaseHTTPRequestHandler):
         token = body.get("token", "")
         gecerli = bool(token) and mila_auth.oturum_tokeni_gecerli_mi(token)
         self.send_json(200, {"valid": gecerli})
+
+    def _handle_breakout_levels(self):
+        """Breakout Order projesi icin direnc seviyesi besleme arayuzu.
+        Trading mantigi (emir gonderme, ATH toggle, reaktivasyon) bu
+        endpoint'in kapsaminda degil - sadece seviyeyi dosyaya yazar,
+        Breakout Order agent'i (ayri gorev) bu dosyayi okur.
+        Dusuk-riskli islem - sadece oturum-token yeterli, ek onay katmani yok."""
+        if not self._oturum_token_gecerli_mi():
+            self.send_json(401, {"error": "unauthorized"})
+            return
+
+        length = int(self.headers.get("Content-Length", 0))
+        try:
+            body = json.loads(self.rfile.read(length))
+        except Exception:
+            self.send_json(400, {"error": "invalid json"})
+            return
+
+        enstruman = body.get("instrument", "")
+        seviye = body.get("level")
+
+        if not isinstance(enstruman, str) or not enstruman.strip():
+            self.send_json(400, {"error": "instrument gerekli"})
+            return
+        enstruman = enstruman.strip().upper()
+
+        if not isinstance(seviye, (int, float)) or isinstance(seviye, bool):
+            self.send_json(400, {"error": "level sayisal olmali"})
+            return
+        if seviye <= 0:
+            self.send_json(400, {"error": "level pozitif olmali"})
+            return
+
+        os.makedirs(DATA_DIR, exist_ok=True)
+        try:
+            with open(BREAKOUT_LEVELS_FILE, "r", encoding="utf-8") as f:
+                tum_seviyeler = json.load(f)
+        except Exception:
+            tum_seviyeler = {}
+
+        tum_seviyeler[enstruman] = {
+            "level": seviye,
+            "updated_at": datetime.now(timezone.utc).isoformat(timespec="seconds"),
+        }
+
+        with open(BREAKOUT_LEVELS_FILE, "w", encoding="utf-8") as f:
+            json.dump(tum_seviyeler, f, indent=2, ensure_ascii=False)
+
+        print(f"[Board API] breakout level guncellendi: {enstruman} -> {seviye}")
+        self.send_json(200, {"ok": True, "instrument": enstruman, "level": seviye})
 
 
 if __name__ == "__main__":
