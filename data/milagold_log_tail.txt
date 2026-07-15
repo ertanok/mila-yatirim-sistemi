@@ -1,16 +1,3 @@
-[2026-07-15 06:43:20] Heartbeat: 1 aktif islem | Bakiye: 784.49 USD
-[2026-07-15 06:43:51] Heartbeat: 1 aktif islem | Bakiye: 784.49 USD
-[2026-07-15 06:44:21] Heartbeat: 1 aktif islem | Bakiye: 784.49 USD
-[2026-07-15 06:44:51] Heartbeat: 1 aktif islem | Bakiye: 784.49 USD
-[2026-07-15 06:45:21] Heartbeat: 1 aktif islem | Bakiye: 784.49 USD
-[2026-07-15 06:45:51] Heartbeat: 1 aktif islem | Bakiye: 784.49 USD
-[2026-07-15 06:46:21] Heartbeat: 1 aktif islem | Bakiye: 784.49 USD
-[2026-07-15 06:46:52] Heartbeat: 1 aktif islem | Bakiye: 784.49 USD
-[2026-07-15 06:47:22] Heartbeat: 1 aktif islem | Bakiye: 784.49 USD
-[2026-07-15 06:47:52] Heartbeat: 1 aktif islem | Bakiye: 784.49 USD
-[2026-07-15 06:48:22] Heartbeat: 1 aktif islem | Bakiye: 784.49 USD
-[2026-07-15 06:48:52] Heartbeat: 1 aktif islem | Bakiye: 784.49 USD
-[2026-07-15 06:49:23] Heartbeat: 1 aktif islem | Bakiye: 784.49 USD
 [2026-07-15 06:49:53] Heartbeat: 1 aktif islem | Bakiye: 784.49 USD
 [2026-07-15 06:50:23] Heartbeat: 1 aktif islem | Bakiye: 784.49 USD
 [2026-07-15 06:50:53] Heartbeat: 1 aktif islem | Bakiye: 784.49 USD
@@ -78,3 +65,16 @@
 [2026-07-15 07:12:01] Heartbeat: 1 aktif islem | Bakiye: 783.18 USD
 [2026-07-15 07:12:32] Heartbeat: 1 aktif islem | Bakiye: 783.18 USD
 [2026-07-15 07:13:02] Heartbeat: 1 aktif islem | Bakiye: 783.18 USD
+[2026-07-15 07:13:32] Heartbeat: 1 aktif islem | Bakiye: 783.18 USD
+[2026-07-15 07:14:02] Heartbeat: 1 aktif islem | Bakiye: 783.18 USD
+[2026-07-15 07:14:32] Heartbeat: 1 aktif islem | Bakiye: 783.18 USD
+[2026-07-15 07:15:03] Heartbeat: 1 aktif islem | Bakiye: 783.18 USD
+2026-07-15 07:15:14.340 | T3 | SELL@4032.5 | signal.json okundu (MT5 agent)
+[2026-07-15 07:15:14] Yeni sinyal (yeni entry daha iyi): SELL@4031.5 -> SELL@4032.5. Kapatiliyor: ticket=941610798
+[2026-07-15 07:15:14] Pozisyon piyasadan kapatildi: ticket=941610798 @ 4032.04 (filling=1)
+[2026-07-15 07:15:14] Performans kaydedildi: Exit | -0.54 pip
+[2026-07-15 07:15:14] Emir turu: SELL_LIMIT (fiyat=4031.51 <= entry=4032.5)
+2026-07-15 07:15:14.534 | T4 | SELL@4032.5 | order_send cagrilacak
+2026-07-15 07:15:14.562 | T5 | SELL@4032.5 | order_send sonucu: basarili
+[2026-07-15 07:15:14] Islem acildi: 941624758 | SELL @ 4032.5 | SL:4037.5 | TP1:4029.5 TP2:4027.5 TP3:4024.5
+[2026-07-15 07:15:33] Heartbeat: 1 aktif islem | Bakiye: 782.83 USD
