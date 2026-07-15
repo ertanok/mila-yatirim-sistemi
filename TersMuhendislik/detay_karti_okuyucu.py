@@ -28,6 +28,7 @@ BASE_DIR        = os.path.dirname(os.path.abspath(__file__))
 SCREENSHOT_DIR  = os.path.join(BASE_DIR, "detay_kartlari")
 LOG_FILE        = os.path.join(BASE_DIR, "detay_karti_log.txt")
 DURUM_FILE      = os.path.join(BASE_DIR, "detay_karti_toplama_durumu.json")
+STOP_FLAG_PATH  = os.path.join(BASE_DIR, "detay_karti_okuyucu.stop")
 
 SYMBOL          = "GOLD"
 PRICE_TIER      = 25.0   # dolar - fiyat esigi dilim genisligi
@@ -90,9 +91,18 @@ def get_driver():
     options.add_experimental_option("debuggerAddress", "127.0.0.1:9222")
     driver = webdriver.Chrome(options=options)
 
-    # Kendi sekmemizi ac - OCR agent'in sekmesine dokunmuyoruz
-    driver.execute_script("window.open('about:blank', '_blank');")
-    time.sleep(1)
+    # Kendi sekmemizi CDP Target.createTarget ile ac - herhangi bir sayfanin JS
+    # baglaminda window.open CAGIRMIYORUZ (attach-modunda taze session'un
+    # "current window"u, o an tek acik sekme olan OCR agent'in sekmesi olabilir;
+    # execute_script("window.open(...)") orada calisirsa OCR'in sekmesini
+    # aktif/frontmost yapip OCR'in kendi ekran yakalamasini gecici olarak
+    # karistirabiliyor - 15/07/2026 canli testinde dogrulandi). Target.createTarget
+    # browser-seviyeli bir komut, hicbir sayfanin JS baglamini kullanmiyor.
+    driver.execute_cdp_cmd("Target.createTarget", {"url": "about:blank"})
+    for _ in range(25):
+        if len(driver.window_handles) > 1:
+            break
+        time.sleep(0.2)
     driver.switch_to.window(driver.window_handles[-1])
 
     driver.get(SIGNAL_URL)
@@ -240,6 +250,19 @@ def calisma_penceresinde_mi(now=None):
     return CALISMA_BASLANGIC_SAAT <= now.hour < 24
 
 
+def bekle_veya_dur(saniye):
+    """saniye kadar 1'er saniyelik adimlarla bekler; bu sirada STOP_FLAG_PATH
+    dosyasi belirirse hemen True doner (erken/duzgun cikis icin)."""
+    gecen = 0.0
+    adim = 1.0
+    while gecen < saniye:
+        if os.path.exists(STOP_FLAG_PATH):
+            return True
+        time.sleep(min(adim, saniye - gecen))
+        gecen += adim
+    return os.path.exists(STOP_FLAG_PATH)
+
+
 def main():
     log.info("=" * 50)
     log.info("Detay Karti Okuyucu - Faz 1 (SS biriktirme)")
@@ -259,10 +282,16 @@ def main():
 
     while True:
         try:
+            if os.path.exists(STOP_FLAG_PATH):
+                log.info("Durdurma sinyali alindi (stop dosyasi), cikiliyor...")
+                break
+
             now = datetime.now()
 
             if not calisma_penceresinde_mi(now):
-                time.sleep(PENCERE_DISI_BEKLEME)
+                if bekle_veya_dur(PENCERE_DISI_BEKLEME):
+                    log.info("Durdurma sinyali alindi (stop dosyasi), cikiliyor...")
+                    break
                 continue
 
             if son_saat_tetiklendi != now.hour:
@@ -281,7 +310,9 @@ def main():
             except Exception as e:
                 log.error(f"MT5 fiyat okuma hatasi: {e}")
 
-            time.sleep(ANA_POLL_ARALIGI)
+            if bekle_veya_dur(ANA_POLL_ARALIGI):
+                log.info("Durdurma sinyali alindi (stop dosyasi), cikiliyor...")
+                break
 
         except KeyboardInterrupt:
             log.info("Detay Karti Okuyucu durduruldu.")
@@ -289,6 +320,20 @@ def main():
         except Exception as e:
             log.error(f"Dongu hatasi: {e}")
             time.sleep(3)
+
+    # Dongu bitti (KeyboardInterrupt veya stop dosyasi) - kendi actigimiz
+    # sekmeyi acikca kapat, OCR agent'in sekmesine dokunmuyoruz.
+    try:
+        driver.close()
+        log.info("Kendi sekmemiz kapatildi.")
+    except Exception as e:
+        log.warning(f"Sekme kapatma hatasi: {e}")
+
+    try:
+        if os.path.exists(STOP_FLAG_PATH):
+            os.remove(STOP_FLAG_PATH)
+    except Exception:
+        pass
 
 
 if __name__ == "__main__":
