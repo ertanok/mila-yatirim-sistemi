@@ -1,22 +1,3 @@
-	chromedriver!(No symbol) [0x7ff679b6de1b]
-	chromedriver!(No symbol) [0x7ff679b6e472]
-	chromedriver!(No symbol) [0x7ff679b6ea35]
-	chromedriver!GetHandleVerifier [0x7ff67a636431+5facb1]
-	chromedriver!GetHandleVerifier [0x7ff67a630a9b+5f531b]
-	chromedriver!GetHandleVerifier [0x7ff67a655865+61a0e5]
-	chromedriver!GetHandleVerifier [0x7ff67a06dace+3234e]
-	chromedriver!GetHandleVerifier [0x7ff67a07661c+3ae9c]
-	chromedriver!(No symbol) [0x7ff679b6d39c]
-	chromedriver!GetHandleVerifier [0x7ff67a813d88+7d8608]
-	KERNEL32!BaseThreadInitThunk [0x7ffc90a64ed0+10]
-	ntdll!RtlUserThreadStart [0x7ffc91a8e20b+2b]
-
-2026-07-17 00:01:27,676 | Dongu hatasi: Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
-Stacktrace:
-	chromedriver!GetHandleVerifier [0x7ff67a050d25+155a5]
-	chromedriver!GetHandleVerifier [0x7ff67a050d80+15600]
-	chromedriver!(No symbol) [0x7ff679ba5736]
-	chromedriver!(No symbol) [0x7ff679bf1ed6]
 	chromedriver!(No symbol) [0x7ff679c290d2]
 	chromedriver!(No symbol) [0x7ff679c22ef2]
 	chromedriver!(No symbol) [0x7ff679c226b2]
@@ -78,3 +59,22 @@ Stacktrace:
 2026-07-17 01:44:18,729 | Chrome versiyonu (exe): 150.0.7871.116
 2026-07-17 01:44:18,730 | ChromeDriver cache'den: C:\MilaYatirim\mila-yatirim-sistemi\MilaGold\chromedriver_cache\150.0.7871.116\chromedriver.exe
 2026-07-17 01:44:18,730 | ChromeDriver: C:\MilaYatirim\mila-yatirim-sistemi\MilaGold\chromedriver_cache\150.0.7871.116\chromedriver.exe
+2026-07-17 01:58:04,477 | EasyOCR yukleniyor...
+2026-07-17 01:58:04,479 | Using CPU. Note: This module is much faster with a GPU.
+2026-07-17 01:58:08,273 | EasyOCR hazir.
+2026-07-17 01:58:08,274 | ==================================================
+2026-07-17 01:58:08,274 | MilaGold OCR Agent - Signal GPT versiyonu
+2026-07-17 01:58:08,274 | ==================================================
+2026-07-17 01:58:08,919 | Chrome versiyonu (exe): 150.0.7871.125
+2026-07-17 01:58:08,921 | ChromeDriver 150.0.7871.125 indiriliyor (Chrome for Testing API)...
+2026-07-17 01:58:09,183 | Indiriliyor: https://storage.googleapis.com/chrome-for-testing-public/150.0.7871.124/win64/chromedriver-win64.zip
+2026-07-17 01:58:10,567 | ChromeDriver indirildi: C:\MilaYatirim\mila-yatirim-sistemi\MilaGold\chromedriver_cache\150.0.7871.125\chromedriver.exe
+2026-07-17 01:58:10,577 | ChromeDriver: C:\MilaYatirim\mila-yatirim-sistemi\MilaGold\chromedriver_cache\150.0.7871.125\chromedriver.exe
+2026-07-17 01:58:12,579 | Signal GPT sayfasina gidildi.
+2026-07-17 01:58:12,579 | Sayfa yukleniyor, 15 saniye bekleniyor...
+2026-07-17 01:58:27,864 | Baslangic screenshot alindi.
+2026-07-17 01:58:27,865 | Ilk okuma oncesi 5 saniye bekleniyor...
+2026-07-17 01:58:32,865 | Okuma dongusune giriliyor...
+2026-07-17 01:58:35,003 | GOLD karti okunamadi (1). Ham: ['Disclaimer', 'The information on signalgpt ai is for reference and', 'knowledge-sharing purpos']
+2026-07-17 01:58:38,697 | GOLD karti okunamadi (2). Ham: ['Disclaimer', 'The information on signalgpt ai is for reference and', 'knowledge-sharing purpos']
+2026-07-17 01:58:42,974 | GOLD karti okunamadi (3). Ham: ['Disclaimer', 'The information on signalgpt ai is for reference and', 'knowledge-sharing purpos']
