@@ -1,7 +1,3 @@
-[2026-07-16 19:03:10] Emir turu: SELL_LIMIT (fiyat=4002.74 <= entry=4004.0)
-2026-07-16 19:03:10.327 | T4 | SELL@4004.0 | order_send cagrilacak
-2026-07-16 19:03:10.341 | T5 | SELL@4004.0 | order_send sonucu: basarili
-[2026-07-16 19:03:10] Islem acildi: 944456196 | SELL @ 4004.0 | SL:4009.0 | TP1:4001.0 TP2:3999.0 TP3:3996.0
 [2026-07-16 19:03:30] Heartbeat: 1 aktif islem | Bakiye: 761.81 USD
 [2026-07-16 19:04:01] Heartbeat: 1 aktif islem | Bakiye: 761.81 USD
 [2026-07-16 19:04:31] Heartbeat: 1 aktif islem | Bakiye: 761.81 USD
@@ -78,3 +74,7 @@
 [2026-07-16 19:30:23] Heartbeat: 1 aktif islem | Bakiye: 761.81 USD
 [2026-07-16 19:30:54] Heartbeat: 1 aktif islem | Bakiye: 761.81 USD
 [2026-07-16 19:31:24] Heartbeat: 1 aktif islem | Bakiye: 761.81 USD
+[2026-07-16 19:31:54] Heartbeat: 1 aktif islem | Bakiye: 761.81 USD
+[2026-07-16 19:32:25] Heartbeat: 1 aktif islem | Bakiye: 761.81 USD
+[2026-07-16 19:32:55] Heartbeat: 1 aktif islem | Bakiye: 761.81 USD
+[2026-07-16 19:33:26] Heartbeat: 1 aktif islem | Bakiye: 761.81 USD
