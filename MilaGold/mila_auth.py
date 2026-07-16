@@ -33,9 +33,13 @@ LOCKOUT_SURESI_SN = 15 * 60
 _basarisiz_denemeler = {}  # ip -> [timestamp, ...]
 
 # --- WEBAUTHN / PASSKEY ---
-WEBAUTHN_RP_ID = "login.milaertanok.com"
+# RP ID, dashboard'un GERCEKTEN sunuldugu origin'e gore secilir (WebAuthn,
+# navigator.credentials.*'i cagiran sayfanin origin'inin RP ID ile eslesmesini
+# sart kosar). Dashboard GitHub Pages'te (docs/index.html) yayinlaniyor - bu
+# yuzden RP ID milaertanok.com degil, ertanok.github.io.
+WEBAUTHN_RP_ID = "ertanok.github.io"
 WEBAUTHN_RP_NAME = "Mila Dashboard"
-WEBAUTHN_ORIGIN = "https://login.milaertanok.com"
+WEBAUTHN_ORIGIN = "https://ertanok.github.io"
 WEBAUTHN_USER_ID = b"ertan-mila-dashboard"
 WEBAUTHN_USER_NAME = "ertan"
 WEBAUTHN_USER_DISPLAY_NAME = "Ertan Ok"
