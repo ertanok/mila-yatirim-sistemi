@@ -1,21 +1,3 @@
-[2026-07-16 19:51:31] Islem acildi: 944540605 | SELL @ 3995.0 | SL:4000.0 | TP1:3992.0 TP2:3990.0 TP3:3987.0
-[2026-07-16 19:51:38] Heartbeat: 1 aktif islem | Bakiye: 752.71 USD
-[2026-07-16 19:52:09] Heartbeat: 1 aktif islem | Bakiye: 752.71 USD
-[2026-07-16 19:52:39] Heartbeat: 1 aktif islem | Bakiye: 752.71 USD
-[2026-07-16 19:53:09] Heartbeat: 1 aktif islem | Bakiye: 752.71 USD
-[2026-07-16 19:53:39] Heartbeat: 1 aktif islem | Bakiye: 752.71 USD
-[2026-07-16 19:54:10] Heartbeat: 1 aktif islem | Bakiye: 752.71 USD
-[2026-07-16 19:54:40] Heartbeat: 1 aktif islem | Bakiye: 752.71 USD
-[2026-07-16 19:55:11] Heartbeat: 1 aktif islem | Bakiye: 752.71 USD
-[2026-07-16 19:55:41] Heartbeat: 1 aktif islem | Bakiye: 752.71 USD
-2026-07-16 19:55:44.717 | T3 | SELL@3992.5 | signal.json okundu (MT5 agent)
-[2026-07-16 19:55:44] Yeni sinyal daha kotu entry, sl_level=0. Eski pozisyon tutuldu, sinyal hafizaya alindi: #None@3992.5
-[2026-07-16 19:56:12] Heartbeat: 1 aktif islem | Bakiye: 752.71 USD
-[2026-07-16 19:56:42] Heartbeat: 1 aktif islem | Bakiye: 752.71 USD
-[2026-07-16 19:57:12] Heartbeat: 1 aktif islem | Bakiye: 752.71 USD
-[2026-07-16 19:57:43] Heartbeat: 1 aktif islem | Bakiye: 752.71 USD
-[2026-07-16 19:58:13] Heartbeat: 1 aktif islem | Bakiye: 752.71 USD
-[2026-07-16 19:58:43] Heartbeat: 1 aktif islem | Bakiye: 752.71 USD
 [2026-07-16 19:59:13] Heartbeat: 1 aktif islem | Bakiye: 752.71 USD
 [2026-07-16 19:59:44] Heartbeat: 1 aktif islem | Bakiye: 752.71 USD
 [2026-07-16 19:59:53] TP1 gecildi: ticket=944540605 fiyat=3992.0 TP1=3992.0 -> SL -2 ye tasiniyor
@@ -78,3 +60,21 @@
 [2026-07-16 20:09:45] Trailing SL: ticket=944540605 kar=7.69 trailing=3.0 | 3990.55 -> 3990.31
 [2026-07-16 20:09:45] SL guncellendi: ticket=944540605 yeni SL=3990.31
 [2026-07-16 20:09:51] Heartbeat: 2 aktif islem | Bakiye: 752.71 USD
+[2026-07-16 20:10:22] Heartbeat: 2 aktif islem | Bakiye: 752.71 USD
+[2026-07-16 20:10:51] Trailing SL: ticket=944540605 kar=7.96 trailing=3.0 | 3990.31 -> 3990.04
+[2026-07-16 20:10:51] SL guncellendi: ticket=944540605 yeni SL=3990.04
+[2026-07-16 20:10:52] Heartbeat: 2 aktif islem | Bakiye: 752.71 USD
+[2026-07-16 20:10:53] Trailing SL: ticket=944540605 kar=8.44 trailing=2.0 | 3990.04 -> 3988.56
+[2026-07-16 20:10:53] SL guncellendi: ticket=944540605 yeni SL=3988.56
+[2026-07-16 20:11:13] Trailing SL: ticket=944540605 kar=9.05 trailing=2.0 | 3988.56 -> 3987.95
+[2026-07-16 20:11:14] SL guncellendi: ticket=944540605 yeni SL=3987.95
+[2026-07-16 20:11:23] Heartbeat: 2 aktif islem | Bakiye: 752.71 USD
+[2026-07-16 20:11:38] Trailing SL: ticket=944540605 kar=9.24 trailing=2.0 | 3987.95 -> 3987.76
+[2026-07-16 20:11:38] SL guncellendi: ticket=944540605 yeni SL=3987.76
+[2026-07-16 20:11:46] Trailing SL: ticket=944540605 kar=9.38 trailing=2.0 | 3987.76 -> 3987.62
+[2026-07-16 20:11:46] SL guncellendi: ticket=944540605 yeni SL=3987.62
+[2026-07-16 20:11:49] Trailing SL: ticket=944540605 kar=9.68 trailing=2.0 | 3987.62 -> 3987.32
+[2026-07-16 20:11:49] SL guncellendi: ticket=944540605 yeni SL=3987.32
+[2026-07-16 20:11:53] Heartbeat: 2 aktif islem | Bakiye: 752.71 USD
+[2026-07-16 20:12:08] Trailing SL: ticket=944540605 kar=10.05 trailing=2.0 | 3987.32 -> 3986.95
+[2026-07-16 20:12:08] SL guncellendi: ticket=944540605 yeni SL=3986.95
