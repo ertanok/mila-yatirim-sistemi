@@ -1,7 +1,3 @@
-[2026-07-16 10:40:40] Yeni sinyal (yeni entry daha iyi): SELL@4025.5 -> SELL@4030.5. Kapatiliyor: ticket=943543569
-[2026-07-16 10:40:41] Pozisyon piyasadan kapatildi: ticket=943543569 @ 4026.97 (filling=1)
-[2026-07-16 10:40:41] Performans kaydedildi: Exit | -1.47 pip
-[2026-07-16 10:40:41] Emir turu: SELL_LIMIT (fiyat=4026.4 <= entry=4030.5)
 2026-07-16 10:40:41.279 | T4 | SELL@4030.5 | order_send cagrilacak
 2026-07-16 10:40:41.301 | T5 | SELL@4030.5 | order_send sonucu: basarili
 [2026-07-16 10:40:41] Islem acildi: 943560812 | SELL @ 4030.5 | SL:4035.5 | TP1:4027.5 TP2:4025.5 TP3:4022.5
@@ -78,3 +74,7 @@
 [2026-07-16 11:07:11] Heartbeat: 0 aktif islem | Bakiye: 766.90 USD
 [2026-07-16 11:07:41] Heartbeat: 0 aktif islem | Bakiye: 766.90 USD
 [2026-07-16 11:08:11] Heartbeat: 0 aktif islem | Bakiye: 766.90 USD
+[2026-07-16 11:08:41] Heartbeat: 0 aktif islem | Bakiye: 766.90 USD
+[2026-07-16 11:09:12] Heartbeat: 0 aktif islem | Bakiye: 766.90 USD
+[2026-07-16 11:09:42] Heartbeat: 0 aktif islem | Bakiye: 766.90 USD
+[2026-07-16 11:10:13] Heartbeat: 0 aktif islem | Bakiye: 766.90 USD
