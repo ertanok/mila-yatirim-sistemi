@@ -13,6 +13,8 @@ SYMBOL    = "GOLD"
 LOT_SIZE  = 0.01
 LOG_FILE         = "C:\\MilaYatirim\\mila-yatirim-sistemi\\MilaGold\\milagold_mt5_log.txt"
 SIGNAL_FILE      = "C:\\MilaYatirim\\mila-yatirim-sistemi\\MilaGold\\signal.json"
+MANUAL_SIGNAL_FILE = "C:\\MilaYatirim\\mila-yatirim-sistemi\\MilaGold\\manuel_signal.json"
+MANUAL_SIGNAL_NO = "MANUEL"  # signal_no bu degerse EMA/Streak filtreleri atlanir
 PERFORMANCE_FILE      = "C:\\MilaYatirim\\mila-yatirim-sistemi\\MilaGold\\milagold_trades.json"
 CONTROL_FILE          = "C:\\MilaYatirim\\mila-yatirim-sistemi\\data\\milagold_control.json"
 POSITIONS_STATUS_FILE = "C:\\MilaYatirim\\mila-yatirim-sistemi\\MilaGold\\positions_status.json"
@@ -454,6 +456,73 @@ def read_signal():
         return None
 
 
+def read_manual_signal():
+    try:
+        if not os.path.exists(MANUAL_SIGNAL_FILE):
+            return None
+        with open(MANUAL_SIGNAL_FILE, "r") as f:
+            return json.load(f)
+    except:
+        return None
+
+
+def clear_manual_signal():
+    try:
+        if os.path.exists(MANUAL_SIGNAL_FILE):
+            with open(MANUAL_SIGNAL_FILE, "r") as f:
+                data = json.load(f)
+            data["processed"] = True
+            with open(MANUAL_SIGNAL_FILE, "w") as f:
+                json.dump(data, f)
+    except:
+        pass
+
+
+def clear_active_signal(signal_dict):
+    """Hangi kaynaktan (manuel/OCR) gelen sinyal isleniyorsa o dosyayi
+    processed=True yapar - islem yolunun tek clear_signal() cagrisi
+    her iki kaynak icin de dogru dosyaya yazsin diye."""
+    if signal_dict and signal_dict.get("signal_no") == MANUAL_SIGNAL_NO:
+        clear_manual_signal()
+    else:
+        clear_signal()
+
+
+def manuel_sinyali_tam_sinyale_cevir(manuel):
+    """manuel_signal.json'daki minimal alanlari (direction, entry) OCR
+    sinyaliyle ayni sekle cevirir - sl/tp1/tp2/tp3, mevcut SL/TP mesafe
+    sabitleriyle (SL_DISTANCE vb.) hesaplanir, boylece ayni isleme
+    fonksiyonuna OCR sinyaliyle birebir ayni sekilde girer. signal_no
+    MANUAL_SIGNAL_NO olarak isaretlenir - EMA/Streak filtreleri bu
+    isaretle atlanir (asagida)."""
+    direction = manuel["direction"]
+    entry = manuel["entry"]
+    if direction == "SELL":
+        sl  = round(entry + SL_DISTANCE,  2)
+        tp1 = round(entry - TP1_DISTANCE, 2)
+        tp2 = round(entry - TP2_DISTANCE, 2)
+        tp3 = round(entry - TP3_DISTANCE, 2)
+    else:
+        sl  = round(entry - SL_DISTANCE,  2)
+        tp1 = round(entry + TP1_DISTANCE, 2)
+        tp2 = round(entry + TP2_DISTANCE, 2)
+        tp3 = round(entry + TP3_DISTANCE, 2)
+    return {
+        "signal_no": MANUAL_SIGNAL_NO,
+        "direction": direction,
+        "entry":     entry,
+        "sl":        sl,
+        "tp1":       tp1,
+        "tp2":       tp2,
+        "tp3":       tp3,
+        "status":    "RUNNING",
+        "time":      manuel.get("time"),
+        "processed": manuel.get("processed", False),
+        "confirmed": True,
+        "cancel":    manuel.get("cancel", False),
+    }
+
+
 def read_control():
     try:
         if not os.path.exists(CONTROL_FILE):
@@ -594,7 +663,14 @@ def main():
                 log(f"Heartbeat: {len(active_trades)} aktif islem | Bakiye: {bakiye_str} USD")
                 last_heartbeat = now_ts
 
-            signal = read_signal()
+            ocr_signal = read_signal()
+            manuel_ham = read_manual_signal()
+            manuel_bekliyor = bool(manuel_ham) and not manuel_ham.get("processed") \
+                and not manuel_ham.get("cancel")
+            if manuel_bekliyor:
+                signal = manuel_sinyali_tam_sinyale_cevir(manuel_ham)
+            else:
+                signal = ocr_signal
 
             # Gunluk sifirlama
             simdi = datetime.now()
@@ -672,7 +748,7 @@ def main():
             # 23:45'ten sonra yeni islem alma
             if kapanis_saati and signal and not signal.get("processed"):
                 log("23:45 sonrasi yeni islem alinmiyor, sinyal atlandi.")
-                clear_signal()
+                clear_active_signal(signal)
                 time.sleep(5)
                 continue
 
@@ -714,23 +790,26 @@ def main():
                             log(f"Emir iptal edilemedi: ticket={bekleyen['ticket']} | {code}")
 
                     log(f"Yeni sinyal alindi: #{signal_no} {direction} @ {entry}")
-                    if not ema_filtresi_gecti_mi(direction):
-                        log(f"EMA filtresi: sinyal atlandi #{signal_no} {direction} @ {entry}")
-                        telegram(f"[MilaGold] EMA filtresi: sinyal atlandi — {direction} @ {entry} (yukari momentum)")
-                        clear_signal()
-                        continue
-                    if not streak_filtresi_gecti_mi(direction):
-                        log(f"Streak filtresi: sinyal atlandi #{signal_no} {direction} @ {entry}")
-                        telegram(f"[MilaGold] Streak filtresi: sinyal atlandi — {direction} @ {entry} (EMA100 streak yetersiz)")
-                        clear_signal()
-                        continue
+                    if signal_no == MANUAL_SIGNAL_NO:
+                        log(f"Manuel emir: EMA/Streak filtreleri atlaniyor — {direction} @ {entry}")
+                    else:
+                        if not ema_filtresi_gecti_mi(direction):
+                            log(f"EMA filtresi: sinyal atlandi #{signal_no} {direction} @ {entry}")
+                            telegram(f"[MilaGold] EMA filtresi: sinyal atlandi — {direction} @ {entry} (yukari momentum)")
+                            clear_active_signal(signal)
+                            continue
+                        if not streak_filtresi_gecti_mi(direction):
+                            log(f"Streak filtresi: sinyal atlandi #{signal_no} {direction} @ {entry}")
+                            telegram(f"[MilaGold] Streak filtresi: sinyal atlandi — {direction} @ {entry} (EMA100 streak yetersiz)")
+                            clear_active_signal(signal)
+                            continue
                     ticket = open_trade(direction, entry, sl, tp1, tp2, tp3)
                     if isinstance(ticket, int):
                         active_trades.append(
                             build_active(ticket, signal_no, direction, entry, sl, tp1, tp2, tp3))
-                        clear_signal()
+                        clear_active_signal(signal)
                     elif ticket == "SKIP":
-                        clear_signal()
+                        clear_active_signal(signal)
                     else:  # None - MT5 yanit vermedi
                         alarm = (f"[MilaGold] UYARI: Emir gonderilemedi (order_send None): "
                                  f"{direction} @ {entry}. Sonraki dongude tekrar denenecek.")
@@ -750,7 +829,7 @@ def main():
 
                     if not entry_degisti and not yon_degisti:
                         log(f"Ayni sinyal tekrar geldi, islem yapilmiyor: #{signal_no}")
-                        clear_signal()
+                        clear_active_signal(signal)
 
                     elif yon_degisti or yeni_daha_iyi:
                         neden = "yon degisti" if yon_degisti else "yeni entry daha iyi"
@@ -785,9 +864,9 @@ def main():
                             if isinstance(ticket, int):
                                 active_trades.append(
                                     build_active(ticket, signal_no, direction, entry, sl, tp1, tp2, tp3))
-                                clear_signal()
+                                clear_active_signal(signal)
                             elif ticket == "SKIP":
-                                clear_signal()
+                                clear_active_signal(signal)
                             else:  # None - MT5 yanit vermedi
                                 alarm = (f"[MilaGold] UYARI: Eski pozisyon kapandi ama yeni emir gonderilemedi "
                                          f"(order_send None): {direction} @ {entry}. Sonraki dongude tekrar denenecek.")
@@ -809,13 +888,13 @@ def main():
                                 "tp3":       tp3,
                                 "signal_no": signal_no,
                             }
-                            clear_signal()
+                            clear_active_signal(signal)
                         else:
                             if len(active_trades) >= 2:
                                 log(f"Yeni sinyal daha kotu entry, sl_level={ana['sl_level']}. "
                                     f"Ama zaten 2 pozisyon var, sinyal atildi: #{signal_no}")
                                 telegram(f"[MilaGold] Sinyal atildi (max 2 pozisyon): #{signal_no}@{entry}")
-                                clear_signal()
+                                clear_active_signal(signal)
                             else:
                                 log(f"Yeni sinyal daha kotu entry, sl_level={ana['sl_level']}. "
                                     f"2. pozisyon aciliyor: #{signal_no} @ {entry}")
@@ -825,9 +904,9 @@ def main():
                                         build_active(ticket2, signal_no, direction, entry, sl, tp1, tp2, tp3))
                                     telegram(f"[MilaGold] 2. pozisyon acildi: "
                                              f"#{signal_no} {direction} @ {entry} | ticket={ticket2}")
-                                    clear_signal()
+                                    clear_active_signal(signal)
                                 elif ticket2 == "SKIP":
-                                    clear_signal()
+                                    clear_active_signal(signal)
                                 else:  # None - MT5 yanit vermedi
                                     alarm = (f"[MilaGold] UYARI: 2. emir gonderilemedi "
                                              f"(order_send None): {direction} @ {entry}. Sonraki dongude tekrar denenecek.")
@@ -865,16 +944,19 @@ def main():
                         if price_ok:
                             log(f"Kapanis sonrasi hafizadaki sinyal deneniyor: "
                                 f"#{sk['signal_no']} {sk['direction']} @ {sk['entry']}")
-                            if not ema_filtresi_gecti_mi(sk["direction"]):
-                                log(f"EMA filtresi: hafizadaki sinyal da atlandi — {sk['direction']} @ {sk['entry']}")
-                                telegram(f"[MilaGold] EMA filtresi: hafizadaki sinyal atlandi — {sk['direction']} @ {sk['entry']}")
-                                last_skipped_signal = None
-                                continue
-                            if not streak_filtresi_gecti_mi(sk["direction"]):
-                                log(f"Streak filtresi: hafizadaki sinyal da atlandi — {sk['direction']} @ {sk['entry']}")
-                                telegram(f"[MilaGold] Streak filtresi: hafizadaki sinyal atlandi — {sk['direction']} @ {sk['entry']}")
-                                last_skipped_signal = None
-                                continue
+                            if sk.get("signal_no") == MANUAL_SIGNAL_NO:
+                                log(f"Manuel emir (hafizadaki): EMA/Streak filtreleri atlaniyor — {sk['direction']} @ {sk['entry']}")
+                            else:
+                                if not ema_filtresi_gecti_mi(sk["direction"]):
+                                    log(f"EMA filtresi: hafizadaki sinyal da atlandi — {sk['direction']} @ {sk['entry']}")
+                                    telegram(f"[MilaGold] EMA filtresi: hafizadaki sinyal atlandi — {sk['direction']} @ {sk['entry']}")
+                                    last_skipped_signal = None
+                                    continue
+                                if not streak_filtresi_gecti_mi(sk["direction"]):
+                                    log(f"Streak filtresi: hafizadaki sinyal da atlandi — {sk['direction']} @ {sk['entry']}")
+                                    telegram(f"[MilaGold] Streak filtresi: hafizadaki sinyal atlandi — {sk['direction']} @ {sk['entry']}")
+                                    last_skipped_signal = None
+                                    continue
                             ticket2 = open_trade(sk["direction"], sk["entry"],
                                                  sk["sl"], sk["tp1"], sk["tp2"], sk["tp3"])
                             if isinstance(ticket2, int):
