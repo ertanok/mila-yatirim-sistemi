@@ -5053,5 +5053,20 @@
     "sonuc": "TP3",
     "pip": 8.04,
     "profit_usd": 8.2
+  },
+  {
+    "signal_no": null,
+    "direction": "SELL",
+    "entry": 3987.5,
+    "sl": 3992.5,
+    "tp1": 3984.5,
+    "tp2": 3982.5,
+    "tp3": 3979.5,
+    "close_price": 3985.3,
+    "open_time": "2026-07-16 20:18:05",
+    "close_time": "2026-07-16 20:38:08",
+    "sonuc": "Entry",
+    "pip": 2.2,
+    "profit_usd": 2.27
   }
 ]
