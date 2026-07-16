@@ -49,6 +49,14 @@ class BoardApiHandler(BaseHTTPRequestHandler):
             self._handle_verify()
         elif self.path == "/breakout/levels":
             self._handle_breakout_levels()
+        elif self.path == "/webauthn/register/begin":
+            self._handle_webauthn_register_begin()
+        elif self.path == "/webauthn/register/complete":
+            self._handle_webauthn_register_complete()
+        elif self.path == "/webauthn/login/begin":
+            self._handle_webauthn_login_begin()
+        elif self.path == "/webauthn/login/complete":
+            self._handle_webauthn_login_complete()
         else:
             self.send_json(404, {"error": "not found"})
 
@@ -146,6 +154,88 @@ class BoardApiHandler(BaseHTTPRequestHandler):
 
         print(f"[Board API] breakout level guncellendi: {enstruman} -> {seviye}")
         self.send_json(200, {"ok": True, "instrument": enstruman, "level": seviye})
+
+    def _read_json_body(self):
+        length = int(self.headers.get("Content-Length", 0))
+        return json.loads(self.rfile.read(length))
+
+    def _handle_webauthn_register_begin(self):
+        """Yeni Passkey cihazi kaydi baslatir. Sadece zaten sifreyle giris
+        yapmis (gecerli oturum token'ina sahip) kullanici cihaz ekleyebilir."""
+        if not self._oturum_token_gecerli_mi():
+            self.send_json(401, {"error": "unauthorized"})
+            return
+        try:
+            body = self._read_json_body()
+        except Exception:
+            body = {}
+        cihaz_etiketi = body.get("device_label", "")
+
+        options_json = mila_auth.webauthn_register_baslat(cihaz_etiketi)
+        self.send_json(200, json.loads(options_json))
+
+    def _handle_webauthn_register_complete(self):
+        if not self._oturum_token_gecerli_mi():
+            self.send_json(401, {"error": "unauthorized"})
+            return
+        try:
+            body = self._read_json_body()
+        except Exception:
+            self.send_json(400, {"error": "invalid json"})
+            return
+
+        credential = body.get("credential")
+        if not credential:
+            self.send_json(400, {"error": "credential gerekli"})
+            return
+
+        basarili, hata = mila_auth.webauthn_register_tamamla(credential)
+        if not basarili:
+            self.send_json(400, {"error": hata or "kayit basarisiz"})
+            return
+        print("[Board API] yeni Passkey cihazi kaydedildi")
+        self.send_json(200, {"ok": True})
+
+    def _handle_webauthn_login_begin(self):
+        """Passkey ile giris baslatir. Hic kayitli cihaz yoksa frontend
+        sifre-tabanli girise dusmeli (passkey_kurulu: false)."""
+        ip = self.client_address[0]
+        if mila_auth.ip_kilitli_mi(ip):
+            self.send_json(429, {"error": "cok fazla basarisiz deneme, 15 dakika sonra tekrar deneyin"})
+            return
+
+        options_json = mila_auth.webauthn_dogrulama_baslat("login")
+        if options_json is None:
+            self.send_json(200, {"passkey_kurulu": False})
+            return
+        self.send_json(200, json.loads(options_json))
+
+    def _handle_webauthn_login_complete(self):
+        ip = self.client_address[0]
+        if mila_auth.ip_kilitli_mi(ip):
+            self.send_json(429, {"error": "cok fazla basarisiz deneme, 15 dakika sonra tekrar deneyin"})
+            return
+
+        try:
+            body = self._read_json_body()
+        except Exception:
+            self.send_json(400, {"error": "invalid json"})
+            return
+
+        credential = body.get("credential")
+        if not credential:
+            self.send_json(400, {"error": "credential gerekli"})
+            return
+
+        basarili, hata = mila_auth.webauthn_dogrulama_tamamla(credential, "login")
+        if not basarili:
+            mila_auth.basarisiz_deneme_kaydet(ip)
+            self.send_json(401, {"error": hata or "dogrulama basarisiz"})
+            return
+
+        mila_auth.basarili_giris_sonrasi_temizle(ip)
+        oturum = mila_auth.oturum_tokeni_uret()
+        self.send_json(200, {"ok": True, "token": oturum["token"], "expires_at": oturum["expires_at"]})
 
 
 if __name__ == "__main__":
