@@ -1,13 +1,3 @@
-[2026-07-16 18:11:51] Heartbeat: 1 aktif islem | Bakiye: 763.88 USD
-[2026-07-16 18:12:21] Heartbeat: 1 aktif islem | Bakiye: 763.88 USD
-[2026-07-16 18:12:51] Heartbeat: 1 aktif islem | Bakiye: 763.88 USD
-[2026-07-16 18:13:22] Heartbeat: 1 aktif islem | Bakiye: 763.88 USD
-[2026-07-16 18:13:48] TP1 gecildi: ticket=944360836 fiyat=3989.46 TP1=3989.5 -> SL -2 ye tasiniyor
-[2026-07-16 18:13:48] SL guncellendi: ticket=944360836 yeni SL=3994.5
-[2026-07-16 18:13:52] Heartbeat: 1 aktif islem | Bakiye: 763.88 USD
-[2026-07-16 18:14:23] Heartbeat: 1 aktif islem | Bakiye: 763.88 USD
-[2026-07-16 18:14:53] Heartbeat: 1 aktif islem | Bakiye: 763.88 USD
-[2026-07-16 18:15:14] Islem kapandi: ticket=944360836
 [2026-07-16 18:15:14] Performans kaydedildi: SL | -2.0 pip
 [2026-07-16 18:15:23] Heartbeat: 0 aktif islem | Bakiye: 761.81 USD
 [2026-07-16 18:15:54] Heartbeat: 0 aktif islem | Bakiye: 761.81 USD
@@ -78,3 +68,13 @@
 [2026-07-16 18:38:42] Heartbeat: 0 aktif islem | Bakiye: 761.81 USD
 [2026-07-16 18:39:12] Heartbeat: 0 aktif islem | Bakiye: 761.81 USD
 [2026-07-16 18:39:42] Heartbeat: 0 aktif islem | Bakiye: 761.81 USD
+[2026-07-16 18:40:12] Heartbeat: 0 aktif islem | Bakiye: 761.81 USD
+[2026-07-16 18:40:43] Heartbeat: 0 aktif islem | Bakiye: 761.81 USD
+[2026-07-16 18:41:13] Heartbeat: 0 aktif islem | Bakiye: 761.81 USD
+2026-07-16 18:41:43.143 | T3 | SELL@4011.0 | signal.json okundu (MT5 agent)
+[2026-07-16 18:41:43] Yeni sinyal alindi: #None SELL @ 4011.0
+[2026-07-16 18:41:43] EMA filtresi: SELL ATLANDI — fiyat=4010.54 > EMA20=4001.81 (yukari momentum)
+[2026-07-16 18:41:43] EMA filtresi: sinyal atlandi #None SELL @ 4011.0
+[2026-07-16 18:41:43] Telegram hatasi: ('Connection aborted.', ConnectionResetError(10054, 'An existing connection was forcibly closed by the remote host', None, 10054, None))
+[2026-07-16 18:41:44] Heartbeat: 0 aktif islem | Bakiye: 761.81 USD
+[2026-07-16 18:42:14] Heartbeat: 0 aktif islem | Bakiye: 761.81 USD
