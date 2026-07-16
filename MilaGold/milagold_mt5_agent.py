@@ -774,6 +774,15 @@ def main():
                 if ana is None:
                     bekleyenler = [t for t in active_trades
                                    if mt5_call(mt5.orders_get, ticket=t["ticket"])]
+
+                    manuel_bekleyen_var = any(
+                        b.get("signal_no") == MANUAL_SIGNAL_NO for b in bekleyenler)
+                    if manuel_bekleyen_var and signal_no != MANUAL_SIGNAL_NO:
+                        log(f"OCR sinyali atlandi (manuel emir aktif): #{signal_no} {direction} @ {entry}")
+                        telegram(f"[MilaGold] Sinyal atlandi — {direction} @ {entry} (manuel emir aktif)")
+                        clear_active_signal(signal)
+                        continue
+
                     for bekleyen in bekleyenler:
                         log(f"Yeni sinyal geldi, bekleyen emir iptal ediliyor: "
                             f"ticket={bekleyen['ticket']} ({bekleyen['direction']} @ {bekleyen['entry']})")
