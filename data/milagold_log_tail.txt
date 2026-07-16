@@ -1,21 +1,3 @@
-[2026-07-16 10:09:30] Heartbeat: 0 aktif islem | Bakiye: 768.28 USD
-[2026-07-16 10:10:01] Heartbeat: 0 aktif islem | Bakiye: 768.28 USD
-[2026-07-16 10:10:31] Heartbeat: 0 aktif islem | Bakiye: 768.28 USD
-[2026-07-16 10:11:01] Heartbeat: 0 aktif islem | Bakiye: 768.28 USD
-[2026-07-16 10:11:31] Heartbeat: 0 aktif islem | Bakiye: 768.28 USD
-[2026-07-16 10:12:01] Heartbeat: 0 aktif islem | Bakiye: 768.28 USD
-[2026-07-16 10:12:32] Heartbeat: 0 aktif islem | Bakiye: 768.28 USD
-[2026-07-16 10:13:02] Heartbeat: 0 aktif islem | Bakiye: 768.28 USD
-[2026-07-16 10:13:32] Heartbeat: 0 aktif islem | Bakiye: 768.28 USD
-[2026-07-16 10:14:03] Heartbeat: 0 aktif islem | Bakiye: 768.28 USD
-[2026-07-16 10:14:33] Heartbeat: 0 aktif islem | Bakiye: 768.28 USD
-[2026-07-16 10:15:04] Heartbeat: 0 aktif islem | Bakiye: 768.28 USD
-[2026-07-16 10:15:34] Heartbeat: 0 aktif islem | Bakiye: 768.28 USD
-[2026-07-16 10:16:04] Heartbeat: 0 aktif islem | Bakiye: 768.28 USD
-[2026-07-16 10:16:35] Heartbeat: 0 aktif islem | Bakiye: 768.28 USD
-[2026-07-16 10:17:05] Heartbeat: 0 aktif islem | Bakiye: 768.28 USD
-[2026-07-16 10:17:35] Heartbeat: 0 aktif islem | Bakiye: 768.28 USD
-[2026-07-16 10:18:06] Heartbeat: 0 aktif islem | Bakiye: 768.28 USD
 2026-07-16 10:18:25.355 | T3 | SELL@4030.5 | signal.json okundu (MT5 agent)
 [2026-07-16 10:18:25] Yeni sinyal alindi: #None SELL @ 4030.5
 [2026-07-16 10:18:25] EMA filtresi: SELL ONAYLANDI — fiyat=4024.50 <= EMA20=4028.40
@@ -78,3 +60,21 @@
 [2026-07-16 10:39:23] Heartbeat: 1 aktif islem | Bakiye: 768.28 USD
 [2026-07-16 10:39:53] Heartbeat: 1 aktif islem | Bakiye: 768.28 USD
 [2026-07-16 10:40:24] Heartbeat: 1 aktif islem | Bakiye: 768.28 USD
+2026-07-16 10:40:40.991 | T3 | SELL@4030.5 | signal.json okundu (MT5 agent)
+[2026-07-16 10:40:40] Yeni sinyal (yeni entry daha iyi): SELL@4025.5 -> SELL@4030.5. Kapatiliyor: ticket=943543569
+[2026-07-16 10:40:41] Pozisyon piyasadan kapatildi: ticket=943543569 @ 4026.97 (filling=1)
+[2026-07-16 10:40:41] Performans kaydedildi: Exit | -1.47 pip
+[2026-07-16 10:40:41] Emir turu: SELL_LIMIT (fiyat=4026.4 <= entry=4030.5)
+2026-07-16 10:40:41.279 | T4 | SELL@4030.5 | order_send cagrilacak
+2026-07-16 10:40:41.301 | T5 | SELL@4030.5 | order_send sonucu: basarili
+[2026-07-16 10:40:41] Islem acildi: 943560812 | SELL @ 4030.5 | SL:4035.5 | TP1:4027.5 TP2:4025.5 TP3:4022.5
+[2026-07-16 10:40:55] Heartbeat: 1 aktif islem | Bakiye: 766.90 USD
+2026-07-16 10:40:55.526 | T3 | SELL@4025.0 | signal.json okundu (MT5 agent)
+[2026-07-16 10:40:55] Yeni sinyal geldi, bekleyen emir iptal ediliyor: ticket=943560812 (SELL @ 4030.5)
+[2026-07-16 10:40:55] Bekleyen emir iptal edildi: ticket=943560812
+[2026-07-16 10:40:55] Yeni sinyal alindi: #None SELL @ 4025.0
+[2026-07-16 10:40:55] EMA filtresi: SELL ATLANDI — fiyat=4027.56 > EMA20=4027.20 (yukari momentum)
+[2026-07-16 10:40:55] EMA filtresi: sinyal atlandi #None SELL @ 4025.0
+[2026-07-16 10:41:26] Heartbeat: 0 aktif islem | Bakiye: 766.90 USD
+[2026-07-16 10:41:56] Heartbeat: 0 aktif islem | Bakiye: 766.90 USD
+[2026-07-16 10:42:26] Heartbeat: 0 aktif islem | Bakiye: 766.90 USD
