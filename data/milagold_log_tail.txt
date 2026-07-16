@@ -1,15 +1,3 @@
-[2026-07-16 21:05:02] Heartbeat: 1 aktif islem | Bakiye: 763.18 USD
-[2026-07-16 21:05:33] Heartbeat: 1 aktif islem | Bakiye: 763.18 USD
-[2026-07-16 21:06:03] Heartbeat: 1 aktif islem | Bakiye: 763.18 USD
-[2026-07-16 21:06:33] Heartbeat: 1 aktif islem | Bakiye: 763.18 USD
-[2026-07-16 21:07:03] Heartbeat: 1 aktif islem | Bakiye: 763.18 USD
-[2026-07-16 21:07:34] Heartbeat: 1 aktif islem | Bakiye: 763.18 USD
-[2026-07-16 21:08:04] Heartbeat: 1 aktif islem | Bakiye: 763.18 USD
-[2026-07-16 21:08:34] Heartbeat: 1 aktif islem | Bakiye: 763.18 USD
-2026-07-16 21:08:38.005 | T3 | SELL@3983.0 | signal.json okundu (MT5 agent)
-[2026-07-16 21:08:38] Yeni sinyal daha kotu entry, sl_level=0. Eski pozisyon tutuldu, sinyal hafizaya alindi: #None@3983.0
-[2026-07-16 21:09:05] Heartbeat: 1 aktif islem | Bakiye: 763.18 USD
-[2026-07-16 21:09:35] Heartbeat: 1 aktif islem | Bakiye: 763.18 USD
 [2026-07-16 21:10:06] Heartbeat: 1 aktif islem | Bakiye: 763.18 USD
 [2026-07-16 21:10:36] Heartbeat: 1 aktif islem | Bakiye: 763.18 USD
 [2026-07-16 21:10:43] Islem kapandi: ticket=944604080
@@ -78,3 +66,15 @@
 [2026-07-16 21:36:18] Heartbeat: 0 aktif islem | Bakiye: 757.60 USD
 [2026-07-16 21:36:48] Heartbeat: 0 aktif islem | Bakiye: 757.60 USD
 [2026-07-16 21:37:18] Heartbeat: 0 aktif islem | Bakiye: 757.60 USD
+[2026-07-16 21:37:49] Heartbeat: 0 aktif islem | Bakiye: 757.60 USD
+[2026-07-16 21:38:19] Heartbeat: 0 aktif islem | Bakiye: 757.60 USD
+[2026-07-16 21:38:49] Heartbeat: 0 aktif islem | Bakiye: 757.60 USD
+2026-07-16 21:39:14.164 | T3 | SELL@3986.0 | signal.json okundu (MT5 agent)
+[2026-07-16 21:39:14] Yeni sinyal alindi: #None SELL @ 3986.0
+[2026-07-16 21:39:14] EMA filtresi: SELL ONAYLANDI — fiyat=3978.37 <= EMA20=3985.45
+[2026-07-16 21:39:14] Streak filtresi: SELL ONAYLANDI — EMA100 streak=79 >= 13
+[2026-07-16 21:39:14] Emir turu: SELL_LIMIT (fiyat=3978.37 <= entry=3986.0)
+2026-07-16 21:39:14.205 | T4 | SELL@3986.0 | order_send cagrilacak
+2026-07-16 21:39:14.252 | T5 | SELL@3986.0 | order_send sonucu: basarili
+[2026-07-16 21:39:14] Islem acildi: 944670336 | SELL @ 3986.0 | SL:3991.0 | TP1:3983.0 TP2:3981.0 TP3:3978.0
+[2026-07-16 21:39:20] Heartbeat: 1 aktif islem | Bakiye: 757.60 USD
