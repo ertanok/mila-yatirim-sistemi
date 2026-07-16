@@ -1,51 +1,3 @@
-2026-07-16 16:16:09,578 | Takip: SELL @ 3980.0 | Status:RUNNING
-2026-07-16 16:16:13,693 | Sinyal tarihi okunamadi (filtre devrede degil).
-2026-07-16 16:16:13,693 | Takip: SELL @ 3980.0 | Status:RUNNING
-2026-07-16 16:16:17,711 | Sinyal tarihi okunamadi (filtre devrede degil).
-2026-07-16 16:16:17,712 | Takip: SELL @ 3980.0 | Status:RUNNING
-2026-07-16 16:16:23,081 | Sinyal tarihi okunamadi (filtre devrede degil).
-2026-07-16 16:16:23,081 | Takip: SELL @ 3980.0 | Status:RUNNING
-2026-07-16 16:16:28,049 | Sinyal tarihi okunamadi (filtre devrede degil).
-2026-07-16 16:16:28,049 | Takip: SELL @ 3980.0 | Status:RUNNING
-2026-07-16 16:16:32,374 | Sinyal tarihi okunamadi (filtre devrede degil).
-2026-07-16 16:16:32,374 | Takip: SELL @ 3980.0 | Status:RUNNING
-2026-07-16 16:16:37,245 | Sinyal tarihi okunamadi (filtre devrede degil).
-2026-07-16 16:16:37,245 | Takip: SELL @ 3980.0 | Status:RUNNING
-2026-07-16 16:16:43,329 | Sinyal tarihi okunamadi (filtre devrede degil).
-2026-07-16 16:16:43,329 | Takip: SELL @ 3980.0 | Status:RUNNING
-2026-07-16 16:16:48,171 | Sinyal tarihi okunamadi (filtre devrede degil).
-2026-07-16 16:16:48,171 | Takip: SELL @ 3980.0 | Status:RUNNING
-2026-07-16 16:16:52,660 | Sinyal tarihi okunamadi (filtre devrede degil).
-2026-07-16 16:16:52,661 | Takip: SELL @ 3980.0 | Status:RUNNING
-2026-07-16 16:16:57,841 | Sinyal tarihi okunamadi (filtre devrede degil).
-2026-07-16 16:16:57,841 | Takip: SELL @ 3980.0 | Status:RUNNING
-2026-07-16 16:17:03,879 | Sinyal tarihi okunamadi (filtre devrede degil).
-2026-07-16 16:17:03,880 | Takip: SELL @ 3980.0 | Status:RUNNING
-2026-07-16 16:17:10,602 | Sinyal tarihi okunamadi (filtre devrede degil).
-2026-07-16 16:17:10,603 | Takip: SELL @ 3980.0 | Status:RUNNING
-2026-07-16 16:17:12,721 | Periyodik debug screenshot: list_debug_20260716_161712.png
-2026-07-16 16:17:12,723 | Periyodik sayfa yenileme (30 dk) basliyor...
-2026-07-16 16:17:21,303 | Periyodik sayfa yenileme tamamlandi.
-2026-07-16 16:17:25,404 | GOLD karti okunamadi (1). Ham: ['Disclaimer', 'The information on signalgpt ai is for reference and', 'knowledge-sharing purpos']
-2026-07-16 16:17:30,774 | GOLD karti okunamadi (2). Ham: ['Disclaimer', 'The information on signalgpt ai is for reference and', 'knowledge-sharing purpos']
-2026-07-16 16:17:34,780 | GOLD karti okunamadi (3). Ham: ['Disclaimer', 'The information on signalgpt ai is for reference and', 'knowledge-sharing purpos']
-2026-07-16 16:17:39,849 | GOLD karti okunamadi (4). Ham: ['Disclaimer', 'The information on signalgpt ai is for reference and', 'knowledge-sharing purpos']
-2026-07-16 16:17:44,931 | GOLD karti okunamadi (5). Ham: ['Disclaimer', 'The information on signalgpt ai is for reference and', 'knowledge-sharing purpos']
-2026-07-16 16:17:49,347 | GOLD karti okunamadi (6). Ham: ['Disclaimer', 'The information on signalgpt ai is for reference and', 'knowledge-sharing purpos']
-2026-07-16 16:17:54,784 | GOLD karti okunamadi (7). Ham: ['Disclaimer', 'The information on signalgpt ai is for reference and', 'knowledge-sharing purpos']
-2026-07-16 16:18:23,236 | EasyOCR yukleniyor...
-2026-07-16 16:18:23,238 | Using CPU. Note: This module is much faster with a GPU.
-2026-07-16 16:18:28,898 | EasyOCR hazir.
-2026-07-16 16:18:28,898 | ==================================================
-2026-07-16 16:18:28,899 | MilaGold OCR Agent - Signal GPT versiyonu
-2026-07-16 16:18:28,899 | ==================================================
-2026-07-16 16:18:29,412 | Chrome versiyonu (exe): 150.0.7871.116
-2026-07-16 16:18:29,412 | ChromeDriver cache'den: C:\MilaYatirim\mila-yatirim-sistemi\MilaGold\chromedriver_cache\150.0.7871.116\chromedriver.exe
-2026-07-16 16:18:29,428 | ChromeDriver: C:\MilaYatirim\mila-yatirim-sistemi\MilaGold\chromedriver_cache\150.0.7871.116\chromedriver.exe
-2026-07-16 16:18:32,326 | Signal GPT sayfasina gidildi.
-2026-07-16 16:18:32,351 | Sayfa yukleniyor, 15 saniye bekleniyor...
-2026-07-16 16:18:47,639 | Baslangic screenshot alindi.
-2026-07-16 16:18:47,641 | Ilk okuma oncesi 5 saniye bekleniyor...
 2026-07-16 16:18:52,642 | Okuma dongusune giriliyor...
 2026-07-16 16:18:55,598 | GOLD karti okunamadi (1). Ham: ['Disclaimer', 'The information on signalgpt ai is for reference and', 'knowledge-sharing purpos']
 2026-07-16 16:18:59,822 | GOLD karti okunamadi (2). Ham: ['Disclaimer', 'The information on signalgpt ai is for reference and', 'knowledge-sharing purpos']
@@ -78,3 +30,51 @@
 2026-07-16 16:20:24,794 | Takip: SELL @ 3994.0 | Status:RUNNING
 2026-07-16 16:20:34,555 | Sinyal tarihi okundu: 16/07/2026 20:18
 2026-07-16 16:20:34,556 | Takip: SELL @ 3994.0 | Status:RUNNING
+2026-07-16 16:20:41,525 | Sinyal tarihi okundu: 16/07/2026 20:18
+2026-07-16 16:20:41,526 | Takip: SELL @ 3994.0 | Status:RUNNING
+2026-07-16 16:20:47,492 | Sinyal tarihi okundu: 16/07/2026 20:18
+2026-07-16 16:20:47,492 | Takip: SELL @ 3994.0 | Status:RUNNING
+2026-07-16 16:20:53,064 | Sinyal tarihi okundu: 16/07/2026 20:18
+2026-07-16 16:20:53,065 | Takip: SELL @ 3994.0 | Status:RUNNING
+2026-07-16 16:20:57,759 | Sinyal tarihi okundu: 16/07/2026 20:18
+2026-07-16 16:20:57,759 | Takip: SELL @ 3994.0 | Status:RUNNING
+2026-07-16 16:21:05,476 | Sinyal tarihi okundu: 16/07/2026 20:18
+2026-07-16 16:21:05,477 | Takip: SELL @ 3994.0 | Status:RUNNING
+2026-07-16 16:21:10,638 | Sinyal tarihi okundu: 16/07/2026 20:18
+2026-07-16 16:21:10,639 | Takip: SELL @ 3994.0 | Status:RUNNING
+2026-07-16 16:21:15,807 | Sinyal tarihi okundu: 16/07/2026 20:18
+2026-07-16 16:21:15,807 | Takip: SELL @ 3994.0 | Status:RUNNING
+2026-07-16 16:21:20,324 | Sinyal tarihi okundu: 16/07/2026 20:18
+2026-07-16 16:21:20,324 | Takip: SELL @ 3994.0 | Status:RUNNING
+2026-07-16 16:21:25,252 | Sinyal tarihi okundu: 16/07/2026 20:18
+2026-07-16 16:21:25,252 | Takip: SELL @ 3994.0 | Status:RUNNING
+2026-07-16 16:21:30,846 | Sinyal tarihi okundu: 16/07/2026 20:18
+2026-07-16 16:21:30,846 | Takip: SELL @ 3994.0 | Status:RUNNING
+2026-07-16 16:21:35,618 | Sinyal tarihi okundu: 16/07/2026 20:18
+2026-07-16 16:21:35,619 | Takip: SELL @ 3994.0 | Status:RUNNING
+2026-07-16 16:21:42,832 | Sinyal tarihi okundu: 16/07/2026 20:18
+2026-07-16 16:21:42,832 | Takip: SELL @ 3994.0 | Status:RUNNING
+2026-07-16 16:21:47,609 | Sinyal tarihi okundu: 16/07/2026 20:18
+2026-07-16 16:21:47,610 | Takip: SELL @ 3994.0 | Status:RUNNING
+2026-07-16 16:21:52,167 | Sinyal tarihi okundu: 16/07/2026 20:18
+2026-07-16 16:21:52,168 | Takip: SELL @ 3994.0 | Status:RUNNING
+2026-07-16 16:21:57,369 | Sinyal tarihi okundu: 16/07/2026 20:18
+2026-07-16 16:21:57,369 | Takip: SELL @ 3994.0 | Status:RUNNING
+2026-07-16 16:22:03,919 | Sinyal tarihi okundu: 16/07/2026 20:18
+2026-07-16 16:22:03,919 | Takip: SELL @ 3994.0 | Status:RUNNING
+2026-07-16 16:22:10,777 | Sinyal tarihi okundu: 16/07/2026 20:18
+2026-07-16 16:22:10,778 | Takip: SELL @ 3994.0 | Status:RUNNING
+2026-07-16 16:22:16,381 | Sinyal tarihi okundu: 16/07/2026 20:18
+2026-07-16 16:22:16,381 | Takip: SELL @ 3994.0 | Status:RUNNING
+2026-07-16 16:22:22,454 | Sinyal tarihi okundu: 16/07/2026 20:18
+2026-07-16 16:22:22,455 | Takip: SELL @ 3994.0 | Status:RUNNING
+2026-07-16 16:22:26,378 | Sinyal tarihi okundu: 16/07/2026 20:18
+2026-07-16 16:22:26,378 | Takip: SELL @ 3994.0 | Status:RUNNING
+2026-07-16 16:22:33,240 | Sinyal tarihi okundu: 16/07/2026 20:18
+2026-07-16 16:22:33,240 | Takip: SELL @ 3994.0 | Status:RUNNING
+2026-07-16 16:22:38,390 | Sinyal tarihi okundu: 16/07/2026 20:18
+2026-07-16 16:22:38,390 | Takip: SELL @ 3994.0 | Status:RUNNING
+2026-07-16 16:22:46,151 | Sinyal tarihi okundu: 16/07/2026 20:18
+2026-07-16 16:22:46,151 | Takip: SELL @ 3994.0 | Status:RUNNING
+2026-07-16 16:22:50,163 | Sinyal tarihi okundu: 16/07/2026 20:18
+2026-07-16 16:22:50,163 | Takip: SELL @ 3994.0 | Status:RUNNING
