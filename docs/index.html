@@ -1,0 +1,1136 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MiLA Dashboard</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
+
+  :root {
+    --bg:        #0d0f14;
+    --surface:   #151820;
+    --border:    #232737;
+    --text:      #e2e8f0;
+    --muted:     #64748b;
+    --accent:    #f0c040;
+    --green:     #22c55e;
+    --red:       #ef4444;
+    --blue:      #60a5fa;
+    --orange:    #f97316;
+    --purple:    #a78bfa;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    line-height: 1.5;
+    min-height: 100vh;
+  }
+
+  /* ── Header ── */
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 18px 28px;
+    border-bottom: 1px solid var(--border);
+    position: sticky;
+    top: 0;
+    background: var(--bg);
+    z-index: 10;
+  }
+
+  .logo {
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    color: var(--accent);
+  }
+  .logo span { color: var(--muted); font-weight: 300; }
+
+  .header-right {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+  }
+
+  #last-update {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px;
+    color: var(--muted);
+  }
+
+  .refresh-btn {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    color: var(--text);
+    padding: 6px 14px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 12px;
+    font-family: 'Inter', sans-serif;
+    transition: border-color 0.2s;
+  }
+  .refresh-btn:hover { border-color: var(--accent); }
+
+  /* ── Layout ── */
+  main {
+    padding: 24px 28px;
+    max-width: 1400px;
+    margin: 0 auto;
+  }
+
+  /* ── Agent durum bari ── */
+  .agent-bar {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 28px;
+    flex-wrap: wrap;
+  }
+
+  .agent-pill {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 20px;
+    padding: 6px 14px;
+    font-size: 12px;
+  }
+
+  .dot {
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: var(--muted);
+  }
+  .dot.aktif  { background: var(--green); box-shadow: 0 0 6px var(--green); }
+  .dot.yavas  { background: var(--orange); }
+  .dot.durdu  { background: var(--red); }
+  .dot.beklemede { background: var(--muted); }
+
+  /* ── Proje grid ── */
+  .projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 16px;
+  }
+
+  /* ── Proje kart ── */
+  .card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 20px;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .card::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 3px;
+  }
+  .card.milagold::before  { background: var(--accent); }
+  .card.justin::before    { background: var(--blue); }
+  .card.copytrading::before { background: var(--purple); }
+  .card.ertan::before     { background: var(--orange); }
+
+  .card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 16px;
+  }
+
+  .card-title {
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: var(--muted);
+  }
+
+  .badge {
+    font-size: 10px;
+    font-weight: 600;
+    padding: 3px 8px;
+    border-radius: 10px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+  }
+  .badge.aktif      { background: rgba(34,197,94,0.15);  color: var(--green); }
+  .badge.beklemede  { background: rgba(100,116,139,0.15); color: var(--muted); }
+  .badge.gelistirme { background: rgba(96,165,250,0.15);  color: var(--blue); }
+  .badge.baslangic  { background: rgba(249,115,22,0.15);  color: var(--orange); }
+
+  /* ── Metrik satiri ── */
+  .metrics {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    margin-bottom: 14px;
+  }
+
+  .metric {
+    background: rgba(255,255,255,0.03);
+    border-radius: 8px;
+    padding: 10px 12px;
+  }
+
+  .metric-label {
+    font-size: 10px;
+    color: var(--muted);
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    margin-bottom: 4px;
+  }
+
+  .metric-value {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 17px;
+    font-weight: 500;
+  }
+  .metric-value.pos { color: var(--green); }
+  .metric-value.neg { color: var(--red); }
+  .metric-value.neu { color: var(--text); }
+
+  /* ── Son trade ── */
+  .last-trade {
+    border-top: 1px solid var(--border);
+    padding-top: 12px;
+    margin-top: 4px;
+  }
+
+  .last-trade-label {
+    font-size: 10px;
+    color: var(--muted);
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    margin-bottom: 6px;
+  }
+
+  .trade-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 12px;
+    gap: 8px;
+  }
+
+  .trade-dir {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px;
+    padding: 2px 7px;
+    border-radius: 4px;
+  }
+  .trade-dir.buy  { background: rgba(34,197,94,0.15);  color: var(--green); }
+  .trade-dir.sell { background: rgba(239,68,68,0.15);  color: var(--red); }
+
+  .trade-result {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 12px;
+    font-weight: 500;
+  }
+
+  /* ── Sinyal kutusu ── */
+  .signal-box {
+    background: rgba(240,192,64,0.06);
+    border: 1px solid rgba(240,192,64,0.2);
+    border-radius: 8px;
+    padding: 10px 12px;
+    margin-top: 10px;
+    font-size: 12px;
+  }
+
+  .signal-box .sig-label {
+    font-size: 10px;
+    color: var(--accent);
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    margin-bottom: 4px;
+  }
+
+  .signal-box .sig-val {
+    font-family: 'JetBrains Mono', monospace;
+  }
+
+  /* ── Durum mesajı ── */
+  .status-msg {
+    color: var(--muted);
+    font-size: 12px;
+    margin-top: 10px;
+    font-style: italic;
+  }
+
+  /* ── Hata / yuklenme ── */
+  .loading {
+    color: var(--muted);
+    font-size: 12px;
+    margin-top: 8px;
+  }
+
+  /* ── Log kuyrugu ── */
+  .log-toggle {
+    margin-top: 12px;
+    font-size: 11px;
+    color: var(--muted);
+    cursor: pointer;
+    user-select: none;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+  .log-toggle:hover { color: var(--text); }
+
+  .log-box {
+    display: none;
+    margin-top: 8px;
+    background: rgba(0,0,0,0.3);
+    border-radius: 6px;
+    padding: 10px;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 10px;
+    color: var(--muted);
+    max-height: 180px;
+    overflow-y: auto;
+    white-space: pre-wrap;
+    word-break: break-all;
+  }
+  .log-box.open { display: block; }
+
+  /* ── Pause/Resume butonu ── */
+  .pause-btn {
+    width: 100%;
+    margin-top: 12px;
+    padding: 9px 0;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    font-family: 'Inter', sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    transition: opacity 0.2s;
+  }
+  .pause-btn:hover   { opacity: 0.8; }
+  .pause-btn:disabled { opacity: 0.45; cursor: not-allowed; }
+  .pause-btn.aktif {
+    background: rgba(34,197,94,0.12);
+    color: var(--green);
+    border: 1px solid rgba(34,197,94,0.3);
+  }
+  .pause-btn.durduruldu {
+    background: rgba(239,68,68,0.12);
+    color: var(--red);
+    border: 1px solid rgba(239,68,68,0.3);
+  }
+
+  /* ── Giris ekrani ── */
+  .login-overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.6);
+    align-items: center;
+    justify-content: center;
+    z-index: 100;
+  }
+  .login-overlay.open { display: flex; }
+
+  .login-box {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 28px;
+    width: 100%;
+    max-width: 320px;
+  }
+
+  .login-title {
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    color: var(--accent);
+    margin-bottom: 18px;
+  }
+  .login-title span { color: var(--muted); font-weight: 300; }
+
+  .login-box input {
+    width: 100%;
+    background: rgba(255,255,255,0.04);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 10px 12px;
+    color: var(--text);
+    font-family: 'Inter', sans-serif;
+    font-size: 13px;
+    margin-bottom: 12px;
+  }
+  .login-box input:focus { outline: none; border-color: var(--accent); }
+
+  .login-btn {
+    width: 100%;
+    padding: 10px 0;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    font-family: 'Inter', sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    background: rgba(240,192,64,0.15);
+    color: var(--accent);
+    border: 1px solid rgba(240,192,64,0.3);
+    transition: opacity 0.2s;
+  }
+  .login-btn:hover { opacity: 0.8; }
+  .login-btn:disabled { opacity: 0.45; cursor: not-allowed; }
+
+  .login-error {
+    color: var(--red);
+    font-size: 11px;
+    margin-top: 10px;
+    min-height: 14px;
+  }
+
+  .login-cancel {
+    width: 100%;
+    margin-top: 8px;
+    padding: 8px 0;
+    border-radius: 8px;
+    border: 1px solid var(--border);
+    background: transparent;
+    color: var(--muted);
+    cursor: pointer;
+    font-family: 'Inter', sans-serif;
+    font-size: 11px;
+  }
+  .login-cancel:hover { color: var(--text); }
+
+  /* ── Passkey ── */
+  .passkey-btn {
+    width: 100%;
+    padding: 10px 0;
+    border-radius: 8px;
+    border: 1px solid rgba(96,165,250,0.35);
+    cursor: pointer;
+    font-family: 'Inter', sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+    background: rgba(96,165,250,0.12);
+    color: var(--blue);
+    margin-bottom: 12px;
+    transition: opacity 0.2s;
+  }
+  .passkey-btn:hover { opacity: 0.8; }
+  .passkey-btn:disabled { opacity: 0.45; cursor: not-allowed; }
+
+  .login-divider {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: var(--muted);
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    margin: 4px 0 12px;
+  }
+  .login-divider::before, .login-divider::after {
+    content: '';
+    flex: 1;
+    height: 1px;
+    background: var(--border);
+  }
+
+  .passkey-setup-box {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 24px;
+    width: 100%;
+    max-width: 320px;
+  }
+  .passkey-setup-title {
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--text);
+    margin-bottom: 6px;
+  }
+  .passkey-setup-desc {
+    font-size: 12px;
+    color: var(--muted);
+    margin-bottom: 16px;
+    line-height: 1.5;
+  }
+  .passkey-setup-box input {
+    width: 100%;
+    background: rgba(255,255,255,0.04);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 10px 12px;
+    color: var(--text);
+    font-family: 'Inter', sans-serif;
+    font-size: 13px;
+    margin-bottom: 12px;
+  }
+  .passkey-setup-box input:focus { outline: none; border-color: var(--blue); }
+  .passkey-setup-msg {
+    font-size: 11px;
+    margin-top: 10px;
+    min-height: 14px;
+  }
+  .passkey-setup-msg.err { color: var(--red); }
+  .passkey-setup-msg.ok { color: var(--green); }
+</style>
+</head>
+<body>
+
+<div class="login-overlay" id="login-overlay">
+  <div class="login-box">
+    <div class="login-title">MiLA <span>/ Giriş</span></div>
+    <button class="passkey-btn" id="passkey-login-btn" style="display:none" onclick="handlePasskeyLogin()">🔑 Passkey ile Giriş</button>
+    <div class="login-divider" id="login-divider" style="display:none">veya</div>
+    <input type="password" id="login-password" placeholder="Şifre" autocomplete="current-password">
+    <button class="login-btn" id="login-btn" onclick="handleLoginSubmit()">Giriş Yap</button>
+    <button class="login-cancel" onclick="hideLogin()">Vazgeç</button>
+    <div class="login-error" id="login-error"></div>
+  </div>
+</div>
+
+<div class="login-overlay" id="passkey-setup-overlay">
+  <div class="passkey-setup-box">
+    <div class="passkey-setup-title">Bu cihazı Passkey olarak ekle</div>
+    <div class="passkey-setup-desc">Bir sonraki girişte şifre yerine Windows Hello / yüz tanıma ile giriş yapabilirsin.</div>
+    <input type="text" id="passkey-device-label" placeholder="Cihaz adı (örn. laptop, telefon)">
+    <button class="passkey-btn" id="passkey-setup-btn" onclick="handlePasskeySetup()">Cihazı Ekle</button>
+    <button class="login-cancel" onclick="hidePasskeySetup()">Şimdi Değil</button>
+    <div class="passkey-setup-msg" id="passkey-setup-msg"></div>
+  </div>
+</div>
+
+<header>
+  <div class="logo">MiLA <span>/ Yatirim Sistemi</span></div>
+  <div class="header-right">
+    <span id="last-update">Yükleniyor...</span>
+    <button class="refresh-btn" onclick="loadAll()">↻ Yenile</button>
+  </div>
+</header>
+
+<main>
+
+  <!-- Agent durum bari -->
+  <div class="agent-bar" id="agent-bar">
+    <div class="agent-pill"><div class="dot" id="dot-ocr"></div><span id="lbl-ocr">OCR Agent —</span></div>
+    <div class="agent-pill"><div class="dot" id="dot-mt5"></div><span id="lbl-mt5">MT5 Agent —</span></div>
+    <div class="agent-pill"><div class="dot" id="dot-sync"></div><span id="lbl-sync">Sync Agent —</span></div>
+  </div>
+
+  <!-- Proje kartlari -->
+  <div class="projects-grid">
+
+    <!-- MILAGOLD -->
+    <div class="card milagold">
+      <div class="card-header">
+        <div class="card-title">MilaGold</div>
+        <div class="badge aktif">Aktif</div>
+      </div>
+      <div class="metrics">
+        <div class="metric">
+          <div class="metric-label">Günlük P&amp;L</div>
+          <div class="metric-value neu" id="mg-pnl">—</div>
+        </div>
+        <div class="metric">
+          <div class="metric-label">Açık Pozisyon</div>
+          <div class="metric-value neu" id="mg-pos">—</div>
+        </div>
+        <div class="metric">
+          <div class="metric-label">Bugün İşlem</div>
+          <div class="metric-value neu" id="mg-count">—</div>
+        </div>
+        <div class="metric">
+          <div class="metric-label">Win Rate</div>
+          <div class="metric-value neu" id="mg-wr">—</div>
+        </div>
+      </div>
+      <div class="last-trade">
+        <div class="last-trade-label">Son İşlem</div>
+        <div class="trade-row" id="mg-last-trade">
+          <span class="loading">Veri bekleniyor...</span>
+        </div>
+      </div>
+      <div class="signal-box" id="mg-signal-box" style="display:none">
+        <div class="sig-label">Aktif Sinyal</div>
+        <div class="sig-val" id="mg-signal-val">—</div>
+      </div>
+      <button class="pause-btn aktif" id="mg-pause-btn" onclick="toggleMilaGoldPause()">● Aktif</button>
+      <div class="log-toggle" onclick="toggleLog('mg-log')">▶ MT5 Log</div>
+      <div class="log-box" id="mg-log"></div>
+    </div>
+
+    <!-- JUSTIN -->
+    <div class="card justin">
+      <div class="card-header">
+        <div class="card-title">Justin</div>
+        <div class="badge gelistirme">Geliştirme</div>
+      </div>
+      <div class="status-msg">Strateji geliştirme aşamasında. Araştırmacı analizi tamamlandı — M15 ağırlıklı, H1 filtreli trend following.</div>
+      <div class="metrics" style="margin-top:14px">
+        <div class="metric">
+          <div class="metric-label">Aşama</div>
+          <div class="metric-value neu" style="font-size:13px">Backtest</div>
+        </div>
+        <div class="metric">
+          <div class="metric-label">Hedef KF</div>
+          <div class="metric-value neu" style="font-size:13px">≥ 2.0</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- COPY TRADING -->
+    <div class="card copytrading">
+      <div class="card-header">
+        <div class="card-title">Copy Trading</div>
+        <div class="badge beklemede">Beklemede</div>
+      </div>
+      <div class="status-msg">Gerçek hesap performansı izleniyor. MilaGold track record oluştuktan sonra aktive edilecek.</div>
+      <div class="metrics" style="margin-top:14px">
+        <div class="metric">
+          <div class="metric-label">Master Hesap</div>
+          <div class="metric-value neu" style="font-size:13px">XM Std.</div>
+        </div>
+        <div class="metric">
+          <div class="metric-label">Min. Yatırım</div>
+          <div class="metric-value neu" style="font-size:13px">$200</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ERTAN STRATEJiSi -->
+    <div class="card ertan">
+      <div class="card-header">
+        <div class="card-title">Ertan Stratejisi</div>
+        <div class="badge baslangic">Başlangıç</div>
+      </div>
+      <div class="status-msg">TradingView'dan MT5'e uyarlama aşamasında. BB (20,2) + SMA tabanlı, XAUUSD M15.</div>
+      <div class="metrics" style="margin-top:14px">
+        <div class="metric">
+          <div class="metric-label">İndikatör</div>
+          <div class="metric-value neu" style="font-size:13px">BB + SMA</div>
+        </div>
+        <div class="metric">
+          <div class="metric-label">Durum</div>
+          <div class="metric-value neu" style="font-size:13px">Analiz</div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</main>
+
+<script>
+// ── Config ────────────────────────────────────────────────────────────────
+const GITHUB_USER   = "ertanok";
+const GITHUB_REPO   = "mila-yatirim-sistemi";
+const GITHUB_BRANCH = "main";
+const REFRESH_MS    = 60000; // 60 saniye
+
+const API_URL   = "https://dashboard.milaertanok.com/control";
+const BOARD_BASE = "https://login.milaertanok.com";
+const LOGIN_URL = BOARD_BASE + "/login";
+const TOKEN_KEY = "mila_session_token";
+const EXPIRES_KEY = "mila_session_expires";
+
+// GitHub raw URL uret
+function rawUrl(path) {
+  return `https://raw.githubusercontent.com/${GITHUB_USER}/${GITHUB_REPO}/${GITHUB_BRANCH}/${path}?t=${Date.now()}`;
+}
+
+// ── Fetch yardimcisi ─────────────────────────────────────────────────────
+async function fetchJSON(path) {
+  try {
+    const r = await fetch(rawUrl(path));
+    if (!r.ok) return null;
+    return await r.json();
+  } catch { return null; }
+}
+
+async function fetchText(path) {
+  try {
+    const r = await fetch(rawUrl(path));
+    if (!r.ok) return null;
+    return await r.text();
+  } catch { return null; }
+}
+
+// ── Para formatlayici ────────────────────────────────────────────────────
+function fmtPnl(val) {
+  if (val === null || val === undefined) return { txt: "—", cls: "neu" };
+  const n = parseFloat(val);
+  if (isNaN(n)) return { txt: "—", cls: "neu" };
+  const cls = n > 0 ? "pos" : n < 0 ? "neg" : "neu";
+  const txt = (n >= 0 ? "+" : "") + n.toFixed(2) + " $";
+  return { txt, cls };
+}
+
+// ── Agent durumu ─────────────────────────────────────────────────────────
+async function loadAgentStatus() {
+  const data = await fetchJSON("data/agent_status.json");
+
+  function applyDot(dotId, lblId, label, statusStr) {
+    const dot = document.getElementById(dotId);
+    const lbl = document.getElementById(lblId);
+    if (!dot || !lbl) return;
+    const map = { "AKTIF": "aktif", "YAVAS": "yavas", "DURDU": "durdu", "BILINMIYOR": "beklemede" };
+    const cls = map[statusStr] || "beklemede";
+    dot.className = "dot " + cls;
+    lbl.textContent = `${label} — ${statusStr || "?"}`;
+  }
+
+  if (!data) {
+    applyDot("dot-ocr",  "lbl-ocr",  "OCR Agent",  "BILINMIYOR");
+    applyDot("dot-mt5",  "lbl-mt5",  "MT5 Agent",  "BILINMIYOR");
+    applyDot("dot-sync", "lbl-sync", "Sync Agent", "BILINMIYOR");
+    return;
+  }
+
+  applyDot("dot-ocr", "lbl-ocr", "OCR Agent", data.ocr_agent?.status);
+  applyDot("dot-mt5", "lbl-mt5", "MT5 Agent", data.mt5_agent?.status);
+
+  // Sync agent'in kendi durumu: agent_status.json'un yasina bak
+  const ts = data.timestamp;
+  let syncStatus = "BILINMIYOR";
+  if (ts) {
+    const age = (Date.now() - new Date(ts).getTime()) / 1000;
+    syncStatus = age < 150 ? "AKTIF" : age < 300 ? "YAVAS" : "DURDU";
+  }
+  applyDot("dot-sync", "lbl-sync", "Sync Agent", syncStatus);
+}
+
+// ── MilaGold verileri ────────────────────────────────────────────────────
+async function loadMilaGold() {
+  const [trades, signal, logTail] = await Promise.all([
+    fetchJSON("data/milagold_trades.json"),
+    fetchJSON("data/signal.json"),
+    fetchText("data/milagold_log_tail.txt"),
+  ]);
+
+  // ── Trades analizi ──
+  let todayPnl = 0, todayCount = 0, winCount = 0;
+  let lastTrade = null;
+  const today = new Date().toISOString().slice(0, 10);
+
+  if (Array.isArray(trades)) {
+    trades.forEach(t => {
+      const tDate = (t.close_time || t.open_time || "").slice(0, 10);
+      if (tDate === today) {
+        todayCount++;
+        const p = parseFloat(t.profit_usd || 0);
+        todayPnl += p;
+        if (p > 0) winCount++;
+      }
+    });
+    if (trades.length > 0) lastTrade = trades[trades.length - 1];
+  }
+
+  const wr = todayCount > 0 ? Math.round((winCount / todayCount) * 100) + "%" : "—";
+  const pnl = fmtPnl(todayPnl);
+
+  document.getElementById("mg-pnl").textContent  = todayCount > 0 ? pnl.txt : "—";
+  document.getElementById("mg-pnl").className     = "metric-value " + pnl.cls;
+  document.getElementById("mg-count").textContent = todayCount || "—";
+  document.getElementById("mg-wr").textContent    = wr;
+
+  // Acik pozisyon — signal.json'dan
+  let posText = "YOK";
+  if (signal && signal.direction && signal.status === "open") {
+    posText = signal.direction;
+  }
+  document.getElementById("mg-pos").textContent = posText;
+
+  // Son islem
+  const ltEl = document.getElementById("mg-last-trade");
+  if (lastTrade) {
+    const dir   = (lastTrade.direction || "").toUpperCase();
+    const res   = lastTrade.result || "—";
+    const p     = fmtPnl(lastTrade.profit_usd);
+    const saat  = (lastTrade.close_time || lastTrade.open_time || "").slice(11, 16);
+    ltEl.innerHTML = `
+      <span class="trade-dir ${dir === 'BUY' ? 'buy' : 'sell'}">${dir}</span>
+      <span>${lastTrade.entry || "—"} → ${lastTrade.close_price || "—"}</span>
+      <span style="color:var(--muted);font-size:11px">${res}</span>
+      <span class="trade-result ${p.cls}">${p.txt}</span>
+      <span style="color:var(--muted);font-size:11px">${saat}</span>
+    `;
+  } else {
+    ltEl.innerHTML = '<span class="loading">Henüz işlem yok</span>';
+  }
+
+  // Sinyal kutusu
+  const sigBox = document.getElementById("mg-signal-box");
+  const sigVal = document.getElementById("mg-signal-val");
+  if (signal && signal.entry) {
+    sigBox.style.display = "block";
+    sigVal.textContent = `${signal.direction || "?"} @ ${signal.entry}  |  ${signal.status || ""}`;
+  } else {
+    sigBox.style.display = "none";
+  }
+
+  // Log kuyrugu
+  if (logTail) {
+    document.getElementById("mg-log").textContent = logTail;
+  }
+}
+
+// ── Log toggle ───────────────────────────────────────────────────────────
+function toggleLog(id) {
+  const el = document.getElementById(id);
+  const tog = el.previousElementSibling;
+  if (el.classList.toggle("open")) {
+    tog.textContent = tog.textContent.replace("▶", "▼");
+    el.scrollTop = el.scrollHeight;
+  } else {
+    tog.textContent = tog.textContent.replace("▼", "▶");
+  }
+}
+
+// ── Oturum / giris yonetimi ──────────────────────────────────────────────
+function getToken() {
+  const token = localStorage.getItem(TOKEN_KEY);
+  const expires = parseInt(localStorage.getItem(EXPIRES_KEY) || "0", 10);
+  if (!token || Date.now() / 1000 >= expires) return null;
+  return token;
+}
+
+function setToken(token, expiresAt) {
+  localStorage.setItem(TOKEN_KEY, token);
+  localStorage.setItem(EXPIRES_KEY, String(expiresAt));
+}
+
+function clearToken() {
+  localStorage.removeItem(TOKEN_KEY);
+  localStorage.removeItem(EXPIRES_KEY);
+}
+
+// Basari/vazgecme durumunda cagrilacak callback'ler - showLogin() disaridan bekleniyor
+let _loginResolve = null;
+
+function showLogin() {
+  document.getElementById("login-error").textContent = "";
+  document.getElementById("login-password").value = "";
+  document.getElementById("login-overlay").classList.add("open");
+  document.getElementById("login-password").focus();
+  passkeyGirisButonunuGuncelle();
+  return new Promise((resolve) => { _loginResolve = resolve; });
+}
+
+function hideLogin() {
+  document.getElementById("login-overlay").classList.remove("open");
+  if (_loginResolve) { _loginResolve(false); _loginResolve = null; }
+}
+
+async function handleLoginSubmit() {
+  const pwInput = document.getElementById("login-password");
+  const errEl = document.getElementById("login-error");
+  const btn = document.getElementById("login-btn");
+  const password = pwInput.value;
+
+  if (!password) { errEl.textContent = "Şifre girin."; return; }
+
+  btn.disabled = true;
+  btn.textContent = "...";
+  errEl.textContent = "";
+
+  try {
+    const r = await fetch(LOGIN_URL, {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ password }),
+    });
+    const data = await r.json().catch(() => null);
+
+    if (r.ok && data && data.token) {
+      setToken(data.token, data.expires_at);
+      document.getElementById("login-overlay").classList.remove("open");
+      if (_loginResolve) { _loginResolve(true); _loginResolve = null; }
+      if (passkeyDesteklianiyor()) { showPasskeySetup(); }
+    } else if (r.status === 429) {
+      errEl.textContent = "Çok fazla başarısız deneme. 15 dakika sonra tekrar deneyin.";
+    } else {
+      errEl.textContent = "Hatalı şifre.";
+    }
+  } catch (e) {
+    errEl.textContent = "Bağlantı hatası.";
+  } finally {
+    btn.disabled = false;
+    btn.textContent = "Giriş Yap";
+  }
+}
+
+document.getElementById("login-password")?.addEventListener("keydown", (e) => {
+  if (e.key === "Enter") handleLoginSubmit();
+});
+
+document.getElementById("passkey-device-label")?.addEventListener("keydown", (e) => {
+  if (e.key === "Enter") handlePasskeySetup();
+});
+
+// Gecerli token yoksa giris ekranini gosterir, basarili girise kadar bekler.
+// Donen deger: true (giris yapildi/zaten gecerliydi) veya false (vazgecildi).
+async function ensureAuthenticated() {
+  if (getToken()) return true;
+  return await showLogin();
+}
+
+// ── Passkey (WebAuthn) ───────────────────────────────────────────────────
+function b64urlToBuffer(b64url) {
+  const pad = '='.repeat((4 - b64url.length % 4) % 4);
+  const b64 = (b64url + pad).replace(/-/g, '+').replace(/_/g, '/');
+  const raw = atob(b64);
+  const buf = new Uint8Array(raw.length);
+  for (let i = 0; i < raw.length; i++) buf[i] = raw.charCodeAt(i);
+  return buf.buffer;
+}
+
+function bufferToB64url(buf) {
+  const bytes = new Uint8Array(buf);
+  let str = '';
+  for (const b of bytes) str += String.fromCharCode(b);
+  return btoa(str).replace(/\+/g, '-').replace(/\//g, '_').replace(/=+$/, '');
+}
+
+function passkeyDesteklianiyor() {
+  return typeof window.PublicKeyCredential !== "undefined";
+}
+
+// Login ekrani acilirken kayitli Passkey var mi kontrol eder, varsa butonu gosterir.
+async function passkeyGirisButonunuGuncelle() {
+  const btn = document.getElementById("passkey-login-btn");
+  const divider = document.getElementById("login-divider");
+  if (!passkeyDesteklianiyor()) { btn.style.display = "none"; divider.style.display = "none"; return; }
+  try {
+    const r = await fetch(BOARD_BASE + "/webauthn/login/begin", {
+      method: "POST", headers: { "Content-Type": "application/json" }, body: "{}",
+    });
+    const data = await r.json();
+    const varMi = r.ok && data.passkey_kurulu !== false;
+    btn.style.display = varMi ? "block" : "none";
+    divider.style.display = varMi ? "flex" : "none";
+  } catch (e) {
+    btn.style.display = "none";
+    divider.style.display = "none";
+  }
+}
+
+async function handlePasskeyLogin() {
+  const btn = document.getElementById("passkey-login-btn");
+  const errEl = document.getElementById("login-error");
+  errEl.textContent = "";
+  btn.disabled = true;
+  btn.textContent = "...";
+  try {
+    const beginRes = await fetch(BOARD_BASE + "/webauthn/login/begin", {
+      method: "POST", headers: { "Content-Type": "application/json" }, body: "{}",
+    });
+    const options = await beginRes.json();
+    if (!beginRes.ok || options.passkey_kurulu === false) {
+      errEl.textContent = "Kayıtlı Passkey bulunamadı.";
+      return;
+    }
+
+    const publicKey = {
+      ...options,
+      challenge: b64urlToBuffer(options.challenge),
+      allowCredentials: (options.allowCredentials || []).map(c => ({ ...c, id: b64urlToBuffer(c.id) })),
+    };
+
+    const assertion = await navigator.credentials.get({ publicKey });
+
+    const credentialResponse = {
+      id: assertion.id,
+      rawId: bufferToB64url(assertion.rawId),
+      type: assertion.type,
+      response: {
+        clientDataJSON: bufferToB64url(assertion.response.clientDataJSON),
+        authenticatorData: bufferToB64url(assertion.response.authenticatorData),
+        signature: bufferToB64url(assertion.response.signature),
+        userHandle: assertion.response.userHandle ? bufferToB64url(assertion.response.userHandle) : undefined,
+      },
+    };
+
+    const completeRes = await fetch(BOARD_BASE + "/webauthn/login/complete", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ credential: credentialResponse }),
+    });
+    const completeData = await completeRes.json();
+
+    if (completeRes.ok && completeData.token) {
+      setToken(completeData.token, completeData.expires_at);
+      document.getElementById("login-overlay").classList.remove("open");
+      if (_loginResolve) { _loginResolve(true); _loginResolve = null; }
+    } else {
+      errEl.textContent = completeData.error || "Passkey doğrulaması başarısız.";
+    }
+  } catch (e) {
+    if (e.name === "NotAllowedError") {
+      errEl.textContent = "Passkey doğrulaması iptal edildi.";
+    } else {
+      errEl.textContent = "Passkey hatası: " + e.message;
+    }
+  } finally {
+    btn.disabled = false;
+    btn.textContent = "🔑 Passkey ile Giriş";
+  }
+}
+
+function showPasskeySetup() {
+  document.getElementById("passkey-setup-msg").textContent = "";
+  document.getElementById("passkey-setup-msg").className = "passkey-setup-msg";
+  document.getElementById("passkey-device-label").value = "";
+  document.getElementById("passkey-setup-overlay").classList.add("open");
+}
+
+function hidePasskeySetup() {
+  document.getElementById("passkey-setup-overlay").classList.remove("open");
+}
+
+async function handlePasskeySetup() {
+  const btn = document.getElementById("passkey-setup-btn");
+  const msgEl = document.getElementById("passkey-setup-msg");
+  const label = document.getElementById("passkey-device-label").value.trim() || "isimsiz cihaz";
+  const token = getToken();
+
+  if (!token) { msgEl.textContent = "Oturum bulunamadı."; msgEl.className = "passkey-setup-msg err"; return; }
+
+  btn.disabled = true;
+  btn.textContent = "...";
+  msgEl.textContent = "";
+  try {
+    const beginRes = await fetch(BOARD_BASE + "/webauthn/register/begin", {
+      method: "POST",
+      headers: { "Content-Type": "application/json", "Authorization": "Bearer " + token },
+      body: JSON.stringify({ device_label: label }),
+    });
+    const options = await beginRes.json();
+    if (!beginRes.ok) throw new Error(options.error || "kayıt başlatılamadı");
+
+    const publicKey = {
+      ...options,
+      challenge: b64urlToBuffer(options.challenge),
+      user: { ...options.user, id: b64urlToBuffer(options.user.id) },
+      excludeCredentials: (options.excludeCredentials || []).map(c => ({ ...c, id: b64urlToBuffer(c.id) })),
+    };
+
+    const cred = await navigator.credentials.create({ publicKey });
+
+    const credentialResponse = {
+      id: cred.id,
+      rawId: bufferToB64url(cred.rawId),
+      type: cred.type,
+      response: {
+        clientDataJSON: bufferToB64url(cred.response.clientDataJSON),
+        attestationObject: bufferToB64url(cred.response.attestationObject),
+      },
+    };
+
+    const completeRes = await fetch(BOARD_BASE + "/webauthn/register/complete", {
+      method: "POST",
+      headers: { "Content-Type": "application/json", "Authorization": "Bearer " + token },
+      body: JSON.stringify({ credential: credentialResponse }),
+    });
+    const completeData = await completeRes.json();
+    if (!completeRes.ok) throw new Error(completeData.error || "kayıt tamamlanamadı");
+
+    msgEl.textContent = "Cihaz eklendi.";
+    msgEl.className = "passkey-setup-msg ok";
+    setTimeout(hidePasskeySetup, 1200);
+  } catch (e) {
+    if (e.name === "NotAllowedError") {
+      msgEl.textContent = "Passkey kaydı iptal edildi.";
+    } else {
+      msgEl.textContent = "Hata: " + e.message;
+    }
+    msgEl.className = "passkey-setup-msg err";
+  } finally {
+    btn.disabled = false;
+    btn.textContent = "Cihazı Ekle";
+  }
+}
+
+// ── MilaGold pause/resume ────────────────────────────────────────────────
+async function loadMilaGoldControl() {
+  const data = await fetchJSON("data/milagold_control.json");
+  const btn = document.getElementById("mg-pause-btn");
+  if (!btn) return;
+  const paused = data?.pause === true;
+  btn.className = "pause-btn " + (paused ? "durduruldu" : "aktif");
+  btn.textContent = paused ? "● Durduruldu" : "● Aktif";
+}
+
+async function toggleMilaGoldPause() {
+  const btn = document.getElementById("mg-pause-btn");
+
+  const girisYapildi = await ensureAuthenticated();
+  if (!girisYapildi) return; // vazgecildi
+
+  const paused = btn.classList.contains("durduruldu");
+  const newPaused = !paused;
+  btn.disabled = true;
+  btn.textContent = "...";
+  try {
+    const r = await fetch(API_URL, {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        "Authorization": "Bearer " + getToken(),
+      },
+      body: JSON.stringify({ project: "milagold", pause: newPaused }),
+    });
+    if (r.ok) {
+      btn.className = "pause-btn " + (newPaused ? "durduruldu" : "aktif");
+      btn.textContent = newPaused ? "● Durduruldu" : "● Aktif";
+    } else if (r.status === 401) {
+      clearToken();
+      btn.textContent = "Oturum sonlandi";
+      setTimeout(loadMilaGoldControl, 2000);
+    } else {
+      btn.textContent = "Hata!";
+      setTimeout(loadMilaGoldControl, 2000);
+    }
+  } catch (e) {
+    btn.textContent = "Baglanti hatasi";
+    setTimeout(loadMilaGoldControl, 2000);
+  } finally {
+    btn.disabled = false;
+  }
+}
+
+// ── Ana yukleme ──────────────────────────────────────────────────────────
+async function loadAll() {
+  const now = new Date().toLocaleTimeString("tr-TR");
+  document.getElementById("last-update").textContent = "Güncelleniyor...";
+  await Promise.all([
+    loadAgentStatus(),
+    loadMilaGold(),
+    loadMilaGoldControl(),
+  ]);
+  document.getElementById("last-update").textContent = `Son güncelleme: ${now}`;
+}
+
+// Sayfa yuklenince ve her 60 saniyede bir
+loadAll();
+setInterval(loadAll, REFRESH_MS);
+</script>
+</body>
+</html>
