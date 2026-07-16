@@ -5083,5 +5083,20 @@
     "sonuc": "SL",
     "pip": -5.61,
     "profit_usd": -5.58
+  },
+  {
+    "signal_no": null,
+    "direction": "SELL",
+    "entry": 3983.0,
+    "sl": 3988.0,
+    "tp1": 3980.0,
+    "tp2": 3978.0,
+    "tp3": 3975.0,
+    "close_price": 3985.06,
+    "open_time": "2026-07-16 21:51:50",
+    "close_time": "2026-07-16 22:02:29",
+    "sonuc": "SL",
+    "pip": -2.06,
+    "profit_usd": -2.06
   }
 ]
