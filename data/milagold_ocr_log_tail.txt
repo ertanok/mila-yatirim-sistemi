@@ -1,61 +1,3 @@
-2026-07-16 21:06:46,774 | Takip: SELL @ 3983.0 | Status:RUNNING
-2026-07-16 21:06:50,226 | Sinyal tarihi okundu: 17/07/2026 00:48
-2026-07-16 21:06:50,226 | Takip: SELL @ 3983.0 | Status:RUNNING
-2026-07-16 21:06:53,660 | Sinyal tarihi okundu: 17/07/2026 00:48
-2026-07-16 21:06:53,660 | Takip: SELL @ 3983.0 | Status:RUNNING
-2026-07-16 21:06:57,103 | Sinyal tarihi okundu: 17/07/2026 00:48
-2026-07-16 21:06:57,104 | Takip: SELL @ 3983.0 | Status:RUNNING
-2026-07-16 21:07:05,030 | Sinyal tarihi okundu: 17/07/2026 00:48
-2026-07-16 21:07:05,031 | Takip: SELL @ 3983.0 | Status:RUNNING
-2026-07-16 21:07:10,047 | Sinyal tarihi okundu: 17/07/2026 00:48
-2026-07-16 21:07:10,048 | Takip: SELL @ 3983.0 | Status:RUNNING
-2026-07-16 21:07:14,511 | Sinyal tarihi okundu: 17/07/2026 00:48
-2026-07-16 21:07:14,511 | Takip: SELL @ 3983.0 | Status:RUNNING
-2026-07-16 21:07:18,172 | Sinyal tarihi okundu: 17/07/2026 00:48
-2026-07-16 21:07:18,173 | Takip: SELL @ 3983.0 | Status:RUNNING
-2026-07-16 21:07:22,218 | Sinyal tarihi okundu: 17/07/2026 00:48
-2026-07-16 21:07:22,218 | Takip: SELL @ 3983.0 | Status:RUNNING
-2026-07-16 21:07:26,462 | Sinyal tarihi okundu: 17/07/2026 00:48
-2026-07-16 21:07:26,462 | Takip: SELL @ 3983.0 | Status:RUNNING
-2026-07-16 21:07:31,268 | Sinyal tarihi okundu: 17/07/2026 00:48
-2026-07-16 21:07:31,268 | Takip: SELL @ 3983.0 | Status:RUNNING
-2026-07-16 21:07:34,988 | Sinyal tarihi okundu: 17/07/2026 00:48
-2026-07-16 21:07:34,989 | Takip: SELL @ 3983.0 | Status:RUNNING
-2026-07-16 21:07:39,281 | Sinyal tarihi okundu: 17/07/2026 00:48
-2026-07-16 21:07:39,281 | Takip: SELL @ 3983.0 | Status:RUNNING
-2026-07-16 21:07:43,538 | Sinyal tarihi okundu: 17/07/2026 00:48
-2026-07-16 21:07:43,538 | Takip: SELL @ 3983.0 | Status:RUNNING
-2026-07-16 21:07:48,284 | Sinyal tarihi okundu: 17/07/2026 00:48
-2026-07-16 21:07:48,285 | Takip: SELL @ 3983.0 | Status:RUNNING
-2026-07-16 21:08:08,102 | EasyOCR yukleniyor...
-2026-07-16 21:08:08,103 | Using CPU. Note: This module is much faster with a GPU.
-2026-07-16 21:08:11,482 | EasyOCR hazir.
-2026-07-16 21:08:11,483 | ==================================================
-2026-07-16 21:08:11,483 | MilaGold OCR Agent - Signal GPT versiyonu
-2026-07-16 21:08:11,484 | ==================================================
-2026-07-16 21:08:11,791 | Chrome versiyonu (exe): 150.0.7871.116
-2026-07-16 21:08:11,792 | ChromeDriver cache'den: C:\MilaYatirim\mila-yatirim-sistemi\MilaGold\chromedriver_cache\150.0.7871.116\chromedriver.exe
-2026-07-16 21:08:11,794 | ChromeDriver: C:\MilaYatirim\mila-yatirim-sistemi\MilaGold\chromedriver_cache\150.0.7871.116\chromedriver.exe
-2026-07-16 21:08:13,075 | Signal GPT sayfasina gidildi.
-2026-07-16 21:08:13,077 | Sayfa yukleniyor, 15 saniye bekleniyor...
-2026-07-16 21:08:28,237 | Baslangic screenshot alindi.
-2026-07-16 21:08:28,237 | Ilk okuma oncesi 5 saniye bekleniyor...
-2026-07-16 21:08:33,238 | Okuma dongusune giriliyor...
-2026-07-16 21:08:37,062 | Sinyal tarihi okundu: 17/07/2026 00:48
-2026-07-16 21:08:37,062 | T1 | SELL@3983.0 | sinyal tespit edildi
-2026-07-16 21:08:37,062 | Olasi yeni sinyal, HEMEN yazildi (dogrulama bekleniyor 1/2): #None | SELL @ 3983.0
-2026-07-16 21:08:37,063 | signal.json yazildi.
-2026-07-16 21:08:37,063 | T2 | SELL@3983.0 | signal.json yazildi
-2026-07-16 21:08:40,734 | Sinyal tarihi okundu: 17/07/2026 00:48
-2026-07-16 21:08:40,735 | Yeni sinyal DOGRULANDI (2 okuma): entry=3983.0 pending=3983.0
-2026-07-16 21:08:45,393 | Sinyal tarihi okundu: 17/07/2026 00:48
-2026-07-16 21:08:45,393 | Takip: SELL @ 3983.0 | Status:RUNNING
-2026-07-16 21:08:48,967 | Sinyal tarihi okundu: 17/07/2026 00:48
-2026-07-16 21:08:48,967 | Takip: SELL @ 3983.0 | Status:RUNNING
-2026-07-16 21:08:53,544 | Sinyal tarihi okundu: 17/07/2026 00:48
-2026-07-16 21:08:53,545 | Takip: SELL @ 3983.0 | Status:RUNNING
-2026-07-16 21:08:57,820 | Sinyal tarihi okundu: 17/07/2026 00:48
-2026-07-16 21:08:57,820 | Takip: SELL @ 3983.0 | Status:RUNNING
 2026-07-16 21:09:01,919 | Sinyal tarihi okundu: 17/07/2026 00:48
 2026-07-16 21:09:01,920 | Takip: SELL @ 3983.0 | Status:RUNNING
 2026-07-16 21:09:06,149 | Sinyal tarihi okundu: 17/07/2026 00:48
@@ -78,3 +20,61 @@
 2026-07-16 21:09:39,397 | Takip: SELL @ 3983.0 | Status:RUNNING
 2026-07-16 21:09:43,177 | Sinyal tarihi okundu: 17/07/2026 00:48
 2026-07-16 21:09:43,177 | Takip: SELL @ 3983.0 | Status:RUNNING
+2026-07-16 21:09:46,861 | Sinyal tarihi okundu: 17/07/2026 00:48
+2026-07-16 21:09:46,861 | Takip: SELL @ 3983.0 | Status:RUNNING
+2026-07-16 21:09:50,325 | Sinyal tarihi okundu: 17/07/2026 00:48
+2026-07-16 21:09:50,325 | Takip: SELL @ 3983.0 | Status:RUNNING
+2026-07-16 21:09:54,454 | Sinyal tarihi okundu: 17/07/2026 00:48
+2026-07-16 21:09:54,455 | Takip: SELL @ 3983.0 | Status:RUNNING
+2026-07-16 21:09:59,192 | Sinyal tarihi okundu: 17/07/2026 00:48
+2026-07-16 21:09:59,193 | Takip: SELL @ 3983.0 | Status:RUNNING
+2026-07-16 21:10:03,788 | Sinyal tarihi okundu: 17/07/2026 00:48
+2026-07-16 21:10:03,789 | Takip: SELL @ 3983.0 | Status:RUNNING
+2026-07-16 21:10:09,319 | Sinyal tarihi okundu: 17/07/2026 00:48
+2026-07-16 21:10:09,319 | Takip: SELL @ 3983.0 | Status:RUNNING
+2026-07-16 21:10:13,347 | Sinyal tarihi okundu: 17/07/2026 00:48
+2026-07-16 21:10:13,348 | Takip: SELL @ 3983.0 | Status:RUNNING
+2026-07-16 21:10:18,298 | Sinyal tarihi okundu: 17/07/2026 00:48
+2026-07-16 21:10:18,298 | Takip: SELL @ 3983.0 | Status:RUNNING
+2026-07-16 21:10:23,613 | Sinyal tarihi okundu: 17/07/2026 00:48
+2026-07-16 21:10:23,613 | Takip: SELL @ 3983.0 | Status:RUNNING
+2026-07-16 21:10:27,285 | Sinyal tarihi okundu: 17/07/2026 00:48
+2026-07-16 21:10:27,285 | Takip: SELL @ 3983.0 | Status:RUNNING
+2026-07-16 21:10:31,120 | Sinyal tarihi okundu: 17/07/2026 00:48
+2026-07-16 21:10:31,120 | Takip: SELL @ 3983.0 | Status:RUNNING
+2026-07-16 21:10:35,299 | Sinyal tarihi okundu: 17/07/2026 00:48
+2026-07-16 21:10:35,299 | Takip: SELL @ 3983.0 | Status:RUNNING
+2026-07-16 21:10:40,571 | Sinyal tarihi okundu: 17/07/2026 00:48
+2026-07-16 21:10:40,571 | Takip: SELL @ 3983.0 | Status:RUNNING
+2026-07-16 21:10:45,055 | Sinyal tarihi okundu: 17/07/2026 00:48
+2026-07-16 21:10:45,056 | Takip: SELL @ 3983.0 | Status:RUNNING
+2026-07-16 21:10:49,317 | Sinyal tarihi okundu: 17/07/2026 00:48
+2026-07-16 21:10:49,318 | Takip: SELL @ 3983.0 | Status:RUNNING
+2026-07-16 21:10:53,730 | Sinyal tarihi okundu: 17/07/2026 00:48
+2026-07-16 21:10:53,731 | Takip: SELL @ 3983.0 | Status:RUNNING
+2026-07-16 21:10:58,379 | Sinyal tarihi okundu: 17/07/2026 00:48
+2026-07-16 21:10:58,379 | Takip: SELL @ 3983.0 | Status:RUNNING
+2026-07-16 21:11:02,836 | Sinyal tarihi okundu: 17/07/2026 00:48
+2026-07-16 21:11:02,836 | Takip: SELL @ 3983.0 | Status:RUNNING
+2026-07-16 21:11:07,336 | Sinyal tarihi okundu: 17/07/2026 00:48
+2026-07-16 21:11:07,338 | Takip: SELL @ 3983.0 | Status:RUNNING
+2026-07-16 21:11:11,313 | Sinyal tarihi okundu: 17/07/2026 00:48
+2026-07-16 21:11:11,313 | Takip: SELL @ 3983.0 | Status:RUNNING
+2026-07-16 21:11:17,761 | Sinyal tarihi okundu: 17/07/2026 00:48
+2026-07-16 21:11:17,762 | Takip: SELL @ 3983.0 | Status:RUNNING
+2026-07-16 21:11:22,092 | Sinyal tarihi okundu: 17/07/2026 00:48
+2026-07-16 21:11:22,093 | Takip: SELL @ 3983.0 | Status:RUNNING
+2026-07-16 21:11:25,528 | Sinyal tarihi okundu: 17/07/2026 00:48
+2026-07-16 21:11:25,529 | Takip: SELL @ 3983.0 | Status:RUNNING
+2026-07-16 21:11:30,969 | Sinyal tarihi okundu: 17/07/2026 00:48
+2026-07-16 21:11:30,970 | Takip: SELL @ 3983.0 | Status:RUNNING
+2026-07-16 21:11:34,437 | Sinyal tarihi okundu: 17/07/2026 00:48
+2026-07-16 21:11:34,437 | Takip: SELL @ 3983.0 | Status:RUNNING
+2026-07-16 21:11:39,402 | Sinyal tarihi okundu: 17/07/2026 00:48
+2026-07-16 21:11:39,402 | Takip: SELL @ 3983.0 | Status:RUNNING
+2026-07-16 21:11:44,037 | Sinyal tarihi okundu: 17/07/2026 00:48
+2026-07-16 21:11:44,037 | Takip: SELL @ 3983.0 | Status:RUNNING
+2026-07-16 21:11:47,103 | Sinyal tarihi okundu: 17/07/2026 00:48
+2026-07-16 21:11:47,103 | Takip: SELL @ 3983.0 | Status:RUNNING
+2026-07-16 21:11:50,584 | Sinyal tarihi okundu: 17/07/2026 00:48
+2026-07-16 21:11:50,584 | Takip: SELL @ 3983.0 | Status:RUNNING
