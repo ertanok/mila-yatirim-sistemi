@@ -1,52 +1,3 @@
-2026-07-16 15:46:47,579 | Sayfa yukleniyor, 15 saniye bekleniyor...
-2026-07-16 15:47:04,519 | Baslangic screenshot alindi.
-2026-07-16 15:47:04,521 | Ilk okuma oncesi 5 saniye bekleniyor...
-2026-07-16 15:47:09,534 | Okuma dongusune giriliyor...
-2026-07-16 15:47:14,939 | Sinyal tarihi okundu: 16/07/2026 19:46
-2026-07-16 15:47:14,939 | T1 | SELL@4005.0 | sinyal tespit edildi
-2026-07-16 15:47:14,939 | Olasi yeni sinyal, HEMEN yazildi (dogrulama bekleniyor 1/2): #None | SELL @ 4005.0
-2026-07-16 15:47:14,940 | signal.json yazildi.
-2026-07-16 15:47:14,940 | T2 | SELL@4005.0 | signal.json yazildi
-2026-07-16 15:47:21,290 | Sinyal tarihi okundu: 16/07/2026 19:46
-2026-07-16 15:47:21,291 | Yeni sinyal DOGRULANDI (2 okuma): entry=4005.0 pending=4005.0
-2026-07-16 15:47:26,999 | Sinyal tarihi okundu: 16/07/2026 19:46
-2026-07-16 15:47:26,999 | Takip: SELL @ 4005.0 | Status:RUNNING
-2026-07-16 15:47:32,204 | Sinyal tarihi okundu: 16/07/2026 19:46
-2026-07-16 15:47:32,204 | Takip: SELL @ 4005.0 | Status:RUNNING
-2026-07-16 15:47:37,725 | Sinyal tarihi okundu: 16/07/2026 19:46
-2026-07-16 15:47:37,726 | Takip: SELL @ 4005.0 | Status:RUNNING
-2026-07-16 15:47:42,697 | Sinyal tarihi okundu: 16/07/2026 19:46
-2026-07-16 15:47:42,698 | Takip: SELL @ 4005.0 | Status:RUNNING
-2026-07-16 15:47:48,300 | Sinyal tarihi okundu: 16/07/2026 19:46
-2026-07-16 15:47:48,301 | Takip: SELL @ 4005.0 | Status:RUNNING
-2026-07-16 15:47:55,327 | Sinyal tarihi okundu: 16/07/2026 19:46
-2026-07-16 15:47:55,327 | Takip: SELL @ 4005.0 | Status:RUNNING
-2026-07-16 15:48:02,657 | Sinyal tarihi okundu: 16/07/2026 19:46
-2026-07-16 15:48:02,657 | Takip: SELL @ 4005.0 | Status:RUNNING
-2026-07-16 15:48:07,737 | Sinyal tarihi okundu: 16/07/2026 19:46
-2026-07-16 15:48:07,737 | Takip: SELL @ 4005.0 | Status:RUNNING
-2026-07-16 15:48:13,068 | Sinyal tarihi okundu: 16/07/2026 19:46
-2026-07-16 15:48:13,069 | Takip: SELL @ 4005.0 | Status:RUNNING
-2026-07-16 15:48:17,617 | Sinyal tarihi okundu: 16/07/2026 19:46
-2026-07-16 15:48:17,617 | Takip: SELL @ 4005.0 | Status:RUNNING
-2026-07-16 15:48:22,658 | Sinyal tarihi okundu: 16/07/2026 19:46
-2026-07-16 15:48:22,659 | Takip: SELL @ 4005.0 | Status:RUNNING
-2026-07-16 15:48:26,925 | Sinyal tarihi okundu: 16/07/2026 19:46
-2026-07-16 15:48:26,925 | Takip: SELL @ 4005.0 | Status:RUNNING
-2026-07-16 15:48:31,841 | Sinyal tarihi okundu: 16/07/2026 19:46
-2026-07-16 15:48:31,842 | Takip: SELL @ 4005.0 | Status:RUNNING
-2026-07-16 15:48:36,975 | Sinyal tarihi okundu: 16/07/2026 19:46
-2026-07-16 15:48:36,975 | Takip: SELL @ 4005.0 | Status:RUNNING
-2026-07-16 15:48:43,660 | Sinyal tarihi okundu: 16/07/2026 19:46
-2026-07-16 15:48:43,661 | Takip: SELL @ 4005.0 | Status:RUNNING
-2026-07-16 15:48:48,206 | Sinyal tarihi okundu: 16/07/2026 19:46
-2026-07-16 15:48:48,207 | Takip: SELL @ 4005.0 | Status:RUNNING
-2026-07-16 15:48:52,081 | Sinyal tarihi okundu: 16/07/2026 19:46
-2026-07-16 15:48:52,082 | Takip: SELL @ 4005.0 | Status:RUNNING
-2026-07-16 15:48:57,228 | GOLD karti okunamadi (1). Ham: ['BB Capital Management', 'Structure & trend: M15 price below EMAIOO by 34.50.', 'Il Momentum: RSI(MI)-25 bearish; MACD(M5) negative_']
-2026-07-16 15:49:04,248 | Sinyal tarihi okundu: 16/07/2026 19:46
-2026-07-16 15:49:04,248 | Takip: SELL @ 4005.0 | Status:RUNNING
-2026-07-16 15:49:08,799 | Sinyal tarihi okundu: 16/07/2026 19:46
 2026-07-16 15:49:08,799 | Takip: SELL @ 4005.0 | Status:RUNNING
 2026-07-16 15:49:13,725 | Sinyal tarihi okundu: 16/07/2026 19:46
 2026-07-16 15:49:13,725 | Takip: SELL @ 4005.0 | Status:RUNNING
@@ -78,3 +29,52 @@
 2026-07-16 15:50:30,201 | Sinyal tarihi okundu: 16/07/2026 19:46
 2026-07-16 15:50:30,201 | Takip: SELL @ 4005.0 | Status:RUNNING
 2026-07-16 15:50:37,373 | GOLD karti okunamadi (1). Ham: ['BB Capital Management', 'Structure & trend: M15 price below EMAIOO by 34.50.', 'Il Momentum: RSI(MI)-25 bearish; MACD(M5) negative_']
+2026-07-16 15:50:44,355 | Sinyal tarihi okundu: 16/07/2026 19:46
+2026-07-16 15:50:44,355 | Takip: SELL @ 4005.0 | Status:RUNNING
+2026-07-16 15:50:50,395 | Sinyal tarihi okundu: 16/07/2026 19:46
+2026-07-16 15:50:50,396 | Takip: SELL @ 4005.0 | Status:RUNNING
+2026-07-16 15:50:56,382 | Sinyal tarihi okundu: 16/07/2026 19:46
+2026-07-16 15:50:56,383 | Takip: SELL @ 4005.0 | Status:RUNNING
+2026-07-16 15:51:01,427 | Sinyal tarihi okundu: 16/07/2026 19:46
+2026-07-16 15:51:01,427 | Takip: SELL @ 4005.0 | Status:RUNNING
+2026-07-16 15:51:05,196 | Sinyal tarihi okundu: 16/07/2026 19:46
+2026-07-16 15:51:05,197 | Takip: SELL @ 4005.0 | Status:RUNNING
+2026-07-16 15:51:10,784 | Sinyal tarihi okundu: 16/07/2026 19:46
+2026-07-16 15:51:10,784 | Takip: SELL @ 4005.0 | Status:RUNNING
+2026-07-16 15:51:14,663 | Sinyal tarihi okundu: 16/07/2026 19:46
+2026-07-16 15:51:14,664 | Takip: SELL @ 4005.0 | Status:RUNNING
+2026-07-16 15:51:22,278 | GOLD karti okunamadi (1). Ham: ['BB Capital Management', 'Structure & trend: M15 price below EMAIOO by 34.50.', 'Il Momentum: RSI(MI)-25 bearish; MACD(M5) negative_']
+2026-07-16 15:51:26,285 | Sinyal tarihi okundu: 16/07/2026 19:46
+2026-07-16 15:51:26,285 | Takip: SELL @ 4005.0 | Status:RUNNING
+2026-07-16 15:51:32,338 | Sinyal tarihi okundu: 16/07/2026 19:46
+2026-07-16 15:51:32,339 | Takip: SELL @ 4005.0 | Status:RUNNING
+2026-07-16 15:51:36,008 | Sinyal tarihi okundu: 16/07/2026 19:46
+2026-07-16 15:51:36,008 | Takip: SELL @ 4005.0 | Status:RUNNING
+2026-07-16 15:51:40,273 | Sinyal tarihi okundu: 16/07/2026 19:46
+2026-07-16 15:51:40,273 | Takip: SELL @ 4005.0 | Status:RUNNING
+2026-07-16 15:51:44,790 | Sinyal tarihi okundu: 16/07/2026 19:46
+2026-07-16 15:51:44,791 | Takip: SELL @ 4005.0 | Status:RUNNING
+2026-07-16 15:51:49,258 | Sinyal tarihi okundu: 16/07/2026 19:46
+2026-07-16 15:51:49,258 | Takip: SELL @ 4005.0 | Status:RUNNING
+2026-07-16 15:51:55,990 | Sinyal tarihi okundu: 16/07/2026 19:46
+2026-07-16 15:51:55,991 | Takip: SELL @ 4005.0 | Status:RUNNING
+2026-07-16 15:52:01,336 | Sinyal tarihi okundu: 16/07/2026 19:46
+2026-07-16 15:52:01,336 | Takip: SELL @ 4005.0 | Status:RUNNING
+2026-07-16 15:52:05,656 | Sinyal tarihi okundu: 16/07/2026 19:46
+2026-07-16 15:52:05,657 | Takip: SELL @ 4005.0 | Status:RUNNING
+2026-07-16 15:52:11,586 | Sinyal tarihi okundu: 16/07/2026 19:46
+2026-07-16 15:52:11,593 | Takip: SELL @ 4005.0 | Status:RUNNING
+2026-07-16 15:52:17,939 | Sinyal tarihi okundu: 16/07/2026 19:46
+2026-07-16 15:52:17,939 | Takip: SELL @ 4005.0 | Status:RUNNING
+2026-07-16 15:52:23,333 | Sinyal tarihi okundu: 16/07/2026 19:46
+2026-07-16 15:52:23,333 | Takip: SELL @ 4005.0 | Status:RUNNING
+2026-07-16 15:52:29,715 | Sinyal tarihi okundu: 16/07/2026 19:46
+2026-07-16 15:52:29,716 | Takip: SELL @ 4005.0 | Status:RUNNING
+2026-07-16 15:52:34,577 | Sinyal tarihi okundu: 16/07/2026 19:46
+2026-07-16 15:52:34,578 | Takip: SELL @ 4005.0 | Status:RUNNING
+2026-07-16 15:52:40,022 | Sinyal tarihi okundu: 16/07/2026 19:46
+2026-07-16 15:52:40,023 | Takip: SELL @ 4005.0 | Status:RUNNING
+2026-07-16 15:52:44,807 | Sinyal tarihi okundu: 16/07/2026 19:46
+2026-07-16 15:52:44,808 | Takip: SELL @ 4005.0 | Status:RUNNING
+2026-07-16 15:52:49,981 | Sinyal tarihi okundu: 16/07/2026 19:46
+2026-07-16 15:52:49,981 | Takip: SELL @ 4005.0 | Status:RUNNING
