@@ -334,6 +334,89 @@
     border: 1px solid rgba(239,68,68,0.3);
   }
 
+  /* ── Manuel emir formu ── */
+  .manual-order {
+    border-top: 1px solid var(--border);
+    margin-top: 12px;
+    padding-top: 12px;
+  }
+
+  .manual-order-label {
+    font-size: 10px;
+    color: var(--muted);
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    margin-bottom: 8px;
+  }
+
+  .manual-order-row {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 8px;
+  }
+
+  .dir-toggle {
+    flex: 1;
+    display: flex;
+    border-radius: 8px;
+    overflow: hidden;
+    border: 1px solid var(--border);
+  }
+
+  .dir-btn {
+    flex: 1;
+    padding: 8px 0;
+    border: none;
+    background: transparent;
+    color: var(--muted);
+    cursor: pointer;
+    font-family: 'Inter', sans-serif;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+  }
+  .dir-btn.selected.buy  { background: rgba(34,197,94,0.15);  color: var(--green); }
+  .dir-btn.selected.sell { background: rgba(239,68,68,0.15);  color: var(--red); }
+
+  .manual-order input[type="number"] {
+    flex: 1;
+    background: rgba(255,255,255,0.04);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 8px 10px;
+    color: var(--text);
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 13px;
+    width: 100%;
+  }
+  .manual-order input[type="number"]:focus { outline: none; border-color: var(--accent); }
+
+  .manual-order-submit {
+    width: 100%;
+    padding: 8px 0;
+    border-radius: 8px;
+    border: 1px solid rgba(240,192,64,0.3);
+    background: rgba(240,192,64,0.1);
+    color: var(--accent);
+    cursor: pointer;
+    font-family: 'Inter', sans-serif;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    transition: opacity 0.2s;
+  }
+  .manual-order-submit:hover { opacity: 0.8; }
+  .manual-order-submit:disabled { opacity: 0.45; cursor: not-allowed; }
+
+  .manual-order-msg {
+    font-size: 11px;
+    margin-top: 8px;
+    min-height: 14px;
+  }
+  .manual-order-msg.err { color: var(--red); }
+  .manual-order-msg.ok { color: var(--green); }
+
   /* ── Giris ekrani ── */
   .login-overlay {
     display: none;
@@ -577,6 +660,22 @@
         <div class="sig-val" id="mg-signal-val">—</div>
       </div>
       <button class="pause-btn aktif" id="mg-pause-btn" onclick="toggleMilaGoldPause()">● Aktif</button>
+
+      <div class="manual-order">
+        <div class="manual-order-label">Manuel Emir</div>
+        <div class="manual-order-row">
+          <div class="dir-toggle">
+            <button type="button" class="dir-btn selected buy" id="mo-buy-btn" onclick="secYon('BUY')">BUY</button>
+            <button type="button" class="dir-btn" id="mo-sell-btn" onclick="secYon('SELL')">SELL</button>
+          </div>
+        </div>
+        <div class="manual-order-row">
+          <input type="number" id="mo-price" placeholder="Fiyat (entry)" step="0.01" min="0">
+        </div>
+        <button class="manual-order-submit" id="mo-submit-btn" onclick="handleManualOrderSubmit()">Gönder</button>
+        <div class="manual-order-msg" id="mo-msg"></div>
+      </div>
+
       <div class="log-toggle" onclick="toggleLog('mg-log')">▶ MT5 Log</div>
       <div class="log-box" id="mg-log"></div>
     </div>
@@ -1068,6 +1167,97 @@ async function handlePasskeySetup() {
   } finally {
     btn.disabled = false;
     btn.textContent = "Cihazı Ekle";
+  }
+}
+
+// ── Manuel emir formu ────────────────────────────────────────────────────
+let _seciliYon = "BUY";
+
+function secYon(yon) {
+  _seciliYon = yon;
+  document.getElementById("mo-buy-btn").className = "dir-btn" + (yon === "BUY" ? " selected buy" : "");
+  document.getElementById("mo-sell-btn").className = "dir-btn" + (yon === "SELL" ? " selected sell" : "");
+}
+
+async function handleManualOrderSubmit() {
+  const btn = document.getElementById("mo-submit-btn");
+  const msgEl = document.getElementById("mo-msg");
+  const priceInput = document.getElementById("mo-price");
+  const fiyat = parseFloat(priceInput.value);
+
+  msgEl.textContent = "";
+  msgEl.className = "manual-order-msg";
+
+  if (!fiyat || fiyat <= 0) {
+    msgEl.textContent = "Geçerli bir fiyat girin.";
+    msgEl.className = "manual-order-msg err";
+    return;
+  }
+
+  const girisYapildi = await ensureAuthenticated();
+  if (!girisYapildi) return;
+
+  if (!passkeyDesteklianiyor()) {
+    msgEl.textContent = "Bu tarayıcı Passkey desteklemiyor.";
+    msgEl.className = "manual-order-msg err";
+    return;
+  }
+
+  btn.disabled = true;
+  btn.textContent = "Passkey bekleniyor...";
+
+  try {
+    const beginRes = await fetch(BOARD_BASE + "/manual-order/begin", {
+      method: "POST",
+      headers: { "Content-Type": "application/json", "Authorization": "Bearer " + getToken() },
+      body: "{}",
+    });
+    const options = await beginRes.json();
+    if (!beginRes.ok) throw new Error(options.error || "doğrulama başlatılamadı");
+
+    const publicKey = {
+      ...options,
+      challenge: b64urlToBuffer(options.challenge),
+      allowCredentials: (options.allowCredentials || []).map(c => ({ ...c, id: b64urlToBuffer(c.id) })),
+    };
+
+    const assertion = await navigator.credentials.get({ publicKey });
+
+    const credentialResponse = {
+      id: assertion.id,
+      rawId: bufferToB64url(assertion.rawId),
+      type: assertion.type,
+      response: {
+        clientDataJSON: bufferToB64url(assertion.response.clientDataJSON),
+        authenticatorData: bufferToB64url(assertion.response.authenticatorData),
+        signature: bufferToB64url(assertion.response.signature),
+        userHandle: assertion.response.userHandle ? bufferToB64url(assertion.response.userHandle) : undefined,
+      },
+    };
+
+    btn.textContent = "Gönderiliyor...";
+
+    const submitRes = await fetch(BOARD_BASE + "/manual-order/submit", {
+      method: "POST",
+      headers: { "Content-Type": "application/json", "Authorization": "Bearer " + getToken() },
+      body: JSON.stringify({ direction: _seciliYon, price: fiyat, credential: credentialResponse }),
+    });
+    const submitData = await submitRes.json();
+    if (!submitRes.ok) throw new Error(submitData.error || "gönderilemedi");
+
+    msgEl.textContent = `${submitData.direction} @ ${submitData.entry} gönderildi.`;
+    msgEl.className = "manual-order-msg ok";
+    priceInput.value = "";
+  } catch (e) {
+    if (e.name === "NotAllowedError") {
+      msgEl.textContent = "Passkey doğrulaması iptal edildi.";
+    } else {
+      msgEl.textContent = "Hata: " + e.message;
+    }
+    msgEl.className = "manual-order-msg err";
+  } finally {
+    btn.disabled = false;
+    btn.textContent = "Gönder";
   }
 }
 
