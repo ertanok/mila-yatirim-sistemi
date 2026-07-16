@@ -1,12 +1,3 @@
-	chromedriver!GetHandleVerifier [0x7ff67a630a9b+5f531b]
-	chromedriver!GetHandleVerifier [0x7ff67a655865+61a0e5]
-	chromedriver!GetHandleVerifier [0x7ff67a06dace+3234e]
-	chromedriver!GetHandleVerifier [0x7ff67a07661c+3ae9c]
-	chromedriver!(No symbol) [0x7ff679b6d39c]
-	chromedriver!GetHandleVerifier [0x7ff67a813d88+7d8608]
-	KERNEL32!BaseThreadInitThunk [0x7ffc90a64ed0+10]
-	ntdll!RtlUserThreadStart [0x7ffc91a8e20b+2b]
-
 2026-07-17 00:01:24,669 | Dongu hatasi: Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
 Stacktrace:
 	chromedriver!GetHandleVerifier [0x7ff67a050d25+155a5]
@@ -78,3 +69,12 @@ Stacktrace:
 2026-07-17 01:02:58,805 | Chrome versiyonu (exe): 150.0.7871.116
 2026-07-17 01:02:58,806 | ChromeDriver cache'den: C:\MilaYatirim\mila-yatirim-sistemi\MilaGold\chromedriver_cache\150.0.7871.116\chromedriver.exe
 2026-07-17 01:02:58,808 | ChromeDriver: C:\MilaYatirim\mila-yatirim-sistemi\MilaGold\chromedriver_cache\150.0.7871.116\chromedriver.exe
+2026-07-17 01:33:06,242 | EasyOCR yukleniyor...
+2026-07-17 01:33:06,242 | Using CPU. Note: This module is much faster with a GPU.
+2026-07-17 01:33:08,953 | EasyOCR hazir.
+2026-07-17 01:33:08,954 | ==================================================
+2026-07-17 01:33:08,954 | MilaGold OCR Agent - Signal GPT versiyonu
+2026-07-17 01:33:08,954 | ==================================================
+2026-07-17 01:33:09,311 | Chrome versiyonu (exe): 150.0.7871.116
+2026-07-17 01:33:09,313 | ChromeDriver cache'den: C:\MilaYatirim\mila-yatirim-sistemi\MilaGold\chromedriver_cache\150.0.7871.116\chromedriver.exe
+2026-07-17 01:33:09,315 | ChromeDriver: C:\MilaYatirim\mila-yatirim-sistemi\MilaGold\chromedriver_cache\150.0.7871.116\chromedriver.exe
