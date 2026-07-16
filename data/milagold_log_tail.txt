@@ -1,17 +1,3 @@
-[2026-07-16 12:17:32] Heartbeat: 0 aktif islem | Bakiye: 761.69 USD
-[2026-07-16 12:18:02] Heartbeat: 0 aktif islem | Bakiye: 761.69 USD
-[2026-07-16 12:18:33] Heartbeat: 0 aktif islem | Bakiye: 761.69 USD
-[2026-07-16 12:19:03] Heartbeat: 0 aktif islem | Bakiye: 761.69 USD
-[2026-07-16 12:19:33] Heartbeat: 0 aktif islem | Bakiye: 761.69 USD
-[2026-07-16 12:20:04] Heartbeat: 0 aktif islem | Bakiye: 761.69 USD
-[2026-07-16 12:20:34] Heartbeat: 0 aktif islem | Bakiye: 761.69 USD
-[2026-07-16 12:21:04] Heartbeat: 0 aktif islem | Bakiye: 761.69 USD
-[2026-07-16 12:21:34] Heartbeat: 0 aktif islem | Bakiye: 761.69 USD
-[2026-07-16 12:22:05] Heartbeat: 0 aktif islem | Bakiye: 761.69 USD
-[2026-07-16 12:22:35] Heartbeat: 0 aktif islem | Bakiye: 761.69 USD
-[2026-07-16 12:23:05] Heartbeat: 0 aktif islem | Bakiye: 761.69 USD
-[2026-07-16 12:23:35] Heartbeat: 0 aktif islem | Bakiye: 761.69 USD
-[2026-07-16 12:24:05] Heartbeat: 0 aktif islem | Bakiye: 761.69 USD
 [2026-07-16 12:24:36] Heartbeat: 0 aktif islem | Bakiye: 761.69 USD
 [2026-07-16 12:25:06] Heartbeat: 0 aktif islem | Bakiye: 761.69 USD
 [2026-07-16 12:25:36] Heartbeat: 0 aktif islem | Bakiye: 761.69 USD
@@ -78,3 +64,17 @@
 [2026-07-16 12:54:19] Heartbeat: 0 aktif islem | Bakiye: 761.69 USD
 [2026-07-16 12:54:49] Heartbeat: 0 aktif islem | Bakiye: 761.69 USD
 [2026-07-16 12:55:19] Heartbeat: 0 aktif islem | Bakiye: 761.69 USD
+[2026-07-16 12:55:50] Heartbeat: 0 aktif islem | Bakiye: 761.69 USD
+[2026-07-16 12:56:20] Heartbeat: 0 aktif islem | Bakiye: 761.69 USD
+[2026-07-16 12:56:50] Heartbeat: 0 aktif islem | Bakiye: 761.69 USD
+2026-07-16 12:56:59.908 | T3 | SELL@4029.5 | signal.json okundu (MT5 agent)
+[2026-07-16 12:56:59] Yeni sinyal alindi: #None SELL @ 4029.5
+[2026-07-16 12:56:59] EMA filtresi: SELL ATLANDI — fiyat=4033.18 > EMA20=4033.11 (yukari momentum)
+[2026-07-16 12:56:59] EMA filtresi: sinyal atlandi #None SELL @ 4029.5
+[2026-07-16 12:57:21] Heartbeat: 0 aktif islem | Bakiye: 761.69 USD
+2026-07-16 12:57:43.634 | T3 | SELL@4033.5 | signal.json okundu (MT5 agent)
+[2026-07-16 12:57:43] Yeni sinyal alindi: #None SELL @ 4033.5
+[2026-07-16 12:57:43] EMA filtresi: SELL ONAYLANDI — fiyat=4032.51 <= EMA20=4033.05
+[2026-07-16 12:57:43] Streak filtresi: SELL ATLANDI — EMA100 streak=1 < 13 (trend yeterince guclu degil)
+[2026-07-16 12:57:43] Streak filtresi: sinyal atlandi #None SELL @ 4033.5
+[2026-07-16 12:57:51] Heartbeat: 0 aktif islem | Bakiye: 761.69 USD
