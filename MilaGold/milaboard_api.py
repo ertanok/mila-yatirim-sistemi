@@ -18,6 +18,9 @@ PORT = 5001
 DATA_DIR = r"C:\MilaYatirim\mila-yatirim-sistemi\data"
 BREAKOUT_LEVELS_FILE = os.path.join(DATA_DIR, "breakout_levels.json")
 
+MILAGOLD_DIR = r"C:\MilaYatirim\mila-yatirim-sistemi\MilaGold"
+MANUEL_SIGNAL_FILE = os.path.join(MILAGOLD_DIR, "manuel_signal.json")
+
 
 class BoardApiHandler(BaseHTTPRequestHandler):
 
@@ -57,6 +60,10 @@ class BoardApiHandler(BaseHTTPRequestHandler):
             self._handle_webauthn_login_begin()
         elif self.path == "/webauthn/login/complete":
             self._handle_webauthn_login_complete()
+        elif self.path == "/manual-order/begin":
+            self._handle_manual_order_begin()
+        elif self.path == "/manual-order/submit":
+            self._handle_manual_order_submit()
         else:
             self.send_json(404, {"error": "not found"})
 
@@ -236,6 +243,76 @@ class BoardApiHandler(BaseHTTPRequestHandler):
         mila_auth.basarili_giris_sonrasi_temizle(ip)
         oturum = mila_auth.oturum_tokeni_uret()
         self.send_json(200, {"ok": True, "token": oturum["token"], "expires_at": oturum["expires_at"]})
+
+    def _handle_manual_order_begin(self):
+        """Manuel emir formu icin taze Passkey dogrulamasi baslatir.
+        Gecerli oturum token'i yetmez - MilaGold - Manuel Emir gorev tanimi geregi
+        her gonderimde ayrica bir Passkey dokunusu gerekir (calinmis oturum
+        token'i tek basina emir acamasin diye)."""
+        if not self._oturum_token_gecerli_mi():
+            self.send_json(401, {"error": "unauthorized"})
+            return
+
+        options_json = mila_auth.webauthn_dogrulama_baslat("reauth")
+        if options_json is None:
+            self.send_json(400, {"error": "kayitli Passkey yok - once bir cihaz ekleyin"})
+            return
+        self.send_json(200, json.loads(options_json))
+
+    def _handle_manual_order_submit(self):
+        """Yon + fiyat alir, credential'i BURADA dogrular (begin cagrisina
+        guvenmez) ve basariliysa manuel_signal.json'a yazar. Boylece calinmis
+        bir oturum token'i tek basina yeterli olmaz - gecerli, taze bir
+        Passkey imzasi sart. Trading mantigi (SL/TP hesaplama, emir tipi,
+        trailing) bu endpoint'in kapsaminda degil - milagold_mt5_agent.py
+        (ayri, onayli bir adimda) bu dosyayi okuyup isleyecek."""
+        if not self._oturum_token_gecerli_mi():
+            self.send_json(401, {"error": "unauthorized"})
+            return
+
+        try:
+            body = self._read_json_body()
+        except Exception:
+            self.send_json(400, {"error": "invalid json"})
+            return
+
+        yon = body.get("direction", "")
+        fiyat = body.get("price")
+        credential = body.get("credential")
+
+        if not isinstance(yon, str) or yon.strip().upper() not in ("BUY", "SELL"):
+            self.send_json(400, {"error": "direction BUY veya SELL olmali"})
+            return
+        yon = yon.strip().upper()
+
+        if not isinstance(fiyat, (int, float)) or isinstance(fiyat, bool) or fiyat <= 0:
+            self.send_json(400, {"error": "price pozitif sayisal olmali"})
+            return
+
+        if not credential:
+            self.send_json(400, {"error": "credential gerekli (Passkey dogrulamasi)"})
+            return
+
+        basarili, hata = mila_auth.webauthn_dogrulama_tamamla(credential, "reauth")
+        if not basarili:
+            self.send_json(401, {"error": hata or "Passkey dogrulamasi basarisiz"})
+            return
+
+        sinyal = {
+            "direction": yon,
+            "entry": fiyat,
+            "time": datetime.now().strftime("%H:%M:%S"),
+            "processed": False,
+            "confirmed": True,
+            "cancel": False,
+        }
+
+        os.makedirs(MILAGOLD_DIR, exist_ok=True)
+        with open(MANUEL_SIGNAL_FILE, "w", encoding="utf-8") as f:
+            json.dump(sinyal, f, indent=2)
+
+        print(f"[Board API] manuel emir yazildi: {yon} @ {fiyat}")
+        self.send_json(200, {"ok": True, "direction": yon, "entry": fiyat})
 
 
 if __name__ == "__main__":
