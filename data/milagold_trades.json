@@ -4918,5 +4918,20 @@
     "sonuc": "SL",
     "pip": -5.0,
     "profit_usd": -5.21
+  },
+  {
+    "signal_no": "MANUEL",
+    "direction": "SELL",
+    "entry": 4023,
+    "sl": 4028.0,
+    "tp1": 4020.0,
+    "tp2": 4018.0,
+    "tp3": 4015.0,
+    "close_price": 4019.06,
+    "open_time": "2026-07-16 14:30:11",
+    "close_time": "2026-07-16 15:16:31",
+    "sonuc": "Entry",
+    "pip": 3.94,
+    "profit_usd": 3.87
   }
 ]
