@@ -492,9 +492,12 @@
   }
   .passkey-setup-msg.err { color: var(--red); }
   .passkey-setup-msg.ok { color: var(--green); }
+
+  /* ── Giris kilidi: giris yapilana kadar icerik gizli ── */
+  body.locked header, body.locked main { display: none !important; }
 </style>
 </head>
-<body>
+<body class="locked">
 
 <div class="login-overlay" id="login-overlay">
   <div class="login-box">
@@ -1128,9 +1131,19 @@ async function loadAll() {
   document.getElementById("last-update").textContent = `Son güncelleme: ${now}`;
 }
 
-// Sayfa yuklenince ve her 60 saniyede bir
-loadAll();
-setInterval(loadAll, REFRESH_MS);
+// Sayfa herkese acik (GitHub Pages) oldugu icin goruntuleme de giris gerektirir.
+// Basarili girise kadar header/main gizli kalir (body.locked), Vazgec'e basilirsa
+// giris ekrani tekrar sunulur - icerik gorulmeden gecilemez.
+async function baslat() {
+  let girisYapildi = await ensureAuthenticated();
+  while (!girisYapildi) {
+    girisYapildi = await ensureAuthenticated();
+  }
+  document.body.classList.remove("locked");
+  loadAll();
+  setInterval(loadAll, REFRESH_MS);
+}
+baslat();
 </script>
 </body>
 </html>
