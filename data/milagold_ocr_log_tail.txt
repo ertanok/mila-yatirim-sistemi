@@ -1,58 +1,3 @@
-2026-07-17 06:00:38,609 | Takip: SELL @ 3974.0 | Status:RUNNING
-2026-07-17 06:00:45,242 | Sinyal tarihi okundu: 17/07/2026 09:43
-2026-07-17 06:00:45,243 | Takip: SELL @ 3974.0 | Status:RUNNING
-2026-07-17 06:00:49,769 | Sinyal tarihi okundu: 17/07/2026 09:43
-2026-07-17 06:00:49,770 | Takip: SELL @ 3974.0 | Status:RUNNING
-2026-07-17 06:00:54,042 | Sinyal tarihi okundu: 17/07/2026 09:43
-2026-07-17 06:00:54,043 | Takip: SELL @ 3974.0 | Status:RUNNING
-2026-07-17 06:00:59,045 | Sinyal tarihi okundu: 17/07/2026 09:43
-2026-07-17 06:00:59,045 | Takip: SELL @ 3974.0 | Status:RUNNING
-2026-07-17 06:01:04,018 | Sinyal tarihi okundu: 17/07/2026 09:43
-2026-07-17 06:01:04,019 | Takip: SELL @ 3974.0 | Status:RUNNING
-2026-07-17 06:01:08,532 | Sinyal tarihi okundu: 17/07/2026 09:43
-2026-07-17 06:01:08,533 | Takip: SELL @ 3974.0 | Status:RUNNING
-2026-07-17 06:01:15,027 | Sinyal tarihi okundu: 17/07/2026 09:43
-2026-07-17 06:01:15,028 | Takip: SELL @ 3974.0 | Status:RUNNING
-2026-07-17 06:01:18,543 | Sinyal tarihi okundu: 17/07/2026 09:43
-2026-07-17 06:01:18,544 | Takip: SELL @ 3974.0 | Status:RUNNING
-2026-07-17 06:01:23,610 | Sinyal tarihi okundu: 17/07/2026 09:43
-2026-07-17 06:01:23,610 | Takip: SELL @ 3974.0 | Status:RUNNING
-2026-07-17 06:01:28,620 | Sinyal tarihi okundu: 17/07/2026 09:43
-2026-07-17 06:01:28,620 | Takip: SELL @ 3974.0 | Status:RUNNING
-2026-07-17 06:01:32,558 | Sinyal tarihi okundu: 17/07/2026 09:43
-2026-07-17 06:01:32,558 | Takip: SELL @ 3974.0 | Status:RUNNING
-2026-07-17 06:01:36,364 | Sinyal tarihi okundu: 17/07/2026 09:43
-2026-07-17 06:01:36,364 | Takip: SELL @ 3974.0 | Status:RUNNING
-2026-07-17 06:01:40,859 | Sinyal tarihi okundu: 17/07/2026 09:43
-2026-07-17 06:01:40,859 | Takip: SELL @ 3974.0 | Status:RUNNING
-2026-07-17 06:02:03,454 | EasyOCR yukleniyor...
-2026-07-17 06:02:03,455 | Using CPU. Note: This module is much faster with a GPU.
-2026-07-17 06:02:07,786 | EasyOCR hazir.
-2026-07-17 06:02:07,787 | ==================================================
-2026-07-17 06:02:07,787 | MilaGold OCR Agent - Signal GPT versiyonu
-2026-07-17 06:02:07,787 | ==================================================
-2026-07-17 06:02:08,377 | Chrome versiyonu (exe): 150.0.7871.125
-2026-07-17 06:02:08,379 | ChromeDriver cache'den: C:\MilaYatirim\mila-yatirim-sistemi\MilaGold\chromedriver_cache\150.0.7871.125\chromedriver.exe
-2026-07-17 06:02:08,385 | ChromeDriver: C:\MilaYatirim\mila-yatirim-sistemi\MilaGold\chromedriver_cache\150.0.7871.125\chromedriver.exe
-2026-07-17 06:02:09,716 | Signal GPT sayfasina gidildi.
-2026-07-17 06:02:09,724 | Sayfa yukleniyor, 15 saniye bekleniyor...
-2026-07-17 06:02:25,585 | Baslangic screenshot alindi.
-2026-07-17 06:02:25,585 | Ilk okuma oncesi 5 saniye bekleniyor...
-2026-07-17 06:02:30,590 | Okuma dongusune giriliyor...
-2026-07-17 06:02:32,740 | GOLD karti okunamadi (1). Ham: ['Disclaimer', 'The information on signalgpt ai is for reference and', 'Iknowledge-sharing [']
-2026-07-17 06:02:37,478 | GOLD karti okunamadi (2). Ham: ['Disclaimer', 'The information on signalgpt ai is for reference and', 'Iknowledge-sharing [']
-2026-07-17 06:02:40,844 | GOLD karti okunamadi (3). Ham: ['Disclaimer', 'The information on signalgpt ai is for reference and', 'Iknowledge-sharing [']
-2026-07-17 06:02:44,630 | GOLD karti okunamadi (4). Ham: ['Disclaimer', 'The information on signalgpt ai is for reference and', 'Iknowledge-sharing [']
-2026-07-17 06:02:47,846 | GOLD karti okunamadi (5). Ham: ['Disclaimer', 'The information on signalgpt ai is for reference and', 'Iknowledge-sharing [']
-2026-07-17 06:02:53,048 | GOLD karti okunamadi (6). Ham: ['Disclaimer', 'The information on signalgpt ai is for reference and', 'Iknowledge-sharing [']
-2026-07-17 06:03:06,804 | Sinyal tarihi okundu: 17/07/2026 09:43
-2026-07-17 06:03:06,804 | T1 | SELL@3974.0 | sinyal tespit edildi
-2026-07-17 06:03:06,805 | Olasi yeni sinyal, HEMEN yazildi (dogrulama bekleniyor 1/2): #None | SELL @ 3974.0
-2026-07-17 06:03:06,806 | signal.json yazildi.
-2026-07-17 06:03:06,806 | T2 | SELL@3974.0 | signal.json yazildi
-2026-07-17 06:03:11,619 | Sinyal tarihi okundu: 17/07/2026 09:43
-2026-07-17 06:03:11,619 | Yeni sinyal DOGRULANDI (2 okuma): entry=3974.0 pending=3974.0
-2026-07-17 06:03:15,914 | Sinyal tarihi okundu: 17/07/2026 09:43
 2026-07-17 06:03:15,914 | Takip: SELL @ 3974.0 | Status:RUNNING
 2026-07-17 06:03:19,667 | Sinyal tarihi okundu: 17/07/2026 09:43
 2026-07-17 06:03:19,667 | Takip: SELL @ 3974.0 | Status:RUNNING
@@ -78,3 +23,58 @@
 2026-07-17 06:04:03,894 | Takip: SELL @ 3974.0 | Status:RUNNING
 2026-07-17 06:04:08,089 | Sinyal tarihi okundu: 17/07/2026 09:43
 2026-07-17 06:04:08,089 | Takip: SELL @ 3974.0 | Status:RUNNING
+2026-07-17 06:04:12,804 | Sinyal tarihi okundu: 17/07/2026 09:43
+2026-07-17 06:04:12,805 | Takip: SELL @ 3974.0 | Status:RUNNING
+2026-07-17 06:04:17,080 | Sinyal tarihi okundu: 17/07/2026 09:43
+2026-07-17 06:04:17,081 | Takip: SELL @ 3974.0 | Status:RUNNING
+2026-07-17 06:04:23,078 | Sinyal tarihi okundu: 17/07/2026 09:43
+2026-07-17 06:04:23,078 | Takip: SELL @ 3974.0 | Status:RUNNING
+2026-07-17 06:04:27,771 | Sinyal tarihi okundu: 17/07/2026 09:43
+2026-07-17 06:04:27,771 | Takip: SELL @ 3974.0 | Status:RUNNING
+2026-07-17 06:04:32,811 | Sinyal tarihi okundu: 17/07/2026 09:43
+2026-07-17 06:04:32,811 | Takip: SELL @ 3974.0 | Status:RUNNING
+2026-07-17 06:04:36,901 | Sinyal tarihi okundu: 17/07/2026 09:43
+2026-07-17 06:04:36,902 | Takip: SELL @ 3974.0 | Status:RUNNING
+2026-07-17 06:04:41,119 | Sinyal tarihi okundu: 17/07/2026 09:43
+2026-07-17 06:04:41,119 | Takip: SELL @ 3974.0 | Status:RUNNING
+2026-07-17 06:04:44,774 | Sinyal tarihi okundu: 17/07/2026 09:43
+2026-07-17 06:04:44,774 | Takip: SELL @ 3974.0 | Status:RUNNING
+2026-07-17 06:04:50,603 | Sinyal tarihi okundu: 17/07/2026 09:43
+2026-07-17 06:04:50,604 | Takip: SELL @ 3974.0 | Status:RUNNING
+2026-07-17 06:04:55,101 | Sinyal tarihi okunamadi (filtre devrede degil).
+2026-07-17 06:04:55,101 | T1 | SELL@3985.0 | sinyal tespit edildi
+2026-07-17 06:04:55,102 | Olasi yeni sinyal, HEMEN yazildi (dogrulama bekleniyor 1/2): 3974.0 -> 3985.0
+2026-07-17 06:04:55,103 | signal.json yazildi.
+2026-07-17 06:04:55,103 | T2 | SELL@3985.0 | signal.json yazildi
+2026-07-17 06:04:59,849 | Sinyal tarihi okunamadi (filtre devrede degil).
+2026-07-17 06:04:59,850 | Yeni sinyal DOGRULANDI (2 okuma): entry=3985.0 pending=3985.0
+2026-07-17 06:05:04,936 | Sinyal tarihi okunamadi (filtre devrede degil).
+2026-07-17 06:05:04,937 | Takip: SELL @ 3985.0 | Status:RUNNING
+2026-07-17 06:05:09,481 | Sinyal tarihi okunamadi (filtre devrede degil).
+2026-07-17 06:05:09,481 | Takip: SELL @ 3985.0 | Status:RUNNING
+2026-07-17 06:05:14,033 | Sinyal tarihi okunamadi (filtre devrede degil).
+2026-07-17 06:05:14,033 | Takip: SELL @ 3985.0 | Status:RUNNING
+2026-07-17 06:05:19,332 | Sinyal tarihi okunamadi (filtre devrede degil).
+2026-07-17 06:05:19,332 | Takip: SELL @ 3985.0 | Status:RUNNING
+2026-07-17 06:05:25,747 | Sinyal tarihi okunamadi (filtre devrede degil).
+2026-07-17 06:05:25,747 | Takip: SELL @ 3985.0 | Status:RUNNING
+2026-07-17 06:05:30,234 | Sinyal tarihi okunamadi (filtre devrede degil).
+2026-07-17 06:05:30,235 | Takip: SELL @ 3985.0 | Status:RUNNING
+2026-07-17 06:05:34,367 | Sinyal tarihi okunamadi (filtre devrede degil).
+2026-07-17 06:05:34,368 | Takip: SELL @ 3985.0 | Status:RUNNING
+2026-07-17 06:05:39,905 | Sinyal tarihi okunamadi (filtre devrede degil).
+2026-07-17 06:05:39,906 | Takip: SELL @ 3985.0 | Status:RUNNING
+2026-07-17 06:05:45,570 | Sinyal tarihi okunamadi (filtre devrede degil).
+2026-07-17 06:05:45,570 | Takip: SELL @ 3985.0 | Status:RUNNING
+2026-07-17 06:05:50,080 | Sinyal tarihi okunamadi (filtre devrede degil).
+2026-07-17 06:05:50,080 | Takip: SELL @ 3985.0 | Status:RUNNING
+2026-07-17 06:05:54,634 | Sinyal tarihi okunamadi (filtre devrede degil).
+2026-07-17 06:05:54,634 | Takip: SELL @ 3985.0 | Status:RUNNING
+2026-07-17 06:05:59,328 | Sinyal tarihi okunamadi (filtre devrede degil).
+2026-07-17 06:05:59,328 | Takip: SELL @ 3985.0 | Status:RUNNING
+2026-07-17 06:06:05,585 | Sinyal tarihi okunamadi (filtre devrede degil).
+2026-07-17 06:06:05,585 | Takip: SELL @ 3985.0 | Status:RUNNING
+2026-07-17 06:06:10,458 | Sinyal tarihi okunamadi (filtre devrede degil).
+2026-07-17 06:06:10,458 | Takip: SELL @ 3985.0 | Status:RUNNING
+2026-07-17 06:06:15,760 | Sinyal tarihi okunamadi (filtre devrede degil).
+2026-07-17 06:06:15,761 | Takip: SELL @ 3985.0 | Status:RUNNING
