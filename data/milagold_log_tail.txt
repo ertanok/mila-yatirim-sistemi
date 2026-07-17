@@ -1,7 +1,3 @@
-[2026-07-17 08:30:27] EMA filtresi: SELL ONAYLANDI — fiyat=3983.55 <= EMA20=3983.68
-[2026-07-17 08:30:27] Streak filtresi: SELL ONAYLANDI — EMA100 streak=15 >= 13
-[2026-07-17 08:30:27] Emir turu: SELL_STOP (fiyat=3983.55 > entry=3978.5)
-2026-07-17 08:30:27.449 | T4 | SELL@3978.5 | order_send cagrilacak
 2026-07-17 08:30:27.469 | T5 | SELL@3978.5 | order_send sonucu: basarili
 [2026-07-17 08:30:27] Islem acildi: 945113971 | SELL @ 3978.5 | SL:3983.5 | TP1:3975.5 TP2:3973.5 TP3:3970.5
 [2026-07-17 08:30:37] Heartbeat: 1 aktif islem | Bakiye: 762.80 USD
@@ -78,3 +74,7 @@
 [2026-07-17 08:59:22] Heartbeat: 0 aktif islem | Bakiye: 762.80 USD
 [2026-07-17 08:59:52] Heartbeat: 0 aktif islem | Bakiye: 762.80 USD
 [2026-07-17 09:00:22] Heartbeat: 0 aktif islem | Bakiye: 762.80 USD
+[2026-07-17 09:00:53] Heartbeat: 0 aktif islem | Bakiye: 762.80 USD
+[2026-07-17 09:01:23] Heartbeat: 0 aktif islem | Bakiye: 762.80 USD
+[2026-07-17 09:01:53] Heartbeat: 0 aktif islem | Bakiye: 762.80 USD
+[2026-07-17 09:02:24] Heartbeat: 0 aktif islem | Bakiye: 762.80 USD
