@@ -1,54 +1,3 @@
-2026-07-17 17:52:58,466 | Sinyal tarihi okundu: 17/07/2026 21:42
-2026-07-17 17:52:58,466 | T1 | SELL@3997.5 | sinyal tespit edildi
-2026-07-17 17:52:58,466 | Olasi yeni sinyal, HEMEN yazildi (dogrulama bekleniyor 1/2): #None | SELL @ 3997.5
-2026-07-17 17:52:58,467 | signal.json yazildi.
-2026-07-17 17:52:58,467 | T2 | SELL@3997.5 | signal.json yazildi
-2026-07-17 17:53:04,546 | Sinyal tarihi okundu: 17/07/2026 21:42
-2026-07-17 17:53:04,546 | Yeni sinyal DOGRULANDI (2 okuma): entry=3997.5 pending=3997.5
-2026-07-17 17:53:09,365 | Sinyal tarihi okundu: 17/07/2026 21:42
-2026-07-17 17:53:09,365 | Takip: SELL @ 3997.5 | Status:RUNNING
-2026-07-17 17:53:13,345 | Sinyal tarihi okundu: 17/07/2026 21:42
-2026-07-17 17:53:13,345 | Takip: SELL @ 3997.5 | Status:RUNNING
-2026-07-17 17:53:17,882 | Sinyal tarihi okundu: 17/07/2026 21:42
-2026-07-17 17:53:17,882 | Takip: SELL @ 3997.5 | Status:RUNNING
-2026-07-17 17:53:21,476 | Sinyal tarihi okundu: 17/07/2026 21:42
-2026-07-17 17:53:21,476 | Takip: SELL @ 3997.5 | Status:RUNNING
-2026-07-17 17:53:27,865 | Sinyal tarihi okundu: 17/07/2026 21:42
-2026-07-17 17:53:27,866 | Takip: SELL @ 3997.5 | Status:RUNNING
-2026-07-17 17:53:33,224 | Sinyal tarihi okundu: 17/07/2026 21:42
-2026-07-17 17:53:33,224 | Takip: SELL @ 3997.5 | Status:RUNNING
-2026-07-17 17:53:37,944 | Sinyal tarihi okundu: 17/07/2026 21:42
-2026-07-17 17:53:37,944 | Takip: SELL @ 3997.5 | Status:RUNNING
-2026-07-17 17:53:44,760 | Sinyal tarihi okundu: 17/07/2026 21:42
-2026-07-17 17:53:44,760 | Takip: SELL @ 3997.5 | Status:RUNNING
-2026-07-17 17:53:48,896 | Sinyal tarihi okundu: 17/07/2026 21:42
-2026-07-17 17:53:48,897 | Takip: SELL @ 3997.5 | Status:RUNNING
-2026-07-17 17:53:54,745 | Sinyal tarihi okundu: 17/07/2026 21:42
-2026-07-17 17:53:54,746 | Takip: SELL @ 3997.5 | Status:RUNNING
-2026-07-17 17:54:01,838 | Sinyal tarihi okundu: 17/07/2026 21:53
-2026-07-17 17:54:01,838 | T1 | SELL@3996.0 | sinyal tespit edildi
-2026-07-17 17:54:01,839 | Olasi yeni sinyal, HEMEN yazildi (dogrulama bekleniyor 1/2): 3997.5 -> 3996.0
-2026-07-17 17:54:01,840 | signal.json yazildi.
-2026-07-17 17:54:01,840 | T2 | SELL@3996.0 | signal.json yazildi
-2026-07-17 17:54:06,999 | Sinyal tarihi okundu: 17/07/2026 21:53
-2026-07-17 17:54:07,000 | Yeni sinyal DOGRULANDI (2 okuma): entry=3996.0 pending=3996.0
-2026-07-17 17:54:12,437 | Sinyal tarihi okundu: 17/07/2026 21:53
-2026-07-17 17:54:12,438 | Takip: SELL @ 3996.0 | Status:RUNNING
-2026-07-17 17:54:17,359 | Sinyal tarihi okundu: 17/07/2026 21:53
-2026-07-17 17:54:17,360 | Takip: SELL @ 3996.0 | Status:RUNNING
-2026-07-17 17:54:22,749 | Sinyal tarihi okundu: 17/07/2026 21:53
-2026-07-17 17:54:22,750 | Takip: SELL @ 3996.0 | Status:RUNNING
-2026-07-17 17:54:28,021 | Sinyal tarihi okundu: 17/07/2026 21:53
-2026-07-17 17:54:28,021 | Takip: SELL @ 3996.0 | Status:RUNNING
-2026-07-17 17:54:31,696 | Sinyal tarihi okundu: 17/07/2026 21:53
-2026-07-17 17:54:31,696 | Takip: SELL @ 3996.0 | Status:RUNNING
-2026-07-17 17:54:35,756 | Sinyal tarihi okundu: 17/07/2026 21:53
-2026-07-17 17:54:35,756 | Takip: SELL @ 3996.0 | Status:RUNNING
-2026-07-17 17:54:38,954 | Sinyal tarihi okundu: 17/07/2026 21:53
-2026-07-17 17:54:38,954 | Takip: SELL @ 3996.0 | Status:RUNNING
-2026-07-17 17:54:43,806 | Sinyal tarihi okundu: 17/07/2026 21:53
-2026-07-17 17:54:43,806 | Takip: SELL @ 3996.0 | Status:RUNNING
-2026-07-17 17:54:48,674 | Sinyal tarihi okundu: 17/07/2026 21:53
 2026-07-17 17:54:48,675 | Takip: SELL @ 3996.0 | Status:RUNNING
 2026-07-17 17:54:52,701 | Sinyal tarihi okundu: 17/07/2026 21:53
 2026-07-17 17:54:52,701 | Takip: SELL @ 3996.0 | Status:RUNNING
@@ -78,3 +27,54 @@
 2026-07-17 17:56:00,638 | Takip: SELL @ 3996.0 | Status:RUNNING
 2026-07-17 17:56:06,429 | Sinyal tarihi okundu: 17/07/2026 21:53
 2026-07-17 17:56:06,430 | Takip: SELL @ 3996.0 | Status:RUNNING
+2026-07-17 17:56:12,096 | Sinyal tarihi okundu: 17/07/2026 21:53
+2026-07-17 17:56:12,096 | Takip: SELL @ 3996.0 | Status:RUNNING
+2026-07-17 17:56:19,279 | Sinyal tarihi okundu: 17/07/2026 21:53
+2026-07-17 17:56:19,280 | Takip: SELL @ 3996.0 | Status:RUNNING
+2026-07-17 17:56:23,688 | Sinyal tarihi okundu: 17/07/2026 21:53
+2026-07-17 17:56:23,688 | Takip: SELL @ 3996.0 | Status:RUNNING
+2026-07-17 17:56:28,229 | Sinyal tarihi okundu: 17/07/2026 21:53
+2026-07-17 17:56:28,229 | Takip: SELL @ 3996.0 | Status:RUNNING
+2026-07-17 17:56:32,855 | Sinyal tarihi okundu: 17/07/2026 21:53
+2026-07-17 17:56:32,855 | Takip: SELL @ 3996.0 | Status:RUNNING
+2026-07-17 17:56:37,874 | Sinyal tarihi okundu: 17/07/2026 21:53
+2026-07-17 17:56:37,874 | Takip: SELL @ 3996.0 | Status:RUNNING
+2026-07-17 17:56:42,536 | Sinyal tarihi okundu: 17/07/2026 21:53
+2026-07-17 17:56:42,536 | Takip: SELL @ 3996.0 | Status:RUNNING
+2026-07-17 17:56:47,426 | Sinyal tarihi okundu: 17/07/2026 21:53
+2026-07-17 17:56:47,427 | Takip: SELL @ 3996.0 | Status:RUNNING
+2026-07-17 17:56:51,427 | Sinyal tarihi okundu: 17/07/2026 21:53
+2026-07-17 17:56:51,428 | Takip: SELL @ 3996.0 | Status:RUNNING
+2026-07-17 17:56:56,352 | Sinyal tarihi okundu: 17/07/2026 21:53
+2026-07-17 17:56:56,353 | Takip: SELL @ 3996.0 | Status:RUNNING
+2026-07-17 17:57:01,353 | Sinyal tarihi okundu: 17/07/2026 21:53
+2026-07-17 17:57:01,353 | Takip: SELL @ 3996.0 | Status:RUNNING
+2026-07-17 17:57:05,284 | Sinyal tarihi okundu: 17/07/2026 21:53
+2026-07-17 17:57:05,285 | Takip: SELL @ 3996.0 | Status:RUNNING
+2026-07-17 17:57:09,546 | Sinyal tarihi okundu: 17/07/2026 21:53
+2026-07-17 17:57:09,547 | Takip: SELL @ 3996.0 | Status:RUNNING
+2026-07-17 17:57:14,028 | Sinyal tarihi okundu: 17/07/2026 21:53
+2026-07-17 17:57:14,028 | Takip: SELL @ 3996.0 | Status:RUNNING
+2026-07-17 17:57:19,045 | Sinyal tarihi okundu: 17/07/2026 21:53
+2026-07-17 17:57:19,045 | Takip: SELL @ 3996.0 | Status:RUNNING
+2026-07-17 17:57:23,405 | Sinyal tarihi okundu: 17/07/2026 21:53
+2026-07-17 17:57:23,405 | Takip: SELL @ 3996.0 | Status:RUNNING
+2026-07-17 17:57:28,505 | Sinyal tarihi okundu: 17/07/2026 21:53
+2026-07-17 17:57:28,506 | Takip: SELL @ 3996.0 | Status:RUNNING
+2026-07-17 17:57:36,841 | Sinyal tarihi okundu: 17/07/2026 21:53
+2026-07-17 17:57:36,842 | Takip: SELL @ 3996.0 | Status:RUNNING
+2026-07-17 17:57:41,043 | Sinyal tarihi okundu: 17/07/2026 21:53
+2026-07-17 17:57:41,045 | Takip: SELL @ 3996.0 | Status:RUNNING
+2026-07-17 17:57:45,039 | Sinyal tarihi okundu: 17/07/2026 21:53
+2026-07-17 17:57:45,039 | Takip: SELL @ 3996.0 | Status:RUNNING
+2026-07-17 17:57:53,069 | GOLD karti okunamadi (1). Ham: ['B3 Capital Management', 'Structure & trend: M3O price below EMAIOO by', 'Il Momentum: RSI(MI)-46 bearish; MACD(MI) negc']
+2026-07-17 17:57:59,006 | Sinyal tarihi okundu: 17/07/2026 21:53
+2026-07-17 17:57:59,006 | Takip: SELL @ 3996.0 | Status:RUNNING
+2026-07-17 17:58:04,210 | Sinyal tarihi okundu: 17/07/2026 21:53
+2026-07-17 17:58:04,211 | Takip: SELL @ 3996.0 | Status:RUNNING
+2026-07-17 17:58:08,900 | Sinyal tarihi okundu: 17/07/2026 21:53
+2026-07-17 17:58:08,900 | Takip: SELL @ 3996.0 | Status:RUNNING
+2026-07-17 17:58:13,453 | Sinyal tarihi okundu: 17/07/2026 21:53
+2026-07-17 17:58:13,454 | Takip: SELL @ 3996.0 | Status:RUNNING
+2026-07-17 17:58:18,332 | Sinyal tarihi okundu: 17/07/2026 21:53
+2026-07-17 17:58:18,333 | Takip: SELL @ 3996.0 | Status:RUNNING
