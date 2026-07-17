@@ -1,63 +1,3 @@
-2026-07-17 20:52:28,577 | Takip: SELL @ 4011.5 | Status:RUNNING
-2026-07-17 20:52:33,684 | Sinyal tarihi okundu: 18/07/2026 00:42
-2026-07-17 20:52:33,684 | Takip: SELL @ 4011.5 | Status:RUNNING
-2026-07-17 20:52:37,354 | Sinyal tarihi okundu: 18/07/2026 00:42
-2026-07-17 20:52:37,355 | Takip: SELL @ 4011.5 | Status:RUNNING
-2026-07-17 20:52:40,855 | Sinyal tarihi okundu: 18/07/2026 00:42
-2026-07-17 20:52:40,855 | Takip: SELL @ 4011.5 | Status:RUNNING
-2026-07-17 20:52:45,650 | Sinyal tarihi okundu: 18/07/2026 00:42
-2026-07-17 20:52:45,650 | Takip: SELL @ 4011.5 | Status:RUNNING
-2026-07-17 20:52:49,344 | Sinyal tarihi okundu: 18/07/2026 00:42
-2026-07-17 20:52:49,345 | Takip: SELL @ 4011.5 | Status:RUNNING
-2026-07-17 20:52:54,371 | Sinyal tarihi okundu: 18/07/2026 00:42
-2026-07-17 20:52:54,371 | Takip: SELL @ 4011.5 | Status:RUNNING
-2026-07-17 20:52:58,439 | Sinyal tarihi okundu: 18/07/2026 00:42
-2026-07-17 20:52:58,440 | Takip: SELL @ 4011.5 | Status:RUNNING
-2026-07-17 20:53:03,049 | Sinyal tarihi okundu: 18/07/2026 00:42
-2026-07-17 20:53:03,050 | Takip: SELL @ 4011.5 | Status:RUNNING
-2026-07-17 20:53:08,161 | Sinyal tarihi okundu: 18/07/2026 00:42
-2026-07-17 20:53:08,161 | Takip: SELL @ 4011.5 | Status:RUNNING
-2026-07-17 20:53:11,954 | Sinyal tarihi okundu: 18/07/2026 00:42
-2026-07-17 20:53:11,954 | Takip: SELL @ 4011.5 | Status:RUNNING
-2026-07-17 20:53:17,050 | Sinyal tarihi okundu: 18/07/2026 00:42
-2026-07-17 20:53:17,050 | Takip: SELL @ 4011.5 | Status:RUNNING
-2026-07-17 20:53:38,058 | EasyOCR yukleniyor...
-2026-07-17 20:53:38,059 | Using CPU. Note: This module is much faster with a GPU.
-2026-07-17 20:53:41,958 | EasyOCR hazir.
-2026-07-17 20:53:41,958 | ==================================================
-2026-07-17 20:53:41,958 | MilaGold OCR Agent - Signal GPT versiyonu
-2026-07-17 20:53:41,959 | ==================================================
-2026-07-17 20:53:42,301 | Chrome versiyonu (exe): 150.0.7871.125
-2026-07-17 20:53:42,302 | ChromeDriver cache'den: C:\MilaYatirim\mila-yatirim-sistemi\MilaGold\chromedriver_cache\150.0.7871.125\chromedriver.exe
-2026-07-17 20:53:42,304 | ChromeDriver: C:\MilaYatirim\mila-yatirim-sistemi\MilaGold\chromedriver_cache\150.0.7871.125\chromedriver.exe
-2026-07-17 20:53:43,577 | Signal GPT sayfasina gidildi.
-2026-07-17 20:53:43,577 | Sayfa yukleniyor, 15 saniye bekleniyor...
-2026-07-17 20:53:59,300 | Baslangic screenshot alindi.
-2026-07-17 20:53:59,302 | Ilk okuma oncesi 5 saniye bekleniyor...
-2026-07-17 20:54:04,305 | Okuma dongusune giriliyor...
-2026-07-17 20:54:06,843 | GOLD karti okunamadi (1). Ham: ['Disclaimer', 'The information on signalgpt ai is for reference and', 'Iknowledge-sharing [']
-2026-07-17 20:54:10,892 | GOLD karti okunamadi (2). Ham: ['Disclaimer', 'The information on signalgpt ai is for reference and', 'Iknowledge-sharing [']
-2026-07-17 20:54:14,825 | GOLD karti okunamadi (3). Ham: ['Disclaimer', 'The information on signalgpt ai is for reference and', 'Iknowledge-sharing [']
-2026-07-17 20:54:18,828 | GOLD karti okunamadi (4). Ham: ['Disclaimer', 'The information on signalgpt ai is for reference and', 'Iknowledge-sharing [']
-2026-07-17 20:54:22,251 | GOLD karti okunamadi (5). Ham: ['Disclaimer', 'The information on signalgpt ai is for reference and', 'Iknowledge-sharing [']
-2026-07-17 20:54:26,270 | GOLD karti okunamadi (6). Ham: ['Disclaimer', 'The information on signalgpt ai is for reference and', 'Iknowledge-sharing [']
-2026-07-17 20:54:35,871 | Sinyal tarihi okundu: 18/07/2026 00:42
-2026-07-17 20:54:35,871 | T1 | SELL@4011.5 | sinyal tespit edildi
-2026-07-17 20:54:35,871 | Olasi yeni sinyal, HEMEN yazildi (dogrulama bekleniyor 1/2): #None | SELL @ 4011.5
-2026-07-17 20:54:35,872 | signal.json yazildi.
-2026-07-17 20:54:35,872 | T2 | SELL@4011.5 | signal.json yazildi
-2026-07-17 20:54:39,993 | Sinyal tarihi okundu: 18/07/2026 00:42
-2026-07-17 20:54:39,994 | Yeni sinyal DOGRULANDI (2 okuma): entry=4011.5 pending=4011.5
-2026-07-17 20:54:44,329 | Sinyal tarihi okundu: 18/07/2026 00:42
-2026-07-17 20:54:44,329 | Takip: SELL @ 4011.5 | Status:RUNNING
-2026-07-17 20:54:47,911 | Sinyal tarihi okundu: 18/07/2026 00:42
-2026-07-17 20:54:47,912 | Takip: SELL @ 4011.5 | Status:RUNNING
-2026-07-17 20:54:52,757 | Sinyal tarihi okundu: 18/07/2026 00:42
-2026-07-17 20:54:52,758 | Takip: SELL @ 4011.5 | Status:RUNNING
-2026-07-17 20:54:57,977 | Sinyal tarihi okundu: 18/07/2026 00:42
-2026-07-17 20:54:57,977 | Takip: SELL @ 4011.5 | Status:RUNNING
-2026-07-17 20:55:02,083 | Sinyal tarihi okundu: 18/07/2026 00:42
-2026-07-17 20:55:02,084 | Takip: SELL @ 4011.5 | Status:RUNNING
 2026-07-17 20:55:05,579 | Sinyal tarihi okundu: 18/07/2026 00:42
 2026-07-17 20:55:05,579 | Takip: SELL @ 4011.5 | Status:RUNNING
 2026-07-17 20:55:10,843 | Sinyal tarihi okundu: 18/07/2026 00:42
@@ -78,3 +18,63 @@
 2026-07-17 20:55:45,598 | Takip: SELL @ 4011.5 | Status:RUNNING
 2026-07-17 20:55:49,525 | Sinyal tarihi okundu: 18/07/2026 00:42
 2026-07-17 20:55:49,526 | Takip: SELL @ 4011.5 | Status:RUNNING
+2026-07-17 20:55:54,248 | Sinyal tarihi okundu: 18/07/2026 00:42
+2026-07-17 20:55:54,249 | Takip: SELL @ 4011.5 | Status:RUNNING
+2026-07-17 20:55:57,881 | Sinyal tarihi okundu: 18/07/2026 00:42
+2026-07-17 20:55:57,882 | Takip: SELL @ 4011.5 | Status:RUNNING
+2026-07-17 20:56:01,558 | Sinyal tarihi okundu: 18/07/2026 00:42
+2026-07-17 20:56:01,558 | Takip: SELL @ 4011.5 | Status:RUNNING
+2026-07-17 20:56:05,268 | Sinyal tarihi okundu: 18/07/2026 00:42
+2026-07-17 20:56:05,268 | Takip: SELL @ 4011.5 | Status:RUNNING
+2026-07-17 20:56:10,461 | Sinyal tarihi okundu: 18/07/2026 00:42
+2026-07-17 20:56:10,462 | Takip: SELL @ 4011.5 | Status:RUNNING
+2026-07-17 20:56:15,140 | Sinyal tarihi okundu: 18/07/2026 00:42
+2026-07-17 20:56:15,140 | Takip: SELL @ 4011.5 | Status:RUNNING
+2026-07-17 20:56:19,349 | Sinyal tarihi okundu: 18/07/2026 00:42
+2026-07-17 20:56:19,349 | Takip: SELL @ 4011.5 | Status:RUNNING
+2026-07-17 20:56:24,044 | Sinyal tarihi okundu: 18/07/2026 00:42
+2026-07-17 20:56:24,045 | Takip: SELL @ 4011.5 | Status:RUNNING
+2026-07-17 20:56:28,129 | Sinyal tarihi okundu: 18/07/2026 00:42
+2026-07-17 20:56:28,130 | Takip: SELL @ 4011.5 | Status:RUNNING
+2026-07-17 20:56:32,345 | Sinyal tarihi okundu: 18/07/2026 00:42
+2026-07-17 20:56:32,345 | Takip: SELL @ 4011.5 | Status:RUNNING
+2026-07-17 20:56:36,668 | Sinyal tarihi okundu: 18/07/2026 00:42
+2026-07-17 20:56:36,669 | Takip: SELL @ 4011.5 | Status:RUNNING
+2026-07-17 20:56:40,648 | Sinyal tarihi okundu: 18/07/2026 00:42
+2026-07-17 20:56:40,648 | Takip: SELL @ 4011.5 | Status:RUNNING
+2026-07-17 20:56:46,107 | Sinyal tarihi okundu: 18/07/2026 00:42
+2026-07-17 20:56:46,108 | Takip: SELL @ 4011.5 | Status:RUNNING
+2026-07-17 20:56:52,452 | Sinyal tarihi okundu: 18/07/2026 00:42
+2026-07-17 20:56:52,453 | Takip: SELL @ 4011.5 | Status:RUNNING
+2026-07-17 20:56:57,070 | Sinyal tarihi okundu: 18/07/2026 00:42
+2026-07-17 20:56:57,070 | Takip: SELL @ 4011.5 | Status:RUNNING
+2026-07-17 20:57:00,939 | Sinyal tarihi okundu: 18/07/2026 00:42
+2026-07-17 20:57:00,939 | Takip: SELL @ 4011.5 | Status:RUNNING
+2026-07-17 20:57:04,672 | Sinyal tarihi okundu: 18/07/2026 00:42
+2026-07-17 20:57:04,673 | Takip: SELL @ 4011.5 | Status:RUNNING
+2026-07-17 20:57:08,657 | Sinyal tarihi okundu: 18/07/2026 00:42
+2026-07-17 20:57:08,658 | Takip: SELL @ 4011.5 | Status:RUNNING
+2026-07-17 20:57:13,442 | Sinyal tarihi okundu: 18/07/2026 00:42
+2026-07-17 20:57:13,442 | Takip: SELL @ 4011.5 | Status:RUNNING
+2026-07-17 20:57:17,132 | Sinyal tarihi okundu: 18/07/2026 00:42
+2026-07-17 20:57:17,133 | Takip: SELL @ 4011.5 | Status:RUNNING
+2026-07-17 20:57:21,090 | Sinyal tarihi okundu: 18/07/2026 00:42
+2026-07-17 20:57:21,090 | Takip: SELL @ 4011.5 | Status:RUNNING
+2026-07-17 20:57:24,816 | Sinyal tarihi okundu: 18/07/2026 00:42
+2026-07-17 20:57:24,816 | Takip: SELL @ 4011.5 | Status:RUNNING
+2026-07-17 20:57:29,088 | Sinyal tarihi okundu: 18/07/2026 00:42
+2026-07-17 20:57:29,088 | Takip: SELL @ 4011.5 | Status:RUNNING
+2026-07-17 20:57:33,664 | Sinyal tarihi okundu: 18/07/2026 00:42
+2026-07-17 20:57:33,664 | Takip: SELL @ 4011.5 | Status:RUNNING
+2026-07-17 20:57:37,485 | Sinyal tarihi okundu: 18/07/2026 00:42
+2026-07-17 20:57:37,485 | Takip: SELL @ 4011.5 | Status:RUNNING
+2026-07-17 20:57:41,796 | Sinyal tarihi okundu: 18/07/2026 00:42
+2026-07-17 20:57:41,797 | Takip: SELL @ 4011.5 | Status:RUNNING
+2026-07-17 20:57:45,829 | Sinyal tarihi okundu: 18/07/2026 00:42
+2026-07-17 20:57:45,830 | Takip: SELL @ 4011.5 | Status:RUNNING
+2026-07-17 20:57:49,147 | Sinyal tarihi okundu: 18/07/2026 00:42
+2026-07-17 20:57:49,147 | Takip: SELL @ 4011.5 | Status:RUNNING
+2026-07-17 20:57:52,809 | Sinyal tarihi okundu: 18/07/2026 00:42
+2026-07-17 20:57:52,809 | Takip: SELL @ 4011.5 | Status:RUNNING
+2026-07-17 20:57:57,277 | Sinyal tarihi okundu: 18/07/2026 00:42
+2026-07-17 20:57:57,277 | Takip: SELL @ 4011.5 | Status:RUNNING
