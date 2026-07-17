@@ -1,15 +1,3 @@
-[2026-07-17 17:30:28] Heartbeat: 0 aktif islem | Bakiye: 753.29 USD
-[2026-07-17 17:30:59] Heartbeat: 0 aktif islem | Bakiye: 753.29 USD
-[2026-07-17 17:31:29] Heartbeat: 0 aktif islem | Bakiye: 753.29 USD
-2026-07-17 17:31:49.781 | T3 | SELL@3998.0 | signal.json okundu (MT5 agent)
-[2026-07-17 17:31:49] Yeni sinyal alindi: #None SELL @ 3998.0
-[2026-07-17 17:31:49] EMA filtresi: SELL ATLANDI — fiyat=3995.14 > EMA20=3987.96 (yukari momentum)
-[2026-07-17 17:31:49] EMA filtresi: sinyal atlandi #None SELL @ 3998.0
-[2026-07-17 17:32:00] Heartbeat: 0 aktif islem | Bakiye: 753.29 USD
-[2026-07-17 17:32:30] Heartbeat: 0 aktif islem | Bakiye: 753.29 USD
-[2026-07-17 17:33:00] Heartbeat: 0 aktif islem | Bakiye: 753.29 USD
-[2026-07-17 17:33:30] Heartbeat: 0 aktif islem | Bakiye: 753.29 USD
-[2026-07-17 17:34:01] Heartbeat: 0 aktif islem | Bakiye: 753.29 USD
 [2026-07-17 17:34:31] Heartbeat: 0 aktif islem | Bakiye: 753.29 USD
 [2026-07-17 17:35:01] Heartbeat: 0 aktif islem | Bakiye: 753.29 USD
 [2026-07-17 17:35:32] Heartbeat: 0 aktif islem | Bakiye: 753.29 USD
@@ -78,3 +66,15 @@
 [2026-07-17 18:01:21] Heartbeat: 0 aktif islem | Bakiye: 753.29 USD
 [2026-07-17 18:01:51] Heartbeat: 0 aktif islem | Bakiye: 753.29 USD
 [2026-07-17 18:02:21] Heartbeat: 0 aktif islem | Bakiye: 753.29 USD
+[2026-07-17 18:02:52] Heartbeat: 0 aktif islem | Bakiye: 753.29 USD
+[2026-07-17 18:03:22] Heartbeat: 0 aktif islem | Bakiye: 753.29 USD
+2026-07-17 18:03:40.552 | T3 | SELL@4000.5 | signal.json okundu (MT5 agent)
+[2026-07-17 18:03:40] Yeni sinyal alindi: #None SELL @ 4000.5
+[2026-07-17 18:03:40] EMA filtresi: SELL ATLANDI — fiyat=4003.39 > EMA20=3992.52 (yukari momentum)
+[2026-07-17 18:03:40] EMA filtresi: sinyal atlandi #None SELL @ 4000.5
+[2026-07-17 18:03:53] Heartbeat: 0 aktif islem | Bakiye: 753.29 USD
+[2026-07-17 18:04:23] Heartbeat: 0 aktif islem | Bakiye: 753.29 USD
+2026-07-17 18:04:37.450 | T3 | SELL@3997.5 | signal.json okundu (MT5 agent)
+[2026-07-17 18:04:37] Yeni sinyal alindi: #None SELL @ 3997.5
+[2026-07-17 18:04:37] EMA filtresi: SELL ATLANDI — fiyat=4012.35 > EMA20=3993.37 (yukari momentum)
+[2026-07-17 18:04:37] EMA filtresi: sinyal atlandi #None SELL @ 3997.5
