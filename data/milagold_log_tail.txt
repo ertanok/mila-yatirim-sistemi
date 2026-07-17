@@ -1,7 +1,3 @@
-[2026-07-17 05:43:28] Streak filtresi: sinyal atlandi #None SELL @ 3984.0
-2026-07-17 05:43:41.744 | T3 | SELL@3974.0 | signal.json okundu (MT5 agent)
-[2026-07-17 05:43:41] Yeni sinyal alindi: #None SELL @ 3974.0
-[2026-07-17 05:43:41] EMA filtresi: SELL ONAYLANDI — fiyat=3975.63 <= EMA20=3982.66
 [2026-07-17 05:43:41] Streak filtresi: SELL ATLANDI — EMA100 streak=12 < 13 (trend yeterince guclu degil)
 [2026-07-17 05:43:41] Streak filtresi: sinyal atlandi #None SELL @ 3974.0
 [2026-07-17 05:43:51] Heartbeat: 0 aktif islem | Bakiye: 762.80 USD
@@ -78,3 +74,7 @@
 [2026-07-17 06:15:38] Heartbeat: 0 aktif islem | Bakiye: 762.80 USD
 [2026-07-17 06:16:08] Heartbeat: 0 aktif islem | Bakiye: 762.80 USD
 [2026-07-17 06:16:39] Heartbeat: 0 aktif islem | Bakiye: 762.80 USD
+[2026-07-17 06:17:09] Heartbeat: 0 aktif islem | Bakiye: 762.80 USD
+[2026-07-17 06:17:39] Heartbeat: 0 aktif islem | Bakiye: 762.80 USD
+[2026-07-17 06:18:09] Heartbeat: 0 aktif islem | Bakiye: 762.80 USD
+[2026-07-17 06:18:40] Heartbeat: 0 aktif islem | Bakiye: 762.80 USD
