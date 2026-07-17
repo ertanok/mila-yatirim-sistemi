@@ -26,13 +26,15 @@ SIGNAL_URL      = "https://signalgpt.ai/ai-signals"
 SIGNAL_FILE     = "C:\\MilaYatirim\\mila-yatirim-sistemi\\MilaGold\\signal.json"
 BASE_DIR        = os.path.dirname(os.path.abspath(__file__))
 SCREENSHOT_DIR  = os.path.join(BASE_DIR, "detay_kartlari")
+ARSIV_DIR       = os.path.join(BASE_DIR, "detay_kartlari_tekrar")
 LOG_FILE        = os.path.join(BASE_DIR, "detay_karti_log.txt")
 DURUM_FILE      = os.path.join(BASE_DIR, "detay_karti_toplama_durumu.json")
-STOP_FLAG_PATH  = os.path.join(BASE_DIR, "detay_karti_okuyucu.stop")
+KOMBINASYON_FILE = os.path.join(BASE_DIR, "detay_karti_kombinasyonlar.json")
+ILERLEME_DURUM_FILE = os.path.join(BASE_DIR, "detay_karti_durum.json")
 
 SYMBOL          = "GOLD"
 PRICE_TIER      = 25.0   # dolar - fiyat esigi dilim genisligi
-HEDEF_KART_SAYISI = 50
+HEDEF_KART_SAYISI = 50   # benzersiz (yon, entry) kombinasyonu hedefi
 
 CALISMA_BASLANGIC_SAAT = 5   # 05:00 - 00:00 (dahil degil) araligi calisir, 00:00-05:00 hicbir tetikleme yapmaz
 
@@ -44,6 +46,7 @@ ENTRY_MATCH_TOLERANCE = 0.5  # signal.json entry vs ekrandan OCR ile okunan entr
 
 ANA_POLL_ARALIGI       = 30   # saniye - pencere icinde tetikleyici kontrolu
 PENCERE_DISI_BEKLEME   = 300  # saniye - 00:00-05:00 arasi kontrol araligi
+TAMAMLANDI_BEKLEME     = 300  # saniye - hedef tamamlaninca duraklama kontrol araligi
 
 # --- TEK INSTANCE KILIDI ---
 _LOCK_FILE_PATH = os.path.join(BASE_DIR, "detay_karti_okuyucu.lock")
@@ -56,6 +59,7 @@ except OSError:
     raise SystemExit(0)
 
 os.makedirs(SCREENSHOT_DIR, exist_ok=True)
+os.makedirs(ARSIV_DIR, exist_ok=True)
 
 # --- LOGGING ---
 logging.basicConfig(
@@ -67,6 +71,37 @@ logging.basicConfig(
     ]
 )
 log = logging.getLogger()
+
+
+def kombinasyonlari_yukle():
+    if not os.path.exists(KOMBINASYON_FILE):
+        return []
+    try:
+        with open(KOMBINASYON_FILE, "r", encoding="utf-8") as f:
+            return json.load(f)
+    except Exception as e:
+        log.warning(f"{KOMBINASYON_FILE} okuma hatasi: {e}")
+        return []
+
+
+def kombinasyon_kaydet(yon, entry, dosya_adi):
+    _kayitlar.append({
+        "yon": yon,
+        "entry": entry,
+        "dosya": dosya_adi,
+        "zaman": datetime.now().isoformat(),
+    })
+    try:
+        with open(KOMBINASYON_FILE, "w", encoding="utf-8") as f:
+            json.dump(_kayitlar, f, indent=2, ensure_ascii=False)
+    except Exception as e:
+        log.warning(f"{KOMBINASYON_FILE} yazma hatasi: {e}")
+
+
+# Onceki oturumlardan devralinan benzersiz (yon, entry) kombinasyonlari - restart'ta sifirlanmaz
+_kayitlar = kombinasyonlari_yukle()
+_gorulen  = {(k["yon"], k["entry"]) for k in _kayitlar}
+log.info(f"Kombinasyon durumu yuklendi: {len(_gorulen)}/{HEDEF_KART_SAYISI} benzersiz (yon, entry).")
 
 
 def telegram_bildir(msg):
@@ -91,18 +126,9 @@ def get_driver():
     options.add_experimental_option("debuggerAddress", "127.0.0.1:9222")
     driver = webdriver.Chrome(options=options)
 
-    # Kendi sekmemizi CDP Target.createTarget ile ac - herhangi bir sayfanin JS
-    # baglaminda window.open CAGIRMIYORUZ (attach-modunda taze session'un
-    # "current window"u, o an tek acik sekme olan OCR agent'in sekmesi olabilir;
-    # execute_script("window.open(...)") orada calisirsa OCR'in sekmesini
-    # aktif/frontmost yapip OCR'in kendi ekran yakalamasini gecici olarak
-    # karistirabiliyor - 15/07/2026 canli testinde dogrulandi). Target.createTarget
-    # browser-seviyeli bir komut, hicbir sayfanin JS baglamini kullanmiyor.
-    driver.execute_cdp_cmd("Target.createTarget", {"url": "about:blank"})
-    for _ in range(25):
-        if len(driver.window_handles) > 1:
-            break
-        time.sleep(0.2)
+    # Kendi sekmemizi ac - OCR agent'in sekmesine dokunmuyoruz
+    driver.execute_script("window.open('about:blank', '_blank');")
+    time.sleep(1)
     driver.switch_to.window(driver.window_handles[-1])
 
     driver.get(SIGNAL_URL)
@@ -166,26 +192,42 @@ def signal_json_oku():
         return None
 
 
-def kart_sayisini_al():
-    return len([f for f in os.listdir(SCREENSHOT_DIR) if f.lower().endswith(".png")])
-
-
-def elli_karta_ulasildi_mi_kontrol_et():
+def hedefe_ulasildi_mi_kontrol_et():
+    """Benzersiz (yon, entry) kombinasyon sayisi hedefe ulastiysa durum dosyasini yazar
+    (bir kez) ve True doner - ana dongu bunu gorunce duraklar."""
     if os.path.exists(DURUM_FILE):
-        return  # zaten bildirildi
-    sayi = kart_sayisini_al()
-    if sayi >= HEDEF_KART_SAYISI:
+        return True
+    if len(_gorulen) >= HEDEF_KART_SAYISI:
         durum = {
-            "toplam_sayi": sayi,
+            "benzersiz_kombinasyon_sayisi": len(_gorulen),
             "tamamlanma_zamani": datetime.now().isoformat(),
         }
         with open(DURUM_FILE, "w") as f:
             json.dump(durum, f, indent=2)
-        log.info(f"{sayi} kart tamamlandi - durum dosyasi yazildi.")
-        telegram_bildir(f"[TersMuhendislik] {sayi} kart hazir, TersMuhendislik/detay_kartlari klasorunde")
+        log.info(f"{len(_gorulen)} benzersiz kombinasyon tamamlandi - durum dosyasi yazildi, ana dongu duraklatiliyor.")
+        telegram_bildir(f"[TersMuhendislik] {len(_gorulen)} benzersiz (yon,entry) kombinasyonu tamamlandi - toplama duraklatildi")
+        return True
+    return False
 
 
-def kart_yakala(driver, tetikleyici, detail_merkez):
+def ilerleme_durumunu_yaz(tetikleyici):
+    """Dashboard icin ilerleme dosyasini tamamen yeniden yazar. Her tetikleyici donguden
+    sonra (basarili kart kaydi VEYA "kart yok" durumu farketmeksizin) cagrilir - tek yazici
+    bu fonksiyon/bu script'tir."""
+    durum = {
+        "toplanan": len(_gorulen),
+        "hedef": HEDEF_KART_SAYISI,
+        "son_kart_zamani": datetime.now().strftime("%Y-%m-%d %H:%M"),
+        "son_tetikleyici": tetikleyici,
+    }
+    try:
+        with open(ILERLEME_DURUM_FILE, "w", encoding="utf-8") as f:
+            json.dump(durum, f, indent=2, ensure_ascii=False)
+    except Exception as e:
+        log.warning(f"{ILERLEME_DURUM_FILE} yazma hatasi: {e}")
+
+
+def kart_yakala(driver, tetikleyici, detail_merkez, yon, entry):
     x, y = detail_merkez if detail_merkez else DETAIL_CLICK_FALLBACK
     cdp_click(driver, x, y)
     time.sleep(3)
@@ -200,18 +242,30 @@ def kart_yakala(driver, tetikleyici, detail_merkez):
     escape_tusu(driver)
     time.sleep(0.5)
 
-    elli_karta_ulasildi_mi_kontrol_et()
+    _gorulen.add((yon, entry))
+    kombinasyon_kaydet(yon, entry, dosya_adi)
+    log.info(f"Benzersiz kombinasyon: {len(_gorulen)}/{HEDEF_KART_SAYISI} ({yon} @ {entry})")
+
+    hedefe_ulasildi_mi_kontrol_et()
 
 
 def tetiklemeyi_isle(driver, tetikleyici, esik_deger=None):
-    signal_data = signal_json_oku()
-    hedef_entry = signal_data.get("entry") if signal_data else None
+    if hedefe_ulasildi_mi_kontrol_et():
+        return  # hedef tamamlandi, yeni kart aranmiyor
 
-    if hedef_entry is None:
+    signal_data = signal_json_oku()
+    hedef_entry     = signal_data.get("entry") if signal_data else None
+    hedef_direction = signal_data.get("direction") if signal_data else None
+
+    if hedef_entry is None or hedef_direction is None:
         if esik_deger is not None:
             log.info(f"fiyat esigi {esik_deger}'e ulasildi, aktif sinyal yok")
         else:
-            log.info(f"{tetikleyici}: kart yok (signal.json'da entry yok)")
+            log.info(f"{tetikleyici}: kart yok (signal.json'da entry/yon yok)")
+        return
+
+    if (hedef_direction, hedef_entry) in _gorulen:
+        log.info(f"{tetikleyici}: {hedef_direction} @ {hedef_entry} zaten kayitli - tekrar cekilmiyor")
         return
 
     detail_bulundu, detail_merkez, ocr_entry = ekrani_oku(driver)
@@ -241,26 +295,13 @@ def tetiklemeyi_isle(driver, tetikleyici, esik_deger=None):
             log.info(f"{tetikleyici}: entry hala uyusmuyor (signal.json={hedef_entry}, ekran={ocr_entry}) - bu tur gecildi")
             return
 
-    kart_yakala(driver, tetikleyici, detail_merkez)
+    kart_yakala(driver, tetikleyici, detail_merkez, hedef_direction, hedef_entry)
 
 
 def calisma_penceresinde_mi(now=None):
     if now is None:
         now = datetime.now()
     return CALISMA_BASLANGIC_SAAT <= now.hour < 24
-
-
-def bekle_veya_dur(saniye):
-    """saniye kadar 1'er saniyelik adimlarla bekler; bu sirada STOP_FLAG_PATH
-    dosyasi belirirse hemen True doner (erken/duzgun cikis icin)."""
-    gecen = 0.0
-    adim = 1.0
-    while gecen < saniye:
-        if os.path.exists(STOP_FLAG_PATH):
-            return True
-        time.sleep(min(adim, saniye - gecen))
-        gecen += adim
-    return os.path.exists(STOP_FLAG_PATH)
 
 
 def main():
@@ -282,21 +323,20 @@ def main():
 
     while True:
         try:
-            if os.path.exists(STOP_FLAG_PATH):
-                log.info("Durdurma sinyali alindi (stop dosyasi), cikiliyor...")
-                break
-
             now = datetime.now()
 
+            if hedefe_ulasildi_mi_kontrol_et():
+                time.sleep(TAMAMLANDI_BEKLEME)
+                continue
+
             if not calisma_penceresinde_mi(now):
-                if bekle_veya_dur(PENCERE_DISI_BEKLEME):
-                    log.info("Durdurma sinyali alindi (stop dosyasi), cikiliyor...")
-                    break
+                time.sleep(PENCERE_DISI_BEKLEME)
                 continue
 
             if son_saat_tetiklendi != now.hour:
                 son_saat_tetiklendi = now.hour
                 tetiklemeyi_isle(driver, "saatlik")
+                ilerleme_durumunu_yaz("saatlik")
 
             try:
                 tick = mt5.symbol_info_tick(SYMBOL)
@@ -304,15 +344,14 @@ def main():
                     dilim = int(tick.bid // PRICE_TIER) * int(PRICE_TIER)
                     if son_fiyat_dilimi is not None and dilim != son_fiyat_dilimi:
                         tetiklemeyi_isle(driver, "fiyat_esigi", esik_deger=dilim)
+                        ilerleme_durumunu_yaz("fiyat_esigi")
                     son_fiyat_dilimi = dilim
                 else:
                     log.warning("symbol_info_tick None dondu.")
             except Exception as e:
                 log.error(f"MT5 fiyat okuma hatasi: {e}")
 
-            if bekle_veya_dur(ANA_POLL_ARALIGI):
-                log.info("Durdurma sinyali alindi (stop dosyasi), cikiliyor...")
-                break
+            time.sleep(ANA_POLL_ARALIGI)
 
         except KeyboardInterrupt:
             log.info("Detay Karti Okuyucu durduruldu.")
@@ -320,20 +359,6 @@ def main():
         except Exception as e:
             log.error(f"Dongu hatasi: {e}")
             time.sleep(3)
-
-    # Dongu bitti (KeyboardInterrupt veya stop dosyasi) - kendi actigimiz
-    # sekmeyi acikca kapat, OCR agent'in sekmesine dokunmuyoruz.
-    try:
-        driver.close()
-        log.info("Kendi sekmemiz kapatildi.")
-    except Exception as e:
-        log.warning(f"Sekme kapatma hatasi: {e}")
-
-    try:
-        if os.path.exists(STOP_FLAG_PATH):
-            os.remove(STOP_FLAG_PATH)
-    except Exception:
-        pass
 
 
 if __name__ == "__main__":
