@@ -1,41 +1,3 @@
-2026-07-17 21:57:06,172 | ==================================================
-2026-07-17 21:57:06,413 | Chrome versiyonu (exe): 150.0.7871.125
-2026-07-17 21:57:06,413 | ChromeDriver cache'den: C:\MilaYatirim\mila-yatirim-sistemi\MilaGold\chromedriver_cache\150.0.7871.125\chromedriver.exe
-2026-07-17 21:57:06,414 | ChromeDriver: C:\MilaYatirim\mila-yatirim-sistemi\MilaGold\chromedriver_cache\150.0.7871.125\chromedriver.exe
-2026-07-17 21:57:07,428 | Signal GPT sayfasina gidildi.
-2026-07-17 21:57:07,428 | Sayfa yukleniyor, 15 saniye bekleniyor...
-2026-07-17 21:57:23,022 | Baslangic screenshot alindi.
-2026-07-17 21:57:23,024 | Ilk okuma oncesi 5 saniye bekleniyor...
-2026-07-17 21:57:28,025 | Okuma dongusune giriliyor...
-2026-07-17 21:57:29,921 | GOLD karti okunamadi (1). Ham: ['Disclaimer', 'The information on signalgpt ai is for reference and', 'Iknowledge-sharing [']
-2026-07-17 21:57:33,007 | GOLD karti okunamadi (2). Ham: ['Disclaimer', 'The information on signalgpt ai is for reference and', 'Iknowledge-sharing [']
-2026-07-17 21:57:36,307 | GOLD karti okunamadi (3). Ham: ['Disclaimer', 'The information on signalgpt ai is for reference and', 'Iknowledge-sharing [']
-2026-07-17 21:57:39,501 | GOLD karti okunamadi (4). Ham: ['Disclaimer', 'The information on signalgpt ai is for reference and', 'Iknowledge-sharing [']
-2026-07-17 21:57:42,804 | GOLD karti okunamadi (5). Ham: ['Disclaimer', 'The information on signalgpt ai is for reference and', 'Iknowledge-sharing [']
-2026-07-17 21:57:46,454 | GOLD karti okunamadi (6). Ham: ['Disclaimer', 'The information on signalgpt ai is for reference and', 'Iknowledge-sharing [']
-2026-07-17 21:57:50,498 | GOLD karti okunamadi (7). Ham: ['Disclaimer', 'The information on signalgpt ai is for reference and', 'Iknowledge-sharing [']
-2026-07-17 21:57:59,785 | Sinyal tarihi okundu: 18/07/2026 01:46
-2026-07-17 21:57:59,785 | T1 | SELL@4008.5 | sinyal tespit edildi
-2026-07-17 21:57:59,786 | Olasi yeni sinyal, HEMEN yazildi (dogrulama bekleniyor 1/2): #None | SELL @ 4008.5
-2026-07-17 21:57:59,787 | signal.json yazildi.
-2026-07-17 21:57:59,787 | T2 | SELL@4008.5 | signal.json yazildi
-2026-07-17 21:58:03,958 | Sinyal tarihi okundu: 18/07/2026 01:46
-2026-07-17 21:58:03,958 | Yeni sinyal DOGRULANDI (2 okuma): entry=4008.5 pending=4008.5
-2026-07-17 21:58:08,444 | Sinyal tarihi okundu: 18/07/2026 01:46
-2026-07-17 21:58:08,444 | Takip: SELL @ 4008.5 | Status:RUNNING
-2026-07-17 21:58:12,752 | Sinyal tarihi okundu: 18/07/2026 01:46
-2026-07-17 21:58:12,752 | Takip: SELL @ 4008.5 | Status:RUNNING
-2026-07-17 21:58:17,221 | Sinyal tarihi okundu: 18/07/2026 01:46
-2026-07-17 21:58:17,221 | Takip: SELL @ 4008.5 | Status:RUNNING
-2026-07-17 21:58:20,536 | Sinyal tarihi okundu: 18/07/2026 01:46
-2026-07-17 21:58:20,536 | Takip: SELL @ 4008.5 | Status:RUNNING
-2026-07-17 21:58:24,793 | Sinyal tarihi okundu: 18/07/2026 01:46
-2026-07-17 21:58:24,794 | Takip: SELL @ 4008.5 | Status:RUNNING
-2026-07-17 21:58:28,022 | Sinyal tarihi okundu: 18/07/2026 01:46
-2026-07-17 21:58:28,022 | Takip: SELL @ 4008.5 | Status:RUNNING
-2026-07-17 21:58:31,526 | Sinyal tarihi okundu: 18/07/2026 01:46
-2026-07-17 21:58:31,526 | Takip: SELL @ 4008.5 | Status:RUNNING
-2026-07-17 21:58:35,424 | Sinyal tarihi okundu: 18/07/2026 01:46
 2026-07-17 21:58:35,424 | Takip: SELL @ 4008.5 | Status:RUNNING
 2026-07-17 21:58:39,223 | Sinyal tarihi okundu: 18/07/2026 01:25
 2026-07-17 21:58:39,224 | T1 | SELL@4010.5 | sinyal tespit edildi
@@ -78,3 +40,41 @@
 2026-07-17 21:59:44,543 | Takip: SELL @ 4010.0 | Status:RUNNING
 2026-07-17 21:59:48,211 | Sinyal tarihi okundu: 18/07/2026 01:58
 2026-07-17 21:59:48,212 | Takip: SELL @ 4010.0 | Status:RUNNING
+2026-07-17 21:59:52,431 | Sinyal tarihi okundu: 18/07/2026 01:58
+2026-07-17 21:59:52,431 | Takip: SELL @ 4010.0 | Status:RUNNING
+2026-07-17 21:59:56,783 | Sinyal tarihi okundu: 18/07/2026 01:58
+2026-07-17 21:59:56,783 | Takip: SELL @ 4010.0 | Status:RUNNING
+2026-07-17 22:00:01,060 | Sinyal tarihi okundu: 18/07/2026 01:58
+2026-07-17 22:00:01,060 | Takip: SELL @ 4010.0 | Status:RUNNING
+2026-07-17 22:00:07,319 | Sinyal tarihi okundu: 18/07/2026 01:58
+2026-07-17 22:00:07,320 | Takip: SELL @ 4010.0 | Status:RUNNING
+2026-07-17 22:00:11,384 | Sinyal tarihi okundu: 18/07/2026 01:58
+2026-07-17 22:00:11,385 | Takip: SELL @ 4010.0 | Status:RUNNING
+2026-07-17 22:00:15,008 | GOLD karti okunamadi (1). Ham: []
+2026-07-17 22:00:19,260 | GOLD karti okunamadi (2). Ham: ['Disclaimer', 'The information on signalgpt ai is for reference and', 'Iknowledge-sharing [']
+2026-07-17 22:00:24,908 | GOLD karti okunamadi (3). Ham: ['Disclaimer', 'The information on signalgpt ai is for reference and', 'Iknowledge-sharing [']
+2026-07-17 22:00:28,749 | GOLD karti okunamadi (4). Ham: ['Disclaimer', 'The information on signalgpt ai is for reference and', 'Iknowledge-sharing [']
+2026-07-17 22:00:32,745 | GOLD karti okunamadi (5). Ham: ['Disclaimer', 'The information on signalgpt ai is for reference and', 'Iknowledge-sharing [']
+2026-07-17 22:00:38,449 | GOLD karti okunamadi (6). Ham: ['Disclaimer', 'The information on signalgpt ai is for reference and', 'Iknowledge-sharing [']
+2026-07-17 22:00:43,170 | GOLD karti okunamadi (7). Ham: ['Disclaimer', 'The information on signalgpt ai is for reference and', 'Iknowledge-sharing [']
+2026-07-17 22:00:47,531 | GOLD karti okunamadi (8). Ham: ['Disclaimer', 'The information on signalgpt ai is for reference and', 'Iknowledge-sharing [']
+2026-07-17 22:00:51,408 | GOLD karti okunamadi (9). Ham: ['Disclaimer', 'The information on signalgpt ai is for reference and', 'Iknowledge-sharing [']
+2026-07-17 22:00:55,592 | GOLD karti okunamadi (10). Ham: ['Disclaimer', 'The information on signalgpt ai is for reference and', 'Iknowledge-sharing [']
+2026-07-17 22:00:55,592 | 10 kez ust uste okunamadi - sayfa yenileniyor...
+2026-07-17 22:01:03,751 | Sayfa yenilendi.
+2026-07-17 22:01:08,255 | GOLD karti okunamadi (1). Ham: ['Disclaimer', 'The information on signalgpt ai is for reference and', 'Iknowledge-sharing [']
+2026-07-17 22:01:11,962 | GOLD karti okunamadi (2). Ham: ['Disclaimer', 'The information on signalgpt ai is for reference and', 'Iknowledge-sharing [']
+2026-07-17 22:01:15,251 | GOLD karti okunamadi (3). Ham: ['Disclaimer', 'The information on signalgpt ai is for reference and', 'Iknowledge-sharing [']
+2026-07-17 22:01:18,718 | GOLD karti okunamadi (4). Ham: ['Disclaimer', 'The information on signalgpt ai is for reference and', 'Iknowledge-sharing [']
+2026-07-17 22:01:23,085 | GOLD karti okunamadi (5). Ham: ['Disclaimer', 'The information on signalgpt ai is for reference and', 'Iknowledge-sharing [']
+2026-07-17 22:01:27,263 | GOLD karti okunamadi (6). Ham: ['Disclaimer', 'The information on signalgpt ai is for reference and', 'Iknowledge-sharing [']
+2026-07-17 22:01:30,633 | GOLD karti okunamadi (7). Ham: ['Disclaimer', 'The information on signalgpt ai is for reference and', 'Iknowledge-sharing [']
+2026-07-17 22:01:33,978 | GOLD karti okunamadi (8). Ham: ['Disclaimer', 'The information on signalgpt ai is for reference and', 'Iknowledge-sharing [']
+2026-07-17 22:01:45,221 | Sinyal tarihi okundu: 18/07/2026 01:58
+2026-07-17 22:01:45,221 | Takip: SELL @ 4010.0 | Status:RUNNING
+2026-07-17 22:01:48,985 | Sinyal tarihi okundu: 18/07/2026 01:58
+2026-07-17 22:01:48,986 | Takip: SELL @ 4010.0 | Status:RUNNING
+2026-07-17 22:01:52,779 | Sinyal tarihi okundu: 18/07/2026 01:58
+2026-07-17 22:01:52,780 | Takip: SELL @ 4010.0 | Status:RUNNING
+2026-07-17 22:01:56,521 | Sinyal tarihi okundu: 18/07/2026 01:58
+2026-07-17 22:01:56,522 | Takip: SELL @ 4010.0 | Status:RUNNING
