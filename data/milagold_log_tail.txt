@@ -1,80 +1,80 @@
-[2026-07-17 22:39:50] Heartbeat: 0 aktif islem | Bakiye: 748.22 USD
-[2026-07-17 22:40:20] Heartbeat: 0 aktif islem | Bakiye: 748.22 USD
-[2026-07-17 22:40:50] Heartbeat: 0 aktif islem | Bakiye: 748.22 USD
-[2026-07-17 22:41:20] Heartbeat: 0 aktif islem | Bakiye: 748.22 USD
-[2026-07-17 22:41:50] Heartbeat: 0 aktif islem | Bakiye: 748.22 USD
-[2026-07-17 22:42:20] Heartbeat: 0 aktif islem | Bakiye: 748.22 USD
-[2026-07-17 22:42:51] Heartbeat: 0 aktif islem | Bakiye: 748.22 USD
-[2026-07-17 22:43:21] Heartbeat: 0 aktif islem | Bakiye: 748.22 USD
-[2026-07-17 22:43:51] Heartbeat: 0 aktif islem | Bakiye: 748.22 USD
-[2026-07-17 22:44:21] Heartbeat: 0 aktif islem | Bakiye: 748.22 USD
-[2026-07-17 22:44:51] Heartbeat: 0 aktif islem | Bakiye: 748.22 USD
-[2026-07-17 22:45:22] Heartbeat: 0 aktif islem | Bakiye: 748.22 USD
-[2026-07-17 22:45:52] Heartbeat: 0 aktif islem | Bakiye: 748.22 USD
-[2026-07-17 22:46:22] Heartbeat: 0 aktif islem | Bakiye: 748.22 USD
-[2026-07-17 22:46:52] Heartbeat: 0 aktif islem | Bakiye: 748.22 USD
-[2026-07-17 22:47:22] Heartbeat: 0 aktif islem | Bakiye: 748.22 USD
-[2026-07-17 22:47:53] Heartbeat: 0 aktif islem | Bakiye: 748.22 USD
-[2026-07-17 22:48:23] Heartbeat: 0 aktif islem | Bakiye: 748.22 USD
-[2026-07-17 22:48:53] Heartbeat: 0 aktif islem | Bakiye: 748.22 USD
-[2026-07-17 22:49:23] Heartbeat: 0 aktif islem | Bakiye: 748.22 USD
-[2026-07-17 22:49:54] Heartbeat: 0 aktif islem | Bakiye: 748.22 USD
-[2026-07-17 22:50:24] Heartbeat: 0 aktif islem | Bakiye: 748.22 USD
-[2026-07-17 22:50:54] Heartbeat: 0 aktif islem | Bakiye: 748.22 USD
-[2026-07-17 22:51:24] Heartbeat: 0 aktif islem | Bakiye: 748.22 USD
-[2026-07-17 22:51:55] Heartbeat: 0 aktif islem | Bakiye: 748.22 USD
-[2026-07-17 22:52:25] Heartbeat: 0 aktif islem | Bakiye: 748.22 USD
-[2026-07-17 22:52:55] Heartbeat: 0 aktif islem | Bakiye: 748.22 USD
-[2026-07-17 22:53:25] Heartbeat: 0 aktif islem | Bakiye: 748.22 USD
-[2026-07-17 22:53:55] Heartbeat: 0 aktif islem | Bakiye: 748.22 USD
-[2026-07-17 22:54:26] Heartbeat: 0 aktif islem | Bakiye: 748.22 USD
-[2026-07-17 22:54:56] Heartbeat: 0 aktif islem | Bakiye: 748.22 USD
-[2026-07-17 22:55:26] Heartbeat: 0 aktif islem | Bakiye: 748.22 USD
-[2026-07-17 22:55:56] Heartbeat: 0 aktif islem | Bakiye: 748.22 USD
-[2026-07-17 22:56:27] Heartbeat: 0 aktif islem | Bakiye: 748.22 USD
-[2026-07-17 22:56:57] Heartbeat: 0 aktif islem | Bakiye: 748.22 USD
-[2026-07-17 22:57:27] Heartbeat: 0 aktif islem | Bakiye: 748.22 USD
-[2026-07-17 22:57:57] Heartbeat: 0 aktif islem | Bakiye: 748.22 USD
-[2026-07-17 22:58:28] Heartbeat: 0 aktif islem | Bakiye: 748.22 USD
-2026-07-17 22:58:29.370 | T3 | SELL@4009.0 | signal.json okundu (MT5 agent)
-[2026-07-17 22:58:29] Yeni sinyal alindi: #None SELL @ 4009.0
-[2026-07-17 22:58:29] EMA filtresi: SELL ATLANDI — fiyat=4015.37 > EMA20=4009.58 (yukari momentum)
-[2026-07-17 22:58:29] EMA filtresi: sinyal atlandi #None SELL @ 4009.0
-[2026-07-17 22:58:58] Heartbeat: 0 aktif islem | Bakiye: 748.22 USD
-[2026-07-17 22:59:29] Heartbeat: 0 aktif islem | Bakiye: 748.22 USD
-[2026-07-17 22:59:59] Heartbeat: 0 aktif islem | Bakiye: 748.22 USD
-2026-07-17 23:00:09.570 | T3 | SELL@4009 | signal.json okundu (MT5 agent)
-[2026-07-17 23:00:09] Yeni sinyal alindi: #MANUEL SELL @ 4009
-[2026-07-17 23:00:09] Manuel emir: EMA/Streak filtreleri atlaniyor — SELL @ 4009
-[2026-07-17 23:00:09] Emir turu: SELL_STOP (fiyat=4013.94 > entry=4009.0)
-2026-07-17 23:00:09.577 | T4 | SELL@4009.0 | order_send cagrilacak
-2026-07-17 23:00:09.620 | T5 | SELL@4009.0 | order_send sonucu: basarili
-[2026-07-17 23:00:09] Islem acildi: 946309502 | SELL @ 4009.0 | SL:4014.0 | TP1:4006.0 TP2:4004.0 TP3:4001.0
-2026-07-17 23:00:10.677 | T3 | SELL@4006.5 | signal.json okundu (MT5 agent)
-[2026-07-17 23:00:10] OCR sinyali atlandi (manuel emir aktif): #None SELL @ 4006.5
-[2026-07-17 23:00:30] Heartbeat: 1 aktif islem | Bakiye: 748.22 USD
-[2026-07-17 23:01:00] Heartbeat: 1 aktif islem | Bakiye: 748.22 USD
-2026-07-17 23:01:16.582 | T3 | SELL@4015.0 | signal.json okundu (MT5 agent)
-[2026-07-17 23:01:16] OCR sinyali atlandi (manuel emir aktif): #None SELL @ 4015.0
-[2026-07-17 23:01:30] Heartbeat: 1 aktif islem | Bakiye: 748.22 USD
-2026-07-17 23:01:43.990 | T3 | SELL@4015 | signal.json okundu (MT5 agent)
-[2026-07-17 23:01:43] Yeni sinyal geldi, bekleyen emir iptal ediliyor: ticket=946309502 (SELL @ 4009)
-[2026-07-17 23:01:44] Bekleyen emir iptal edildi: ticket=946309502
-[2026-07-17 23:01:44] Yeni sinyal alindi: #MANUEL SELL @ 4015
-[2026-07-17 23:01:44] Manuel emir: EMA/Streak filtreleri atlaniyor — SELL @ 4015
-[2026-07-17 23:01:44] Emir turu: SELL_LIMIT (fiyat=4013.25 <= entry=4015.0)
-2026-07-17 23:01:44.031 | T4 | SELL@4015.0 | order_send cagrilacak
-2026-07-17 23:01:44.039 | T5 | SELL@4015.0 | order_send sonucu: basarili
-[2026-07-17 23:01:44] Islem acildi: 946310643 | SELL @ 4015.0 | SL:4020.0 | TP1:4012.0 TP2:4010.0 TP3:4007.0
-[2026-07-17 23:02:01] Heartbeat: 1 aktif islem | Bakiye: 748.22 USD
-[2026-07-17 23:02:31] Heartbeat: 1 aktif islem | Bakiye: 748.22 USD
-[2026-07-17 23:03:01] Heartbeat: 1 aktif islem | Bakiye: 748.22 USD
-[2026-07-17 23:03:31] Heartbeat: 1 aktif islem | Bakiye: 748.22 USD
-[2026-07-17 23:04:02] Heartbeat: 1 aktif islem | Bakiye: 748.22 USD
-[2026-07-17 23:04:32] Heartbeat: 1 aktif islem | Bakiye: 748.22 USD
-[2026-07-17 23:05:02] Heartbeat: 1 aktif islem | Bakiye: 748.22 USD
-[2026-07-17 23:05:32] Heartbeat: 1 aktif islem | Bakiye: 748.22 USD
-[2026-07-17 23:06:03] Heartbeat: 1 aktif islem | Bakiye: 748.22 USD
-[2026-07-17 23:06:33] Heartbeat: 1 aktif islem | Bakiye: 748.22 USD
-[2026-07-17 23:07:03] Heartbeat: 1 aktif islem | Bakiye: 748.22 USD
-[2026-07-17 23:07:33] Heartbeat: 1 aktif islem | Bakiye: 748.22 USD
+[2026-07-18 18:04:06] Heartbeat: 0 aktif islem | Bakiye: 748.22 USD
+[2026-07-18 18:04:37] Heartbeat: 0 aktif islem | Bakiye: 748.22 USD
+[2026-07-18 18:05:07] Heartbeat: 0 aktif islem | Bakiye: 748.22 USD
+[2026-07-18 18:05:37] Heartbeat: 0 aktif islem | Bakiye: 748.22 USD
+[2026-07-18 18:06:07] Heartbeat: 0 aktif islem | Bakiye: 748.22 USD
+[2026-07-18 18:06:37] Heartbeat: 0 aktif islem | Bakiye: 748.22 USD
+[2026-07-18 18:07:07] Heartbeat: 0 aktif islem | Bakiye: 748.22 USD
+[2026-07-18 18:07:37] Heartbeat: 0 aktif islem | Bakiye: 748.22 USD
+[2026-07-18 18:08:07] Heartbeat: 0 aktif islem | Bakiye: 748.22 USD
+[2026-07-18 18:08:37] Heartbeat: 0 aktif islem | Bakiye: 748.22 USD
+[2026-07-18 18:09:07] Heartbeat: 0 aktif islem | Bakiye: 748.22 USD
+[2026-07-18 18:09:37] Heartbeat: 0 aktif islem | Bakiye: 748.22 USD
+[2026-07-18 18:10:08] Heartbeat: 0 aktif islem | Bakiye: 748.22 USD
+[2026-07-18 18:10:38] Heartbeat: 0 aktif islem | Bakiye: 748.22 USD
+[2026-07-18 18:11:08] Heartbeat: 0 aktif islem | Bakiye: 748.22 USD
+[2026-07-18 18:11:38] Heartbeat: 0 aktif islem | Bakiye: 748.22 USD
+[2026-07-18 18:12:08] Heartbeat: 0 aktif islem | Bakiye: 748.22 USD
+[2026-07-18 18:12:38] Heartbeat: 0 aktif islem | Bakiye: 748.22 USD
+[2026-07-18 18:13:08] Heartbeat: 0 aktif islem | Bakiye: 748.22 USD
+[2026-07-18 18:13:38] Heartbeat: 0 aktif islem | Bakiye: 748.22 USD
+[2026-07-18 18:14:08] Heartbeat: 0 aktif islem | Bakiye: 748.22 USD
+[2026-07-18 18:14:38] Heartbeat: 0 aktif islem | Bakiye: 748.22 USD
+[2026-07-18 18:15:09] Heartbeat: 0 aktif islem | Bakiye: 748.22 USD
+[2026-07-18 18:15:39] Heartbeat: 0 aktif islem | Bakiye: 748.22 USD
+[2026-07-18 18:16:09] Heartbeat: 0 aktif islem | Bakiye: 748.22 USD
+[2026-07-18 18:16:39] Heartbeat: 0 aktif islem | Bakiye: 748.22 USD
+[2026-07-18 18:17:09] Heartbeat: 0 aktif islem | Bakiye: 748.22 USD
+[2026-07-18 18:17:39] Heartbeat: 0 aktif islem | Bakiye: 748.22 USD
+[2026-07-18 18:18:09] Heartbeat: 0 aktif islem | Bakiye: 748.22 USD
+[2026-07-18 18:18:39] Heartbeat: 0 aktif islem | Bakiye: 748.22 USD
+[2026-07-18 18:19:09] Heartbeat: 0 aktif islem | Bakiye: 748.22 USD
+[2026-07-18 18:19:39] Heartbeat: 0 aktif islem | Bakiye: 748.22 USD
+[2026-07-18 18:20:10] Heartbeat: 0 aktif islem | Bakiye: 748.22 USD
+[2026-07-18 18:20:40] Heartbeat: 0 aktif islem | Bakiye: 748.22 USD
+[2026-07-18 18:21:10] Heartbeat: 0 aktif islem | Bakiye: 748.22 USD
+[2026-07-18 18:21:40] Heartbeat: 0 aktif islem | Bakiye: 748.22 USD
+[2026-07-18 18:22:10] Heartbeat: 0 aktif islem | Bakiye: 748.22 USD
+[2026-07-18 18:22:40] Heartbeat: 0 aktif islem | Bakiye: 748.22 USD
+[2026-07-18 18:23:10] Heartbeat: 0 aktif islem | Bakiye: 748.22 USD
+[2026-07-18 18:23:40] Heartbeat: 0 aktif islem | Bakiye: 748.22 USD
+[2026-07-18 18:24:10] Heartbeat: 0 aktif islem | Bakiye: 748.22 USD
+[2026-07-18 18:24:41] Heartbeat: 0 aktif islem | Bakiye: 748.22 USD
+[2026-07-18 18:25:11] Heartbeat: 0 aktif islem | Bakiye: 748.22 USD
+[2026-07-18 18:25:41] Heartbeat: 0 aktif islem | Bakiye: 748.22 USD
+[2026-07-18 18:26:11] Heartbeat: 0 aktif islem | Bakiye: 748.22 USD
+[2026-07-18 18:26:41] Heartbeat: 0 aktif islem | Bakiye: 748.22 USD
+[2026-07-18 18:27:11] Heartbeat: 0 aktif islem | Bakiye: 748.22 USD
+[2026-07-18 18:27:41] Heartbeat: 0 aktif islem | Bakiye: 748.22 USD
+[2026-07-18 18:28:11] Heartbeat: 0 aktif islem | Bakiye: 748.22 USD
+[2026-07-18 18:28:41] Heartbeat: 0 aktif islem | Bakiye: 748.22 USD
+[2026-07-18 18:29:11] Heartbeat: 0 aktif islem | Bakiye: 748.22 USD
+[2026-07-18 18:29:42] Heartbeat: 0 aktif islem | Bakiye: 748.22 USD
+[2026-07-18 18:30:12] Heartbeat: 0 aktif islem | Bakiye: 748.22 USD
+[2026-07-18 18:30:42] Heartbeat: 0 aktif islem | Bakiye: 748.22 USD
+[2026-07-18 18:31:12] Heartbeat: 0 aktif islem | Bakiye: 748.22 USD
+[2026-07-18 18:31:42] Heartbeat: 0 aktif islem | Bakiye: 748.22 USD
+[2026-07-18 18:32:12] Heartbeat: 0 aktif islem | Bakiye: 748.22 USD
+[2026-07-18 18:32:42] Heartbeat: 0 aktif islem | Bakiye: 748.22 USD
+[2026-07-18 18:33:12] Heartbeat: 0 aktif islem | Bakiye: 748.22 USD
+[2026-07-18 18:33:42] Heartbeat: 0 aktif islem | Bakiye: 748.22 USD
+[2026-07-18 18:34:12] Heartbeat: 0 aktif islem | Bakiye: 748.22 USD
+[2026-07-18 18:34:42] Heartbeat: 0 aktif islem | Bakiye: 748.22 USD
+[2026-07-18 18:35:13] Heartbeat: 0 aktif islem | Bakiye: 748.22 USD
+[2026-07-18 18:35:43] Heartbeat: 0 aktif islem | Bakiye: 748.22 USD
+[2026-07-18 18:36:13] Heartbeat: 0 aktif islem | Bakiye: 748.22 USD
+[2026-07-18 18:36:43] Heartbeat: 0 aktif islem | Bakiye: 748.22 USD
+[2026-07-18 18:37:13] Heartbeat: 0 aktif islem | Bakiye: 748.22 USD
+[2026-07-18 18:37:43] Heartbeat: 0 aktif islem | Bakiye: 748.22 USD
+[2026-07-18 18:38:13] Heartbeat: 0 aktif islem | Bakiye: 748.22 USD
+[2026-07-18 18:38:43] Heartbeat: 0 aktif islem | Bakiye: 748.22 USD
+[2026-07-18 18:39:13] Heartbeat: 0 aktif islem | Bakiye: 748.22 USD
+[2026-07-18 18:39:43] Heartbeat: 0 aktif islem | Bakiye: 748.22 USD
+[2026-07-18 18:40:14] Heartbeat: 0 aktif islem | Bakiye: 748.22 USD
+[2026-07-18 18:40:44] Heartbeat: 0 aktif islem | Bakiye: 748.22 USD
+[2026-07-18 18:41:14] Heartbeat: 0 aktif islem | Bakiye: 748.22 USD
+[2026-07-18 18:41:44] Heartbeat: 0 aktif islem | Bakiye: 748.22 USD
+[2026-07-18 18:42:14] Heartbeat: 0 aktif islem | Bakiye: 748.22 USD
+[2026-07-18 18:42:44] Heartbeat: 0 aktif islem | Bakiye: 748.22 USD
+[2026-07-18 18:43:14] Heartbeat: 0 aktif islem | Bakiye: 748.22 USD
+[2026-07-18 18:43:44] Heartbeat: 0 aktif islem | Bakiye: 748.22 USD
