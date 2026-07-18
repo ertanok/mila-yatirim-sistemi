@@ -19,6 +19,8 @@
     --blue:      #60a5fa;
     --orange:    #f97316;
     --purple:    #a78bfa;
+    --teal:      #2dd4bf;
+    --pink:      #f472b6;
   }
 
   * { box-sizing: border-box; margin: 0; padding: 0; }
@@ -142,6 +144,8 @@
   .card.justin::before    { background: var(--blue); }
   .card.copytrading::before { background: var(--purple); }
   .card.ertan::before     { background: var(--orange); }
+  .card.detaykarti::before { background: var(--teal); }
+  .card.tersmuh::before   { background: var(--pink); }
 
   .card-header {
     display: flex;
@@ -260,6 +264,30 @@
 
   .signal-box .sig-val {
     font-family: 'JetBrains Mono', monospace;
+  }
+
+  /* ── Ilerleme cubugu ── */
+  .progress-label {
+    display: flex;
+    justify-content: space-between;
+    font-size: 11px;
+    color: var(--muted);
+    font-family: 'JetBrains Mono', monospace;
+  }
+
+  .progress-track {
+    background: rgba(255,255,255,0.06);
+    border-radius: 6px;
+    height: 8px;
+    overflow: hidden;
+    margin-top: 6px;
+  }
+
+  .progress-fill {
+    height: 100%;
+    background: var(--teal);
+    border-radius: 6px;
+    transition: width 0.3s ease;
   }
 
   /* ── Durum mesajı ── */
@@ -686,15 +714,39 @@
         <div class="card-title">Justin</div>
         <div class="badge gelistirme">Geliştirme</div>
       </div>
-      <div class="status-msg">Strateji geliştirme aşamasında. Araştırmacı analizi tamamlandı — M15 ağırlıklı, H1 filtreli trend following.</div>
+      <div class="status-msg">Strateji geliştirme aşamasında.</div>
+    </div>
+
+    <!-- TERS MUHENDISLIK -->
+    <div class="card tersmuh">
+      <div class="card-header">
+        <div class="card-title">Ters Mühendislik</div>
+        <div class="badge gelistirme">Geliştirme</div>
+      </div>
+      <div class="status-msg">Geliştirme aşamasında.</div>
+    </div>
+
+    <!-- DETAY KARTI OKUYUCU -->
+    <div class="card detaykarti">
+      <div class="card-header">
+        <div class="card-title">Detay Kartı Okuyucu</div>
+        <div class="badge aktif" id="dko-badge">Aktif</div>
+      </div>
+      <div class="progress-label">
+        <span>İlerleme (benzersiz kombinasyon)</span>
+        <span id="dko-progress-text">—/50</span>
+      </div>
+      <div class="progress-track">
+        <div class="progress-fill" id="dko-progress-fill" style="width:0%"></div>
+      </div>
       <div class="metrics" style="margin-top:14px">
         <div class="metric">
-          <div class="metric-label">Aşama</div>
-          <div class="metric-value neu" style="font-size:13px">Backtest</div>
+          <div class="metric-label">Son Kart Zamanı</div>
+          <div class="metric-value neu" style="font-size:13px" id="dko-son-zaman">—</div>
         </div>
         <div class="metric">
-          <div class="metric-label">Hedef KF</div>
-          <div class="metric-value neu" style="font-size:13px">≥ 2.0</div>
+          <div class="metric-label">Son Tetikleyici</div>
+          <div class="metric-value neu" style="font-size:13px" id="dko-son-tetikleyici">—</div>
         </div>
       </div>
     </div>
@@ -891,6 +943,40 @@ async function loadMilaGold() {
   // Log kuyrugu
   if (logTail) {
     document.getElementById("mg-log").textContent = logTail;
+  }
+}
+
+// ── Detay Karti Okuyucu ───────────────────────────────────────────────────
+async function loadDetayKartiOkuyucu() {
+  const data = await fetchJSON("data/detay_karti_durum.json");
+  const fill  = document.getElementById("dko-progress-fill");
+  const text  = document.getElementById("dko-progress-text");
+  const zaman = document.getElementById("dko-son-zaman");
+  const tetik = document.getElementById("dko-son-tetikleyici");
+  const badge = document.getElementById("dko-badge");
+  if (!fill) return;
+
+  if (!data) {
+    text.textContent = "—/50";
+    fill.style.width = "0%";
+    zaman.textContent = "—";
+    tetik.textContent = "—";
+    return;
+  }
+
+  const toplanan = data.toplanan ?? 0;
+  const hedef = data.hedef ?? 50;
+  const pct = hedef > 0 ? Math.min(100, Math.round((toplanan / hedef) * 100)) : 0;
+
+  text.textContent = `${toplanan}/${hedef}`;
+  fill.style.width = pct + "%";
+  zaman.textContent = data.son_kart_zamani || "—";
+  tetik.textContent = data.son_tetikleyici || "—";
+
+  if (badge) {
+    const tamam = toplanan >= hedef;
+    badge.textContent = tamam ? "Tamamlandı" : "Aktif";
+    badge.className = "badge " + (tamam ? "beklemede" : "aktif");
   }
 }
 
@@ -1317,6 +1403,7 @@ async function loadAll() {
     loadAgentStatus(),
     loadMilaGold(),
     loadMilaGoldControl(),
+    loadDetayKartiOkuyucu(),
   ]);
   document.getElementById("last-update").textContent = `Son güncelleme: ${now}`;
 }
