@@ -7,6 +7,13 @@ vps_config.env
 *.log
 *.png
 data/
+
+# Justin arastirma ciktilari istisnasi (18 Temmuz) - ham veri onemli/pahali-reprodüksiyon,
+# MilaGold'un canli/hassas verisiyle (signal.json, positions_status.json vb.) karismaz
+# cunku sadece Justin/ klasorune (tek seviye) ozel.
+!Justin/*.json
+!Justin/*.log
+
 # Python cache
 __pycache__/
 *.pyc
