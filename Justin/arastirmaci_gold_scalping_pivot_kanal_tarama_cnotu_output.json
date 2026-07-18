@@ -1,0 +1,74 @@
+{
+  "H1": {
+    "up": {
+      "n_kirilim_censored_olmayan": 20,
+      "kirilim_sonrasi": {
+        "1_gun_sonrasi": {
+          "n": 20,
+          "kirilim_sonrasi_tersine_donus_orani": 0.55
+        },
+        "3_gun_sonrasi": {
+          "n": 20,
+          "kirilim_sonrasi_tersine_donus_orani": 0.55
+        },
+        "7_gun_sonrasi": {
+          "n": 20,
+          "kirilim_sonrasi_tersine_donus_orani": 0.55
+        }
+      }
+    },
+    "down": {
+      "n_kirilim_censored_olmayan": 35,
+      "kirilim_sonrasi": {
+        "1_gun_sonrasi": {
+          "n": 35,
+          "kirilim_sonrasi_tersine_donus_orani": 0.4
+        },
+        "3_gun_sonrasi": {
+          "n": 35,
+          "kirilim_sonrasi_tersine_donus_orani": 0.6286
+        },
+        "7_gun_sonrasi": {
+          "n": 35,
+          "kirilim_sonrasi_tersine_donus_orani": 0.5429
+        }
+      }
+    }
+  },
+  "M30": {
+    "up": {
+      "n_kirilim_censored_olmayan": 15,
+      "kirilim_sonrasi": {
+        "1_gun_sonrasi": {
+          "n": 15,
+          "kirilim_sonrasi_tersine_donus_orani": 0.1333
+        },
+        "3_gun_sonrasi": {
+          "n": 15,
+          "kirilim_sonrasi_tersine_donus_orani": 0.3333
+        },
+        "7_gun_sonrasi": {
+          "n": 15,
+          "kirilim_sonrasi_tersine_donus_orani": 0.2
+        }
+      }
+    },
+    "down": {
+      "n_kirilim_censored_olmayan": 37,
+      "kirilim_sonrasi": {
+        "1_gun_sonrasi": {
+          "n": 37,
+          "kirilim_sonrasi_tersine_donus_orani": 0.5676
+        },
+        "3_gun_sonrasi": {
+          "n": 37,
+          "kirilim_sonrasi_tersine_donus_orani": 0.4324
+        },
+        "7_gun_sonrasi": {
+          "n": 37,
+          "kirilim_sonrasi_tersine_donus_orani": 0.6216
+        }
+      }
+    }
+  }
+}

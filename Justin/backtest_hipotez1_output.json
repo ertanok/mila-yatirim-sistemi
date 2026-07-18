@@ -1,0 +1,1365 @@
+{
+  "veri_ozeti": {
+    "sembol": "GOLD",
+    "toplam_bar_M5": 99999,
+    "baslangic": "2025-02-11 01:45:00+00:00",
+    "bitis": "2026-07-10 19:55:00+00:00",
+    "point": 0.01,
+    "contract_size": 100.0
+  },
+  "saat_esleme_dogrulama": {
+    "canli_capraz_kontrol": {
+      "aciklama": "MT5 tick.time UTC-gibi okundugunda VPS yerel saatine (GMT+3, CLAUDE.md) ne kadar yakin?",
+      "epoch_utc_okuma": "2026-07-10 19:58:25",
+      "vps_yerel_simdi": "2026-07-10 19:58:25.623145",
+      "fark_saniye": 0.623145,
+      "yorum": "Fark birkac saniye/dakika mertebesindeyse (network/islem gecikmesi), su anki (Temmuz 2026, yaz) offset = GMT+3 dogrulanir."
+    },
+    "hafta_sonu_gecis_DST_kontrolu": [
+      {
+        "gecis_tarihi": "2025-03-30",
+        "oncesi_cuma_kapanis_saatleri": [
+          22,
+          22,
+          22
+        ],
+        "sonrasi_cuma_kapanis_saatleri": [
+          23,
+          23,
+          23
+        ],
+        "oncesi_tekil_deger_mi": true,
+        "sonrasi_tekil_deger_mi": true,
+        "kayma_tespit_edildi_mi": true
+      },
+      {
+        "gecis_tarihi": "2025-10-26",
+        "oncesi_cuma_kapanis_saatleri": [
+          23,
+          23,
+          23
+        ],
+        "sonrasi_cuma_kapanis_saatleri": [
+          22,
+          23,
+          23
+        ],
+        "oncesi_tekil_deger_mi": true,
+        "sonrasi_tekil_deger_mi": false,
+        "kayma_tespit_edildi_mi": false
+      },
+      {
+        "gecis_tarihi": "2026-03-29",
+        "oncesi_cuma_kapanis_saatleri": [
+          22,
+          22,
+          22
+        ],
+        "sonrasi_cuma_kapanis_saatleri": [
+          23,
+          23,
+          23
+        ],
+        "oncesi_tekil_deger_mi": true,
+        "sonrasi_tekil_deger_mi": true,
+        "kayma_tespit_edildi_mi": true
+      }
+    ],
+    "toplam_hafta_sonu_gecis_sayisi": 75,
+    "genel_sonuc": "DST gecis tarihlerinin hicbirinde Cuma-kapanis saatinde kayma tespit edilmediyse (asagidaki 'kayma_tespit_edildi_mi' hepsinde False ise), sunucu sabit bir offset kullaniyor demektir - GMT+3 varsayimi yil boyunca tutarlidir. Kayma tespit edilirse (True), sunucu EU/Cyprus DST'sini takip ediyor demektir ve GMT+3 varsayimi yalniz yaz aylarinda (Mart sonu-Ekim sonu) gecerlidir; kis aylarinda saat-bazli filtreler (15-18, 0-2, 22-23) 1 saat kaydirilarak yeniden degerlendirilmelidir."
+  },
+  "senaryolar": {
+    "ANA_KONFIGURASYON": {
+      "parametreler": {
+        "k": 2.0,
+        "entry_mode": "next_open",
+        "exit_mode": "combined",
+        "n_bars": 5,
+        "rr_ratio": 1.0,
+        "seans_filtresi": "15-18"
+      },
+      "meta": {
+        "skipped_overlap": 539,
+        "skipped_session": 4873,
+        "skipped_insuff_data": 0,
+        "toplam_ham_sinyal": 6111
+      },
+      "tum_donem": {
+        "toplam_islem": 699,
+        "win_rate": 0.4764,
+        "profit_factor": 0.843,
+        "net_profit_pts": -39408.21,
+        "net_profit_usd_per_lot": -39408.21,
+        "ortalama_net_pts": -56.378,
+        "max_drawdown_pts": -42458.79,
+        "ortalama_atr_entry_pts": 674.73,
+        "ortalama_spread_entry_pts": 33.05,
+        "spread_TP_orani_medyan": 0.06
+      },
+      "IS_ilk_%70": {
+        "toplam_islem": 486,
+        "win_rate": 0.4691,
+        "profit_factor": 0.774,
+        "net_profit_pts": -35713.43,
+        "net_profit_usd_per_lot": -35713.43,
+        "ortalama_net_pts": -73.484,
+        "max_drawdown_pts": -38775.93,
+        "ortalama_atr_entry_pts": 587.04,
+        "ortalama_spread_entry_pts": 30.51,
+        "spread_TP_orani_medyan": 0.066
+      },
+      "OOS_son_%30": {
+        "toplam_islem": 213,
+        "win_rate": 0.493,
+        "profit_factor": 0.96,
+        "net_profit_pts": -3694.79,
+        "net_profit_usd_per_lot": -3694.79,
+        "ortalama_net_pts": -17.346,
+        "max_drawdown_pts": -16260.79,
+        "ortalama_atr_entry_pts": 874.81,
+        "ortalama_spread_entry_pts": 38.85,
+        "spread_TP_orani_medyan": 0.05
+      },
+      "walk_forward": [
+        {
+          "fold": 1,
+          "bar_araligi": [
+            0,
+            16666
+          ],
+          "tarih_araligi": [
+            "2025-02-11",
+            "2025-05-07"
+          ],
+          "toplam_islem": 130,
+          "win_rate": 0.4615,
+          "profit_factor": 0.839,
+          "net_profit_pts": -4856.43,
+          "net_profit_usd_per_lot": -4856.43,
+          "ortalama_net_pts": -37.357,
+          "max_drawdown_pts": -7547.36,
+          "ortalama_atr_entry_pts": 431.21,
+          "ortalama_spread_entry_pts": 27.16,
+          "spread_TP_orani_medyan": 0.069
+        },
+        {
+          "fold": 2,
+          "bar_araligi": [
+            16666,
+            33333
+          ],
+          "tarih_araligi": [
+            "2025-05-07",
+            "2025-07-31"
+          ],
+          "toplam_islem": 118,
+          "win_rate": 0.4322,
+          "profit_factor": 0.684,
+          "net_profit_pts": -8736.43,
+          "net_profit_usd_per_lot": -8736.43,
+          "ortalama_net_pts": -74.038,
+          "max_drawdown_pts": -9748.43,
+          "ortalama_atr_entry_pts": 402.68,
+          "ortalama_spread_entry_pts": 29.62,
+          "spread_TP_orani_medyan": 0.077
+        },
+        {
+          "fold": 3,
+          "bar_araligi": [
+            33333,
+            49999
+          ],
+          "tarih_araligi": [
+            "2025-07-31",
+            "2025-10-23"
+          ],
+          "toplam_islem": 100,
+          "win_rate": 0.49,
+          "profit_factor": 0.727,
+          "net_profit_pts": -7945.64,
+          "net_profit_usd_per_lot": -7945.64,
+          "ortalama_net_pts": -79.456,
+          "max_drawdown_pts": -14449.86,
+          "ortalama_atr_entry_pts": 524.31,
+          "ortalama_spread_entry_pts": 32.7,
+          "spread_TP_orani_medyan": 0.079
+        },
+        {
+          "fold": 4,
+          "bar_araligi": [
+            49999,
+            66666
+          ],
+          "tarih_araligi": [
+            "2025-10-23",
+            "2026-01-21"
+          ],
+          "toplam_islem": 113,
+          "win_rate": 0.5133,
+          "profit_factor": 0.993,
+          "net_profit_pts": -265.14,
+          "net_profit_usd_per_lot": -265.14,
+          "ortalama_net_pts": -2.346,
+          "max_drawdown_pts": -6205.79,
+          "ortalama_atr_entry_pts": 659.79,
+          "ortalama_spread_entry_pts": 32.87,
+          "spread_TP_orani_medyan": 0.051
+        },
+        {
+          "fold": 5,
+          "bar_araligi": [
+            66666,
+            83332
+          ],
+          "tarih_araligi": [
+            "2026-01-21",
+            "2026-04-16"
+          ],
+          "toplam_islem": 113,
+          "win_rate": 0.4956,
+          "profit_factor": 0.891,
+          "net_profit_pts": -8806.29,
+          "net_profit_usd_per_lot": -8806.29,
+          "ortalama_net_pts": -77.932,
+          "max_drawdown_pts": -18373.57,
+          "ortalama_atr_entry_pts": 1363.63,
+          "ortalama_spread_entry_pts": 35.53,
+          "spread_TP_orani_medyan": 0.03
+        },
+        {
+          "fold": 6,
+          "bar_araligi": [
+            83332,
+            99999
+          ],
+          "tarih_araligi": [
+            "2026-04-16",
+            "2026-07-10"
+          ],
+          "toplam_islem": 125,
+          "win_rate": 0.472,
+          "profit_factor": 0.813,
+          "net_profit_pts": -8798.29,
+          "net_profit_usd_per_lot": -8798.29,
+          "ortalama_net_pts": -70.386,
+          "max_drawdown_pts": -16260.79,
+          "ortalama_atr_entry_pts": 695.89,
+          "ortalama_spread_entry_pts": 40.63,
+          "spread_TP_orani_medyan": 0.058
+        }
+      ],
+      "islem_logu_ornek": [
+        {
+          "tarih": "2025-02-11",
+          "saat": 15,
+          "yon": "LONG",
+          "giris": 2886.64,
+          "cikis": 2883.0157142857142,
+          "sebep": "SL",
+          "net_pts": -389.4285714285634,
+          "net_usd_per_lot": -389.4285714285634
+        },
+        {
+          "tarih": "2025-02-12",
+          "saat": 15,
+          "yon": "LONG",
+          "giris": 2878.69,
+          "cikis": 2876.3107142857143,
+          "sebep": "SL",
+          "net_pts": -264.9285714285743,
+          "net_usd_per_lot": -264.9285714285743
+        },
+        {
+          "tarih": "2025-02-12",
+          "saat": 15,
+          "yon": "LONG",
+          "giris": 2867.22,
+          "cikis": 2871.085714285714,
+          "sebep": "TP",
+          "net_pts": 359.5714285714148,
+          "net_usd_per_lot": 359.5714285714148
+        },
+        {
+          "tarih": "2025-02-13",
+          "saat": 15,
+          "yon": "LONG",
+          "giris": 2913.88,
+          "cikis": 2915.938571428572,
+          "sebep": "TP",
+          "net_pts": 177.85714285716676,
+          "net_usd_per_lot": 177.85714285716676
+        },
+        {
+          "tarih": "2025-02-13",
+          "saat": 15,
+          "yon": "LONG",
+          "giris": 2912.57,
+          "cikis": 2910.2685714285717,
+          "sebep": "SL(ayni-bar-oncelik)",
+          "net_pts": -257.14285714284597,
+          "net_usd_per_lot": -257.14285714284597
+        },
+        {
+          "tarih": "2025-02-13",
+          "saat": 15,
+          "yon": "LONG",
+          "giris": 2908.85,
+          "cikis": 2912.4414285714283,
+          "sebep": "TP",
+          "net_pts": 332.14285714284233,
+          "net_usd_per_lot": 332.14285714284233
+        },
+        {
+          "tarih": "2025-02-13",
+          "saat": 18,
+          "yon": "LONG",
+          "giris": 2913.35,
+          "cikis": 2915.422857142857,
+          "sebep": "TP",
+          "net_pts": 180.2857142857174,
+          "net_usd_per_lot": 180.2857142857174
+        },
+        {
+          "tarih": "2025-02-14",
+          "saat": 15,
+          "yon": "LONG",
+          "giris": 2917.84,
+          "cikis": 2921.3485714285716,
+          "sebep": "TP",
+          "net_pts": 323.8571428571486,
+          "net_usd_per_lot": 323.8571428571486
+        },
+        {
+          "tarih": "2025-02-14",
+          "saat": 15,
+          "yon": "LONG",
+          "giris": 2919.79,
+          "cikis": 2916.0178571428573,
+          "sebep": "SL",
+          "net_pts": -404.2142857142626,
+          "net_usd_per_lot": -404.21428571426264
+        },
+        {
+          "tarih": "2025-02-14",
+          "saat": 16,
+          "yon": "LONG",
+          "giris": 2915.72,
+          "cikis": 2920.1914285714283,
+          "sebep": "TP",
+          "net_pts": 418.14285714285325,
+          "net_usd_per_lot": 418.14285714285325
+        },
+        {
+          "tarih": "2025-02-14",
+          "saat": 17,
+          "yon": "LONG",
+          "giris": 2909.41,
+          "cikis": 2905.0042857142857,
+          "sebep": "SL",
+          "net_pts": -467.57142857141116,
+          "net_usd_per_lot": -467.5714285714112
+        },
+        {
+          "tarih": "2025-02-14",
+          "saat": 17,
+          "yon": "LONG",
+          "giris": 2900.26,
+          "cikis": 2895.614285714286,
+          "sebep": "SL",
+          "net_pts": -491.5714285714348,
+          "net_usd_per_lot": -491.57142857143486
+        },
+        {
+          "tarih": "2025-02-17",
+          "saat": 18,
+          "yon": "LONG",
+          "giris": 2897.84,
+          "cikis": 2899.405,
+          "sebep": "TP",
+          "net_pts": 127.50000000000546,
+          "net_usd_per_lot": 127.50000000000546
+        },
+        {
+          "tarih": "2025-02-19",
+          "saat": 17,
+          "yon": "LONG",
+          "giris": 2925.59,
+          "cikis": 2928.756428571429,
+          "sebep": "TP",
+          "net_pts": 289.6428571428696,
+          "net_usd_per_lot": 289.6428571428696
+        },
+        {
+          "tarih": "2025-02-20",
+          "saat": 15,
+          "yon": "LONG",
+          "giris": 2936.27,
+          "cikis": 2933.0,
+          "sebep": "SL",
+          "net_pts": -353.9999999999982,
+          "net_usd_per_lot": -353.9999999999982
+        },
+        {
+          "tarih": "2025-02-20",
+          "saat": 16,
+          "yon": "LONG",
+          "giris": 2928.4,
+          "cikis": 2924.4621428571427,
+          "sebep": "SL",
+          "net_pts": -420.78571428574105,
+          "net_usd_per_lot": -420.7857142857411
+        },
+        {
+          "tarih": "2025-02-21",
+          "saat": 17,
+          "yon": "LONG",
+          "giris": 2923.9,
+          "cikis": 2927.657142857143,
+          "sebep": "TP",
+          "net_pts": 348.7142857142753,
+          "net_usd_per_lot": 348.7142857142753
+        },
+        {
+          "tarih": "2025-02-24",
+          "saat": 16,
+          "yon": "LONG",
+          "giris": 2942.43,
+          "cikis": 2939.3985714285714,
+          "sebep": "SL",
+          "net_pts": -330.1428571428478,
+          "net_usd_per_lot": -330.1428571428478
+        },
+        {
+          "tarih": "2025-02-24",
+          "saat": 17,
+          "yon": "LONG",
+          "giris": 2933.27,
+          "cikis": 2937.64,
+          "sebep": "TP",
+          "net_pts": 409.9999999999891,
+          "net_usd_per_lot": 409.99999999998914
+        },
+        {
+          "tarih": "2025-02-25",
+          "saat": 17,
+          "yon": "LONG",
+          "giris": 2929.04,
+          "cikis": 2926.0792857142856,
+          "sebep": "SL",
+          "net_pts": -323.07142857144026,
+          "net_usd_per_lot": -323.07142857144026
+        },
+        {
+          "tarih": "2025-02-25",
+          "saat": 17,
+          "yon": "LONG",
+          "giris": 2910.6,
+          "cikis": 2914.4892857142854,
+          "sebep": "TP",
+          "net_pts": 361.92857142855064,
+          "net_usd_per_lot": 361.92857142855064
+        },
+        {
+          "tarih": "2025-02-25",
+          "saat": 17,
+          "yon": "LONG",
+          "giris": 2907.73,
+          "cikis": 2903.052142857143,
+          "sebep": "SL",
+          "net_pts": -494.7857142857192,
+          "net_usd_per_lot": -494.7857142857193
+        },
+        {
+          "tarih": "2025-02-26",
+          "saat": 15,
+          "yon": "LONG",
+          "giris": 2910.25,
+          "cikis": 2912.200714285714,
+          "sebep": "TP",
+          "net_pts": 168.07142857141844,
+          "net_usd_per_lot": 168.07142857141844
+        },
+        {
+          "tarih": "2025-02-26",
+          "saat": 15,
+          "yon": "LONG",
+          "giris": 2908.16,
+          "cikis": 2905.8164285714283,
+          "sebep": "SL",
+          "net_pts": -261.3571428571522,
+          "net_usd_per_lot": -261.3571428571522
+        },
+        {
+          "tarih": "2025-02-26",
+          "saat": 16,
+          "yon": "LONG",
+          "giris": 2902.87,
+          "cikis": 2900.195714285714,
+          "sebep": "SL",
+          "net_pts": -294.42857142858156,
+          "net_usd_per_lot": -294.42857142858156
+        },
+        "...",
+        {
+          "tarih": "2026-06-22",
+          "saat": 15,
+          "yon": "LONG",
+          "giris": 4193.27,
+          "cikis": 4188.909285714286,
+          "sebep": "SL",
+          "net_pts": -476.07142857144936,
+          "net_usd_per_lot": -476.0714285714494
+        },
+        {
+          "tarih": "2026-06-22",
+          "saat": 18,
+          "yon": "LONG",
+          "giris": 4181.96,
+          "cikis": 4176.2528571428575,
+          "sebep": "SL",
+          "net_pts": -610.7142857142571,
+          "net_usd_per_lot": -610.7142857142571
+        },
+        {
+          "tarih": "2026-06-23",
+          "saat": 15,
+          "yon": "LONG",
+          "giris": 4113.84,
+          "cikis": 4119.696428571428,
+          "sebep": "TP",
+          "net_pts": 534.6428571428296,
+          "net_usd_per_lot": 534.6428571428296
+        },
+        {
+          "tarih": "2026-06-23",
+          "saat": 16,
+          "yon": "LONG",
+          "giris": 4107.22,
+          "cikis": 4113.752142857144,
+          "sebep": "TP",
+          "net_pts": 613.2142857143299,
+          "net_usd_per_lot": 613.2142857143299
+        },
+        {
+          "tarih": "2026-06-24",
+          "saat": 15,
+          "yon": "LONG",
+          "giris": 4032.92,
+          "cikis": 4025.1285714285714,
+          "sebep": "SL",
+          "net_pts": -819.1428571428696,
+          "net_usd_per_lot": -819.1428571428696
+        },
+        {
+          "tarih": "2026-06-24",
+          "saat": 15,
+          "yon": "LONG",
+          "giris": 4018.99,
+          "cikis": 4009.5414285714282,
+          "sebep": "SL",
+          "net_pts": -984.857142857154,
+          "net_usd_per_lot": -984.857142857154
+        },
+        {
+          "tarih": "2026-06-24",
+          "saat": 15,
+          "yon": "LONG",
+          "giris": 4004.06,
+          "cikis": 3993.6564285714285,
+          "sebep": "SL",
+          "net_pts": -1080.3571428571468,
+          "net_usd_per_lot": -1080.3571428571468
+        },
+        {
+          "tarih": "2026-06-24",
+          "saat": 16,
+          "yon": "LONG",
+          "giris": 3980.35,
+          "cikis": 3968.242142857143,
+          "sebep": "SL",
+          "net_pts": -1250.7857142857029,
+          "net_usd_per_lot": -1250.7857142857029
+        },
+        {
+          "tarih": "2026-06-26",
+          "saat": 15,
+          "yon": "LONG",
+          "giris": 4040.06,
+          "cikis": 4044.4928571428572,
+          "sebep": "TP",
+          "net_pts": 403.28571428573014,
+          "net_usd_per_lot": 403.2857142857301
+        },
+        {
+          "tarih": "2026-06-29",
+          "saat": 16,
+          "yon": "LONG",
+          "giris": 4035.91,
+          "cikis": 4041.632857142857,
+          "sebep": "TP",
+          "net_pts": 532.2857142857265,
+          "net_usd_per_lot": 532.2857142857265
+        },
+        {
+          "tarih": "2026-06-29",
+          "saat": 16,
+          "yon": "LONG",
+          "giris": 4031.64,
+          "cikis": 4025.6007142857143,
+          "sebep": "SL",
+          "net_pts": -643.9285714285597,
+          "net_usd_per_lot": -643.9285714285597
+        },
+        {
+          "tarih": "2026-06-29",
+          "saat": 17,
+          "yon": "LONG",
+          "giris": 4015.41,
+          "cikis": 4007.9871428571428,
+          "sebep": "SL",
+          "net_pts": -782.2857142857083,
+          "net_usd_per_lot": -782.2857142857083
+        },
+        {
+          "tarih": "2026-06-30",
+          "saat": 15,
+          "yon": "LONG",
+          "giris": 4017.62,
+          "cikis": 4013.3821428571428,
+          "sebep": "SL",
+          "net_pts": -463.78571428571377,
+          "net_usd_per_lot": -463.7857142857138
+        },
+        {
+          "tarih": "2026-07-01",
+          "saat": 16,
+          "yon": "LONG",
+          "giris": 4017.86,
+          "cikis": 4023.9007142857145,
+          "sebep": "TP",
+          "net_pts": 564.071428571433,
+          "net_usd_per_lot": 564.071428571433
+        },
+        {
+          "tarih": "2026-07-03",
+          "saat": 16,
+          "yon": "LONG",
+          "giris": 4166.65,
+          "cikis": 4170.761428571428,
+          "sebep": "TP",
+          "net_pts": 371.1428571428405,
+          "net_usd_per_lot": 371.1428571428405
+        },
+        {
+          "tarih": "2026-07-03",
+          "saat": 17,
+          "yon": "LONG",
+          "giris": 4158.71,
+          "cikis": 4163.702857142857,
+          "sebep": "TP",
+          "net_pts": 459.2857142857247,
+          "net_usd_per_lot": 459.28571428572474
+        },
+        {
+          "tarih": "2026-07-06",
+          "saat": 15,
+          "yon": "LONG",
+          "giris": 4146.97,
+          "cikis": 4143.228571428572,
+          "sebep": "SL",
+          "net_pts": -414.1428571428514,
+          "net_usd_per_lot": -414.1428571428515
+        },
+        {
+          "tarih": "2026-07-06",
+          "saat": 15,
+          "yon": "LONG",
+          "giris": 4139.45,
+          "cikis": 4135.524285714286,
+          "sebep": "SL",
+          "net_pts": -432.57142857140934,
+          "net_usd_per_lot": -432.5714285714094
+        },
+        {
+          "tarih": "2026-07-06",
+          "saat": 15,
+          "yon": "LONG",
+          "giris": 4135.13,
+          "cikis": 4139.7128571428575,
+          "sebep": "TP",
+          "net_pts": 418.28571428573923,
+          "net_usd_per_lot": 418.2857142857392
+        },
+        {
+          "tarih": "2026-07-06",
+          "saat": 17,
+          "yon": "LONG",
+          "giris": 4130.05,
+          "cikis": 4137.579285714286,
+          "sebep": "TP",
+          "net_pts": 712.9285714285834,
+          "net_usd_per_lot": 712.9285714285834
+        },
+        {
+          "tarih": "2026-07-07",
+          "saat": 16,
+          "yon": "LONG",
+          "giris": 4158.41,
+          "cikis": 4158.01,
+          "sebep": "zaman(TP/SL_tetiklenmedi)",
+          "net_pts": -79.99999999996362,
+          "net_usd_per_lot": -79.99999999996362
+        },
+        {
+          "tarih": "2026-07-07",
+          "saat": 18,
+          "yon": "LONG",
+          "giris": 4137.83,
+          "cikis": 4142.749285714286,
+          "sebep": "TP",
+          "net_pts": 451.9285714286161,
+          "net_usd_per_lot": 451.9285714286162
+        },
+        {
+          "tarih": "2026-07-08",
+          "saat": 17,
+          "yon": "LONG",
+          "giris": 4057.24,
+          "cikis": 4049.262857142857,
+          "sebep": "SL",
+          "net_pts": -837.7142857143008,
+          "net_usd_per_lot": -837.7142857143008
+        },
+        {
+          "tarih": "2026-07-08",
+          "saat": 17,
+          "yon": "LONG",
+          "giris": 4036.14,
+          "cikis": 4044.9164285714282,
+          "sebep": "TP",
+          "net_pts": 837.6428571428369,
+          "net_usd_per_lot": 837.6428571428369
+        },
+        {
+          "tarih": "2026-07-10",
+          "saat": 16,
+          "yon": "LONG",
+          "giris": 4087.46,
+          "cikis": 4093.095714285714,
+          "sebep": "TP",
+          "net_pts": 523.571428571413,
+          "net_usd_per_lot": 523.571428571413
+        }
+      ]
+    },
+    "GIRIS_YONTEMI_KARSILASTIRMA": {
+      "next_open_bar_acilisinda": {
+        "tum_donem": {
+          "toplam_islem": 699,
+          "win_rate": 0.4764,
+          "profit_factor": 0.843,
+          "net_profit_pts": -39408.21,
+          "net_profit_usd_per_lot": -39408.21,
+          "ortalama_net_pts": -56.378,
+          "max_drawdown_pts": -42458.79,
+          "ortalama_atr_entry_pts": 674.73,
+          "ortalama_spread_entry_pts": 33.05,
+          "spread_TP_orani_medyan": 0.06
+        },
+        "IS": {
+          "toplam_islem": 486,
+          "win_rate": 0.4691,
+          "profit_factor": 0.774,
+          "net_profit_pts": -35713.43,
+          "net_profit_usd_per_lot": -35713.43,
+          "ortalama_net_pts": -73.484,
+          "max_drawdown_pts": -38775.93,
+          "ortalama_atr_entry_pts": 587.04,
+          "ortalama_spread_entry_pts": 30.51,
+          "spread_TP_orani_medyan": 0.066
+        },
+        "OOS": {
+          "toplam_islem": 213,
+          "win_rate": 0.493,
+          "profit_factor": 0.96,
+          "net_profit_pts": -3694.79,
+          "net_profit_usd_per_lot": -3694.79,
+          "ortalama_net_pts": -17.346,
+          "max_drawdown_pts": -16260.79,
+          "ortalama_atr_entry_pts": 874.81,
+          "ortalama_spread_entry_pts": 38.85,
+          "spread_TP_orani_medyan": 0.05
+        }
+      },
+      "close_kirilma_barinin_kapanisinda": {
+        "tum_donem": {
+          "toplam_islem": 699,
+          "win_rate": 0.485,
+          "profit_factor": 0.88,
+          "net_profit_pts": -29658.79,
+          "net_profit_usd_per_lot": -29658.79,
+          "ortalama_net_pts": -42.43,
+          "max_drawdown_pts": -32135.36,
+          "ortalama_atr_entry_pts": 674.39,
+          "ortalama_spread_entry_pts": 32.88,
+          "spread_TP_orani_medyan": 0.059
+        },
+        "IS": {
+          "toplam_islem": 485,
+          "win_rate": 0.4804,
+          "profit_factor": 0.823,
+          "net_profit_pts": -27029.79,
+          "net_profit_usd_per_lot": -27029.79,
+          "ortalama_net_pts": -55.732,
+          "max_drawdown_pts": -30095.29,
+          "ortalama_atr_entry_pts": 585.71,
+          "ortalama_spread_entry_pts": 30.26,
+          "spread_TP_orani_medyan": 0.065
+        },
+        "OOS": {
+          "toplam_islem": 214,
+          "win_rate": 0.4953,
+          "profit_factor": 0.972,
+          "net_profit_pts": -2629.0,
+          "net_profit_usd_per_lot": -2629.0,
+          "ortalama_net_pts": -12.285,
+          "max_drawdown_pts": -15257.0,
+          "ortalama_atr_entry_pts": 875.36,
+          "ortalama_spread_entry_pts": 38.81,
+          "spread_TP_orani_medyan": 0.05
+        },
+        "meta": {
+          "skipped_overlap": 539,
+          "skipped_session": 4873,
+          "skipped_insuff_data": 0,
+          "toplam_ham_sinyal": 6111
+        }
+      }
+    },
+    "CIKIS_YONTEMI_KARSILASTIRMA": {
+      "yalniz_N_bar_zaman": {
+        "tum_donem": {
+          "toplam_islem": 473,
+          "win_rate": 0.518,
+          "profit_factor": 0.953,
+          "net_profit_pts": -12159.0,
+          "net_profit_usd_per_lot": -12159.0,
+          "ortalama_net_pts": -25.706,
+          "max_drawdown_pts": -44904.0,
+          "ortalama_atr_entry_pts": 647.98,
+          "ortalama_spread_entry_pts": 33.31,
+          "spread_TP_orani_medyan": 0.062
+        },
+        "IS": {
+          "toplam_islem": 328,
+          "win_rate": 0.5,
+          "profit_factor": 0.79,
+          "net_profit_pts": -34416.0,
+          "net_profit_usd_per_lot": -34416.0,
+          "ortalama_net_pts": -104.927,
+          "max_drawdown_pts": -44904.0,
+          "ortalama_atr_entry_pts": 564.1,
+          "ortalama_spread_entry_pts": 30.71,
+          "spread_TP_orani_medyan": 0.068
+        },
+        "OOS": {
+          "toplam_islem": 145,
+          "win_rate": 0.5586,
+          "profit_factor": 1.238,
+          "net_profit_pts": 22257.0,
+          "net_profit_usd_per_lot": 22257.0,
+          "ortalama_net_pts": 153.497,
+          "max_drawdown_pts": -15831.0,
+          "ortalama_atr_entry_pts": 837.72,
+          "ortalama_spread_entry_pts": 39.2,
+          "spread_TP_orani_medyan": 0.052
+        }
+      },
+      "yalniz_ATR_TP_SL": {
+        "tum_donem": {
+          "toplam_islem": 699,
+          "win_rate": 0.4821,
+          "profit_factor": 0.846,
+          "net_profit_pts": -39495.14,
+          "net_profit_usd_per_lot": -39495.14,
+          "ortalama_net_pts": -56.502,
+          "max_drawdown_pts": -41747.29,
+          "ortalama_atr_entry_pts": 674.76,
+          "ortalama_spread_entry_pts": 33.04,
+          "spread_TP_orani_medyan": 0.06
+        },
+        "IS": {
+          "toplam_islem": 486,
+          "win_rate": 0.4733,
+          "profit_factor": 0.778,
+          "net_profit_pts": -35757.29,
+          "net_profit_usd_per_lot": -35757.29,
+          "ortalama_net_pts": -73.575,
+          "max_drawdown_pts": -38819.79,
+          "ortalama_atr_entry_pts": 587.08,
+          "ortalama_spread_entry_pts": 30.5,
+          "spread_TP_orani_medyan": 0.066
+        },
+        "OOS": {
+          "toplam_islem": 213,
+          "win_rate": 0.5023,
+          "profit_factor": 0.961,
+          "net_profit_pts": -3737.86,
+          "net_profit_usd_per_lot": -3737.86,
+          "ortalama_net_pts": -17.549,
+          "max_drawdown_pts": -15706.57,
+          "ortalama_atr_entry_pts": 874.81,
+          "ortalama_spread_entry_pts": 38.85,
+          "spread_TP_orani_medyan": 0.05
+        },
+        "not": "ATR TP/SL 50 barda tetiklenmezse zorla kapatilir (muhendislik siniri)"
+      },
+      "birlikte_combined": {
+        "tum_donem": {
+          "toplam_islem": 699,
+          "win_rate": 0.4764,
+          "profit_factor": 0.843,
+          "net_profit_pts": -39408.21,
+          "net_profit_usd_per_lot": -39408.21,
+          "ortalama_net_pts": -56.378,
+          "max_drawdown_pts": -42458.79,
+          "ortalama_atr_entry_pts": 674.73,
+          "ortalama_spread_entry_pts": 33.05,
+          "spread_TP_orani_medyan": 0.06
+        },
+        "IS": {
+          "toplam_islem": 486,
+          "win_rate": 0.4691,
+          "profit_factor": 0.774,
+          "net_profit_pts": -35713.43,
+          "net_profit_usd_per_lot": -35713.43,
+          "ortalama_net_pts": -73.484,
+          "max_drawdown_pts": -38775.93,
+          "ortalama_atr_entry_pts": 587.04,
+          "ortalama_spread_entry_pts": 30.51,
+          "spread_TP_orani_medyan": 0.066
+        },
+        "OOS": {
+          "toplam_islem": 213,
+          "win_rate": 0.493,
+          "profit_factor": 0.96,
+          "net_profit_pts": -3694.79,
+          "net_profit_usd_per_lot": -3694.79,
+          "ortalama_net_pts": -17.346,
+          "max_drawdown_pts": -16260.79,
+          "ortalama_atr_entry_pts": 874.81,
+          "ortalama_spread_entry_pts": 38.85,
+          "spread_TP_orani_medyan": 0.05
+        }
+      }
+    },
+    "K_DUYARLILIK_TARAMASI": {
+      "not": "k secimi OOS sonuclarina bakilarak yapilmadi/optimize edilmedi; sadece raporlama amaciyla 3 deger de gosteriliyor.",
+      "sonuclar": {
+        "1.5": {
+          "tum_donem": {
+            "toplam_islem": 1201,
+            "win_rate": 0.4788,
+            "profit_factor": 0.857,
+            "net_profit_pts": -61617.07,
+            "net_profit_usd_per_lot": -61617.07,
+            "ortalama_net_pts": -51.305,
+            "max_drawdown_pts": -64698.5,
+            "ortalama_atr_entry_pts": 685.25,
+            "ortalama_spread_entry_pts": 33.39,
+            "spread_TP_orani_medyan": 0.06
+          },
+          "IS": {
+            "toplam_islem": 835,
+            "win_rate": 0.491,
+            "profit_factor": 0.897,
+            "net_profit_pts": -26544.57,
+            "net_profit_usd_per_lot": -26544.57,
+            "ortalama_net_pts": -31.79,
+            "max_drawdown_pts": -44079.0,
+            "ortalama_atr_entry_pts": 598.36,
+            "ortalama_spread_entry_pts": 30.85,
+            "spread_TP_orani_medyan": 0.067
+          },
+          "OOS": {
+            "toplam_islem": 366,
+            "win_rate": 0.4508,
+            "profit_factor": 0.796,
+            "net_profit_pts": -35072.5,
+            "net_profit_usd_per_lot": -35072.5,
+            "ortalama_net_pts": -95.827,
+            "max_drawdown_pts": -50311.86,
+            "ortalama_atr_entry_pts": 883.46,
+            "ortalama_spread_entry_pts": 39.18,
+            "spread_TP_orani_medyan": 0.049
+          }
+        },
+        "2.0": {
+          "tum_donem": {
+            "toplam_islem": 699,
+            "win_rate": 0.4764,
+            "profit_factor": 0.843,
+            "net_profit_pts": -39408.21,
+            "net_profit_usd_per_lot": -39408.21,
+            "ortalama_net_pts": -56.378,
+            "max_drawdown_pts": -42458.79,
+            "ortalama_atr_entry_pts": 674.73,
+            "ortalama_spread_entry_pts": 33.05,
+            "spread_TP_orani_medyan": 0.06
+          },
+          "IS": {
+            "toplam_islem": 486,
+            "win_rate": 0.4691,
+            "profit_factor": 0.774,
+            "net_profit_pts": -35713.43,
+            "net_profit_usd_per_lot": -35713.43,
+            "ortalama_net_pts": -73.484,
+            "max_drawdown_pts": -38775.93,
+            "ortalama_atr_entry_pts": 587.04,
+            "ortalama_spread_entry_pts": 30.51,
+            "spread_TP_orani_medyan": 0.066
+          },
+          "OOS": {
+            "toplam_islem": 213,
+            "win_rate": 0.493,
+            "profit_factor": 0.96,
+            "net_profit_pts": -3694.79,
+            "net_profit_usd_per_lot": -3694.79,
+            "ortalama_net_pts": -17.346,
+            "max_drawdown_pts": -16260.79,
+            "ortalama_atr_entry_pts": 874.81,
+            "ortalama_spread_entry_pts": 38.85,
+            "spread_TP_orani_medyan": 0.05
+          }
+        },
+        "2.5": {
+          "tum_donem": {
+            "toplam_islem": 304,
+            "win_rate": 0.4572,
+            "profit_factor": 0.728,
+            "net_profit_pts": -31242.29,
+            "net_profit_usd_per_lot": -31242.29,
+            "ortalama_net_pts": -102.771,
+            "max_drawdown_pts": -32845.14,
+            "ortalama_atr_entry_pts": 654.25,
+            "ortalama_spread_entry_pts": 32.71,
+            "spread_TP_orani_medyan": 0.061
+          },
+          "IS": {
+            "toplam_islem": 216,
+            "win_rate": 0.463,
+            "profit_factor": 0.713,
+            "net_profit_pts": -20149.07,
+            "net_profit_usd_per_lot": -20149.07,
+            "ortalama_net_pts": -93.283,
+            "max_drawdown_pts": -20867.57,
+            "ortalama_atr_entry_pts": 561.21,
+            "ortalama_spread_entry_pts": 30.11,
+            "spread_TP_orani_medyan": 0.068
+          },
+          "OOS": {
+            "toplam_islem": 88,
+            "win_rate": 0.4432,
+            "profit_factor": 0.751,
+            "net_profit_pts": -11093.21,
+            "net_profit_usd_per_lot": -11093.21,
+            "ortalama_net_pts": -126.059,
+            "max_drawdown_pts": -15291.0,
+            "ortalama_atr_entry_pts": 882.63,
+            "ortalama_spread_entry_pts": 39.09,
+            "spread_TP_orani_medyan": 0.048
+          }
+        }
+      }
+    },
+    "SEANS_FiLTRESi_KARSILASTIRMA": {
+      "filtresiz_tum_saatler": {
+        "tum_donem": {
+          "toplam_islem": 3542,
+          "win_rate": 0.4924,
+          "profit_factor": 0.876,
+          "net_profit_pts": -115298.21,
+          "net_profit_usd_per_lot": -115298.21,
+          "ortalama_net_pts": -32.552,
+          "max_drawdown_pts": -119561.79,
+          "ortalama_atr_entry_pts": 506.1,
+          "ortalama_spread_entry_pts": 35.16,
+          "spread_TP_orani_medyan": 0.088
+        },
+        "IS": {
+          "toplam_islem": 2396,
+          "win_rate": 0.4925,
+          "profit_factor": 0.857,
+          "net_profit_pts": -76921.0,
+          "net_profit_usd_per_lot": -76921.0,
+          "ortalama_net_pts": -32.104,
+          "max_drawdown_pts": -96372.64,
+          "ortalama_atr_entry_pts": 429.19,
+          "ortalama_spread_entry_pts": 31.98,
+          "spread_TP_orani_medyan": 0.1
+        },
+        "OOS": {
+          "toplam_islem": 1146,
+          "win_rate": 0.4921,
+          "profit_factor": 0.902,
+          "net_profit_pts": -38377.21,
+          "net_profit_usd_per_lot": -38377.21,
+          "ortalama_net_pts": -33.488,
+          "max_drawdown_pts": -57421.86,
+          "ortalama_atr_entry_pts": 666.9,
+          "ortalama_spread_entry_pts": 41.81,
+          "spread_TP_orani_medyan": 0.07
+        }
+      },
+      "birincil_15_18": {
+        "tum_donem": {
+          "toplam_islem": 699,
+          "win_rate": 0.4764,
+          "profit_factor": 0.843,
+          "net_profit_pts": -39408.21,
+          "net_profit_usd_per_lot": -39408.21,
+          "ortalama_net_pts": -56.378,
+          "max_drawdown_pts": -42458.79,
+          "ortalama_atr_entry_pts": 674.73,
+          "ortalama_spread_entry_pts": 33.05,
+          "spread_TP_orani_medyan": 0.06
+        },
+        "IS": {
+          "toplam_islem": 486,
+          "win_rate": 0.4691,
+          "profit_factor": 0.774,
+          "net_profit_pts": -35713.43,
+          "net_profit_usd_per_lot": -35713.43,
+          "ortalama_net_pts": -73.484,
+          "max_drawdown_pts": -38775.93,
+          "ortalama_atr_entry_pts": 587.04,
+          "ortalama_spread_entry_pts": 30.51,
+          "spread_TP_orani_medyan": 0.066
+        },
+        "OOS": {
+          "toplam_islem": 213,
+          "win_rate": 0.493,
+          "profit_factor": 0.96,
+          "net_profit_pts": -3694.79,
+          "net_profit_usd_per_lot": -3694.79,
+          "ortalama_net_pts": -17.346,
+          "max_drawdown_pts": -16260.79,
+          "ortalama_atr_entry_pts": 874.81,
+          "ortalama_spread_entry_pts": 38.85,
+          "spread_TP_orani_medyan": 0.05
+        }
+      },
+      "birincil_ve_ikincil_15_18_ve_3_4": {
+        "tum_donem": {
+          "toplam_islem": 1103,
+          "win_rate": 0.4841,
+          "profit_factor": 0.865,
+          "net_profit_pts": -47822.07,
+          "net_profit_usd_per_lot": -47822.07,
+          "ortalama_net_pts": -43.356,
+          "max_drawdown_pts": -50901.14,
+          "ortalama_atr_entry_pts": 612.81,
+          "ortalama_spread_entry_pts": 33.98,
+          "spread_TP_orani_medyan": 0.068
+        },
+        "IS": {
+          "toplam_islem": 774,
+          "win_rate": 0.4832,
+          "profit_factor": 0.822,
+          "net_profit_pts": -39357.71,
+          "net_profit_usd_per_lot": -39357.71,
+          "ortalama_net_pts": -50.85,
+          "max_drawdown_pts": -44533.14,
+          "ortalama_atr_entry_pts": 531.29,
+          "ortalama_spread_entry_pts": 31.21,
+          "spread_TP_orani_medyan": 0.075
+        },
+        "OOS": {
+          "toplam_islem": 329,
+          "win_rate": 0.4863,
+          "profit_factor": 0.937,
+          "net_profit_pts": -8464.36,
+          "net_profit_usd_per_lot": -8464.36,
+          "ortalama_net_pts": -25.728,
+          "max_drawdown_pts": -23031.71,
+          "ortalama_atr_entry_pts": 804.57,
+          "ortalama_spread_entry_pts": 40.5,
+          "spread_TP_orani_medyan": 0.057
+        }
+      }
+    },
+    "DETREND_TESTi_ZORUNLU": {
+      "gerekce": "Rolling lineer trend (pencere=100 bar) fiyattan cikarilip ayni SMA20/std20 sapma mantigi detrended seri uzerinde kosturuldu. Sinyal ZAMANLAMASI detrended seriden, GERCEK islem P&L'i ise ham (gercek) fiyattan hesaplandi - cunku piyasada yalniz gercek fiyat islem gorur.",
+      "ham_fiyat_long_only_baseline": {
+        "tum_donem": {
+          "toplam_islem": 699,
+          "win_rate": 0.4764,
+          "profit_factor": 0.843,
+          "net_profit_pts": -39408.21,
+          "net_profit_usd_per_lot": -39408.21,
+          "ortalama_net_pts": -56.378,
+          "max_drawdown_pts": -42458.79,
+          "ortalama_atr_entry_pts": 674.73,
+          "ortalama_spread_entry_pts": 33.05,
+          "spread_TP_orani_medyan": 0.06
+        },
+        "IS": {
+          "toplam_islem": 486,
+          "win_rate": 0.4691,
+          "profit_factor": 0.774,
+          "net_profit_pts": -35713.43,
+          "net_profit_usd_per_lot": -35713.43,
+          "ortalama_net_pts": -73.484,
+          "max_drawdown_pts": -38775.93,
+          "ortalama_atr_entry_pts": 587.04,
+          "ortalama_spread_entry_pts": 30.51,
+          "spread_TP_orani_medyan": 0.066
+        },
+        "OOS": {
+          "toplam_islem": 213,
+          "win_rate": 0.493,
+          "profit_factor": 0.96,
+          "net_profit_pts": -3694.79,
+          "net_profit_usd_per_lot": -3694.79,
+          "ortalama_net_pts": -17.346,
+          "max_drawdown_pts": -16260.79,
+          "ortalama_atr_entry_pts": 874.81,
+          "ortalama_spread_entry_pts": 38.85,
+          "spread_TP_orani_medyan": 0.05
+        }
+      },
+      "detrended_long_only": {
+        "tum_donem": {
+          "toplam_islem": 701,
+          "win_rate": 0.4893,
+          "profit_factor": 0.86,
+          "net_profit_pts": -32709.93,
+          "net_profit_usd_per_lot": -32709.93,
+          "ortalama_net_pts": -46.662,
+          "max_drawdown_pts": -34881.29,
+          "ortalama_atr_entry_pts": 634.51,
+          "ortalama_spread_entry_pts": 32.94,
+          "spread_TP_orani_medyan": 0.062
+        },
+        "IS": {
+          "toplam_islem": 504,
+          "win_rate": 0.5,
+          "profit_factor": 0.85,
+          "net_profit_pts": -21773.71,
+          "net_profit_usd_per_lot": -21773.71,
+          "ortalama_net_pts": -43.202,
+          "max_drawdown_pts": -24983.0,
+          "ortalama_atr_entry_pts": 546.91,
+          "ortalama_spread_entry_pts": 30.69,
+          "spread_TP_orani_medyan": 0.067
+        },
+        "OOS": {
+          "toplam_islem": 197,
+          "win_rate": 0.4619,
+          "profit_factor": 0.875,
+          "net_profit_pts": -10936.21,
+          "net_profit_usd_per_lot": -10936.21,
+          "ortalama_net_pts": -55.514,
+          "max_drawdown_pts": -21417.5,
+          "ortalama_atr_entry_pts": 858.62,
+          "ortalama_spread_entry_pts": 38.68,
+          "spread_TP_orani_medyan": 0.049
+        }
+      },
+      "detrended_simetrik_long_ve_short": {
+        "birlikte": {
+          "tum_donem": {
+            "toplam_islem": 1238,
+            "win_rate": 0.4782,
+            "profit_factor": 0.82,
+            "net_profit_pts": -72187.64,
+            "net_profit_usd_per_lot": -72187.64,
+            "ortalama_net_pts": -58.31,
+            "max_drawdown_pts": -74178.64,
+            "ortalama_atr_entry_pts": 618.52,
+            "ortalama_spread_entry_pts": 33.22,
+            "spread_TP_orani_medyan": 0.063
+          },
+          "IS": {
+            "toplam_islem": 881,
+            "win_rate": 0.4835,
+            "profit_factor": 0.83,
+            "net_profit_pts": -40631.21,
+            "net_profit_usd_per_lot": -40631.21,
+            "ortalama_net_pts": -46.119,
+            "max_drawdown_pts": -48517.79,
+            "ortalama_atr_entry_pts": 519.06,
+            "ortalama_spread_entry_pts": 30.86,
+            "spread_TP_orani_medyan": 0.07
+          },
+          "OOS": {
+            "toplam_islem": 357,
+            "win_rate": 0.465,
+            "profit_factor": 0.806,
+            "net_profit_pts": -31556.43,
+            "net_profit_usd_per_lot": -31556.43,
+            "ortalama_net_pts": -88.393,
+            "max_drawdown_pts": -46437.14,
+            "ortalama_atr_entry_pts": 863.96,
+            "ortalama_spread_entry_pts": 39.06,
+            "spread_TP_orani_medyan": 0.049
+          }
+        },
+        "yalniz_long_bacagi": {
+          "toplam_islem": 698,
+          "win_rate": 0.49,
+          "profit_factor": 0.862,
+          "net_profit_pts": -32043.29,
+          "net_profit_usd_per_lot": -32043.29,
+          "ortalama_net_pts": -45.907,
+          "max_drawdown_pts": -33890.79,
+          "ortalama_atr_entry_pts": 635.7,
+          "ortalama_spread_entry_pts": 32.97,
+          "spread_TP_orani_medyan": 0.061
+        },
+        "yalniz_short_bacagi": {
+          "toplam_islem": 540,
+          "win_rate": 0.463,
+          "profit_factor": 0.763,
+          "net_profit_pts": -40144.36,
+          "net_profit_usd_per_lot": -40144.36,
+          "ortalama_net_pts": -74.341,
+          "max_drawdown_pts": -40946.5,
+          "ortalama_atr_entry_pts": 596.31,
+          "ortalama_spread_entry_pts": 33.55,
+          "spread_TP_orani_medyan": 0.066
+        }
+      }
+    }
+  },
+  "sabitler": {
+    "WINDOW": 20,
+    "K_BASELINE": 2.0,
+    "K_SCAN": [
+      1.5,
+      2.0,
+      2.5
+    ],
+    "ATR_PERIOD": 14,
+    "RR_RATIO": 1.0,
+    "N_BARS_BASELINE": 5,
+    "SESSION_PRIMARY": [
+      15,
+      16,
+      17,
+      18
+    ],
+    "SESSION_SECONDARY": [
+      3,
+      4,
+      15,
+      16,
+      17,
+      18
+    ],
+    "DETREND_WINDOW": 100,
+    "IS_FRACTION": 0.7,
+    "WF_FOLDS": 6,
+    "MAX_HOLD_BARS_ATR_ONLY": 50
+  }
+}

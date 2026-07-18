@@ -1,0 +1,126 @@
+{
+  "meta": {
+    "symbol": "GOLD",
+    "point": 0.01,
+    "digits": 2,
+    "contract_size": 100.0,
+    "m15_n": 99999,
+    "m15_start": "2022-04-18T03:45:00",
+    "m15_end": "2026-07-10T23:45:00"
+  },
+  "regim_adx": {
+    "adx_period": 14,
+    "trend_threshold": 25.0,
+    "range_threshold": 20.0,
+    "n_valid": 99972,
+    "trend_n": 44944,
+    "range_n": 35386,
+    "gecis_n": 19642,
+    "trend_oran": 0.44956587844596485,
+    "range_oran": 0.3539591085503941,
+    "gecis_oran": 0.196475013003641,
+    "adx_medyan": 23.599526860540955,
+    "adx_p10_p90": [
+      13.748946870908128,
+      41.06271271099756
+    ],
+    "bars_since_change_medyan": 11.0,
+    "bars_since_change_p90": 45.0,
+    "fwd8bar_abs_ret_trend_medyan": 345.00000000000455,
+    "fwd8bar_abs_ret_range_medyan": 295.9999999999809,
+    "fwd8bar_abs_ret_gecis_medyan": 331.99999999999363,
+    "fwd8bar_abs_ret_trend_n": 44944,
+    "fwd8bar_abs_ret_range_n": 35386,
+    "fwd8bar_abs_ret_gecis_n": 19634,
+    "continuation_rate_trend": 0.4899080110743949,
+    "continuation_rate_trend_n": 44788,
+    "continuation_rate_range": 0.49755903723887374,
+    "continuation_rate_range_n": 35232,
+    "continuation_rate_gecis": 0.4991307015749642,
+    "continuation_rate_gecis_n": 19556
+  },
+  "gorece_fiyat_yapisi": {
+    "n_valid_daily_pivot": 99918,
+    "n_valid_weekly_pivot": 99550,
+    "n_valid_roll20_sr": 98170,
+    "dist_pivot_pts_medyan_abs": 912.0000000000118,
+    "dist_r1_pts_medyan_abs": 1569.9999999999932,
+    "dist_s1_pts_medyan_abs": 1848.333333333244,
+    "dist_wpivot_pts_medyan_abs": 2579.9999999999727,
+    "dist_roll20_high_pts_medyan": 5893.000000000006,
+    "dist_roll20_low_pts_medyan": 9735.000000000015,
+    "above_pivot_fwd8_signed_ret_medyan": 10.999999999989996,
+    "above_pivot_n": 55005,
+    "below_pivot_fwd8_signed_ret_medyan": 25.0,
+    "below_pivot_n": 44898,
+    "near_roll20_high_fwd8_signed_ret_medyan": 51.99999999999818,
+    "near_roll20_high_n": 9820,
+    "near_roll20_low_fwd8_signed_ret_medyan": -1.999999999998181,
+    "near_roll20_low_n": 9817
+  },
+  "etiket_alternatifleri": {
+    "n_valid": 99978,
+    "deadzone_k": 0.3,
+    "3sinif_yukari_n": 43848,
+    "3sinif_asagi_n": 40528,
+    "3sinif_notr_n": 15602,
+    "3sinif_yukari_oran": 0.438576486827102,
+    "3sinif_asagi_oran": 0.40536918121986837,
+    "3sinif_notr_oran": 0.15605433195302967,
+    "regresyon_hedef_pts_ortalama": 16.990147832523157,
+    "regresyon_hedef_pts_std": 1252.61777276054,
+    "regresyon_hedef_pts_p10_p90": [
+      -834.9999999999909,
+      918.0000000000291
+    ],
+    "regresyon_hedef_atr_norm_ortalama": 0.07359309431396785,
+    "regresyon_hedef_atr_norm_std": 2.2975564638912096,
+    "regresyon_hedef_atr_norm_p10_p90": [
+      -2.3399042814213367,
+      2.471885118599872
+    ],
+    "deadzone_0.15_yukari_oran": 0.47746504230930803,
+    "deadzone_0.15_asagi_oran": 0.4441777190982016,
+    "deadzone_0.15_notr_oran": 0.07835723859249034,
+    "deadzone_0.5_yukari_oran": 0.3878153193702615,
+    "deadzone_0.5_asagi_oran": 0.3560483306327392,
+    "deadzone_0.5_notr_oran": 0.25613634999699936
+  },
+  "capraz_piyasa_dxy": {
+    "veri_erisimi": "kismi (futures kontrat, kisa gecmis)",
+    "n": 99999,
+    "start": "2021-11-10T17:30:00",
+    "end": "2026-07-10T23:00:00",
+    "exact_merge_n": 90608,
+    "m15_return_correlation_tam_ortusme": -0.4115764882195581,
+    "m15_return_correlation_n": 90607,
+    "rolling20_corr_medyan": -0.4611226553534725,
+    "rolling20_corr_p10_p90": [
+      -0.7640772323961162,
+      -0.04183164308337737
+    ],
+    "dxy_past8_vs_gold_fwd8_corr": -0.0007507907469402943,
+    "dxy_past8_vs_gold_fwd8_n": 90592
+  },
+  "mikro_yapi_tick_proxy": {
+    "pencere_gun": 20,
+    "pencere_baslangic": "2026-06-21",
+    "pencere_bitis": "2026-07-10",
+    "toplam_m15_bucket_n": 1260,
+    "fetch_sure_sn": 2.4,
+    "tick_count_medyan": 4520.5,
+    "imbalance_medyan": 0.002746191242462834,
+    "imbalance_p10_p90": [
+      -0.04070921199437287,
+      0.06102408617723828
+    ],
+    "yuksek_imbalance_fwd8_medyan_pts": -253.99999999999636,
+    "yuksek_imbalance_n": 251,
+    "dusuk_imbalance_fwd8_medyan_pts": 3.999999999996362,
+    "dusuk_imbalance_n": 251,
+    "mid_ret_std_medyan": 1.847275121299453e-05,
+    "spr_mean_medyan_pts": 0.5481810696974181,
+    "imbalance_vs_fwd8_korelasyon": -0.03150553096828158,
+    "mid_ret_std_vs_fwd8_abs_korelasyon": 0.061751442851710046
+  }
+}

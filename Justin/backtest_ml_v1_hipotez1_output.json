@@ -1,0 +1,390 @@
+{
+  "meta": {
+    "symbol": "GOLD",
+    "point": 0.01,
+    "digits": 2,
+    "contract_size": 100.0,
+    "m15_n": 99999,
+    "m15_start": "2022-04-18",
+    "m15_end": "2026-07-10"
+  },
+  "dst_saat_eslesme_dogrulamasi": {
+    "yontem": "BAGIMSIZ (bu ML/M15 pipeline'i icin yeniden yazildi, H1/H2/H3'ten devralinmadi) - her bilinen DST gecisinde, gecis-oncesi ve gecis-sonrasi haftanin PIYASA-ACILIS barinin UTC/epoch-okunan saati karsilastirildi.",
+    "canli_capraz_kontrol": {
+      "sistem_saati_utc": "2026-07-12T14:12:09.209529+00:00",
+      "son_tick_epoch_utc": "2026-07-10T23:57:59+00:00",
+      "fark_saniye": 137650.21,
+      "yorum": "fark kucukse (birkac saniye) MT5 sunucu-epoch okumasi guvenilir UTC kabul edilir"
+    },
+    "dst_gecis_taramasi": [
+      {
+        "gecis_tarihi": "2022-10-30",
+        "onceki_hafta_acilis_saati_utc": 1,
+        "gecis_sonrasi_hafta_acilis_saati_utc": 0,
+        "1_saat_kayma_gozlendi_mi": true
+      },
+      {
+        "gecis_tarihi": "2023-03-26",
+        "onceki_hafta_acilis_saati_utc": 0,
+        "gecis_sonrasi_hafta_acilis_saati_utc": 1,
+        "1_saat_kayma_gozlendi_mi": true
+      },
+      {
+        "gecis_tarihi": "2023-10-29",
+        "onceki_hafta_acilis_saati_utc": 1,
+        "gecis_sonrasi_hafta_acilis_saati_utc": 0,
+        "1_saat_kayma_gozlendi_mi": true
+      },
+      {
+        "gecis_tarihi": "2024-03-31",
+        "onceki_hafta_acilis_saati_utc": 0,
+        "gecis_sonrasi_hafta_acilis_saati_utc": 1,
+        "1_saat_kayma_gozlendi_mi": true
+      },
+      {
+        "gecis_tarihi": "2024-10-27",
+        "onceki_hafta_acilis_saati_utc": 1,
+        "gecis_sonrasi_hafta_acilis_saati_utc": 0,
+        "1_saat_kayma_gozlendi_mi": true
+      },
+      {
+        "gecis_tarihi": "2025-03-30",
+        "onceki_hafta_acilis_saati_utc": 0,
+        "gecis_sonrasi_hafta_acilis_saati_utc": 1,
+        "1_saat_kayma_gozlendi_mi": true
+      },
+      {
+        "gecis_tarihi": "2025-10-26",
+        "onceki_hafta_acilis_saati_utc": 1,
+        "gecis_sonrasi_hafta_acilis_saati_utc": 0,
+        "1_saat_kayma_gozlendi_mi": true
+      },
+      {
+        "gecis_tarihi": "2026-03-29",
+        "onceki_hafta_acilis_saati_utc": 0,
+        "gecis_sonrasi_hafta_acilis_saati_utc": 1,
+        "1_saat_kayma_gozlendi_mi": true
+      }
+    ],
+    "degerlendirilen_gecis_sayisi": 8,
+    "1_saat_kayma_gozlenen_gecis_sayisi": 8,
+    "SONUC": "8/8 bilinen DST gecisinde piyasa-acilis saati 1 SAAT KAYDI - bu, MT5 sunucusunun DST'yi TAKIP ETTIGINI (sabit GMT+3 DEGIL, mevsimsel kaydiran bir saat kullandigini) DOGRULAR.",
+    "SINIR": "Sunucu DST'yi takip ediyorsa, Feature Grubu 4'teki (saat/oturum: hour_sin/cos, Asya/Londra/NY bayraklari) TUM saat-bazli feature'lar yaz/kis donemlerinde GERCEK yerel seans zamanina gore TUTARLI kalir (sunucu-yerel-saat sabit, sadece UTC gorunumu mevsimsel kayar; bu script UTC-epoch'u dogrudan 'saat' olarak okur - onemli olan, modelin ogrendigi 'saat X'te confluence/ATR yuksek' iliskisinin sunucu-yerel zamana gore SABIT bir gercekligi yansitmasidir). Onceki H1/H2/H3 turlerindeki 'DST dogrulanmadi, sabit GMT+3 varsayildi' notu bu ML turunde ARTIK GECERLI DEGIL - sunucu DST takip ediyor (asagidaki SONUC alanina bakiniz), feature'lar buna gore TUTARLIDIR."
+  },
+  "feature_seti": {
+    "sutun_sayisi": 23,
+    "sutunlar": [
+      "atr14_m15",
+      "atr_regime_ratio",
+      "atr14_h1_aligned",
+      "m15_trend",
+      "h1_trend_aligned",
+      "h4_trend_aligned",
+      "confluence_flag",
+      "tick_volume",
+      "vol_ratio_trail100",
+      "vol_slope_8bar",
+      "hour_sin",
+      "hour_cos",
+      "dow",
+      "session_asia",
+      "session_london",
+      "session_ny",
+      "lag_ret_1",
+      "lag_ret_4",
+      "lag_ret_8",
+      "rsi14",
+      "macd_line",
+      "macd_hist",
+      "directional_streak"
+    ]
+  },
+  "feature_sizinti_kontrol_listesi": {
+    "1_ileri_bakan_bilgi_var_mi": "HAYIR - tum feature'lar rolling_mean_causal/rolling_median_causal/ema_causal ile SADECE bar i ve ONCESI veriyi kullanir; H1/H4 trend/ATR eslemesi bar i'den ONCE KAPANMIS son H1/H4 barini kullanir (bkz. h1_idx-1/h4_idx-1 indeksleme, kod satirlari Grup1-2).",
+    "2_label_hesaplamasinda_kullanilan_veriyi_dolayli_iceriyor_mu": "HAYIR - etiket (triple-barrier) SADECE bar i'nin ATR14'unu (giris ani) ve i+1..i+16 arasindaki YOL'u (high/low) kullanir; hicbir feature bu ileri-yol verisini kullanmaz.",
+    "3_normalizasyon_sadece_egitim_setinden_mi": "EVET - feature standardizasyonu (ortalama/std) her walk-forward fold'unda SADECE o fold'un TRAIN kesitinden, final modelde SADECE final_train_idx'ten hesaplanir; TEST setine bu TRAIN istatistikleri uygulanir, TEST verisinden hicbir istatistik hesaplanmaz.",
+    "4_zaman_bazli_feature_dst_dogrulamasindan_gecti_mi": "EVET - yukaridaki dst_saat_eslesme_dogrulamasi bolumune bakiniz, bu ML turu icin BAGIMSIZ olarak yapildi (sonuc: sunucu DST takip ediyor).",
+    "5_macd_ham_deger_mi_isaret_mi": "HAM DEGER - macd_line ve macd_hist dogrudan sayisal (float) deger olarak feature matrisine eklendi, np.sign() UYGULANMADI (Arastirmaci BULGU6 SINIR/Stratejist Karar3 geregi)."
+  },
+  "etiket_dagilimi": {
+    "gecerli_bar": 99690,
+    "yukari_bariyer_once": 44330,
+    "asagi_bariyer_once": 42326,
+    "hicbiri": 13034,
+    "hicbiri_orani": 0.1307
+  },
+  "s1_maliyet_orani_stres_testi": {
+    "k_atr": 1.5,
+    "atr14_m15_medyan_pts": 287.43,
+    "atr14_m15_p90_pts": 936.79,
+    "spread_medyan_pts": 27.0,
+    "spread_p90_pts": 36.2,
+    "spread_max_pts": 137.0,
+    "hedef_pts_k1_5_x_atr_medyan": 431.14,
+    "oran_medyan_spread_uzerinden": 15.97,
+    "oran_p90_spread_uzerinden_STRES_TESTI": 11.91,
+    "oran_max_spread_uzerinden_ekstrem": 3.15,
+    "esik_alt_sinir": 15.0,
+    "medyan_uzerinden_GECTI_Mi": true,
+    "P90_STRES_TESTI_GECTI_Mi": false,
+    "yorum": "Stratejist'in medyan-spread on-tahmini burada dogrulandi. P90-spread ile stres testinde esik KAYBEDILIYOR (oran=11.91x, esik=15.0x). Max-spread (ekstrem) oran=3.15x - bu ekstrem/nadir anlarin gostergesidir, PASS/RED kriteri degildir. Gorev talimati geregi bu esik kaybi ANA TESTI DURDURMAZ - Hipotez 1 yine de asagida calistirilmistir, sonuc Hipotez3/k=2,0 yedeginin bir SONRAKI TUR olarak degerlendirilmesi gerektigine isaret eder."
+  },
+  "veri_bolumu": {
+    "toplam_bar": 99999,
+    "trainval_end_bar": 79999,
+    "embargo_bars": 24,
+    "test_start_bar": 80023,
+    "trainval_tarih_araligi": [
+      "2022-04-18",
+      "2025-09-03"
+    ],
+    "test_tarih_araligi": [
+      "2025-09-04",
+      "2026-07-10"
+    ],
+    "trainval_ikili_etiketli_n": 68785,
+    "test_ikili_etiketli_n": 17833,
+    "purge_kurali": "trainval ornekleri i+N<=trainval_end_bar ile SINIRLANDI (etiket penceresi sinira tasmaz)",
+    "embargo_kurali": "test, trainval_end_bar+24 bar (6 saat) SONRA baslar"
+  },
+  "walk_forward_purged_embargolu": {
+    "segment_sayisi": 5,
+    "fold_sayisi": 4,
+    "embargo_bars": 24,
+    "sonuclar": [
+      {
+        "fold": 1,
+        "train_lo_bar": 0,
+        "train_hi_bar": 15999,
+        "val_lo_bar": 15999,
+        "val_hi_bar": 31999,
+        "train_n": 13666,
+        "val_n": 13547,
+        "val_auc": 0.4938,
+        "best_iteration": 1
+      },
+      {
+        "fold": 2,
+        "train_lo_bar": 0,
+        "train_hi_bar": 31999,
+        "val_lo_bar": 31999,
+        "val_hi_bar": 47999,
+        "train_n": 27240,
+        "val_n": 13693,
+        "val_auc": 0.5122,
+        "best_iteration": 6
+      },
+      {
+        "fold": 3,
+        "train_lo_bar": 0,
+        "train_hi_bar": 47999,
+        "val_lo_bar": 47999,
+        "val_hi_bar": 63999,
+        "train_n": 40972,
+        "val_n": 13653,
+        "val_auc": 0.5251,
+        "best_iteration": 4
+      },
+      {
+        "fold": 4,
+        "train_lo_bar": 0,
+        "train_hi_bar": 63999,
+        "val_lo_bar": 63999,
+        "val_hi_bar": 79999,
+        "train_n": 54654,
+        "val_n": 14105,
+        "val_auc": 0.499,
+        "best_iteration": 1
+      }
+    ],
+    "auc_ozet": {
+      "ortalama": 0.5075,
+      "std": 0.0122,
+      "min": 0.4938,
+      "max": 0.5251
+    }
+  },
+  "esik_kalibrasyonu": {
+    "yontem": "Out-of-fold (walk-forward) tahminleri uzerinde precision-proxy(WR) taramasi - TEST SETINE BAKILMADI",
+    "oof_ornek_sayisi": 54998,
+    "min_sample_esigi": 30,
+    "aday_tablosu": [
+      {
+        "esik_long": 0.6,
+        "esik_short": 0.4,
+        "long_n": 0,
+        "long_precision_proxy_WR": null,
+        "long_yeterli_orneklem": false,
+        "short_n": 0,
+        "short_precision_proxy_WR": null,
+        "short_yeterli_orneklem": false,
+        "toplam_islem_n": 0,
+        "kapsama_orani": 0.0
+      },
+      {
+        "esik_long": 0.575,
+        "esik_short": 0.425,
+        "long_n": 9,
+        "long_precision_proxy_WR": 0.8889,
+        "long_yeterli_orneklem": false,
+        "short_n": 0,
+        "short_precision_proxy_WR": null,
+        "short_yeterli_orneklem": false,
+        "toplam_islem_n": 9,
+        "kapsama_orani": 0.0002
+      },
+      {
+        "esik_long": 0.55,
+        "esik_short": 0.45,
+        "long_n": 132,
+        "long_precision_proxy_WR": 0.6894,
+        "long_yeterli_orneklem": true,
+        "short_n": 78,
+        "short_precision_proxy_WR": 0.5641,
+        "short_yeterli_orneklem": true,
+        "toplam_islem_n": 210,
+        "kapsama_orani": 0.0038
+      }
+    ],
+    "secim_kurali": "MIN_SAMPLE (>=30) esigini GECEN taraflarin ORTALAMA precision'i en yuksek olan cift secildi; hicbir aday esigi gecmediyse en genis kapsamli aday fallback olarak secilir ve YETERSIZ_VERI olarak isaretlenir.",
+    "SECILEN_ESIK_LONG": 0.55,
+    "SECILEN_ESIK_SHORT": 0.45,
+    "YETERSIZ_ORNEKLEM_FALLBACK_UYGULANDI": false
+  },
+  "final_model_egitimi": {
+    "egitim_n": 54654,
+    "ic_validasyon_n": 14105,
+    "ic_validasyon_auc": 0.499,
+    "best_iteration": 1,
+    "hiperparametreler_SABIT": {
+      "objective": "binary",
+      "num_leaves": 31,
+      "max_depth": 6,
+      "learning_rate": 0.05,
+      "n_estimators": 500,
+      "min_child_samples": 50,
+      "subsample": 0.8,
+      "colsample_bytree": 0.8,
+      "reg_lambda": 1.0,
+      "random_state": 42,
+      "verbosity": -1
+    },
+    "feature_importance_gain_split": {
+      "atr14_m15": 0,
+      "atr_regime_ratio": 0,
+      "atr14_h1_aligned": 10,
+      "m15_trend": 0,
+      "h1_trend_aligned": 0,
+      "h4_trend_aligned": 1,
+      "confluence_flag": 0,
+      "tick_volume": 1,
+      "vol_ratio_trail100": 2,
+      "vol_slope_8bar": 0,
+      "hour_sin": 2,
+      "hour_cos": 2,
+      "dow": 6,
+      "session_asia": 0,
+      "session_london": 0,
+      "session_ny": 0,
+      "lag_ret_1": 0,
+      "lag_ret_4": 1,
+      "lag_ret_8": 0,
+      "rsi14": 0,
+      "macd_line": 3,
+      "macd_hist": 2,
+      "directional_streak": 0
+    }
+  },
+  "test_seti_siniflandirma_performansi": {
+    "test_n": 17833,
+    "test_auc": 0.517,
+    "not": "Bu, N=16/k=1,5 ikili siniflandirma gorevinin (hicbiri haric) TEST setindeki AUC'udur - TEK KEZ hesaplandi."
+  },
+  "test_p_dagilimi_TANI": {
+    "aciklama": "Final modelin (best_iteration=1) TEST setindeki p(yukari) dagilimi - PRIMARY/SUPPLEMENTARY 0 islem cikarsa nedenini gostermek icin eklendi, esik secimini ETKILEMEZ.",
+    "p_test_min": 0.5037,
+    "p_test_max": 0.5304,
+    "p_test_mean": 0.5089,
+    "p_test_std": 0.0047,
+    "p_test_percentileler": {
+      "1": 0.5037,
+      "5": 0.5057,
+      "25": 0.507,
+      "50": 0.507,
+      "75": 0.507,
+      "95": 0.5189,
+      "99": 0.5252
+    },
+    "esik_long_asan_bar_sayisi": 0,
+    "esik_short_asan_bar_sayisi": 0
+  },
+  "test_trade_simulasyonu_PRIMARY": {
+    "aciklama": "Stratejist Karar 2 geregi 'hicbiri' ornekleri TEST SETINDEN DE FILTRELENDI - bu, SADECE gercek sonucu (yukari-bariyer-once/asagi-bariyer-once) ONCEDEN belirli olan test barlarinda esik-tetiklemeli sinyal calistirir. Canliya-yakin bir capraz-kontrol icin 'hicbiri dahil' supplementary bolume bakiniz (asagida).",
+    "esik_long": 0.55,
+    "esik_short": 0.45,
+    "atlanma_nedenleri": {},
+    "tum_islemler_ozet": {
+      "toplam_islem": 0,
+      "win_rate": null,
+      "profit_factor": null,
+      "net_profit_pts": 0.0,
+      "net_profit_usd": 0.0,
+      "max_drawdown_pct": null
+    },
+    "LONG_ozet": {
+      "toplam_islem": 0,
+      "win_rate": null,
+      "profit_factor": null,
+      "net_profit_pts": 0.0,
+      "net_profit_usd": 0.0,
+      "max_drawdown_pct": null
+    },
+    "SHORT_ozet": {
+      "toplam_islem": 0,
+      "win_rate": null,
+      "profit_factor": null,
+      "net_profit_pts": 0.0,
+      "net_profit_usd": 0.0,
+      "max_drawdown_pct": null
+    },
+    "tick_lookup_istatistigi": {
+      "call": 0,
+      "hit": 0,
+      "miss_veri_yok": 0,
+      "miss_zaman_uyusmazligi": 0,
+      "miss_gecersiz_kotasyon": 0
+    }
+  },
+  "test_trade_simulasyonu_SUPPLEMENTARY_hicbiri_dahil": {
+    "aciklama": "Karar-2-literal degil - bu, CANLI DEPLOYMENT'ta gercekte olacagini simule eder: model esik-asan HERHANGI bir test barinda islem acar, gercek sonuc (TP/SL/hicbiri-zaman-asimi) SONRADAN ortaya cikar. 'hicbiri' (zaman-asimi) cikan islemler gercek fiyatla kapatilir, P&L'e dahildir.",
+    "atlanma_nedenleri": {},
+    "tum_islemler_ozet": {
+      "toplam_islem": 0,
+      "win_rate": null,
+      "profit_factor": null,
+      "net_profit_pts": 0.0,
+      "net_profit_usd": 0.0,
+      "max_drawdown_pct": null
+    },
+    "hicbiri_zaman_asimi_ile_biten_islem_sayisi": 0,
+    "hicbiri_orani_tetiklenen_islemler_icinde": null
+  },
+  "islem_logu_PRIMARY_tam": [],
+  "islem_logu_SUPPLEMENTARY_tam": [],
+  "uyarilar": [
+    "TEST_PRIMARY_tum_islemler: ISLEM YOK (n=0).",
+    "TEST_PRIMARY_LONG: ISLEM YOK (n=0).",
+    "TEST_PRIMARY_SHORT: ISLEM YOK (n=0).",
+    "SINYAL_SIKLIGI_COK_DUSUK: test setindeki 17833 bar icinden sadece 0 bar esik-tetiklemeli islem uretti (kapsama ~0.0%) - bu, modelin p>=0,55/p<=0,45 gibi yuksek-guven bolgesine cok NADIREN ulastigini gosterir (AUC~0,50-0,52 ile TUTARLI - bkz. walk_forward_purged_embargolu.auc_ozet, modelin ayirt edici gucu neredeyse rastgele/coin-flip seviyesindedir)."
+  ],
+  "hipotez_ozet": {
+    "hipotez_adi": "LightGBM Ikili Yon-Tahmini Modeli (N=16/k=1,5xATR14-M15) - HIPOTEZ 1",
+    "yaklasim_turu": "Makine Ogrenmesi - Gradient Boosting (LightGBM)",
+    "hedef_pf": 1.5,
+    "hedef_wr_rr11": 0.6,
+    "hedef_dd": 0.2,
+    "gozlemlenen_pf_PRIMARY": null,
+    "gozlemlenen_wr_PRIMARY": null,
+    "hedef_pf_karsilandi_mi_PRIMARY": null
+  }
+}

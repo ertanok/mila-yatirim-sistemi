@@ -1,0 +1,38 @@
+{
+  "canli_capraz_kontrol": {
+    "tick_time_epoch": 1783966818,
+    "tick_time_utc": "2026-07-13 18:20:18+00:00",
+    "python_sistem_utc_now": "2026-07-13 15:20:18.769661+00:00",
+    "python_sistem_yerel_now": "2026-07-13 18:20:18.769664",
+    "fark_saniye_tick_vs_sysutc": -10799.230339
+  },
+  "son_h1_bar_sunucu_zamani_ham": "2026-07-13 18:00:00+00:00",
+  "vps_yerel_simdi": "2026-07-13 18:20:18.771535",
+  "vps_utc_simdi": "2026-07-13 15:20:18.771542+00:00",
+  "dst_donum_taramasi": [
+    {
+      "donum_tarihi": "2025-03-30",
+      "aciklama": "AB/Kibris yaz-saatine gecis",
+      "once_cuma_kapanis": "2025-03-28 22:00:00",
+      "sonra_cuma_kapanis": "2025-04-04 23:00:00",
+      "saat_once": 22,
+      "saat_sonra": 23
+    },
+    {
+      "donum_tarihi": "2025-10-26",
+      "aciklama": "AB/Kibris kis-saatine gecis",
+      "once_cuma_kapanis": "2025-10-24 23:00:00",
+      "sonra_cuma_kapanis": "2025-10-31 22:00:00",
+      "saat_once": 23,
+      "saat_sonra": 22
+    },
+    {
+      "donum_tarihi": "2026-03-29",
+      "aciklama": "AB/Kibris yaz-saatine gecis (bu yil)",
+      "once_cuma_kapanis": "2026-03-27 22:00:00",
+      "sonra_cuma_kapanis": "2026-03-27 22:00:00",
+      "saat_once": 22,
+      "saat_sonra": 22
+    }
+  ]
+}

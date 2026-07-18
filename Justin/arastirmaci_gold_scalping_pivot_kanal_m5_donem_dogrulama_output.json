@@ -1,0 +1,168 @@
+{
+  "olusturma_zamani_not": "Bu script calistirildiginda sistem saati kullanilir, sonuclar output JSON'a yazilir.",
+  "terminal_maxbars": 100000,
+  "terminal_build": 5836,
+  "terminal_name": "XM MT5",
+  "m5_pos0_99999": {
+    "n_bar": 99999,
+    "baslangic": "2025-02-17 05:30:00",
+    "bitis": "2026-07-16 23:40:00"
+  },
+  "m5_pos99999_99999": {
+    "n_bar": 2,
+    "detay": [
+      {
+        "time": "2025-02-17 05:20:00"
+      },
+      {
+        "time": "2025-02-17 05:25:00"
+      }
+    ]
+  },
+  "m5_pos99998_count5": {
+    "n_bar": 3,
+    "zamanlar": [
+      "2025-02-17 05:20:00",
+      "2025-02-17 05:25:00",
+      "2025-02-17 05:30:00"
+    ]
+  },
+  "m5_pos100000_count100": {
+    "sonuc": null,
+    "mt5_last_error": [
+      -1,
+      "Terminal: Call failed"
+    ]
+  },
+  "m5_eski_aralik_range_testi_retry": [
+    {
+      "istenen_aralik": "2010-01-01 -> 2010-03-01",
+      "denemeler": [
+        {
+          "deneme": 0,
+          "n_bar": 1,
+          "ilk_bar_zamani": "2025-02-17 05:20:00",
+          "mt5_last_error": [
+            1,
+            "Success"
+          ]
+        },
+        {
+          "deneme": 1,
+          "n_bar": 1,
+          "ilk_bar_zamani": "2025-02-17 05:20:00",
+          "mt5_last_error": [
+            1,
+            "Success"
+          ]
+        },
+        {
+          "deneme": 2,
+          "n_bar": 1,
+          "ilk_bar_zamani": "2025-02-17 05:20:00",
+          "mt5_last_error": [
+            1,
+            "Success"
+          ]
+        }
+      ]
+    },
+    {
+      "istenen_aralik": "2019-01-01 -> 2019-02-28",
+      "denemeler": [
+        {
+          "deneme": 0,
+          "n_bar": 1,
+          "ilk_bar_zamani": "2025-02-17 05:20:00",
+          "mt5_last_error": [
+            1,
+            "Success"
+          ]
+        },
+        {
+          "deneme": 1,
+          "n_bar": 1,
+          "ilk_bar_zamani": "2025-02-17 05:20:00",
+          "mt5_last_error": [
+            1,
+            "Success"
+          ]
+        },
+        {
+          "deneme": 2,
+          "n_bar": 1,
+          "ilk_bar_zamani": "2025-02-17 05:20:00",
+          "mt5_last_error": [
+            1,
+            "Success"
+          ]
+        }
+      ]
+    },
+    {
+      "istenen_aralik": "2024-01-01 -> 2024-03-01",
+      "denemeler": [
+        {
+          "deneme": 0,
+          "n_bar": 1,
+          "ilk_bar_zamani": "2025-02-17 05:20:00",
+          "mt5_last_error": [
+            1,
+            "Success"
+          ]
+        },
+        {
+          "deneme": 1,
+          "n_bar": 1,
+          "ilk_bar_zamani": "2025-02-17 05:20:00",
+          "mt5_last_error": [
+            1,
+            "Success"
+          ]
+        },
+        {
+          "deneme": 2,
+          "n_bar": 1,
+          "ilk_bar_zamani": "2025-02-17 05:20:00",
+          "mt5_last_error": [
+            1,
+            "Success"
+          ]
+        }
+      ]
+    }
+  ],
+  "h1_2005_kontrol": {
+    "n_bar": 41,
+    "ilk_bar_zamani": "2005-01-03 00:00:00"
+  },
+  "alternatif_xau_cross_semboller_m5": {
+    "XAUEUR": {
+      "n_bar": 99999,
+      "baslangic": "2025-02-17 04:15:00",
+      "bitis": "2026-07-16 23:40:00"
+    },
+    "XAUCNH": {
+      "n_bar": 58375,
+      "baslangic": "2025-09-17 11:00:00",
+      "bitis": "2026-07-16 23:40:00"
+    },
+    "XAUJPY": {
+      "n_bar": 58415,
+      "baslangic": "2025-09-17 11:10:00",
+      "bitis": "2026-07-16 23:40:00"
+    }
+  },
+  "broker_gold_xau_sembol_listesi": [
+    "GOLD",
+    "XAUEUR",
+    "BarrickGold",
+    "KinrossGold",
+    "SandstormGold",
+    "GoldenOcean",
+    "GoldmSachs",
+    "XAUCNH",
+    "XAUJPY",
+    "Gold Fields"
+  ]
+}

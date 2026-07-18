@@ -1,0 +1,559 @@
+{
+  "hipotez_cercevesi": {
+    "oncelik": "3-Dusuk (Stratejist raporu) - bu sonuc Tur 2'nin nihai KABUL/RED kararinin TEK BASINA dayanagi OLAMAZ, Hipotez 1/2 birincil, bu hipotez tamamlayici/on-gozlem niteligindedir.",
+    "cerceveleme_ZORUNLU": "Kucuk orneklem (tahmini 3.780-5.670 M15-bucket, Stratejist onerisi) nedeniyle istatistiksel guc SINIRLIDIR. Sonuc 'KESIN RED/KABUL' olarak SUNULMAZ - 'bu olcekte ilk gozlem, tam-tarihsel olceklendirme HALA cozulmemis' seklinde cercevelenir (asagida SONUC bolumunde tekrarlanacaktir).",
+    "olceklenebilirlik_durumu": "COZULMEDI - bu hipotez BASARILI cikSa bile Grup D'nin 4,2 yillik tam egitim setine nasil tasinacagi ayri bir tasarim/muhendislik sorusudur."
+  },
+  "meta": {
+    "symbol": "GOLD",
+    "point": 0.01,
+    "digits": 2,
+    "contract_size": 100.0,
+    "m15_n_toplam_cekilen": 14000,
+    "m15_start_toplam": "2025-12-04",
+    "m15_end_toplam": "2026-07-10",
+    "not": "Bu toplam cekim (warmup+pencere) - asagida SADECE son 90 islem gunu (PENCERE) egitim/test icin kullanilir."
+  },
+  "pilot_pencere_tanimi": {
+    "window_trading_days_hedef": 90,
+    "warmup_trading_days": 25,
+    "toplam_cekilen_islem_gunu": 154,
+    "pencere_baslangic_tarihi": "2026-03-06",
+    "pencere_bitis_tarihi": "2026-07-10",
+    "pencere_bar_sayisi": 8238,
+    "warmup_bar_sayisi": 5762,
+    "not": "Warmup bolgesi (pencere ONCESI) SADECE nedensel rolling feature'larin (ROLL_SR_WINDOW=20 gun, TRAIL_WINDOW=100 bar, MTF SMA20) ilk degerlerini doldurmak icin kullanilir - bu barlar egitim/test/ornek SAYISINA KATILMAZ, ana Hipotez1/2'nin 4,2 yillik setiyle KARISTIRILMAZ."
+  },
+  "dst_saat_eslesme_dogrulamasi": {
+    "yontem": "BAGIMSIZ (bu Hipotez3/pilot calismasi icin YENIDEN calistirildi) - PILOT PENCEREYI de kapsayan toplam cekilen veri icinde bilinen DST gecisleri taranir.",
+    "canli_capraz_kontrol": {
+      "sistem_saati_utc": "2026-07-12T16:03:45.094284+00:00",
+      "son_tick_epoch_utc": "2026-07-10T23:57:59+00:00",
+      "fark_saniye": 144346.09
+    },
+    "dst_gecis_taramasi": [
+      {
+        "gecis_tarihi": "2022-10-30",
+        "durum": "veri_araliginda_yok"
+      },
+      {
+        "gecis_tarihi": "2023-03-26",
+        "durum": "veri_araliginda_yok"
+      },
+      {
+        "gecis_tarihi": "2023-10-29",
+        "durum": "veri_araliginda_yok"
+      },
+      {
+        "gecis_tarihi": "2024-03-31",
+        "durum": "veri_araliginda_yok"
+      },
+      {
+        "gecis_tarihi": "2024-10-27",
+        "durum": "veri_araliginda_yok"
+      },
+      {
+        "gecis_tarihi": "2025-03-30",
+        "durum": "veri_araliginda_yok"
+      },
+      {
+        "gecis_tarihi": "2025-10-26",
+        "durum": "veri_araliginda_yok"
+      },
+      {
+        "gecis_tarihi": "2026-03-29",
+        "onceki_hafta_acilis_saati_utc": 0,
+        "gecis_sonrasi_hafta_acilis_saati_utc": 1,
+        "1_saat_kayma_gozlendi_mi": true
+      }
+    ],
+    "degerlendirilen_gecis_sayisi": 1,
+    "1_saat_kayma_gozlenen_gecis_sayisi": 1,
+    "SONUC": "1/1 bilinen DST gecisinde piyasa-acilis saati 1 SAAT KAYDI - MT5 sunucusu DST'yi TAKIP EDIYOR (Hipotez1/2 ile AYNI sonuc, BAGIMSIZ tekrar-uretildi)."
+  },
+  "grup_d_nedensellik_dogrulamasi_BAGIMSIZ": {
+    "bucket_siniri_spot_check_200_bucket": {
+      "kontrol_edilen_bucket_sayisi": 200,
+      "sinir_disi_tick_sayisi": 0,
+      "ornekler": [
+        {
+          "bucket_key": 1969732,
+          "bucket_epoch_baslangic": 1772758800,
+          "bucket_epoch_bitis": 1772759700,
+          "tick_sayisi": 961,
+          "ilk_tick_epoch": 1772758831,
+          "son_tick_epoch": 1772759665,
+          "tum_ticklerin_araliginda_mi": true
+        },
+        {
+          "bucket_key": 1969773,
+          "bucket_epoch_baslangic": 1772795700,
+          "bucket_epoch_bitis": 1772796600,
+          "tick_sayisi": 4290,
+          "ilk_tick_epoch": 1772795700,
+          "son_tick_epoch": 1772796599,
+          "tum_ticklerin_araliginda_mi": true
+        },
+        {
+          "bucket_key": 1969814,
+          "bucket_epoch_baslangic": 1772832600,
+          "bucket_epoch_bitis": 1772833500,
+          "tick_sayisi": 3760,
+          "ilk_tick_epoch": 1772832600,
+          "son_tick_epoch": 1772833499,
+          "tum_ticklerin_araliginda_mi": true
+        },
+        {
+          "bucket_key": 1970048,
+          "bucket_epoch_baslangic": 1773043200,
+          "bucket_epoch_bitis": 1773044100,
+          "tick_sayisi": 5581,
+          "ilk_tick_epoch": 1773043200,
+          "son_tick_epoch": 1773044099,
+          "tum_ticklerin_araliginda_mi": true
+        },
+        {
+          "bucket_key": 1970089,
+          "bucket_epoch_baslangic": 1773080100,
+          "bucket_epoch_bitis": 1773081000,
+          "tick_sayisi": 4005,
+          "ilk_tick_epoch": 1773080100,
+          "son_tick_epoch": 1773080998,
+          "tum_ticklerin_araliginda_mi": true
+        }
+      ],
+      "SONUC": "GECTI - hicbir bucket'ta sinir-disi tick YOK (ileri-bakis/karisma yok)"
+    },
+    "bar_tick_bucket_birim_uyumu": [
+      {
+        "bar_idx": 7821,
+        "bar_epoch": 1775641500,
+        "bar_key_x900": 1775641500,
+        "bar_epoch_multiple_of_900_mu": true
+      },
+      {
+        "bar_idx": 9881,
+        "bar_epoch": 1778265900,
+        "bar_key_x900": 1778265900,
+        "bar_epoch_multiple_of_900_mu": true
+      },
+      {
+        "bar_idx": 11940,
+        "bar_epoch": 1781074800,
+        "bar_key_x900": 1781074800,
+        "bar_epoch_multiple_of_900_mu": true
+      }
+    ],
+    "ileri_bakis_ek_spot_check": [
+      {
+        "bar_idx": 7821,
+        "bucket_son_tick_epoch": 1775642399,
+        "bar_bitis_epoch": 1775642400,
+        "son_tick_bar_bitisinden_ONCE_mi": true
+      },
+      {
+        "bar_idx": 9881,
+        "bucket_son_tick_epoch": 1778266799,
+        "bar_bitis_epoch": 1778266800,
+        "son_tick_bar_bitisinden_ONCE_mi": true
+      },
+      {
+        "bar_idx": 11940,
+        "bucket_son_tick_epoch": 1781075699,
+        "bar_bitis_epoch": 1781075700,
+        "son_tick_bar_bitisinden_ONCE_mi": true
+      }
+    ],
+    "yontem_notu": "Imbalance = tick-kural (tick-rule) isaretinin (yukari=+1/asagi=-1/degisim-yoksa-onceki-isaret) bucket-ici ORTALAMASI. mid_ret_std = tick-bazli mid-fiyat getirisinin (GLOBAL/surekli hesaplanip bucket'a gore gruplanmis) bucket-ici standart sapmasi - bucket sinirini gecen TEK bir getiri noktasi (onceki bucket'in son tick'inden bu bucket'in ilk tick'ine) metodolojik bir YAKLASIKLIK olarak kabul edilmistir (Arastirmaci'nin BULGU 8 tanimiyla AYNI ruhta, birebir ayni kod DEGIL - bu SINIR acikca belirtilir). avg_spread_tick_pts = bucket icindeki TUM tick'lerin (ask-bid)/POINT ortalamasi (Arastirmaci BULGU 9 ile AYNI tanim).",
+    "SONUC": "GECTI - Grup D'nin tick-agregasyonlarinin M15-bucket icinde NEDENSEL/ileri-bakissiz oldugu BAGIMSIZ olarak (Arastirmaci'nin kendi ic-mantik iddiasina DAYANILMADAN) 3 ayri kontrolle (bucket-sinir spot-check 200 ornek, bar-bucket birim uyumu, bucket-son-tick<bar-bitis kontrolu) dogrulandi - hicbir ihlal bulunmadi."
+  },
+  "grup_d_ozet_istatistikler": {
+    "tick_cekme_suresi_sn": 2.247,
+    "tick_toplam_sayisi_gecerli_kotasyon": 34404837,
+    "toplam_bucket_sayisi": 8238,
+    "pencere_bar_sayisi": 8238,
+    "grup_d_ile_eslesen_bar_sayisi": 8238,
+    "eslesme_orani": 1.0,
+    "bucket_basi_medyan_tick_sayisi": 3939.5,
+    "imbalance_medyan": 0.0013,
+    "imbalance_p10_p90": [
+      -0.0481,
+      0.0522
+    ],
+    "avg_spread_tick_medyan_pts": 53.46,
+    "mid_ret_std_medyan": 1.9330005087638853e-05,
+    "not": "BULGU 7-9 ile KARSILASTIRMA AMACLI BENZER olcumler - farkli pencere/uzunluk (90 gun vs 20 gun) nedeniyle sayilar DOGRUDAN eslesmeyebilir, bu BEKLENEN bir farktir (CLAUDE.md sayisal-tutarlilik ilkesi geregi burada ACIKCA belirtilir)."
+  },
+  "feature_seti": {
+    "sutun_sayisi": 33,
+    "sutunlar": [
+      "atr14_m15",
+      "atr_regime_ratio",
+      "atr14_h1_aligned",
+      "m15_trend",
+      "h1_trend_aligned",
+      "h4_trend_aligned",
+      "confluence_flag",
+      "tick_volume",
+      "vol_ratio_trail100",
+      "vol_slope_8bar",
+      "hour_sin",
+      "hour_cos",
+      "dow",
+      "session_asia",
+      "session_london",
+      "session_ny",
+      "lag_ret_1",
+      "lag_ret_4",
+      "lag_ret_8",
+      "rsi14",
+      "macd_line",
+      "macd_hist",
+      "directional_streak",
+      "dist_daily_pivot_pts",
+      "dist_weekly_pivot_pts",
+      "dist_roll20_high_pts",
+      "dist_roll20_low_pts",
+      "near_roll20_high_flag",
+      "near_roll20_low_flag",
+      "tick_imbalance_ratio",
+      "tick_count_bucket",
+      "tick_mid_ret_std",
+      "tick_avg_spread_pts"
+    ],
+    "hipotez1_sutun_sayisi": 29,
+    "grup_d_yeni_sutun_sayisi": 4,
+    "not": "Hipotez1 ile BIREBIR AYNI Grup 1-5 + Grup B (29 sutun) + Grup D (4 sutun: tick_imbalance_ratio, tick_count_bucket, tick_mid_ret_std, tick_avg_spread_pts) = 33 sutun toplam."
+  },
+  "feature_sizinti_kontrol_listesi": {
+    "1_ileri_bakan_bilgi_var_mi": "HAYIR - Grup 1-5/B Hipotez1 ile AYNI (rolling_*_causal, H1/H4 ONCEKI-kapanan-bar hizalamasi). Grup D icin AYRICA yukarida grup_d_nedensellik_dogrulamasi_BAGIMSIZ bolumunde 3 bagimsiz kontrolle (bucket-sinir, bar-bucket-birim, son-tick<bar-bitis) dogrulandi.",
+    "2_label_hesaplamasinda_kullanilan_veriyi_dolayli_iceriyor_mu": "HAYIR - etiket (triple-barrier) SADECE bar i'nin ATR14'unu ve i+1..i+16 YOL'unu kullanir; Grup D feature'lari SADECE bar i'nin KENDI [t_i, t_i+900) araligindaki tick'lerden turetilir, bu bar i+1 ve sonrasindaki fiyat yoluyla (etiketin kendisiyle) CAKISMAZ.",
+    "3_normalizasyon_sadece_egitim_setinden_mi": "EVET - asagida final_train_idx/fold train kesitlerinden hesaplanan mu/sd, TEST/val'e uygulanir. Grup D feature'lari da HICBIR global/test-icerikli istatistikle olceklendirilmedi (ham puan/oran degerleri, normalizasyon egitim-setinden).",
+    "4_zaman_bazli_feature_dst_dogrulamasindan_gecti_mi": "EVET - dst_saat_eslesme_dogrulamasi bu turde BAGIMSIZ tekrar calistirildi (yukarida).",
+    "5_macd_ham_deger_mi_isaret_mi": "HAM DEGER (Hipotez1 ile AYNI, degismedi).",
+    "6_grup_d_nedensellik_bagimsiz_kontrol": "EVET - grup_d_nedensellik_dogrulamasi_BAGIMSIZ bolumunde detaylandirildi; Arastirmaci'nin kendi ic-mantik iddiasina (BULGU 7-9) DAYANILMADAN sifirdan/bagimsiz kod-incelemesi+assert+spot-check yapildi (Stratejist'in ozel talebi geregi, Grup B'nin Hipotez1'deki dogrulama yontemiyle AYNI TITIZLIKTE).",
+    "7_pilot_pencere_warmup_sizintisi_var_mi": "HAYIR - warmup bolgesi (pencere ONCESI) sadece rolling feature'larin ilk degerlerini doldurmak icin kullanilir, TRAIN/TEST/WF orneklerine (idx_pool) hicbir warmup bari DAHIL EDILMEZ (feature_valid_in_window = feature_valid & window_mask ile CIFT-GUVENCELI kisitlama)."
+  },
+  "etiket_dagilimi": {
+    "gecerli_bar": 8222,
+    "yukari_bariyer_once": 3353,
+    "asagi_bariyer_once": 4039,
+    "hicbiri": 830,
+    "hicbiri_orani": 0.1009
+  },
+  "s1_maliyet_orani_stres_testi_PENCEREYE_OZEL": {
+    "yontem_notu": "ZORUNLU DEGIL (Stratejist Notu Madde1, k_risk=1,5 Hipotez1'den DEVIR yeterliydi) - Stratejist'in acikca izin verdigi OPSIYONEL ek saglamlik kontrolu olarak, bu 90-gunluk kisitli PENCERENIN KENDI spread/ATR degerleriyle AYRICA hesaplandi (Hipotez1'in tam-tarihsel degerleriyle KARISTIRILMAMALIDIR - farkli veri araligi, CLAUDE.md sayisal-tutarlilik ilkesi).",
+    "k_atr": 1.5,
+    "pencere_bar_sayisi": 8238,
+    "atr14_m15_medyan_pts": 983.61,
+    "atr14_m15_p90_pts": 1773.78,
+    "bar_kapanis_spread_medyan_pts": 40.0,
+    "bar_kapanis_spread_p90_pts": 51.0,
+    "bar_kapanis_spread_max_pts": 132.0,
+    "tick_seviyesi_ORTALAMA_spread_medyan_pts": 53.46,
+    "hedef_pts_k1_5_x_atr_medyan": 1475.41,
+    "oran_medyan_bar_kapanis_spread": 36.89,
+    "oran_p90_bar_kapanis_spread_STRES_TESTI": 28.93,
+    "oran_max_bar_kapanis_spread_ekstrem": 11.18,
+    "oran_medyan_TICK_SEVIYESI_spread_EK_TEYIT": 27.6,
+    "esik_alt_sinir": 15.0,
+    "medyan_bar_kapanis_spread_uzerinden_GECTI_Mi": true,
+    "P90_bar_kapanis_spread_STRES_TESTI_GECTI_Mi": true,
+    "hipotez1_tam_tarihsel_referans": {
+      "oran_medyan_spread": 15.97,
+      "oran_p90_spread": 11.91
+    },
+    "yorum": "Bu pencereye ozel oran, Hipotez1'in tam-tarihsel (4,2 yil) oranindan (15,97x/11,91x) FARKLI cikabilir - bu bir hata degil, farkli/daha kisa/daha yakin-tarihli bir veri araligini yansitir (DOGRUDAN KARSILASTIRILAMAZ, sadece bu pencerenin KENDI icinde tutarliligini gosterir)."
+  },
+  "veri_bolumu_PENCERE_ICI": {
+    "not": "Bu bolum SADECE 90-gunluk pilot pencere icindir - Hipotez1/2'nin 4,2 yillik TRAINVAL/TEST bolumuyle KARISTIRILMAMALIDIR (Karar 4, tamamen ayri alt-deney).",
+    "pencere_bar_sayisi": 8238,
+    "bars_per_day_median_pencere": 92.0,
+    "embargo_gun_sayisi": 1,
+    "embargo_bar_sayisi": 92,
+    "purge_kurali": "trainval ornekleri i+N_BARS<=trainval_end_bar ile SINIRLANDI (Hipotez1/2 ile AYNI ilke)",
+    "trainval_end_bar": 12351,
+    "test_start_bar": 12443,
+    "trainval_tarih_araligi": [
+      "2026-03-06",
+      "2026-06-16"
+    ],
+    "test_tarih_araligi": [
+      "2026-06-17",
+      "2026-07-10"
+    ],
+    "trainval_ikili_etiketli_n": 5924,
+    "test_ikili_etiketli_n": 1370
+  },
+  "walk_forward_purged_embargolu_PENCERE_ICI": {
+    "segment_sayisi": 5,
+    "fold_sayisi": 4,
+    "embargo_bars": 92,
+    "sonuclar": [
+      {
+        "fold": 1,
+        "train_lo_bar": 5762,
+        "train_hi_bar": 7079,
+        "val_lo_bar": 7079,
+        "val_hi_bar": 8397,
+        "train_n": 1197,
+        "val_n": 1091,
+        "val_auc": 0.5823,
+        "best_iteration": 3
+      },
+      {
+        "fold": 2,
+        "train_lo_bar": 5762,
+        "train_hi_bar": 8397,
+        "val_lo_bar": 8397,
+        "val_hi_bar": 9715,
+        "train_n": 2389,
+        "val_n": 1072,
+        "val_auc": 0.4555,
+        "best_iteration": 1
+      },
+      {
+        "fold": 3,
+        "train_lo_bar": 5762,
+        "train_hi_bar": 9715,
+        "val_lo_bar": 9715,
+        "val_hi_bar": 11033,
+        "train_n": 3550,
+        "val_n": 1096,
+        "val_auc": 0.5876,
+        "best_iteration": 39
+      },
+      {
+        "fold": 4,
+        "train_lo_bar": 5762,
+        "train_hi_bar": 11033,
+        "val_lo_bar": 11033,
+        "val_hi_bar": 12351,
+        "train_n": 4747,
+        "val_n": 1086,
+        "val_auc": 0.551,
+        "best_iteration": 2
+      }
+    ],
+    "auc_ozet": {
+      "ortalama": 0.5441,
+      "std": 0.053,
+      "min": 0.4555,
+      "max": 0.5876,
+      "gecerli_fold_sayisi": 4
+    }
+  },
+  "esik_kalibrasyonu": {
+    "yontem": "Out-of-fold (walk-forward) tahminleri uzerinde precision-proxy(WR) taramasi - TEST SETINE BAKILMADI",
+    "oof_ornek_sayisi": 4345,
+    "min_sample_esigi": 30,
+    "aday_tablosu": [
+      {
+        "esik_long": 0.6,
+        "esik_short": 0.4,
+        "long_n": 77,
+        "long_precision_proxy_WR": 0.5844,
+        "long_yeterli_orneklem": true,
+        "short_n": 743,
+        "short_precision_proxy_WR": 0.6191,
+        "short_yeterli_orneklem": true,
+        "toplam_islem_n": 820,
+        "kapsama_orani": 0.1887
+      },
+      {
+        "esik_long": 0.575,
+        "esik_short": 0.425,
+        "long_n": 101,
+        "long_precision_proxy_WR": 0.5545,
+        "long_yeterli_orneklem": true,
+        "short_n": 1301,
+        "short_precision_proxy_WR": 0.5611,
+        "short_yeterli_orneklem": true,
+        "toplam_islem_n": 1402,
+        "kapsama_orani": 0.3227
+      },
+      {
+        "esik_long": 0.55,
+        "esik_short": 0.45,
+        "long_n": 136,
+        "long_precision_proxy_WR": 0.5074,
+        "long_yeterli_orneklem": true,
+        "short_n": 2022,
+        "short_precision_proxy_WR": 0.5445,
+        "short_yeterli_orneklem": true,
+        "toplam_islem_n": 2158,
+        "kapsama_orani": 0.4967
+      }
+    ],
+    "SECILEN_ESIK_LONG": 0.6,
+    "SECILEN_ESIK_SHORT": 0.4,
+    "YETERSIZ_ORNEKLEM_FALLBACK_UYGULANDI": false
+  },
+  "final_model_egitimi": {
+    "egitim_n": 4747,
+    "ic_validasyon_n": 1086,
+    "ic_validasyon_auc": 0.551,
+    "best_iteration": 2,
+    "hiperparametreler_SABIT": {
+      "objective": "binary",
+      "num_leaves": 31,
+      "max_depth": 6,
+      "learning_rate": 0.05,
+      "n_estimators": 500,
+      "min_child_samples": 50,
+      "subsample": 0.8,
+      "colsample_bytree": 0.8,
+      "reg_lambda": 1.0,
+      "random_state": 42,
+      "verbosity": -1
+    },
+    "feature_importance_gain_split": {
+      "atr14_m15": 0,
+      "atr_regime_ratio": 2,
+      "atr14_h1_aligned": 1,
+      "m15_trend": 0,
+      "h1_trend_aligned": 0,
+      "h4_trend_aligned": 0,
+      "confluence_flag": 0,
+      "tick_volume": 1,
+      "vol_ratio_trail100": 0,
+      "vol_slope_8bar": 1,
+      "hour_sin": 2,
+      "hour_cos": 4,
+      "dow": 3,
+      "session_asia": 0,
+      "session_london": 0,
+      "session_ny": 0,
+      "lag_ret_1": 0,
+      "lag_ret_4": 0,
+      "lag_ret_8": 2,
+      "rsi14": 5,
+      "macd_line": 0,
+      "macd_hist": 2,
+      "directional_streak": 0,
+      "dist_daily_pivot_pts": 10,
+      "dist_weekly_pivot_pts": 3,
+      "dist_roll20_high_pts": 5,
+      "dist_roll20_low_pts": 8,
+      "near_roll20_high_flag": 0,
+      "near_roll20_low_flag": 0,
+      "tick_imbalance_ratio": 0,
+      "tick_count_bucket": 0,
+      "tick_mid_ret_std": 1,
+      "tick_avg_spread_pts": 2
+    }
+  },
+  "test_seti_siniflandirma_performansi": {
+    "test_n": 1370,
+    "test_auc": 0.5084
+  },
+  "test_p_dagilimi_TANI": {
+    "p_test_min": 0.42,
+    "p_test_max": 0.5087,
+    "p_test_mean": 0.4564,
+    "p_test_std": 0.0139,
+    "p_test_percentileler": {
+      "1": 0.4265,
+      "5": 0.4361,
+      "25": 0.446,
+      "50": 0.4593,
+      "75": 0.4602,
+      "95": 0.4815,
+      "99": 0.4977
+    },
+    "esik_long_asan_bar_sayisi": 0,
+    "esik_short_asan_bar_sayisi": 0
+  },
+  "test_trade_simulasyonu_PRIMARY": {
+    "esik_long": 0.6,
+    "esik_short": 0.4,
+    "atlanma_nedenleri": {},
+    "tum_islemler_ozet": {
+      "toplam_islem": 0,
+      "win_rate": null,
+      "profit_factor": null,
+      "net_profit_pts": 0.0,
+      "net_profit_usd_0_01_lot": 0.0,
+      "max_drawdown_pct_kasa2000": null
+    },
+    "LONG_ozet": {
+      "toplam_islem": 0,
+      "win_rate": null,
+      "profit_factor": null,
+      "net_profit_pts": 0.0,
+      "net_profit_usd_0_01_lot": 0.0,
+      "max_drawdown_pct_kasa2000": null
+    },
+    "SHORT_ozet": {
+      "toplam_islem": 0,
+      "win_rate": null,
+      "profit_factor": null,
+      "net_profit_pts": 0.0,
+      "net_profit_usd_0_01_lot": 0.0,
+      "max_drawdown_pct_kasa2000": null
+    },
+    "tick_lookup_istatistigi": {
+      "call": 0,
+      "hit": 0,
+      "miss_bucket_yok": 0,
+      "miss_zaman_uyusmazligi": 0,
+      "miss_gecersiz_kotasyon": 0
+    }
+  },
+  "test_trade_simulasyonu_SUPPLEMENTARY_hicbiri_dahil": {
+    "atlanma_nedenleri": {},
+    "tum_islemler_ozet": {
+      "toplam_islem": 0,
+      "win_rate": null,
+      "profit_factor": null,
+      "net_profit_pts": 0.0,
+      "net_profit_usd_0_01_lot": 0.0,
+      "max_drawdown_pct_kasa2000": null
+    },
+    "hicbiri_zaman_asimi_ile_biten_islem_sayisi": 0,
+    "hicbiri_orani_tetiklenen_islemler_icinde": null
+  },
+  "islem_logu_PRIMARY_tam": [],
+  "islem_logu_SUPPLEMENTARY_tam": [],
+  "uyarilar": [
+    "ISTATISTIKSEL_GUC_SINIRLI (Stratejist'in ZORUNLU cerceveleme talebi): bu hipotezin kucuk orneklem boyutu (asagidaki gercek pencere_bar_sayisi/test_n) nedeniyle istatistiksel guc SINIRLIDIR - sonuc 'KESIN RED/KABUL' DEGIL, 'bu olcekte ilk gozlem, tam-tarihsel olceklendirme HALA cozulmemis' seklinde yorumlanmalidir.",
+    "TEST_PRIMARY_tum_islemler: ISLEM YOK (n=0).",
+    "TEST_PRIMARY_LONG: ISLEM YOK (n=0).",
+    "TEST_PRIMARY_SHORT: ISLEM YOK (n=0).",
+    "SINYAL_SIKLIGI: test setindeki 1370 bar icinden 0 bar esik-tetiklemeli islem uretti (kapsama ~0.0%)."
+  ],
+  "hipotez1_karsilastirma_referansi": {
+    "not": "Hipotez1 (v2/Tur2) raporundan/ham JSON'undan AYNEN alinan referans degerler - BU turde YENIDEN HESAPLANMADI, FARKLI veri araligi/olcek (4,2 yil vs 90 gun) oldugu icin DOGRUDAN KARSILASTIRILAMAZ, sadece BAGLAM icin buraya kopyalandi (CLAUDE.md sayisal-tutarlilik ilkesi).",
+    "veri_araligi": "2022-04-18 -> 2026-07-10 (4,2 yil, tam-tarihsel)",
+    "walk_forward_auc_ortalama": 0.5075,
+    "walk_forward_auc_std": 0.0122,
+    "final_ic_validasyon_auc": 0.499,
+    "test_auc": 0.517,
+    "esik_long": 0.55,
+    "esik_short": 0.45,
+    "primary_toplam_islem": 0,
+    "supplementary_toplam_islem": 0
+  },
+  "hedef_karsilastirma_ve_karar": {
+    "hedef_pf": 1.5,
+    "hedef_wr_rr11": 0.6,
+    "hedef_dd": 0.2,
+    "gozlemlenen_pf_PRIMARY": null,
+    "gozlemlenen_wr_PRIMARY": null,
+    "gozlemlenen_dd_PRIMARY": null,
+    "gozlemlenen_pf_SUPPLEMENTARY": null,
+    "gozlemlenen_wr_SUPPLEMENTARY": null,
+    "KARAR": "RED",
+    "gerekce": "PRIMARY test setinde 0 islem tetiklendi - Ortak Ilkeler'deki minimum orneklem uyarisi geregi hicbir hedefin karsilandigi iddia edilemez (S2 Madde4)."
+  },
+  "hipotez_ozet": {
+    "hipotez_adi": "LightGBM Ikili Yon-Tahmini + Grup 1-5/B/D (mikro-yapi) - 90 GUNLUK KISITLI/PILOT PENCERE - HIPOTEZ 3 (v2/Tur2)",
+    "yaklasim_turu": "Makine Ogrenmesi - Gradient Boosting (LightGBM) + kural-tabanli tick-agregasyon (Grup D girdisi)",
+    "oncelik": "3-Dusuk (on-gozlem)",
+    "olceklenebilirlik_durumu": "COZULMEDI - bu rapor Grup D'nin 4,2 yillik tam veriye tasinma yontemini COZMEZ",
+    "hedef_pf": 1.5,
+    "hedef_wr_rr11": 0.6,
+    "hedef_dd": 0.2,
+    "KARAR": "RED"
+  }
+}

@@ -1,0 +1,492 @@
+{
+  "meta": {
+    "yontem_notu": "Rejim etiketleri (VOL: ATR14 vs trailing-100 medyan; TREND: ER20 vs trailing-100 medyan) nedensel/ileri-bakissizdir - yalniz bar i ve oncesindeki veri kullanilir. BULGU4 ile ayni 1.5x-ortalama-range esigi korunmustur. Istatistiksel anlamlilik: scipy.stats.binomtest (iki-yonlu, H0: p=0.5) + ki-kare uygunluk testi (df=1), Risk Analisti Hipotez2 ile ayni yontem, alpha=0.05.",
+    "atr_period": 14,
+    "er_window": 20,
+    "trail_window_regime_esigi": 100,
+    "bigbar_mult": 1.5,
+    "alpha": 0.05
+  },
+  "M1_rejim_etiket_dagilimi": {
+    "toplam_bar": 99999,
+    "VOL_etiketli_bar": 99887,
+    "VOL_genis": 45564,
+    "VOL_dar": 54323,
+    "TREND_etiketli_bar": 99880,
+    "TREND_trend": 49451,
+    "TREND_range": 50429
+  },
+  "M1_BULGU3_rejim_VOL": {
+    "genis": {
+      "genel_ardisik_ayni_yon": {
+        "n_total": 45333,
+        "n_ayni_yon": 22063,
+        "ayni_yon_orani": 0.487,
+        "binom_test_p_degeri": 1.4741666236779719e-08,
+        "chi_kare_istatistigi": 32.137,
+        "chi_kare_p_degeri": 0.0,
+        "anlamli_mi_alpha_0_05": true
+      },
+      "streak_sonrasi": {
+        "2": {
+          "n": 11429,
+          "sonraki_bar_ayni_yon_orani": 0.49,
+          "binom_test_p_degeri": 0.029993265784993714,
+          "chi_kare_istatistigi": 4.75,
+          "chi_kare_p_degeri": 0.029296,
+          "anlamli_mi_alpha_0_05": true
+        },
+        "3": {
+          "n": 5607,
+          "sonraki_bar_ayni_yon_orani": 0.472,
+          "binom_test_p_degeri": 3.884783862827251e-05,
+          "chi_kare_istatistigi": 17.029,
+          "chi_kare_p_degeri": 3.7e-05,
+          "anlamli_mi_alpha_0_05": true
+        },
+        "4": {
+          "n": 2670,
+          "sonraki_bar_ayni_yon_orani": 0.476,
+          "binom_test_p_degeri": 0.01554315407060282,
+          "chi_kare_istatistigi": 5.946,
+          "chi_kare_p_degeri": 0.01475,
+          "anlamli_mi_alpha_0_05": true
+        },
+        "5": {
+          "n": 1308,
+          "sonraki_bar_ayni_yon_orani": 0.462,
+          "binom_test_p_degeri": 0.006172186673523446,
+          "chi_kare_istatistigi": 7.645,
+          "chi_kare_p_degeri": 0.005692,
+          "anlamli_mi_alpha_0_05": true
+        }
+      }
+    },
+    "dar": {
+      "genel_ardisik_ayni_yon": {
+        "n_total": 53922,
+        "n_ayni_yon": 26218,
+        "ayni_yon_orani": 0.486,
+        "binom_test_p_degeri": 1.600885819668643e-10,
+        "chi_kare_istatistigi": 40.952,
+        "chi_kare_p_degeri": 0.0,
+        "anlamli_mi_alpha_0_05": true
+      },
+      "streak_sonrasi": {
+        "2": {
+          "n": 13745,
+          "sonraki_bar_ayni_yon_orani": 0.48,
+          "binom_test_p_degeri": 3.4728267283276323e-06,
+          "chi_kare_istatistigi": 21.61,
+          "chi_kare_p_degeri": 3e-06,
+          "anlamli_mi_alpha_0_05": true
+        },
+        "3": {
+          "n": 6590,
+          "sonraki_bar_ayni_yon_orani": 0.477,
+          "binom_test_p_degeri": 0.00015531634722316213,
+          "chi_kare_istatistigi": 14.395,
+          "chi_kare_p_degeri": 0.000148,
+          "anlamli_mi_alpha_0_05": true
+        },
+        "4": {
+          "n": 3120,
+          "sonraki_bar_ayni_yon_orani": 0.487,
+          "binom_test_p_degeri": 0.1680322227656146,
+          "chi_kare_istatistigi": 1.95,
+          "chi_kare_p_degeri": 0.162587,
+          "anlamli_mi_alpha_0_05": false
+        },
+        "5": {
+          "n": 1485,
+          "sonraki_bar_ayni_yon_orani": 0.459,
+          "binom_test_p_degeri": 0.00183621462570698,
+          "chi_kare_istatistigi": 9.859,
+          "chi_kare_p_degeri": 0.00169,
+          "anlamli_mi_alpha_0_05": true
+        }
+      }
+    }
+  },
+  "M1_BULGU3_rejim_TREND": {
+    "trend": {
+      "genel_ardisik_ayni_yon": {
+        "n_total": 49137,
+        "n_ayni_yon": 23734,
+        "ayni_yon_orani": 0.483,
+        "binom_test_p_degeri": 5.253741635365952e-14,
+        "chi_kare_istatistigi": 56.69,
+        "chi_kare_p_degeri": 0.0,
+        "anlamli_mi_alpha_0_05": true
+      },
+      "streak_sonrasi": {
+        "2": {
+          "n": 12212,
+          "sonraki_bar_ayni_yon_orani": 0.485,
+          "binom_test_p_degeri": 0.001315192690713043,
+          "chi_kare_istatistigi": 10.378,
+          "chi_kare_p_degeri": 0.001275,
+          "anlamli_mi_alpha_0_05": true
+        },
+        "3": {
+          "n": 6106,
+          "sonraki_bar_ayni_yon_orani": 0.466,
+          "binom_test_p_degeri": 9.370904558158553e-08,
+          "chi_kare_istatistigi": 28.615,
+          "chi_kare_p_degeri": 0.0,
+          "anlamli_mi_alpha_0_05": true
+        },
+        "4": {
+          "n": 2989,
+          "sonraki_bar_ayni_yon_orani": 0.472,
+          "binom_test_p_degeri": 0.0021148625190804014,
+          "chi_kare_istatistigi": 9.555,
+          "chi_kare_p_degeri": 0.001994,
+          "anlamli_mi_alpha_0_05": true
+        },
+        "5": {
+          "n": 1592,
+          "sonraki_bar_ayni_yon_orani": 0.462,
+          "binom_test_p_degeri": 0.002414186063249331,
+          "chi_kare_istatistigi": 9.349,
+          "chi_kare_p_degeri": 0.002231,
+          "anlamli_mi_alpha_0_05": true
+        }
+      }
+    },
+    "range": {
+      "genel_ardisik_ayni_yon": {
+        "n_total": 50111,
+        "n_ayni_yon": 24544,
+        "ayni_yon_orani": 0.49,
+        "binom_test_p_degeri": 4.980468565703559e-06,
+        "chi_kare_istatistigi": 20.884,
+        "chi_kare_p_degeri": 5e-06,
+        "anlamli_mi_alpha_0_05": true
+      },
+      "streak_sonrasi": {
+        "2": {
+          "n": 12959,
+          "sonraki_bar_ayni_yon_orani": 0.484,
+          "binom_test_p_degeri": 0.0002244607564259234,
+          "chi_kare_istatistigi": 13.677,
+          "chi_kare_p_degeri": 0.000217,
+          "anlamli_mi_alpha_0_05": true
+        },
+        "3": {
+          "n": 6090,
+          "sonraki_bar_ayni_yon_orani": 0.484,
+          "binom_test_p_degeri": 0.01158359076175622,
+          "chi_kare_istatistigi": 6.437,
+          "chi_kare_p_degeri": 0.011174,
+          "anlamli_mi_alpha_0_05": true
+        },
+        "4": {
+          "n": 2801,
+          "sonraki_bar_ayni_yon_orani": 0.494,
+          "binom_test_p_degeri": 0.5206046321820313,
+          "chi_kare_istatistigi": 0.437,
+          "chi_kare_p_degeri": 0.508407,
+          "anlamli_mi_alpha_0_05": false
+        },
+        "5": {
+          "n": 1201,
+          "sonraki_bar_ayni_yon_orani": 0.459,
+          "binom_test_p_degeri": 0.004666243306340307,
+          "chi_kare_istatistigi": 8.161,
+          "chi_kare_p_degeri": 0.004281,
+          "anlamli_mi_alpha_0_05": true
+        }
+      }
+    }
+  },
+  "M1_BULGU4_rejim_VOL": {
+    "genis": {
+      "buyuk_bar_sayisi_rejimde": 11260,
+      "yonlu_cift_n": 11238,
+      "sonraki_bar_ayni_yon_sayisi": 5340,
+      "sonraki_bar_ters_yon_sayisi": 5898,
+      "ayni_yon_orani": 0.475,
+      "binom_test_p_degeri": 1.4779384445703457e-07,
+      "chi_kare_istatistigi": 27.706,
+      "chi_kare_p_degeri": 0.0,
+      "anlamli_mi_alpha_0_05": true
+    },
+    "dar": {
+      "buyuk_bar_sayisi_rejimde": 4427,
+      "yonlu_cift_n": 4420,
+      "sonraki_bar_ayni_yon_sayisi": 2045,
+      "sonraki_bar_ters_yon_sayisi": 2375,
+      "ayni_yon_orani": 0.463,
+      "binom_test_p_degeri": 7.390014127249921e-07,
+      "chi_kare_istatistigi": 24.638,
+      "chi_kare_p_degeri": 1e-06,
+      "anlamli_mi_alpha_0_05": true
+    }
+  },
+  "M1_BULGU4_rejim_TREND": {
+    "trend": {
+      "buyuk_bar_sayisi_rejimde": 8713,
+      "yonlu_cift_n": 8696,
+      "sonraki_bar_ayni_yon_sayisi": 4083,
+      "sonraki_bar_ters_yon_sayisi": 4613,
+      "ayni_yon_orani": 0.47,
+      "binom_test_p_degeri": 1.3911313207170364e-08,
+      "chi_kare_istatistigi": 32.302,
+      "chi_kare_p_degeri": 0.0,
+      "anlamli_mi_alpha_0_05": true
+    },
+    "range": {
+      "buyuk_bar_sayisi_rejimde": 6974,
+      "yonlu_cift_n": 6962,
+      "sonraki_bar_ayni_yon_sayisi": 3302,
+      "sonraki_bar_ters_yon_sayisi": 3660,
+      "ayni_yon_orani": 0.474,
+      "binom_test_p_degeri": 1.873284203628468e-05,
+      "chi_kare_istatistigi": 18.409,
+      "chi_kare_p_degeri": 1.8e-05,
+      "anlamli_mi_alpha_0_05": true
+    }
+  },
+  "M5_rejim_etiket_dagilimi": {
+    "toplam_bar": 99999,
+    "VOL_etiketli_bar": 99887,
+    "VOL_genis": 50032,
+    "VOL_dar": 49855,
+    "TREND_etiketli_bar": 99880,
+    "TREND_trend": 49392,
+    "TREND_range": 50488
+  },
+  "M5_BULGU3_rejim_VOL": {
+    "genis": {
+      "genel_ardisik_ayni_yon": {
+        "n_total": 49858,
+        "n_ayni_yon": 24637,
+        "ayni_yon_orani": 0.494,
+        "binom_test_p_degeri": 0.009028030764775964,
+        "chi_kare_istatistigi": 6.841,
+        "chi_kare_p_degeri": 0.008911,
+        "anlamli_mi_alpha_0_05": true
+      },
+      "streak_sonrasi": {
+        "2": {
+          "n": 12534,
+          "sonraki_bar_ayni_yon_orani": 0.492,
+          "binom_test_p_degeri": 0.08472153412377692,
+          "chi_kare_istatistigi": 3.003,
+          "chi_kare_p_degeri": 0.083125,
+          "anlamli_mi_alpha_0_05": false
+        },
+        "3": {
+          "n": 6234,
+          "sonraki_bar_ayni_yon_orani": 0.487,
+          "binom_test_p_degeri": 0.044023167666716344,
+          "chi_kare_istatistigi": 4.107,
+          "chi_kare_p_degeri": 0.042718,
+          "anlamli_mi_alpha_0_05": true
+        },
+        "4": {
+          "n": 3077,
+          "sonraki_bar_ayni_yon_orani": 0.467,
+          "binom_test_p_degeri": 0.0003101400785585714,
+          "chi_kare_istatistigi": 13.13,
+          "chi_kare_p_degeri": 0.000291,
+          "anlamli_mi_alpha_0_05": true
+        },
+        "5": {
+          "n": 1458,
+          "sonraki_bar_ayni_yon_orani": 0.503,
+          "binom_test_p_degeri": 0.8136735997313127,
+          "chi_kare_istatistigi": 0.069,
+          "chi_kare_p_degeri": 0.793405,
+          "anlamli_mi_alpha_0_05": false
+        }
+      }
+    },
+    "dar": {
+      "genel_ardisik_ayni_yon": {
+        "n_total": 49604,
+        "n_ayni_yon": 24429,
+        "ayni_yon_orani": 0.492,
+        "binom_test_p_degeri": 0.0008226146894294826,
+        "chi_kare_istatistigi": 11.219,
+        "chi_kare_p_degeri": 0.00081,
+        "anlamli_mi_alpha_0_05": true
+      },
+      "streak_sonrasi": {
+        "2": {
+          "n": 12854,
+          "sonraki_bar_ayni_yon_orani": 0.481,
+          "binom_test_p_degeri": 2.7887066929726717e-05,
+          "chi_kare_istatistigi": 17.627,
+          "chi_kare_p_degeri": 2.7e-05,
+          "anlamli_mi_alpha_0_05": true
+        },
+        "3": {
+          "n": 6125,
+          "sonraki_bar_ayni_yon_orani": 0.48,
+          "binom_test_p_degeri": 0.001984628821007265,
+          "chi_kare_istatistigi": 9.641,
+          "chi_kare_p_degeri": 0.001903,
+          "anlamli_mi_alpha_0_05": true
+        },
+        "4": {
+          "n": 2901,
+          "sonraki_bar_ayni_yon_orani": 0.463,
+          "binom_test_p_degeri": 7.041292084061566e-05,
+          "chi_kare_istatistigi": 15.934,
+          "chi_kare_p_degeri": 6.6e-05,
+          "anlamli_mi_alpha_0_05": true
+        },
+        "5": {
+          "n": 1323,
+          "sonraki_bar_ayni_yon_orani": 0.484,
+          "binom_test_p_degeri": 0.24820317234167708,
+          "chi_kare_istatistigi": 1.398,
+          "chi_kare_p_degeri": 0.237129,
+          "anlamli_mi_alpha_0_05": false
+        }
+      }
+    }
+  },
+  "M5_BULGU3_rejim_TREND": {
+    "trend": {
+      "genel_ardisik_ayni_yon": {
+        "n_total": 49194,
+        "n_ayni_yon": 24235,
+        "ayni_yon_orani": 0.493,
+        "binom_test_p_degeri": 0.0011149565384443887,
+        "chi_kare_istatistigi": 10.655,
+        "chi_kare_p_degeri": 0.001098,
+        "anlamli_mi_alpha_0_05": true
+      },
+      "streak_sonrasi": {
+        "2": {
+          "n": 12293,
+          "sonraki_bar_ayni_yon_orani": 0.486,
+          "binom_test_p_degeri": 0.0014984884696848861,
+          "chi_kare_istatistigi": 10.137,
+          "chi_kare_p_degeri": 0.001454,
+          "anlamli_mi_alpha_0_05": true
+        },
+        "3": {
+          "n": 6160,
+          "sonraki_bar_ayni_yon_orani": 0.486,
+          "binom_test_p_degeri": 0.031289977412142206,
+          "chi_kare_istatistigi": 4.692,
+          "chi_kare_p_degeri": 0.030311,
+          "anlamli_mi_alpha_0_05": true
+        },
+        "4": {
+          "n": 3164,
+          "sonraki_bar_ayni_yon_orani": 0.459,
+          "binom_test_p_degeri": 4.086265647392438e-06,
+          "chi_kare_istatistigi": 21.365,
+          "chi_kare_p_degeri": 4e-06,
+          "anlamli_mi_alpha_0_05": true
+        },
+        "5": {
+          "n": 1585,
+          "sonraki_bar_ayni_yon_orani": 0.498,
+          "binom_test_p_degeri": 0.8802120916466695,
+          "chi_kare_istatistigi": 0.031,
+          "chi_kare_p_degeri": 0.860431,
+          "anlamli_mi_alpha_0_05": false
+        }
+      }
+    },
+    "range": {
+      "genel_ardisik_ayni_yon": {
+        "n_total": 50261,
+        "n_ayni_yon": 24828,
+        "ayni_yon_orani": 0.494,
+        "binom_test_p_degeri": 0.007056299896224194,
+        "chi_kare_istatistigi": 7.282,
+        "chi_kare_p_degeri": 0.006963,
+        "anlamli_mi_alpha_0_05": true
+      },
+      "streak_sonrasi": {
+        "2": {
+          "n": 13092,
+          "sonraki_bar_ayni_yon_orani": 0.488,
+          "binom_test_p_degeri": 0.0059029563822214455,
+          "chi_kare_istatistigi": 7.627,
+          "chi_kare_p_degeri": 0.005749,
+          "anlamli_mi_alpha_0_05": true
+        },
+        "3": {
+          "n": 6198,
+          "sonraki_bar_ayni_yon_orani": 0.481,
+          "binom_test_p_degeri": 0.0033411077892017125,
+          "chi_kare_istatistigi": 8.684,
+          "chi_kare_p_degeri": 0.00321,
+          "anlamli_mi_alpha_0_05": true
+        },
+        "4": {
+          "n": 2814,
+          "sonraki_bar_ayni_yon_orani": 0.472,
+          "binom_test_p_degeri": 0.0034714233197981345,
+          "chi_kare_istatistigi": 8.648,
+          "chi_kare_p_degeri": 0.003274,
+          "anlamli_mi_alpha_0_05": true
+        },
+        "5": {
+          "n": 1196,
+          "sonraki_bar_ayni_yon_orani": 0.489,
+          "binom_test_p_degeri": 0.46976002866422295,
+          "chi_kare_istatistigi": 0.565,
+          "chi_kare_p_degeri": 0.452166,
+          "anlamli_mi_alpha_0_05": false
+        }
+      }
+    }
+  },
+  "M5_BULGU4_rejim_VOL": {
+    "genis": {
+      "buyuk_bar_sayisi_rejimde": 11982,
+      "yonlu_cift_n": 11974,
+      "sonraki_bar_ayni_yon_sayisi": 5833,
+      "sonraki_bar_ters_yon_sayisi": 6141,
+      "ayni_yon_orani": 0.487,
+      "binom_test_p_degeri": 0.005020913523809499,
+      "chi_kare_istatistigi": 7.922,
+      "chi_kare_p_degeri": 0.004882,
+      "anlamli_mi_alpha_0_05": true
+    },
+    "dar": {
+      "buyuk_bar_sayisi_rejimde": 4503,
+      "yonlu_cift_n": 4499,
+      "sonraki_bar_ayni_yon_sayisi": 2180,
+      "sonraki_bar_ters_yon_sayisi": 2319,
+      "ayni_yon_orani": 0.485,
+      "binom_test_p_degeri": 0.0396348503905839,
+      "chi_kare_istatistigi": 4.295,
+      "chi_kare_p_degeri": 0.038236,
+      "anlamli_mi_alpha_0_05": true
+    }
+  },
+  "M5_BULGU4_rejim_TREND": {
+    "trend": {
+      "buyuk_bar_sayisi_rejimde": 9177,
+      "yonlu_cift_n": 9171,
+      "sonraki_bar_ayni_yon_sayisi": 4493,
+      "sonraki_bar_ters_yon_sayisi": 4678,
+      "ayni_yon_orani": 0.49,
+      "binom_test_p_degeri": 0.05468000954952656,
+      "chi_kare_istatistigi": 3.732,
+      "chi_kare_p_degeri": 0.053384,
+      "anlamli_mi_alpha_0_05": false
+    },
+    "range": {
+      "buyuk_bar_sayisi_rejimde": 7308,
+      "yonlu_cift_n": 7302,
+      "sonraki_bar_ayni_yon_sayisi": 3520,
+      "sonraki_bar_ters_yon_sayisi": 3782,
+      "ayni_yon_orani": 0.482,
+      "binom_test_p_degeri": 0.002253262898745438,
+      "chi_kare_istatistigi": 9.401,
+      "chi_kare_p_degeri": 0.002169,
+      "anlamli_mi_alpha_0_05": true
+    }
+  }
+}

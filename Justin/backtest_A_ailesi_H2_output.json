@@ -1,0 +1,1660 @@
+{
+  "meta": {
+    "hipotez_adi": "A Ailesi H2 - Genis-Orneklem M15-Giris",
+    "min_touches": 3,
+    "touch_k": 0.5,
+    "swing_n": 5,
+    "lookahead_lag_bars": 5,
+    "cap_days": 300,
+    "ema_fast": 50,
+    "ema_slow": 200,
+    "macd": [
+      12,
+      26,
+      9
+    ],
+    "kasa_usd": 2000.0,
+    "risk_pct_ust_sinir": 0.01,
+    "taban_lot": 0.01,
+    "embargo_days": 45
+  },
+  "veri_araligi": {
+    "M15": {
+      "n_bar": 99999,
+      "baslangic": "2022-04-18 21:15:00+00:00",
+      "bitis": "2026-07-13 18:15:00+00:00"
+    },
+    "M30": {
+      "n_bar": 99999,
+      "baslangic": "2018-01-19 09:30:00+00:00",
+      "bitis": "2026-07-13 18:00:00+00:00"
+    },
+    "H1": {
+      "n_bar": 81251,
+      "baslangic": "2001-06-04 01:00:00+00:00",
+      "bitis": "2026-07-13 18:00:00+00:00"
+    }
+  },
+  "faz1_on_kontrol_dst": {
+    "canli_capraz_kontrol": {
+      "epoch_utc_okuma": "2026-07-13 18:28:30",
+      "vps_yerel_simdi": "2026-07-13 18:28:30.790662",
+      "fark_saniye": 0.790662,
+      "sonuc": "VPS yerel saat = UTC+3, DST GECISI GORULMUYOR (yerel OS saati yil boyunca sabit +3 - TST/Turkiye saati, 2016'dan beri DST uygulamiyor). Bu, MT5 SUNUCU saatinin de sabit oldugu anlamina GELMEZ - asagidaki H1/M15 hafta-sonu-gecis testi sunucu davranisini ayrica olcer."
+    },
+    "H1": {
+      "tf": "H1",
+      "toplam_hafta_sonu_gecis_sayisi": 3827,
+      "dst_kontrolu": [
+        {
+          "gecis_tarihi": "2025-03-30",
+          "oncesi_cuma_kapanis_saatleri": [
+            22,
+            22,
+            22
+          ],
+          "sonrasi_cuma_kapanis_saatleri": [
+            23,
+            23,
+            23
+          ],
+          "kayma_tespit_edildi_mi": true
+        },
+        {
+          "gecis_tarihi": "2025-10-26",
+          "oncesi_cuma_kapanis_saatleri": [
+            23,
+            23,
+            23
+          ],
+          "sonrasi_cuma_kapanis_saatleri": [
+            22,
+            23,
+            23
+          ],
+          "kayma_tespit_edildi_mi": false
+        },
+        {
+          "gecis_tarihi": "2026-03-29",
+          "oncesi_cuma_kapanis_saatleri": [
+            22,
+            22,
+            22
+          ],
+          "sonrasi_cuma_kapanis_saatleri": [
+            23,
+            23,
+            23
+          ],
+          "kayma_tespit_edildi_mi": true
+        }
+      ]
+    },
+    "M15": {
+      "tf": "M15",
+      "toplam_hafta_sonu_gecis_sayisi": 225,
+      "dst_kontrolu": [
+        {
+          "gecis_tarihi": "2025-03-30",
+          "oncesi_cuma_kapanis_saatleri": [
+            22,
+            22,
+            22
+          ],
+          "sonrasi_cuma_kapanis_saatleri": [
+            23,
+            23,
+            23
+          ],
+          "kayma_tespit_edildi_mi": true
+        },
+        {
+          "gecis_tarihi": "2025-10-26",
+          "oncesi_cuma_kapanis_saatleri": [
+            23,
+            23,
+            23
+          ],
+          "sonrasi_cuma_kapanis_saatleri": [
+            22,
+            23,
+            23
+          ],
+          "kayma_tespit_edildi_mi": false
+        },
+        {
+          "gecis_tarihi": "2026-03-29",
+          "oncesi_cuma_kapanis_saatleri": [
+            22,
+            22,
+            22
+          ],
+          "sonrasi_cuma_kapanis_saatleri": [
+            23,
+            23,
+            23
+          ],
+          "kayma_tespit_edildi_mi": true
+        }
+      ]
+    },
+    "sonuc_notu": "H1 VE M15 verisinde BAGIMSIZ olarak (H1'den devralinmadan) yeniden kosturuldu. Beklenen: MT5/XM sunucusu AB/Kibris DST takvimini izliyor (yaz GMT+3, kis GMT+2) - onceki turlerde (Hipotez 1/2/3) 4 kez bagimsiz dogrulanan bulguyla TUTARLI olup olmadigi asagida H1/M15 kayma sonuclarindan okunmalidir. M15 kanal-projeksiyonu dakika-bazli oldugu icin bu ayrim ozellikle onemlidir (gorev madde 1a)."
+  },
+  "faz2_kanal_sayilari": {
+    "H1": {
+      "up": 31,
+      "down": 42
+    },
+    "M30": {
+      "up": 29,
+      "down": 38
+    }
+  },
+  "faz2_look_ahead_duzeltmesi_notu": "confirm_idx (3. dokunusun swing-olarak GEOMETRIK olustugu bar) ile confirmed_active_idx (kanalin gercek-zamanli olarak BILINDIGI/kullanilabildigi bar, confirm_idx+5) ARASINDAKI FARK, asagidaki TUM M15 giris testinde confirmed_active_idx kullanilarak giderilmistir. break_idx duzeltme GEREKTIRMEZ (yalniz o ana kadarki kapanislari kullanir).",
+  "faz3_aday_giris_sayilari": {
+    "kombinasyon_bazinda_ortusen_kanal": {
+      "H1_up": 7,
+      "H1_down": 18,
+      "M30_up": 19,
+      "M30_down": 18
+    },
+    "toplam_aday_giris_look_ahead_safe": 96976
+  },
+  "faz4_on_kontrol_maliyet_orani": {
+    "spread_median_pts": 27.0,
+    "atr14_median_pts": 287.71,
+    "slippage_tahmini_pts": 10.65,
+    "toplam_maliyet_pts": 37.65,
+    "sl_mult_grid": [
+      0.5,
+      0.75,
+      1.0
+    ],
+    "tp_mult_grid": [
+      1.0,
+      1.5,
+      2.0,
+      2.5,
+      3.0,
+      4.0
+    ],
+    "hucre_bazinda_sonuc": [
+      {
+        "tp_mult_atr": 1.0,
+        "temsili_tp_pts": 287.7,
+        "maliyet_orani": 7.64,
+        "gecti_mi_15x": false,
+        "gecti_mi_20x": false
+      },
+      {
+        "tp_mult_atr": 1.5,
+        "temsili_tp_pts": 431.6,
+        "maliyet_orani": 11.46,
+        "gecti_mi_15x": false,
+        "gecti_mi_20x": false
+      },
+      {
+        "tp_mult_atr": 2.0,
+        "temsili_tp_pts": 575.4,
+        "maliyet_orani": 15.29,
+        "gecti_mi_15x": true,
+        "gecti_mi_20x": false
+      },
+      {
+        "tp_mult_atr": 2.5,
+        "temsili_tp_pts": 719.3,
+        "maliyet_orani": 19.11,
+        "gecti_mi_15x": true,
+        "gecti_mi_20x": false
+      },
+      {
+        "tp_mult_atr": 3.0,
+        "temsili_tp_pts": 863.1,
+        "maliyet_orani": 22.93,
+        "gecti_mi_15x": true,
+        "gecti_mi_20x": true
+      },
+      {
+        "tp_mult_atr": 4.0,
+        "temsili_tp_pts": 1150.9,
+        "maliyet_orani": 30.57,
+        "gecti_mi_15x": true,
+        "gecti_mi_20x": true
+      }
+    ],
+    "on_kontrolu_gecen_tp_mult": [
+      2.0,
+      2.5,
+      3.0,
+      4.0
+    ],
+    "karar": "ANA_TESTE_GECILEBILIR"
+  },
+  "faz5_split_sinirlari": {
+    "train": {
+      "baslangic": "2022-04-18 21:15:00+00:00",
+      "bitis": "2024-05-31 07:45:00+00:00",
+      "gun": 773.4
+    },
+    "validation": {
+      "baslangic": "2024-07-15 07:45:00+00:00",
+      "bitis": "2025-08-06 01:00:00+00:00",
+      "gun": 386.7
+    },
+    "test": {
+      "baslangic": "2025-09-20 01:00:00+00:00",
+      "bitis": "2026-07-13 18:15:00+00:00",
+      "gun": 296.7
+    }
+  },
+  "faz5_cross_split_kanal_uyarisi": {
+    "cross_split_kanal_sayisi": 2,
+    "toplam_kanal": 140,
+    "not": "Giris-zamani (entry exec_idx) bazinda split atamasi yapilmistir (kanal-bazli purge DEGIL). Bir kanalin confirm ve break anlari farkli split'lere dusuyorsa, o kanalin erken girisleri Train'de, gec girisleri Validation/Test'te gorunebilir - bu, AYNI yapisal kanalin edge'inin birden fazla split'e sizmasi riskini tasir (zayif purge). Bu sayi yukaridaysa Validation/Test sonuclari o olcude daha az 'bagimsiz' okunmalidir - bu bir SINIRLAMA olarak asagida acikca raporlanir."
+  },
+  "faz5_aday_giris_split_dagilimi": {
+    "train": 51403,
+    "validation": 19393,
+    "test": 19762,
+    "embargo": 6418
+  },
+  "faz7_grid_tarama": [
+    {
+      "sl_mult": 0.5,
+      "tp_mult": 2.0,
+      "train": {
+        "n_trades": 11756,
+        "win_rate": 0.199,
+        "profit_factor": 0.6473,
+        "net_profit_usd": -89367.99,
+        "net_profit_pts": -433451.8,
+        "max_drawdown_pct": 4401.51,
+        "medyan_tutma_suresi_saat": 0.25,
+        "ortalama_tutma_suresi_saat": 0.69,
+        "p10_p90_tutma_suresi_saat": [
+          0.0,
+          1.75
+        ],
+        "cikis_nedeni_dagilimi": {
+          "SL": 9416,
+          "TP": 2340
+        }
+      },
+      "validation": {
+        "n_trades": 5188,
+        "win_rate": 0.1991,
+        "profit_factor": 0.7844,
+        "net_profit_usd": -20311.21,
+        "net_profit_pts": -195267.8,
+        "max_drawdown_pct": 932.8,
+        "medyan_tutma_suresi_saat": 0.25,
+        "ortalama_tutma_suresi_saat": 0.67,
+        "p10_p90_tutma_suresi_saat": [
+          0.0,
+          1.75
+        ],
+        "cikis_nedeni_dagilimi": {
+          "SL": 4155,
+          "TP": 1033
+        }
+      },
+      "train_overlap_skipped": 39647,
+      "validation_overlap_skipped": 14205
+    },
+    {
+      "sl_mult": 0.5,
+      "tp_mult": 2.5,
+      "train": {
+        "n_trades": 9370,
+        "win_rate": 0.1712,
+        "profit_factor": 0.6958,
+        "net_profit_usd": -62852.22,
+        "net_profit_pts": -316288.7,
+        "max_drawdown_pct": 3150.38,
+        "medyan_tutma_suresi_saat": 0.25,
+        "ortalama_tutma_suresi_saat": 0.95,
+        "p10_p90_tutma_suresi_saat": [
+          0.0,
+          2.25
+        ],
+        "cikis_nedeni_dagilimi": {
+          "SL": 7766,
+          "TP": 1604
+        }
+      },
+      "validation": {
+        "n_trades": 4303,
+        "win_rate": 0.1666,
+        "profit_factor": 0.8009,
+        "net_profit_usd": -16096.77,
+        "net_profit_pts": -153640.3,
+        "max_drawdown_pct": 737.06,
+        "medyan_tutma_suresi_saat": 0.25,
+        "ortalama_tutma_suresi_saat": 0.89,
+        "p10_p90_tutma_suresi_saat": [
+          0.0,
+          2.25
+        ],
+        "cikis_nedeni_dagilimi": {
+          "SL": 3586,
+          "TP": 717
+        }
+      },
+      "train_overlap_skipped": 42033,
+      "validation_overlap_skipped": 15090
+    },
+    {
+      "sl_mult": 0.5,
+      "tp_mult": 3.0,
+      "train": {
+        "n_trades": 8078,
+        "win_rate": 0.1508,
+        "profit_factor": 0.7292,
+        "net_profit_usd": -49316.84,
+        "net_profit_pts": -234197.0,
+        "max_drawdown_pct": 2465.84,
+        "medyan_tutma_suresi_saat": 0.25,
+        "ortalama_tutma_suresi_saat": 1.17,
+        "p10_p90_tutma_suresi_saat": [
+          0.0,
+          3.0
+        ],
+        "cikis_nedeni_dagilimi": {
+          "SL": 6860,
+          "TP": 1217,
+          "KIRILIM_ERKEN_CIKIS": 1
+        }
+      },
+      "validation": {
+        "n_trades": 3767,
+        "win_rate": 0.1452,
+        "profit_factor": 0.8246,
+        "net_profit_usd": -12703.34,
+        "net_profit_pts": -121707.1,
+        "max_drawdown_pct": 598.61,
+        "medyan_tutma_suresi_saat": 0.25,
+        "ortalama_tutma_suresi_saat": 1.08,
+        "p10_p90_tutma_suresi_saat": [
+          0.0,
+          3.0
+        ],
+        "cikis_nedeni_dagilimi": {
+          "SL": 3220,
+          "TP": 547
+        }
+      },
+      "train_overlap_skipped": 43325,
+      "validation_overlap_skipped": 15626
+    },
+    {
+      "sl_mult": 0.5,
+      "tp_mult": 4.0,
+      "train": {
+        "n_trades": 6182,
+        "win_rate": 0.1134,
+        "profit_factor": 0.7224,
+        "net_profit_usd": -39867.45,
+        "net_profit_pts": -197171.1,
+        "max_drawdown_pct": 1738.14,
+        "medyan_tutma_suresi_saat": 0.25,
+        "ortalama_tutma_suresi_saat": 1.63,
+        "p10_p90_tutma_suresi_saat": [
+          0.0,
+          4.25
+        ],
+        "cikis_nedeni_dagilimi": {
+          "SL": 5481,
+          "TP": 701
+        }
+      },
+      "validation": {
+        "n_trades": 2957,
+        "win_rate": 0.1157,
+        "profit_factor": 0.8544,
+        "net_profit_usd": -8530.2,
+        "net_profit_pts": -89717.7,
+        "max_drawdown_pct": 422.8,
+        "medyan_tutma_suresi_saat": 0.25,
+        "ortalama_tutma_suresi_saat": 1.5,
+        "p10_p90_tutma_suresi_saat": [
+          0.0,
+          4.25
+        ],
+        "cikis_nedeni_dagilimi": {
+          "SL": 2615,
+          "TP": 340,
+          "KIRILIM_ERKEN_CIKIS": 2
+        }
+      },
+      "train_overlap_skipped": 45221,
+      "validation_overlap_skipped": 16436
+    },
+    {
+      "sl_mult": 0.75,
+      "tp_mult": 2.0,
+      "train": {
+        "n_trades": 8526,
+        "win_rate": 0.2713,
+        "profit_factor": 0.7179,
+        "net_profit_usd": -41891.57,
+        "net_profit_pts": -310391.2,
+        "max_drawdown_pct": 2098.12,
+        "medyan_tutma_suresi_saat": 0.25,
+        "ortalama_tutma_suresi_saat": 1.07,
+        "p10_p90_tutma_suresi_saat": [
+          0.0,
+          2.5
+        ],
+        "cikis_nedeni_dagilimi": {
+          "SL": 6213,
+          "TP": 2312,
+          "KIRILIM_ERKEN_CIKIS": 1
+        }
+      },
+      "validation": {
+        "n_trades": 3861,
+        "win_rate": 0.2808,
+        "profit_factor": 0.8728,
+        "net_profit_usd": -7337.65,
+        "net_profit_pts": -94887.4,
+        "max_drawdown_pct": 357.14,
+        "medyan_tutma_suresi_saat": 0.5,
+        "ortalama_tutma_suresi_saat": 1.03,
+        "p10_p90_tutma_suresi_saat": [
+          0.0,
+          2.5
+        ],
+        "cikis_nedeni_dagilimi": {
+          "SL": 2777,
+          "TP": 1084
+        }
+      },
+      "train_overlap_skipped": 42877,
+      "validation_overlap_skipped": 15532
+    },
+    {
+      "sl_mult": 0.75,
+      "tp_mult": 2.5,
+      "train": {
+        "n_trades": 6805,
+        "win_rate": 0.2375,
+        "profit_factor": 0.7715,
+        "net_profit_usd": -28157.74,
+        "net_profit_pts": -200430.1,
+        "max_drawdown_pct": 1413.97,
+        "medyan_tutma_suresi_saat": 0.5,
+        "ortalama_tutma_suresi_saat": 1.44,
+        "p10_p90_tutma_suresi_saat": [
+          0.0,
+          3.5
+        ],
+        "cikis_nedeni_dagilimi": {
+          "SL": 5189,
+          "TP": 1615,
+          "KIRILIM_ERKEN_CIKIS": 1
+        }
+      },
+      "validation": {
+        "n_trades": 3079,
+        "win_rate": 0.2446,
+        "profit_factor": 0.9205,
+        "net_profit_usd": -3811.86,
+        "net_profit_pts": -58599.8,
+        "max_drawdown_pct": 216.13,
+        "medyan_tutma_suresi_saat": 0.5,
+        "ortalama_tutma_suresi_saat": 1.41,
+        "p10_p90_tutma_suresi_saat": [
+          0.0,
+          3.75
+        ],
+        "cikis_nedeni_dagilimi": {
+          "SL": 2326,
+          "TP": 753
+        }
+      },
+      "train_overlap_skipped": 44598,
+      "validation_overlap_skipped": 16314
+    },
+    {
+      "sl_mult": 0.75,
+      "tp_mult": 3.0,
+      "train": {
+        "n_trades": 5884,
+        "win_rate": 0.2048,
+        "profit_factor": 0.7773,
+        "net_profit_usd": -24693.34,
+        "net_profit_pts": -165368.2,
+        "max_drawdown_pct": 1234.67,
+        "medyan_tutma_suresi_saat": 0.5,
+        "ortalama_tutma_suresi_saat": 1.73,
+        "p10_p90_tutma_suresi_saat": [
+          0.0,
+          4.25
+        ],
+        "cikis_nedeni_dagilimi": {
+          "SL": 4679,
+          "TP": 1204,
+          "KIRILIM_ERKEN_CIKIS": 1
+        }
+      },
+      "validation": {
+        "n_trades": 2719,
+        "win_rate": 0.2045,
+        "profit_factor": 0.8796,
+        "net_profit_usd": -5377.38,
+        "net_profit_pts": -76105.2,
+        "max_drawdown_pct": 270.62,
+        "medyan_tutma_suresi_saat": 0.5,
+        "ortalama_tutma_suresi_saat": 1.67,
+        "p10_p90_tutma_suresi_saat": [
+          0.0,
+          4.5
+        ],
+        "cikis_nedeni_dagilimi": {
+          "SL": 2163,
+          "TP": 556
+        }
+      },
+      "train_overlap_skipped": 45519,
+      "validation_overlap_skipped": 16674
+    },
+    {
+      "sl_mult": 0.75,
+      "tp_mult": 4.0,
+      "train": {
+        "n_trades": 4338,
+        "win_rate": 0.1625,
+        "profit_factor": 0.7983,
+        "net_profit_usd": -17218.45,
+        "net_profit_pts": -112218.9,
+        "max_drawdown_pct": 862.57,
+        "medyan_tutma_suresi_saat": 0.5,
+        "ortalama_tutma_suresi_saat": 2.48,
+        "p10_p90_tutma_suresi_saat": [
+          0.0,
+          6.58
+        ],
+        "cikis_nedeni_dagilimi": {
+          "SL": 3633,
+          "TP": 703,
+          "KIRILIM_ERKEN_CIKIS": 2
+        }
+      },
+      "validation": {
+        "n_trades": 2122,
+        "win_rate": 0.164,
+        "profit_factor": 0.8983,
+        "net_profit_usd": -3734.25,
+        "net_profit_pts": -45961.0,
+        "max_drawdown_pct": 190.07,
+        "medyan_tutma_suresi_saat": 0.75,
+        "ortalama_tutma_suresi_saat": 2.26,
+        "p10_p90_tutma_suresi_saat": [
+          0.0,
+          6.5
+        ],
+        "cikis_nedeni_dagilimi": {
+          "SL": 1774,
+          "TP": 346,
+          "KIRILIM_ERKEN_CIKIS": 2
+        }
+      },
+      "train_overlap_skipped": 47065,
+      "validation_overlap_skipped": 17271
+    },
+    {
+      "sl_mult": 1.0,
+      "tp_mult": 2.0,
+      "train": {
+        "n_trades": 6618,
+        "win_rate": 0.3342,
+        "profit_factor": 0.767,
+        "net_profit_usd": -22864.65,
+        "net_profit_pts": -226635.8,
+        "max_drawdown_pct": 1146.02,
+        "medyan_tutma_suresi_saat": 0.5,
+        "ortalama_tutma_suresi_saat": 1.49,
+        "p10_p90_tutma_suresi_saat": [
+          0.0,
+          3.5
+        ],
+        "cikis_nedeni_dagilimi": {
+          "SL": 4406,
+          "TP": 2211,
+          "KIRILIM_ERKEN_CIKIS": 1
+        }
+      },
+      "validation": {
+        "n_trades": 3073,
+        "win_rate": 0.3456,
+        "profit_factor": 0.9148,
+        "net_profit_usd": -3331.25,
+        "net_profit_pts": -62943.4,
+        "max_drawdown_pct": 187.72,
+        "medyan_tutma_suresi_saat": 0.5,
+        "ortalama_tutma_suresi_saat": 1.4,
+        "p10_p90_tutma_suresi_saat": [
+          0.0,
+          3.5
+        ],
+        "cikis_nedeni_dagilimi": {
+          "SL": 2010,
+          "TP": 1062,
+          "KIRILIM_ERKEN_CIKIS": 1
+        }
+      },
+      "train_overlap_skipped": 44785,
+      "validation_overlap_skipped": 16320
+    },
+    {
+      "sl_mult": 1.0,
+      "tp_mult": 2.5,
+      "train": {
+        "n_trades": 5336,
+        "win_rate": 0.2832,
+        "profit_factor": 0.775,
+        "net_profit_usd": -19058.32,
+        "net_profit_pts": -197871.3,
+        "max_drawdown_pct": 957.32,
+        "medyan_tutma_suresi_saat": 0.75,
+        "ortalama_tutma_suresi_saat": 1.94,
+        "p10_p90_tutma_suresi_saat": [
+          0.0,
+          4.75
+        ],
+        "cikis_nedeni_dagilimi": {
+          "SL": 3825,
+          "TP": 1510,
+          "KIRILIM_ERKEN_CIKIS": 1
+        }
+      },
+      "validation": {
+        "n_trades": 2470,
+        "win_rate": 0.2939,
+        "profit_factor": 0.9111,
+        "net_profit_usd": -3002.24,
+        "net_profit_pts": -59907.2,
+        "max_drawdown_pct": 169.38,
+        "medyan_tutma_suresi_saat": 0.75,
+        "ortalama_tutma_suresi_saat": 1.85,
+        "p10_p90_tutma_suresi_saat": [
+          0.0,
+          5.0
+        ],
+        "cikis_nedeni_dagilimi": {
+          "SL": 1743,
+          "TP": 726,
+          "KIRILIM_ERKEN_CIKIS": 1
+        }
+      },
+      "train_overlap_skipped": 46067,
+      "validation_overlap_skipped": 16923
+    },
+    {
+      "sl_mult": 1.0,
+      "tp_mult": 3.0,
+      "train": {
+        "n_trades": 4447,
+        "win_rate": 0.248,
+        "profit_factor": 0.7898,
+        "net_profit_usd": -15468.04,
+        "net_profit_pts": -153504.3,
+        "max_drawdown_pct": 773.4,
+        "medyan_tutma_suresi_saat": 0.75,
+        "ortalama_tutma_suresi_saat": 2.41,
+        "p10_p90_tutma_suresi_saat": [
+          0.0,
+          6.25
+        ],
+        "cikis_nedeni_dagilimi": {
+          "SL": 3344,
+          "TP": 1102,
+          "KIRILIM_ERKEN_CIKIS": 1
+        }
+      },
+      "validation": {
+        "n_trades": 2141,
+        "win_rate": 0.256,
+        "profit_factor": 0.9065,
+        "net_profit_usd": -2889.64,
+        "net_profit_pts": -38771.6,
+        "max_drawdown_pct": 178.0,
+        "medyan_tutma_suresi_saat": 1.0,
+        "ortalama_tutma_suresi_saat": 2.22,
+        "p10_p90_tutma_suresi_saat": [
+          0.0,
+          6.0
+        ],
+        "cikis_nedeni_dagilimi": {
+          "SL": 1592,
+          "TP": 548,
+          "KIRILIM_ERKEN_CIKIS": 1
+        }
+      },
+      "train_overlap_skipped": 46956,
+      "validation_overlap_skipped": 17252
+    },
+    {
+      "sl_mult": 1.0,
+      "tp_mult": 4.0,
+      "train": {
+        "n_trades": 3322,
+        "win_rate": 0.2002,
+        "profit_factor": 0.8138,
+        "net_profit_usd": -10830.56,
+        "net_profit_pts": -98986.1,
+        "max_drawdown_pct": 564.67,
+        "medyan_tutma_suresi_saat": 1.0,
+        "ortalama_tutma_suresi_saat": 3.36,
+        "p10_p90_tutma_suresi_saat": [
+          0.0,
+          10.0
+        ],
+        "cikis_nedeni_dagilimi": {
+          "SL": 2657,
+          "TP": 663,
+          "KIRILIM_ERKEN_CIKIS": 2
+        }
+      },
+      "validation": {
+        "n_trades": 1693,
+        "win_rate": 0.1991,
+        "profit_factor": 0.8782,
+        "net_profit_usd": -3189.55,
+        "net_profit_pts": -43954.3,
+        "max_drawdown_pct": 172.45,
+        "medyan_tutma_suresi_saat": 1.0,
+        "ortalama_tutma_suresi_saat": 2.95,
+        "p10_p90_tutma_suresi_saat": [
+          0.0,
+          8.25
+        ],
+        "cikis_nedeni_dagilimi": {
+          "SL": 1356,
+          "TP": 335,
+          "KIRILIM_ERKEN_CIKIS": 2
+        }
+      },
+      "train_overlap_skipped": 48081,
+      "validation_overlap_skipped": 17700
+    }
+  ],
+  "faz7_secim": {
+    "secilen_sl_mult": 0.75,
+    "secilen_tp_mult": 2.5,
+    "secim_notu": "Validation'da PF'ye gore secildi (n>=30 sarti saglayan 12 hucre arasindan).",
+    "min_trades_esigi": 30
+  },
+  "faz7_final_sonuclar": {
+    "train": {
+      "n_trades": 6805,
+      "win_rate": 0.2375,
+      "profit_factor": 0.7715,
+      "net_profit_usd": -28157.74,
+      "net_profit_pts": -200430.1,
+      "max_drawdown_pct": 1413.97,
+      "medyan_tutma_suresi_saat": 0.5,
+      "ortalama_tutma_suresi_saat": 1.44,
+      "p10_p90_tutma_suresi_saat": [
+        0.0,
+        3.5
+      ],
+      "cikis_nedeni_dagilimi": {
+        "SL": 5189,
+        "TP": 1615,
+        "KIRILIM_ERKEN_CIKIS": 1
+      }
+    },
+    "validation": {
+      "n_trades": 3079,
+      "win_rate": 0.2446,
+      "profit_factor": 0.9205,
+      "net_profit_usd": -3811.86,
+      "net_profit_pts": -58599.8,
+      "max_drawdown_pct": 216.13,
+      "medyan_tutma_suresi_saat": 0.5,
+      "ortalama_tutma_suresi_saat": 1.41,
+      "p10_p90_tutma_suresi_saat": [
+        0.0,
+        3.75
+      ],
+      "cikis_nedeni_dagilimi": {
+        "SL": 2326,
+        "TP": 753
+      }
+    },
+    "test": {
+      "n_trades": 2699,
+      "win_rate": 0.2256,
+      "profit_factor": 0.9197,
+      "net_profit_usd": -2982.52,
+      "net_profit_pts": -202333.7,
+      "max_drawdown_pct": 134.26,
+      "medyan_tutma_suresi_saat": 0.5,
+      "ortalama_tutma_suresi_saat": 1.29,
+      "p10_p90_tutma_suresi_saat": [
+        0.0,
+        3.5
+      ],
+      "cikis_nedeni_dagilimi": {
+        "SL": 2089,
+        "TP": 608,
+        "KIRILIM_ERKEN_CIKIS": 1,
+        "VERI_SONU_ACIK": 1
+      }
+    },
+    "tam_donem_birlesik": {
+      "n_trades": 13486,
+      "win_rate": 0.2345,
+      "profit_factor": 0.8222,
+      "net_profit_usd": -39816.66,
+      "net_profit_pts": -520432.3,
+      "max_drawdown_pct": 1999.59,
+      "medyan_tutma_suresi_saat": 0.5,
+      "ortalama_tutma_suresi_saat": 1.39,
+      "p10_p90_tutma_suresi_saat": [
+        0.0,
+        3.5
+      ],
+      "cikis_nedeni_dagilimi": {
+        "SL": 10323,
+        "TP": 3160,
+        "KIRILIM_ERKEN_CIKIS": 2,
+        "VERI_SONU_ACIK": 1
+      }
+    },
+    "overlap_skipped": {
+      "train": 44598,
+      "validation": 16314,
+      "test": 17063,
+      "tam_donem": 83490
+    },
+    "kanal_kirilmis_giris_reddi": {
+      "train": 0,
+      "validation": 0,
+      "test": 0,
+      "tam_donem": 0
+    }
+  },
+  "faz8_kirilim_erken_cikis_dogrulama": {
+    "toplam_kirilim_cikisi": 2,
+    "toplam_islem_tam_donem": 13486,
+    "oran": 0.0001,
+    "ornek_islemler": [
+      {
+        "entry_time": "2024-03-05 17:30:00+00:00",
+        "exit_time": "2024-03-06 09:00:00+00:00",
+        "direction": "down",
+        "tf_source": "H1",
+        "hold_hours": 14.5,
+        "net_pnl_pts": 167.35,
+        "dogrulama": "exit_time, ilgili kanalin break_known_time'indan (kanalin H1/M30 kapanisiyla kirildigi + bar suresi) SONRA veya AYNI ana denk gelmeli, VE bu bardan once SL/TP tetiklenmemis olmali (kod: 'j' dongusu SL/TP kontrolunu break kontrolunden ONCE yapiyor, ayni bar icinde SL/TP varsa erken-cikisten ONCELIKLIDIR)."
+      },
+      {
+        "entry_time": "2026-05-27 17:00:00+00:00",
+        "exit_time": "2026-05-28 02:00:00+00:00",
+        "direction": "up",
+        "tf_source": "M30",
+        "hold_hours": 8.0,
+        "net_pnl_pts": 2572.35,
+        "dogrulama": "exit_time, ilgili kanalin break_known_time'indan (kanalin H1/M30 kapanisiyla kirildigi + bar suresi) SONRA veya AYNI ana denk gelmeli, VE bu bardan once SL/TP tetiklenmemis olmali (kod: 'j' dongusu SL/TP kontrolunu break kontrolunden ONCE yapiyor, ayni bar icinde SL/TP varsa erken-cikisten ONCELIKLIDIR)."
+      }
+    ],
+    "yontem_notu": "Kod, her M15 barinda SIRASIYLA (1) SL, (2) TP, (3) kanal-kirilim-bilgisi-var-mi kontrolu yapar (bkz. simulate_trades ic dongusu) - ayni barda SL/TP VE kirilim AYNI ANDA gecerliyse SL/TP ONCELIKLIDIR (muhafazakar/gercekci varsayim: fiyat seviyesi tetikleri, 'kanal artik geçersiz' bilgisinden once tetiklenmis olur). Bu, Stratejist'in 'SL/TP/kirilim - HANGISI ONCE gerceklesirse' tanimiyla TUTARLIDIR."
+  },
+  "faz9_islem_frekansi": {
+    "islem_ay_sayisi_tam_donem": 259.35,
+    "islem_yil_sayisi_tam_donem": 3186.13,
+    "toplam_islem_tam_donem": 13486
+  },
+  "faz9_kirilim_tf_kaynagi": {
+    "M30": {
+      "n": 4634,
+      "win_rate": 0.2356,
+      "profit_factor_pts_bazli": 0.8751,
+      "net_pts": -146536.2
+    },
+    "H1": {
+      "n": 8852,
+      "win_rate": 0.2338,
+      "profit_factor_pts_bazli": 0.8806,
+      "net_pts": -373896.1
+    }
+  },
+  "faz9_kirilim_yon": {
+    "down": {
+      "n": 6591,
+      "win_rate": 0.2302,
+      "profit_factor_pts_bazli": 0.8556,
+      "net_pts": -282857.5
+    },
+    "up": {
+      "n": 6895,
+      "win_rate": 0.2386,
+      "profit_factor_pts_bazli": 0.8987,
+      "net_pts": -237574.9
+    }
+  },
+  "islem_logu_ornek": [
+    {
+      "entry_idx": 15,
+      "exit_idx": 19,
+      "entry_time": "2022-04-19 02:00:00+00:00",
+      "exit_time": "2022-04-19 03:00:00+00:00",
+      "direction": "down",
+      "tf_source": "M30",
+      "sl_pts": 127.2,
+      "tp_pts": 423.9,
+      "exit_reason": "SL",
+      "gross_pnl_pts": -127.18,
+      "net_pnl_pts": -164.82,
+      "lot": 0.15,
+      "pnl_usd": -24.7236,
+      "hold_bars_m15": 4,
+      "hold_hours": 1.0,
+      "split": "train"
+    },
+    {
+      "entry_idx": 20,
+      "exit_idx": 21,
+      "entry_time": "2022-04-19 03:15:00+00:00",
+      "exit_time": "2022-04-19 03:30:00+00:00",
+      "direction": "up",
+      "tf_source": "H1",
+      "sl_pts": 100.3,
+      "tp_pts": 334.5,
+      "exit_reason": "SL",
+      "gross_pnl_pts": -100.34,
+      "net_pnl_pts": -137.98,
+      "lot": 0.19,
+      "pnl_usd": -26.2171,
+      "hold_bars_m15": 1,
+      "hold_hours": 0.25,
+      "split": "train"
+    },
+    {
+      "entry_idx": 23,
+      "exit_idx": 23,
+      "entry_time": "2022-04-19 04:00:00+00:00",
+      "exit_time": "2022-04-19 04:00:00+00:00",
+      "direction": "down",
+      "tf_source": "M30",
+      "sl_pts": 106.7,
+      "tp_pts": 355.7,
+      "exit_reason": "SL",
+      "gross_pnl_pts": -106.71,
+      "net_pnl_pts": -144.36,
+      "lot": 0.18,
+      "pnl_usd": -25.9847,
+      "hold_bars_m15": 0,
+      "hold_hours": 0.0,
+      "split": "train"
+    },
+    {
+      "entry_idx": 24,
+      "exit_idx": 24,
+      "entry_time": "2022-04-19 04:15:00+00:00",
+      "exit_time": "2022-04-19 04:15:00+00:00",
+      "direction": "down",
+      "tf_source": "M30",
+      "sl_pts": 110.8,
+      "tp_pts": 369.5,
+      "exit_reason": "SL",
+      "gross_pnl_pts": -110.84,
+      "net_pnl_pts": -148.48,
+      "lot": 0.18,
+      "pnl_usd": -26.7272,
+      "hold_bars_m15": 0,
+      "hold_hours": 0.0,
+      "split": "train"
+    },
+    {
+      "entry_idx": 25,
+      "exit_idx": 38,
+      "entry_time": "2022-04-19 04:30:00+00:00",
+      "exit_time": "2022-04-19 07:45:00+00:00",
+      "direction": "up",
+      "tf_source": "H1",
+      "sl_pts": 109.6,
+      "tp_pts": 365.4,
+      "exit_reason": "SL",
+      "gross_pnl_pts": -109.61,
+      "net_pnl_pts": -147.25,
+      "lot": 0.18,
+      "pnl_usd": -26.5055,
+      "hold_bars_m15": 13,
+      "hold_hours": 3.25,
+      "split": "train"
+    },
+    {
+      "entry_idx": 39,
+      "exit_idx": 44,
+      "entry_time": "2022-04-19 08:00:00+00:00",
+      "exit_time": "2022-04-19 09:15:00+00:00",
+      "direction": "down",
+      "tf_source": "M30",
+      "sl_pts": 108.9,
+      "tp_pts": 363.0,
+      "exit_reason": "SL",
+      "gross_pnl_pts": -108.91,
+      "net_pnl_pts": -146.56,
+      "lot": 0.18,
+      "pnl_usd": -26.3801,
+      "hold_bars_m15": 5,
+      "hold_hours": 1.25,
+      "split": "train"
+    },
+    {
+      "entry_idx": 45,
+      "exit_idx": 45,
+      "entry_time": "2022-04-19 09:30:00+00:00",
+      "exit_time": "2022-04-19 09:30:00+00:00",
+      "direction": "up",
+      "tf_source": "H1",
+      "sl_pts": 117.9,
+      "tp_pts": 393.0,
+      "exit_reason": "SL",
+      "gross_pnl_pts": -117.91,
+      "net_pnl_pts": -155.56,
+      "lot": 0.16,
+      "pnl_usd": -24.889,
+      "hold_bars_m15": 0,
+      "hold_hours": 0.0,
+      "split": "train"
+    },
+    {
+      "entry_idx": 46,
+      "exit_idx": 47,
+      "entry_time": "2022-04-19 09:45:00+00:00",
+      "exit_time": "2022-04-19 10:00:00+00:00",
+      "direction": "down",
+      "tf_source": "M30",
+      "sl_pts": 123.0,
+      "tp_pts": 410.0,
+      "exit_reason": "SL",
+      "gross_pnl_pts": -123.0,
+      "net_pnl_pts": -160.65,
+      "lot": 0.16,
+      "pnl_usd": -25.7033,
+      "hold_bars_m15": 1,
+      "hold_hours": 0.25,
+      "split": "train"
+    },
+    {
+      "entry_idx": 48,
+      "exit_idx": 58,
+      "entry_time": "2022-04-19 10:15:00+00:00",
+      "exit_time": "2022-04-19 12:45:00+00:00",
+      "direction": "up",
+      "tf_source": "H1",
+      "sl_pts": 137.3,
+      "tp_pts": 457.7,
+      "exit_reason": "SL",
+      "gross_pnl_pts": -137.3,
+      "net_pnl_pts": -174.95,
+      "lot": 0.14,
+      "pnl_usd": -24.4929,
+      "hold_bars_m15": 10,
+      "hold_hours": 2.5,
+      "split": "train"
+    },
+    {
+      "entry_idx": 59,
+      "exit_idx": 59,
+      "entry_time": "2022-04-19 13:00:00+00:00",
+      "exit_time": "2022-04-19 13:00:00+00:00",
+      "direction": "up",
+      "tf_source": "H1",
+      "sl_pts": 189.5,
+      "tp_pts": 631.8,
+      "exit_reason": "SL",
+      "gross_pnl_pts": -189.54,
+      "net_pnl_pts": -227.18,
+      "lot": 0.1,
+      "pnl_usd": -22.7181,
+      "hold_bars_m15": 0,
+      "hold_hours": 0.0,
+      "split": "train"
+    },
+    {
+      "entry_idx": 60,
+      "exit_idx": 62,
+      "entry_time": "2022-04-19 13:15:00+00:00",
+      "exit_time": "2022-04-19 13:45:00+00:00",
+      "direction": "down",
+      "tf_source": "M30",
+      "sl_pts": 195.5,
+      "tp_pts": 651.6,
+      "exit_reason": "SL",
+      "gross_pnl_pts": -195.48,
+      "net_pnl_pts": -233.13,
+      "lot": 0.1,
+      "pnl_usd": -23.3128,
+      "hold_bars_m15": 2,
+      "hold_hours": 0.5,
+      "split": "train"
+    },
+    {
+      "entry_idx": 63,
+      "exit_idx": 69,
+      "entry_time": "2022-04-19 14:00:00+00:00",
+      "exit_time": "2022-04-19 15:30:00+00:00",
+      "direction": "up",
+      "tf_source": "H1",
+      "sl_pts": 182.1,
+      "tp_pts": 607.1,
+      "exit_reason": "SL",
+      "gross_pnl_pts": -182.14,
+      "net_pnl_pts": -219.79,
+      "lot": 0.1,
+      "pnl_usd": -21.9788,
+      "hold_bars_m15": 6,
+      "hold_hours": 1.5,
+      "split": "train"
+    },
+    {
+      "entry_idx": 70,
+      "exit_idx": 71,
+      "entry_time": "2022-04-19 15:45:00+00:00",
+      "exit_time": "2022-04-19 16:00:00+00:00",
+      "direction": "down",
+      "tf_source": "M30",
+      "sl_pts": 220.7,
+      "tp_pts": 735.7,
+      "exit_reason": "TP",
+      "gross_pnl_pts": 735.71,
+      "net_pnl_pts": 698.07,
+      "lot": 0.09,
+      "pnl_usd": 62.8262,
+      "hold_bars_m15": 1,
+      "hold_hours": 0.25,
+      "split": "train"
+    },
+    {
+      "entry_idx": 72,
+      "exit_idx": 73,
+      "entry_time": "2022-04-19 16:15:00+00:00",
+      "exit_time": "2022-04-19 16:30:00+00:00",
+      "direction": "down",
+      "tf_source": "M30",
+      "sl_pts": 271.7,
+      "tp_pts": 905.5,
+      "exit_reason": "SL",
+      "gross_pnl_pts": -271.66,
+      "net_pnl_pts": -309.31,
+      "lot": 0.07,
+      "pnl_usd": -21.6514,
+      "hold_bars_m15": 1,
+      "hold_hours": 0.25,
+      "split": "train"
+    },
+    {
+      "entry_idx": 74,
+      "exit_idx": 74,
+      "entry_time": "2022-04-19 16:45:00+00:00",
+      "exit_time": "2022-04-19 16:45:00+00:00",
+      "direction": "up",
+      "tf_source": "H1",
+      "sl_pts": 325.5,
+      "tp_pts": 1085.0,
+      "exit_reason": "SL",
+      "gross_pnl_pts": -325.5,
+      "net_pnl_pts": -363.15,
+      "lot": 0.06,
+      "pnl_usd": -21.7887,
+      "hold_bars_m15": 0,
+      "hold_hours": 0.0,
+      "split": "train"
+    },
+    {
+      "entry_idx": 75,
+      "exit_idx": 77,
+      "entry_time": "2022-04-19 17:00:00+00:00",
+      "exit_time": "2022-04-19 17:30:00+00:00",
+      "direction": "down",
+      "tf_source": "M30",
+      "sl_pts": 342.7,
+      "tp_pts": 1142.3,
+      "exit_reason": "TP",
+      "gross_pnl_pts": 1142.32,
+      "net_pnl_pts": 1104.68,
+      "lot": 0.05,
+      "pnl_usd": 55.2338,
+      "hold_bars_m15": 2,
+      "hold_hours": 0.5,
+      "split": "train"
+    },
+    {
+      "entry_idx": 78,
+      "exit_idx": 78,
+      "entry_time": "2022-04-19 17:45:00+00:00",
+      "exit_time": "2022-04-19 17:45:00+00:00",
+      "direction": "down",
+      "tf_source": "M30",
+      "sl_pts": 410.0,
+      "tp_pts": 1366.8,
+      "exit_reason": "SL",
+      "gross_pnl_pts": -410.04,
+      "net_pnl_pts": -447.68,
+      "lot": 0.04,
+      "pnl_usd": -17.9072,
+      "hold_bars_m15": 0,
+      "hold_hours": 0.0,
+      "split": "train"
+    },
+    {
+      "entry_idx": 79,
+      "exit_idx": 80,
+      "entry_time": "2022-04-19 18:00:00+00:00",
+      "exit_time": "2022-04-19 18:15:00+00:00",
+      "direction": "up",
+      "tf_source": "H1",
+      "sl_pts": 424.8,
+      "tp_pts": 1415.9,
+      "exit_reason": "SL",
+      "gross_pnl_pts": -424.77,
+      "net_pnl_pts": -462.41,
+      "lot": 0.04,
+      "pnl_usd": -18.4965,
+      "hold_bars_m15": 1,
+      "hold_hours": 0.25,
+      "split": "train"
+    },
+    {
+      "entry_idx": 81,
+      "exit_idx": 83,
+      "entry_time": "2022-04-19 18:30:00+00:00",
+      "exit_time": "2022-04-19 19:00:00+00:00",
+      "direction": "down",
+      "tf_source": "M30",
+      "sl_pts": 449.6,
+      "tp_pts": 1498.8,
+      "exit_reason": "SL",
+      "gross_pnl_pts": -449.62,
+      "net_pnl_pts": -487.27,
+      "lot": 0.04,
+      "pnl_usd": -19.4908,
+      "hold_bars_m15": 2,
+      "hold_hours": 0.5,
+      "split": "train"
+    },
+    {
+      "entry_idx": 84,
+      "exit_idx": 127,
+      "entry_time": "2022-04-19 19:15:00+00:00",
+      "exit_time": "2022-04-20 07:00:00+00:00",
+      "direction": "down",
+      "tf_source": "M30",
+      "sl_pts": 409.3,
+      "tp_pts": 1364.5,
+      "exit_reason": "TP",
+      "gross_pnl_pts": 1364.46,
+      "net_pnl_pts": 1326.82,
+      "lot": 0.04,
+      "pnl_usd": 53.0728,
+      "hold_bars_m15": 43,
+      "hold_hours": 10.75,
+      "split": "train"
+    },
+    {
+      "entry_idx": 99926,
+      "exit_idx": 99929,
+      "entry_time": "2026-07-10 23:15:00+00:00",
+      "exit_time": "2026-07-13 01:00:00+00:00",
+      "direction": "up",
+      "tf_source": "H1",
+      "sl_pts": 320.8,
+      "tp_pts": 1069.5,
+      "exit_reason": "SL",
+      "gross_pnl_pts": -320.84,
+      "net_pnl_pts": -358.48,
+      "lot": 0.06,
+      "pnl_usd": -21.5091,
+      "hold_bars_m15": 3,
+      "hold_hours": 0.75,
+      "split": "test"
+    },
+    {
+      "entry_idx": 99930,
+      "exit_idx": 99930,
+      "entry_time": "2026-07-13 01:15:00+00:00",
+      "exit_time": "2026-07-13 01:15:00+00:00",
+      "direction": "down",
+      "tf_source": "H1",
+      "sl_pts": 526.1,
+      "tp_pts": 1753.8,
+      "exit_reason": "SL",
+      "gross_pnl_pts": -526.13,
+      "net_pnl_pts": -563.77,
+      "lot": 0.03,
+      "pnl_usd": -16.9131,
+      "hold_bars_m15": 0,
+      "hold_hours": 0.0,
+      "split": "test"
+    },
+    {
+      "entry_idx": 99931,
+      "exit_idx": 99931,
+      "entry_time": "2026-07-13 01:30:00+00:00",
+      "exit_time": "2026-07-13 01:30:00+00:00",
+      "direction": "up",
+      "tf_source": "H1",
+      "sl_pts": 542.4,
+      "tp_pts": 1807.9,
+      "exit_reason": "SL",
+      "gross_pnl_pts": -542.36,
+      "net_pnl_pts": -580.0,
+      "lot": 0.03,
+      "pnl_usd": -17.4001,
+      "hold_bars_m15": 0,
+      "hold_hours": 0.0,
+      "split": "test"
+    },
+    {
+      "entry_idx": 99932,
+      "exit_idx": 99936,
+      "entry_time": "2026-07-13 01:45:00+00:00",
+      "exit_time": "2026-07-13 02:45:00+00:00",
+      "direction": "down",
+      "tf_source": "H1",
+      "sl_pts": 560.3,
+      "tp_pts": 1867.7,
+      "exit_reason": "SL",
+      "gross_pnl_pts": -560.3,
+      "net_pnl_pts": -597.95,
+      "lot": 0.03,
+      "pnl_usd": -17.9385,
+      "hold_bars_m15": 4,
+      "hold_hours": 1.0,
+      "split": "test"
+    },
+    {
+      "entry_idx": 99937,
+      "exit_idx": 99938,
+      "entry_time": "2026-07-13 03:00:00+00:00",
+      "exit_time": "2026-07-13 03:15:00+00:00",
+      "direction": "up",
+      "tf_source": "H1",
+      "sl_pts": 688.7,
+      "tp_pts": 2295.5,
+      "exit_reason": "SL",
+      "gross_pnl_pts": -688.66,
+      "net_pnl_pts": -726.31,
+      "lot": 0.02,
+      "pnl_usd": -14.5261,
+      "hold_bars_m15": 1,
+      "hold_hours": 0.25,
+      "split": "test"
+    },
+    {
+      "entry_idx": 99939,
+      "exit_idx": 99943,
+      "entry_time": "2026-07-13 03:30:00+00:00",
+      "exit_time": "2026-07-13 04:30:00+00:00",
+      "direction": "down",
+      "tf_source": "H1",
+      "sl_pts": 765.2,
+      "tp_pts": 2550.7,
+      "exit_reason": "SL",
+      "gross_pnl_pts": -765.21,
+      "net_pnl_pts": -802.86,
+      "lot": 0.02,
+      "pnl_usd": -16.0572,
+      "hold_bars_m15": 4,
+      "hold_hours": 1.0,
+      "split": "test"
+    },
+    {
+      "entry_idx": 99944,
+      "exit_idx": 99944,
+      "entry_time": "2026-07-13 04:45:00+00:00",
+      "exit_time": "2026-07-13 04:45:00+00:00",
+      "direction": "up",
+      "tf_source": "H1",
+      "sl_pts": 771.5,
+      "tp_pts": 2571.6,
+      "exit_reason": "SL",
+      "gross_pnl_pts": -771.48,
+      "net_pnl_pts": -809.13,
+      "lot": 0.02,
+      "pnl_usd": -16.1826,
+      "hold_bars_m15": 0,
+      "hold_hours": 0.0,
+      "split": "test"
+    },
+    {
+      "entry_idx": 99945,
+      "exit_idx": 99961,
+      "entry_time": "2026-07-13 05:00:00+00:00",
+      "exit_time": "2026-07-13 09:00:00+00:00",
+      "direction": "down",
+      "tf_source": "H1",
+      "sl_pts": 839.6,
+      "tp_pts": 2798.8,
+      "exit_reason": "TP",
+      "gross_pnl_pts": 2798.75,
+      "net_pnl_pts": 2761.1,
+      "lot": 0.02,
+      "pnl_usd": 55.2221,
+      "hold_bars_m15": 16,
+      "hold_hours": 4.0,
+      "split": "test"
+    },
+    {
+      "entry_idx": 99962,
+      "exit_idx": 99962,
+      "entry_time": "2026-07-13 09:15:00+00:00",
+      "exit_time": "2026-07-13 09:15:00+00:00",
+      "direction": "down",
+      "tf_source": "H1",
+      "sl_pts": 688.9,
+      "tp_pts": 2296.3,
+      "exit_reason": "SL",
+      "gross_pnl_pts": -688.88,
+      "net_pnl_pts": -726.52,
+      "lot": 0.02,
+      "pnl_usd": -14.5304,
+      "hold_bars_m15": 0,
+      "hold_hours": 0.0,
+      "split": "test"
+    },
+    {
+      "entry_idx": 99963,
+      "exit_idx": 99964,
+      "entry_time": "2026-07-13 09:30:00+00:00",
+      "exit_time": "2026-07-13 09:45:00+00:00",
+      "direction": "up",
+      "tf_source": "H1",
+      "sl_pts": 720.3,
+      "tp_pts": 2400.9,
+      "exit_reason": "SL",
+      "gross_pnl_pts": -720.27,
+      "net_pnl_pts": -757.91,
+      "lot": 0.02,
+      "pnl_usd": -15.1583,
+      "hold_bars_m15": 1,
+      "hold_hours": 0.25,
+      "split": "test"
+    },
+    {
+      "entry_idx": 99965,
+      "exit_idx": 99967,
+      "entry_time": "2026-07-13 10:00:00+00:00",
+      "exit_time": "2026-07-13 10:30:00+00:00",
+      "direction": "down",
+      "tf_source": "H1",
+      "sl_pts": 682.2,
+      "tp_pts": 2273.9,
+      "exit_reason": "SL",
+      "gross_pnl_pts": -682.18,
+      "net_pnl_pts": -719.82,
+      "lot": 0.02,
+      "pnl_usd": -14.3965,
+      "hold_bars_m15": 2,
+      "hold_hours": 0.5,
+      "split": "test"
+    },
+    {
+      "entry_idx": 99968,
+      "exit_idx": 99968,
+      "entry_time": "2026-07-13 10:45:00+00:00",
+      "exit_time": "2026-07-13 10:45:00+00:00",
+      "direction": "down",
+      "tf_source": "H1",
+      "sl_pts": 713.5,
+      "tp_pts": 2378.2,
+      "exit_reason": "SL",
+      "gross_pnl_pts": -713.46,
+      "net_pnl_pts": -751.11,
+      "lot": 0.02,
+      "pnl_usd": -15.0222,
+      "hold_bars_m15": 0,
+      "hold_hours": 0.0,
+      "split": "test"
+    },
+    {
+      "entry_idx": 99969,
+      "exit_idx": 99979,
+      "entry_time": "2026-07-13 11:00:00+00:00",
+      "exit_time": "2026-07-13 13:30:00+00:00",
+      "direction": "up",
+      "tf_source": "H1",
+      "sl_pts": 720.8,
+      "tp_pts": 2402.5,
+      "exit_reason": "SL",
+      "gross_pnl_pts": -720.75,
+      "net_pnl_pts": -758.4,
+      "lot": 0.02,
+      "pnl_usd": -15.1679,
+      "hold_bars_m15": 10,
+      "hold_hours": 2.5,
+      "split": "test"
+    },
+    {
+      "entry_idx": 99980,
+      "exit_idx": 99980,
+      "entry_time": "2026-07-13 13:45:00+00:00",
+      "exit_time": "2026-07-13 13:45:00+00:00",
+      "direction": "down",
+      "tf_source": "H1",
+      "sl_pts": 527.9,
+      "tp_pts": 1759.6,
+      "exit_reason": "SL",
+      "gross_pnl_pts": -527.89,
+      "net_pnl_pts": -565.54,
+      "lot": 0.03,
+      "pnl_usd": -16.9661,
+      "hold_bars_m15": 0,
+      "hold_hours": 0.0,
+      "split": "test"
+    },
+    {
+      "entry_idx": 99981,
+      "exit_idx": 99985,
+      "entry_time": "2026-07-13 14:00:00+00:00",
+      "exit_time": "2026-07-13 15:00:00+00:00",
+      "direction": "up",
+      "tf_source": "H1",
+      "sl_pts": 579.6,
+      "tp_pts": 1932.0,
+      "exit_reason": "SL",
+      "gross_pnl_pts": -579.59,
+      "net_pnl_pts": -617.23,
+      "lot": 0.03,
+      "pnl_usd": -18.517,
+      "hold_bars_m15": 4,
+      "hold_hours": 1.0,
+      "split": "test"
+    },
+    {
+      "entry_idx": 99986,
+      "exit_idx": 99986,
+      "entry_time": "2026-07-13 15:15:00+00:00",
+      "exit_time": "2026-07-13 15:15:00+00:00",
+      "direction": "down",
+      "tf_source": "H1",
+      "sl_pts": 587.9,
+      "tp_pts": 1959.8,
+      "exit_reason": "SL",
+      "gross_pnl_pts": -587.95,
+      "net_pnl_pts": -625.59,
+      "lot": 0.03,
+      "pnl_usd": -18.7678,
+      "hold_bars_m15": 0,
+      "hold_hours": 0.0,
+      "split": "test"
+    },
+    {
+      "entry_idx": 99987,
+      "exit_idx": 99991,
+      "entry_time": "2026-07-13 15:30:00+00:00",
+      "exit_time": "2026-07-13 16:30:00+00:00",
+      "direction": "up",
+      "tf_source": "H1",
+      "sl_pts": 598.7,
+      "tp_pts": 1995.7,
+      "exit_reason": "SL",
+      "gross_pnl_pts": -598.71,
+      "net_pnl_pts": -636.36,
+      "lot": 0.03,
+      "pnl_usd": -19.0908,
+      "hold_bars_m15": 4,
+      "hold_hours": 1.0,
+      "split": "test"
+    },
+    {
+      "entry_idx": 99992,
+      "exit_idx": 99993,
+      "entry_time": "2026-07-13 16:45:00+00:00",
+      "exit_time": "2026-07-13 17:00:00+00:00",
+      "direction": "down",
+      "tf_source": "H1",
+      "sl_pts": 681.3,
+      "tp_pts": 2270.9,
+      "exit_reason": "TP",
+      "gross_pnl_pts": 2270.89,
+      "net_pnl_pts": 2233.25,
+      "lot": 0.02,
+      "pnl_usd": 44.6649,
+      "hold_bars_m15": 1,
+      "hold_hours": 0.25,
+      "split": "test"
+    },
+    {
+      "entry_idx": 99994,
+      "exit_idx": 99994,
+      "entry_time": "2026-07-13 17:15:00+00:00",
+      "exit_time": "2026-07-13 17:15:00+00:00",
+      "direction": "down",
+      "tf_source": "H1",
+      "sl_pts": 718.4,
+      "tp_pts": 2394.6,
+      "exit_reason": "TP",
+      "gross_pnl_pts": 2394.64,
+      "net_pnl_pts": 2357.0,
+      "lot": 0.02,
+      "pnl_usd": 47.1399,
+      "hold_bars_m15": 0,
+      "hold_hours": 0.0,
+      "split": "test"
+    },
+    {
+      "entry_idx": 99995,
+      "exit_idx": 99998,
+      "entry_time": "2026-07-13 17:30:00+00:00",
+      "exit_time": "2026-07-13 18:15:00+00:00",
+      "direction": "down",
+      "tf_source": "H1",
+      "sl_pts": 831.5,
+      "tp_pts": 2771.6,
+      "exit_reason": "VERI_SONU_ACIK",
+      "gross_pnl_pts": -47.0,
+      "net_pnl_pts": -84.65,
+      "lot": 0.02,
+      "pnl_usd": -1.6929,
+      "hold_bars_m15": 3,
+      "hold_hours": 0.75,
+      "split": "test"
+    }
+  ]
+}

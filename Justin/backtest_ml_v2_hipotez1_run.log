@@ -1,0 +1,51 @@
+C:\Users\Administrator\AppData\Local\Programs\Python\Python314\Lib\site-packages\sklearn\utils\validation.py:2827: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+  warnings.warn(
+C:\Users\Administrator\AppData\Local\Programs\Python\Python314\Lib\site-packages\sklearn\utils\validation.py:2827: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+  warnings.warn(
+C:\Users\Administrator\AppData\Local\Programs\Python\Python314\Lib\site-packages\sklearn\utils\validation.py:2827: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+  warnings.warn(
+C:\Users\Administrator\AppData\Local\Programs\Python\Python314\Lib\site-packages\sklearn\utils\validation.py:2827: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+  warnings.warn(
+C:\Users\Administrator\AppData\Local\Programs\Python\Python314\Lib\site-packages\sklearn\utils\validation.py:2827: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+  warnings.warn(
+C:\Users\Administrator\AppData\Local\Programs\Python\Python314\Lib\site-packages\sklearn\utils\validation.py:2827: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+  warnings.warn(
+C:\Users\Administrator\AppData\Local\Programs\Python\Python314\Lib\site-packages\sklearn\utils\validation.py:2827: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+  warnings.warn(
+M15 bar sayisi: 99999 araligi: 2022-04-18 -> 2026-07-10
+DST/saat-eslesme dogrulamasi tamamlandi: 8/8 bilinen DST gecisinde piyasa-acilis saati 1 SAAT KAYDI - bu, MT5 sunucusunun DST'yi TAKIP ETTIGINI (sabit GMT+3 DEGIL, mevsimsel kaydiran bir saat kullandigini) DOGRULAR. (Tur 1 ile AYNI sonuc, BAGIMSIZ tekrar-uretildi.)
+Yardimci fonksiyonlar hazir. Feature hesaplaniyor...
+Grup 1 (volatilite) hazir.
+Grup 2 (MTF confluence) hazir.
+Grup 3 (hacim) hazir.
+Grup 4 (oturum/gun-ici) hazir.
+Grup 5 (fiyat yapisi/momentum) hazir.
+Grup B (pivot/rolling S-R) hazir.
+Grup B ileri-bakis/DST dogrulamasi: GECTI - Grup B'nin gunluk/haftalik pivot + 20-gunluk rolling-S/R feature'lari NEDENSEL (shift(1) + pencere-disi-bugun) oldugu kod-incelemesi/assert/spot-check ile dogrulandi; gun-siniri DST gecislerinde 0 anomali gosterdi (0 beklenir).
+Feature matrisi hazir. Sutun sayisi: 29
+Feature-gecerli bar sayisi: 98170 / 99999
+Triple-barrier etiket hesaplandi. Gecerli: 98154 hicbiri: 12844 ikili-etiketli: 85310
+S1 stres testi (P90): False oran: 11.91
+ARA KAYIT (on-kontroller + feature/etiket) tamamlandi -> C:\MilaYatirim\Justin\backtest_ml_v2_hipotez1_output.json
+Veri bolumu: 67439 trainval / 17833 test
+WF fold 1: train_n=12320 val_n=13547 AUC=0.4915
+WF fold 2: train_n=25894 val_n=13693 AUC=0.5033
+WF fold 3: train_n=39626 val_n=13653 AUC=0.5144
+WF fold 4: train_n=53308 val_n=14105 AUC=0.5300
+Walk-forward AUC ozet: {'ortalama': 0.5098, 'std': 0.0142, 'min': 0.4915, 'max': 0.53}
+Esik kalibrasyonu: 0.575 0.425 fallback: False
+ARA KAYIT (walk-forward + esik kalibrasyonu) tamamlandi -> C:\MilaYatirim\Justin\backtest_ml_v2_hipotez1_output.json
+Final egitim n: 53308 ic-validasyon n: 14105
+Final model ic-validasyon AUC: 0.5299675308974097 best_iter: 3
+ARA KAYIT (final model) tamamlandi -> C:\MilaYatirim\Justin\backtest_ml_v2_hipotez1_output.json
+TEST SETI AUC (tek-kez): 0.5190256840895601
+TANI - p_test min/max/mean/std: 0.4823 0.5515 0.5091 0.0116
+Test seti icin trade simulasyonu baslatiliyor (sadece esik-tetiklemeli sinyaller)...
+Test seti PRIMARY (hicbiri-haric etiketli kume) tetiklenen islem sayisi: 0 atlanma nedenleri: {}
+PRIMARY (hicbiri-haric) test sonuc ozeti: {'toplam_islem': 0, 'win_rate': None, 'profit_factor': None, 'net_profit_pts': 0.0, 'net_profit_usd': 0.0, 'max_drawdown_pct': None}
+ARA KAYIT (PRIMARY trade sim) tamamlandi -> C:\MilaYatirim\Justin\backtest_ml_v2_hipotez1_output.json
+Test seti SUPPLEMENTARY (hicbiri dahil) tetiklenen islem sayisi: 0 atlanma nedenleri: {}
+SUPPLEMENTARY (hicbiri dahil) test sonuc ozeti: {'toplam_islem': 0, 'win_rate': None, 'profit_factor': None, 'net_profit_pts': 0.0, 'net_profit_usd': 0.0, 'max_drawdown_pct': None}
+NIHAI KAYIT tamamlandi -> C:\MilaYatirim\Justin\backtest_ml_v2_hipotez1_output.json
+Hipotez ozet: {'hipotez_adi': 'LightGBM Ikili Yon-Tahmini Modeli + Grup B (Pivot/S-R) - N=16/k=1,5xATR14-M15 - HIPOTEZ 1 (v2/Tur2)', 'yaklasim_turu': 'Makine Ogrenmesi - Gradient Boosting (LightGBM)', 'hedef_pf': 1.5, 'hedef_wr_rr11': 0.6, 'hedef_dd': 0.2, 'gozlemlenen_pf_PRIMARY': None, 'gozlemlenen_wr_PRIMARY': None, 'hedef_pf_karsilandi_mi_PRIMARY': None}
+MT5 baglantisi kapatildi. Script tamamlandi.

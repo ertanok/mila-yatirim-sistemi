@@ -1,0 +1,52 @@
+C:\Users\Administrator\AppData\Local\Programs\Python\Python314\Lib\site-packages\sklearn\utils\validation.py:2827: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+  warnings.warn(
+C:\Users\Administrator\AppData\Local\Programs\Python\Python314\Lib\site-packages\sklearn\utils\validation.py:2827: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+  warnings.warn(
+C:\Users\Administrator\AppData\Local\Programs\Python\Python314\Lib\site-packages\sklearn\utils\validation.py:2827: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+  warnings.warn(
+C:\Users\Administrator\AppData\Local\Programs\Python\Python314\Lib\site-packages\sklearn\utils\validation.py:2827: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+  warnings.warn(
+C:\Users\Administrator\AppData\Local\Programs\Python\Python314\Lib\site-packages\sklearn\utils\validation.py:2827: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+  warnings.warn(
+C:\Users\Administrator\AppData\Local\Programs\Python\Python314\Lib\site-packages\sklearn\utils\validation.py:2827: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+  warnings.warn(
+Kutuphane versiyonlari: {'pandas': '3.0.3', 'lightgbm': '4.6.0', 'scikit_learn': '1.9.0', 'not': 'Hipotez 1 (v2) ile PAYLASILAN kurulum - Orkestrator Madde 1 geregi ayri kurulum yapilmadi, sadece versiyon teyidi.'}
+M15 bar sayisi: 99999 araligi: 2022-04-18 -> 2026-07-10
+DST/saat-eslesme (bagimsiz yeniden-calistirma): 8/8 bilinen DST gecisinde piyasa-acilis saati 1 SAAT KAYDI - MT5 sunucusu DST'yi TAKIP EDIYOR (sabit GMT+3 DEGIL). v1/Hipotez1(v2) ile TUTARLI sonuc.
+Yardimci fonksiyonlar hazir. Feature hesaplaniyor...
+Grup 1 (volatilite) hazir.
+Grup 2 (MTF confluence) hazir.
+Grup 3 (hacim) hazir.
+Grup 4 (oturum/gun-ici) hazir.
+Grup 5 (fiyat yapisi/momentum) hazir.
+Grup B (pivot/S-R, YENI) hazir.
+Feature matrisi hazir. Sutun sayisi: 27
+Feature-gecerli bar sayisi: 98170 / 99999
+Feature-sizinti kontrol listesi teyit edildi (Grup B dahil).
+K_LABEL baslangic (0,3xATR14-Wilder, N=16) TRAINVAL dagilimi: {'k_label': 0.3, 'n': 78170, 'yukari_oran': 0.4653, 'asagi_oran': 0.4247, 'notr_oran': 0.11}
+K_LABEL_ATR_MULT_FINAL: 0.3 gerekce: Baslangic (0,3) zaten dengeli araliktaydi (notr [0,05;0,40] icinde), degistirilmedi.
+K_LABEL final - TUM VERI dagilimi (bilgi amacli): {'n': 98154, 'yukari_oran': 0.4661, 'asagi_oran': 0.425, 'notr_oran': 0.1089, 'not': 'Bu TUM VERI (train+test) uzerindeki dagilimdir, SADECE bilgi/raporlama amaclidir - k_label SECIMI yukarida SADECE trainval kullanilarak yapildi.'}
+ARA KAYIT (feature + k_label) tamamlandi -> C:\MilaYatirim\Justin\backtest_ml_v2_hipotez2_output.json
+k_risk triple-barrier (SL/TP mekanigi) hesaplandi. Gecerli: 98154 zaman_asimi: 12844
+S1 stres testi (P90): False oran: 11.91
+ARA KAYIT (S1 + barrier) tamamlandi -> C:\MilaYatirim\Justin\backtest_ml_v2_hipotez2_output.json
+Veri bolumu: 78155 trainval / 19960 test
+WF fold 1: train_n=14155 val_n=15961 logloss=0.9715 acc=0.4356
+WF fold 2: train_n=30155 val_n=15961 logloss=0.9651 acc=0.4530
+WF fold 3: train_n=46155 val_n=15961 logloss=0.9504 acc=0.4733
+WF fold 4: train_n=62155 val_n=15961 logloss=0.9523 acc=0.4755
+Walk-forward ozet: {'logloss_ortalama': 0.9598, 'logloss_std': 0.0088, 'accuracy_ortalama': 0.4594, 'accuracy_std': 0.0163, 'rastgele_taban_cizgisi_bilgi': '3 sinif rastgele tahmin: accuracy~0,333, logloss~ln(3)=1,099 (sinif dagilimina gore degisebilir)'}
+Esik kalibrasyonu: 0.5 0.5 fallback: False
+ARA KAYIT (walk-forward + esik kalibrasyonu) tamamlandi -> C:\MilaYatirim\Justin\backtest_ml_v2_hipotez2_output.json
+Final egitim n: 62155 ic-validasyon n: 15961
+Final model ic-validasyon logloss: 0.952267871751863 acc: 0.4754714616878642
+ARA KAYIT (final model) tamamlandi -> C:\MilaYatirim\Justin\backtest_ml_v2_hipotez2_output.json
+TEST SETI (tek-kez) multiclass logloss: 0.9578443194759183 accuracy: 0.42179358717434867
+TEST confusion matrix (satir=gercek, sutun=tahmin, sira=[asagi,notr,yukari]): [[2140, 0, 6355], [605, 0, 1488], [3093, 0, 6279]]
+TANI - p_test ozet: {'p_yukari_mean': 0.4523, 'p_yukari_std': 0.0196, 'p_asagi_mean': 0.4329, 'p_asagi_std': 0.0185, 'p_notr_mean': 0.1148, 'p_notr_std': 0.0072, 'esik_yukari_asan_VE_argmax_yukari_bar_sayisi': 46, 'esik_asagi_asan_VE_argmax_asagi_bar_sayisi': 0}
+Test seti icin trade simulasyonu baslatiliyor (sadece esik-tetiklemeli sinyaller)...
+Test seti PRIMARY (zaman-asimi haric barrier-gecerli kume) tetiklenen islem sayisi: 15 atlanma nedenleri: {'cakisma_atlandi': 31}
+PRIMARY test sonuc ozeti: {'toplam_islem': 15, 'win_rate': 0.6667, 'profit_factor': 0.781, 'net_profit_pts': -3256.54, 'net_profit_usd_0_01_lot': -32.57, 'max_drawdown_pct_kasa2000': -4.762, 'ortalama_risk_pct_of_kasa': 0.00924, 'ortalama_toplam_maliyet_pts': 79.4, 'ortalama_atr_entry_pts': 1231.96}
+NIHAI KAYIT tamamlandi -> C:\MilaYatirim\Justin\backtest_ml_v2_hipotez2_output.json
+Hipotez ozet: {'hipotez_adi': 'LightGBM 3-Sinifli (Deadzone) + Grup B Eklenmis Feature Seti - HIPOTEZ 2 (ETIKET-IZOLE, PARALEL)', 'yaklasim_turu': 'Makine Ogrenmesi - Gradient Boosting (LightGBM, multiclass)', 'k_label_final': 0.3, 'k_risk_final': 1.5, 'hedef_pf': 1.5, 'hedef_wr_rr11': 0.6, 'hedef_dd': 0.2, 'gozlemlenen_pf': 0.781, 'gozlemlenen_wr': 0.6667, 'test_multiclass_logloss': 0.9578, 'test_accuracy': 0.4218, 'hedef_pf_karsilandi_mi': False}
+MT5 baglantisi kapatildi. Script tamamlandi.
