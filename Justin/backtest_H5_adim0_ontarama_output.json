@@ -1,0 +1,822 @@
+{
+  "meta": {
+    "hipotez_adi": "A Ailesi H5 - Kanal-Disi Kirilim Girisi - ADIM 0 ON-TARAMA",
+    "kaynak_dosya_eksik_uyarisi": "stratejici_raporu_justin_gold_scalping_A_ailesi_tur2_adim1_20260719.md dosyasi C:\\MilaYatirim\\Justin\\ icinde BULUNAMADI - bu script yalniz Orkestrator cagrisinin ADIM 0 tanimina ve Tam Tur 1/H2-H3'un kanal tanimina dayanmaktadir.",
+    "min_touches": 3,
+    "touch_k": 0.5,
+    "swing_n": 5,
+    "lookahead_lag_bars": 5,
+    "cap_days": 300,
+    "tasma_esik_atr_mult": 0.5
+  },
+  "veri_araligi": {
+    "M5": {
+      "n_bar": 99999,
+      "baslangic": "2025-02-18 08:15:00+00:00",
+      "bitis": "2026-07-17 23:55:00+00:00"
+    },
+    "M15": {
+      "n_bar": 99999,
+      "baslangic": "2022-04-25 03:45:00+00:00",
+      "bitis": "2026-07-17 23:45:00+00:00"
+    },
+    "M30": {
+      "n_bar": 99999,
+      "baslangic": "2018-01-25 15:00:00+00:00",
+      "bitis": "2026-07-17 23:30:00+00:00"
+    },
+    "H1": {
+      "n_bar": 81348,
+      "baslangic": "2001-06-04 01:00:00+00:00",
+      "bitis": "2026-07-17 23:00:00+00:00"
+    }
+  },
+  "faz2_kanal_sayilari": {
+    "H1": {
+      "up": 31,
+      "down": 42
+    },
+    "M30": {
+      "up": 30,
+      "down": 39
+    }
+  },
+  "faz2_kanal_genislik_ozet_pts": {
+    "H1": {
+      "up": {
+        "n": 31,
+        "medyan": 1555.8,
+        "min": 545.3,
+        "maks": 6371.8
+      },
+      "down": {
+        "n": 42,
+        "medyan": 1806.1,
+        "min": 540.5,
+        "maks": 15878.9
+      }
+    },
+    "M30": {
+      "up": {
+        "n": 30,
+        "medyan": 1284.8,
+        "min": 465.3,
+        "maks": 6267.0
+      },
+      "down": {
+        "n": 39,
+        "medyan": 1682.1,
+        "min": 236.0,
+        "maks": 17584.2
+      }
+    }
+  },
+  "adim0_tasma_olayi_sayimi": {
+    "H1_up_M15": {
+      "toplam_tasma_olayi": 171,
+      "kanal_sayisi_ltf_ile_ortusen": 7,
+      "kanal_sayisi_en_az_1_olayli": 5,
+      "detay": [
+        {
+          "anchor_time_utc": "2021-08-18 18:00:00+00:00",
+          "confirmed_active_time_utc": "2021-08-23 09:00:00+00:00",
+          "break_known_time_utc": "2022-07-08 08:00:00+00:00",
+          "genislik_pts": 1461.4,
+          "n_tasma_olayi": 0,
+          "censored": false
+        },
+        {
+          "anchor_time_utc": "2022-07-11 14:00:00+00:00",
+          "confirmed_active_time_utc": "2022-07-29 09:00:00+00:00",
+          "break_known_time_utc": "2023-09-27 12:00:00+00:00",
+          "genislik_pts": 2093.5,
+          "n_tasma_olayi": 41,
+          "censored": true
+        },
+        {
+          "anchor_time_utc": "2023-10-09 16:00:00+00:00",
+          "confirmed_active_time_utc": "2023-10-11 13:00:00+00:00",
+          "break_known_time_utc": "2023-11-14 09:00:00+00:00",
+          "genislik_pts": 1721.5,
+          "n_tasma_olayi": 7,
+          "censored": false
+        },
+        {
+          "anchor_time_utc": "2023-11-15 02:00:00+00:00",
+          "confirmed_active_time_utc": "2023-11-17 06:00:00+00:00",
+          "break_known_time_utc": "2025-02-05 00:00:00+00:00",
+          "genislik_pts": 2578.5,
+          "n_tasma_olayi": 64,
+          "censored": true
+        },
+        {
+          "anchor_time_utc": "2025-02-05 22:00:00+00:00",
+          "confirmed_active_time_utc": "2025-02-12 20:00:00+00:00",
+          "break_known_time_utc": "2025-08-05 09:00:00+00:00",
+          "genislik_pts": 6371.8,
+          "n_tasma_olayi": 5,
+          "censored": false
+        },
+        {
+          "anchor_time_utc": "2025-08-05 14:00:00+00:00",
+          "confirmed_active_time_utc": "2025-08-07 08:00:00+00:00",
+          "break_known_time_utc": "2026-05-25 18:00:00+00:00",
+          "genislik_pts": 3872.8,
+          "n_tasma_olayi": 54,
+          "censored": false
+        },
+        {
+          "anchor_time_utc": "2026-06-23 11:00:00+00:00",
+          "confirmed_active_time_utc": "2026-07-06 22:00:00+00:00",
+          "break_known_time_utc": "2026-07-18 00:00:00+00:00",
+          "genislik_pts": 5207.3,
+          "n_tasma_olayi": 0,
+          "censored": true
+        }
+      ]
+    },
+    "H1_up_M5": {
+      "toplam_tasma_olayi": 91,
+      "kanal_sayisi_ltf_ile_ortusen": 3,
+      "kanal_sayisi_en_az_1_olayli": 2,
+      "detay": [
+        {
+          "anchor_time_utc": "2025-02-05 22:00:00+00:00",
+          "confirmed_active_time_utc": "2025-02-12 20:00:00+00:00",
+          "break_known_time_utc": "2025-08-05 09:00:00+00:00",
+          "genislik_pts": 6371.8,
+          "n_tasma_olayi": 7,
+          "censored": false
+        },
+        {
+          "anchor_time_utc": "2025-08-05 14:00:00+00:00",
+          "confirmed_active_time_utc": "2025-08-07 08:00:00+00:00",
+          "break_known_time_utc": "2026-05-25 18:00:00+00:00",
+          "genislik_pts": 3872.8,
+          "n_tasma_olayi": 84,
+          "censored": false
+        },
+        {
+          "anchor_time_utc": "2026-06-23 11:00:00+00:00",
+          "confirmed_active_time_utc": "2026-07-06 22:00:00+00:00",
+          "break_known_time_utc": "2026-07-18 00:00:00+00:00",
+          "genislik_pts": 5207.3,
+          "n_tasma_olayi": 0,
+          "censored": true
+        }
+      ]
+    },
+    "H1_down_M15": {
+      "toplam_tasma_olayi": 100,
+      "kanal_sayisi_ltf_ile_ortusen": 18,
+      "kanal_sayisi_en_az_1_olayli": 9,
+      "detay": [
+        {
+          "anchor_time_utc": "2022-02-21 13:00:00+00:00",
+          "confirmed_active_time_utc": "2022-04-29 19:00:00+00:00",
+          "break_known_time_utc": "2023-04-05 10:00:00+00:00",
+          "genislik_pts": 2313.2,
+          "n_tasma_olayi": 33,
+          "censored": false
+        },
+        {
+          "anchor_time_utc": "2023-04-17 10:00:00+00:00",
+          "confirmed_active_time_utc": "2023-04-19 09:00:00+00:00",
+          "break_known_time_utc": "2023-07-21 09:00:00+00:00",
+          "genislik_pts": 3314.2,
+          "n_tasma_olayi": 1,
+          "censored": false
+        },
+        {
+          "anchor_time_utc": "2023-07-28 07:00:00+00:00",
+          "confirmed_active_time_utc": "2023-08-02 19:00:00+00:00",
+          "break_known_time_utc": "2023-10-31 13:00:00+00:00",
+          "genislik_pts": 1194.2,
+          "n_tasma_olayi": 27,
+          "censored": false
+        },
+        {
+          "anchor_time_utc": "2023-11-24 03:00:00+00:00",
+          "confirmed_active_time_utc": "2023-12-12 20:00:00+00:00",
+          "break_known_time_utc": "2024-03-06 09:00:00+00:00",
+          "genislik_pts": 1384.0,
+          "n_tasma_olayi": 0,
+          "censored": false
+        },
+        {
+          "anchor_time_utc": "2024-04-19 04:00:00+00:00",
+          "confirmed_active_time_utc": "2024-04-23 09:00:00+00:00",
+          "break_known_time_utc": "2024-05-09 08:00:00+00:00",
+          "genislik_pts": 7665.6,
+          "n_tasma_olayi": 0,
+          "censored": false
+        },
+        {
+          "anchor_time_utc": "2024-05-22 05:00:00+00:00",
+          "confirmed_active_time_utc": "2024-05-23 21:00:00+00:00",
+          "break_known_time_utc": "2024-06-12 08:00:00+00:00",
+          "genislik_pts": 4722.9,
+          "n_tasma_olayi": 2,
+          "censored": false
+        },
+        {
+          "anchor_time_utc": "2024-06-14 14:00:00+00:00",
+          "confirmed_active_time_utc": "2024-06-17 22:00:00+00:00",
+          "break_known_time_utc": "2024-07-18 11:00:00+00:00",
+          "genislik_pts": 1798.0,
+          "n_tasma_olayi": 0,
+          "censored": false
+        },
+        {
+          "anchor_time_utc": "2024-07-18 17:00:00+00:00",
+          "confirmed_active_time_utc": "2024-07-22 18:00:00+00:00",
+          "break_known_time_utc": "2024-07-30 10:00:00+00:00",
+          "genislik_pts": 3758.0,
+          "n_tasma_olayi": 0,
+          "censored": false
+        },
+        {
+          "anchor_time_utc": "2024-07-31 09:00:00+00:00",
+          "confirmed_active_time_utc": "2024-08-06 18:00:00+00:00",
+          "break_known_time_utc": "2024-09-06 12:00:00+00:00",
+          "genislik_pts": 5495.3,
+          "n_tasma_olayi": 0,
+          "censored": false
+        },
+        {
+          "anchor_time_utc": "2024-09-18 14:00:00+00:00",
+          "confirmed_active_time_utc": "2024-11-15 22:00:00+00:00",
+          "break_known_time_utc": "2025-01-23 09:00:00+00:00",
+          "genislik_pts": 4069.4,
+          "n_tasma_olayi": 0,
+          "censored": false
+        },
+        {
+          "anchor_time_utc": "2025-02-07 17:00:00+00:00",
+          "confirmed_active_time_utc": "2025-03-04 05:00:00+00:00",
+          "break_known_time_utc": "2025-04-15 13:00:00+00:00",
+          "genislik_pts": 4446.7,
+          "n_tasma_olayi": 0,
+          "censored": false
+        },
+        {
+          "anchor_time_utc": "2025-04-29 11:00:00+00:00",
+          "confirmed_active_time_utc": "2025-05-02 19:00:00+00:00",
+          "break_known_time_utc": "2025-07-15 09:00:00+00:00",
+          "genislik_pts": 11391.1,
+          "n_tasma_olayi": 2,
+          "censored": false
+        },
+        {
+          "anchor_time_utc": "2025-07-29 18:00:00+00:00",
+          "confirmed_active_time_utc": "2025-07-30 17:00:00+00:00",
+          "break_known_time_utc": "2025-09-12 08:00:00+00:00",
+          "genislik_pts": 1493.4,
+          "n_tasma_olayi": 1,
+          "censored": false
+        },
+        {
+          "anchor_time_utc": "2025-10-24 04:00:00+00:00",
+          "confirmed_active_time_utc": "2025-10-28 08:00:00+00:00",
+          "break_known_time_utc": "2025-12-18 09:00:00+00:00",
+          "genislik_pts": 15878.9,
+          "n_tasma_olayi": 3,
+          "censored": false
+        },
+        {
+          "anchor_time_utc": "2025-12-18 18:00:00+00:00",
+          "confirmed_active_time_utc": "2026-01-02 20:00:00+00:00",
+          "break_known_time_utc": "2026-02-27 12:00:00+00:00",
+          "genislik_pts": 9899.0,
+          "n_tasma_olayi": 0,
+          "censored": false
+        },
+        {
+          "anchor_time_utc": "2026-03-04 04:00:00+00:00",
+          "confirmed_active_time_utc": "2026-03-09 05:00:00+00:00",
+          "break_known_time_utc": "2026-05-13 10:00:00+00:00",
+          "genislik_pts": 9913.3,
+          "n_tasma_olayi": 16,
+          "censored": false
+        },
+        {
+          "anchor_time_utc": "2026-05-13 19:00:00+00:00",
+          "confirmed_active_time_utc": "2026-05-19 08:00:00+00:00",
+          "break_known_time_utc": "2026-06-16 11:00:00+00:00",
+          "genislik_pts": 12863.5,
+          "n_tasma_olayi": 0,
+          "censored": false
+        },
+        {
+          "anchor_time_utc": "2026-06-22 04:00:00+00:00",
+          "confirmed_active_time_utc": "2026-06-23 09:00:00+00:00",
+          "break_known_time_utc": "2026-07-18 00:00:00+00:00",
+          "genislik_pts": 5746.8,
+          "n_tasma_olayi": 15,
+          "censored": true
+        }
+      ]
+    },
+    "H1_down_M5": {
+      "toplam_tasma_olayi": 61,
+      "kanal_sayisi_ltf_ile_ortusen": 8,
+      "kanal_sayisi_en_az_1_olayli": 5,
+      "detay": [
+        {
+          "anchor_time_utc": "2025-02-07 17:00:00+00:00",
+          "confirmed_active_time_utc": "2025-03-04 05:00:00+00:00",
+          "break_known_time_utc": "2025-04-15 13:00:00+00:00",
+          "genislik_pts": 4446.7,
+          "n_tasma_olayi": 0,
+          "censored": false
+        },
+        {
+          "anchor_time_utc": "2025-04-29 11:00:00+00:00",
+          "confirmed_active_time_utc": "2025-05-02 19:00:00+00:00",
+          "break_known_time_utc": "2025-07-15 09:00:00+00:00",
+          "genislik_pts": 11391.1,
+          "n_tasma_olayi": 4,
+          "censored": false
+        },
+        {
+          "anchor_time_utc": "2025-07-29 18:00:00+00:00",
+          "confirmed_active_time_utc": "2025-07-30 17:00:00+00:00",
+          "break_known_time_utc": "2025-09-12 08:00:00+00:00",
+          "genislik_pts": 1493.4,
+          "n_tasma_olayi": 1,
+          "censored": false
+        },
+        {
+          "anchor_time_utc": "2025-10-24 04:00:00+00:00",
+          "confirmed_active_time_utc": "2025-10-28 08:00:00+00:00",
+          "break_known_time_utc": "2025-12-18 09:00:00+00:00",
+          "genislik_pts": 15878.9,
+          "n_tasma_olayi": 8,
+          "censored": false
+        },
+        {
+          "anchor_time_utc": "2025-12-18 18:00:00+00:00",
+          "confirmed_active_time_utc": "2026-01-02 20:00:00+00:00",
+          "break_known_time_utc": "2026-02-27 12:00:00+00:00",
+          "genislik_pts": 9899.0,
+          "n_tasma_olayi": 0,
+          "censored": false
+        },
+        {
+          "anchor_time_utc": "2026-03-04 04:00:00+00:00",
+          "confirmed_active_time_utc": "2026-03-09 05:00:00+00:00",
+          "break_known_time_utc": "2026-05-13 10:00:00+00:00",
+          "genislik_pts": 9913.3,
+          "n_tasma_olayi": 27,
+          "censored": false
+        },
+        {
+          "anchor_time_utc": "2026-05-13 19:00:00+00:00",
+          "confirmed_active_time_utc": "2026-05-19 08:00:00+00:00",
+          "break_known_time_utc": "2026-06-16 11:00:00+00:00",
+          "genislik_pts": 12863.5,
+          "n_tasma_olayi": 0,
+          "censored": false
+        },
+        {
+          "anchor_time_utc": "2026-06-22 04:00:00+00:00",
+          "confirmed_active_time_utc": "2026-06-23 09:00:00+00:00",
+          "break_known_time_utc": "2026-07-18 00:00:00+00:00",
+          "genislik_pts": 5746.8,
+          "n_tasma_olayi": 21,
+          "censored": true
+        }
+      ]
+    },
+    "M30_up_M15": {
+      "toplam_tasma_olayi": 226,
+      "kanal_sayisi_ltf_ile_ortusen": 19,
+      "kanal_sayisi_en_az_1_olayli": 16,
+      "detay": [
+        {
+          "anchor_time_utc": "2022-02-14 01:00:00+00:00",
+          "confirmed_active_time_utc": "2022-02-17 16:30:00+00:00",
+          "break_known_time_utc": "2022-04-26 02:30:00+00:00",
+          "genislik_pts": 2450.5,
+          "n_tasma_olayi": 0,
+          "censored": false
+        },
+        {
+          "anchor_time_utc": "2022-05-05 11:00:00+00:00",
+          "confirmed_active_time_utc": "2023-01-13 17:30:00+00:00",
+          "break_known_time_utc": "2023-02-28 06:00:00+00:00",
+          "genislik_pts": 2023.7,
+          "n_tasma_olayi": 22,
+          "censored": false
+        },
+        {
+          "anchor_time_utc": "2023-03-02 03:30:00+00:00",
+          "confirmed_active_time_utc": "2023-03-03 09:30:00+00:00",
+          "break_known_time_utc": "2023-06-30 04:30:00+00:00",
+          "genislik_pts": 864.7,
+          "n_tasma_olayi": 12,
+          "censored": false
+        },
+        {
+          "anchor_time_utc": "2023-07-05 09:30:00+00:00",
+          "confirmed_active_time_utc": "2023-07-10 11:30:00+00:00",
+          "break_known_time_utc": "2023-08-23 03:00:00+00:00",
+          "genislik_pts": 1402.4,
+          "n_tasma_olayi": 11,
+          "censored": false
+        },
+        {
+          "anchor_time_utc": "2023-08-23 13:30:00+00:00",
+          "confirmed_active_time_utc": "2023-08-24 18:00:00+00:00",
+          "break_known_time_utc": "2023-08-28 06:30:00+00:00",
+          "genislik_pts": 1370.3,
+          "n_tasma_olayi": 0,
+          "censored": false
+        },
+        {
+          "anchor_time_utc": "2023-08-28 20:00:00+00:00",
+          "confirmed_active_time_utc": "2023-08-29 18:00:00+00:00",
+          "break_known_time_utc": "2023-09-07 04:00:00+00:00",
+          "genislik_pts": 551.1,
+          "n_tasma_olayi": 6,
+          "censored": false
+        },
+        {
+          "anchor_time_utc": "2023-09-08 07:30:00+00:00",
+          "confirmed_active_time_utc": "2023-09-18 19:30:00+00:00",
+          "break_known_time_utc": "2023-10-04 04:00:00+00:00",
+          "genislik_pts": 628.1,
+          "n_tasma_olayi": 8,
+          "censored": false
+        },
+        {
+          "anchor_time_utc": "2023-10-16 01:00:00+00:00",
+          "confirmed_active_time_utc": "2023-10-18 20:30:00+00:00",
+          "break_known_time_utc": "2023-11-13 09:00:00+00:00",
+          "genislik_pts": 2571.6,
+          "n_tasma_olayi": 6,
+          "censored": false
+        },
+        {
+          "anchor_time_utc": "2023-11-15 16:30:00+00:00",
+          "confirmed_active_time_utc": "2023-11-16 06:30:00+00:00",
+          "break_known_time_utc": "2023-12-06 02:30:00+00:00",
+          "genislik_pts": 950.0,
+          "n_tasma_olayi": 6,
+          "censored": false
+        },
+        {
+          "anchor_time_utc": "2023-12-15 21:30:00+00:00",
+          "confirmed_active_time_utc": "2023-12-18 10:30:00+00:00",
+          "break_known_time_utc": "2024-01-25 08:30:00+00:00",
+          "genislik_pts": 784.0,
+          "n_tasma_olayi": 14,
+          "censored": false
+        },
+        {
+          "anchor_time_utc": "2024-01-30 20:30:00+00:00",
+          "confirmed_active_time_utc": "2024-01-31 17:30:00+00:00",
+          "break_known_time_utc": "2024-02-14 06:30:00+00:00",
+          "genislik_pts": 657.0,
+          "n_tasma_olayi": 5,
+          "censored": false
+        },
+        {
+          "anchor_time_utc": "2024-02-19 18:00:00+00:00",
+          "confirmed_active_time_utc": "2024-02-20 10:30:00+00:00",
+          "break_known_time_utc": "2024-05-01 07:00:00+00:00",
+          "genislik_pts": 465.3,
+          "n_tasma_olayi": 4,
+          "censored": false
+        },
+        {
+          "anchor_time_utc": "2024-05-07 15:00:00+00:00",
+          "confirmed_active_time_utc": "2024-05-08 07:00:00+00:00",
+          "break_known_time_utc": "2024-06-11 03:30:00+00:00",
+          "genislik_pts": 1351.8,
+          "n_tasma_olayi": 10,
+          "censored": false
+        },
+        {
+          "anchor_time_utc": "2024-06-14 18:30:00+00:00",
+          "confirmed_active_time_utc": "2024-06-19 11:00:00+00:00",
+          "break_known_time_utc": "2025-09-03 23:30:00+00:00",
+          "genislik_pts": 1140.3,
+          "n_tasma_olayi": 41,
+          "censored": true
+        },
+        {
+          "anchor_time_utc": "2025-09-04 06:00:00+00:00",
+          "confirmed_active_time_utc": "2025-09-04 16:30:00+00:00",
+          "break_known_time_utc": "2025-09-10 11:00:00+00:00",
+          "genislik_pts": 2069.0,
+          "n_tasma_olayi": 0,
+          "censored": false
+        },
+        {
+          "anchor_time_utc": "2025-09-11 09:00:00+00:00",
+          "confirmed_active_time_utc": "2025-09-12 06:00:00+00:00",
+          "break_known_time_utc": "2025-11-27 20:30:00+00:00",
+          "genislik_pts": 1716.2,
+          "n_tasma_olayi": 16,
+          "censored": false
+        },
+        {
+          "anchor_time_utc": "2025-12-01 17:00:00+00:00",
+          "confirmed_active_time_utc": "2025-12-12 09:30:00+00:00",
+          "break_known_time_utc": "2026-05-28 02:00:00+00:00",
+          "genislik_pts": 2511.0,
+          "n_tasma_olayi": 41,
+          "censored": false
+        },
+        {
+          "anchor_time_utc": "2026-05-29 02:30:00+00:00",
+          "confirmed_active_time_utc": "2026-05-29 18:00:00+00:00",
+          "break_known_time_utc": "2026-06-09 00:00:00+00:00",
+          "genislik_pts": 2876.6,
+          "n_tasma_olayi": 2,
+          "censored": false
+        },
+        {
+          "anchor_time_utc": "2026-06-24 06:00:00+00:00",
+          "confirmed_active_time_utc": "2026-07-02 16:30:00+00:00",
+          "break_known_time_utc": "2026-07-18 00:00:00+00:00",
+          "genislik_pts": 6267.0,
+          "n_tasma_olayi": 22,
+          "censored": true
+        }
+      ]
+    },
+    "M30_up_M5": {
+      "toplam_tasma_olayi": 125,
+      "kanal_sayisi_ltf_ile_ortusen": 6,
+      "kanal_sayisi_en_az_1_olayli": 5,
+      "detay": [
+        {
+          "anchor_time_utc": "2024-06-14 18:30:00+00:00",
+          "confirmed_active_time_utc": "2024-06-19 11:00:00+00:00",
+          "break_known_time_utc": "2025-09-03 23:30:00+00:00",
+          "genislik_pts": 1140.3,
+          "n_tasma_olayi": 1,
+          "censored": true
+        },
+        {
+          "anchor_time_utc": "2025-09-04 06:00:00+00:00",
+          "confirmed_active_time_utc": "2025-09-04 16:30:00+00:00",
+          "break_known_time_utc": "2025-09-10 11:00:00+00:00",
+          "genislik_pts": 2069.0,
+          "n_tasma_olayi": 0,
+          "censored": false
+        },
+        {
+          "anchor_time_utc": "2025-09-11 09:00:00+00:00",
+          "confirmed_active_time_utc": "2025-09-12 06:00:00+00:00",
+          "break_known_time_utc": "2025-11-27 20:30:00+00:00",
+          "genislik_pts": 1716.2,
+          "n_tasma_olayi": 22,
+          "censored": false
+        },
+        {
+          "anchor_time_utc": "2025-12-01 17:00:00+00:00",
+          "confirmed_active_time_utc": "2025-12-12 09:30:00+00:00",
+          "break_known_time_utc": "2026-05-28 02:00:00+00:00",
+          "genislik_pts": 2511.0,
+          "n_tasma_olayi": 74,
+          "censored": false
+        },
+        {
+          "anchor_time_utc": "2026-05-29 02:30:00+00:00",
+          "confirmed_active_time_utc": "2026-05-29 18:00:00+00:00",
+          "break_known_time_utc": "2026-06-09 00:00:00+00:00",
+          "genislik_pts": 2876.6,
+          "n_tasma_olayi": 1,
+          "censored": false
+        },
+        {
+          "anchor_time_utc": "2026-06-24 06:00:00+00:00",
+          "confirmed_active_time_utc": "2026-07-02 16:30:00+00:00",
+          "break_known_time_utc": "2026-07-18 00:00:00+00:00",
+          "genislik_pts": 6267.0,
+          "n_tasma_olayi": 27,
+          "censored": true
+        }
+      ]
+    },
+    "M30_down_M15": {
+      "toplam_tasma_olayi": 251,
+      "kanal_sayisi_ltf_ile_ortusen": 18,
+      "kanal_sayisi_en_az_1_olayli": 13,
+      "detay": [
+        {
+          "anchor_time_utc": "2022-03-23 05:00:00+00:00",
+          "confirmed_active_time_utc": "2022-03-30 11:30:00+00:00",
+          "break_known_time_utc": "2023-01-16 03:30:00+00:00",
+          "genislik_pts": 3155.4,
+          "n_tasma_olayi": 73,
+          "censored": false
+        },
+        {
+          "anchor_time_utc": "2023-01-19 02:30:00+00:00",
+          "confirmed_active_time_utc": "2023-02-06 19:00:00+00:00",
+          "break_known_time_utc": "2023-03-17 04:30:00+00:00",
+          "genislik_pts": 2259.5,
+          "n_tasma_olayi": 0,
+          "censored": false
+        },
+        {
+          "anchor_time_utc": "2023-03-17 08:30:00+00:00",
+          "confirmed_active_time_utc": "2023-06-22 18:00:00+00:00",
+          "break_known_time_utc": "2023-11-30 02:00:00+00:00",
+          "genislik_pts": 1515.1,
+          "n_tasma_olayi": 66,
+          "censored": false
+        },
+        {
+          "anchor_time_utc": "2023-12-05 02:30:00+00:00",
+          "confirmed_active_time_utc": "2023-12-05 12:30:00+00:00",
+          "break_known_time_utc": "2023-12-15 04:30:00+00:00",
+          "genislik_pts": 757.0,
+          "n_tasma_olayi": 4,
+          "censored": false
+        },
+        {
+          "anchor_time_utc": "2023-12-22 01:30:00+00:00",
+          "confirmed_active_time_utc": "2024-01-04 14:00:00+00:00",
+          "break_known_time_utc": "2024-03-05 05:30:00+00:00",
+          "genislik_pts": 1797.9,
+          "n_tasma_olayi": 6,
+          "censored": false
+        },
+        {
+          "anchor_time_utc": "2024-04-23 17:00:00+00:00",
+          "confirmed_active_time_utc": "2024-04-24 05:00:00+00:00",
+          "break_known_time_utc": "2024-05-15 04:00:00+00:00",
+          "genislik_pts": 1747.0,
+          "n_tasma_olayi": 0,
+          "censored": false
+        },
+        {
+          "anchor_time_utc": "2024-05-17 10:00:00+00:00",
+          "confirmed_active_time_utc": "2024-05-23 18:30:00+00:00",
+          "break_known_time_utc": "2024-08-13 03:00:00+00:00",
+          "genislik_pts": 2854.5,
+          "n_tasma_olayi": 42,
+          "censored": false
+        },
+        {
+          "anchor_time_utc": "2024-08-29 20:00:00+00:00",
+          "confirmed_active_time_utc": "2024-09-02 06:00:00+00:00",
+          "break_known_time_utc": "2024-09-23 04:30:00+00:00",
+          "genislik_pts": 3183.1,
+          "n_tasma_olayi": 4,
+          "censored": false
+        },
+        {
+          "anchor_time_utc": "2024-09-23 08:30:00+00:00",
+          "confirmed_active_time_utc": "2024-10-09 11:00:00+00:00",
+          "break_known_time_utc": "2024-10-23 04:00:00+00:00",
+          "genislik_pts": 1971.2,
+          "n_tasma_olayi": 0,
+          "censored": false
+        },
+        {
+          "anchor_time_utc": "2024-11-01 08:00:00+00:00",
+          "confirmed_active_time_utc": "2024-11-01 17:30:00+00:00",
+          "break_known_time_utc": "2024-11-22 04:00:00+00:00",
+          "genislik_pts": 957.0,
+          "n_tasma_olayi": 1,
+          "censored": false
+        },
+        {
+          "anchor_time_utc": "2024-11-26 03:30:00+00:00",
+          "confirmed_active_time_utc": "2024-12-19 15:00:00+00:00",
+          "break_known_time_utc": "2025-01-22 04:30:00+00:00",
+          "genislik_pts": 3598.1,
+          "n_tasma_olayi": 0,
+          "censored": false
+        },
+        {
+          "anchor_time_utc": "2025-02-12 09:00:00+00:00",
+          "confirmed_active_time_utc": "2025-02-27 18:30:00+00:00",
+          "break_known_time_utc": "2025-03-19 02:30:00+00:00",
+          "genislik_pts": 3184.2,
+          "n_tasma_olayi": 4,
+          "censored": false
+        },
+        {
+          "anchor_time_utc": "2025-03-25 16:00:00+00:00",
+          "confirmed_active_time_utc": "2025-03-26 07:00:00+00:00",
+          "break_known_time_utc": "2025-04-01 00:00:00+00:00",
+          "genislik_pts": 1509.6,
+          "n_tasma_olayi": 0,
+          "censored": false
+        },
+        {
+          "anchor_time_utc": "2025-04-02 11:30:00+00:00",
+          "confirmed_active_time_utc": "2025-04-04 11:30:00+00:00",
+          "break_known_time_utc": "2025-04-21 12:30:00+00:00",
+          "genislik_pts": 6889.8,
+          "n_tasma_olayi": 10,
+          "censored": false
+        },
+        {
+          "anchor_time_utc": "2025-04-23 19:30:00+00:00",
+          "confirmed_active_time_utc": "2025-04-29 02:00:00+00:00",
+          "break_known_time_utc": "2025-07-15 03:30:00+00:00",
+          "genislik_pts": 3704.2,
+          "n_tasma_olayi": 21,
+          "censored": false
+        },
+        {
+          "anchor_time_utc": "2025-07-16 12:00:00+00:00",
+          "confirmed_active_time_utc": "2025-07-18 04:00:00+00:00",
+          "break_known_time_utc": "2025-09-05 02:30:00+00:00",
+          "genislik_pts": 3153.0,
+          "n_tasma_olayi": 2,
+          "censored": false
+        },
+        {
+          "anchor_time_utc": "2025-10-14 11:30:00+00:00",
+          "confirmed_active_time_utc": "2025-10-22 12:00:00+00:00",
+          "break_known_time_utc": "2025-12-18 10:30:00+00:00",
+          "genislik_pts": 12799.1,
+          "n_tasma_olayi": 14,
+          "censored": false
+        },
+        {
+          "anchor_time_utc": "2025-12-19 11:30:00+00:00",
+          "confirmed_active_time_utc": "2026-06-10 19:00:00+00:00",
+          "break_known_time_utc": "2026-07-18 00:00:00+00:00",
+          "genislik_pts": 17584.2,
+          "n_tasma_olayi": 4,
+          "censored": true
+        }
+      ]
+    },
+    "M30_down_M5": {
+      "toplam_tasma_olayi": 106,
+      "kanal_sayisi_ltf_ile_ortusen": 7,
+      "kanal_sayisi_en_az_1_olayli": 6,
+      "detay": [
+        {
+          "anchor_time_utc": "2025-02-12 09:00:00+00:00",
+          "confirmed_active_time_utc": "2025-02-27 18:30:00+00:00",
+          "break_known_time_utc": "2025-03-19 02:30:00+00:00",
+          "genislik_pts": 3184.2,
+          "n_tasma_olayi": 11,
+          "censored": false
+        },
+        {
+          "anchor_time_utc": "2025-03-25 16:00:00+00:00",
+          "confirmed_active_time_utc": "2025-03-26 07:00:00+00:00",
+          "break_known_time_utc": "2025-04-01 00:00:00+00:00",
+          "genislik_pts": 1509.6,
+          "n_tasma_olayi": 0,
+          "censored": false
+        },
+        {
+          "anchor_time_utc": "2025-04-02 11:30:00+00:00",
+          "confirmed_active_time_utc": "2025-04-04 11:30:00+00:00",
+          "break_known_time_utc": "2025-04-21 12:30:00+00:00",
+          "genislik_pts": 6889.8,
+          "n_tasma_olayi": 19,
+          "censored": false
+        },
+        {
+          "anchor_time_utc": "2025-04-23 19:30:00+00:00",
+          "confirmed_active_time_utc": "2025-04-29 02:00:00+00:00",
+          "break_known_time_utc": "2025-07-15 03:30:00+00:00",
+          "genislik_pts": 3704.2,
+          "n_tasma_olayi": 36,
+          "censored": false
+        },
+        {
+          "anchor_time_utc": "2025-07-16 12:00:00+00:00",
+          "confirmed_active_time_utc": "2025-07-18 04:00:00+00:00",
+          "break_known_time_utc": "2025-09-05 02:30:00+00:00",
+          "genislik_pts": 3153.0,
+          "n_tasma_olayi": 6,
+          "censored": false
+        },
+        {
+          "anchor_time_utc": "2025-10-14 11:30:00+00:00",
+          "confirmed_active_time_utc": "2025-10-22 12:00:00+00:00",
+          "break_known_time_utc": "2025-12-18 10:30:00+00:00",
+          "genislik_pts": 12799.1,
+          "n_tasma_olayi": 25,
+          "censored": false
+        },
+        {
+          "anchor_time_utc": "2025-12-19 11:30:00+00:00",
+          "confirmed_active_time_utc": "2026-06-10 19:00:00+00:00",
+          "break_known_time_utc": "2026-07-18 00:00:00+00:00",
+          "genislik_pts": 17584.2,
+          "n_tasma_olayi": 9,
+          "censored": true
+        }
+      ]
+    }
+  },
+  "adim0_toplam_olay_m15_tum_kombinasyonlar": 748,
+  "adim0_toplam_olay_m5_tum_kombinasyonlar": 383
+}
