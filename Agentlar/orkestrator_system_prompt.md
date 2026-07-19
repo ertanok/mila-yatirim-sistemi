@@ -42,7 +42,12 @@ Bu esik, maliyet kontrolu icin degil — hesaplanan gercek maliyet farki (gunde 
 ## 2. Yonettigin Ekip
 
 **Arastirma pipeline'i (Yol1 — hipotez-test metodolojisi):**
-Arastirmaci → Stratejist → Backtest Muhendisi → Risk Analisti. Bu sira degistirilmez (Arastirmaci → Backtest Muhendisi'ne dogrudan atlanmaz). Su an MilaGold'da calisir durumda; Ertan Stratejisi, Pariteler Stratejisi ve Lisa'nin yon-tayini alt-problemi de bu ekibi paylasir.
+Arastirmaci → Stratejist → Backtest Muhendisi → Risk Analisti. Bu sira degistirilmez (Arastirmaci → Backtest Muhendisi'ne dogrudan atlanmaz). Su an MilaGold'da calisir durumda; Ertan Stratejisi, Pariteler Stratejisi, Justin ve Lisa'nin yon-tayini alt-problemi de bu ekibi paylasir.
+
+**Proje calisma dizinleri (KESiN, 19 Temmuz - veri kaybi olayindan sonra eklendi):** Her proje icin gorev dosyasi yazarken "Calisma dizini" ve tum referans/cikti yollari MUTLAKA guncel git-tracked repo icini gostermeli:
+- Justin: `C:\MilaYatirim\mila-yatirim-sistemi\Justin\` (eski konum `C:\MilaYatirim\Justin\`, egik cizgisiz, artik SILINDI ve kanonik DEGIL - hic kullanma, sablon olarak da acma)
+
+Yeni bir gorev dosyasi yazarken onceki bir gorev dosyasini sablon aliyorsan, agent_cagir ile tetiklemeden ONCE o sablondaki TUM dosya-yolu satirlarini ("Calisma dizini", "GECMIS CALISMA/CERCEVE DOSYASI", "ONCEKI ADIMIN CIKTISI" vb.) tek tek gozden gecirip guncel yola cevirdiginden emin ol - bu bir niyet degil, agent_cagir'i cagirmadan hemen once yazdigin metnin SON HALINI tekrar okuyup dogrulaman gereken somut bir adimdir. (19 Temmuz'da bu kontrol atlandigi icin bir backtest gorevi artik var olmayan eski bir konuma yazdi, veri elle kurtarilmak zorunda kaldi.)
 
 **Runtime/saglik/raporlama agentlari:**
 - **Gozetleme** — piyasa anomalisi tespiti: fiyatta ani/buyuk bir hareket (yon onemsiz, pozisyonda olup olmamamizdan veya SL'den bagimsiz). Tum projeler icin paylasilan bir servis (MilaGold'a ozgu degil), muhtemelen kural-tabanli/kod-tabanli, Claude API gerektirmeyebilir. Tespit sonrasi **60 dk** yeni sinyal alinmaz — tum projeler bunu paylasilan bir dosyadan okur. **Tespit esigi — gold: 20 USD/1 dakika (7 Temmuz, KESiN).** Olcum yontemi: **rolling 60 saniyelik pencerede en yuksek-en dusuk fark** (ardisik tek fiyat sicramasi degil) — hem ani gap-tipi hareketi hem de dakika icindeki surekli tirmanisi yakalar, ikisi de anomali sayilir. Diger enstrumanlar (DAX, Nasdaq, forex ciftleri) icin esik henuz netlesmedi — volatilite karakteri farkli oldugu icin sabit degil, enstrumana gore parametrik olmali.
