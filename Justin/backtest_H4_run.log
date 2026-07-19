@@ -1,0 +1,119 @@
+======================================================================
+FAZ 0: MT5 BAGLANTI + HAM VERI (BAGIMSIZ CEKME)
+======================================================================
+point=0.01, contract_size=100.0, USD/puan/1.0-lot=1.0
+M5 n= 99999 2025-02-18 08:15:00+00:00 -> 2026-07-17 23:55:00+00:00
+M15 n= 99999 2022-04-25 03:45:00+00:00 -> 2026-07-17 23:45:00+00:00
+M30 n= 99999 2018-01-25 15:00:00+00:00 -> 2026-07-17 23:30:00+00:00
+H1 n= 81348 2001-06-04 01:00:00+00:00 -> 2026-07-17 23:00:00+00:00
+M5 verisi 515 gun kapsiyor (terminal/broker limiti, 99999 bar), M15 ise 1545 gun kapsiyor - M5 cross-check testi M15'e gore COK DAHA KISA bir donemi temsil eder, bu Stratejist'in 'M5 sonucu daha kirilgan kabul edilmeli' uyarisina EK bir kirilganlik kaynagidir (kanal sayisi kirilganligina bagimsiz veri-uzunlugu kirilganligi).
+======================================================================
+FAZ 1: DST / SAAT-ESLEME BAGIMSIZ DOGRULAMA
+======================================================================
+canli capraz kontrol: epoch_utc=2026-07-17 23:57:56, vps_yerel=2026-07-19 12:28:45.993959, fark_sn=131449.99
+H1 DST kontrolu: [{'gecis_tarihi': '2025-03-30', 'oncesi_cuma_kapanis_saatleri': [22, 22, 22], 'sonrasi_cuma_kapanis_saatleri': [23, 23, 23], 'kayma_tespit_edildi_mi': True}, {'gecis_tarihi': '2025-10-26', 'oncesi_cuma_kapanis_saatleri': [23, 23, 23], 'sonrasi_cuma_kapanis_saatleri': [22, 23, 23], 'kayma_tespit_edildi_mi': False}, {'gecis_tarihi': '2026-03-29', 'oncesi_cuma_kapanis_saatleri': [22, 22, 22], 'sonrasi_cuma_kapanis_saatleri': [23, 23, 23], 'kayma_tespit_edildi_mi': True}]
+M15 DST kontrolu: [{'gecis_tarihi': '2025-03-30', 'oncesi_cuma_kapanis_saatleri': [22, 22, 22], 'sonrasi_cuma_kapanis_saatleri': [23, 23, 23], 'kayma_tespit_edildi_mi': True}, {'gecis_tarihi': '2025-10-26', 'oncesi_cuma_kapanis_saatleri': [23, 23, 23], 'sonrasi_cuma_kapanis_saatleri': [22, 23, 23], 'kayma_tespit_edildi_mi': False}, {'gecis_tarihi': '2026-03-29', 'oncesi_cuma_kapanis_saatleri': [22, 22, 22], 'sonrasi_cuma_kapanis_saatleri': [23, 23, 23], 'kayma_tespit_edildi_mi': True}]
+M5 DST kontrolu: [{'gecis_tarihi': '2025-03-30', 'oncesi_cuma_kapanis_saatleri': [22, 22, 22], 'sonrasi_cuma_kapanis_saatleri': [23, 23, 23], 'kayma_tespit_edildi_mi': True}, {'gecis_tarihi': '2025-10-26', 'oncesi_cuma_kapanis_saatleri': [23, 23, 23], 'sonrasi_cuma_kapanis_saatleri': [22, 23, 23], 'kayma_tespit_edildi_mi': False}, {'gecis_tarihi': '2026-03-29', 'oncesi_cuma_kapanis_saatleri': [22, 22, 22], 'sonrasi_cuma_kapanis_saatleri': [23, 23, 23], 'kayma_tespit_edildi_mi': True}]
+FAZ 1 tamamlandi.
+H1 swing_high n= 5056 swing_low n= 5160
+M30 swing_high n= 6174 swing_low n= 6259
+======================================================================
+FAZ 2: PIVOT/KANAL TESPITI (LOOK-AHEAD DUZELTMESI ILE)
+======================================================================
+H1 up confirmed kanal sayisi (look-ahead-duzeltilmis): 31
+H1 down confirmed kanal sayisi (look-ahead-duzeltilmis): 42
+M30 up confirmed kanal sayisi (look-ahead-duzeltilmis): 30
+M30 down confirmed kanal sayisi (look-ahead-duzeltilmis): 39
+Look-ahead bias dogrulamasi: {'toplam_kanal_sayisi': 142, 'lag_bars_sabit_mi_5': True, 'lag_bars_min_max': [5, 5]}
+FAZ 2 tamamlandi.
+======================================================================
+FAZ 3: DOKUNUS TESPITI (M15 / M5)
+======================================================================
+M15 <- H1 up: ortusen kanal=7, toplam dokunus=45893
+M15 <- H1 down: ortusen kanal=18, toplam dokunus=48392
+M15 <- M30 up: ortusen kanal=19, toplam dokunus=45674
+M15 <- M30 down: ortusen kanal=18, toplam dokunus=54781
+M5 <- H1 up: ortusen kanal=3, toplam dokunus=43245
+M5 <- H1 down: ortusen kanal=8, toplam dokunus=34045
+M5 <- M30 up: ortusen kanal=6, toplam dokunus=29801
+M5 <- M30 down: ortusen kanal=7, toplam dokunus=36162
+FAZ 3 tamamlandi.
+======================================================================
+FAZ 4: MOMENTUM-ESIKLI ADAY-GIRIS URETIMI + ON-KONTROL MADDE 2
+======================================================================
+[BIRINCIL: M15 giris, k=1.0x ATR14] n_olay=10691 spread_med=27.00 atr_event_med=300.86 maliyet=38.13 karar=ANA_TESTE_GECILEBILIR gecen_tp=[2.0, 2.5, 3.0, 4.0]
+[DUYARLILIK: M15 giris, k=0.5x ATR14] n_olay=36308 spread_med=27.00 atr_event_med=304.29 maliyet=38.26 karar=ANA_TESTE_GECILEBILIR gecen_tp=[2.0, 2.5, 3.0, 4.0]
+[IKINCIL/CAPRAZ-KONTROL: M5 giris, k=1.0x ATR14] n_olay=7579 spread_med=34.00 atr_event_med=430.64 maliyet=49.93 karar=ANA_TESTE_GECILEBILIR gecen_tp=[2.0, 2.5, 3.0, 4.0]
+FAZ 4 tamamlandi.
+FAZ 6 fonksiyonlari tanimlandi.
+======================================================================
+KOMBINASYON: BIRINCIL: M15 giris, k=1.0x ATR14 (M15_k10)
+======================================================================
+  train: 2022-04-25 03:45:00+00:00 -> 2024-06-05 13:45:00+00:00 (772.4 gun)
+  validation: 2024-07-20 13:45:00+00:00 -> 2025-08-10 18:45:00+00:00 (386.2 gun)
+  test: 2025-09-24 18:45:00+00:00 -> 2026-07-17 23:45:00+00:00 (296.2 gun)
+  aday-giris split dagilimi: {'train': 5706, 'validation': 1994, 'test': 2235, 'embargo': 756}
+  SL=0.5xATR TP=2.0xATR -> Train(n=3948, PF=0.6042) | Validation(n=1509, PF=0.8561)
+  SL=0.5xATR TP=2.5xATR -> Train(n=3702, PF=0.6471) | Validation(n=1416, PF=0.8696)
+  SL=0.5xATR TP=3.0xATR -> Train(n=3479, PF=0.6602) | Validation(n=1339, PF=0.8409)
+  SL=0.5xATR TP=4.0xATR -> Train(n=3146, PF=0.6547) | Validation(n=1236, PF=0.8126)
+  SL=0.75xATR TP=2.0xATR -> Train(n=3703, PF=0.6963) | Validation(n=1443, PF=0.8804)
+  SL=0.75xATR TP=2.5xATR -> Train(n=3394, PF=0.7461) | Validation(n=1317, PF=0.9019)
+  SL=0.75xATR TP=3.0xATR -> Train(n=3100, PF=0.7721) | Validation(n=1223, PF=0.8746)
+  SL=0.75xATR TP=4.0xATR -> Train(n=2677, PF=0.7524) | Validation(n=1111, PF=0.8874)
+  SL=1.0xATR TP=2.0xATR -> Train(n=3470, PF=0.728) | Validation(n=1359, PF=0.9279)
+  SL=1.0xATR TP=2.5xATR -> Train(n=3136, PF=0.7618) | Validation(n=1218, PF=0.943)
+  SL=1.0xATR TP=3.0xATR -> Train(n=2814, PF=0.7886) | Validation(n=1117, PF=0.9194)
+  SL=1.0xATR TP=4.0xATR -> Train(n=2366, PF=0.7979) | Validation(n=991, PF=0.9165)
+  SECILEN: SL=1.0xATR14(M15), TP=2.5xATR14(M15) - Validation'da PF'ye gore secildi (n>=30 sarti saglayan 12 hucre arasindan).
+  TEST: {'n_trades': 1111, 'win_rate': 0.2826, 'win_rate_wilson_95ci': [0.2569, 0.3098], 'profit_factor': 0.942, 'net_profit_usd': -819.96, 'net_profit_pts': -85060.5, 'max_drawdown_pct': 53.85, 'medyan_tutma_suresi_saat': 0.75, 'ortalama_tutma_suresi_saat': 1.44, 'p10_p90_tutma_suresi_saat': [0.0, 3.75], 'cikis_nedeni_dagilimi': {'TP': 314, 'SL': 797}}
+  TAM DONEM: {'n_trades': 5863, 'win_rate': 0.2874, 'win_rate_wilson_95ci': [0.276, 0.2991], 'profit_factor': 0.8238, 'net_profit_usd': -15477.72, 'net_profit_pts': -207659.1, 'max_drawdown_pct': 774.15, 'medyan_tutma_suresi_saat': 0.5, 'ortalama_tutma_suresi_saat': 1.44, 'p10_p90_tutma_suresi_saat': [0.0, 3.75], 'cikis_nedeni_dagilimi': {'SL': 4178, 'TP': 1685}}
+  [M15_k10] Tam islem logu CSV yazildi.
+======================================================================
+KOMBINASYON: DUYARLILIK: M15 giris, k=0.5x ATR14 (M15_k05)
+======================================================================
+  train: 2022-04-25 03:45:00+00:00 -> 2024-06-05 13:45:00+00:00 (772.4 gun)
+  validation: 2024-07-20 13:45:00+00:00 -> 2025-08-10 18:45:00+00:00 (386.2 gun)
+  test: 2025-09-24 18:45:00+00:00 -> 2026-07-17 23:45:00+00:00 (296.2 gun)
+  aday-giris split dagilimi: {'train': 19230, 'validation': 7020, 'test': 7552, 'embargo': 2506}
+  SL=0.5xATR TP=2.0xATR -> Train(n=8856, PF=0.6181) | Validation(n=3609, PF=0.8021)
+  SL=0.5xATR TP=2.5xATR -> Train(n=7635, PF=0.6455) | Validation(n=3159, PF=0.8099)
+  SL=0.5xATR TP=3.0xATR -> Train(n=6703, PF=0.6819) | Validation(n=2824, PF=0.8214)
+  SL=0.5xATR TP=4.0xATR -> Train(n=5427, PF=0.7002) | Validation(n=2337, PF=0.8149)
+  SL=0.75xATR TP=2.0xATR -> Train(n=7134, PF=0.6898) | Validation(n=2954, PF=0.8794)
+  SL=0.75xATR TP=2.5xATR -> Train(n=5981, PF=0.7183) | Validation(n=2478, PF=0.9248)
+  SL=0.75xATR TP=3.0xATR -> Train(n=5248, PF=0.7489) | Validation(n=2218, PF=0.8733)
+  SL=0.75xATR TP=4.0xATR -> Train(n=4065, PF=0.7381) | Validation(n=1764, PF=0.8491)
+  SL=1.0xATR TP=2.0xATR -> Train(n=5781, PF=0.7316) | Validation(n=2519, PF=0.9087)
+  SL=1.0xATR TP=2.5xATR -> Train(n=4741, PF=0.7594) | Validation(n=2106, PF=0.9217)
+  SL=1.0xATR TP=3.0xATR -> Train(n=4056, PF=0.7997) | Validation(n=1816, PF=0.9385)
+  SL=1.0xATR TP=4.0xATR -> Train(n=3150, PF=0.7952) | Validation(n=1456, PF=0.896)
+  SECILEN: SL=1.0xATR14(M15), TP=3.0xATR14(M15) - Validation'da PF'ye gore secildi (n>=30 sarti saglayan 12 hucre arasindan).
+  TEST: {'n_trades': 1626, 'win_rate': 0.2454, 'win_rate_wilson_95ci': [0.2251, 0.2669], 'profit_factor': 0.9096, 'net_profit_usd': -2000.88, 'net_profit_pts': -124189.6, 'max_drawdown_pct': 103.37, 'medyan_tutma_suresi_saat': 1.0, 'ortalama_tutma_suresi_saat': 2.06, 'p10_p90_tutma_suresi_saat': [0.0, 5.25], 'cikis_nedeni_dagilimi': {'TP': 398, 'SL': 1227, 'KIRILIM_ERKEN_CIKIS': 1}}
+  TAM DONEM: {'n_trades': 8007, 'win_rate': 0.2523, 'win_rate_wilson_95ci': [0.2429, 0.2619], 'profit_factor': 0.8456, 'net_profit_usd': -19085.08, 'net_profit_pts': -301003.6, 'max_drawdown_pct': 940.45, 'medyan_tutma_suresi_saat': 0.75, 'ortalama_tutma_suresi_saat': 2.25, 'p10_p90_tutma_suresi_saat': [0.0, 5.75], 'cikis_nedeni_dagilimi': {'SL': 5987, 'TP': 2017, 'KIRILIM_ERKEN_CIKIS': 3}}
+  [M15_k05] Tam islem logu CSV yazildi.
+======================================================================
+KOMBINASYON: IKINCIL/CAPRAZ-KONTROL: M5 giris, k=1.0x ATR14 (M5_k10)
+======================================================================
+  train: 2025-02-18 08:15:00+00:00 -> 2025-11-02 16:05:00+00:00 (257.3 gun)
+  validation: 2025-12-17 16:05:00+00:00 -> 2026-04-25 08:00:00+00:00 (128.7 gun)
+  test: 2026-06-09 08:00:00+00:00 -> 2026-07-17 23:55:00+00:00 (38.7 gun)
+  aday-giris split dagilimi: {'train': 3900, 'validation': 2001, 'test': 842, 'embargo': 836}
+  SL=0.5xATR TP=2.0xATR -> Train(n=2423, PF=0.7329) | Validation(n=1541, PF=0.846)
+  SL=0.5xATR TP=2.5xATR -> Train(n=2316, PF=0.7404) | Validation(n=1476, PF=0.8803)
+  SL=0.5xATR TP=3.0xATR -> Train(n=2225, PF=0.7517) | Validation(n=1398, PF=0.8577)
+  SL=0.5xATR TP=4.0xATR -> Train(n=2053, PF=0.7663) | Validation(n=1293, PF=0.8367)
+  SL=0.75xATR TP=2.0xATR -> Train(n=2311, PF=0.7925) | Validation(n=1456, PF=0.8965)
+  SL=0.75xATR TP=2.5xATR -> Train(n=2165, PF=0.798) | Validation(n=1364, PF=0.8861)
+  SL=0.75xATR TP=3.0xATR -> Train(n=2040, PF=0.781) | Validation(n=1269, PF=0.866)
+  SL=0.75xATR TP=4.0xATR -> Train(n=1810, PF=0.813) | Validation(n=1126, PF=0.8124)
+  SL=1.0xATR TP=2.0xATR -> Train(n=2216, PF=0.82) | Validation(n=1382, PF=0.9369)
+  SL=1.0xATR TP=2.5xATR -> Train(n=2031, PF=0.8351) | Validation(n=1264, PF=0.9531)
+  SL=1.0xATR TP=3.0xATR -> Train(n=1891, PF=0.8004) | Validation(n=1138, PF=0.9132)
+  SL=1.0xATR TP=4.0xATR -> Train(n=1631, PF=0.8292) | Validation(n=988, PF=0.8534)
+  SECILEN: SL=1.0xATR14(M5), TP=2.5xATR14(M5) - Validation'da PF'ye gore secildi (n>=30 sarti saglayan 12 hucre arasindan).
+  TEST: {'n_trades': 419, 'win_rate': 0.3031, 'win_rate_wilson_95ci': [0.261, 0.3487], 'profit_factor': 0.9402, 'net_profit_usd': -340.72, 'net_profit_pts': -3465.0, 'max_drawdown_pct': 40.43, 'medyan_tutma_suresi_saat': 0.25, 'ortalama_tutma_suresi_saat': 0.43, 'p10_p90_tutma_suresi_saat': [0.0, 1.08], 'cikis_nedeni_dagilimi': {'TP': 127, 'SL': 292}}
+  TAM DONEM: {'n_trades': 4184, 'win_rate': 0.2957, 'win_rate_wilson_95ci': [0.282, 0.3097], 'profit_factor': 0.8793, 'net_profit_usd': -7157.57, 'net_profit_pts': -164814.0, 'max_drawdown_pct': 364.66, 'medyan_tutma_suresi_saat': 0.25, 'ortalama_tutma_suresi_saat': 0.51, 'p10_p90_tutma_suresi_saat': [0.0, 1.17], 'cikis_nedeni_dagilimi': {'SL': 2947, 'TP': 1237}}
+  [M5_k10] Tam islem logu CSV yazildi.
+TAMAMLANDI -> C:\MilaYatirim\mila-yatirim-sistemi\Justin\backtest_H4_momentum_esikli_teyit_output.json
+BITTI.

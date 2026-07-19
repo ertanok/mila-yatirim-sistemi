@@ -1,0 +1,3931 @@
+{
+  "symbol_info": {
+    "point": 0.01,
+    "digits": 2,
+    "contract_size": 100.0
+  },
+  "veri_araligi": {
+    "M1": {
+      "n_bar": 99999,
+      "baslangic": "2026-04-08 01:12:00+00:00",
+      "bitis": "2026-07-17 23:57:00+00:00"
+    },
+    "M5": {
+      "n_bar": 99999,
+      "baslangic": "2025-02-18 08:15:00+00:00",
+      "bitis": "2026-07-17 23:55:00+00:00"
+    },
+    "M15": {
+      "n_bar": 99999,
+      "baslangic": "2022-04-25 03:45:00+00:00",
+      "bitis": "2026-07-17 23:45:00+00:00"
+    },
+    "M30": {
+      "n_bar": 99999,
+      "baslangic": "2018-01-25 15:00:00+00:00",
+      "bitis": "2026-07-17 23:30:00+00:00"
+    },
+    "H1": {
+      "n_bar": 81348,
+      "baslangic": "2001-06-04 01:00:00+00:00",
+      "bitis": "2026-07-17 23:00:00+00:00"
+    }
+  },
+  "m1_veri_derinligi_testi": {
+    "pos_99999_count_99999_n_bar": 1,
+    "pos_99999_ilk_bar": "2026-04-08 01:11:00+00:00",
+    "pos_99999_son_bar": "2026-04-08 01:11:00+00:00",
+    "pos_100000_count_100": null,
+    "pos_100000_last_error": "(-1, 'Terminal: Call failed')"
+  },
+  "h1_m30_yapisal_kanal_ozet_bu_tur_n_kanal": {
+    "H1": {
+      "up": 27,
+      "down": 39
+    },
+    "M30": {
+      "up": 20,
+      "down": 40
+    }
+  },
+  "s1_global_maliyet": {
+    "M1": {
+      "spread_median_pts": 51.0,
+      "atr14_median_pts": 200.36,
+      "slippage_tahmini_pts": 7.41,
+      "toplam_maliyet_pts": 58.41
+    },
+    "M5": {
+      "spread_median_pts": 34.0,
+      "atr14_median_pts": 379.93,
+      "slippage_tahmini_pts": 14.06,
+      "toplam_maliyet_pts": 48.06
+    },
+    "M15": {
+      "spread_median_pts": 27.0,
+      "atr14_median_pts": 289.21,
+      "slippage_tahmini_pts": 10.7,
+      "toplam_maliyet_pts": 37.7
+    }
+  },
+  "giris_testi_m1_baseline": {
+    "H1": {
+      "up": {
+        "n_htf_kanal_ortusen": 1,
+        "n_giris_tetigi": 6875,
+        "ufuk_tablosu": {
+          "1": {
+            "gercek_sure_dk": 1,
+            "n_giris": 6875,
+            "ileri_hareket_median_pts": 105.0,
+            "oran_median_hedef_maliyet": 1.8
+          },
+          "2": {
+            "gercek_sure_dk": 2,
+            "n_giris": 6875,
+            "ileri_hareket_median_pts": 150.0,
+            "oran_median_hedef_maliyet": 2.57
+          },
+          "4": {
+            "gercek_sure_dk": 4,
+            "n_giris": 6875,
+            "ileri_hareket_median_pts": 218.0,
+            "oran_median_hedef_maliyet": 3.73
+          },
+          "8": {
+            "gercek_sure_dk": 8,
+            "n_giris": 6875,
+            "ileri_hareket_median_pts": 304.0,
+            "oran_median_hedef_maliyet": 5.2
+          },
+          "16": {
+            "gercek_sure_dk": 16,
+            "n_giris": 6875,
+            "ileri_hareket_median_pts": 426.0,
+            "oran_median_hedef_maliyet": 7.29
+          },
+          "32": {
+            "gercek_sure_dk": 32,
+            "n_giris": 6875,
+            "ileri_hareket_median_pts": 587.0,
+            "oran_median_hedef_maliyet": 10.05
+          },
+          "64": {
+            "gercek_sure_dk": 64,
+            "n_giris": 6875,
+            "ileri_hareket_median_pts": 808.0,
+            "oran_median_hedef_maliyet": 13.83
+          },
+          "128": {
+            "gercek_sure_dk": 128,
+            "n_giris": 6875,
+            "ileri_hareket_median_pts": 1218.0,
+            "oran_median_hedef_maliyet": 20.85
+          },
+          "256": {
+            "gercek_sure_dk": 256,
+            "n_giris": 6875,
+            "ileri_hareket_median_pts": 1709.0,
+            "oran_median_hedef_maliyet": 29.26
+          },
+          "480": {
+            "gercek_sure_dk": 480,
+            "n_giris": 6875,
+            "ileri_hareket_median_pts": 2758.0,
+            "oran_median_hedef_maliyet": 47.22
+          }
+        },
+        "esik_15x_dk": 74.66666666666666,
+        "esik_20x_dk": 120.25071225071224
+      },
+      "down": {
+        "n_htf_kanal_ortusen": 3,
+        "n_giris_tetigi": 6271,
+        "ufuk_tablosu": {
+          "1": {
+            "gercek_sure_dk": 1,
+            "n_giris": 6271,
+            "ileri_hareket_median_pts": 101.0,
+            "oran_median_hedef_maliyet": 1.73
+          },
+          "2": {
+            "gercek_sure_dk": 2,
+            "n_giris": 6271,
+            "ileri_hareket_median_pts": 148.0,
+            "oran_median_hedef_maliyet": 2.53
+          },
+          "4": {
+            "gercek_sure_dk": 4,
+            "n_giris": 6271,
+            "ileri_hareket_median_pts": 215.0,
+            "oran_median_hedef_maliyet": 3.68
+          },
+          "8": {
+            "gercek_sure_dk": 8,
+            "n_giris": 6271,
+            "ileri_hareket_median_pts": 301.0,
+            "oran_median_hedef_maliyet": 5.15
+          },
+          "16": {
+            "gercek_sure_dk": 16,
+            "n_giris": 6271,
+            "ileri_hareket_median_pts": 430.0,
+            "oran_median_hedef_maliyet": 7.36
+          },
+          "32": {
+            "gercek_sure_dk": 32,
+            "n_giris": 6271,
+            "ileri_hareket_median_pts": 601.0,
+            "oran_median_hedef_maliyet": 10.29
+          },
+          "64": {
+            "gercek_sure_dk": 64,
+            "n_giris": 6271,
+            "ileri_hareket_median_pts": 831.0,
+            "oran_median_hedef_maliyet": 14.23
+          },
+          "128": {
+            "gercek_sure_dk": 128,
+            "n_giris": 6271,
+            "ileri_hareket_median_pts": 1195.0,
+            "oran_median_hedef_maliyet": 20.46
+          },
+          "256": {
+            "gercek_sure_dk": 256,
+            "n_giris": 6271,
+            "ileri_hareket_median_pts": 1705.0,
+            "oran_median_hedef_maliyet": 29.19
+          },
+          "480": {
+            "gercek_sure_dk": 480,
+            "n_giris": 6208,
+            "ileri_hareket_median_pts": 2603.0,
+            "oran_median_hedef_maliyet": 44.56
+          }
+        },
+        "esik_15x_dk": 71.91011235955055,
+        "esik_20x_dk": 123.2744783306581
+      }
+    },
+    "M30": {
+      "up": {
+        "n_htf_kanal_ortusen": 2,
+        "n_giris_tetigi": 14711,
+        "ufuk_tablosu": {
+          "1": {
+            "gercek_sure_dk": 1,
+            "n_giris": 14711,
+            "ileri_hareket_median_pts": 91.0,
+            "oran_median_hedef_maliyet": 1.56
+          },
+          "2": {
+            "gercek_sure_dk": 2,
+            "n_giris": 14711,
+            "ileri_hareket_median_pts": 129.0,
+            "oran_median_hedef_maliyet": 2.21
+          },
+          "4": {
+            "gercek_sure_dk": 4,
+            "n_giris": 14711,
+            "ileri_hareket_median_pts": 188.0,
+            "oran_median_hedef_maliyet": 3.22
+          },
+          "8": {
+            "gercek_sure_dk": 8,
+            "n_giris": 14711,
+            "ileri_hareket_median_pts": 255.0,
+            "oran_median_hedef_maliyet": 4.37
+          },
+          "16": {
+            "gercek_sure_dk": 16,
+            "n_giris": 14711,
+            "ileri_hareket_median_pts": 355.0,
+            "oran_median_hedef_maliyet": 6.08
+          },
+          "32": {
+            "gercek_sure_dk": 32,
+            "n_giris": 14711,
+            "ileri_hareket_median_pts": 494.0,
+            "oran_median_hedef_maliyet": 8.46
+          },
+          "64": {
+            "gercek_sure_dk": 64,
+            "n_giris": 14711,
+            "ileri_hareket_median_pts": 685.0,
+            "oran_median_hedef_maliyet": 11.73
+          },
+          "128": {
+            "gercek_sure_dk": 128,
+            "n_giris": 14711,
+            "ileri_hareket_median_pts": 966.0,
+            "oran_median_hedef_maliyet": 16.54
+          },
+          "256": {
+            "gercek_sure_dk": 256,
+            "n_giris": 14692,
+            "ileri_hareket_median_pts": 1390.5,
+            "oran_median_hedef_maliyet": 23.8
+          },
+          "480": {
+            "gercek_sure_dk": 480,
+            "n_giris": 14581,
+            "ileri_hareket_median_pts": 2188.0,
+            "oran_median_hedef_maliyet": 37.46
+          }
+        },
+        "esik_15x_dk": 107.50935550935552,
+        "esik_20x_dk": 189.00275482093664
+      },
+      "down": {
+        "n_htf_kanal_ortusen": 1,
+        "n_giris_tetigi": 35498,
+        "ufuk_tablosu": {
+          "1": {
+            "gercek_sure_dk": 1,
+            "n_giris": 35498,
+            "ileri_hareket_median_pts": 90.0,
+            "oran_median_hedef_maliyet": 1.54
+          },
+          "2": {
+            "gercek_sure_dk": 2,
+            "n_giris": 35498,
+            "ileri_hareket_median_pts": 127.0,
+            "oran_median_hedef_maliyet": 2.17
+          },
+          "4": {
+            "gercek_sure_dk": 4,
+            "n_giris": 35498,
+            "ileri_hareket_median_pts": 179.0,
+            "oran_median_hedef_maliyet": 3.06
+          },
+          "8": {
+            "gercek_sure_dk": 8,
+            "n_giris": 35498,
+            "ileri_hareket_median_pts": 250.0,
+            "oran_median_hedef_maliyet": 4.28
+          },
+          "16": {
+            "gercek_sure_dk": 16,
+            "n_giris": 35498,
+            "ileri_hareket_median_pts": 345.0,
+            "oran_median_hedef_maliyet": 5.91
+          },
+          "32": {
+            "gercek_sure_dk": 32,
+            "n_giris": 35498,
+            "ileri_hareket_median_pts": 494.0,
+            "oran_median_hedef_maliyet": 8.46
+          },
+          "64": {
+            "gercek_sure_dk": 64,
+            "n_giris": 35498,
+            "ileri_hareket_median_pts": 690.0,
+            "oran_median_hedef_maliyet": 11.81
+          },
+          "128": {
+            "gercek_sure_dk": 128,
+            "n_giris": 35498,
+            "ileri_hareket_median_pts": 988.5,
+            "oran_median_hedef_maliyet": 16.92
+          },
+          "256": {
+            "gercek_sure_dk": 256,
+            "n_giris": 35469,
+            "ileri_hareket_median_pts": 1435.0,
+            "oran_median_hedef_maliyet": 24.57
+          },
+          "480": {
+            "gercek_sure_dk": 480,
+            "n_giris": 35356,
+            "ileri_hareket_median_pts": 2164.5,
+            "oran_median_hedef_maliyet": 37.05
+          }
+        },
+        "esik_15x_dk": 103.95303326810175,
+        "esik_20x_dk": 179.5346405228758
+      }
+    }
+  },
+  "alternatif_giris_tetigi": {
+    "coklu_teyit_N2": {
+      "M1": {
+        "H1": {
+          "up": {
+            "n_htf_kanal_ortusen": 1,
+            "n_giris_tetigi": 3344,
+            "ufuk_tablosu": {
+              "1": {
+                "gercek_sure_dk": 1,
+                "n_giris": 3344,
+                "ileri_hareket_median_pts": 109.0,
+                "oran_median_hedef_maliyet": 1.87
+              },
+              "2": {
+                "gercek_sure_dk": 2,
+                "n_giris": 3344,
+                "ileri_hareket_median_pts": 151.5,
+                "oran_median_hedef_maliyet": 2.59
+              },
+              "4": {
+                "gercek_sure_dk": 4,
+                "n_giris": 3344,
+                "ileri_hareket_median_pts": 221.0,
+                "oran_median_hedef_maliyet": 3.78
+              },
+              "8": {
+                "gercek_sure_dk": 8,
+                "n_giris": 3344,
+                "ileri_hareket_median_pts": 303.0,
+                "oran_median_hedef_maliyet": 5.19
+              },
+              "16": {
+                "gercek_sure_dk": 16,
+                "n_giris": 3344,
+                "ileri_hareket_median_pts": 432.5,
+                "oran_median_hedef_maliyet": 7.4
+              },
+              "32": {
+                "gercek_sure_dk": 32,
+                "n_giris": 3344,
+                "ileri_hareket_median_pts": 595.0,
+                "oran_median_hedef_maliyet": 10.19
+              },
+              "64": {
+                "gercek_sure_dk": 64,
+                "n_giris": 3344,
+                "ileri_hareket_median_pts": 824.5,
+                "oran_median_hedef_maliyet": 14.11
+              },
+              "128": {
+                "gercek_sure_dk": 128,
+                "n_giris": 3344,
+                "ileri_hareket_median_pts": 1248.5,
+                "oran_median_hedef_maliyet": 21.37
+              },
+              "256": {
+                "gercek_sure_dk": 256,
+                "n_giris": 3344,
+                "ileri_hareket_median_pts": 1734.5,
+                "oran_median_hedef_maliyet": 29.69
+              },
+              "480": {
+                "gercek_sure_dk": 480,
+                "n_giris": 3344,
+                "ileri_hareket_median_pts": 2728.0,
+                "oran_median_hedef_maliyet": 46.7
+              }
+            },
+            "esik_15x_dk": 71.84573002754821,
+            "esik_20x_dk": 115.9228650137741
+          },
+          "down": {
+            "n_htf_kanal_ortusen": 3,
+            "n_giris_tetigi": 3134,
+            "ufuk_tablosu": {
+              "1": {
+                "gercek_sure_dk": 1,
+                "n_giris": 3134,
+                "ileri_hareket_median_pts": 100.0,
+                "oran_median_hedef_maliyet": 1.71
+              },
+              "2": {
+                "gercek_sure_dk": 2,
+                "n_giris": 3134,
+                "ileri_hareket_median_pts": 148.0,
+                "oran_median_hedef_maliyet": 2.53
+              },
+              "4": {
+                "gercek_sure_dk": 4,
+                "n_giris": 3134,
+                "ileri_hareket_median_pts": 214.0,
+                "oran_median_hedef_maliyet": 3.66
+              },
+              "8": {
+                "gercek_sure_dk": 8,
+                "n_giris": 3134,
+                "ileri_hareket_median_pts": 296.5,
+                "oran_median_hedef_maliyet": 5.08
+              },
+              "16": {
+                "gercek_sure_dk": 16,
+                "n_giris": 3134,
+                "ileri_hareket_median_pts": 429.0,
+                "oran_median_hedef_maliyet": 7.34
+              },
+              "32": {
+                "gercek_sure_dk": 32,
+                "n_giris": 3134,
+                "ileri_hareket_median_pts": 617.5,
+                "oran_median_hedef_maliyet": 10.57
+              },
+              "64": {
+                "gercek_sure_dk": 64,
+                "n_giris": 3134,
+                "ileri_hareket_median_pts": 836.0,
+                "oran_median_hedef_maliyet": 14.31
+              },
+              "128": {
+                "gercek_sure_dk": 128,
+                "n_giris": 3134,
+                "ileri_hareket_median_pts": 1232.0,
+                "oran_median_hedef_maliyet": 21.09
+              },
+              "256": {
+                "gercek_sure_dk": 256,
+                "n_giris": 3134,
+                "ileri_hareket_median_pts": 1753.5,
+                "oran_median_hedef_maliyet": 30.02
+              },
+              "480": {
+                "gercek_sure_dk": 480,
+                "n_giris": 3100,
+                "ileri_hareket_median_pts": 2660.5,
+                "oran_median_hedef_maliyet": 45.55
+              }
+            },
+            "esik_15x_dk": 70.51327433628319,
+            "esik_20x_dk": 117.71091445427729
+          }
+        },
+        "M30": {
+          "up": {
+            "n_htf_kanal_ortusen": 2,
+            "n_giris_tetigi": 7137,
+            "ufuk_tablosu": {
+              "1": {
+                "gercek_sure_dk": 1,
+                "n_giris": 7137,
+                "ileri_hareket_median_pts": 92.0,
+                "oran_median_hedef_maliyet": 1.57
+              },
+              "2": {
+                "gercek_sure_dk": 2,
+                "n_giris": 7137,
+                "ileri_hareket_median_pts": 130.0,
+                "oran_median_hedef_maliyet": 2.23
+              },
+              "4": {
+                "gercek_sure_dk": 4,
+                "n_giris": 7137,
+                "ileri_hareket_median_pts": 186.0,
+                "oran_median_hedef_maliyet": 3.18
+              },
+              "8": {
+                "gercek_sure_dk": 8,
+                "n_giris": 7137,
+                "ileri_hareket_median_pts": 254.0,
+                "oran_median_hedef_maliyet": 4.35
+              },
+              "16": {
+                "gercek_sure_dk": 16,
+                "n_giris": 7137,
+                "ileri_hareket_median_pts": 353.0,
+                "oran_median_hedef_maliyet": 6.04
+              },
+              "32": {
+                "gercek_sure_dk": 32,
+                "n_giris": 7137,
+                "ileri_hareket_median_pts": 489.0,
+                "oran_median_hedef_maliyet": 8.37
+              },
+              "64": {
+                "gercek_sure_dk": 64,
+                "n_giris": 7137,
+                "ileri_hareket_median_pts": 680.0,
+                "oran_median_hedef_maliyet": 11.64
+              },
+              "128": {
+                "gercek_sure_dk": 128,
+                "n_giris": 7137,
+                "ileri_hareket_median_pts": 962.0,
+                "oran_median_hedef_maliyet": 16.47
+              },
+              "256": {
+                "gercek_sure_dk": 256,
+                "n_giris": 7129,
+                "ileri_hareket_median_pts": 1405.0,
+                "oran_median_hedef_maliyet": 24.05
+              },
+              "480": {
+                "gercek_sure_dk": 480,
+                "n_giris": 7077,
+                "ileri_hareket_median_pts": 2189.0,
+                "oran_median_hedef_maliyet": 37.47
+              }
+            },
+            "esik_15x_dk": 108.52173913043478,
+            "esik_20x_dk": 187.6094986807388
+          },
+          "down": {
+            "n_htf_kanal_ortusen": 1,
+            "n_giris_tetigi": 17288,
+            "ufuk_tablosu": {
+              "1": {
+                "gercek_sure_dk": 1,
+                "n_giris": 17288,
+                "ileri_hareket_median_pts": 91.0,
+                "oran_median_hedef_maliyet": 1.56
+              },
+              "2": {
+                "gercek_sure_dk": 2,
+                "n_giris": 17288,
+                "ileri_hareket_median_pts": 127.0,
+                "oran_median_hedef_maliyet": 2.17
+              },
+              "4": {
+                "gercek_sure_dk": 4,
+                "n_giris": 17288,
+                "ileri_hareket_median_pts": 179.0,
+                "oran_median_hedef_maliyet": 3.06
+              },
+              "8": {
+                "gercek_sure_dk": 8,
+                "n_giris": 17288,
+                "ileri_hareket_median_pts": 253.0,
+                "oran_median_hedef_maliyet": 4.33
+              },
+              "16": {
+                "gercek_sure_dk": 16,
+                "n_giris": 17288,
+                "ileri_hareket_median_pts": 345.0,
+                "oran_median_hedef_maliyet": 5.91
+              },
+              "32": {
+                "gercek_sure_dk": 32,
+                "n_giris": 17288,
+                "ileri_hareket_median_pts": 496.0,
+                "oran_median_hedef_maliyet": 8.49
+              },
+              "64": {
+                "gercek_sure_dk": 64,
+                "n_giris": 17288,
+                "ileri_hareket_median_pts": 690.0,
+                "oran_median_hedef_maliyet": 11.81
+              },
+              "128": {
+                "gercek_sure_dk": 128,
+                "n_giris": 17288,
+                "ileri_hareket_median_pts": 986.0,
+                "oran_median_hedef_maliyet": 16.88
+              },
+              "256": {
+                "gercek_sure_dk": 256,
+                "n_giris": 17270,
+                "ileri_hareket_median_pts": 1432.5,
+                "oran_median_hedef_maliyet": 24.52
+              },
+              "480": {
+                "gercek_sure_dk": 480,
+                "n_giris": 17215,
+                "ileri_hareket_median_pts": 2186.0,
+                "oran_median_hedef_maliyet": 37.42
+              }
+            },
+            "esik_15x_dk": 104.26824457593689,
+            "esik_20x_dk": 180.27225130890054
+          }
+        }
+      },
+      "M5": {
+        "H1": {
+          "up": {
+            "n_htf_kanal_ortusen": 2,
+            "n_giris_tetigi": 7549,
+            "ufuk_tablosu": {
+              "1": {
+                "gercek_sure_dk": 5,
+                "n_giris": 7549,
+                "ileri_hareket_median_pts": 137.0,
+                "oran_median_hedef_maliyet": 2.85
+              },
+              "2": {
+                "gercek_sure_dk": 10,
+                "n_giris": 7549,
+                "ileri_hareket_median_pts": 195.0,
+                "oran_median_hedef_maliyet": 4.06
+              },
+              "4": {
+                "gercek_sure_dk": 20,
+                "n_giris": 7549,
+                "ileri_hareket_median_pts": 278.0,
+                "oran_median_hedef_maliyet": 5.78
+              },
+              "8": {
+                "gercek_sure_dk": 40,
+                "n_giris": 7549,
+                "ileri_hareket_median_pts": 395.0,
+                "oran_median_hedef_maliyet": 8.22
+              },
+              "16": {
+                "gercek_sure_dk": 80,
+                "n_giris": 7549,
+                "ileri_hareket_median_pts": 561.0,
+                "oran_median_hedef_maliyet": 11.67
+              },
+              "32": {
+                "gercek_sure_dk": 160,
+                "n_giris": 7549,
+                "ileri_hareket_median_pts": 792.0,
+                "oran_median_hedef_maliyet": 16.48
+              },
+              "64": {
+                "gercek_sure_dk": 320,
+                "n_giris": 7549,
+                "ileri_hareket_median_pts": 1199.0,
+                "oran_median_hedef_maliyet": 24.95
+              },
+              "128": {
+                "gercek_sure_dk": 640,
+                "n_giris": 7549,
+                "ileri_hareket_median_pts": 1773.0,
+                "oran_median_hedef_maliyet": 36.89
+              }
+            },
+            "esik_15x_dk": 135.3846153846154,
+            "esik_20x_dk": 226.49350649350652
+          },
+          "down": {
+            "n_htf_kanal_ortusen": 8,
+            "n_giris_tetigi": 4143,
+            "ufuk_tablosu": {
+              "1": {
+                "gercek_sure_dk": 5,
+                "n_giris": 4143,
+                "ileri_hareket_median_pts": 228.0,
+                "oran_median_hedef_maliyet": 4.74
+              },
+              "2": {
+                "gercek_sure_dk": 10,
+                "n_giris": 4143,
+                "ileri_hareket_median_pts": 320.0,
+                "oran_median_hedef_maliyet": 6.66
+              },
+              "4": {
+                "gercek_sure_dk": 20,
+                "n_giris": 4143,
+                "ileri_hareket_median_pts": 460.0,
+                "oran_median_hedef_maliyet": 9.57
+              },
+              "8": {
+                "gercek_sure_dk": 40,
+                "n_giris": 4143,
+                "ileri_hareket_median_pts": 631.0,
+                "oran_median_hedef_maliyet": 13.13
+              },
+              "16": {
+                "gercek_sure_dk": 80,
+                "n_giris": 4143,
+                "ileri_hareket_median_pts": 852.0,
+                "oran_median_hedef_maliyet": 17.73
+              },
+              "32": {
+                "gercek_sure_dk": 160,
+                "n_giris": 4143,
+                "ileri_hareket_median_pts": 1288.0,
+                "oran_median_hedef_maliyet": 26.8
+              },
+              "64": {
+                "gercek_sure_dk": 320,
+                "n_giris": 4139,
+                "ileri_hareket_median_pts": 2013.0,
+                "oran_median_hedef_maliyet": 41.89
+              },
+              "128": {
+                "gercek_sure_dk": 640,
+                "n_giris": 4127,
+                "ileri_hareket_median_pts": 2973.0,
+                "oran_median_hedef_maliyet": 61.86
+              }
+            },
+            "esik_15x_dk": 56.26086956521739,
+            "esik_20x_dk": 100.0220507166483
+          }
+        },
+        "M30": {
+          "up": {
+            "n_htf_kanal_ortusen": 5,
+            "n_giris_tetigi": 7926,
+            "ufuk_tablosu": {
+              "1": {
+                "gercek_sure_dk": 5,
+                "n_giris": 7926,
+                "ileri_hareket_median_pts": 207.0,
+                "oran_median_hedef_maliyet": 4.31
+              },
+              "2": {
+                "gercek_sure_dk": 10,
+                "n_giris": 7926,
+                "ileri_hareket_median_pts": 287.0,
+                "oran_median_hedef_maliyet": 5.97
+              },
+              "4": {
+                "gercek_sure_dk": 20,
+                "n_giris": 7926,
+                "ileri_hareket_median_pts": 409.0,
+                "oran_median_hedef_maliyet": 8.51
+              },
+              "8": {
+                "gercek_sure_dk": 40,
+                "n_giris": 7926,
+                "ileri_hareket_median_pts": 578.0,
+                "oran_median_hedef_maliyet": 12.03
+              },
+              "16": {
+                "gercek_sure_dk": 80,
+                "n_giris": 7926,
+                "ileri_hareket_median_pts": 810.0,
+                "oran_median_hedef_maliyet": 16.85
+              },
+              "32": {
+                "gercek_sure_dk": 160,
+                "n_giris": 7926,
+                "ileri_hareket_median_pts": 1185.5,
+                "oran_median_hedef_maliyet": 24.67
+              },
+              "64": {
+                "gercek_sure_dk": 320,
+                "n_giris": 7918,
+                "ileri_hareket_median_pts": 1869.0,
+                "oran_median_hedef_maliyet": 38.89
+              },
+              "128": {
+                "gercek_sure_dk": 640,
+                "n_giris": 7907,
+                "ileri_hareket_median_pts": 2673.0,
+                "oran_median_hedef_maliyet": 55.62
+              }
+            },
+            "esik_15x_dk": 64.64730290456431,
+            "esik_20x_dk": 112.22506393861892
+          },
+          "down": {
+            "n_htf_kanal_ortusen": 6,
+            "n_giris_tetigi": 11051,
+            "ufuk_tablosu": {
+              "1": {
+                "gercek_sure_dk": 5,
+                "n_giris": 11051,
+                "ileri_hareket_median_pts": 176.0,
+                "oran_median_hedef_maliyet": 3.66
+              },
+              "2": {
+                "gercek_sure_dk": 10,
+                "n_giris": 11051,
+                "ileri_hareket_median_pts": 246.0,
+                "oran_median_hedef_maliyet": 5.12
+              },
+              "4": {
+                "gercek_sure_dk": 20,
+                "n_giris": 11051,
+                "ileri_hareket_median_pts": 347.0,
+                "oran_median_hedef_maliyet": 7.22
+              },
+              "8": {
+                "gercek_sure_dk": 40,
+                "n_giris": 11051,
+                "ileri_hareket_median_pts": 491.0,
+                "oran_median_hedef_maliyet": 10.22
+              },
+              "16": {
+                "gercek_sure_dk": 80,
+                "n_giris": 11051,
+                "ileri_hareket_median_pts": 688.0,
+                "oran_median_hedef_maliyet": 14.32
+              },
+              "32": {
+                "gercek_sure_dk": 160,
+                "n_giris": 11051,
+                "ileri_hareket_median_pts": 1028.0,
+                "oran_median_hedef_maliyet": 21.39
+              },
+              "64": {
+                "gercek_sure_dk": 320,
+                "n_giris": 11045,
+                "ileri_hareket_median_pts": 1525.0,
+                "oran_median_hedef_maliyet": 31.73
+              },
+              "128": {
+                "gercek_sure_dk": 640,
+                "n_giris": 11033,
+                "ileri_hareket_median_pts": 2242.0,
+                "oran_median_hedef_maliyet": 46.65
+              }
+            },
+            "esik_15x_dk": 87.6944837340877,
+            "esik_20x_dk": 144.27157001414426
+          }
+        }
+      },
+      "M15": {
+        "H1": {
+          "up": {
+            "n_htf_kanal_ortusen": 6,
+            "n_giris_tetigi": 12268,
+            "ufuk_tablosu": {
+              "1": {
+                "gercek_sure_dk": 15,
+                "n_giris": 12268,
+                "ileri_hareket_median_pts": 129.0,
+                "oran_median_hedef_maliyet": 3.42
+              },
+              "2": {
+                "gercek_sure_dk": 30,
+                "n_giris": 12268,
+                "ileri_hareket_median_pts": 184.0,
+                "oran_median_hedef_maliyet": 4.88
+              },
+              "4": {
+                "gercek_sure_dk": 60,
+                "n_giris": 12268,
+                "ileri_hareket_median_pts": 255.0,
+                "oran_median_hedef_maliyet": 6.76
+              },
+              "8": {
+                "gercek_sure_dk": 120,
+                "n_giris": 12268,
+                "ileri_hareket_median_pts": 366.0,
+                "oran_median_hedef_maliyet": 9.71
+              },
+              "16": {
+                "gercek_sure_dk": 240,
+                "n_giris": 12268,
+                "ileri_hareket_median_pts": 542.0,
+                "oran_median_hedef_maliyet": 14.38
+              },
+              "32": {
+                "gercek_sure_dk": 480,
+                "n_giris": 12268,
+                "ileri_hareket_median_pts": 798.0,
+                "oran_median_hedef_maliyet": 21.17
+              },
+              "64": {
+                "gercek_sure_dk": 960,
+                "n_giris": 12268,
+                "ileri_hareket_median_pts": 1225.5,
+                "oran_median_hedef_maliyet": 32.51
+              }
+            },
+            "esik_15x_dk": 261.9145802650957,
+            "esik_20x_dk": 438.6450662739322
+          },
+          "down": {
+            "n_htf_kanal_ortusen": 16,
+            "n_giris_tetigi": 9833,
+            "ufuk_tablosu": {
+              "1": {
+                "gercek_sure_dk": 15,
+                "n_giris": 9833,
+                "ileri_hareket_median_pts": 104.0,
+                "oran_median_hedef_maliyet": 2.76
+              },
+              "2": {
+                "gercek_sure_dk": 30,
+                "n_giris": 9833,
+                "ileri_hareket_median_pts": 144.0,
+                "oran_median_hedef_maliyet": 3.82
+              },
+              "4": {
+                "gercek_sure_dk": 60,
+                "n_giris": 9833,
+                "ileri_hareket_median_pts": 207.0,
+                "oran_median_hedef_maliyet": 5.49
+              },
+              "8": {
+                "gercek_sure_dk": 120,
+                "n_giris": 9833,
+                "ileri_hareket_median_pts": 292.0,
+                "oran_median_hedef_maliyet": 7.75
+              },
+              "16": {
+                "gercek_sure_dk": 240,
+                "n_giris": 9832,
+                "ileri_hareket_median_pts": 424.0,
+                "oran_median_hedef_maliyet": 11.25
+              },
+              "32": {
+                "gercek_sure_dk": 480,
+                "n_giris": 9831,
+                "ileri_hareket_median_pts": 663.0,
+                "oran_median_hedef_maliyet": 17.59
+              },
+              "64": {
+                "gercek_sure_dk": 960,
+                "n_giris": 9825,
+                "ileri_hareket_median_pts": 998.0,
+                "oran_median_hedef_maliyet": 26.47
+              }
+            },
+            "esik_15x_dk": 381.9558359621451,
+            "esik_20x_dk": 610.2702702702703
+          }
+        },
+        "M30": {
+          "up": {
+            "n_htf_kanal_ortusen": 11,
+            "n_giris_tetigi": 10869,
+            "ufuk_tablosu": {
+              "1": {
+                "gercek_sure_dk": 15,
+                "n_giris": 10869,
+                "ileri_hareket_median_pts": 135.0,
+                "oran_median_hedef_maliyet": 3.58
+              },
+              "2": {
+                "gercek_sure_dk": 30,
+                "n_giris": 10869,
+                "ileri_hareket_median_pts": 188.0,
+                "oran_median_hedef_maliyet": 4.99
+              },
+              "4": {
+                "gercek_sure_dk": 60,
+                "n_giris": 10869,
+                "ileri_hareket_median_pts": 270.0,
+                "oran_median_hedef_maliyet": 7.16
+              },
+              "8": {
+                "gercek_sure_dk": 120,
+                "n_giris": 10869,
+                "ileri_hareket_median_pts": 374.0,
+                "oran_median_hedef_maliyet": 9.92
+              },
+              "16": {
+                "gercek_sure_dk": 240,
+                "n_giris": 10869,
+                "ileri_hareket_median_pts": 549.0,
+                "oran_median_hedef_maliyet": 14.56
+              },
+              "32": {
+                "gercek_sure_dk": 480,
+                "n_giris": 10864,
+                "ileri_hareket_median_pts": 820.0,
+                "oran_median_hedef_maliyet": 21.75
+              },
+              "64": {
+                "gercek_sure_dk": 960,
+                "n_giris": 10858,
+                "ileri_hareket_median_pts": 1190.0,
+                "oran_median_hedef_maliyet": 31.56
+              }
+            },
+            "esik_15x_dk": 254.68706536856743,
+            "esik_20x_dk": 421.58553546592486
+          },
+          "down": {
+            "n_htf_kanal_ortusen": 18,
+            "n_giris_tetigi": 15371,
+            "ufuk_tablosu": {
+              "1": {
+                "gercek_sure_dk": 15,
+                "n_giris": 15371,
+                "ileri_hareket_median_pts": 104.0,
+                "oran_median_hedef_maliyet": 2.76
+              },
+              "2": {
+                "gercek_sure_dk": 30,
+                "n_giris": 15371,
+                "ileri_hareket_median_pts": 149.0,
+                "oran_median_hedef_maliyet": 3.95
+              },
+              "4": {
+                "gercek_sure_dk": 60,
+                "n_giris": 15371,
+                "ileri_hareket_median_pts": 210.0,
+                "oran_median_hedef_maliyet": 5.57
+              },
+              "8": {
+                "gercek_sure_dk": 120,
+                "n_giris": 15371,
+                "ileri_hareket_median_pts": 302.0,
+                "oran_median_hedef_maliyet": 8.01
+              },
+              "16": {
+                "gercek_sure_dk": 240,
+                "n_giris": 15370,
+                "ileri_hareket_median_pts": 443.0,
+                "oran_median_hedef_maliyet": 11.75
+              },
+              "32": {
+                "gercek_sure_dk": 480,
+                "n_giris": 15369,
+                "ileri_hareket_median_pts": 687.0,
+                "oran_median_hedef_maliyet": 18.22
+              },
+              "64": {
+                "gercek_sure_dk": 960,
+                "n_giris": 15363,
+                "ileri_hareket_median_pts": 1039.0,
+                "oran_median_hedef_maliyet": 27.56
+              }
+            },
+            "esik_15x_dk": 360.5564142194745,
+            "esik_20x_dk": 571.4775160599572
+          }
+        }
+      }
+    },
+    "coklu_teyit_N3": {
+      "M1": {
+        "H1": {
+          "up": {
+            "n_htf_kanal_ortusen": 1,
+            "n_giris_tetigi": 1614,
+            "ufuk_tablosu": {
+              "1": {
+                "gercek_sure_dk": 1,
+                "n_giris": 1614,
+                "ileri_hareket_median_pts": 110.5,
+                "oran_median_hedef_maliyet": 1.89
+              },
+              "2": {
+                "gercek_sure_dk": 2,
+                "n_giris": 1614,
+                "ileri_hareket_median_pts": 150.0,
+                "oran_median_hedef_maliyet": 2.57
+              },
+              "4": {
+                "gercek_sure_dk": 4,
+                "n_giris": 1614,
+                "ileri_hareket_median_pts": 226.5,
+                "oran_median_hedef_maliyet": 3.88
+              },
+              "8": {
+                "gercek_sure_dk": 8,
+                "n_giris": 1614,
+                "ileri_hareket_median_pts": 301.0,
+                "oran_median_hedef_maliyet": 5.15
+              },
+              "16": {
+                "gercek_sure_dk": 16,
+                "n_giris": 1614,
+                "ileri_hareket_median_pts": 444.5,
+                "oran_median_hedef_maliyet": 7.61
+              },
+              "32": {
+                "gercek_sure_dk": 32,
+                "n_giris": 1614,
+                "ileri_hareket_median_pts": 599.0,
+                "oran_median_hedef_maliyet": 10.25
+              },
+              "64": {
+                "gercek_sure_dk": 64,
+                "n_giris": 1614,
+                "ileri_hareket_median_pts": 827.0,
+                "oran_median_hedef_maliyet": 14.16
+              },
+              "128": {
+                "gercek_sure_dk": 128,
+                "n_giris": 1614,
+                "ileri_hareket_median_pts": 1239.0,
+                "oran_median_hedef_maliyet": 21.21
+              },
+              "256": {
+                "gercek_sure_dk": 256,
+                "n_giris": 1614,
+                "ileri_hareket_median_pts": 1733.0,
+                "oran_median_hedef_maliyet": 29.67
+              },
+              "480": {
+                "gercek_sure_dk": 480,
+                "n_giris": 1614,
+                "ileri_hareket_median_pts": 2707.5,
+                "oran_median_hedef_maliyet": 46.35
+              }
+            },
+            "esik_15x_dk": 71.62553191489361,
+            "esik_20x_dk": 117.01560283687942
+          },
+          "down": {
+            "n_htf_kanal_ortusen": 3,
+            "n_giris_tetigi": 1585,
+            "ufuk_tablosu": {
+              "1": {
+                "gercek_sure_dk": 1,
+                "n_giris": 1585,
+                "ileri_hareket_median_pts": 100.0,
+                "oran_median_hedef_maliyet": 1.71
+              },
+              "2": {
+                "gercek_sure_dk": 2,
+                "n_giris": 1585,
+                "ileri_hareket_median_pts": 149.0,
+                "oran_median_hedef_maliyet": 2.55
+              },
+              "4": {
+                "gercek_sure_dk": 4,
+                "n_giris": 1585,
+                "ileri_hareket_median_pts": 217.0,
+                "oran_median_hedef_maliyet": 3.71
+              },
+              "8": {
+                "gercek_sure_dk": 8,
+                "n_giris": 1585,
+                "ileri_hareket_median_pts": 298.0,
+                "oran_median_hedef_maliyet": 5.1
+              },
+              "16": {
+                "gercek_sure_dk": 16,
+                "n_giris": 1585,
+                "ileri_hareket_median_pts": 436.0,
+                "oran_median_hedef_maliyet": 7.46
+              },
+              "32": {
+                "gercek_sure_dk": 32,
+                "n_giris": 1585,
+                "ileri_hareket_median_pts": 633.0,
+                "oran_median_hedef_maliyet": 10.84
+              },
+              "64": {
+                "gercek_sure_dk": 64,
+                "n_giris": 1585,
+                "ileri_hareket_median_pts": 846.0,
+                "oran_median_hedef_maliyet": 14.48
+              },
+              "128": {
+                "gercek_sure_dk": 128,
+                "n_giris": 1585,
+                "ileri_hareket_median_pts": 1250.0,
+                "oran_median_hedef_maliyet": 21.4
+              },
+              "256": {
+                "gercek_sure_dk": 256,
+                "n_giris": 1585,
+                "ileri_hareket_median_pts": 1812.0,
+                "oran_median_hedef_maliyet": 31.02
+              },
+              "480": {
+                "gercek_sure_dk": 480,
+                "n_giris": 1571,
+                "ileri_hareket_median_pts": 2806.0,
+                "oran_median_hedef_maliyet": 48.04
+              }
+            },
+            "esik_15x_dk": 68.8092485549133,
+            "esik_20x_dk": 115.0520231213873
+          }
+        },
+        "M30": {
+          "up": {
+            "n_htf_kanal_ortusen": 2,
+            "n_giris_tetigi": 3369,
+            "ufuk_tablosu": {
+              "1": {
+                "gercek_sure_dk": 1,
+                "n_giris": 3369,
+                "ileri_hareket_median_pts": 91.0,
+                "oran_median_hedef_maliyet": 1.56
+              },
+              "2": {
+                "gercek_sure_dk": 2,
+                "n_giris": 3369,
+                "ileri_hareket_median_pts": 130.0,
+                "oran_median_hedef_maliyet": 2.23
+              },
+              "4": {
+                "gercek_sure_dk": 4,
+                "n_giris": 3369,
+                "ileri_hareket_median_pts": 186.0,
+                "oran_median_hedef_maliyet": 3.18
+              },
+              "8": {
+                "gercek_sure_dk": 8,
+                "n_giris": 3369,
+                "ileri_hareket_median_pts": 249.0,
+                "oran_median_hedef_maliyet": 4.26
+              },
+              "16": {
+                "gercek_sure_dk": 16,
+                "n_giris": 3369,
+                "ileri_hareket_median_pts": 348.0,
+                "oran_median_hedef_maliyet": 5.96
+              },
+              "32": {
+                "gercek_sure_dk": 32,
+                "n_giris": 3369,
+                "ileri_hareket_median_pts": 477.0,
+                "oran_median_hedef_maliyet": 8.17
+              },
+              "64": {
+                "gercek_sure_dk": 64,
+                "n_giris": 3369,
+                "ileri_hareket_median_pts": 677.0,
+                "oran_median_hedef_maliyet": 11.59
+              },
+              "128": {
+                "gercek_sure_dk": 128,
+                "n_giris": 3369,
+                "ileri_hareket_median_pts": 947.0,
+                "oran_median_hedef_maliyet": 16.21
+              },
+              "256": {
+                "gercek_sure_dk": 256,
+                "n_giris": 3366,
+                "ileri_hareket_median_pts": 1397.0,
+                "oran_median_hedef_maliyet": 23.92
+              },
+              "480": {
+                "gercek_sure_dk": 480,
+                "n_giris": 3345,
+                "ileri_hareket_median_pts": 2163.0,
+                "oran_median_hedef_maliyet": 37.03
+              }
+            },
+            "esik_15x_dk": 111.23809523809523,
+            "esik_20x_dk": 190.9208819714656
+          },
+          "down": {
+            "n_htf_kanal_ortusen": 1,
+            "n_giris_tetigi": 8341,
+            "ufuk_tablosu": {
+              "1": {
+                "gercek_sure_dk": 1,
+                "n_giris": 8341,
+                "ileri_hareket_median_pts": 93.0,
+                "oran_median_hedef_maliyet": 1.59
+              },
+              "2": {
+                "gercek_sure_dk": 2,
+                "n_giris": 8341,
+                "ileri_hareket_median_pts": 129.0,
+                "oran_median_hedef_maliyet": 2.21
+              },
+              "4": {
+                "gercek_sure_dk": 4,
+                "n_giris": 8341,
+                "ileri_hareket_median_pts": 184.0,
+                "oran_median_hedef_maliyet": 3.15
+              },
+              "8": {
+                "gercek_sure_dk": 8,
+                "n_giris": 8341,
+                "ileri_hareket_median_pts": 254.0,
+                "oran_median_hedef_maliyet": 4.35
+              },
+              "16": {
+                "gercek_sure_dk": 16,
+                "n_giris": 8341,
+                "ileri_hareket_median_pts": 351.0,
+                "oran_median_hedef_maliyet": 6.01
+              },
+              "32": {
+                "gercek_sure_dk": 32,
+                "n_giris": 8341,
+                "ileri_hareket_median_pts": 499.0,
+                "oran_median_hedef_maliyet": 8.54
+              },
+              "64": {
+                "gercek_sure_dk": 64,
+                "n_giris": 8341,
+                "ileri_hareket_median_pts": 697.0,
+                "oran_median_hedef_maliyet": 11.93
+              },
+              "128": {
+                "gercek_sure_dk": 128,
+                "n_giris": 8341,
+                "ileri_hareket_median_pts": 998.0,
+                "oran_median_hedef_maliyet": 17.09
+              },
+              "256": {
+                "gercek_sure_dk": 256,
+                "n_giris": 8331,
+                "ileri_hareket_median_pts": 1443.0,
+                "oran_median_hedef_maliyet": 24.7
+              },
+              "480": {
+                "gercek_sure_dk": 480,
+                "n_giris": 8307,
+                "ileri_hareket_median_pts": 2217.0,
+                "oran_median_hedef_maliyet": 37.95
+              }
+            },
+            "esik_15x_dk": 102.07751937984497,
+            "esik_20x_dk": 176.946123521682
+          }
+        }
+      },
+      "M5": {
+        "H1": {
+          "up": {
+            "n_htf_kanal_ortusen": 2,
+            "n_giris_tetigi": 3700,
+            "ufuk_tablosu": {
+              "1": {
+                "gercek_sure_dk": 5,
+                "n_giris": 3700,
+                "ileri_hareket_median_pts": 140.0,
+                "oran_median_hedef_maliyet": 2.91
+              },
+              "2": {
+                "gercek_sure_dk": 10,
+                "n_giris": 3700,
+                "ileri_hareket_median_pts": 196.0,
+                "oran_median_hedef_maliyet": 4.08
+              },
+              "4": {
+                "gercek_sure_dk": 20,
+                "n_giris": 3700,
+                "ileri_hareket_median_pts": 277.5,
+                "oran_median_hedef_maliyet": 5.77
+              },
+              "8": {
+                "gercek_sure_dk": 40,
+                "n_giris": 3700,
+                "ileri_hareket_median_pts": 386.0,
+                "oran_median_hedef_maliyet": 8.03
+              },
+              "16": {
+                "gercek_sure_dk": 80,
+                "n_giris": 3700,
+                "ileri_hareket_median_pts": 542.5,
+                "oran_median_hedef_maliyet": 11.29
+              },
+              "32": {
+                "gercek_sure_dk": 160,
+                "n_giris": 3700,
+                "ileri_hareket_median_pts": 767.0,
+                "oran_median_hedef_maliyet": 15.96
+              },
+              "64": {
+                "gercek_sure_dk": 320,
+                "n_giris": 3700,
+                "ileri_hareket_median_pts": 1180.0,
+                "oran_median_hedef_maliyet": 24.55
+              },
+              "128": {
+                "gercek_sure_dk": 640,
+                "n_giris": 3700,
+                "ileri_hareket_median_pts": 1753.5,
+                "oran_median_hedef_maliyet": 36.49
+              }
+            },
+            "esik_15x_dk": 143.5546038543897,
+            "esik_20x_dk": 235.25029103608847
+          },
+          "down": {
+            "n_htf_kanal_ortusen": 8,
+            "n_giris_tetigi": 1971,
+            "ufuk_tablosu": {
+              "1": {
+                "gercek_sure_dk": 5,
+                "n_giris": 1971,
+                "ileri_hareket_median_pts": 242.0,
+                "oran_median_hedef_maliyet": 5.04
+              },
+              "2": {
+                "gercek_sure_dk": 10,
+                "n_giris": 1971,
+                "ileri_hareket_median_pts": 331.0,
+                "oran_median_hedef_maliyet": 6.89
+              },
+              "4": {
+                "gercek_sure_dk": 20,
+                "n_giris": 1971,
+                "ileri_hareket_median_pts": 479.0,
+                "oran_median_hedef_maliyet": 9.97
+              },
+              "8": {
+                "gercek_sure_dk": 40,
+                "n_giris": 1971,
+                "ileri_hareket_median_pts": 625.0,
+                "oran_median_hedef_maliyet": 13.01
+              },
+              "16": {
+                "gercek_sure_dk": 80,
+                "n_giris": 1971,
+                "ileri_hareket_median_pts": 850.0,
+                "oran_median_hedef_maliyet": 17.69
+              },
+              "32": {
+                "gercek_sure_dk": 160,
+                "n_giris": 1971,
+                "ileri_hareket_median_pts": 1280.0,
+                "oran_median_hedef_maliyet": 26.63
+              },
+              "64": {
+                "gercek_sure_dk": 320,
+                "n_giris": 1970,
+                "ileri_hareket_median_pts": 1962.0,
+                "oran_median_hedef_maliyet": 40.83
+              },
+              "128": {
+                "gercek_sure_dk": 640,
+                "n_giris": 1965,
+                "ileri_hareket_median_pts": 2947.0,
+                "oran_median_hedef_maliyet": 61.32
+              }
+            },
+            "esik_15x_dk": 57.008547008547005,
+            "esik_20x_dk": 100.67114093959731
+          }
+        },
+        "M30": {
+          "up": {
+            "n_htf_kanal_ortusen": 5,
+            "n_giris_tetigi": 3860,
+            "ufuk_tablosu": {
+              "1": {
+                "gercek_sure_dk": 5,
+                "n_giris": 3860,
+                "ileri_hareket_median_pts": 212.0,
+                "oran_median_hedef_maliyet": 4.41
+              },
+              "2": {
+                "gercek_sure_dk": 10,
+                "n_giris": 3860,
+                "ileri_hareket_median_pts": 286.0,
+                "oran_median_hedef_maliyet": 5.95
+              },
+              "4": {
+                "gercek_sure_dk": 20,
+                "n_giris": 3860,
+                "ileri_hareket_median_pts": 418.0,
+                "oran_median_hedef_maliyet": 8.7
+              },
+              "8": {
+                "gercek_sure_dk": 40,
+                "n_giris": 3860,
+                "ileri_hareket_median_pts": 578.0,
+                "oran_median_hedef_maliyet": 12.03
+              },
+              "16": {
+                "gercek_sure_dk": 80,
+                "n_giris": 3860,
+                "ileri_hareket_median_pts": 784.5,
+                "oran_median_hedef_maliyet": 16.32
+              },
+              "32": {
+                "gercek_sure_dk": 160,
+                "n_giris": 3860,
+                "ileri_hareket_median_pts": 1165.5,
+                "oran_median_hedef_maliyet": 24.25
+              },
+              "64": {
+                "gercek_sure_dk": 320,
+                "n_giris": 3856,
+                "ileri_hareket_median_pts": 1857.0,
+                "oran_median_hedef_maliyet": 38.64
+              },
+              "128": {
+                "gercek_sure_dk": 640,
+                "n_giris": 3853,
+                "ileri_hareket_median_pts": 2670.0,
+                "oran_median_hedef_maliyet": 55.56
+              }
+            },
+            "esik_15x_dk": 67.6923076923077,
+            "esik_20x_dk": 117.124842370744
+          },
+          "down": {
+            "n_htf_kanal_ortusen": 6,
+            "n_giris_tetigi": 5230,
+            "ufuk_tablosu": {
+              "1": {
+                "gercek_sure_dk": 5,
+                "n_giris": 5230,
+                "ileri_hareket_median_pts": 182.0,
+                "oran_median_hedef_maliyet": 3.79
+              },
+              "2": {
+                "gercek_sure_dk": 10,
+                "n_giris": 5230,
+                "ileri_hareket_median_pts": 254.0,
+                "oran_median_hedef_maliyet": 5.29
+              },
+              "4": {
+                "gercek_sure_dk": 20,
+                "n_giris": 5230,
+                "ileri_hareket_median_pts": 355.0,
+                "oran_median_hedef_maliyet": 7.39
+              },
+              "8": {
+                "gercek_sure_dk": 40,
+                "n_giris": 5230,
+                "ileri_hareket_median_pts": 497.0,
+                "oran_median_hedef_maliyet": 10.34
+              },
+              "16": {
+                "gercek_sure_dk": 80,
+                "n_giris": 5230,
+                "ileri_hareket_median_pts": 691.0,
+                "oran_median_hedef_maliyet": 14.38
+              },
+              "32": {
+                "gercek_sure_dk": 160,
+                "n_giris": 5230,
+                "ileri_hareket_median_pts": 1037.0,
+                "oran_median_hedef_maliyet": 21.58
+              },
+              "64": {
+                "gercek_sure_dk": 320,
+                "n_giris": 5229,
+                "ileri_hareket_median_pts": 1516.0,
+                "oran_median_hedef_maliyet": 31.55
+              },
+              "128": {
+                "gercek_sure_dk": 640,
+                "n_giris": 5224,
+                "ileri_hareket_median_pts": 2207.0,
+                "oran_median_hedef_maliyet": 45.92
+              }
+            },
+            "esik_15x_dk": 86.88888888888889,
+            "esik_20x_dk": 142.44444444444446
+          }
+        }
+      },
+      "M15": {
+        "H1": {
+          "up": {
+            "n_htf_kanal_ortusen": 6,
+            "n_giris_tetigi": 6088,
+            "ufuk_tablosu": {
+              "1": {
+                "gercek_sure_dk": 15,
+                "n_giris": 6088,
+                "ileri_hareket_median_pts": 130.0,
+                "oran_median_hedef_maliyet": 3.45
+              },
+              "2": {
+                "gercek_sure_dk": 30,
+                "n_giris": 6088,
+                "ileri_hareket_median_pts": 182.5,
+                "oran_median_hedef_maliyet": 4.84
+              },
+              "4": {
+                "gercek_sure_dk": 60,
+                "n_giris": 6088,
+                "ileri_hareket_median_pts": 254.5,
+                "oran_median_hedef_maliyet": 6.75
+              },
+              "8": {
+                "gercek_sure_dk": 120,
+                "n_giris": 6088,
+                "ileri_hareket_median_pts": 360.0,
+                "oran_median_hedef_maliyet": 9.55
+              },
+              "16": {
+                "gercek_sure_dk": 240,
+                "n_giris": 6088,
+                "ileri_hareket_median_pts": 539.5,
+                "oran_median_hedef_maliyet": 14.31
+              },
+              "32": {
+                "gercek_sure_dk": 480,
+                "n_giris": 6088,
+                "ileri_hareket_median_pts": 785.0,
+                "oran_median_hedef_maliyet": 20.82
+              },
+              "64": {
+                "gercek_sure_dk": 960,
+                "n_giris": 6088,
+                "ileri_hareket_median_pts": 1217.0,
+                "oran_median_hedef_maliyet": 32.28
+              }
+            },
+            "esik_15x_dk": 265.43778801843314,
+            "esik_20x_dk": 449.76958525345617
+          },
+          "down": {
+            "n_htf_kanal_ortusen": 16,
+            "n_giris_tetigi": 4650,
+            "ufuk_tablosu": {
+              "1": {
+                "gercek_sure_dk": 15,
+                "n_giris": 4650,
+                "ileri_hareket_median_pts": 105.0,
+                "oran_median_hedef_maliyet": 2.79
+              },
+              "2": {
+                "gercek_sure_dk": 30,
+                "n_giris": 4650,
+                "ileri_hareket_median_pts": 145.0,
+                "oran_median_hedef_maliyet": 3.85
+              },
+              "4": {
+                "gercek_sure_dk": 60,
+                "n_giris": 4650,
+                "ileri_hareket_median_pts": 203.0,
+                "oran_median_hedef_maliyet": 5.38
+              },
+              "8": {
+                "gercek_sure_dk": 120,
+                "n_giris": 4650,
+                "ileri_hareket_median_pts": 290.0,
+                "oran_median_hedef_maliyet": 7.69
+              },
+              "16": {
+                "gercek_sure_dk": 240,
+                "n_giris": 4649,
+                "ileri_hareket_median_pts": 420.0,
+                "oran_median_hedef_maliyet": 11.14
+              },
+              "32": {
+                "gercek_sure_dk": 480,
+                "n_giris": 4649,
+                "ileri_hareket_median_pts": 660.0,
+                "oran_median_hedef_maliyet": 17.51
+              },
+              "64": {
+                "gercek_sure_dk": 960,
+                "n_giris": 4646,
+                "ileri_hareket_median_pts": 982.5,
+                "oran_median_hedef_maliyet": 26.06
+              }
+            },
+            "esik_15x_dk": 385.4317111459968,
+            "esik_20x_dk": 619.7894736842105
+          }
+        },
+        "M30": {
+          "up": {
+            "n_htf_kanal_ortusen": 11,
+            "n_giris_tetigi": 5235,
+            "ufuk_tablosu": {
+              "1": {
+                "gercek_sure_dk": 15,
+                "n_giris": 5235,
+                "ileri_hareket_median_pts": 136.0,
+                "oran_median_hedef_maliyet": 3.61
+              },
+              "2": {
+                "gercek_sure_dk": 30,
+                "n_giris": 5235,
+                "ileri_hareket_median_pts": 191.0,
+                "oran_median_hedef_maliyet": 5.07
+              },
+              "4": {
+                "gercek_sure_dk": 60,
+                "n_giris": 5235,
+                "ileri_hareket_median_pts": 275.0,
+                "oran_median_hedef_maliyet": 7.29
+              },
+              "8": {
+                "gercek_sure_dk": 120,
+                "n_giris": 5235,
+                "ileri_hareket_median_pts": 371.0,
+                "oran_median_hedef_maliyet": 9.84
+              },
+              "16": {
+                "gercek_sure_dk": 240,
+                "n_giris": 5235,
+                "ileri_hareket_median_pts": 559.0,
+                "oran_median_hedef_maliyet": 14.83
+              },
+              "32": {
+                "gercek_sure_dk": 480,
+                "n_giris": 5232,
+                "ileri_hareket_median_pts": 821.0,
+                "oran_median_hedef_maliyet": 21.78
+              },
+              "64": {
+                "gercek_sure_dk": 960,
+                "n_giris": 5230,
+                "ileri_hareket_median_pts": 1212.5,
+                "oran_median_hedef_maliyet": 32.16
+              }
+            },
+            "esik_15x_dk": 245.8705035971223,
+            "esik_20x_dk": 418.5323741007194
+          },
+          "down": {
+            "n_htf_kanal_ortusen": 18,
+            "n_giris_tetigi": 7297,
+            "ufuk_tablosu": {
+              "1": {
+                "gercek_sure_dk": 15,
+                "n_giris": 7297,
+                "ileri_hareket_median_pts": 106.0,
+                "oran_median_hedef_maliyet": 2.81
+              },
+              "2": {
+                "gercek_sure_dk": 30,
+                "n_giris": 7297,
+                "ileri_hareket_median_pts": 151.0,
+                "oran_median_hedef_maliyet": 4.01
+              },
+              "4": {
+                "gercek_sure_dk": 60,
+                "n_giris": 7297,
+                "ileri_hareket_median_pts": 212.0,
+                "oran_median_hedef_maliyet": 5.62
+              },
+              "8": {
+                "gercek_sure_dk": 120,
+                "n_giris": 7297,
+                "ileri_hareket_median_pts": 302.0,
+                "oran_median_hedef_maliyet": 8.01
+              },
+              "16": {
+                "gercek_sure_dk": 240,
+                "n_giris": 7296,
+                "ileri_hareket_median_pts": 443.5,
+                "oran_median_hedef_maliyet": 11.76
+              },
+              "32": {
+                "gercek_sure_dk": 480,
+                "n_giris": 7296,
+                "ileri_hareket_median_pts": 695.5,
+                "oran_median_hedef_maliyet": 18.45
+              },
+              "64": {
+                "gercek_sure_dk": 960,
+                "n_giris": 7293,
+                "ileri_hareket_median_pts": 1050.0,
+                "oran_median_hedef_maliyet": 27.85
+              }
+            },
+            "esik_15x_dk": 356.23318385650225,
+            "esik_20x_dk": 559.1489361702128
+          }
+        }
+      }
+    },
+    "momentum_k05": {
+      "M1": {
+        "H1": {
+          "up": {
+            "n_htf_kanal_ortusen": 1,
+            "n_giris_tetigi": 2954,
+            "ufuk_tablosu": {
+              "1": {
+                "gercek_sure_dk": 1,
+                "n_giris": 2954,
+                "ileri_hareket_median_pts": 108.5,
+                "oran_median_hedef_maliyet": 1.86
+              },
+              "2": {
+                "gercek_sure_dk": 2,
+                "n_giris": 2954,
+                "ileri_hareket_median_pts": 156.0,
+                "oran_median_hedef_maliyet": 2.67
+              },
+              "4": {
+                "gercek_sure_dk": 4,
+                "n_giris": 2954,
+                "ileri_hareket_median_pts": 220.5,
+                "oran_median_hedef_maliyet": 3.77
+              },
+              "8": {
+                "gercek_sure_dk": 8,
+                "n_giris": 2954,
+                "ileri_hareket_median_pts": 305.0,
+                "oran_median_hedef_maliyet": 5.22
+              },
+              "16": {
+                "gercek_sure_dk": 16,
+                "n_giris": 2954,
+                "ileri_hareket_median_pts": 437.0,
+                "oran_median_hedef_maliyet": 7.48
+              },
+              "32": {
+                "gercek_sure_dk": 32,
+                "n_giris": 2954,
+                "ileri_hareket_median_pts": 602.0,
+                "oran_median_hedef_maliyet": 10.31
+              },
+              "64": {
+                "gercek_sure_dk": 64,
+                "n_giris": 2954,
+                "ileri_hareket_median_pts": 825.0,
+                "oran_median_hedef_maliyet": 14.12
+              },
+              "128": {
+                "gercek_sure_dk": 128,
+                "n_giris": 2954,
+                "ileri_hareket_median_pts": 1245.5,
+                "oran_median_hedef_maliyet": 21.32
+              },
+              "256": {
+                "gercek_sure_dk": 256,
+                "n_giris": 2954,
+                "ileri_hareket_median_pts": 1701.5,
+                "oran_median_hedef_maliyet": 29.13
+              },
+              "480": {
+                "gercek_sure_dk": 480,
+                "n_giris": 2954,
+                "ileri_hareket_median_pts": 2763.5,
+                "oran_median_hedef_maliyet": 47.31
+              }
+            },
+            "esik_15x_dk": 71.82222222222222,
+            "esik_20x_dk": 116.26666666666667
+          },
+          "down": {
+            "n_htf_kanal_ortusen": 3,
+            "n_giris_tetigi": 2601,
+            "ufuk_tablosu": {
+              "1": {
+                "gercek_sure_dk": 1,
+                "n_giris": 2601,
+                "ileri_hareket_median_pts": 101.0,
+                "oran_median_hedef_maliyet": 1.73
+              },
+              "2": {
+                "gercek_sure_dk": 2,
+                "n_giris": 2601,
+                "ileri_hareket_median_pts": 147.0,
+                "oran_median_hedef_maliyet": 2.52
+              },
+              "4": {
+                "gercek_sure_dk": 4,
+                "n_giris": 2601,
+                "ileri_hareket_median_pts": 213.0,
+                "oran_median_hedef_maliyet": 3.65
+              },
+              "8": {
+                "gercek_sure_dk": 8,
+                "n_giris": 2601,
+                "ileri_hareket_median_pts": 309.0,
+                "oran_median_hedef_maliyet": 5.29
+              },
+              "16": {
+                "gercek_sure_dk": 16,
+                "n_giris": 2601,
+                "ileri_hareket_median_pts": 425.0,
+                "oran_median_hedef_maliyet": 7.28
+              },
+              "32": {
+                "gercek_sure_dk": 32,
+                "n_giris": 2601,
+                "ileri_hareket_median_pts": 605.0,
+                "oran_median_hedef_maliyet": 10.36
+              },
+              "64": {
+                "gercek_sure_dk": 64,
+                "n_giris": 2601,
+                "ileri_hareket_median_pts": 844.0,
+                "oran_median_hedef_maliyet": 14.45
+              },
+              "128": {
+                "gercek_sure_dk": 128,
+                "n_giris": 2601,
+                "ileri_hareket_median_pts": 1256.0,
+                "oran_median_hedef_maliyet": 21.5
+              },
+              "256": {
+                "gercek_sure_dk": 256,
+                "n_giris": 2601,
+                "ileri_hareket_median_pts": 1707.0,
+                "oran_median_hedef_maliyet": 29.22
+              },
+              "480": {
+                "gercek_sure_dk": 480,
+                "n_giris": 2578,
+                "ileri_hareket_median_pts": 2555.0,
+                "oran_median_hedef_maliyet": 43.74
+              }
+            },
+            "esik_15x_dk": 68.99290780141844,
+            "esik_20x_dk": 114.38297872340425
+          }
+        },
+        "M30": {
+          "up": {
+            "n_htf_kanal_ortusen": 2,
+            "n_giris_tetigi": 6321,
+            "ufuk_tablosu": {
+              "1": {
+                "gercek_sure_dk": 1,
+                "n_giris": 6321,
+                "ileri_hareket_median_pts": 95.0,
+                "oran_median_hedef_maliyet": 1.63
+              },
+              "2": {
+                "gercek_sure_dk": 2,
+                "n_giris": 6321,
+                "ileri_hareket_median_pts": 131.0,
+                "oran_median_hedef_maliyet": 2.24
+              },
+              "4": {
+                "gercek_sure_dk": 4,
+                "n_giris": 6321,
+                "ileri_hareket_median_pts": 188.0,
+                "oran_median_hedef_maliyet": 3.22
+              },
+              "8": {
+                "gercek_sure_dk": 8,
+                "n_giris": 6321,
+                "ileri_hareket_median_pts": 254.0,
+                "oran_median_hedef_maliyet": 4.35
+              },
+              "16": {
+                "gercek_sure_dk": 16,
+                "n_giris": 6321,
+                "ileri_hareket_median_pts": 362.0,
+                "oran_median_hedef_maliyet": 6.2
+              },
+              "32": {
+                "gercek_sure_dk": 32,
+                "n_giris": 6321,
+                "ileri_hareket_median_pts": 498.0,
+                "oran_median_hedef_maliyet": 8.53
+              },
+              "64": {
+                "gercek_sure_dk": 64,
+                "n_giris": 6321,
+                "ileri_hareket_median_pts": 685.0,
+                "oran_median_hedef_maliyet": 11.73
+              },
+              "128": {
+                "gercek_sure_dk": 128,
+                "n_giris": 6321,
+                "ileri_hareket_median_pts": 964.0,
+                "oran_median_hedef_maliyet": 16.5
+              },
+              "256": {
+                "gercek_sure_dk": 256,
+                "n_giris": 6311,
+                "ileri_hareket_median_pts": 1388.0,
+                "oran_median_hedef_maliyet": 23.76
+              },
+              "480": {
+                "gercek_sure_dk": 480,
+                "n_giris": 6262,
+                "ileri_hareket_median_pts": 2211.5,
+                "oran_median_hedef_maliyet": 37.86
+              }
+            },
+            "esik_15x_dk": 107.87421383647799,
+            "esik_20x_dk": 189.70798898071624
+          },
+          "down": {
+            "n_htf_kanal_ortusen": 1,
+            "n_giris_tetigi": 15354,
+            "ufuk_tablosu": {
+              "1": {
+                "gercek_sure_dk": 1,
+                "n_giris": 15354,
+                "ileri_hareket_median_pts": 92.0,
+                "oran_median_hedef_maliyet": 1.57
+              },
+              "2": {
+                "gercek_sure_dk": 2,
+                "n_giris": 15354,
+                "ileri_hareket_median_pts": 128.0,
+                "oran_median_hedef_maliyet": 2.19
+              },
+              "4": {
+                "gercek_sure_dk": 4,
+                "n_giris": 15354,
+                "ileri_hareket_median_pts": 181.0,
+                "oran_median_hedef_maliyet": 3.1
+              },
+              "8": {
+                "gercek_sure_dk": 8,
+                "n_giris": 15354,
+                "ileri_hareket_median_pts": 254.0,
+                "oran_median_hedef_maliyet": 4.35
+              },
+              "16": {
+                "gercek_sure_dk": 16,
+                "n_giris": 15354,
+                "ileri_hareket_median_pts": 345.0,
+                "oran_median_hedef_maliyet": 5.91
+              },
+              "32": {
+                "gercek_sure_dk": 32,
+                "n_giris": 15354,
+                "ileri_hareket_median_pts": 498.0,
+                "oran_median_hedef_maliyet": 8.53
+              },
+              "64": {
+                "gercek_sure_dk": 64,
+                "n_giris": 15354,
+                "ileri_hareket_median_pts": 692.0,
+                "oran_median_hedef_maliyet": 11.85
+              },
+              "128": {
+                "gercek_sure_dk": 128,
+                "n_giris": 15354,
+                "ileri_hareket_median_pts": 983.0,
+                "oran_median_hedef_maliyet": 16.83
+              },
+              "256": {
+                "gercek_sure_dk": 256,
+                "n_giris": 15345,
+                "ileri_hareket_median_pts": 1427.0,
+                "oran_median_hedef_maliyet": 24.43
+              },
+              "480": {
+                "gercek_sure_dk": 480,
+                "n_giris": 15304,
+                "ileri_hareket_median_pts": 2157.5,
+                "oran_median_hedef_maliyet": 36.94
+              }
+            },
+            "esik_15x_dk": 104.4819277108434,
+            "esik_20x_dk": 181.38947368421054
+          }
+        }
+      },
+      "M5": {
+        "H1": {
+          "up": {
+            "n_htf_kanal_ortusen": 2,
+            "n_giris_tetigi": 6009,
+            "ufuk_tablosu": {
+              "1": {
+                "gercek_sure_dk": 5,
+                "n_giris": 6009,
+                "ileri_hareket_median_pts": 145.0,
+                "oran_median_hedef_maliyet": 3.02
+              },
+              "2": {
+                "gercek_sure_dk": 10,
+                "n_giris": 6009,
+                "ileri_hareket_median_pts": 206.0,
+                "oran_median_hedef_maliyet": 4.29
+              },
+              "4": {
+                "gercek_sure_dk": 20,
+                "n_giris": 6009,
+                "ileri_hareket_median_pts": 287.0,
+                "oran_median_hedef_maliyet": 5.97
+              },
+              "8": {
+                "gercek_sure_dk": 40,
+                "n_giris": 6009,
+                "ileri_hareket_median_pts": 411.0,
+                "oran_median_hedef_maliyet": 8.55
+              },
+              "16": {
+                "gercek_sure_dk": 80,
+                "n_giris": 6009,
+                "ileri_hareket_median_pts": 579.0,
+                "oran_median_hedef_maliyet": 12.05
+              },
+              "32": {
+                "gercek_sure_dk": 160,
+                "n_giris": 6009,
+                "ileri_hareket_median_pts": 835.0,
+                "oran_median_hedef_maliyet": 17.38
+              },
+              "64": {
+                "gercek_sure_dk": 320,
+                "n_giris": 6009,
+                "ileri_hareket_median_pts": 1200.0,
+                "oran_median_hedef_maliyet": 24.97
+              },
+              "128": {
+                "gercek_sure_dk": 640,
+                "n_giris": 6009,
+                "ileri_hareket_median_pts": 1795.0,
+                "oran_median_hedef_maliyet": 37.35
+              }
+            },
+            "esik_15x_dk": 124.27767354596624,
+            "esik_20x_dk": 215.23056653491437
+          },
+          "down": {
+            "n_htf_kanal_ortusen": 8,
+            "n_giris_tetigi": 3317,
+            "ufuk_tablosu": {
+              "1": {
+                "gercek_sure_dk": 5,
+                "n_giris": 3317,
+                "ileri_hareket_median_pts": 234.0,
+                "oran_median_hedef_maliyet": 4.87
+              },
+              "2": {
+                "gercek_sure_dk": 10,
+                "n_giris": 3317,
+                "ileri_hareket_median_pts": 325.0,
+                "oran_median_hedef_maliyet": 6.76
+              },
+              "4": {
+                "gercek_sure_dk": 20,
+                "n_giris": 3317,
+                "ileri_hareket_median_pts": 456.0,
+                "oran_median_hedef_maliyet": 9.49
+              },
+              "8": {
+                "gercek_sure_dk": 40,
+                "n_giris": 3317,
+                "ileri_hareket_median_pts": 663.0,
+                "oran_median_hedef_maliyet": 13.8
+              },
+              "16": {
+                "gercek_sure_dk": 80,
+                "n_giris": 3317,
+                "ileri_hareket_median_pts": 919.0,
+                "oran_median_hedef_maliyet": 19.12
+              },
+              "32": {
+                "gercek_sure_dk": 160,
+                "n_giris": 3317,
+                "ileri_hareket_median_pts": 1339.0,
+                "oran_median_hedef_maliyet": 27.86
+              },
+              "64": {
+                "gercek_sure_dk": 320,
+                "n_giris": 3315,
+                "ileri_hareket_median_pts": 2078.0,
+                "oran_median_hedef_maliyet": 43.24
+              },
+              "128": {
+                "gercek_sure_dk": 640,
+                "n_giris": 3303,
+                "ileri_hareket_median_pts": 2950.0,
+                "oran_median_hedef_maliyet": 61.38
+              }
+            },
+            "esik_15x_dk": 49.022556390977435,
+            "esik_20x_dk": 88.05491990846681
+          }
+        },
+        "M30": {
+          "up": {
+            "n_htf_kanal_ortusen": 5,
+            "n_giris_tetigi": 6375,
+            "ufuk_tablosu": {
+              "1": {
+                "gercek_sure_dk": 5,
+                "n_giris": 6375,
+                "ileri_hareket_median_pts": 212.0,
+                "oran_median_hedef_maliyet": 4.41
+              },
+              "2": {
+                "gercek_sure_dk": 10,
+                "n_giris": 6375,
+                "ileri_hareket_median_pts": 299.0,
+                "oran_median_hedef_maliyet": 6.22
+              },
+              "4": {
+                "gercek_sure_dk": 20,
+                "n_giris": 6375,
+                "ileri_hareket_median_pts": 413.0,
+                "oran_median_hedef_maliyet": 8.59
+              },
+              "8": {
+                "gercek_sure_dk": 40,
+                "n_giris": 6375,
+                "ileri_hareket_median_pts": 578.0,
+                "oran_median_hedef_maliyet": 12.03
+              },
+              "16": {
+                "gercek_sure_dk": 80,
+                "n_giris": 6375,
+                "ileri_hareket_median_pts": 816.0,
+                "oran_median_hedef_maliyet": 16.98
+              },
+              "32": {
+                "gercek_sure_dk": 160,
+                "n_giris": 6375,
+                "ileri_hareket_median_pts": 1210.0,
+                "oran_median_hedef_maliyet": 25.18
+              },
+              "64": {
+                "gercek_sure_dk": 320,
+                "n_giris": 6371,
+                "ileri_hareket_median_pts": 1858.0,
+                "oran_median_hedef_maliyet": 38.66
+              },
+              "128": {
+                "gercek_sure_dk": 640,
+                "n_giris": 6361,
+                "ileri_hareket_median_pts": 2709.0,
+                "oran_median_hedef_maliyet": 56.37
+              }
+            },
+            "esik_15x_dk": 64.0,
+            "esik_20x_dk": 109.46341463414635
+          },
+          "down": {
+            "n_htf_kanal_ortusen": 6,
+            "n_giris_tetigi": 9018,
+            "ufuk_tablosu": {
+              "1": {
+                "gercek_sure_dk": 5,
+                "n_giris": 9018,
+                "ileri_hareket_median_pts": 182.0,
+                "oran_median_hedef_maliyet": 3.79
+              },
+              "2": {
+                "gercek_sure_dk": 10,
+                "n_giris": 9018,
+                "ileri_hareket_median_pts": 250.0,
+                "oran_median_hedef_maliyet": 5.2
+              },
+              "4": {
+                "gercek_sure_dk": 20,
+                "n_giris": 9018,
+                "ileri_hareket_median_pts": 349.0,
+                "oran_median_hedef_maliyet": 7.26
+              },
+              "8": {
+                "gercek_sure_dk": 40,
+                "n_giris": 9018,
+                "ileri_hareket_median_pts": 509.0,
+                "oran_median_hedef_maliyet": 10.59
+              },
+              "16": {
+                "gercek_sure_dk": 80,
+                "n_giris": 9018,
+                "ileri_hareket_median_pts": 712.0,
+                "oran_median_hedef_maliyet": 14.82
+              },
+              "32": {
+                "gercek_sure_dk": 160,
+                "n_giris": 9018,
+                "ileri_hareket_median_pts": 1060.0,
+                "oran_median_hedef_maliyet": 22.06
+              },
+              "64": {
+                "gercek_sure_dk": 320,
+                "n_giris": 9015,
+                "ileri_hareket_median_pts": 1554.0,
+                "oran_median_hedef_maliyet": 32.34
+              },
+              "128": {
+                "gercek_sure_dk": 640,
+                "n_giris": 9003,
+                "ileri_hareket_median_pts": 2250.0,
+                "oran_median_hedef_maliyet": 46.82
+              }
+            },
+            "esik_15x_dk": 81.98895027624309,
+            "esik_20x_dk": 137.2375690607735
+          }
+        }
+      },
+      "M15": {
+        "H1": {
+          "up": {
+            "n_htf_kanal_ortusen": 6,
+            "n_giris_tetigi": 9280,
+            "ufuk_tablosu": {
+              "1": {
+                "gercek_sure_dk": 15,
+                "n_giris": 9280,
+                "ileri_hareket_median_pts": 138.0,
+                "oran_median_hedef_maliyet": 3.66
+              },
+              "2": {
+                "gercek_sure_dk": 30,
+                "n_giris": 9280,
+                "ileri_hareket_median_pts": 198.0,
+                "oran_median_hedef_maliyet": 5.25
+              },
+              "4": {
+                "gercek_sure_dk": 60,
+                "n_giris": 9280,
+                "ileri_hareket_median_pts": 275.0,
+                "oran_median_hedef_maliyet": 7.29
+              },
+              "8": {
+                "gercek_sure_dk": 120,
+                "n_giris": 9280,
+                "ileri_hareket_median_pts": 392.0,
+                "oran_median_hedef_maliyet": 10.4
+              },
+              "16": {
+                "gercek_sure_dk": 240,
+                "n_giris": 9280,
+                "ileri_hareket_median_pts": 570.0,
+                "oran_median_hedef_maliyet": 15.12
+              },
+              "32": {
+                "gercek_sure_dk": 480,
+                "n_giris": 9280,
+                "ileri_hareket_median_pts": 851.0,
+                "oran_median_hedef_maliyet": 22.57
+              },
+              "64": {
+                "gercek_sure_dk": 960,
+                "n_giris": 9280,
+                "ileri_hareket_median_pts": 1267.0,
+                "oran_median_hedef_maliyet": 33.61
+              }
+            },
+            "esik_15x_dk": 236.9491525423729,
+            "esik_20x_dk": 397.20805369127515
+          },
+          "down": {
+            "n_htf_kanal_ortusen": 16,
+            "n_giris_tetigi": 7575,
+            "ufuk_tablosu": {
+              "1": {
+                "gercek_sure_dk": 15,
+                "n_giris": 7575,
+                "ileri_hareket_median_pts": 117.0,
+                "oran_median_hedef_maliyet": 3.1
+              },
+              "2": {
+                "gercek_sure_dk": 30,
+                "n_giris": 7575,
+                "ileri_hareket_median_pts": 159.0,
+                "oran_median_hedef_maliyet": 4.22
+              },
+              "4": {
+                "gercek_sure_dk": 60,
+                "n_giris": 7575,
+                "ileri_hareket_median_pts": 230.0,
+                "oran_median_hedef_maliyet": 6.1
+              },
+              "8": {
+                "gercek_sure_dk": 120,
+                "n_giris": 7575,
+                "ileri_hareket_median_pts": 327.0,
+                "oran_median_hedef_maliyet": 8.67
+              },
+              "16": {
+                "gercek_sure_dk": 240,
+                "n_giris": 7575,
+                "ileri_hareket_median_pts": 462.0,
+                "oran_median_hedef_maliyet": 12.25
+              },
+              "32": {
+                "gercek_sure_dk": 480,
+                "n_giris": 7575,
+                "ileri_hareket_median_pts": 706.0,
+                "oran_median_hedef_maliyet": 18.73
+              },
+              "64": {
+                "gercek_sure_dk": 960,
+                "n_giris": 7567,
+                "ileri_hareket_median_pts": 1045.0,
+                "oran_median_hedef_maliyet": 27.72
+              }
+            },
+            "esik_15x_dk": 341.85185185185185,
+            "esik_20x_dk": 547.8086763070078
+          }
+        },
+        "M30": {
+          "up": {
+            "n_htf_kanal_ortusen": 11,
+            "n_giris_tetigi": 8166,
+            "ufuk_tablosu": {
+              "1": {
+                "gercek_sure_dk": 15,
+                "n_giris": 8166,
+                "ileri_hareket_median_pts": 145.0,
+                "oran_median_hedef_maliyet": 3.85
+              },
+              "2": {
+                "gercek_sure_dk": 30,
+                "n_giris": 8166,
+                "ileri_hareket_median_pts": 205.0,
+                "oran_median_hedef_maliyet": 5.44
+              },
+              "4": {
+                "gercek_sure_dk": 60,
+                "n_giris": 8166,
+                "ileri_hareket_median_pts": 286.0,
+                "oran_median_hedef_maliyet": 7.59
+              },
+              "8": {
+                "gercek_sure_dk": 120,
+                "n_giris": 8166,
+                "ileri_hareket_median_pts": 398.0,
+                "oran_median_hedef_maliyet": 10.56
+              },
+              "16": {
+                "gercek_sure_dk": 240,
+                "n_giris": 8166,
+                "ileri_hareket_median_pts": 578.0,
+                "oran_median_hedef_maliyet": 15.33
+              },
+              "32": {
+                "gercek_sure_dk": 480,
+                "n_giris": 8162,
+                "ileri_hareket_median_pts": 878.0,
+                "oran_median_hedef_maliyet": 23.29
+              },
+              "64": {
+                "gercek_sure_dk": 960,
+                "n_giris": 8159,
+                "ileri_hareket_median_pts": 1189.0,
+                "oran_median_hedef_maliyet": 31.54
+              }
+            },
+            "esik_15x_dk": 231.69811320754718,
+            "esik_20x_dk": 380.8040201005025
+          },
+          "down": {
+            "n_htf_kanal_ortusen": 18,
+            "n_giris_tetigi": 12167,
+            "ufuk_tablosu": {
+              "1": {
+                "gercek_sure_dk": 15,
+                "n_giris": 12167,
+                "ileri_hareket_median_pts": 117.0,
+                "oran_median_hedef_maliyet": 3.1
+              },
+              "2": {
+                "gercek_sure_dk": 30,
+                "n_giris": 12167,
+                "ileri_hareket_median_pts": 160.0,
+                "oran_median_hedef_maliyet": 4.24
+              },
+              "4": {
+                "gercek_sure_dk": 60,
+                "n_giris": 12167,
+                "ileri_hareket_median_pts": 231.0,
+                "oran_median_hedef_maliyet": 6.13
+              },
+              "8": {
+                "gercek_sure_dk": 120,
+                "n_giris": 12167,
+                "ileri_hareket_median_pts": 328.0,
+                "oran_median_hedef_maliyet": 8.7
+              },
+              "16": {
+                "gercek_sure_dk": 240,
+                "n_giris": 12167,
+                "ileri_hareket_median_pts": 471.0,
+                "oran_median_hedef_maliyet": 12.49
+              },
+              "32": {
+                "gercek_sure_dk": 480,
+                "n_giris": 12167,
+                "ileri_hareket_median_pts": 731.0,
+                "oran_median_hedef_maliyet": 19.39
+              },
+              "64": {
+                "gercek_sure_dk": 960,
+                "n_giris": 12159,
+                "ileri_hareket_median_pts": 1071.0,
+                "oran_median_hedef_maliyet": 28.41
+              }
+            },
+            "esik_15x_dk": 327.30434782608694,
+            "esik_20x_dk": 512.461197339246
+          }
+        }
+      }
+    },
+    "momentum_k10": {
+      "M1": {
+        "H1": {
+          "up": {
+            "n_htf_kanal_ortusen": 1,
+            "n_giris_tetigi": 899,
+            "ufuk_tablosu": {
+              "1": {
+                "gercek_sure_dk": 1,
+                "n_giris": 899,
+                "ileri_hareket_median_pts": 116.0,
+                "oran_median_hedef_maliyet": 1.99
+              },
+              "2": {
+                "gercek_sure_dk": 2,
+                "n_giris": 899,
+                "ileri_hareket_median_pts": 167.0,
+                "oran_median_hedef_maliyet": 2.86
+              },
+              "4": {
+                "gercek_sure_dk": 4,
+                "n_giris": 899,
+                "ileri_hareket_median_pts": 239.0,
+                "oran_median_hedef_maliyet": 4.09
+              },
+              "8": {
+                "gercek_sure_dk": 8,
+                "n_giris": 899,
+                "ileri_hareket_median_pts": 323.0,
+                "oran_median_hedef_maliyet": 5.53
+              },
+              "16": {
+                "gercek_sure_dk": 16,
+                "n_giris": 899,
+                "ileri_hareket_median_pts": 439.0,
+                "oran_median_hedef_maliyet": 7.52
+              },
+              "32": {
+                "gercek_sure_dk": 32,
+                "n_giris": 899,
+                "ileri_hareket_median_pts": 614.0,
+                "oran_median_hedef_maliyet": 10.51
+              },
+              "64": {
+                "gercek_sure_dk": 64,
+                "n_giris": 899,
+                "ileri_hareket_median_pts": 883.0,
+                "oran_median_hedef_maliyet": 15.12
+              },
+              "128": {
+                "gercek_sure_dk": 128,
+                "n_giris": 899,
+                "ileri_hareket_median_pts": 1288.0,
+                "oran_median_hedef_maliyet": 22.05
+              },
+              "256": {
+                "gercek_sure_dk": 256,
+                "n_giris": 899,
+                "ileri_hareket_median_pts": 1852.0,
+                "oran_median_hedef_maliyet": 31.71
+              },
+              "480": {
+                "gercek_sure_dk": 480,
+                "n_giris": 899,
+                "ileri_hareket_median_pts": 2821.0,
+                "oran_median_hedef_maliyet": 48.29
+              }
+            },
+            "esik_15x_dk": 63.16702819956616,
+            "esik_20x_dk": 109.06782106782106
+          },
+          "down": {
+            "n_htf_kanal_ortusen": 3,
+            "n_giris_tetigi": 762,
+            "ufuk_tablosu": {
+              "1": {
+                "gercek_sure_dk": 1,
+                "n_giris": 762,
+                "ileri_hareket_median_pts": 104.0,
+                "oran_median_hedef_maliyet": 1.78
+              },
+              "2": {
+                "gercek_sure_dk": 2,
+                "n_giris": 762,
+                "ileri_hareket_median_pts": 156.0,
+                "oran_median_hedef_maliyet": 2.67
+              },
+              "4": {
+                "gercek_sure_dk": 4,
+                "n_giris": 762,
+                "ileri_hareket_median_pts": 211.5,
+                "oran_median_hedef_maliyet": 3.62
+              },
+              "8": {
+                "gercek_sure_dk": 8,
+                "n_giris": 762,
+                "ileri_hareket_median_pts": 320.5,
+                "oran_median_hedef_maliyet": 5.49
+              },
+              "16": {
+                "gercek_sure_dk": 16,
+                "n_giris": 762,
+                "ileri_hareket_median_pts": 448.5,
+                "oran_median_hedef_maliyet": 7.68
+              },
+              "32": {
+                "gercek_sure_dk": 32,
+                "n_giris": 762,
+                "ileri_hareket_median_pts": 589.5,
+                "oran_median_hedef_maliyet": 10.09
+              },
+              "64": {
+                "gercek_sure_dk": 64,
+                "n_giris": 762,
+                "ileri_hareket_median_pts": 830.0,
+                "oran_median_hedef_maliyet": 14.21
+              },
+              "128": {
+                "gercek_sure_dk": 128,
+                "n_giris": 762,
+                "ileri_hareket_median_pts": 1239.5,
+                "oran_median_hedef_maliyet": 21.22
+              },
+              "256": {
+                "gercek_sure_dk": 256,
+                "n_giris": 762,
+                "ileri_hareket_median_pts": 1705.5,
+                "oran_median_hedef_maliyet": 29.2
+              },
+              "480": {
+                "gercek_sure_dk": 480,
+                "n_giris": 756,
+                "ileri_hareket_median_pts": 2457.5,
+                "oran_median_hedef_maliyet": 42.07
+              }
+            },
+            "esik_15x_dk": 71.21255349500713,
+            "esik_20x_dk": 116.86162624821685
+          }
+        },
+        "M30": {
+          "up": {
+            "n_htf_kanal_ortusen": 2,
+            "n_giris_tetigi": 1906,
+            "ufuk_tablosu": {
+              "1": {
+                "gercek_sure_dk": 1,
+                "n_giris": 1906,
+                "ileri_hareket_median_pts": 100.0,
+                "oran_median_hedef_maliyet": 1.71
+              },
+              "2": {
+                "gercek_sure_dk": 2,
+                "n_giris": 1906,
+                "ileri_hareket_median_pts": 137.0,
+                "oran_median_hedef_maliyet": 2.35
+              },
+              "4": {
+                "gercek_sure_dk": 4,
+                "n_giris": 1906,
+                "ileri_hareket_median_pts": 203.0,
+                "oran_median_hedef_maliyet": 3.48
+              },
+              "8": {
+                "gercek_sure_dk": 8,
+                "n_giris": 1906,
+                "ileri_hareket_median_pts": 254.0,
+                "oran_median_hedef_maliyet": 4.35
+              },
+              "16": {
+                "gercek_sure_dk": 16,
+                "n_giris": 1906,
+                "ileri_hareket_median_pts": 362.0,
+                "oran_median_hedef_maliyet": 6.2
+              },
+              "32": {
+                "gercek_sure_dk": 32,
+                "n_giris": 1906,
+                "ileri_hareket_median_pts": 518.0,
+                "oran_median_hedef_maliyet": 8.87
+              },
+              "64": {
+                "gercek_sure_dk": 64,
+                "n_giris": 1906,
+                "ileri_hareket_median_pts": 696.0,
+                "oran_median_hedef_maliyet": 11.92
+              },
+              "128": {
+                "gercek_sure_dk": 128,
+                "n_giris": 1906,
+                "ileri_hareket_median_pts": 1001.5,
+                "oran_median_hedef_maliyet": 17.15
+              },
+              "256": {
+                "gercek_sure_dk": 256,
+                "n_giris": 1901,
+                "ileri_hareket_median_pts": 1388.0,
+                "oran_median_hedef_maliyet": 23.76
+              },
+              "480": {
+                "gercek_sure_dk": 480,
+                "n_giris": 1881,
+                "ileri_hareket_median_pts": 2211.0,
+                "oran_median_hedef_maliyet": 37.85
+              }
+            },
+            "esik_15x_dk": 101.69024856596559,
+            "esik_20x_dk": 183.1891074130106
+          },
+          "down": {
+            "n_htf_kanal_ortusen": 1,
+            "n_giris_tetigi": 4676,
+            "ufuk_tablosu": {
+              "1": {
+                "gercek_sure_dk": 1,
+                "n_giris": 4676,
+                "ileri_hareket_median_pts": 97.0,
+                "oran_median_hedef_maliyet": 1.66
+              },
+              "2": {
+                "gercek_sure_dk": 2,
+                "n_giris": 4676,
+                "ileri_hareket_median_pts": 129.0,
+                "oran_median_hedef_maliyet": 2.21
+              },
+              "4": {
+                "gercek_sure_dk": 4,
+                "n_giris": 4676,
+                "ileri_hareket_median_pts": 187.0,
+                "oran_median_hedef_maliyet": 3.2
+              },
+              "8": {
+                "gercek_sure_dk": 8,
+                "n_giris": 4676,
+                "ileri_hareket_median_pts": 262.0,
+                "oran_median_hedef_maliyet": 4.49
+              },
+              "16": {
+                "gercek_sure_dk": 16,
+                "n_giris": 4676,
+                "ileri_hareket_median_pts": 349.0,
+                "oran_median_hedef_maliyet": 5.97
+              },
+              "32": {
+                "gercek_sure_dk": 32,
+                "n_giris": 4676,
+                "ileri_hareket_median_pts": 490.0,
+                "oran_median_hedef_maliyet": 8.39
+              },
+              "64": {
+                "gercek_sure_dk": 64,
+                "n_giris": 4676,
+                "ileri_hareket_median_pts": 695.0,
+                "oran_median_hedef_maliyet": 11.9
+              },
+              "128": {
+                "gercek_sure_dk": 128,
+                "n_giris": 4676,
+                "ileri_hareket_median_pts": 987.5,
+                "oran_median_hedef_maliyet": 16.91
+              },
+              "256": {
+                "gercek_sure_dk": 256,
+                "n_giris": 4673,
+                "ileri_hareket_median_pts": 1443.0,
+                "oran_median_hedef_maliyet": 24.7
+              },
+              "480": {
+                "gercek_sure_dk": 480,
+                "n_giris": 4664,
+                "ileri_hareket_median_pts": 2166.5,
+                "oran_median_hedef_maliyet": 37.09
+              }
+            },
+            "esik_15x_dk": 103.60079840319361,
+            "esik_20x_dk": 178.77278562259306
+          }
+        }
+      },
+      "M5": {
+        "H1": {
+          "up": {
+            "n_htf_kanal_ortusen": 2,
+            "n_giris_tetigi": 1555,
+            "ufuk_tablosu": {
+              "1": {
+                "gercek_sure_dk": 5,
+                "n_giris": 1555,
+                "ileri_hareket_median_pts": 160.0,
+                "oran_median_hedef_maliyet": 3.33
+              },
+              "2": {
+                "gercek_sure_dk": 10,
+                "n_giris": 1555,
+                "ileri_hareket_median_pts": 228.0,
+                "oran_median_hedef_maliyet": 4.74
+              },
+              "4": {
+                "gercek_sure_dk": 20,
+                "n_giris": 1555,
+                "ileri_hareket_median_pts": 308.0,
+                "oran_median_hedef_maliyet": 6.41
+              },
+              "8": {
+                "gercek_sure_dk": 40,
+                "n_giris": 1555,
+                "ileri_hareket_median_pts": 430.0,
+                "oran_median_hedef_maliyet": 8.95
+              },
+              "16": {
+                "gercek_sure_dk": 80,
+                "n_giris": 1555,
+                "ileri_hareket_median_pts": 647.0,
+                "oran_median_hedef_maliyet": 13.46
+              },
+              "32": {
+                "gercek_sure_dk": 160,
+                "n_giris": 1555,
+                "ileri_hareket_median_pts": 915.0,
+                "oran_median_hedef_maliyet": 19.04
+              },
+              "64": {
+                "gercek_sure_dk": 320,
+                "n_giris": 1555,
+                "ileri_hareket_median_pts": 1227.0,
+                "oran_median_hedef_maliyet": 25.53
+              },
+              "128": {
+                "gercek_sure_dk": 640,
+                "n_giris": 1555,
+                "ileri_hareket_median_pts": 1829.0,
+                "oran_median_hedef_maliyet": 38.06
+              }
+            },
+            "esik_15x_dk": 102.07885304659499,
+            "esik_20x_dk": 183.6671802773498
+          },
+          "down": {
+            "n_htf_kanal_ortusen": 8,
+            "n_giris_tetigi": 904,
+            "ufuk_tablosu": {
+              "1": {
+                "gercek_sure_dk": 5,
+                "n_giris": 904,
+                "ileri_hareket_median_pts": 269.5,
+                "oran_median_hedef_maliyet": 5.61
+              },
+              "2": {
+                "gercek_sure_dk": 10,
+                "n_giris": 904,
+                "ileri_hareket_median_pts": 378.0,
+                "oran_median_hedef_maliyet": 7.87
+              },
+              "4": {
+                "gercek_sure_dk": 20,
+                "n_giris": 904,
+                "ileri_hareket_median_pts": 521.0,
+                "oran_median_hedef_maliyet": 10.84
+              },
+              "8": {
+                "gercek_sure_dk": 40,
+                "n_giris": 904,
+                "ileri_hareket_median_pts": 760.5,
+                "oran_median_hedef_maliyet": 15.82
+              },
+              "16": {
+                "gercek_sure_dk": 80,
+                "n_giris": 904,
+                "ileri_hareket_median_pts": 1037.0,
+                "oran_median_hedef_maliyet": 21.58
+              },
+              "32": {
+                "gercek_sure_dk": 160,
+                "n_giris": 904,
+                "ileri_hareket_median_pts": 1386.5,
+                "oran_median_hedef_maliyet": 28.85
+              },
+              "64": {
+                "gercek_sure_dk": 320,
+                "n_giris": 904,
+                "ileri_hareket_median_pts": 2152.0,
+                "oran_median_hedef_maliyet": 44.78
+              },
+              "128": {
+                "gercek_sure_dk": 640,
+                "n_giris": 900,
+                "ileri_hareket_median_pts": 2914.0,
+                "oran_median_hedef_maliyet": 60.64
+              }
+            },
+            "esik_15x_dk": 36.70682730923694,
+            "esik_20x_dk": 69.02777777777779
+          }
+        },
+        "M30": {
+          "up": {
+            "n_htf_kanal_ortusen": 5,
+            "n_giris_tetigi": 1721,
+            "ufuk_tablosu": {
+              "1": {
+                "gercek_sure_dk": 5,
+                "n_giris": 1721,
+                "ileri_hareket_median_pts": 230.0,
+                "oran_median_hedef_maliyet": 4.79
+              },
+              "2": {
+                "gercek_sure_dk": 10,
+                "n_giris": 1721,
+                "ileri_hareket_median_pts": 326.0,
+                "oran_median_hedef_maliyet": 6.78
+              },
+              "4": {
+                "gercek_sure_dk": 20,
+                "n_giris": 1721,
+                "ileri_hareket_median_pts": 436.0,
+                "oran_median_hedef_maliyet": 9.07
+              },
+              "8": {
+                "gercek_sure_dk": 40,
+                "n_giris": 1721,
+                "ileri_hareket_median_pts": 587.0,
+                "oran_median_hedef_maliyet": 12.21
+              },
+              "16": {
+                "gercek_sure_dk": 80,
+                "n_giris": 1721,
+                "ileri_hareket_median_pts": 915.0,
+                "oran_median_hedef_maliyet": 19.04
+              },
+              "32": {
+                "gercek_sure_dk": 160,
+                "n_giris": 1721,
+                "ileri_hareket_median_pts": 1292.0,
+                "oran_median_hedef_maliyet": 26.88
+              },
+              "64": {
+                "gercek_sure_dk": 320,
+                "n_giris": 1721,
+                "ileri_hareket_median_pts": 1897.0,
+                "oran_median_hedef_maliyet": 39.47
+              },
+              "128": {
+                "gercek_sure_dk": 640,
+                "n_giris": 1716,
+                "ileri_hareket_median_pts": 2661.0,
+                "oran_median_hedef_maliyet": 55.37
+              }
+            },
+            "esik_15x_dk": 56.33967789165446,
+            "esik_20x_dk": 89.79591836734694
+          },
+          "down": {
+            "n_htf_kanal_ortusen": 6,
+            "n_giris_tetigi": 2493,
+            "ufuk_tablosu": {
+              "1": {
+                "gercek_sure_dk": 5,
+                "n_giris": 2493,
+                "ileri_hareket_median_pts": 208.0,
+                "oran_median_hedef_maliyet": 4.33
+              },
+              "2": {
+                "gercek_sure_dk": 10,
+                "n_giris": 2493,
+                "ileri_hareket_median_pts": 285.0,
+                "oran_median_hedef_maliyet": 5.93
+              },
+              "4": {
+                "gercek_sure_dk": 20,
+                "n_giris": 2493,
+                "ileri_hareket_median_pts": 396.0,
+                "oran_median_hedef_maliyet": 8.24
+              },
+              "8": {
+                "gercek_sure_dk": 40,
+                "n_giris": 2493,
+                "ileri_hareket_median_pts": 548.0,
+                "oran_median_hedef_maliyet": 11.4
+              },
+              "16": {
+                "gercek_sure_dk": 80,
+                "n_giris": 2493,
+                "ileri_hareket_median_pts": 744.0,
+                "oran_median_hedef_maliyet": 15.48
+              },
+              "32": {
+                "gercek_sure_dk": 160,
+                "n_giris": 2493,
+                "ileri_hareket_median_pts": 1067.0,
+                "oran_median_hedef_maliyet": 22.2
+              },
+              "64": {
+                "gercek_sure_dk": 320,
+                "n_giris": 2492,
+                "ileri_hareket_median_pts": 1592.0,
+                "oran_median_hedef_maliyet": 33.13
+              },
+              "128": {
+                "gercek_sure_dk": 640,
+                "n_giris": 2488,
+                "ileri_hareket_median_pts": 2281.0,
+                "oran_median_hedef_maliyet": 47.46
+              }
+            },
+            "esik_15x_dk": 75.29411764705881,
+            "esik_20x_dk": 133.8095238095238
+          }
+        }
+      },
+      "M15": {
+        "H1": {
+          "up": {
+            "n_htf_kanal_ortusen": 6,
+            "n_giris_tetigi": 2716,
+            "ufuk_tablosu": {
+              "1": {
+                "gercek_sure_dk": 15,
+                "n_giris": 2716,
+                "ileri_hareket_median_pts": 160.0,
+                "oran_median_hedef_maliyet": 4.24
+              },
+              "2": {
+                "gercek_sure_dk": 30,
+                "n_giris": 2716,
+                "ileri_hareket_median_pts": 231.0,
+                "oran_median_hedef_maliyet": 6.13
+              },
+              "4": {
+                "gercek_sure_dk": 60,
+                "n_giris": 2716,
+                "ileri_hareket_median_pts": 309.0,
+                "oran_median_hedef_maliyet": 8.2
+              },
+              "8": {
+                "gercek_sure_dk": 120,
+                "n_giris": 2716,
+                "ileri_hareket_median_pts": 440.5,
+                "oran_median_hedef_maliyet": 11.68
+              },
+              "16": {
+                "gercek_sure_dk": 240,
+                "n_giris": 2716,
+                "ileri_hareket_median_pts": 596.0,
+                "oran_median_hedef_maliyet": 15.81
+              },
+              "32": {
+                "gercek_sure_dk": 480,
+                "n_giris": 2716,
+                "ileri_hareket_median_pts": 869.0,
+                "oran_median_hedef_maliyet": 23.05
+              },
+              "64": {
+                "gercek_sure_dk": 960,
+                "n_giris": 2716,
+                "ileri_hareket_median_pts": 1308.0,
+                "oran_median_hedef_maliyet": 34.69
+              }
+            },
+            "esik_15x_dk": 216.46489104116222,
+            "esik_20x_dk": 378.89502762430936
+          },
+          "down": {
+            "n_htf_kanal_ortusen": 16,
+            "n_giris_tetigi": 2235,
+            "ufuk_tablosu": {
+              "1": {
+                "gercek_sure_dk": 15,
+                "n_giris": 2235,
+                "ileri_hareket_median_pts": 144.0,
+                "oran_median_hedef_maliyet": 3.82
+              },
+              "2": {
+                "gercek_sure_dk": 30,
+                "n_giris": 2235,
+                "ileri_hareket_median_pts": 184.0,
+                "oran_median_hedef_maliyet": 4.88
+              },
+              "4": {
+                "gercek_sure_dk": 60,
+                "n_giris": 2235,
+                "ileri_hareket_median_pts": 278.0,
+                "oran_median_hedef_maliyet": 7.37
+              },
+              "8": {
+                "gercek_sure_dk": 120,
+                "n_giris": 2235,
+                "ileri_hareket_median_pts": 372.0,
+                "oran_median_hedef_maliyet": 9.87
+              },
+              "16": {
+                "gercek_sure_dk": 240,
+                "n_giris": 2235,
+                "ileri_hareket_median_pts": 499.0,
+                "oran_median_hedef_maliyet": 13.24
+              },
+              "32": {
+                "gercek_sure_dk": 480,
+                "n_giris": 2235,
+                "ileri_hareket_median_pts": 751.0,
+                "oran_median_hedef_maliyet": 19.92
+              },
+              "64": {
+                "gercek_sure_dk": 960,
+                "n_giris": 2234,
+                "ileri_hareket_median_pts": 1077.0,
+                "oran_median_hedef_maliyet": 28.57
+              }
+            },
+            "esik_15x_dk": 303.23353293413174,
+            "esik_20x_dk": 484.43930635838143
+          }
+        },
+        "M30": {
+          "up": {
+            "n_htf_kanal_ortusen": 11,
+            "n_giris_tetigi": 2391,
+            "ufuk_tablosu": {
+              "1": {
+                "gercek_sure_dk": 15,
+                "n_giris": 2391,
+                "ileri_hareket_median_pts": 168.0,
+                "oran_median_hedef_maliyet": 4.46
+              },
+              "2": {
+                "gercek_sure_dk": 30,
+                "n_giris": 2391,
+                "ileri_hareket_median_pts": 244.0,
+                "oran_median_hedef_maliyet": 6.47
+              },
+              "4": {
+                "gercek_sure_dk": 60,
+                "n_giris": 2391,
+                "ileri_hareket_median_pts": 325.0,
+                "oran_median_hedef_maliyet": 8.62
+              },
+              "8": {
+                "gercek_sure_dk": 120,
+                "n_giris": 2391,
+                "ileri_hareket_median_pts": 472.0,
+                "oran_median_hedef_maliyet": 12.52
+              },
+              "16": {
+                "gercek_sure_dk": 240,
+                "n_giris": 2391,
+                "ileri_hareket_median_pts": 639.0,
+                "oran_median_hedef_maliyet": 16.95
+              },
+              "32": {
+                "gercek_sure_dk": 480,
+                "n_giris": 2389,
+                "ileri_hareket_median_pts": 901.0,
+                "oran_median_hedef_maliyet": 23.9
+              },
+              "64": {
+                "gercek_sure_dk": 960,
+                "n_giris": 2388,
+                "ileri_hareket_median_pts": 1273.5,
+                "oran_median_hedef_maliyet": 33.78
+              }
+            },
+            "esik_15x_dk": 187.1783295711061,
+            "esik_20x_dk": 345.32374100719426
+          },
+          "down": {
+            "n_htf_kanal_ortusen": 18,
+            "n_giris_tetigi": 3612,
+            "ufuk_tablosu": {
+              "1": {
+                "gercek_sure_dk": 15,
+                "n_giris": 3612,
+                "ileri_hareket_median_pts": 141.0,
+                "oran_median_hedef_maliyet": 3.74
+              },
+              "2": {
+                "gercek_sure_dk": 30,
+                "n_giris": 3612,
+                "ileri_hareket_median_pts": 185.0,
+                "oran_median_hedef_maliyet": 4.91
+              },
+              "4": {
+                "gercek_sure_dk": 60,
+                "n_giris": 3612,
+                "ileri_hareket_median_pts": 271.0,
+                "oran_median_hedef_maliyet": 7.19
+              },
+              "8": {
+                "gercek_sure_dk": 120,
+                "n_giris": 3612,
+                "ileri_hareket_median_pts": 376.0,
+                "oran_median_hedef_maliyet": 9.97
+              },
+              "16": {
+                "gercek_sure_dk": 240,
+                "n_giris": 3612,
+                "ileri_hareket_median_pts": 507.0,
+                "oran_median_hedef_maliyet": 13.45
+              },
+              "32": {
+                "gercek_sure_dk": 480,
+                "n_giris": 3612,
+                "ileri_hareket_median_pts": 784.0,
+                "oran_median_hedef_maliyet": 20.8
+              },
+              "64": {
+                "gercek_sure_dk": 960,
+                "n_giris": 3611,
+                "ileri_hareket_median_pts": 1124.0,
+                "oran_median_hedef_maliyet": 29.81
+              }
+            },
+            "esik_15x_dk": 290.6122448979592,
+            "esik_20x_dk": 453.87755102040813
+          }
+        }
+      }
+    },
+    "baseline_karsilastirma": {
+      "M1": {
+        "H1": {
+          "up": {
+            "n_htf_kanal_ortusen": 1,
+            "n_giris_tetigi": 6875,
+            "ufuk_tablosu": {
+              "1": {
+                "gercek_sure_dk": 1,
+                "n_giris": 6875,
+                "ileri_hareket_median_pts": 105.0,
+                "oran_median_hedef_maliyet": 1.8
+              },
+              "2": {
+                "gercek_sure_dk": 2,
+                "n_giris": 6875,
+                "ileri_hareket_median_pts": 150.0,
+                "oran_median_hedef_maliyet": 2.57
+              },
+              "4": {
+                "gercek_sure_dk": 4,
+                "n_giris": 6875,
+                "ileri_hareket_median_pts": 218.0,
+                "oran_median_hedef_maliyet": 3.73
+              },
+              "8": {
+                "gercek_sure_dk": 8,
+                "n_giris": 6875,
+                "ileri_hareket_median_pts": 304.0,
+                "oran_median_hedef_maliyet": 5.2
+              },
+              "16": {
+                "gercek_sure_dk": 16,
+                "n_giris": 6875,
+                "ileri_hareket_median_pts": 426.0,
+                "oran_median_hedef_maliyet": 7.29
+              },
+              "32": {
+                "gercek_sure_dk": 32,
+                "n_giris": 6875,
+                "ileri_hareket_median_pts": 587.0,
+                "oran_median_hedef_maliyet": 10.05
+              },
+              "64": {
+                "gercek_sure_dk": 64,
+                "n_giris": 6875,
+                "ileri_hareket_median_pts": 808.0,
+                "oran_median_hedef_maliyet": 13.83
+              },
+              "128": {
+                "gercek_sure_dk": 128,
+                "n_giris": 6875,
+                "ileri_hareket_median_pts": 1218.0,
+                "oran_median_hedef_maliyet": 20.85
+              },
+              "256": {
+                "gercek_sure_dk": 256,
+                "n_giris": 6875,
+                "ileri_hareket_median_pts": 1709.0,
+                "oran_median_hedef_maliyet": 29.26
+              },
+              "480": {
+                "gercek_sure_dk": 480,
+                "n_giris": 6875,
+                "ileri_hareket_median_pts": 2758.0,
+                "oran_median_hedef_maliyet": 47.22
+              }
+            },
+            "esik_15x_dk": 74.66666666666666,
+            "esik_20x_dk": 120.25071225071224
+          },
+          "down": {
+            "n_htf_kanal_ortusen": 3,
+            "n_giris_tetigi": 6271,
+            "ufuk_tablosu": {
+              "1": {
+                "gercek_sure_dk": 1,
+                "n_giris": 6271,
+                "ileri_hareket_median_pts": 101.0,
+                "oran_median_hedef_maliyet": 1.73
+              },
+              "2": {
+                "gercek_sure_dk": 2,
+                "n_giris": 6271,
+                "ileri_hareket_median_pts": 148.0,
+                "oran_median_hedef_maliyet": 2.53
+              },
+              "4": {
+                "gercek_sure_dk": 4,
+                "n_giris": 6271,
+                "ileri_hareket_median_pts": 215.0,
+                "oran_median_hedef_maliyet": 3.68
+              },
+              "8": {
+                "gercek_sure_dk": 8,
+                "n_giris": 6271,
+                "ileri_hareket_median_pts": 301.0,
+                "oran_median_hedef_maliyet": 5.15
+              },
+              "16": {
+                "gercek_sure_dk": 16,
+                "n_giris": 6271,
+                "ileri_hareket_median_pts": 430.0,
+                "oran_median_hedef_maliyet": 7.36
+              },
+              "32": {
+                "gercek_sure_dk": 32,
+                "n_giris": 6271,
+                "ileri_hareket_median_pts": 601.0,
+                "oran_median_hedef_maliyet": 10.29
+              },
+              "64": {
+                "gercek_sure_dk": 64,
+                "n_giris": 6271,
+                "ileri_hareket_median_pts": 831.0,
+                "oran_median_hedef_maliyet": 14.23
+              },
+              "128": {
+                "gercek_sure_dk": 128,
+                "n_giris": 6271,
+                "ileri_hareket_median_pts": 1195.0,
+                "oran_median_hedef_maliyet": 20.46
+              },
+              "256": {
+                "gercek_sure_dk": 256,
+                "n_giris": 6271,
+                "ileri_hareket_median_pts": 1705.0,
+                "oran_median_hedef_maliyet": 29.19
+              },
+              "480": {
+                "gercek_sure_dk": 480,
+                "n_giris": 6208,
+                "ileri_hareket_median_pts": 2603.0,
+                "oran_median_hedef_maliyet": 44.56
+              }
+            },
+            "esik_15x_dk": 71.91011235955055,
+            "esik_20x_dk": 123.2744783306581
+          }
+        },
+        "M30": {
+          "up": {
+            "n_htf_kanal_ortusen": 2,
+            "n_giris_tetigi": 14711,
+            "ufuk_tablosu": {
+              "1": {
+                "gercek_sure_dk": 1,
+                "n_giris": 14711,
+                "ileri_hareket_median_pts": 91.0,
+                "oran_median_hedef_maliyet": 1.56
+              },
+              "2": {
+                "gercek_sure_dk": 2,
+                "n_giris": 14711,
+                "ileri_hareket_median_pts": 129.0,
+                "oran_median_hedef_maliyet": 2.21
+              },
+              "4": {
+                "gercek_sure_dk": 4,
+                "n_giris": 14711,
+                "ileri_hareket_median_pts": 188.0,
+                "oran_median_hedef_maliyet": 3.22
+              },
+              "8": {
+                "gercek_sure_dk": 8,
+                "n_giris": 14711,
+                "ileri_hareket_median_pts": 255.0,
+                "oran_median_hedef_maliyet": 4.37
+              },
+              "16": {
+                "gercek_sure_dk": 16,
+                "n_giris": 14711,
+                "ileri_hareket_median_pts": 355.0,
+                "oran_median_hedef_maliyet": 6.08
+              },
+              "32": {
+                "gercek_sure_dk": 32,
+                "n_giris": 14711,
+                "ileri_hareket_median_pts": 494.0,
+                "oran_median_hedef_maliyet": 8.46
+              },
+              "64": {
+                "gercek_sure_dk": 64,
+                "n_giris": 14711,
+                "ileri_hareket_median_pts": 685.0,
+                "oran_median_hedef_maliyet": 11.73
+              },
+              "128": {
+                "gercek_sure_dk": 128,
+                "n_giris": 14711,
+                "ileri_hareket_median_pts": 966.0,
+                "oran_median_hedef_maliyet": 16.54
+              },
+              "256": {
+                "gercek_sure_dk": 256,
+                "n_giris": 14692,
+                "ileri_hareket_median_pts": 1390.5,
+                "oran_median_hedef_maliyet": 23.8
+              },
+              "480": {
+                "gercek_sure_dk": 480,
+                "n_giris": 14581,
+                "ileri_hareket_median_pts": 2188.0,
+                "oran_median_hedef_maliyet": 37.46
+              }
+            },
+            "esik_15x_dk": 107.50935550935552,
+            "esik_20x_dk": 189.00275482093664
+          },
+          "down": {
+            "n_htf_kanal_ortusen": 1,
+            "n_giris_tetigi": 35498,
+            "ufuk_tablosu": {
+              "1": {
+                "gercek_sure_dk": 1,
+                "n_giris": 35498,
+                "ileri_hareket_median_pts": 90.0,
+                "oran_median_hedef_maliyet": 1.54
+              },
+              "2": {
+                "gercek_sure_dk": 2,
+                "n_giris": 35498,
+                "ileri_hareket_median_pts": 127.0,
+                "oran_median_hedef_maliyet": 2.17
+              },
+              "4": {
+                "gercek_sure_dk": 4,
+                "n_giris": 35498,
+                "ileri_hareket_median_pts": 179.0,
+                "oran_median_hedef_maliyet": 3.06
+              },
+              "8": {
+                "gercek_sure_dk": 8,
+                "n_giris": 35498,
+                "ileri_hareket_median_pts": 250.0,
+                "oran_median_hedef_maliyet": 4.28
+              },
+              "16": {
+                "gercek_sure_dk": 16,
+                "n_giris": 35498,
+                "ileri_hareket_median_pts": 345.0,
+                "oran_median_hedef_maliyet": 5.91
+              },
+              "32": {
+                "gercek_sure_dk": 32,
+                "n_giris": 35498,
+                "ileri_hareket_median_pts": 494.0,
+                "oran_median_hedef_maliyet": 8.46
+              },
+              "64": {
+                "gercek_sure_dk": 64,
+                "n_giris": 35498,
+                "ileri_hareket_median_pts": 690.0,
+                "oran_median_hedef_maliyet": 11.81
+              },
+              "128": {
+                "gercek_sure_dk": 128,
+                "n_giris": 35498,
+                "ileri_hareket_median_pts": 988.5,
+                "oran_median_hedef_maliyet": 16.92
+              },
+              "256": {
+                "gercek_sure_dk": 256,
+                "n_giris": 35469,
+                "ileri_hareket_median_pts": 1435.0,
+                "oran_median_hedef_maliyet": 24.57
+              },
+              "480": {
+                "gercek_sure_dk": 480,
+                "n_giris": 35356,
+                "ileri_hareket_median_pts": 2164.5,
+                "oran_median_hedef_maliyet": 37.05
+              }
+            },
+            "esik_15x_dk": 103.95303326810175,
+            "esik_20x_dk": 179.5346405228758
+          }
+        }
+      },
+      "M5": {
+        "H1": {
+          "up": {
+            "n_htf_kanal_ortusen": 2,
+            "n_giris_tetigi": 15151,
+            "ufuk_tablosu": {
+              "1": {
+                "gercek_sure_dk": 5,
+                "n_giris": 15151,
+                "ileri_hareket_median_pts": 140.0,
+                "oran_median_hedef_maliyet": 2.91
+              },
+              "2": {
+                "gercek_sure_dk": 10,
+                "n_giris": 15151,
+                "ileri_hareket_median_pts": 197.0,
+                "oran_median_hedef_maliyet": 4.1
+              },
+              "4": {
+                "gercek_sure_dk": 20,
+                "n_giris": 15151,
+                "ileri_hareket_median_pts": 279.0,
+                "oran_median_hedef_maliyet": 5.81
+              },
+              "8": {
+                "gercek_sure_dk": 40,
+                "n_giris": 15151,
+                "ileri_hareket_median_pts": 400.0,
+                "oran_median_hedef_maliyet": 8.32
+              },
+              "16": {
+                "gercek_sure_dk": 80,
+                "n_giris": 15151,
+                "ileri_hareket_median_pts": 572.0,
+                "oran_median_hedef_maliyet": 11.9
+              },
+              "32": {
+                "gercek_sure_dk": 160,
+                "n_giris": 15151,
+                "ileri_hareket_median_pts": 815.0,
+                "oran_median_hedef_maliyet": 16.96
+              },
+              "64": {
+                "gercek_sure_dk": 320,
+                "n_giris": 15151,
+                "ileri_hareket_median_pts": 1205.0,
+                "oran_median_hedef_maliyet": 25.07
+              },
+              "128": {
+                "gercek_sure_dk": 640,
+                "n_giris": 15151,
+                "ileri_hareket_median_pts": 1791.0,
+                "oran_median_hedef_maliyet": 37.27
+              }
+            },
+            "esik_15x_dk": 129.01185770750988,
+            "esik_20x_dk": 219.97533908754622
+          },
+          "down": {
+            "n_htf_kanal_ortusen": 8,
+            "n_giris_tetigi": 8484,
+            "ufuk_tablosu": {
+              "1": {
+                "gercek_sure_dk": 5,
+                "n_giris": 8484,
+                "ileri_hareket_median_pts": 220.0,
+                "oran_median_hedef_maliyet": 4.58
+              },
+              "2": {
+                "gercek_sure_dk": 10,
+                "n_giris": 8484,
+                "ileri_hareket_median_pts": 314.0,
+                "oran_median_hedef_maliyet": 6.53
+              },
+              "4": {
+                "gercek_sure_dk": 20,
+                "n_giris": 8484,
+                "ileri_hareket_median_pts": 441.0,
+                "oran_median_hedef_maliyet": 9.18
+              },
+              "8": {
+                "gercek_sure_dk": 40,
+                "n_giris": 8484,
+                "ileri_hareket_median_pts": 632.0,
+                "oran_median_hedef_maliyet": 13.15
+              },
+              "16": {
+                "gercek_sure_dk": 80,
+                "n_giris": 8484,
+                "ileri_hareket_median_pts": 878.5,
+                "oran_median_hedef_maliyet": 18.28
+              },
+              "32": {
+                "gercek_sure_dk": 160,
+                "n_giris": 8484,
+                "ileri_hareket_median_pts": 1296.0,
+                "oran_median_hedef_maliyet": 26.97
+              },
+              "64": {
+                "gercek_sure_dk": 320,
+                "n_giris": 8477,
+                "ileri_hareket_median_pts": 1986.0,
+                "oran_median_hedef_maliyet": 41.33
+              },
+              "128": {
+                "gercek_sure_dk": 640,
+                "n_giris": 8445,
+                "ileri_hareket_median_pts": 2974.0,
+                "oran_median_hedef_maliyet": 61.88
+              }
+            },
+            "esik_15x_dk": 54.42495126705653,
+            "esik_20x_dk": 95.83429228998848
+          }
+        },
+        "M30": {
+          "up": {
+            "n_htf_kanal_ortusen": 5,
+            "n_giris_tetigi": 15928,
+            "ufuk_tablosu": {
+              "1": {
+                "gercek_sure_dk": 5,
+                "n_giris": 15928,
+                "ileri_hareket_median_pts": 205.0,
+                "oran_median_hedef_maliyet": 4.27
+              },
+              "2": {
+                "gercek_sure_dk": 10,
+                "n_giris": 15928,
+                "ileri_hareket_median_pts": 290.0,
+                "oran_median_hedef_maliyet": 6.03
+              },
+              "4": {
+                "gercek_sure_dk": 20,
+                "n_giris": 15928,
+                "ileri_hareket_median_pts": 410.0,
+                "oran_median_hedef_maliyet": 8.53
+              },
+              "8": {
+                "gercek_sure_dk": 40,
+                "n_giris": 15928,
+                "ileri_hareket_median_pts": 580.0,
+                "oran_median_hedef_maliyet": 12.07
+              },
+              "16": {
+                "gercek_sure_dk": 80,
+                "n_giris": 15928,
+                "ileri_hareket_median_pts": 815.0,
+                "oran_median_hedef_maliyet": 16.96
+              },
+              "32": {
+                "gercek_sure_dk": 160,
+                "n_giris": 15928,
+                "ileri_hareket_median_pts": 1200.0,
+                "oran_median_hedef_maliyet": 24.97
+              },
+              "64": {
+                "gercek_sure_dk": 320,
+                "n_giris": 15916,
+                "ileri_hareket_median_pts": 1869.0,
+                "oran_median_hedef_maliyet": 38.89
+              },
+              "128": {
+                "gercek_sure_dk": 640,
+                "n_giris": 15884,
+                "ileri_hareket_median_pts": 2693.0,
+                "oran_median_hedef_maliyet": 56.04
+              }
+            },
+            "esik_15x_dk": 63.96728016359918,
+            "esik_20x_dk": 110.36204744069913
+          },
+          "down": {
+            "n_htf_kanal_ortusen": 6,
+            "n_giris_tetigi": 22655,
+            "ufuk_tablosu": {
+              "1": {
+                "gercek_sure_dk": 5,
+                "n_giris": 22655,
+                "ileri_hareket_median_pts": 170.0,
+                "oran_median_hedef_maliyet": 3.54
+              },
+              "2": {
+                "gercek_sure_dk": 10,
+                "n_giris": 22655,
+                "ileri_hareket_median_pts": 242.0,
+                "oran_median_hedef_maliyet": 5.04
+              },
+              "4": {
+                "gercek_sure_dk": 20,
+                "n_giris": 22655,
+                "ileri_hareket_median_pts": 337.0,
+                "oran_median_hedef_maliyet": 7.01
+              },
+              "8": {
+                "gercek_sure_dk": 40,
+                "n_giris": 22655,
+                "ileri_hareket_median_pts": 486.0,
+                "oran_median_hedef_maliyet": 10.11
+              },
+              "16": {
+                "gercek_sure_dk": 80,
+                "n_giris": 22655,
+                "ileri_hareket_median_pts": 681.0,
+                "oran_median_hedef_maliyet": 14.17
+              },
+              "32": {
+                "gercek_sure_dk": 160,
+                "n_giris": 22655,
+                "ileri_hareket_median_pts": 1022.0,
+                "oran_median_hedef_maliyet": 21.27
+              },
+              "64": {
+                "gercek_sure_dk": 320,
+                "n_giris": 22644,
+                "ileri_hareket_median_pts": 1517.5,
+                "oran_median_hedef_maliyet": 31.58
+              },
+              "128": {
+                "gercek_sure_dk": 640,
+                "n_giris": 22612,
+                "ileri_hareket_median_pts": 2239.5,
+                "oran_median_hedef_maliyet": 46.6
+              }
+            },
+            "esik_15x_dk": 89.35211267605634,
+            "esik_20x_dk": 145.69014084507043
+          }
+        }
+      },
+      "M15": {
+        "H1": {
+          "up": {
+            "n_htf_kanal_ortusen": 6,
+            "n_giris_tetigi": 24709,
+            "ufuk_tablosu": {
+              "1": {
+                "gercek_sure_dk": 15,
+                "n_giris": 24709,
+                "ileri_hareket_median_pts": 128.0,
+                "oran_median_hedef_maliyet": 3.4
+              },
+              "2": {
+                "gercek_sure_dk": 30,
+                "n_giris": 24709,
+                "ileri_hareket_median_pts": 180.0,
+                "oran_median_hedef_maliyet": 4.77
+              },
+              "4": {
+                "gercek_sure_dk": 60,
+                "n_giris": 24709,
+                "ileri_hareket_median_pts": 257.0,
+                "oran_median_hedef_maliyet": 6.82
+              },
+              "8": {
+                "gercek_sure_dk": 120,
+                "n_giris": 24709,
+                "ileri_hareket_median_pts": 366.0,
+                "oran_median_hedef_maliyet": 9.71
+              },
+              "16": {
+                "gercek_sure_dk": 240,
+                "n_giris": 24709,
+                "ileri_hareket_median_pts": 537.0,
+                "oran_median_hedef_maliyet": 14.24
+              },
+              "32": {
+                "gercek_sure_dk": 480,
+                "n_giris": 24709,
+                "ileri_hareket_median_pts": 807.0,
+                "oran_median_hedef_maliyet": 21.41
+              },
+              "64": {
+                "gercek_sure_dk": 960,
+                "n_giris": 24709,
+                "ileri_hareket_median_pts": 1233.0,
+                "oran_median_hedef_maliyet": 32.7
+              }
+            },
+            "esik_15x_dk": 265.43933054393307,
+            "esik_20x_dk": 432.8033472803347
+          },
+          "down": {
+            "n_htf_kanal_ortusen": 16,
+            "n_giris_tetigi": 20599,
+            "ufuk_tablosu": {
+              "1": {
+                "gercek_sure_dk": 15,
+                "n_giris": 20599,
+                "ileri_hareket_median_pts": 104.0,
+                "oran_median_hedef_maliyet": 2.76
+              },
+              "2": {
+                "gercek_sure_dk": 30,
+                "n_giris": 20599,
+                "ileri_hareket_median_pts": 143.0,
+                "oran_median_hedef_maliyet": 3.79
+              },
+              "4": {
+                "gercek_sure_dk": 60,
+                "n_giris": 20599,
+                "ileri_hareket_median_pts": 208.0,
+                "oran_median_hedef_maliyet": 5.52
+              },
+              "8": {
+                "gercek_sure_dk": 120,
+                "n_giris": 20599,
+                "ileri_hareket_median_pts": 294.0,
+                "oran_median_hedef_maliyet": 7.8
+              },
+              "16": {
+                "gercek_sure_dk": 240,
+                "n_giris": 20598,
+                "ileri_hareket_median_pts": 431.0,
+                "oran_median_hedef_maliyet": 11.43
+              },
+              "32": {
+                "gercek_sure_dk": 480,
+                "n_giris": 20592,
+                "ileri_hareket_median_pts": 662.5,
+                "oran_median_hedef_maliyet": 17.57
+              },
+              "64": {
+                "gercek_sure_dk": 960,
+                "n_giris": 20576,
+                "ileri_hareket_median_pts": 1005.0,
+                "oran_median_hedef_maliyet": 26.66
+              }
+            },
+            "esik_15x_dk": 379.5439739413681,
+            "esik_20x_dk": 608.3168316831683
+          }
+        },
+        "M30": {
+          "up": {
+            "n_htf_kanal_ortusen": 11,
+            "n_giris_tetigi": 22028,
+            "ufuk_tablosu": {
+              "1": {
+                "gercek_sure_dk": 15,
+                "n_giris": 22028,
+                "ileri_hareket_median_pts": 132.0,
+                "oran_median_hedef_maliyet": 3.5
+              },
+              "2": {
+                "gercek_sure_dk": 30,
+                "n_giris": 22028,
+                "ileri_hareket_median_pts": 186.0,
+                "oran_median_hedef_maliyet": 4.93
+              },
+              "4": {
+                "gercek_sure_dk": 60,
+                "n_giris": 22028,
+                "ileri_hareket_median_pts": 264.0,
+                "oran_median_hedef_maliyet": 7.0
+              },
+              "8": {
+                "gercek_sure_dk": 120,
+                "n_giris": 22028,
+                "ileri_hareket_median_pts": 369.0,
+                "oran_median_hedef_maliyet": 9.79
+              },
+              "16": {
+                "gercek_sure_dk": 240,
+                "n_giris": 22027,
+                "ileri_hareket_median_pts": 544.0,
+                "oran_median_hedef_maliyet": 14.43
+              },
+              "32": {
+                "gercek_sure_dk": 480,
+                "n_giris": 22017,
+                "ileri_hareket_median_pts": 811.0,
+                "oran_median_hedef_maliyet": 21.51
+              },
+              "64": {
+                "gercek_sure_dk": 960,
+                "n_giris": 22001,
+                "ileri_hareket_median_pts": 1171.0,
+                "oran_median_hedef_maliyet": 31.06
+              }
+            },
+            "esik_15x_dk": 259.3220338983051,
+            "esik_20x_dk": 428.8135593220338
+          },
+          "down": {
+            "n_htf_kanal_ortusen": 18,
+            "n_giris_tetigi": 32044,
+            "ufuk_tablosu": {
+              "1": {
+                "gercek_sure_dk": 15,
+                "n_giris": 32044,
+                "ileri_hareket_median_pts": 105.0,
+                "oran_median_hedef_maliyet": 2.79
+              },
+              "2": {
+                "gercek_sure_dk": 30,
+                "n_giris": 32044,
+                "ileri_hareket_median_pts": 146.0,
+                "oran_median_hedef_maliyet": 3.87
+              },
+              "4": {
+                "gercek_sure_dk": 60,
+                "n_giris": 32044,
+                "ileri_hareket_median_pts": 210.0,
+                "oran_median_hedef_maliyet": 5.57
+              },
+              "8": {
+                "gercek_sure_dk": 120,
+                "n_giris": 32044,
+                "ileri_hareket_median_pts": 301.0,
+                "oran_median_hedef_maliyet": 7.98
+              },
+              "16": {
+                "gercek_sure_dk": 240,
+                "n_giris": 32042,
+                "ileri_hareket_median_pts": 445.0,
+                "oran_median_hedef_maliyet": 11.8
+              },
+              "32": {
+                "gercek_sure_dk": 480,
+                "n_giris": 32036,
+                "ileri_hareket_median_pts": 683.0,
+                "oran_median_hedef_maliyet": 18.12
+              },
+              "64": {
+                "gercek_sure_dk": 960,
+                "n_giris": 32020,
+                "ileri_hareket_median_pts": 1041.0,
+                "oran_median_hedef_maliyet": 27.61
+              }
+            },
+            "esik_15x_dk": 361.5189873417721,
+            "esik_20x_dk": 575.0895679662802
+          }
+        }
+      }
+    }
+  }
+}
