@@ -1,8 +1,3 @@
-2026-07-20 19:08:05.685 | T4 | SELL@4012.0 | order_send cagrilacak
-2026-07-20 19:08:05.713 | T5 | SELL@4012.0 | order_send sonucu: basarili
-[2026-07-20 19:08:05] Islem acildi: 948004067 | SELL @ 4012.0 | SL:4017.0 | TP1:4009.0 TP2:4007.0 TP3:4004.0
-2026-07-20 19:08:06.734 | T3 | SELL@4016.5 | signal.json okundu (MT5 agent)
-[2026-07-20 19:08:06] OCR sinyali atlandi (manuel emir aktif): #None SELL @ 4016.5
 [2026-07-20 19:08:17] Islem kapandi: ticket=948004067
 [2026-07-20 19:08:31] Heartbeat: 0 aktif islem | Bakiye: 747.65 USD
 [2026-07-20 19:09:01] Heartbeat: 0 aktif islem | Bakiye: 747.65 USD
@@ -78,3 +73,8 @@
 [2026-07-20 19:37:19] Heartbeat: 0 aktif islem | Bakiye: 747.65 USD
 [2026-07-20 19:37:49] Heartbeat: 0 aktif islem | Bakiye: 747.65 USD
 [2026-07-20 19:38:19] Heartbeat: 0 aktif islem | Bakiye: 747.65 USD
+[2026-07-20 19:38:49] Heartbeat: 0 aktif islem | Bakiye: 747.65 USD
+[2026-07-20 19:39:19] Heartbeat: 0 aktif islem | Bakiye: 747.65 USD
+[2026-07-20 19:39:50] Heartbeat: 0 aktif islem | Bakiye: 747.65 USD
+[2026-07-20 19:40:20] Heartbeat: 0 aktif islem | Bakiye: 747.65 USD
+[2026-07-20 19:40:50] Heartbeat: 0 aktif islem | Bakiye: 747.65 USD
