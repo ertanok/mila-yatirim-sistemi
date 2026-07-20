@@ -1,14 +1,14 @@
 {
   "signal_no": null,
   "direction": "SELL",
-  "entry": 4012.5,
-  "sl": 4017.5,
-  "tp1": 4009.5,
-  "tp2": 4007.5,
-  "tp3": 4004.5,
+  "entry": 4008.5,
+  "sl": 4013.5,
+  "tp1": 4005.5,
+  "tp2": 4003.5,
+  "tp3": 4000.5,
   "status": "RUNNING",
-  "time": "18:57:47",
-  "processed": false,
+  "time": "23:00:42",
+  "processed": true,
   "confirmed": true,
   "cancel": false
 }
