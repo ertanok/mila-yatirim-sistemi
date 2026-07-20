@@ -8,7 +8,7 @@ import json
 import os
 import sys
 from datetime import datetime, timezone
-from http.server import BaseHTTPRequestHandler, HTTPServer
+from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import mila_auth
@@ -23,6 +23,8 @@ MANUEL_SIGNAL_FILE = os.path.join(MILAGOLD_DIR, "manuel_signal.json")
 
 
 class BoardApiHandler(BaseHTTPRequestHandler):
+
+    timeout = 10  # saniye - tikanan baglantiyi otomatik kapatir
 
     def log_message(self, format, *args):
         print(f"[Board API] {self.address_string()} — {format % args}")
@@ -316,7 +318,8 @@ class BoardApiHandler(BaseHTTPRequestHandler):
 
 
 if __name__ == "__main__":
-    server = HTTPServer(("0.0.0.0", PORT), BoardApiHandler)
+    server = ThreadingHTTPServer(("0.0.0.0", PORT), BoardApiHandler)
+    server.daemon_threads = True
     print(f"[Board API] MilaBoard API servisi baslatildi — port {PORT}")
     try:
         server.serve_forever()

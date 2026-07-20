@@ -12,7 +12,7 @@ import json
 import os
 import sys
 import urllib.request
-from http.server import BaseHTTPRequestHandler, HTTPServer
+from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
 
 MILABOARD_VERIFY_URL = "http://localhost:5001/verify"
 
@@ -43,6 +43,8 @@ def token_gecerli_mi(token):
 
 
 class ApiHandler(BaseHTTPRequestHandler):
+
+    timeout = 10  # saniye - tikanan baglantiyi otomatik kapatir
 
     def log_message(self, format, *args):
         print(f"[API] {self.address_string()} — {format % args}")
@@ -109,7 +111,8 @@ class ApiHandler(BaseHTTPRequestHandler):
 
 
 if __name__ == "__main__":
-    server = HTTPServer(("0.0.0.0", PORT), ApiHandler)
+    server = ThreadingHTTPServer(("0.0.0.0", PORT), ApiHandler)
+    server.daemon_threads = True
     print(f"[API] MilaGold API servisi baslatildi — port {PORT}")
     try:
         server.serve_forever()
