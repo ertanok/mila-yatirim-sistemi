@@ -12,7 +12,7 @@ Her cagri, bu sablonla doldurulmus haliyle bir dosyaya kaydedilir (bkz. altta "K
 === ORKESTRATOR CAGRISI ===
 TARIH-SAAT        : [YYYY-MM-DD HH:MM]
 HEDEF AGENT        : [Arastirmaci / Stratejist / Backtest Muhendisi / Risk Analisti]
-SISTEM PROMPTU YOLU: C:\MilaYatirim\Agentlar\[agent_adi]_system_prompt.md
+SISTEM PROMPTU YOLU: C:\MilaYatirim\mila-yatirim-sistemi\Agentlar\[agent_adi]_system_prompt.md
 
 PROJE              : [orn. Gold, Justin, Pariteler, vb.]
 GOREV              : [Bu cagri icin somut, tek is tanimi — genis/belirsiz olmasin.
