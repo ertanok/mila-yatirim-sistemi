@@ -22,8 +22,11 @@ const bekleyenKuyruk = []; // { agentAdi, gorevDosyasiYolu, gorevId }
 function gorevIdUret(agentAdi) {
   const simdi = new Date();
   const iki = (n) => String(n).padStart(2, '0');
-  const damga = `${simdi.getFullYear()}${iki(simdi.getMonth() + 1)}${iki(simdi.getDate())}_${iki(simdi.getHours())}${iki(simdi.getMinutes())}`;
-  return `${agentAdi}_${damga}`;
+  const damga = `${simdi.getFullYear()}${iki(simdi.getMonth() + 1)}${iki(simdi.getDate())}_${iki(simdi.getHours())}${iki(simdi.getMinutes())}${iki(simdi.getSeconds())}`;
+  // Ayni saniyede tetiklenen ayni-agent gorevleri icin de carpisma riskini kapatmak amaciyla
+  // kisa rastgele bir suffix eklenir (ID-catismasi vakasi, 17 Temmuz).
+  const rastgeleSuffix = Math.random().toString(36).slice(2, 6);
+  return `${agentAdi}_${damga}_${rastgeleSuffix}`;
 }
 
 function workerBaslat(agentAdi, gorevDosyasiYolu, gorevId) {

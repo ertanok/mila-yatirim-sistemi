@@ -713,13 +713,28 @@ def main():
             simdi_k = datetime.now()
             kapanis_saati = simdi_k.hour == 23 and simdi_k.minute >= 45
 
-            # 23:55'te acik pozisyon varsa kapat (gap riski)
+            # 23:55'te acik pozisyon varsa kapat, bekleyen (henuz dolmamis) emir
+            # varsa iptal et (gap riski - 17/07/2026 oncesi sadece acik pozisyonlar
+            # kapsaniyordu, bekleyen sell-stop/buy-stop emirleri gece boyunca acik
+            # kalip gapten etkilenebiliyordu)
             if simdi_k.hour == 23 and simdi_k.minute >= 55:
                 if active_trades:
-                    log("23:55 gap koruma: tum acik pozisyonlar kapatiliyor.")
-                    telegram("[MilaGold] ⚠️ 23:55 gap koruma: pozisyonlar kapatiliyor.")
+                    log("23:55 gap koruma: tum acik pozisyonlar ve bekleyen emirler kapatiliyor.")
+                    telegram("[MilaGold] ⚠️ 23:55 gap koruma: pozisyonlar/bekleyen emirler kapatiliyor.")
                     for trade in list(active_trades):
-                        close_position_at_market(trade["ticket"], trade["direction"])
+                        ticket = trade["ticket"]
+                        if mt5_call(mt5.positions_get, ticket=ticket):
+                            close_position_at_market(ticket, trade["direction"])
+                        elif mt5_call(mt5.orders_get, ticket=ticket):
+                            cancel_result = mt5.order_send({
+                                "action": mt5.TRADE_ACTION_REMOVE,
+                                "order": ticket,
+                            })
+                            if cancel_result and cancel_result.retcode == mt5.TRADE_RETCODE_DONE:
+                                log(f"23:55 gap koruma: bekleyen emir iptal edildi: ticket={ticket}")
+                            else:
+                                code = cancel_result.retcode if cancel_result else "timeout"
+                                log(f"23:55 gap koruma: bekleyen emir iptal edilemedi: ticket={ticket} | {code}")
                     active_trades = []
                 time.sleep(5)
                 continue

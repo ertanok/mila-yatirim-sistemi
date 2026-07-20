@@ -21,6 +21,14 @@ AGENT_LOG_TIMEOUT     = 60    # saniye - bu kadar log gelmezse donmus say
 SIGNAL_STALE_MINUTES  = 10    # dakika - signal.json bu kadar eskiyse Signal GPT donmus
 RESTART_COOLDOWN      = 1800  # saniye (30dk) - ayni agent icin restart araligi
 
+# 17/07/2026: reboot sonrasi Watchdog, resmi Task Scheduler gorevleri (OCR/MT5
+# Agent LogonTrigger) henuz ayaga kalkmadan "donmus agent" saniyor ve kendi
+# kopyasini baslatiyor - resmi gorevle yarisip ayni MT5 hesabini/pozisyonu
+# yoneten iki bagimsiz surec ortaya cikiyor. Baslangictan sonraki bu sure
+# icinde restart_agent() hicbir sey yapmaz, resmi gorevlere firsat tanir.
+BASLANGIC_GRACE_SN    = 180   # saniye (3dk)
+_baslangic_zamani     = time.time()
+
 TELEGRAM_TOKEN   = None
 TELEGRAM_CHAT_ID = None
 
@@ -125,6 +133,13 @@ def kill_window(window_title):
 
 def restart_agent(script_name, label, window_title, agent_key, neden=""):
     now_ts = time.time()
+
+    grace_kalan = BASLANGIC_GRACE_SN - (now_ts - _baslangic_zamani)
+    if grace_kalan > 0:
+        log(f"  {label} restart ERTELENDI - baslangic grace period ({int(grace_kalan)}sn kaldi, "
+            f"resmi Task Scheduler gorevine firsat taniniyor)")
+        return False
+
     since_last = now_ts - _last_restart[agent_key]
     if since_last < RESTART_COOLDOWN:
         log(f"  {label} restart bekleniyor (cooldown: {int(RESTART_COOLDOWN - since_last)}sn kaldi)")
