@@ -1,74 +1,3 @@
-2026-07-21 07:41:33,867 | GOLD karti okunamadi (8). Ham: ['Disclaimer', 'The information on signalgpt ai is for reference and', 'Iknowledge-sharing [']
-2026-07-21 07:41:37,584 | GOLD karti okunamadi (9). Ham: ['Disclaimer', 'The information on signalgpt ai is for reference and', 'Iknowledge-sharing [']
-2026-07-21 07:41:41,148 | GOLD karti okunamadi (10). Ham: ['Disclaimer', 'The information on signalgpt ai is for reference and', 'Iknowledge-sharing [']
-2026-07-21 07:41:41,148 | 10 kez ust uste okunamadi - sayfa yenileniyor...
-2026-07-21 07:41:49,350 | Sayfa yenilendi.
-2026-07-21 07:41:53,430 | GOLD karti okunamadi (1). Ham: ['Disclaimer', 'The information on signalgpt ai is for reference and', 'Iknowledge-sharing [']
-2026-07-21 07:41:56,615 | GOLD karti okunamadi (2). Ham: ['Disclaimer', 'The information on signalgpt ai is for reference and', 'Iknowledge-sharing [']
-2026-07-21 07:41:59,946 | GOLD karti okunamadi (3). Ham: ['Disclaimer', 'The information on signalgpt ai is for reference and', 'Iknowledge-sharing [']
-2026-07-21 07:42:03,320 | GOLD karti okunamadi (4). Ham: ['Disclaimer', 'The information on signalgpt ai is for reference and', 'Iknowledge-sharing [']
-2026-07-21 07:42:06,976 | GOLD karti okunamadi (5). Ham: ['Disclaimer', 'The information on signalgpt ai is for reference and', 'Iknowledge-sharing [']
-2026-07-21 07:42:10,304 | GOLD karti okunamadi (6). Ham: ['Disclaimer', 'The information on signalgpt ai is for reference and', 'Iknowledge-sharing [']
-2026-07-21 07:42:13,314 | GOLD karti okunamadi (7). Ham: ['Disclaimer', 'The information on signalgpt ai is for reference and', 'Iknowledge-sharing [']
-2026-07-21 07:42:17,107 | GOLD karti okunamadi (8). Ham: ['Disclaimer', 'The information on signalgpt ai is for reference and', 'Iknowledge-sharing [']
-2026-07-21 07:42:20,509 | GOLD karti okunamadi (9). Ham: ['Disclaimer', 'The information on signalgpt ai is for reference and', 'Iknowledge-sharing [']
-2026-07-21 07:42:23,599 | GOLD karti okunamadi (10). Ham: ['Disclaimer', 'The information on signalgpt ai is for reference and', 'Iknowledge-sharing [']
-2026-07-21 07:42:23,600 | 10 kez ust uste okunamadi - sayfa yenileniyor...
-2026-07-21 07:42:31,772 | Sayfa yenilendi.
-2026-07-21 07:42:36,099 | GOLD karti okunamadi (1). Ham: ['Disclaimer', 'The information on signalgpt ai is for reference and', 'Iknowledge-sharing [']
-2026-07-21 07:42:39,227 | GOLD karti okunamadi (2). Ham: ['Disclaimer', 'The information on signalgpt ai is for reference and', 'Iknowledge-sharing [']
-2026-07-21 07:42:42,335 | GOLD karti okunamadi (3). Ham: ['Disclaimer', 'The information on signalgpt ai is for reference and', 'Iknowledge-sharing [']
-2026-07-21 07:42:45,898 | GOLD karti okunamadi (4). Ham: ['Disclaimer', 'The information on signalgpt ai is for reference and', 'Iknowledge-sharing [']
-2026-07-21 07:42:49,477 | GOLD karti okunamadi (5). Ham: ['Disclaimer', 'The information on signalgpt ai is for reference and', 'Iknowledge-sharing [']
-2026-07-21 07:42:52,939 | GOLD karti okunamadi (6). Ham: ['Disclaimer', 'The information on signalgpt ai is for reference and', 'Iknowledge-sharing [']
-2026-07-21 07:42:57,457 | GOLD karti okunamadi (7). Ham: ['Disclaimer', 'The information on signalgpt ai is for reference and', 'Iknowledge-sharing [']
-2026-07-21 07:43:00,680 | GOLD karti okunamadi (8). Ham: ['Disclaimer', 'The information on signalgpt ai is for reference and', 'Iknowledge-sharing [']
-2026-07-21 07:43:03,824 | GOLD karti okunamadi (9). Ham: ['Disclaimer', 'The information on signalgpt ai is for reference and', 'Iknowledge-sharing [']
-2026-07-21 07:43:07,674 | GOLD karti okunamadi (10). Ham: ['Disclaimer', 'The information on signalgpt ai is for reference and', 'Iknowledge-sharing [']
-2026-07-21 07:43:07,674 | 10 kez ust uste okunamadi - sayfa yenileniyor...
-2026-07-21 07:43:25,125 | Sayfa yenilendi.
-2026-07-21 07:43:30,184 | Sinyal tarihi okunamadi (filtre devrede degil).
-2026-07-21 07:43:30,184 | T1 | SELL@4048.5 | sinyal tespit edildi
-2026-07-21 07:43:30,185 | Olasi yeni sinyal, HEMEN yazildi (dogrulama bekleniyor 1/2): 4047.5 -> 4048.5
-2026-07-21 07:43:30,186 | signal.json yazildi.
-2026-07-21 07:43:30,186 | T2 | SELL@4048.5 | signal.json yazildi
-2026-07-21 07:43:33,735 | Sinyal tarihi okunamadi (filtre devrede degil).
-2026-07-21 07:43:33,735 | Yeni sinyal DOGRULANDI (2 okuma): entry=4048.5 pending=4048.5
-2026-07-21 07:43:37,065 | Sinyal tarihi okunamadi (filtre devrede degil).
-2026-07-21 07:43:37,065 | Takip: SELL @ 4048.5 | Status:RUNNING
-2026-07-21 07:43:40,697 | Sinyal tarihi okunamadi (filtre devrede degil).
-2026-07-21 07:43:40,697 | Takip: SELL @ 4048.5 | Status:RUNNING
-2026-07-21 07:43:44,087 | Sinyal tarihi okunamadi (filtre devrede degil).
-2026-07-21 07:43:44,088 | Takip: SELL @ 4048.5 | Status:RUNNING
-2026-07-21 07:43:47,671 | Sinyal tarihi okunamadi (filtre devrede degil).
-2026-07-21 07:43:47,671 | Takip: SELL @ 4048.5 | Status:RUNNING
-2026-07-21 07:43:51,186 | Sinyal tarihi okunamadi (filtre devrede degil).
-2026-07-21 07:43:51,187 | Takip: SELL @ 4048.5 | Status:RUNNING
-2026-07-21 07:43:54,692 | Sinyal tarihi okunamadi (filtre devrede degil).
-2026-07-21 07:43:54,693 | Takip: SELL @ 4048.5 | Status:RUNNING
-2026-07-21 07:43:58,258 | Sinyal tarihi okunamadi (filtre devrede degil).
-2026-07-21 07:43:58,259 | Takip: SELL @ 4048.5 | Status:RUNNING
-2026-07-21 07:44:02,365 | Sinyal tarihi okunamadi (filtre devrede degil).
-2026-07-21 07:44:02,366 | Takip: SELL @ 4048.5 | Status:RUNNING
-2026-07-21 07:44:05,711 | Sinyal tarihi okunamadi (filtre devrede degil).
-2026-07-21 07:44:05,711 | Takip: SELL @ 4048.5 | Status:RUNNING
-2026-07-21 07:44:09,061 | Sinyal tarihi okunamadi (filtre devrede degil).
-2026-07-21 07:44:09,062 | Takip: SELL @ 4048.5 | Status:RUNNING
-2026-07-21 07:44:12,304 | Sinyal tarihi okunamadi (filtre devrede degil).
-2026-07-21 07:44:12,304 | Takip: SELL @ 4048.5 | Status:RUNNING
-2026-07-21 07:44:15,719 | Sinyal tarihi okunamadi (filtre devrede degil).
-2026-07-21 07:44:15,720 | Takip: SELL @ 4048.5 | Status:RUNNING
-2026-07-21 07:44:19,142 | Sinyal tarihi okunamadi (filtre devrede degil).
-2026-07-21 07:44:19,142 | Takip: SELL @ 4048.5 | Status:RUNNING
-2026-07-21 07:44:23,137 | Sinyal tarihi okunamadi (filtre devrede degil).
-2026-07-21 07:44:23,138 | Takip: SELL @ 4048.5 | Status:RUNNING
-2026-07-21 07:44:26,383 | Sinyal tarihi okunamadi (filtre devrede degil).
-2026-07-21 07:44:26,384 | Takip: SELL @ 4048.5 | Status:RUNNING
-2026-07-21 07:44:29,980 | Sinyal tarihi okunamadi (filtre devrede degil).
-2026-07-21 07:44:29,981 | Takip: SELL @ 4048.5 | Status:RUNNING
-2026-07-21 07:44:33,417 | Sinyal tarihi okunamadi (filtre devrede degil).
-2026-07-21 07:44:33,417 | Takip: SELL @ 4048.5 | Status:RUNNING
-2026-07-21 07:44:36,951 | Sinyal tarihi okunamadi (filtre devrede degil).
 2026-07-21 07:44:36,951 | Takip: SELL @ 4048.5 | Status:RUNNING
 2026-07-21 07:44:40,993 | Sinyal tarihi okunamadi (filtre devrede degil).
 2026-07-21 07:44:40,993 | Takip: SELL @ 4048.5 | Status:RUNNING
@@ -78,3 +7,74 @@
 2026-07-21 07:44:48,337 | Takip: SELL @ 4048.5 | Status:RUNNING
 2026-07-21 07:44:51,783 | Sinyal tarihi okunamadi (filtre devrede degil).
 2026-07-21 07:44:51,783 | Takip: SELL @ 4048.5 | Status:RUNNING
+2026-07-21 07:44:55,506 | Sinyal tarihi okunamadi (filtre devrede degil).
+2026-07-21 07:44:55,506 | Takip: SELL @ 4048.5 | Status:RUNNING
+2026-07-21 07:44:59,051 | Sinyal tarihi okunamadi (filtre devrede degil).
+2026-07-21 07:44:59,051 | Takip: SELL @ 4048.5 | Status:RUNNING
+2026-07-21 07:45:03,878 | Sinyal tarihi okunamadi (filtre devrede degil).
+2026-07-21 07:45:03,878 | Takip: SELL @ 4048.5 | Status:RUNNING
+2026-07-21 07:45:08,057 | Sinyal tarihi okunamadi (filtre devrede degil).
+2026-07-21 07:45:08,058 | Takip: SELL @ 4048.5 | Status:RUNNING
+2026-07-21 07:45:11,893 | Sinyal tarihi okunamadi (filtre devrede degil).
+2026-07-21 07:45:11,894 | Takip: SELL @ 4048.5 | Status:RUNNING
+2026-07-21 07:45:16,174 | Sinyal tarihi okundu: 21/07/2026 11:45
+2026-07-21 07:45:16,175 | T1 | SELL@4046.5 | sinyal tespit edildi
+2026-07-21 07:45:16,175 | Olasi yeni sinyal, HEMEN yazildi (dogrulama bekleniyor 1/2): 4048.5 -> 4046.5
+2026-07-21 07:45:16,176 | signal.json yazildi.
+2026-07-21 07:45:16,176 | T2 | SELL@4046.5 | signal.json yazildi
+2026-07-21 07:45:20,550 | Sinyal tarihi okundu: 21/07/2026 11:45
+2026-07-21 07:45:20,551 | Yeni sinyal DOGRULANDI (2 okuma): entry=4046.5 pending=4046.5
+2026-07-21 07:45:25,133 | Sinyal tarihi okundu: 21/07/2026 11:45
+2026-07-21 07:45:25,133 | Takip: SELL @ 4046.5 | Status:RUNNING
+2026-07-21 07:45:29,041 | Sinyal tarihi okundu: 21/07/2026 11:45
+2026-07-21 07:45:29,041 | Takip: SELL @ 4046.5 | Status:RUNNING
+2026-07-21 07:45:33,045 | Sinyal tarihi okundu: 21/07/2026 11:45
+2026-07-21 07:45:33,045 | Takip: SELL @ 4046.5 | Status:RUNNING
+2026-07-21 07:45:36,764 | Sinyal tarihi okundu: 21/07/2026 11:45
+2026-07-21 07:45:36,764 | Takip: SELL @ 4046.5 | Status:RUNNING
+2026-07-21 07:45:40,260 | Sinyal tarihi okundu: 21/07/2026 11:45
+2026-07-21 07:45:40,261 | Takip: SELL @ 4046.5 | Status:RUNNING
+2026-07-21 07:45:43,613 | Sinyal tarihi okundu: 21/07/2026 11:45
+2026-07-21 07:45:43,614 | Takip: SELL @ 4046.5 | Status:RUNNING
+2026-07-21 07:45:47,770 | Sinyal tarihi okundu: 21/07/2026 11:45
+2026-07-21 07:45:47,771 | Takip: SELL @ 4046.5 | Status:RUNNING
+2026-07-21 07:45:51,660 | Sinyal tarihi okundu: 21/07/2026 11:45
+2026-07-21 07:45:51,661 | Takip: SELL @ 4046.5 | Status:RUNNING
+2026-07-21 07:45:55,036 | Sinyal tarihi okundu: 21/07/2026 11:45
+2026-07-21 07:45:55,037 | Takip: SELL @ 4046.5 | Status:RUNNING
+2026-07-21 07:45:58,857 | Sinyal tarihi okundu: 21/07/2026 11:45
+2026-07-21 07:45:58,858 | Takip: SELL @ 4046.5 | Status:RUNNING
+2026-07-21 07:46:02,895 | Sinyal tarihi okundu: 21/07/2026 11:45
+2026-07-21 07:46:02,896 | Takip: SELL @ 4046.5 | Status:RUNNING
+2026-07-21 07:46:06,821 | Sinyal tarihi okundu: 21/07/2026 11:45
+2026-07-21 07:46:06,821 | Takip: SELL @ 4046.5 | Status:RUNNING
+2026-07-21 07:46:10,780 | Sinyal tarihi okundu: 21/07/2026 11:45
+2026-07-21 07:46:10,781 | Takip: SELL @ 4046.5 | Status:RUNNING
+2026-07-21 07:46:14,196 | Sinyal tarihi okundu: 21/07/2026 11:45
+2026-07-21 07:46:14,197 | Takip: SELL @ 4046.5 | Status:RUNNING
+2026-07-21 07:46:18,107 | Sinyal tarihi okundu: 21/07/2026 11:45
+2026-07-21 07:46:18,108 | Takip: SELL @ 4046.5 | Status:RUNNING
+2026-07-21 07:46:21,161 | Sinyal tarihi okundu: 21/07/2026 11:45
+2026-07-21 07:46:21,161 | Takip: SELL @ 4046.5 | Status:RUNNING
+2026-07-21 07:46:24,649 | Sinyal tarihi okundu: 21/07/2026 11:45
+2026-07-21 07:46:24,649 | Takip: SELL @ 4046.5 | Status:RUNNING
+2026-07-21 07:46:28,131 | Sinyal tarihi okundu: 21/07/2026 11:45
+2026-07-21 07:46:28,131 | Takip: SELL @ 4046.5 | Status:RUNNING
+2026-07-21 07:46:31,592 | Sinyal tarihi okundu: 21/07/2026 11:45
+2026-07-21 07:46:31,593 | Takip: SELL @ 4046.5 | Status:RUNNING
+2026-07-21 07:46:35,152 | Sinyal tarihi okundu: 21/07/2026 11:45
+2026-07-21 07:46:35,152 | Takip: SELL @ 4046.5 | Status:RUNNING
+2026-07-21 07:46:38,954 | Sinyal tarihi okundu: 21/07/2026 11:45
+2026-07-21 07:46:38,955 | Takip: SELL @ 4046.5 | Status:RUNNING
+2026-07-21 07:46:42,318 | Sinyal tarihi okundu: 21/07/2026 11:45
+2026-07-21 07:46:42,318 | Takip: SELL @ 4046.5 | Status:RUNNING
+2026-07-21 07:46:46,396 | Sinyal tarihi okundu: 21/07/2026 11:45
+2026-07-21 07:46:46,396 | Takip: SELL @ 4046.5 | Status:RUNNING
+2026-07-21 07:46:49,707 | Sinyal tarihi okundu: 21/07/2026 11:45
+2026-07-21 07:46:49,708 | Takip: SELL @ 4046.5 | Status:RUNNING
+2026-07-21 07:46:53,137 | Sinyal tarihi okundu: 21/07/2026 11:45
+2026-07-21 07:46:53,137 | Takip: SELL @ 4046.5 | Status:RUNNING
+2026-07-21 07:46:56,945 | Sinyal tarihi okundu: 21/07/2026 11:45
+2026-07-21 07:46:56,946 | Takip: SELL @ 4046.5 | Status:RUNNING
+2026-07-21 07:47:00,511 | Sinyal tarihi okundu: 21/07/2026 11:45
+2026-07-21 07:47:00,511 | Takip: SELL @ 4046.5 | Status:RUNNING
