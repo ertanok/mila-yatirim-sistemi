@@ -1,48 +1,3 @@
-2026-07-21 17:42:08,371 | T1 | SELL@4065.0 | sinyal tespit edildi
-2026-07-21 17:42:08,371 | Olasi yeni sinyal, HEMEN yazildi (dogrulama bekleniyor 1/2): 4052.5 -> 4065.0
-2026-07-21 17:42:08,372 | signal.json yazildi.
-2026-07-21 17:42:08,373 | T2 | SELL@4065.0 | signal.json yazildi
-2026-07-21 17:42:12,208 | Sinyal tarihi okundu: 21/07/2026 21:42
-2026-07-21 17:42:12,209 | Yeni sinyal DOGRULANDI (2 okuma): entry=4065.0 pending=4065.0
-2026-07-21 17:42:16,057 | Sinyal tarihi okundu: 21/07/2026 21:42
-2026-07-21 17:42:16,058 | Takip: SELL @ 4065.0 | Status:RUNNING
-2026-07-21 17:42:20,183 | Sinyal tarihi okundu: 21/07/2026 21:42
-2026-07-21 17:42:20,183 | Takip: SELL @ 4065.0 | Status:RUNNING
-2026-07-21 17:42:25,371 | Sinyal tarihi okundu: 21/07/2026 21:42
-2026-07-21 17:42:25,371 | Takip: SELL @ 4065.0 | Status:RUNNING
-2026-07-21 17:42:29,053 | Sinyal tarihi okundu: 21/07/2026 21:42
-2026-07-21 17:42:29,053 | Takip: SELL @ 4065.0 | Status:RUNNING
-2026-07-21 17:42:33,325 | Sinyal tarihi okundu: 21/07/2026 21:42
-2026-07-21 17:42:33,326 | Takip: SELL @ 4065.0 | Status:RUNNING
-2026-07-21 17:42:38,637 | Sinyal tarihi okundu: 21/07/2026 21:42
-2026-07-21 17:42:38,637 | Takip: SELL @ 4065.0 | Status:RUNNING
-2026-07-21 17:42:41,983 | Sinyal tarihi okundu: 21/07/2026 21:42
-2026-07-21 17:42:41,983 | Takip: SELL @ 4065.0 | Status:RUNNING
-2026-07-21 17:42:45,765 | Sinyal tarihi okundu: 21/07/2026 21:42
-2026-07-21 17:42:45,766 | Takip: SELL @ 4065.0 | Status:RUNNING
-2026-07-21 17:42:50,082 | Sinyal tarihi okundu: 21/07/2026 21:42
-2026-07-21 17:42:50,082 | Takip: SELL @ 4065.0 | Status:RUNNING
-2026-07-21 17:42:54,527 | Sinyal tarihi okundu: 21/07/2026 21:42
-2026-07-21 17:42:54,527 | Takip: SELL @ 4065.0 | Status:RUNNING
-2026-07-21 17:42:58,647 | Sinyal tarihi okundu: 21/07/2026 21:42
-2026-07-21 17:42:58,647 | Takip: SELL @ 4065.0 | Status:RUNNING
-2026-07-21 17:43:03,690 | Sinyal tarihi okundu: 21/07/2026 21:42
-2026-07-21 17:43:03,691 | Takip: SELL @ 4065.0 | Status:RUNNING
-2026-07-21 17:43:08,667 | Sinyal tarihi okundu: 21/07/2026 21:42
-2026-07-21 17:43:08,668 | Takip: SELL @ 4065.0 | Status:RUNNING
-2026-07-21 17:43:12,628 | Sinyal tarihi okundu: 21/07/2026 21:42
-2026-07-21 17:43:12,628 | Takip: SELL @ 4065.0 | Status:RUNNING
-2026-07-21 17:43:16,201 | Sinyal tarihi okundu: 21/07/2026 21:42
-2026-07-21 17:43:16,202 | Takip: SELL @ 4065.0 | Status:RUNNING
-2026-07-21 17:43:21,624 | Sinyal tarihi okundu: 21/07/2026 21:42
-2026-07-21 17:43:21,624 | Takip: SELL @ 4065.0 | Status:RUNNING
-2026-07-21 17:43:24,936 | Sinyal tarihi okundu: 21/07/2026 21:42
-2026-07-21 17:43:24,937 | Takip: SELL @ 4065.0 | Status:RUNNING
-2026-07-21 17:43:31,848 | Sinyal tarihi okundu: 21/07/2026 21:42
-2026-07-21 17:43:31,848 | Takip: SELL @ 4065.0 | Status:RUNNING
-2026-07-21 17:43:37,352 | Sinyal tarihi okundu: 21/07/2026 21:42
-2026-07-21 17:43:37,352 | Takip: SELL @ 4065.0 | Status:RUNNING
-2026-07-21 17:43:41,414 | Sinyal tarihi okundu: 21/07/2026 21:42
 2026-07-21 17:43:41,415 | Takip: SELL @ 4065.0 | Status:RUNNING
 2026-07-21 17:43:44,933 | Sinyal tarihi okundu: 21/07/2026 21:42
 2026-07-21 17:43:44,934 | Takip: SELL @ 4065.0 | Status:RUNNING
@@ -78,3 +33,48 @@
 2026-07-21 17:44:47,026 | Takip: SELL @ 4065.0 | Status:RUNNING
 2026-07-21 17:44:51,921 | Sinyal tarihi okundu: 21/07/2026 21:42
 2026-07-21 17:44:51,922 | Takip: SELL @ 4065.0 | Status:RUNNING
+2026-07-21 17:44:56,678 | Sinyal tarihi okundu: 21/07/2026 21:42
+2026-07-21 17:44:56,678 | Takip: SELL @ 4065.0 | Status:RUNNING
+2026-07-21 17:45:01,695 | Sinyal tarihi okundu: 21/07/2026 21:42
+2026-07-21 17:45:01,695 | Takip: SELL @ 4065.0 | Status:RUNNING
+2026-07-21 17:45:06,237 | Sinyal tarihi okundu: 21/07/2026 21:42
+2026-07-21 17:45:06,237 | Takip: SELL @ 4065.0 | Status:RUNNING
+2026-07-21 17:45:11,034 | Sinyal tarihi okundu: 21/07/2026 21:42
+2026-07-21 17:45:11,034 | Takip: SELL @ 4065.0 | Status:RUNNING
+2026-07-21 17:45:15,875 | Sinyal tarihi okundu: 21/07/2026 21:42
+2026-07-21 17:45:15,876 | Takip: SELL @ 4065.0 | Status:RUNNING
+2026-07-21 17:45:20,133 | Sinyal tarihi okundu: 21/07/2026 21:42
+2026-07-21 17:45:20,133 | Takip: SELL @ 4065.0 | Status:RUNNING
+2026-07-21 17:45:23,596 | Sinyal tarihi okundu: 21/07/2026 21:42
+2026-07-21 17:45:23,597 | Takip: SELL @ 4065.0 | Status:RUNNING
+2026-07-21 17:45:27,848 | Sinyal tarihi okundu: 21/07/2026 21:42
+2026-07-21 17:45:27,849 | Takip: SELL @ 4065.0 | Status:RUNNING
+2026-07-21 17:45:31,484 | Sinyal tarihi okundu: 21/07/2026 21:42
+2026-07-21 17:45:31,484 | Takip: SELL @ 4065.0 | Status:RUNNING
+2026-07-21 17:45:35,564 | Sinyal tarihi okundu: 21/07/2026 21:42
+2026-07-21 17:45:35,565 | Takip: SELL @ 4065.0 | Status:RUNNING
+2026-07-21 17:45:39,560 | Sinyal tarihi okundu: 21/07/2026 21:42
+2026-07-21 17:45:39,560 | Takip: SELL @ 4065.0 | Status:RUNNING
+2026-07-21 17:45:41,572 | Periyodik sayfa yenileme (30 dk) basliyor...
+2026-07-21 17:45:49,982 | Periyodik sayfa yenileme tamamlandi.
+2026-07-21 17:45:53,896 | GOLD karti okunamadi (1). Ham: ['Disclaimer', 'The information on signalgpt ai is for reference and', 'Iknowledge-sharing [']
+2026-07-21 17:45:57,189 | GOLD karti okunamadi (2). Ham: ['Disclaimer', 'The information on signalgpt ai is for reference and', 'Iknowledge-sharing [']
+2026-07-21 17:46:01,557 | GOLD karti okunamadi (3). Ham: ['Disclaimer', 'The information on signalgpt ai is for reference and', 'Iknowledge-sharing [']
+2026-07-21 17:46:05,118 | GOLD karti okunamadi (4). Ham: ['Disclaimer', 'The information on signalgpt ai is for reference and', 'Iknowledge-sharing [']
+2026-07-21 17:46:09,640 | GOLD karti okunamadi (5). Ham: ['Disclaimer', 'The information on signalgpt ai is for reference and', 'Iknowledge-sharing [']
+2026-07-21 17:46:13,186 | GOLD karti okunamadi (6). Ham: ['Disclaimer', 'The information on signalgpt ai is for reference and', 'Iknowledge-sharing [']
+2026-07-21 17:46:16,509 | GOLD karti okunamadi (7). Ham: ['Disclaimer', 'The information on signalgpt ai is for reference and', 'Iknowledge-sharing [']
+2026-07-21 17:46:21,167 | GOLD karti okunamadi (8). Ham: ['Disclaimer', 'The information on signalgpt ai is for reference and', 'Iknowledge-sharing [']
+2026-07-21 17:46:25,088 | GOLD karti okunamadi (9). Ham: ['Disclaimer', 'The information on signalgpt ai is for reference and', 'Iknowledge-sharing [']
+2026-07-21 17:46:37,658 | Sinyal tarihi okundu: 21/07/2026 21:42
+2026-07-21 17:46:37,659 | Takip: SELL @ 4065.0 | Status:RUNNING
+2026-07-21 17:46:41,704 | Sinyal tarihi okundu: 21/07/2026 21:42
+2026-07-21 17:46:41,704 | Takip: SELL @ 4065.0 | Status:RUNNING
+2026-07-21 17:46:47,816 | Sinyal tarihi okundu: 21/07/2026 21:42
+2026-07-21 17:46:47,817 | Takip: SELL @ 4065.0 | Status:RUNNING
+2026-07-21 17:46:52,548 | Sinyal tarihi okundu: 21/07/2026 21:42
+2026-07-21 17:46:52,549 | Takip: SELL @ 4065.0 | Status:RUNNING
+2026-07-21 17:46:57,439 | Sinyal tarihi okundu: 21/07/2026 21:42
+2026-07-21 17:46:57,440 | Takip: SELL @ 4065.0 | Status:RUNNING
+2026-07-21 17:47:03,418 | Sinyal tarihi okundu: 21/07/2026 21:42
+2026-07-21 17:47:03,418 | Takip: SELL @ 4065.0 | Status:RUNNING
