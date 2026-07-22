@@ -1,8 +1,3 @@
-[2026-07-23 01:07:37] Streak filtresi: SELL ONAYLANDI — EMA100 streak=38 >= 13
-[2026-07-23 01:07:37] Emir turu: SELL_LIMIT (fiyat=4124.4 <= entry=4136.0)
-2026-07-23 01:07:37.353 | T4 | SELL@4136.0 | order_send cagrilacak
-2026-07-23 01:07:37.362 | T5 | SELL@4136.0 | order_send sonucu: basarili
-[2026-07-23 01:07:37] Islem acildi: 951223497 | SELL @ 4136.0 | SL:4141.0 | TP1:4133.0 TP2:4131.0 TP3:4128.0
 2026-07-23 01:07:42.413 | T3 | SELL@4121.0 | signal.json okundu (MT5 agent)
 [2026-07-23 01:07:42] Yeni sinyal geldi, bekleyen emir iptal ediliyor: ticket=951223497 (SELL @ 4136.0)
 [2026-07-23 01:07:42] Bekleyen emir iptal edildi: ticket=951223497
@@ -78,3 +73,8 @@
 [2026-07-23 01:29:29] Islem acildi: 951233899 | SELL @ 4127.0 | SL:4132.0 | TP1:4124.0 TP2:4122.0 TP3:4119.0
 [2026-07-23 01:29:37] Heartbeat: 1 aktif islem | Bakiye: 697.94 USD
 [2026-07-23 01:30:08] Heartbeat: 1 aktif islem | Bakiye: 697.94 USD
+[2026-07-23 01:30:38] Heartbeat: 1 aktif islem | Bakiye: 697.94 USD
+[2026-07-23 01:31:08] Heartbeat: 1 aktif islem | Bakiye: 697.94 USD
+[2026-07-23 01:31:38] Heartbeat: 1 aktif islem | Bakiye: 697.94 USD
+[2026-07-23 01:32:08] Heartbeat: 1 aktif islem | Bakiye: 697.94 USD
+[2026-07-23 01:32:38] Heartbeat: 1 aktif islem | Bakiye: 697.94 USD
