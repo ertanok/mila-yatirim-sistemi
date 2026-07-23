@@ -1,8 +1,3 @@
-[2026-07-23 02:45:03] Heartbeat: 1 aktif islem | Bakiye: 698.82 USD
-[2026-07-23 02:45:33] Heartbeat: 1 aktif islem | Bakiye: 698.82 USD
-[2026-07-23 02:46:03] Heartbeat: 1 aktif islem | Bakiye: 698.82 USD
-[2026-07-23 02:46:04] Islem kapandi: ticket=951260624
-[2026-07-23 02:46:04] Performans kaydedildi: SL | -5.0 pip
 [2026-07-23 02:46:04] Kapanis sonrasi hafizadaki sinyal deneniyor: #None SELL @ 4120.0
 [2026-07-23 02:46:05] EMA filtresi: SELL ATLANDI — fiyat=4125.45 > EMA20=4122.78 (yukari momentum)
 [2026-07-23 02:46:05] EMA filtresi: hafizadaki sinyal da atlandi — SELL @ 4120.0
@@ -78,3 +73,8 @@
 [2026-07-23 03:15:50] EMA filtresi: BUY ONAYLANDI — fiyat=4127.12 >= EMA20=4125.83
 [2026-07-23 03:15:50] Streak filtresi: BUY ATLANDI — EMA100 streak=0 < 13 (trend yeterince guclu degil)
 [2026-07-23 03:15:50] Streak filtresi: sinyal atlandi #None BUY @ 4126.9
+[2026-07-23 03:16:13] Heartbeat: 0 aktif islem | Bakiye: 693.75 USD
+[2026-07-23 03:16:43] Heartbeat: 0 aktif islem | Bakiye: 693.75 USD
+[2026-07-23 03:17:13] Heartbeat: 0 aktif islem | Bakiye: 693.75 USD
+[2026-07-23 03:17:43] Heartbeat: 0 aktif islem | Bakiye: 693.75 USD
+[2026-07-23 03:18:14] Heartbeat: 0 aktif islem | Bakiye: 693.75 USD
