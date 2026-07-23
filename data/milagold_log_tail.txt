@@ -1,11 +1,3 @@
-[2026-07-23 21:19:33] Heartbeat: 1 aktif islem | Bakiye: 685.50 USD
-[2026-07-23 21:20:03] Heartbeat: 1 aktif islem | Bakiye: 685.50 USD
-[2026-07-23 21:20:33] Heartbeat: 1 aktif islem | Bakiye: 685.50 USD
-[2026-07-23 21:21:03] Heartbeat: 1 aktif islem | Bakiye: 685.50 USD
-[2026-07-23 21:21:33] Heartbeat: 1 aktif islem | Bakiye: 685.50 USD
-[2026-07-23 21:22:04] Heartbeat: 1 aktif islem | Bakiye: 685.50 USD
-[2026-07-23 21:22:34] Heartbeat: 1 aktif islem | Bakiye: 685.50 USD
-[2026-07-23 21:23:04] Heartbeat: 1 aktif islem | Bakiye: 685.50 USD
 [2026-07-23 21:23:34] Heartbeat: 1 aktif islem | Bakiye: 685.50 USD
 [2026-07-23 21:24:05] Heartbeat: 1 aktif islem | Bakiye: 685.50 USD
 [2026-07-23 21:24:35] Heartbeat: 1 aktif islem | Bakiye: 685.50 USD
@@ -78,3 +70,11 @@
 [2026-07-23 21:56:17] Heartbeat: 1 aktif islem | Bakiye: 685.50 USD
 [2026-07-23 21:56:47] Heartbeat: 1 aktif islem | Bakiye: 685.50 USD
 [2026-07-23 21:57:17] Heartbeat: 1 aktif islem | Bakiye: 685.50 USD
+[2026-07-23 21:57:48] Heartbeat: 1 aktif islem | Bakiye: 685.50 USD
+[2026-07-23 21:58:18] Heartbeat: 1 aktif islem | Bakiye: 685.50 USD
+2026-07-23 21:58:24.353 | T3 | SELL@4047.5 | signal.json okundu (MT5 agent)
+[2026-07-23 21:58:24] Ayni sinyal tekrar geldi, islem yapilmiyor: #None
+[2026-07-23 21:58:48] Heartbeat: 1 aktif islem | Bakiye: 685.50 USD
+2026-07-23 21:59:05.604 | T3 | SELL@4045.5 | signal.json okundu (MT5 agent)
+[2026-07-23 21:59:05] Yeni sinyal daha kotu entry, sl_level=0. Eski pozisyon tutuldu, sinyal hafizaya alindi: #None@4045.5
+[2026-07-23 21:59:18] Heartbeat: 1 aktif islem | Bakiye: 685.50 USD
