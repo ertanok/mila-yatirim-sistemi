@@ -1,18 +1,3 @@
-[2026-07-23 14:38:05] Heartbeat: 1 aktif islem | Bakiye: 677.77 USD
-2026-07-23 14:38:19.586 | T3 | SELL@4082.0 | signal.json okundu (MT5 agent)
-[2026-07-23 14:38:19] Yeni sinyal daha kotu entry, sl_level=0. Eski pozisyon tutuldu, sinyal hafizaya alindi: #None@4082.0
-[2026-07-23 14:38:35] Heartbeat: 1 aktif islem | Bakiye: 677.77 USD
-[2026-07-23 14:39:06] Heartbeat: 1 aktif islem | Bakiye: 677.77 USD
-[2026-07-23 14:39:36] Heartbeat: 1 aktif islem | Bakiye: 677.77 USD
-[2026-07-23 14:40:00] TP2 gecildi: ticket=951934963 fiyat=4078.89 TP2=4079.0 -> SL girise tasiniyor, trailing basliyor
-[2026-07-23 14:40:00] SL guncellendi: ticket=951934963 yeni SL=4084.0
-[2026-07-23 14:40:00] Trailing SL: ticket=951934963 kar=5.11 trailing=5.0 | 4084.0 -> 4083.89
-[2026-07-23 14:40:00] SL guncellendi: ticket=951934963 yeni SL=4083.89
-[2026-07-23 14:40:02] Trailing SL: ticket=951934963 kar=5.29 trailing=5.0 | 4083.89 -> 4083.71
-[2026-07-23 14:40:02] SL guncellendi: ticket=951934963 yeni SL=4083.71
-[2026-07-23 14:40:06] Heartbeat: 1 aktif islem | Bakiye: 677.77 USD
-[2026-07-23 14:40:15] Trailing SL: ticket=951934963 kar=5.36 trailing=5.0 | 4083.71 -> 4083.64
-[2026-07-23 14:40:15] SL guncellendi: ticket=951934963 yeni SL=4083.64
 [2026-07-23 14:40:18] Trailing SL: ticket=951934963 kar=5.47 trailing=5.0 | 4083.64 -> 4083.53
 [2026-07-23 14:40:18] SL guncellendi: ticket=951934963 yeni SL=4083.53
 [2026-07-23 14:40:22] Trailing SL: ticket=951934963 kar=5.71 trailing=5.0 | 4083.53 -> 4083.29
@@ -78,3 +63,18 @@
 [2026-07-23 14:56:17] Heartbeat: 1 aktif islem | Bakiye: 684.07 USD
 [2026-07-23 14:56:47] Heartbeat: 1 aktif islem | Bakiye: 684.07 USD
 [2026-07-23 14:57:18] Heartbeat: 1 aktif islem | Bakiye: 684.07 USD
+[2026-07-23 14:57:48] Heartbeat: 1 aktif islem | Bakiye: 684.07 USD
+[2026-07-23 14:58:18] Heartbeat: 1 aktif islem | Bakiye: 684.07 USD
+[2026-07-23 14:58:48] Heartbeat: 1 aktif islem | Bakiye: 684.07 USD
+2026-07-23 14:59:11.931 | T3 | SELL@4093.0 | signal.json okundu (MT5 agent)
+[2026-07-23 14:59:11] Yeni sinyal geldi, bekleyen emir iptal ediliyor: ticket=951983369 (SELL @ 4080.0)
+[2026-07-23 14:59:11] Bekleyen emir iptal edildi: ticket=951983369
+[2026-07-23 14:59:11] Yeni sinyal alindi: #None SELL @ 4093.0
+[2026-07-23 14:59:11] EMA filtresi: SELL ATLANDI — fiyat=4085.78 > EMA20=4085.63 (yukari momentum)
+[2026-07-23 14:59:11] EMA filtresi: sinyal atlandi #None SELL @ 4093.0
+[2026-07-23 14:59:19] Heartbeat: 0 aktif islem | Bakiye: 684.07 USD
+2026-07-23 14:59:28.241 | T3 | SELL@4084.5 | signal.json okundu (MT5 agent)
+[2026-07-23 14:59:28] Yeni sinyal alindi: #None SELL @ 4084.5
+[2026-07-23 14:59:28] EMA filtresi: SELL ATLANDI — fiyat=4085.85 > EMA20=4085.63 (yukari momentum)
+[2026-07-23 14:59:28] EMA filtresi: sinyal atlandi #None SELL @ 4084.5
+[2026-07-23 14:59:49] Heartbeat: 0 aktif islem | Bakiye: 684.07 USD
