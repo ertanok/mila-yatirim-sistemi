@@ -1,15 +1,3 @@
-[2026-07-23 16:14:18] SL guncellendi: ticket=952191485 yeni SL=4046.0
-[2026-07-23 16:14:26] Heartbeat: 1 aktif islem | Bakiye: 692.69 USD
-[2026-07-23 16:14:56] Heartbeat: 1 aktif islem | Bakiye: 692.69 USD
-[2026-07-23 16:15:27] Heartbeat: 1 aktif islem | Bakiye: 692.69 USD
-[2026-07-23 16:15:57] Heartbeat: 1 aktif islem | Bakiye: 692.69 USD
-[2026-07-23 16:16:27] Heartbeat: 1 aktif islem | Bakiye: 692.69 USD
-[2026-07-23 16:16:57] Heartbeat: 1 aktif islem | Bakiye: 692.69 USD
-[2026-07-23 16:17:28] Heartbeat: 1 aktif islem | Bakiye: 692.69 USD
-[2026-07-23 16:17:58] Heartbeat: 1 aktif islem | Bakiye: 690.67 USD
-[2026-07-23 16:17:58] Islem kapandi: ticket=952191485
-[2026-07-23 16:17:58] Performans kaydedildi: SL | -2.02 pip
-[2026-07-23 16:18:28] Heartbeat: 0 aktif islem | Bakiye: 690.67 USD
 [2026-07-23 16:18:59] Heartbeat: 0 aktif islem | Bakiye: 690.67 USD
 [2026-07-23 16:19:29] Heartbeat: 0 aktif islem | Bakiye: 690.67 USD
 [2026-07-23 16:19:59] Heartbeat: 0 aktif islem | Bakiye: 690.67 USD
@@ -78,3 +66,15 @@
 [2026-07-23 16:42:42] Heartbeat: 0 aktif islem | Bakiye: 690.67 USD
 [2026-07-23 16:43:13] Heartbeat: 0 aktif islem | Bakiye: 690.67 USD
 [2026-07-23 16:43:43] Heartbeat: 0 aktif islem | Bakiye: 690.67 USD
+[2026-07-23 16:44:13] Heartbeat: 0 aktif islem | Bakiye: 690.67 USD
+2026-07-23 16:44:31.662 | T3 | SELL@4058.5 | signal.json okundu (MT5 agent)
+[2026-07-23 16:44:31] Yeni sinyal alindi: #None SELL @ 4058.5
+[2026-07-23 16:44:31] EMA filtresi: SELL ONAYLANDI — fiyat=4056.15 <= EMA20=4062.35
+[2026-07-23 16:44:31] Streak filtresi: SELL ONAYLANDI — EMA100 streak=111 >= 13
+[2026-07-23 16:44:31] Emir turu: SELL_LIMIT (fiyat=4056.15 <= entry=4058.5)
+2026-07-23 16:44:31.667 | T4 | SELL@4058.5 | order_send cagrilacak
+2026-07-23 16:44:31.691 | T5 | SELL@4058.5 | order_send sonucu: basarili
+[2026-07-23 16:44:31] Islem acildi: 952282780 | SELL @ 4058.5 | SL:4063.5 | TP1:4055.5 TP2:4053.5 TP3:4050.5
+[2026-07-23 16:44:44] Heartbeat: 1 aktif islem | Bakiye: 690.67 USD
+[2026-07-23 16:45:14] Heartbeat: 1 aktif islem | Bakiye: 690.67 USD
+[2026-07-23 16:45:44] Heartbeat: 1 aktif islem | Bakiye: 690.67 USD
