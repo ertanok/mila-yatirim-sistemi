@@ -5503,5 +5503,35 @@
     "sonuc": "Exit",
     "pip": 0.84,
     "profit_usd": 0.77
+  },
+  {
+    "signal_no": null,
+    "direction": "SELL",
+    "entry": 4089.2,
+    "sl": 4094.2,
+    "tp1": 4086.2,
+    "tp2": 4084.2,
+    "tp3": 4081.2,
+    "close_price": 4094.2,
+    "open_time": "2026-07-23 11:49:20",
+    "close_time": "2026-07-23 11:56:55",
+    "sonuc": "SL",
+    "pip": -5.0,
+    "profit_usd": -5.03
+  },
+  {
+    "signal_no": "MANUEL",
+    "direction": "BUY",
+    "entry": 4094,
+    "sl": 4089.0,
+    "tp1": 4097.0,
+    "tp2": 4099.0,
+    "tp3": 4102.0,
+    "close_price": 4093.4,
+    "open_time": "2026-07-23 11:57:16",
+    "close_time": "2026-07-23 11:57:25",
+    "sonuc": "Exit",
+    "pip": -0.6,
+    "profit_usd": -0.5
   }
 ]
