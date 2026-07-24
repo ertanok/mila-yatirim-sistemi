@@ -1,7 +1,3 @@
-[2026-07-24 04:36:26] Heartbeat: 1 aktif islem | Bakiye: 687.85 USD
-2026-07-24 04:36:40.878 | T3 | SELL@4044.0 | signal.json okundu (MT5 agent)
-[2026-07-24 04:36:40] Yeni sinyal (yeni entry daha iyi): SELL@4043.0 -> SELL@4044.0. Kapatiliyor: ticket=952870537
-[2026-07-24 04:36:40] Pozisyon piyasadan kapatildi: ticket=952870537 @ 4043.89 (filling=1)
 [2026-07-24 04:36:40] Performans kaydedildi: Exit | -0.89 pip
 [2026-07-24 04:36:41] Emir turu: SELL_LIMIT (fiyat=4043.27 <= entry=4044.0)
 2026-07-24 04:36:41.092 | T4 | SELL@4044.0 | order_send cagrilacak
@@ -78,3 +74,7 @@
 [2026-07-24 04:59:05] Heartbeat: 1 aktif islem | Bakiye: 681.94 USD
 [2026-07-24 04:59:35] Heartbeat: 1 aktif islem | Bakiye: 681.94 USD
 [2026-07-24 05:00:05] Heartbeat: 1 aktif islem | Bakiye: 681.94 USD
+[2026-07-24 05:00:35] Heartbeat: 1 aktif islem | Bakiye: 681.94 USD
+[2026-07-24 05:01:06] Heartbeat: 1 aktif islem | Bakiye: 681.94 USD
+[2026-07-24 05:01:36] Heartbeat: 1 aktif islem | Bakiye: 681.94 USD
+[2026-07-24 05:02:06] Heartbeat: 1 aktif islem | Bakiye: 681.94 USD
