@@ -1,12 +1,3 @@
-[2026-07-24 21:19:08] Heartbeat: 0 aktif islem | Bakiye: 676.49 USD
-[2026-07-24 21:19:38] Heartbeat: 0 aktif islem | Bakiye: 676.49 USD
-[2026-07-24 21:20:08] Heartbeat: 0 aktif islem | Bakiye: 676.49 USD
-[2026-07-24 21:20:38] Heartbeat: 0 aktif islem | Bakiye: 676.49 USD
-[2026-07-24 21:21:08] Heartbeat: 0 aktif islem | Bakiye: 676.49 USD
-[2026-07-24 21:21:39] Heartbeat: 0 aktif islem | Bakiye: 676.49 USD
-[2026-07-24 21:22:09] Heartbeat: 0 aktif islem | Bakiye: 676.49 USD
-[2026-07-24 21:22:39] Heartbeat: 0 aktif islem | Bakiye: 676.49 USD
-[2026-07-24 21:23:09] Heartbeat: 0 aktif islem | Bakiye: 676.49 USD
 [2026-07-24 21:23:39] Heartbeat: 0 aktif islem | Bakiye: 676.49 USD
 [2026-07-24 21:24:09] Heartbeat: 0 aktif islem | Bakiye: 676.49 USD
 [2026-07-24 21:24:39] Heartbeat: 0 aktif islem | Bakiye: 676.49 USD
@@ -78,3 +69,12 @@
 [2026-07-24 21:52:48] Heartbeat: 0 aktif islem | Bakiye: 676.49 USD
 [2026-07-24 21:53:18] Heartbeat: 0 aktif islem | Bakiye: 676.49 USD
 [2026-07-24 21:53:48] Heartbeat: 0 aktif islem | Bakiye: 676.49 USD
+[2026-07-24 21:54:18] Heartbeat: 0 aktif islem | Bakiye: 676.49 USD
+[2026-07-24 21:54:48] Heartbeat: 0 aktif islem | Bakiye: 676.49 USD
+[2026-07-24 21:55:18] Heartbeat: 0 aktif islem | Bakiye: 676.49 USD
+[2026-07-24 21:55:48] Heartbeat: 0 aktif islem | Bakiye: 676.49 USD
+2026-07-24 21:56:08.919 | T3 | SELL@4058.0 | signal.json okundu (MT5 agent)
+[2026-07-24 21:56:08] Yeni sinyal alindi: #None SELL @ 4058.0
+[2026-07-24 21:56:08] EMA filtresi: SELL ONAYLANDI — fiyat=4054.99 <= EMA20=4059.00
+[2026-07-24 21:56:08] Streak filtresi: SELL ATLANDI — EMA100 streak=10 < 13 (trend yeterince guclu degil)
+[2026-07-24 21:56:08] Streak filtresi: sinyal atlandi #None SELL @ 4058.0
