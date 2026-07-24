@@ -1,7 +1,3 @@
-[2026-07-24 06:32:12] Yeni sinyal geldi, bekleyen emir iptal ediliyor: ticket=952973928 (SELL @ 4027.0)
-[2026-07-24 06:32:12] Bekleyen emir iptal edildi: ticket=952973928
-[2026-07-24 06:32:12] Yeni sinyal alindi: #None SELL @ 4029.0
-[2026-07-24 06:32:12] EMA filtresi: SELL ONAYLANDI — fiyat=4031.87 <= EMA20=4034.69
 [2026-07-24 06:32:12] Streak filtresi: SELL ONAYLANDI — EMA100 streak=240 >= 13
 [2026-07-24 06:32:12] Emir turu: SELL_STOP (fiyat=4031.87 > entry=4029.0)
 2026-07-24 06:32:12.474 | T4 | SELL@4029.0 | order_send cagrilacak
@@ -78,3 +74,7 @@
 [2026-07-24 07:01:25] Heartbeat: 1 aktif islem | Bakiye: 677.76 USD
 [2026-07-24 07:01:55] Heartbeat: 1 aktif islem | Bakiye: 677.76 USD
 [2026-07-24 07:02:25] Heartbeat: 1 aktif islem | Bakiye: 677.76 USD
+[2026-07-24 07:02:55] Heartbeat: 1 aktif islem | Bakiye: 677.76 USD
+[2026-07-24 07:03:25] Heartbeat: 1 aktif islem | Bakiye: 677.76 USD
+[2026-07-24 07:03:56] Heartbeat: 1 aktif islem | Bakiye: 677.76 USD
+[2026-07-24 07:04:26] Heartbeat: 1 aktif islem | Bakiye: 677.76 USD
