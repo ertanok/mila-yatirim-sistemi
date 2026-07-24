@@ -1,7 +1,3 @@
-[2026-07-24 07:46:47] SL guncellendi: ticket=952986405 yeni SL=4030.5
-[2026-07-24 07:46:47] Trailing SL: ticket=952986405 kar=5.12 trailing=5.0 | 4030.5 -> 4030.38
-[2026-07-24 07:46:47] SL guncellendi: ticket=952986405 yeni SL=4030.38
-[2026-07-24 07:47:12] Heartbeat: 1 aktif islem | Bakiye: 677.76 USD
 2026-07-24 07:47:30.439 | T3 | SELL@4027.5 | signal.json okundu (MT5 agent)
 [2026-07-24 07:47:30] Yeni sinyal daha kotu entry, sl_level=1. 2. pozisyon aciliyor: #None @ 4027.5
 [2026-07-24 07:47:30] Emir turu: SELL_LIMIT (fiyat=4025.71 <= entry=4027.5)
@@ -78,3 +74,7 @@
 [2026-07-24 08:11:52] Heartbeat: 1 aktif islem | Bakiye: 676.88 USD
 [2026-07-24 08:12:23] Heartbeat: 1 aktif islem | Bakiye: 676.88 USD
 [2026-07-24 08:12:53] Heartbeat: 1 aktif islem | Bakiye: 676.88 USD
+[2026-07-24 08:13:23] Heartbeat: 1 aktif islem | Bakiye: 676.88 USD
+[2026-07-24 08:13:53] Heartbeat: 1 aktif islem | Bakiye: 676.88 USD
+[2026-07-24 08:14:23] Heartbeat: 1 aktif islem | Bakiye: 676.88 USD
+[2026-07-24 08:14:53] Heartbeat: 1 aktif islem | Bakiye: 676.88 USD
