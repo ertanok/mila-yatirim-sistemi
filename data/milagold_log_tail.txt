@@ -1,18 +1,3 @@
-[2026-07-24 03:27:54] Heartbeat: 1 aktif islem | Bakiye: 689.56 USD
-[2026-07-24 03:28:24] Heartbeat: 1 aktif islem | Bakiye: 689.56 USD
-[2026-07-24 03:28:54] Heartbeat: 1 aktif islem | Bakiye: 689.56 USD
-[2026-07-24 03:29:25] Heartbeat: 1 aktif islem | Bakiye: 689.56 USD
-[2026-07-24 03:29:55] Heartbeat: 1 aktif islem | Bakiye: 689.56 USD
-[2026-07-24 03:30:25] Heartbeat: 1 aktif islem | Bakiye: 689.56 USD
-[2026-07-24 03:30:55] Heartbeat: 1 aktif islem | Bakiye: 689.56 USD
-[2026-07-24 03:31:25] Heartbeat: 1 aktif islem | Bakiye: 689.56 USD
-[2026-07-24 03:31:56] Heartbeat: 1 aktif islem | Bakiye: 689.56 USD
-[2026-07-24 03:32:26] Heartbeat: 1 aktif islem | Bakiye: 689.56 USD
-[2026-07-24 03:32:56] Heartbeat: 1 aktif islem | Bakiye: 689.56 USD
-[2026-07-24 03:33:26] Heartbeat: 1 aktif islem | Bakiye: 689.56 USD
-2026-07-24 03:33:46.029 | T3 | SELL@4047 | signal.json okundu (MT5 agent)
-[2026-07-24 03:33:46] Yeni sinyal (yeni entry daha iyi): SELL@4045.5 -> SELL@4047. Kapatiliyor: ticket=952826066
-[2026-07-24 03:33:46] Pozisyon piyasadan kapatildi: ticket=952826066 @ 4047.44 (filling=1)
 [2026-07-24 03:33:46] Performans kaydedildi: Exit | -1.94 pip
 [2026-07-24 03:33:46] Emir turu: SELL_LIMIT (fiyat=4046.87 <= entry=4047.0)
 2026-07-24 03:33:46.216 | T4 | SELL@4047.0 | order_send cagrilacak
@@ -78,3 +63,18 @@
 [2026-07-24 03:58:36] Heartbeat: 1 aktif islem | Bakiye: 685.16 USD
 [2026-07-24 03:59:06] Heartbeat: 1 aktif islem | Bakiye: 685.16 USD
 [2026-07-24 03:59:36] Heartbeat: 1 aktif islem | Bakiye: 685.16 USD
+[2026-07-24 04:00:06] Heartbeat: 1 aktif islem | Bakiye: 685.16 USD
+[2026-07-24 04:00:37] Heartbeat: 1 aktif islem | Bakiye: 685.16 USD
+[2026-07-24 04:01:08] Heartbeat: 1 aktif islem | Bakiye: 685.16 USD
+[2026-07-24 04:01:31] TP1 gecildi: ticket=952844153 fiyat=4044.66 TP1=4045.0 -> SL -2 ye tasiniyor
+[2026-07-24 04:01:31] SL guncellendi: ticket=952844153 yeni SL=4050.0
+[2026-07-24 04:01:38] Heartbeat: 1 aktif islem | Bakiye: 685.16 USD
+[2026-07-24 04:01:40] TP2 gecildi: ticket=952844153 fiyat=4042.83 TP2=4043.0 -> SL girise tasiniyor, trailing basliyor
+[2026-07-24 04:01:40] SL guncellendi: ticket=952844153 yeni SL=4048.0
+[2026-07-24 04:01:40] Trailing SL: ticket=952844153 kar=5.17 trailing=5.0 | 4048.0 -> 4047.83
+[2026-07-24 04:01:40] SL guncellendi: ticket=952844153 yeni SL=4047.83
+[2026-07-24 04:02:05] Trailing SL: ticket=952844153 kar=5.27 trailing=5.0 | 4047.83 -> 4047.73
+[2026-07-24 04:02:05] SL guncellendi: ticket=952844153 yeni SL=4047.73
+[2026-07-24 04:02:06] Trailing SL: ticket=952844153 kar=5.39 trailing=5.0 | 4047.73 -> 4047.61
+[2026-07-24 04:02:06] SL guncellendi: ticket=952844153 yeni SL=4047.61
+[2026-07-24 04:02:09] Heartbeat: 1 aktif islem | Bakiye: 685.16 USD
