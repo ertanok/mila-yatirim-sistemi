@@ -1,5 +1,3 @@
-2026-07-25 05:48:34,419 | Sinyal tarihi okunamadi (filtre devrede degil).
-2026-07-25 05:48:34,420 | Takip: SELL @ 4053.5 | Status:RUNNING
 2026-07-25 05:48:37,334 | Sinyal tarihi okunamadi (filtre devrede degil).
 2026-07-25 05:48:37,334 | Takip: SELL @ 4053.5 | Status:RUNNING
 2026-07-25 05:48:40,244 | Sinyal tarihi okunamadi (filtre devrede degil).
@@ -78,3 +76,5 @@
 2026-07-25 07:42:21,457 | Dongu hatasi: HTTPConnectionPool(host='localhost', port=49537): Max retries exceeded with url: /session/4c0f2290e2da16206be0770565673ac3/screenshot (Caused by ReadTimeoutError("HTTPConnectionPool(host='localhost', port=49537): Read timed out. (read timeout=120)"))
 2026-07-25 07:49:35,467 | EasyOCR yukleniyor...
 2026-07-25 07:49:35,468 | Using CPU. Note: This module is much faster with a GPU.
+2026-07-25 08:19:52,101 | EasyOCR yukleniyor...
+2026-07-25 08:19:52,102 | Using CPU. Note: This module is much faster with a GPU.
