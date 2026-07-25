@@ -1,5 +1,3 @@
-2026-07-25 05:49:37,166 | GOLD karti okunamadi (9). Ham: ['Disclaimer', 'The information on signalgpt ai is for reference and', 'Iknowledge-sharing [']
-2026-07-25 05:49:39,983 | GOLD karti okunamadi (10). Ham: ['Disclaimer', 'The information on signalgpt ai is for reference and', 'Iknowledge-sharing [']
 2026-07-25 05:49:39,984 | 10 kez ust uste okunamadi - sayfa yenileniyor...
 2026-07-25 05:51:48,172 | Sayfa yenileme hatasi: HTTPConnectionPool(host='localhost', port=49537): Read timed out. (read timeout=120)
 2026-07-25 05:55:50,275 | Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPConnectionPool(host='localhost', port=49537): Read timed out. (read timeout=120)")': /session/4c0f2290e2da16206be0770565673ac3/screenshot
@@ -78,3 +76,5 @@
 2026-07-25 14:55:39,792 | Using CPU. Note: This module is much faster with a GPU.
 2026-07-25 15:26:06,899 | EasyOCR yukleniyor...
 2026-07-25 15:26:06,900 | Using CPU. Note: This module is much faster with a GPU.
+2026-07-25 15:56:33,059 | EasyOCR yukleniyor...
+2026-07-25 15:56:33,060 | Using CPU. Note: This module is much faster with a GPU.
