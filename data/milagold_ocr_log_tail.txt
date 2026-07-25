@@ -1,5 +1,3 @@
-2026-07-25 06:36:02,730 | Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPConnectionPool(host='localhost', port=49537): Read timed out. (read timeout=120)")': /session/4c0f2290e2da16206be0770565673ac3/screenshot
-2026-07-25 06:38:02,746 | Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPConnectionPool(host='localhost', port=49537): Read timed out. (read timeout=120)")': /session/4c0f2290e2da16206be0770565673ac3/screenshot
 2026-07-25 06:40:02,767 | Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPConnectionPool(host='localhost', port=49537): Read timed out. (read timeout=120)")': /session/4c0f2290e2da16206be0770565673ac3/screenshot
 2026-07-25 06:42:02,784 | Dongu hatasi: HTTPConnectionPool(host='localhost', port=49537): Max retries exceeded with url: /session/4c0f2290e2da16206be0770565673ac3/screenshot (Caused by ReadTimeoutError("HTTPConnectionPool(host='localhost', port=49537): Read timed out. (read timeout=120)"))
 2026-07-25 06:46:05,841 | Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPConnectionPool(host='localhost', port=49537): Read timed out. (read timeout=120)")': /session/4c0f2290e2da16206be0770565673ac3/screenshot
@@ -78,3 +76,5 @@
 2026-07-25 19:59:55,326 | Using CPU. Note: This module is much faster with a GPU.
 2026-07-25 20:29:55,541 | EasyOCR yukleniyor...
 2026-07-25 20:29:55,542 | Using CPU. Note: This module is much faster with a GPU.
+2026-07-25 21:00:22,897 | EasyOCR yukleniyor...
+2026-07-25 21:00:22,898 | Using CPU. Note: This module is much faster with a GPU.
