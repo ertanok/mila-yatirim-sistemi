@@ -1,14 +1,3 @@
-2026-07-28 15:19:09,849 | Sinyal tarihi okunamadi (filtre devrede degil).
-2026-07-28 15:19:09,850 | Takip: SELL @ 4026.5 | Status:RUNNING
-2026-07-28 15:19:12,923 | Sinyal tarihi okunamadi (filtre devrede degil).
-2026-07-28 15:19:12,923 | Takip: SELL @ 4026.5 | Status:RUNNING
-2026-07-28 15:19:16,636 | Sinyal tarihi okunamadi (filtre devrede degil).
-2026-07-28 15:19:16,636 | Takip: SELL @ 4026.5 | Status:RUNNING
-2026-07-28 15:19:21,122 | Sinyal tarihi okunamadi (filtre devrede degil).
-2026-07-28 15:19:21,123 | Takip: SELL @ 4026.5 | Status:RUNNING
-2026-07-28 15:19:25,334 | Sinyal tarihi okunamadi (filtre devrede degil).
-2026-07-28 15:19:25,335 | Takip: SELL @ 4026.5 | Status:RUNNING
-2026-07-28 15:19:28,939 | Sinyal tarihi okunamadi (filtre devrede degil).
 2026-07-28 15:19:28,939 | Takip: SELL @ 4026.5 | Status:RUNNING
 2026-07-28 15:19:32,321 | Sinyal tarihi okunamadi (filtre devrede degil).
 2026-07-28 15:19:32,322 | Takip: SELL @ 4026.5 | Status:RUNNING
@@ -78,3 +67,14 @@
 2026-07-28 15:21:55,400 | Takip: SELL @ 4026.5 | Status:RUNNING
 2026-07-28 15:21:59,470 | Sinyal tarihi okunamadi (filtre devrede degil).
 2026-07-28 15:21:59,471 | Takip: SELL @ 4026.5 | Status:RUNNING
+2026-07-28 15:22:03,910 | Sinyal tarihi okunamadi (filtre devrede degil).
+2026-07-28 15:22:03,910 | T1 | SELL@4028.5 | sinyal tespit edildi
+2026-07-28 15:22:03,912 | Olasi yeni sinyal, HEMEN yazildi (dogrulama bekleniyor 1/2): 4026.5 -> 4028.5
+2026-07-28 15:22:03,913 | signal.json yazildi.
+2026-07-28 15:22:03,914 | T2 | SELL@4028.5 | signal.json yazildi
+2026-07-28 15:22:08,393 | Sinyal tarihi okunamadi (filtre devrede degil).
+2026-07-28 15:22:08,393 | Yeni sinyal DOGRULANDI (2 okuma): entry=4028.5 pending=4028.5
+2026-07-28 15:22:12,753 | Sinyal tarihi okunamadi (filtre devrede degil).
+2026-07-28 15:22:12,753 | Takip: SELL @ 4028.5 | Status:RUNNING
+2026-07-28 15:22:16,496 | Sinyal tarihi okunamadi (filtre devrede degil).
+2026-07-28 15:22:16,497 | Takip: SELL @ 4028.5 | Status:RUNNING
