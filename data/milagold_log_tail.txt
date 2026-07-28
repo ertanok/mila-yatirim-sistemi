@@ -1,17 +1,3 @@
-[2026-07-28 17:24:21] Heartbeat: 1 aktif islem | Bakiye: 661.13 USD
-[2026-07-28 17:24:52] Heartbeat: 1 aktif islem | Bakiye: 661.13 USD
-[2026-07-28 17:25:22] Heartbeat: 1 aktif islem | Bakiye: 661.13 USD
-[2026-07-28 17:25:52] Heartbeat: 1 aktif islem | Bakiye: 661.13 USD
-[2026-07-28 17:26:23] Heartbeat: 1 aktif islem | Bakiye: 661.13 USD
-[2026-07-28 17:26:53] Heartbeat: 1 aktif islem | Bakiye: 661.13 USD
-[2026-07-28 17:27:24] Heartbeat: 1 aktif islem | Bakiye: 661.13 USD
-2026-07-28 17:27:43.837 | T3 | SELL@4023.0 | signal.json okundu (MT5 agent)
-[2026-07-28 17:27:43] Yeni sinyal geldi, bekleyen emir iptal ediliyor: ticket=956905090 (SELL @ 4024.0)
-[2026-07-28 17:27:43] Bekleyen emir iptal edildi: ticket=956905090
-[2026-07-28 17:27:43] Yeni sinyal alindi: #None SELL @ 4023.0
-[2026-07-28 17:27:43] EMA filtresi: SELL ONAYLANDI — fiyat=4019.39 <= EMA20=4025.79
-[2026-07-28 17:27:43] Streak filtresi: SELL ONAYLANDI — EMA100 streak=196 >= 13
-[2026-07-28 17:27:43] Emir turu: SELL_LIMIT (fiyat=4019.39 <= entry=4023.0)
 2026-07-28 17:27:43.918 | T4 | SELL@4023.0 | order_send cagrilacak
 2026-07-28 17:27:43.939 | T5 | SELL@4023.0 | order_send sonucu: basarili
 [2026-07-28 17:27:43] Islem acildi: 956944007 | SELL @ 4023.0 | SL:4028.0 | TP1:4020.0 TP2:4018.0 TP3:4015.0
@@ -78,3 +64,17 @@
 [2026-07-28 17:46:13] Heartbeat: 1 aktif islem | Bakiye: 655.96 USD
 [2026-07-28 17:46:44] Heartbeat: 1 aktif islem | Bakiye: 655.96 USD
 [2026-07-28 17:47:14] Heartbeat: 1 aktif islem | Bakiye: 655.96 USD
+[2026-07-28 17:47:45] Heartbeat: 1 aktif islem | Bakiye: 655.96 USD
+[2026-07-28 17:47:57] Islem kapandi: ticket=956956366
+[2026-07-28 17:47:57] Performans kaydedildi: SL | -2.12 pip
+[2026-07-28 17:47:57] Kapanis sonrasi hafizadaki sinyal deneniyor: #None SELL @ 4020.5
+[2026-07-28 17:47:57] EMA filtresi: SELL ONAYLANDI — fiyat=4024.57 <= EMA20=4024.77
+[2026-07-28 17:47:57] Streak filtresi: SELL ONAYLANDI — EMA100 streak=200 >= 13
+[2026-07-28 17:47:57] Emir turu: SELL_STOP (fiyat=4024.57 > entry=4020.5)
+2026-07-28 17:47:57.621 | T4 | SELL@4020.5 | order_send cagrilacak
+2026-07-28 17:47:57.641 | T5 | SELL@4020.5 | order_send sonucu: basarili
+[2026-07-28 17:47:57] Islem acildi: 956985197 | SELL @ 4020.5 | SL:4025.5 | TP1:4017.5 TP2:4015.5 TP3:4012.5
+[2026-07-28 17:47:57] Hafizadaki sinyal girildi: ticket=956985197
+[2026-07-28 17:48:16] Heartbeat: 1 aktif islem | Bakiye: 653.84 USD
+[2026-07-28 17:48:46] Heartbeat: 1 aktif islem | Bakiye: 653.84 USD
+[2026-07-28 17:49:17] Heartbeat: 1 aktif islem | Bakiye: 653.84 USD
