@@ -1,10 +1,3 @@
-[2026-07-29 01:24:21] Emir turu: SELL_LIMIT (fiyat=4017.82 <= entry=4019.0)
-2026-07-29 01:24:21.983 | T4 | SELL@4019.0 | order_send cagrilacak
-2026-07-29 01:24:21.995 | T5 | SELL@4019.0 | order_send sonucu: basarili
-[2026-07-29 01:24:22] Islem acildi: 957398538 | SELL @ 4019.0 | SL:4024.0 | TP1:4016.0 TP2:4014.0 TP3:4011.0
-[2026-07-29 01:24:35] Heartbeat: 1 aktif islem | Bakiye: 647.01 USD
-[2026-07-29 01:25:05] Heartbeat: 1 aktif islem | Bakiye: 647.01 USD
-[2026-07-29 01:25:35] Heartbeat: 1 aktif islem | Bakiye: 647.01 USD
 [2026-07-29 01:26:05] Heartbeat: 1 aktif islem | Bakiye: 647.01 USD
 [2026-07-29 01:26:36] Heartbeat: 1 aktif islem | Bakiye: 647.01 USD
 [2026-07-29 01:27:06] Heartbeat: 1 aktif islem | Bakiye: 647.01 USD
@@ -78,3 +71,10 @@
 [2026-07-29 01:49:17] Heartbeat: 1 aktif islem | Bakiye: 648.97 USD
 [2026-07-29 01:49:47] Heartbeat: 1 aktif islem | Bakiye: 648.97 USD
 [2026-07-29 01:50:17] Heartbeat: 1 aktif islem | Bakiye: 648.97 USD
+[2026-07-29 01:50:48] Heartbeat: 1 aktif islem | Bakiye: 648.97 USD
+2026-07-29 01:51:12.318 | T3 | SELL@4016.5 | signal.json okundu (MT5 agent)
+[2026-07-29 01:51:12] Ayni sinyal tekrar geldi, islem yapilmiyor: #None
+[2026-07-29 01:51:18] Heartbeat: 1 aktif islem | Bakiye: 648.97 USD
+[2026-07-29 01:51:48] Heartbeat: 1 aktif islem | Bakiye: 648.97 USD
+[2026-07-29 01:52:18] Heartbeat: 1 aktif islem | Bakiye: 648.97 USD
+[2026-07-29 01:52:49] Heartbeat: 1 aktif islem | Bakiye: 648.97 USD
