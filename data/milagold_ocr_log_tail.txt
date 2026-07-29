@@ -1,7 +1,3 @@
-2026-07-29 23:13:25,525 | T1 | SELL@4040.5 | sinyal tespit edildi
-2026-07-29 23:13:25,525 | Olasi yeni sinyal, HEMEN yazildi (dogrulama bekleniyor 1/2): 4050.0 -> 4040.5
-2026-07-29 23:13:25,526 | signal.json yazildi.
-2026-07-29 23:13:25,526 | T2 | SELL@4040.5 | signal.json yazildi
 2026-07-29 23:13:28,983 | Sinyal tarihi okundu: 30/07/2026 00:32
 2026-07-29 23:13:28,984 | Yeni sinyal DOGRULANDI (2 okuma): entry=4040.5 pending=4040.5
 2026-07-29 23:13:34,249 | Sinyal tarihi okundu: 30/07/2026 00:32
@@ -78,3 +74,7 @@
 2026-07-29 23:15:43,200 | Takip: SELL @ 4040.5 | Status:RUNNING
 2026-07-29 23:15:46,962 | Sinyal tarihi okundu: 30/07/2026 00:32
 2026-07-29 23:15:46,963 | Takip: SELL @ 4040.5 | Status:RUNNING
+2026-07-29 23:15:51,677 | Sinyal tarihi okundu: 30/07/2026 00:32
+2026-07-29 23:15:51,677 | Takip: SELL @ 4040.5 | Status:RUNNING
+2026-07-29 23:15:56,019 | Sinyal tarihi okundu: 30/07/2026 00:32
+2026-07-29 23:15:56,019 | Takip: SELL @ 4040.5 | Status:RUNNING
