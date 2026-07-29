@@ -1,70 +1,3 @@
-2026-07-29 10:22:49,921 | Okuma dongusune giriliyor...
-2026-07-29 10:22:52,613 | GOLD karti okunamadi (1). Ham: ['Disclaimer', 'The information on signalgpt ai is for reference and', 'Iknowledge-sharing [']
-2026-07-29 10:22:55,975 | GOLD karti okunamadi (2). Ham: ['Disclaimer', 'The information on signalgpt ai is for reference and', 'Iknowledge-sharing [']
-2026-07-29 10:22:59,092 | GOLD karti okunamadi (3). Ham: ['Disclaimer', 'The information on signalgpt ai is for reference and', 'Iknowledge-sharing [']
-2026-07-29 10:23:03,519 | GOLD karti okunamadi (4). Ham: ['Disclaimer', 'The information on signalgpt ai is for reference and', 'Iknowledge-sharing [']
-2026-07-29 10:23:06,700 | GOLD karti okunamadi (5). Ham: ['Disclaimer', 'The information on signalgpt ai is for reference and', 'Iknowledge-sharing [']
-2026-07-29 10:23:10,029 | GOLD karti okunamadi (6). Ham: ['Disclaimer', 'The information on signalgpt ai is for reference and', 'Iknowledge-sharing [']
-2026-07-29 10:23:13,799 | GOLD karti okunamadi (7). Ham: ['Disclaimer', 'The information on signalgpt ai is for reference and', 'Iknowledge-sharing [']
-2026-07-29 10:23:17,672 | GOLD karti okunamadi (8). Ham: ['Disclaimer', 'The information on signalgpt ai is for reference and', 'Iknowledge-sharing [']
-2026-07-29 10:23:32,534 | Sinyal tarihi okunamadi (filtre devrede degil).
-2026-07-29 10:23:32,534 | T1 | SELL@4030.5 | sinyal tespit edildi
-2026-07-29 10:23:32,535 | Olasi yeni sinyal, HEMEN yazildi (dogrulama bekleniyor 1/2): #None | SELL @ 4030.5
-2026-07-29 10:23:32,536 | signal.json yazildi.
-2026-07-29 10:23:32,536 | T2 | SELL@4030.5 | signal.json yazildi
-2026-07-29 10:23:37,692 | Sinyal tarihi okunamadi (filtre devrede degil).
-2026-07-29 10:23:37,692 | Yeni sinyal DOGRULANDI (2 okuma): entry=4030.5 pending=4030.5
-2026-07-29 10:23:42,968 | Sinyal tarihi okunamadi (filtre devrede degil).
-2026-07-29 10:23:42,968 | Takip: SELL @ 4030.5 | Status:RUNNING
-2026-07-29 10:23:47,203 | Sinyal tarihi okunamadi (filtre devrede degil).
-2026-07-29 10:23:47,204 | Takip: SELL @ 4030.5 | Status:RUNNING
-2026-07-29 10:23:50,785 | Sinyal tarihi okunamadi (filtre devrede degil).
-2026-07-29 10:23:50,785 | Takip: SELL @ 4030.5 | Status:RUNNING
-2026-07-29 10:23:54,900 | Sinyal tarihi okunamadi (filtre devrede degil).
-2026-07-29 10:23:54,901 | Takip: SELL @ 4030.5 | Status:RUNNING
-2026-07-29 10:23:59,986 | Sinyal tarihi okunamadi (filtre devrede degil).
-2026-07-29 10:23:59,987 | Takip: SELL @ 4030.5 | Status:RUNNING
-2026-07-29 10:24:04,969 | Sinyal tarihi okunamadi (filtre devrede degil).
-2026-07-29 10:24:04,972 | Takip: SELL @ 4030.5 | Status:RUNNING
-2026-07-29 10:24:08,270 | Sinyal tarihi okunamadi (filtre devrede degil).
-2026-07-29 10:24:08,270 | Takip: SELL @ 4030.5 | Status:RUNNING
-2026-07-29 10:24:12,900 | Sinyal tarihi okunamadi (filtre devrede degil).
-2026-07-29 10:24:12,901 | Takip: SELL @ 4030.5 | Status:RUNNING
-2026-07-29 10:24:17,686 | Sinyal tarihi okunamadi (filtre devrede degil).
-2026-07-29 10:24:17,687 | Takip: SELL @ 4030.5 | Status:RUNNING
-2026-07-29 10:24:22,281 | Sinyal tarihi okunamadi (filtre devrede degil).
-2026-07-29 10:24:22,282 | Takip: SELL @ 4030.5 | Status:RUNNING
-2026-07-29 10:24:26,039 | Sinyal tarihi okunamadi (filtre devrede degil).
-2026-07-29 10:24:26,040 | Takip: SELL @ 4030.5 | Status:RUNNING
-2026-07-29 10:24:30,275 | Sinyal tarihi okunamadi (filtre devrede degil).
-2026-07-29 10:24:30,275 | Takip: SELL @ 4030.5 | Status:RUNNING
-2026-07-29 10:24:34,765 | Sinyal tarihi okunamadi (filtre devrede degil).
-2026-07-29 10:24:34,766 | Takip: SELL @ 4030.5 | Status:RUNNING
-2026-07-29 10:24:38,513 | Sinyal tarihi okunamadi (filtre devrede degil).
-2026-07-29 10:24:38,513 | Takip: SELL @ 4030.5 | Status:RUNNING
-2026-07-29 10:24:42,603 | Sinyal tarihi okunamadi (filtre devrede degil).
-2026-07-29 10:24:42,603 | Takip: SELL @ 4030.5 | Status:RUNNING
-2026-07-29 10:24:47,366 | Sinyal tarihi okunamadi (filtre devrede degil).
-2026-07-29 10:24:47,366 | Takip: SELL @ 4030.5 | Status:RUNNING
-2026-07-29 10:24:51,919 | Sinyal tarihi okunamadi (filtre devrede degil).
-2026-07-29 10:24:51,919 | Takip: SELL @ 4030.5 | Status:RUNNING
-2026-07-29 10:24:56,399 | Sinyal tarihi okunamadi (filtre devrede degil).
-2026-07-29 10:24:56,399 | Takip: SELL @ 4030.5 | Status:RUNNING
-2026-07-29 10:25:00,211 | Sinyal tarihi okunamadi (filtre devrede degil).
-2026-07-29 10:25:00,211 | Takip: SELL @ 4030.5 | Status:RUNNING
-2026-07-29 10:25:04,622 | Sinyal tarihi okunamadi (filtre devrede degil).
-2026-07-29 10:25:04,623 | Takip: SELL @ 4030.5 | Status:RUNNING
-2026-07-29 10:25:08,335 | Sinyal tarihi okunamadi (filtre devrede degil).
-2026-07-29 10:25:08,335 | Takip: SELL @ 4030.5 | Status:RUNNING
-2026-07-29 10:25:12,936 | Sinyal tarihi okunamadi (filtre devrede degil).
-2026-07-29 10:25:12,937 | Takip: SELL @ 4030.5 | Status:RUNNING
-2026-07-29 10:25:17,659 | Sinyal tarihi okunamadi (filtre devrede degil).
-2026-07-29 10:25:17,660 | Takip: SELL @ 4030.5 | Status:RUNNING
-2026-07-29 10:25:23,195 | Sinyal tarihi okunamadi (filtre devrede degil).
-2026-07-29 10:25:23,195 | Takip: SELL @ 4030.5 | Status:RUNNING
-2026-07-29 10:25:28,295 | Sinyal tarihi okunamadi (filtre devrede degil).
-2026-07-29 10:25:28,296 | Takip: SELL @ 4030.5 | Status:RUNNING
-2026-07-29 10:25:33,323 | Sinyal tarihi okunamadi (filtre devrede degil).
 2026-07-29 10:25:33,324 | Takip: SELL @ 4030.5 | Status:RUNNING
 2026-07-29 10:25:37,030 | Sinyal tarihi okunamadi (filtre devrede degil).
 2026-07-29 10:25:37,031 | Takip: SELL @ 4030.5 | Status:RUNNING
@@ -78,3 +11,70 @@
 2026-07-29 10:25:53,949 | Takip: SELL @ 4030.5 | Status:RUNNING
 2026-07-29 10:25:58,888 | Sinyal tarihi okunamadi (filtre devrede degil).
 2026-07-29 10:25:58,888 | Takip: SELL @ 4030.5 | Status:RUNNING
+2026-07-29 10:26:04,162 | Sinyal tarihi okunamadi (filtre devrede degil).
+2026-07-29 10:26:04,162 | Takip: SELL @ 4030.5 | Status:RUNNING
+2026-07-29 10:26:08,402 | Sinyal tarihi okunamadi (filtre devrede degil).
+2026-07-29 10:26:08,403 | Takip: SELL @ 4030.5 | Status:RUNNING
+2026-07-29 10:26:12,093 | Sinyal tarihi okunamadi (filtre devrede degil).
+2026-07-29 10:26:12,094 | Takip: SELL @ 4030.5 | Status:RUNNING
+2026-07-29 10:26:15,631 | Sinyal tarihi okunamadi (filtre devrede degil).
+2026-07-29 10:26:15,632 | Takip: SELL @ 4030.5 | Status:RUNNING
+2026-07-29 10:26:19,679 | Sinyal tarihi okunamadi (filtre devrede degil).
+2026-07-29 10:26:19,680 | Takip: SELL @ 4030.5 | Status:RUNNING
+2026-07-29 10:26:23,457 | Sinyal tarihi okunamadi (filtre devrede degil).
+2026-07-29 10:26:23,458 | Takip: SELL @ 4030.5 | Status:RUNNING
+2026-07-29 10:26:27,350 | Sinyal tarihi okunamadi (filtre devrede degil).
+2026-07-29 10:26:27,350 | Takip: SELL @ 4030.5 | Status:RUNNING
+2026-07-29 10:26:31,001 | Sinyal tarihi okunamadi (filtre devrede degil).
+2026-07-29 10:26:31,002 | Takip: SELL @ 4030.5 | Status:RUNNING
+2026-07-29 10:26:34,256 | Sinyal tarihi okunamadi (filtre devrede degil).
+2026-07-29 10:26:34,257 | Takip: SELL @ 4030.5 | Status:RUNNING
+2026-07-29 10:26:39,297 | Sinyal tarihi okunamadi (filtre devrede degil).
+2026-07-29 10:26:39,300 | Takip: SELL @ 4030.5 | Status:RUNNING
+2026-07-29 10:26:42,565 | Sinyal tarihi okunamadi (filtre devrede degil).
+2026-07-29 10:26:42,566 | Takip: SELL @ 4030.5 | Status:RUNNING
+2026-07-29 10:26:46,504 | Sinyal tarihi okunamadi (filtre devrede degil).
+2026-07-29 10:26:46,504 | Takip: SELL @ 4030.5 | Status:RUNNING
+2026-07-29 10:26:49,672 | Sinyal tarihi okunamadi (filtre devrede degil).
+2026-07-29 10:26:49,672 | Takip: SELL @ 4030.5 | Status:RUNNING
+2026-07-29 10:26:54,495 | Sinyal tarihi okunamadi (filtre devrede degil).
+2026-07-29 10:26:54,496 | Takip: SELL @ 4030.5 | Status:RUNNING
+2026-07-29 10:27:00,308 | Sinyal tarihi okunamadi (filtre devrede degil).
+2026-07-29 10:27:00,308 | Takip: SELL @ 4030.5 | Status:RUNNING
+2026-07-29 10:27:05,429 | Sinyal tarihi okunamadi (filtre devrede degil).
+2026-07-29 10:27:05,429 | Takip: SELL @ 4030.5 | Status:RUNNING
+2026-07-29 10:27:08,978 | Sinyal tarihi okunamadi (filtre devrede degil).
+2026-07-29 10:27:08,978 | Takip: SELL @ 4030.5 | Status:RUNNING
+2026-07-29 10:27:12,573 | Sinyal tarihi okunamadi (filtre devrede degil).
+2026-07-29 10:27:12,573 | Takip: SELL @ 4030.5 | Status:RUNNING
+2026-07-29 10:27:15,854 | Sinyal tarihi okunamadi (filtre devrede degil).
+2026-07-29 10:27:15,854 | Takip: SELL @ 4030.5 | Status:RUNNING
+2026-07-29 10:27:19,959 | Sinyal tarihi okunamadi (filtre devrede degil).
+2026-07-29 10:27:19,960 | Takip: SELL @ 4030.5 | Status:RUNNING
+2026-07-29 10:27:23,872 | Sinyal tarihi okunamadi (filtre devrede degil).
+2026-07-29 10:27:23,872 | Takip: SELL @ 4030.5 | Status:RUNNING
+2026-07-29 10:27:27,631 | Sinyal tarihi okunamadi (filtre devrede degil).
+2026-07-29 10:27:27,632 | Takip: SELL @ 4030.5 | Status:RUNNING
+2026-07-29 10:27:31,072 | Sinyal tarihi okunamadi (filtre devrede degil).
+2026-07-29 10:27:31,073 | Takip: SELL @ 4030.5 | Status:RUNNING
+2026-07-29 10:27:34,270 | Sinyal tarihi okunamadi (filtre devrede degil).
+2026-07-29 10:27:34,270 | Takip: SELL @ 4030.5 | Status:RUNNING
+2026-07-29 10:27:38,235 | Sinyal tarihi okundu: 29/07/2026 14:27
+2026-07-29 10:27:38,235 | T1 | SELL@4045.5 | sinyal tespit edildi
+2026-07-29 10:27:38,235 | Olasi yeni sinyal, HEMEN yazildi (dogrulama bekleniyor 1/2): 4030.5 -> 4045.5
+2026-07-29 10:27:38,236 | signal.json yazildi.
+2026-07-29 10:27:38,236 | T2 | SELL@4045.5 | signal.json yazildi
+2026-07-29 10:27:43,093 | Sinyal tarihi okundu: 29/07/2026 14:27
+2026-07-29 10:27:43,094 | Yeni sinyal DOGRULANDI (2 okuma): entry=4045.5 pending=4045.5
+2026-07-29 10:27:47,580 | Sinyal tarihi okundu: 29/07/2026 14:27
+2026-07-29 10:27:47,581 | Takip: SELL @ 4045.5 | Status:RUNNING
+2026-07-29 10:27:52,044 | Sinyal tarihi okundu: 29/07/2026 14:27
+2026-07-29 10:27:52,045 | Takip: SELL @ 4045.5 | Status:RUNNING
+2026-07-29 10:27:56,080 | Sinyal tarihi okundu: 29/07/2026 14:27
+2026-07-29 10:27:56,080 | Takip: SELL @ 4045.5 | Status:RUNNING
+2026-07-29 10:27:59,701 | Sinyal tarihi okundu: 29/07/2026 14:27
+2026-07-29 10:27:59,702 | Takip: SELL @ 4045.5 | Status:RUNNING
+2026-07-29 10:28:03,356 | Sinyal tarihi okundu: 29/07/2026 14:27
+2026-07-29 10:28:03,356 | Takip: SELL @ 4045.5 | Status:RUNNING
+2026-07-29 10:28:06,774 | Sinyal tarihi okundu: 29/07/2026 14:27
+2026-07-29 10:28:06,775 | Takip: SELL @ 4045.5 | Status:RUNNING
