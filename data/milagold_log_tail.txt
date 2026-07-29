@@ -1,7 +1,3 @@
-[2026-07-29 15:56:44] Emir turu: SELL_STOP (fiyat=4023.23 > entry=4018.5)
-2026-07-29 15:56:44.012 | T4 | SELL@4018.5 | order_send cagrilacak
-2026-07-29 15:56:44.036 | T5 | SELL@4018.5 | order_send sonucu: basarili
-[2026-07-29 15:56:44] Islem acildi: 958206423 | SELL @ 4018.5 | SL:4023.5 | TP1:4015.5 TP2:4013.5 TP3:4010.5
 [2026-07-29 15:57:11] Heartbeat: 1 aktif islem | Bakiye: 629.93 USD
 [2026-07-29 15:57:41] Heartbeat: 1 aktif islem | Bakiye: 629.93 USD
 [2026-07-29 15:58:11] Heartbeat: 1 aktif islem | Bakiye: 629.93 USD
@@ -78,3 +74,7 @@
 [2026-07-29 16:23:59] Heartbeat: 0 aktif islem | Bakiye: 627.69 USD
 [2026-07-29 16:24:29] Heartbeat: 0 aktif islem | Bakiye: 627.69 USD
 [2026-07-29 16:24:59] Heartbeat: 0 aktif islem | Bakiye: 627.69 USD
+[2026-07-29 16:25:29] Heartbeat: 0 aktif islem | Bakiye: 627.69 USD
+[2026-07-29 16:26:00] Heartbeat: 0 aktif islem | Bakiye: 627.69 USD
+[2026-07-29 16:26:30] Heartbeat: 0 aktif islem | Bakiye: 627.69 USD
+[2026-07-29 16:27:00] Heartbeat: 0 aktif islem | Bakiye: 627.69 USD
