@@ -1,69 +1,3 @@
-2026-07-29 19:11:39,724 | Takip: SELL @ 4006.0 | Status:RUNNING
-2026-07-29 19:11:42,856 | Sinyal tarihi okunamadi (filtre devrede degil).
-2026-07-29 19:11:42,857 | Takip: SELL @ 4006.0 | Status:RUNNING
-2026-07-29 19:11:47,785 | Sinyal tarihi okunamadi (filtre devrede degil).
-2026-07-29 19:11:47,786 | Takip: SELL @ 4006.0 | Status:RUNNING
-2026-07-29 19:11:53,057 | Sinyal tarihi okunamadi (filtre devrede degil).
-2026-07-29 19:11:53,057 | Takip: SELL @ 4006.0 | Status:RUNNING
-2026-07-29 19:11:57,462 | Sinyal tarihi okunamadi (filtre devrede degil).
-2026-07-29 19:11:57,468 | Takip: SELL @ 4006.0 | Status:RUNNING
-2026-07-29 19:12:01,014 | Sinyal tarihi okunamadi (filtre devrede degil).
-2026-07-29 19:12:01,015 | Takip: SELL @ 4006.0 | Status:RUNNING
-2026-07-29 19:12:04,353 | Sinyal tarihi okunamadi (filtre devrede degil).
-2026-07-29 19:12:04,354 | Takip: SELL @ 4006.0 | Status:RUNNING
-2026-07-29 19:12:07,954 | Sinyal tarihi okunamadi (filtre devrede degil).
-2026-07-29 19:12:07,954 | Takip: SELL @ 4006.0 | Status:RUNNING
-2026-07-29 19:12:11,492 | Sinyal tarihi okunamadi (filtre devrede degil).
-2026-07-29 19:12:11,492 | Takip: SELL @ 4006.0 | Status:RUNNING
-2026-07-29 19:12:14,803 | Sinyal tarihi okunamadi (filtre devrede degil).
-2026-07-29 19:12:14,803 | Takip: SELL @ 4006.0 | Status:RUNNING
-2026-07-29 19:12:16,983 | Periyodik debug screenshot: list_debug_20260729_191216.png
-2026-07-29 19:12:16,984 | Periyodik sayfa yenileme (30 dk) basliyor...
-2026-07-29 19:12:25,585 | Periyodik sayfa yenileme tamamlandi.
-2026-07-29 19:12:29,991 | GOLD karti okunamadi (1). Ham: ['Disclaimer', 'The information on signalgpt ai is for reference and', 'Iknowledge-sharing [']
-2026-07-29 19:12:34,426 | GOLD karti okunamadi (2). Ham: ['Disclaimer', 'The information on signalgpt ai is for reference and', 'Iknowledge-sharing [']
-2026-07-29 19:12:38,380 | GOLD karti okunamadi (3). Ham: ['Disclaimer', 'The information on signalgpt ai is for reference and', 'Iknowledge-sharing [']
-2026-07-29 19:12:42,934 | GOLD karti okunamadi (4). Ham: ['Disclaimer', 'The information on signalgpt ai is for reference and', 'Iknowledge-sharing [']
-2026-07-29 19:12:47,721 | GOLD karti okunamadi (5). Ham: ['Disclaimer', 'The information on signalgpt ai is for reference and', 'Iknowledge-sharing [']
-2026-07-29 19:12:51,705 | GOLD karti okunamadi (6). Ham: ['Disclaimer', 'The information on signalgpt ai is for reference and', 'Iknowledge-sharing [']
-2026-07-29 19:12:55,918 | GOLD karti okunamadi (7). Ham: ['Disclaimer', 'The information on signalgpt ai is for reference and', 'Iknowledge-sharing [']
-2026-07-29 19:13:00,676 | GOLD karti okunamadi (8). Ham: ['Disclaimer', 'The information on signalgpt ai is for reference and', 'Iknowledge-sharing [']
-2026-07-29 19:13:03,952 | GOLD karti okunamadi (9). Ham: ['Disclaimer', 'The information on signalgpt ai is for reference and', 'Iknowledge-sharing [']
-2026-07-29 19:13:07,339 | GOLD karti okunamadi (10). Ham: ['Disclaimer', 'The information on signalgpt ai is for reference and', 'Iknowledge-sharing [']
-2026-07-29 19:13:07,339 | 10 kez ust uste okunamadi - sayfa yenileniyor...
-2026-07-29 19:13:15,427 | Sayfa yenilendi.
-2026-07-29 19:13:19,380 | GOLD karti okunamadi (1). Ham: ['Disclaimer', 'The information on signalgpt ai is for reference and', 'Iknowledge-sharing [']
-2026-07-29 19:13:22,743 | GOLD karti okunamadi (2). Ham: ['Disclaimer', 'The information on signalgpt ai is for reference and', 'Iknowledge-sharing [']
-2026-07-29 19:13:25,904 | GOLD karti okunamadi (3). Ham: ['Disclaimer', 'The information on signalgpt ai is for reference and', 'Iknowledge-sharing [']
-2026-07-29 19:13:29,293 | GOLD karti okunamadi (4). Ham: ['Disclaimer', 'The information on signalgpt ai is for reference and', 'Iknowledge-sharing [']
-2026-07-29 19:13:32,452 | GOLD karti okunamadi (5). Ham: ['Disclaimer', 'The information on signalgpt ai is for reference and', 'Iknowledge-sharing [']
-2026-07-29 19:13:35,592 | GOLD karti okunamadi (6). Ham: ['Disclaimer', 'The information on signalgpt ai is for reference and', 'Iknowledge-sharing [']
-2026-07-29 19:13:38,788 | GOLD karti okunamadi (7). Ham: ['Disclaimer', 'The information on signalgpt ai is for reference and', 'Iknowledge-sharing [']
-2026-07-29 19:13:42,306 | GOLD karti okunamadi (8). Ham: ['Disclaimer', 'The information on signalgpt ai is for reference and', 'Iknowledge-sharing [']
-2026-07-29 19:13:45,996 | GOLD karti okunamadi (9). Ham: ['Disclaimer', 'The information on signalgpt ai is for reference and', 'Iknowledge-sharing [']
-2026-07-29 19:13:50,251 | GOLD karti okunamadi (10). Ham: ['Disclaimer', 'The information on signalgpt ai is for reference and', 'Iknowledge-sharing [']
-2026-07-29 19:13:50,251 | 10 kez ust uste okunamadi - sayfa yenileniyor...
-2026-07-29 19:13:58,354 | Sayfa yenilendi.
-2026-07-29 19:14:02,080 | GOLD karti okunamadi (1). Ham: ['Disclaimer', 'The information on signalgptai is for reference and knowledge-sharing purpose']
-2026-07-29 19:14:06,064 | GOLD karti okunamadi (2). Ham: ['Disclaimer', 'The information on signalgpt ai is for reference and', 'Iknowledge-sharing [']
-2026-07-29 19:14:09,577 | GOLD karti okunamadi (3). Ham: ['Disclaimer', 'The information on signalgpt ai is for reference and', 'Iknowledge-sharing [']
-2026-07-29 19:14:13,205 | GOLD karti okunamadi (4). Ham: ['Disclaimer', 'The information on signalgpt ai is for reference and', 'Iknowledge-sharing [']
-2026-07-29 19:14:17,527 | GOLD karti okunamadi (5). Ham: ['Disclaimer', 'The information on signalgpt ai is for reference and', 'Iknowledge-sharing [']
-2026-07-29 19:14:21,602 | GOLD karti okunamadi (6). Ham: ['Disclaimer', 'The information on signalgpt ai is for reference and', 'Iknowledge-sharing [']
-2026-07-29 19:14:25,647 | GOLD karti okunamadi (7). Ham: ['Disclaimer', 'The information on signalgpt ai is for reference and', 'Iknowledge-sharing [']
-2026-07-29 19:14:29,327 | GOLD karti okunamadi (8). Ham: ['Disclaimer', 'The information on signalgpt ai is for reference and', 'Iknowledge-sharing [']
-2026-07-29 19:14:33,126 | GOLD karti okunamadi (9). Ham: ['Disclaimer', 'The information on signalgpt ai is for reference and', 'Iknowledge-sharing [']
-2026-07-29 19:14:36,564 | GOLD karti okunamadi (10). Ham: ['Disclaimer', 'The information on signalgpt ai is for reference and', 'Iknowledge-sharing [']
-2026-07-29 19:14:36,564 | 10 kez ust uste okunamadi - sayfa yenileniyor...
-2026-07-29 19:14:56,282 | Sayfa yenilendi.
-2026-07-29 19:15:00,970 | Sinyal tarihi okunamadi (filtre devrede degil).
-2026-07-29 19:15:00,970 | Takip: SELL @ 4006.0 | Status:RUNNING
-2026-07-29 19:15:08,349 | Sinyal tarihi okunamadi (filtre devrede degil).
-2026-07-29 19:15:08,350 | Takip: SELL @ 4006.0 | Status:RUNNING
-2026-07-29 19:15:12,457 | Sinyal tarihi okunamadi (filtre devrede degil).
-2026-07-29 19:15:12,458 | Takip: SELL @ 4006.0 | Status:RUNNING
-2026-07-29 19:15:15,695 | Sinyal tarihi okunamadi (filtre devrede degil).
-2026-07-29 19:15:15,696 | Takip: SELL @ 4006.0 | Status:RUNNING
 2026-07-29 19:15:20,389 | Sinyal tarihi okunamadi (filtre devrede degil).
 2026-07-29 19:15:20,389 | Takip: SELL @ 4006.0 | Status:RUNNING
 2026-07-29 19:15:25,771 | Sinyal tarihi okunamadi (filtre devrede degil).
@@ -78,3 +12,69 @@
 2026-07-29 19:15:44,981 | Takip: SELL @ 4006.0 | Status:RUNNING
 2026-07-29 19:15:49,286 | Sinyal tarihi okunamadi (filtre devrede degil).
 2026-07-29 19:15:49,287 | Takip: SELL @ 4006.0 | Status:RUNNING
+2026-07-29 19:15:53,769 | Sinyal tarihi okunamadi (filtre devrede degil).
+2026-07-29 19:15:53,770 | Takip: SELL @ 4006.0 | Status:RUNNING
+2026-07-29 19:15:58,214 | Sinyal tarihi okunamadi (filtre devrede degil).
+2026-07-29 19:15:58,215 | Takip: SELL @ 4006.0 | Status:RUNNING
+2026-07-29 19:16:01,958 | Sinyal tarihi okunamadi (filtre devrede degil).
+2026-07-29 19:16:01,959 | Takip: SELL @ 4006.0 | Status:RUNNING
+2026-07-29 19:16:07,968 | Sinyal tarihi okunamadi (filtre devrede degil).
+2026-07-29 19:16:07,969 | Takip: SELL @ 4006.0 | Status:RUNNING
+2026-07-29 19:16:12,362 | Sinyal tarihi okunamadi (filtre devrede degil).
+2026-07-29 19:16:12,362 | Takip: SELL @ 4006.0 | Status:RUNNING
+2026-07-29 19:16:15,423 | Sinyal tarihi okunamadi (filtre devrede degil).
+2026-07-29 19:16:15,423 | Takip: SELL @ 4006.0 | Status:RUNNING
+2026-07-29 19:16:18,605 | Sinyal tarihi okunamadi (filtre devrede degil).
+2026-07-29 19:16:18,605 | Takip: SELL @ 4006.0 | Status:RUNNING
+2026-07-29 19:16:22,858 | Sinyal tarihi okunamadi (filtre devrede degil).
+2026-07-29 19:16:22,858 | Takip: SELL @ 4006.0 | Status:RUNNING
+2026-07-29 19:16:26,611 | Sinyal tarihi okunamadi (filtre devrede degil).
+2026-07-29 19:16:26,612 | Takip: SELL @ 4006.0 | Status:RUNNING
+2026-07-29 19:16:29,611 | Sinyal tarihi okunamadi (filtre devrede degil).
+2026-07-29 19:16:29,611 | Takip: SELL @ 4006.0 | Status:RUNNING
+2026-07-29 19:16:32,927 | Sinyal tarihi okunamadi (filtre devrede degil).
+2026-07-29 19:16:32,928 | Takip: SELL @ 4006.0 | Status:RUNNING
+2026-07-29 19:16:36,704 | Sinyal tarihi okunamadi (filtre devrede degil).
+2026-07-29 19:16:36,705 | Takip: SELL @ 4006.0 | Status:RUNNING
+2026-07-29 19:16:40,361 | Sinyal tarihi okunamadi (filtre devrede degil).
+2026-07-29 19:16:40,361 | Takip: SELL @ 4006.0 | Status:RUNNING
+2026-07-29 19:16:44,822 | Sinyal tarihi okunamadi (filtre devrede degil).
+2026-07-29 19:16:44,823 | Takip: SELL @ 4006.0 | Status:RUNNING
+2026-07-29 19:16:48,357 | Sinyal tarihi okunamadi (filtre devrede degil).
+2026-07-29 19:16:48,358 | Takip: SELL @ 4006.0 | Status:RUNNING
+2026-07-29 19:16:52,644 | Sinyal tarihi okunamadi (filtre devrede degil).
+2026-07-29 19:16:52,644 | Takip: SELL @ 4006.0 | Status:RUNNING
+2026-07-29 19:16:55,882 | Sinyal tarihi okunamadi (filtre devrede degil).
+2026-07-29 19:16:55,883 | Takip: SELL @ 4006.0 | Status:RUNNING
+2026-07-29 19:17:00,670 | Sinyal tarihi okunamadi (filtre devrede degil).
+2026-07-29 19:17:00,671 | Takip: SELL @ 4006.0 | Status:RUNNING
+2026-07-29 19:17:04,384 | Sinyal tarihi okunamadi (filtre devrede degil).
+2026-07-29 19:17:04,384 | Takip: SELL @ 4006.0 | Status:RUNNING
+2026-07-29 19:17:08,205 | Sinyal tarihi okunamadi (filtre devrede degil).
+2026-07-29 19:17:08,206 | Takip: SELL @ 4006.0 | Status:RUNNING
+2026-07-29 19:17:11,202 | Sinyal tarihi okunamadi (filtre devrede degil).
+2026-07-29 19:17:11,202 | Takip: SELL @ 4006.0 | Status:RUNNING
+2026-07-29 19:17:14,559 | Sinyal tarihi okunamadi (filtre devrede degil).
+2026-07-29 19:17:14,559 | Takip: SELL @ 4006.0 | Status:RUNNING
+2026-07-29 19:17:17,894 | Sinyal tarihi okunamadi (filtre devrede degil).
+2026-07-29 19:17:17,895 | Takip: SELL @ 4006.0 | Status:RUNNING
+2026-07-29 19:17:21,113 | Sinyal tarihi okunamadi (filtre devrede degil).
+2026-07-29 19:17:21,113 | Takip: SELL @ 4006.0 | Status:RUNNING
+2026-07-29 19:17:25,358 | Sinyal tarihi okunamadi (filtre devrede degil).
+2026-07-29 19:17:25,359 | Takip: SELL @ 4006.0 | Status:RUNNING
+2026-07-29 19:17:28,660 | Sinyal tarihi okunamadi (filtre devrede degil).
+2026-07-29 19:17:28,660 | Takip: SELL @ 4006.0 | Status:RUNNING
+2026-07-29 19:17:31,946 | Sinyal tarihi okunamadi (filtre devrede degil).
+2026-07-29 19:17:31,946 | Takip: SELL @ 4006.0 | Status:RUNNING
+2026-07-29 19:17:38,231 | Sinyal tarihi okunamadi (filtre devrede degil).
+2026-07-29 19:17:38,232 | Takip: SELL @ 4006.0 | Status:RUNNING
+2026-07-29 19:17:42,274 | Sinyal tarihi okunamadi (filtre devrede degil).
+2026-07-29 19:17:42,275 | Takip: SELL @ 4006.0 | Status:RUNNING
+2026-07-29 19:17:45,557 | Sinyal tarihi okunamadi (filtre devrede degil).
+2026-07-29 19:17:45,558 | Takip: SELL @ 4006.0 | Status:RUNNING
+2026-07-29 19:17:49,733 | Sinyal tarihi okunamadi (filtre devrede degil).
+2026-07-29 19:17:49,734 | Takip: SELL @ 4006.0 | Status:RUNNING
+2026-07-29 19:17:53,284 | Sinyal tarihi okunamadi (filtre devrede degil).
+2026-07-29 19:17:53,284 | Takip: SELL @ 4006.0 | Status:RUNNING
+2026-07-29 19:17:57,368 | Sinyal tarihi okunamadi (filtre devrede degil).
+2026-07-29 19:17:57,369 | Takip: SELL @ 4006.0 | Status:RUNNING
