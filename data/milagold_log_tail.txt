@@ -1,33 +1,3 @@
-[2026-07-29 17:11:51] EMA filtresi: SELL ONAYLANDI — fiyat=4000.34 <= EMA20=4012.04
-[2026-07-29 17:11:51] Streak filtresi: SELL ONAYLANDI — EMA100 streak=29 >= 13
-[2026-07-29 17:11:51] Emir turu: SELL_LIMIT (fiyat=4000.34 <= entry=4000.5)
-2026-07-29 17:11:51.929 | T4 | SELL@4000.5 | order_send cagrilacak
-2026-07-29 17:11:51.992 | T5 | SELL@4000.5 | order_send sonucu: basarili
-[2026-07-29 17:11:51] Islem acildi: 958386652 | SELL @ 4000.5 | SL:4005.5 | TP1:3997.5 TP2:3995.5 TP3:3992.5
-[2026-07-29 17:12:01] Heartbeat: 1 aktif islem | Bakiye: 638.17 USD
-[2026-07-29 17:12:31] Heartbeat: 1 aktif islem | Bakiye: 638.17 USD
-[2026-07-29 17:13:02] Heartbeat: 1 aktif islem | Bakiye: 638.17 USD
-[2026-07-29 17:13:32] Heartbeat: 1 aktif islem | Bakiye: 638.17 USD
-[2026-07-29 17:14:02] Heartbeat: 1 aktif islem | Bakiye: 638.17 USD
-[2026-07-29 17:14:33] Heartbeat: 1 aktif islem | Bakiye: 638.17 USD
-[2026-07-29 17:15:03] Heartbeat: 1 aktif islem | Bakiye: 638.17 USD
-[2026-07-29 17:15:33] Heartbeat: 1 aktif islem | Bakiye: 638.17 USD
-[2026-07-29 17:16:04] Heartbeat: 1 aktif islem | Bakiye: 638.17 USD
-[2026-07-29 17:16:34] Heartbeat: 1 aktif islem | Bakiye: 638.17 USD
-[2026-07-29 17:17:05] Heartbeat: 1 aktif islem | Bakiye: 638.17 USD
-[2026-07-29 17:17:35] Heartbeat: 1 aktif islem | Bakiye: 638.17 USD
-[2026-07-29 17:18:05] Heartbeat: 1 aktif islem | Bakiye: 638.17 USD
-[2026-07-29 17:18:22] Islem kapandi: ticket=958386652
-[2026-07-29 17:18:22] Performans kaydedildi: SL | -5.07 pip
-[2026-07-29 17:18:35] Heartbeat: 0 aktif islem | Bakiye: 633.14 USD
-[2026-07-29 17:19:06] Heartbeat: 0 aktif islem | Bakiye: 633.14 USD
-[2026-07-29 17:19:36] Heartbeat: 0 aktif islem | Bakiye: 633.14 USD
-[2026-07-29 17:20:06] Heartbeat: 0 aktif islem | Bakiye: 633.14 USD
-[2026-07-29 17:20:36] Heartbeat: 0 aktif islem | Bakiye: 633.14 USD
-[2026-07-29 17:21:07] Heartbeat: 0 aktif islem | Bakiye: 633.14 USD
-2026-07-29 17:21:28.367 | T3 | SELL@4006.0 | signal.json okundu (MT5 agent)
-[2026-07-29 17:21:28] Yeni sinyal alindi: #None SELL @ 4006.0
-[2026-07-29 17:21:28] EMA filtresi: SELL ONAYLANDI — fiyat=4007.85 <= EMA20=4010.99
 [2026-07-29 17:21:28] Streak filtresi: SELL ONAYLANDI — EMA100 streak=31 >= 13
 [2026-07-29 17:21:28] Emir turu: SELL_STOP (fiyat=4007.85 > entry=4006.0)
 2026-07-29 17:21:28.425 | T4 | SELL@4006.0 | order_send cagrilacak
@@ -78,3 +48,33 @@
 [2026-07-29 17:41:50] Heartbeat: 1 aktif islem | Bakiye: 633.14 USD
 [2026-07-29 17:42:20] Heartbeat: 1 aktif islem | Bakiye: 633.14 USD
 [2026-07-29 17:42:51] Heartbeat: 1 aktif islem | Bakiye: 633.14 USD
+[2026-07-29 17:43:03] TP1 gecildi: ticket=958416555 fiyat=4002.93 TP1=4003.0 -> SL -2 ye tasiniyor
+[2026-07-29 17:43:03] SL guncellendi: ticket=958416555 yeni SL=4008.0
+[2026-07-29 17:43:21] Heartbeat: 1 aktif islem | Bakiye: 633.14 USD
+[2026-07-29 17:43:32] TP2 gecildi: ticket=958416555 fiyat=4000.76 TP2=4001.0 -> SL girise tasiniyor, trailing basliyor
+[2026-07-29 17:43:32] SL guncellendi: ticket=958416555 yeni SL=4006.0
+[2026-07-29 17:43:32] Trailing SL: ticket=958416555 kar=5.24 trailing=5.0 | 4006.0 -> 4005.76
+[2026-07-29 17:43:32] SL guncellendi: ticket=958416555 yeni SL=4005.76
+[2026-07-29 17:43:42] Trailing SL: ticket=958416555 kar=5.36 trailing=5.0 | 4005.76 -> 4005.64
+[2026-07-29 17:43:42] SL guncellendi: ticket=958416555 yeni SL=4005.64
+[2026-07-29 17:43:43] Trailing SL: ticket=958416555 kar=5.44 trailing=5.0 | 4005.64 -> 4005.56
+[2026-07-29 17:43:43] SL guncellendi: ticket=958416555 yeni SL=4005.56
+[2026-07-29 17:43:44] Trailing SL: ticket=958416555 kar=6.12 trailing=4.0 | 4005.56 -> 4003.88
+[2026-07-29 17:43:44] SL guncellendi: ticket=958416555 yeni SL=4003.88
+[2026-07-29 17:43:46] Trailing SL: ticket=958416555 kar=6.50 trailing=4.0 | 4003.88 -> 4003.5
+[2026-07-29 17:43:46] SL guncellendi: ticket=958416555 yeni SL=4003.5
+[2026-07-29 17:43:47] Trailing SL: ticket=958416555 kar=6.71 trailing=4.0 | 4003.5 -> 4003.29
+[2026-07-29 17:43:47] SL guncellendi: ticket=958416555 yeni SL=4003.29
+[2026-07-29 17:43:48] Trailing SL: ticket=958416555 kar=6.94 trailing=4.0 | 4003.29 -> 4003.06
+[2026-07-29 17:43:49] SL guncellendi: ticket=958416555 yeni SL=4003.06
+[2026-07-29 17:43:50] Trailing SL: ticket=958416555 kar=7.20 trailing=3.0 | 4003.06 -> 4001.8
+[2026-07-29 17:43:50] SL guncellendi: ticket=958416555 yeni SL=4001.8
+[2026-07-29 17:43:52] Heartbeat: 1 aktif islem | Bakiye: 633.14 USD
+2026-07-29 17:44:13.500 | T3 | SELL@4005.0 | signal.json okundu (MT5 agent)
+[2026-07-29 17:44:13] Yeni sinyal daha kotu entry, sl_level=1. 2. pozisyon aciliyor: #None @ 4005.0
+[2026-07-29 17:44:13] Emir turu: SELL_LIMIT (fiyat=4000.19 <= entry=4005.0)
+2026-07-29 17:44:13.550 | T4 | SELL@4005.0 | order_send cagrilacak
+2026-07-29 17:44:13.610 | T5 | SELL@4005.0 | order_send sonucu: basarili
+[2026-07-29 17:44:13] Islem acildi: 958457783 | SELL @ 4005.0 | SL:4010.0 | TP1:4002.0 TP2:4000.0 TP3:3997.0
+[2026-07-29 17:44:22] Heartbeat: 2 aktif islem | Bakiye: 633.14 USD
+[2026-07-29 17:44:52] Heartbeat: 2 aktif islem | Bakiye: 633.14 USD
