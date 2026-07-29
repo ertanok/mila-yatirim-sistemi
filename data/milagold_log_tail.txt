@@ -1,8 +1,3 @@
-[2026-07-29 04:17:58] Emir turu: BUY_LIMIT (fiyat=4016.42 >= entry=4014.0)
-2026-07-29 04:17:58.414 | T4 | BUY@4014.0 | order_send cagrilacak
-2026-07-29 04:17:58.449 | T5 | BUY@4014.0 | order_send sonucu: basarili
-[2026-07-29 04:17:58] Islem acildi: 957495731 | BUY @ 4014.0 | SL:4009.0 | TP1:4017.0 TP2:4019.0 TP3:4022.0
-[2026-07-29 04:18:06] Heartbeat: 1 aktif islem | Bakiye: 636.20 USD
 2026-07-29 04:18:24.828 | T3 | BUY@4015 | signal.json okundu (MT5 agent)
 [2026-07-29 04:18:24] Yeni sinyal geldi, bekleyen emir iptal ediliyor: ticket=957495731 (BUY @ 4014)
 [2026-07-29 04:18:24] Bekleyen emir iptal edildi: ticket=957495731
@@ -78,3 +73,8 @@
 [2026-07-29 04:39:19] EMA filtresi: hafizadaki sinyal da atlandi — SELL @ 4018.5
 [2026-07-29 04:39:24] Heartbeat: 0 aktif islem | Bakiye: 635.04 USD
 [2026-07-29 04:39:54] Heartbeat: 0 aktif islem | Bakiye: 635.04 USD
+[2026-07-29 04:40:25] Heartbeat: 0 aktif islem | Bakiye: 635.04 USD
+[2026-07-29 04:40:55] Heartbeat: 0 aktif islem | Bakiye: 635.04 USD
+[2026-07-29 04:41:25] Heartbeat: 0 aktif islem | Bakiye: 635.04 USD
+[2026-07-29 04:41:55] Heartbeat: 0 aktif islem | Bakiye: 635.04 USD
+[2026-07-29 04:42:26] Heartbeat: 0 aktif islem | Bakiye: 635.04 USD
