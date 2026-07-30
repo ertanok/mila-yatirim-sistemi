@@ -1,80 +1,80 @@
-2026-07-30 18:34:48,406 | EasyOCR yukleniyor...
-2026-07-30 18:34:48,409 | Using CPU. Note: This module is much faster with a GPU.
-2026-07-30 18:34:52,204 | EasyOCR hazir.
-2026-07-30 18:34:52,205 | ==================================================
-2026-07-30 18:34:52,205 | MilaGold OCR Agent - Signal GPT versiyonu
-2026-07-30 18:34:52,205 | ==================================================
-2026-07-30 18:34:52,716 | Chrome versiyonu (exe): 150.0.7871.182
-2026-07-30 18:34:52,717 | ChromeDriver cache'den: C:\MilaYatirim\mila-yatirim-sistemi\MilaGold\chromedriver_cache\150.0.7871.182\chromedriver.exe
-2026-07-30 18:34:52,717 | ChromeDriver: C:\MilaYatirim\mila-yatirim-sistemi\MilaGold\chromedriver_cache\150.0.7871.182\chromedriver.exe
-2026-07-30 18:34:54,097 | Signal GPT sayfasina gidildi.
-2026-07-30 18:34:54,098 | Sayfa yukleniyor, 15 saniye bekleniyor...
-2026-07-30 18:35:23,545 | Baslangic screenshot alindi.
-2026-07-30 18:35:23,546 | Ilk okuma oncesi 5 saniye bekleniyor...
-2026-07-30 18:35:28,548 | Okuma dongusune giriliyor...
-2026-07-30 18:35:30,746 | Sinyal tarihi okundu: 30/07/2026 15:00
-2026-07-30 18:35:30,747 | SINYAL ATLANDI — Sinyal 215 dakika once uretildi (max: 60 dk). Sinyal tarihi: 30/07/2026 15:00.
-2026-07-30 18:35:30,748 | Sinyal bekleniyor... Status:RUNNING Entry:4041.0
-2026-07-30 18:35:34,425 | Sinyal tarihi okundu: 30/07/2026 15:00
-2026-07-30 18:35:34,426 | SINYAL ATLANDI — Sinyal 215 dakika once uretildi (max: 60 dk). Sinyal tarihi: 30/07/2026 15:00.
-2026-07-30 18:35:34,427 | Sinyal bekleniyor... Status:RUNNING Entry:4041.0
-2026-07-30 18:35:38,619 | Sinyal tarihi okundu: 30/07/2026 15:00
-2026-07-30 18:35:38,621 | SINYAL ATLANDI — Sinyal 215 dakika once uretildi (max: 60 dk). Sinyal tarihi: 30/07/2026 15:00.
-2026-07-30 18:35:38,621 | Sinyal bekleniyor... Status:RUNNING Entry:4041.0
-2026-07-30 18:35:42,332 | Sinyal tarihi okundu: 30/07/2026 15:00
-2026-07-30 18:35:42,333 | SINYAL ATLANDI — Sinyal 215 dakika once uretildi (max: 60 dk). Sinyal tarihi: 30/07/2026 15:00.
-2026-07-30 18:35:42,333 | Sinyal bekleniyor... Status:RUNNING Entry:4041.0
-2026-07-30 18:35:46,230 | Sinyal tarihi okundu: 30/07/2026 15:00
-2026-07-30 18:35:46,230 | SINYAL ATLANDI — Sinyal 215 dakika once uretildi (max: 60 dk). Sinyal tarihi: 30/07/2026 15:00.
-2026-07-30 18:35:46,231 | Sinyal bekleniyor... Status:RUNNING Entry:4041.0
-2026-07-30 18:35:49,969 | Sinyal tarihi okundu: 30/07/2026 15:00
-2026-07-30 18:35:49,970 | SINYAL ATLANDI — Sinyal 215 dakika once uretildi (max: 60 dk). Sinyal tarihi: 30/07/2026 15:00.
-2026-07-30 18:35:49,970 | Sinyal bekleniyor... Status:RUNNING Entry:4041.0
-2026-07-30 18:35:53,488 | Sinyal tarihi okundu: 30/07/2026 15:00
-2026-07-30 18:35:53,488 | SINYAL ATLANDI — Sinyal 215 dakika once uretildi (max: 60 dk). Sinyal tarihi: 30/07/2026 15:00.
-2026-07-30 18:35:53,489 | Sinyal bekleniyor... Status:RUNNING Entry:4041.0
-2026-07-30 18:35:57,095 | Sinyal tarihi okundu: 30/07/2026 15:00
-2026-07-30 18:35:57,095 | SINYAL ATLANDI — Sinyal 215 dakika once uretildi (max: 60 dk). Sinyal tarihi: 30/07/2026 15:00.
-2026-07-30 18:35:57,095 | Sinyal bekleniyor... Status:RUNNING Entry:4041.0
-2026-07-30 18:36:00,836 | Sinyal tarihi okundu: 30/07/2026 15:00
-2026-07-30 18:36:00,837 | SINYAL ATLANDI — Sinyal 216 dakika once uretildi (max: 60 dk). Sinyal tarihi: 30/07/2026 15:00.
-2026-07-30 18:36:00,838 | Sinyal bekleniyor... Status:RUNNING Entry:4041.0
-2026-07-30 18:36:04,636 | Sinyal tarihi okundu: 30/07/2026 15:00
-2026-07-30 18:36:04,636 | SINYAL ATLANDI — Sinyal 216 dakika once uretildi (max: 60 dk). Sinyal tarihi: 30/07/2026 15:00.
-2026-07-30 18:36:04,637 | Sinyal bekleniyor... Status:RUNNING Entry:4041.0
-2026-07-30 18:36:08,460 | Sinyal tarihi okundu: 30/07/2026 15:00
-2026-07-30 18:36:08,460 | SINYAL ATLANDI — Sinyal 216 dakika once uretildi (max: 60 dk). Sinyal tarihi: 30/07/2026 15:00.
-2026-07-30 18:36:08,461 | Sinyal bekleniyor... Status:RUNNING Entry:4041.0
-2026-07-30 18:36:12,285 | Sinyal tarihi okundu: 30/07/2026 15:00
-2026-07-30 18:36:12,286 | SINYAL ATLANDI — Sinyal 216 dakika once uretildi (max: 60 dk). Sinyal tarihi: 30/07/2026 15:00.
-2026-07-30 18:36:12,287 | Sinyal bekleniyor... Status:RUNNING Entry:4041.0
-2026-07-30 18:36:15,989 | Sinyal tarihi okundu: 30/07/2026 15:00
-2026-07-30 18:36:15,990 | SINYAL ATLANDI — Sinyal 216 dakika once uretildi (max: 60 dk). Sinyal tarihi: 30/07/2026 15:00.
-2026-07-30 18:36:15,990 | Sinyal bekleniyor... Status:RUNNING Entry:4041.0
-2026-07-30 18:36:19,922 | Sinyal tarihi okundu: 30/07/2026 15:00
-2026-07-30 18:36:19,922 | SINYAL ATLANDI — Sinyal 216 dakika once uretildi (max: 60 dk). Sinyal tarihi: 30/07/2026 15:00.
-2026-07-30 18:36:19,923 | Sinyal bekleniyor... Status:RUNNING Entry:4041.0
-2026-07-30 18:36:23,488 | Sinyal tarihi okundu: 30/07/2026 15:00
-2026-07-30 18:36:23,490 | SINYAL ATLANDI — Sinyal 216 dakika once uretildi (max: 60 dk). Sinyal tarihi: 30/07/2026 15:00.
-2026-07-30 18:36:23,491 | Sinyal bekleniyor... Status:RUNNING Entry:4041.0
-2026-07-30 18:36:26,844 | Sinyal tarihi okundu: 30/07/2026 15:00
-2026-07-30 18:36:26,845 | SINYAL ATLANDI — Sinyal 216 dakika once uretildi (max: 60 dk). Sinyal tarihi: 30/07/2026 15:00.
-2026-07-30 18:36:26,845 | Sinyal bekleniyor... Status:RUNNING Entry:4041.0
-2026-07-30 18:36:30,555 | Sinyal tarihi okundu: 30/07/2026 15:00
-2026-07-30 18:36:30,556 | SINYAL ATLANDI — Sinyal 216 dakika once uretildi (max: 60 dk). Sinyal tarihi: 30/07/2026 15:00.
-2026-07-30 18:36:30,556 | Sinyal bekleniyor... Status:RUNNING Entry:4041.0
-2026-07-30 18:36:34,468 | Sinyal tarihi okundu: 30/07/2026 15:00
-2026-07-30 18:36:34,469 | SINYAL ATLANDI — Sinyal 216 dakika once uretildi (max: 60 dk). Sinyal tarihi: 30/07/2026 15:00.
-2026-07-30 18:36:34,469 | Sinyal bekleniyor... Status:RUNNING Entry:4041.0
-2026-07-30 18:36:38,121 | Sinyal tarihi okundu: 30/07/2026 15:00
-2026-07-30 18:36:38,122 | SINYAL ATLANDI — Sinyal 216 dakika once uretildi (max: 60 dk). Sinyal tarihi: 30/07/2026 15:00.
-2026-07-30 18:36:38,122 | Sinyal bekleniyor... Status:RUNNING Entry:4041.0
-2026-07-30 18:36:42,026 | Sinyal tarihi okundu: 30/07/2026 15:00
-2026-07-30 18:36:42,028 | SINYAL ATLANDI — Sinyal 216 dakika once uretildi (max: 60 dk). Sinyal tarihi: 30/07/2026 15:00.
-2026-07-30 18:36:42,028 | Sinyal bekleniyor... Status:RUNNING Entry:4041.0
-2026-07-30 18:36:45,993 | Sinyal tarihi okundu: 30/07/2026 15:00
-2026-07-30 18:36:45,994 | SINYAL ATLANDI — Sinyal 216 dakika once uretildi (max: 60 dk). Sinyal tarihi: 30/07/2026 15:00.
-2026-07-30 18:36:45,995 | Sinyal bekleniyor... Status:RUNNING Entry:4041.0
-2026-07-30 18:36:49,587 | Sinyal tarihi okundu: 30/07/2026 15:00
-2026-07-30 18:36:49,588 | SINYAL ATLANDI — Sinyal 216 dakika once uretildi (max: 60 dk). Sinyal tarihi: 30/07/2026 15:00.
-2026-07-30 18:36:49,589 | Sinyal bekleniyor... Status:RUNNING Entry:4041.0
+2026-07-30 18:37:19,907 | SINYAL ATLANDI — Sinyal 217 dakika once uretildi (max: 60 dk). Sinyal tarihi: 30/07/2026 15:00.
+2026-07-30 18:37:19,907 | Sinyal bekleniyor... Status:RUNNING Entry:4041.0
+2026-07-30 18:37:23,323 | Sinyal tarihi okundu: 30/07/2026 15:00
+2026-07-30 18:37:23,323 | SINYAL ATLANDI — Sinyal 217 dakika once uretildi (max: 60 dk). Sinyal tarihi: 30/07/2026 15:00.
+2026-07-30 18:37:23,324 | Sinyal bekleniyor... Status:RUNNING Entry:4041.0
+2026-07-30 18:37:26,829 | Sinyal tarihi okundu: 30/07/2026 15:00
+2026-07-30 18:37:26,830 | SINYAL ATLANDI — Sinyal 217 dakika once uretildi (max: 60 dk). Sinyal tarihi: 30/07/2026 15:00.
+2026-07-30 18:37:26,831 | Sinyal bekleniyor... Status:RUNNING Entry:4041.0
+2026-07-30 18:37:30,477 | Sinyal tarihi okundu: 30/07/2026 15:00
+2026-07-30 18:37:30,478 | SINYAL ATLANDI — Sinyal 217 dakika once uretildi (max: 60 dk). Sinyal tarihi: 30/07/2026 15:00.
+2026-07-30 18:37:30,478 | Sinyal bekleniyor... Status:RUNNING Entry:4041.0
+2026-07-30 18:37:34,151 | Sinyal tarihi okundu: 30/07/2026 15:00
+2026-07-30 18:37:34,153 | SINYAL ATLANDI — Sinyal 217 dakika once uretildi (max: 60 dk). Sinyal tarihi: 30/07/2026 15:00.
+2026-07-30 18:37:34,153 | Sinyal bekleniyor... Status:RUNNING Entry:4041.0
+2026-07-30 18:37:37,681 | Sinyal tarihi okundu: 30/07/2026 15:00
+2026-07-30 18:37:37,682 | SINYAL ATLANDI — Sinyal 217 dakika once uretildi (max: 60 dk). Sinyal tarihi: 30/07/2026 15:00.
+2026-07-30 18:37:37,682 | Sinyal bekleniyor... Status:RUNNING Entry:4041.0
+2026-07-30 18:37:41,520 | Sinyal tarihi okundu: 30/07/2026 15:00
+2026-07-30 18:37:41,522 | SINYAL ATLANDI — Sinyal 217 dakika once uretildi (max: 60 dk). Sinyal tarihi: 30/07/2026 15:00.
+2026-07-30 18:37:41,522 | Sinyal bekleniyor... Status:RUNNING Entry:4041.0
+2026-07-30 18:37:45,880 | Sinyal tarihi okundu: 30/07/2026 15:00
+2026-07-30 18:37:45,881 | SINYAL ATLANDI — Sinyal 217 dakika once uretildi (max: 60 dk). Sinyal tarihi: 30/07/2026 15:00.
+2026-07-30 18:37:45,882 | Sinyal bekleniyor... Status:RUNNING Entry:4041.0
+2026-07-30 18:37:49,869 | Sinyal tarihi okundu: 30/07/2026 15:00
+2026-07-30 18:37:49,869 | SINYAL ATLANDI — Sinyal 217 dakika once uretildi (max: 60 dk). Sinyal tarihi: 30/07/2026 15:00.
+2026-07-30 18:37:49,870 | Sinyal bekleniyor... Status:RUNNING Entry:4041.0
+2026-07-30 18:37:53,585 | Sinyal tarihi okundu: 30/07/2026 15:00
+2026-07-30 18:37:53,586 | SINYAL ATLANDI — Sinyal 217 dakika once uretildi (max: 60 dk). Sinyal tarihi: 30/07/2026 15:00.
+2026-07-30 18:37:53,586 | Sinyal bekleniyor... Status:RUNNING Entry:4041.0
+2026-07-30 18:37:57,174 | Sinyal tarihi okundu: 30/07/2026 15:00
+2026-07-30 18:37:57,175 | SINYAL ATLANDI — Sinyal 217 dakika once uretildi (max: 60 dk). Sinyal tarihi: 30/07/2026 15:00.
+2026-07-30 18:37:57,175 | Sinyal bekleniyor... Status:RUNNING Entry:4041.0
+2026-07-30 18:38:00,826 | Sinyal tarihi okundu: 30/07/2026 15:00
+2026-07-30 18:38:00,827 | SINYAL ATLANDI — Sinyal 218 dakika once uretildi (max: 60 dk). Sinyal tarihi: 30/07/2026 15:00.
+2026-07-30 18:38:00,827 | Sinyal bekleniyor... Status:RUNNING Entry:4041.0
+2026-07-30 18:38:04,475 | Sinyal tarihi okundu: 30/07/2026 15:00
+2026-07-30 18:38:04,476 | SINYAL ATLANDI — Sinyal 218 dakika once uretildi (max: 60 dk). Sinyal tarihi: 30/07/2026 15:00.
+2026-07-30 18:38:04,477 | Sinyal bekleniyor... Status:RUNNING Entry:4041.0
+2026-07-30 18:38:08,155 | Sinyal tarihi okundu: 30/07/2026 15:00
+2026-07-30 18:38:08,155 | SINYAL ATLANDI — Sinyal 218 dakika once uretildi (max: 60 dk). Sinyal tarihi: 30/07/2026 15:00.
+2026-07-30 18:38:08,156 | Sinyal bekleniyor... Status:RUNNING Entry:4041.0
+2026-07-30 18:38:11,953 | Sinyal tarihi okundu: 30/07/2026 15:00
+2026-07-30 18:38:11,954 | SINYAL ATLANDI — Sinyal 218 dakika once uretildi (max: 60 dk). Sinyal tarihi: 30/07/2026 15:00.
+2026-07-30 18:38:11,954 | Sinyal bekleniyor... Status:RUNNING Entry:4041.0
+2026-07-30 18:38:15,584 | Sinyal tarihi okundu: 30/07/2026 15:00
+2026-07-30 18:38:15,584 | SINYAL ATLANDI — Sinyal 218 dakika once uretildi (max: 60 dk). Sinyal tarihi: 30/07/2026 15:00.
+2026-07-30 18:38:15,585 | Sinyal bekleniyor... Status:RUNNING Entry:4041.0
+2026-07-30 18:38:19,032 | Sinyal tarihi okundu: 30/07/2026 15:00
+2026-07-30 18:38:19,033 | SINYAL ATLANDI — Sinyal 218 dakika once uretildi (max: 60 dk). Sinyal tarihi: 30/07/2026 15:00.
+2026-07-30 18:38:19,033 | Sinyal bekleniyor... Status:RUNNING Entry:4041.0
+2026-07-30 18:38:23,245 | Sinyal tarihi okundu: 30/07/2026 15:00
+2026-07-30 18:38:23,246 | SINYAL ATLANDI — Sinyal 218 dakika once uretildi (max: 60 dk). Sinyal tarihi: 30/07/2026 15:00.
+2026-07-30 18:38:23,247 | Sinyal bekleniyor... Status:RUNNING Entry:4041.0
+2026-07-30 18:38:26,892 | Sinyal tarihi okundu: 30/07/2026 15:00
+2026-07-30 18:38:26,893 | SINYAL ATLANDI — Sinyal 218 dakika once uretildi (max: 60 dk). Sinyal tarihi: 30/07/2026 15:00.
+2026-07-30 18:38:26,893 | Sinyal bekleniyor... Status:RUNNING Entry:4041.0
+2026-07-30 18:38:30,652 | Sinyal tarihi okundu: 30/07/2026 15:00
+2026-07-30 18:38:30,653 | SINYAL ATLANDI — Sinyal 218 dakika once uretildi (max: 60 dk). Sinyal tarihi: 30/07/2026 15:00.
+2026-07-30 18:38:30,654 | Sinyal bekleniyor... Status:RUNNING Entry:4041.0
+2026-07-30 18:38:34,361 | Sinyal tarihi okundu: 30/07/2026 15:00
+2026-07-30 18:38:34,362 | SINYAL ATLANDI — Sinyal 218 dakika once uretildi (max: 60 dk). Sinyal tarihi: 30/07/2026 15:00.
+2026-07-30 18:38:34,363 | Sinyal bekleniyor... Status:RUNNING Entry:4041.0
+2026-07-30 18:38:38,480 | Sinyal tarihi okundu: 30/07/2026 15:00
+2026-07-30 18:38:38,482 | SINYAL ATLANDI — Sinyal 218 dakika once uretildi (max: 60 dk). Sinyal tarihi: 30/07/2026 15:00.
+2026-07-30 18:38:38,482 | Sinyal bekleniyor... Status:RUNNING Entry:4041.0
+2026-07-30 18:38:42,450 | Sinyal tarihi okundu: 30/07/2026 15:00
+2026-07-30 18:38:42,450 | SINYAL ATLANDI — Sinyal 218 dakika once uretildi (max: 60 dk). Sinyal tarihi: 30/07/2026 15:00.
+2026-07-30 18:38:42,450 | Sinyal bekleniyor... Status:RUNNING Entry:4041.0
+2026-07-30 18:38:45,913 | Sinyal tarihi okundu: 30/07/2026 15:00
+2026-07-30 18:38:45,913 | SINYAL ATLANDI — Sinyal 218 dakika once uretildi (max: 60 dk). Sinyal tarihi: 30/07/2026 15:00.
+2026-07-30 18:38:45,914 | Sinyal bekleniyor... Status:RUNNING Entry:4041.0
+2026-07-30 18:38:49,494 | Sinyal tarihi okundu: 30/07/2026 15:00
+2026-07-30 18:38:49,495 | SINYAL ATLANDI — Sinyal 218 dakika once uretildi (max: 60 dk). Sinyal tarihi: 30/07/2026 15:00.
+2026-07-30 18:38:49,495 | Sinyal bekleniyor... Status:RUNNING Entry:4041.0
+2026-07-30 18:38:53,423 | Sinyal tarihi okundu: 30/07/2026 15:00
+2026-07-30 18:38:53,423 | SINYAL ATLANDI — Sinyal 218 dakika once uretildi (max: 60 dk). Sinyal tarihi: 30/07/2026 15:00.
+2026-07-30 18:38:53,424 | Sinyal bekleniyor... Status:RUNNING Entry:4041.0
+2026-07-30 18:38:57,999 | Sinyal tarihi okundu: 30/07/2026 15:00
+2026-07-30 18:38:57,999 | SINYAL ATLANDI — Sinyal 218 dakika once uretildi (max: 60 dk). Sinyal tarihi: 30/07/2026 15:00.
+2026-07-30 18:38:58,000 | Sinyal bekleniyor... Status:RUNNING Entry:4041.0
