@@ -1,7 +1,3 @@
-[2026-07-31 16:03:45] Bekleyen emir iptal edildi: ticket=961639483
-[2026-07-31 16:03:45] Yeni sinyal alindi: #MANUEL SELL @ 4041
-[2026-07-31 16:03:45] Manuel emir: EMA/Streak filtreleri atlaniyor — SELL @ 4041
-[2026-07-31 16:03:45] Emir turu: SELL_STOP (fiyat=4042.02 > entry=4041.0)
 2026-07-31 16:03:45.452 | T4 | SELL@4041.0 | order_send cagrilacak
 2026-07-31 16:03:45.467 | T5 | SELL@4041.0 | order_send sonucu: basarili
 [2026-07-31 16:03:45] Islem acildi: 961785263 | SELL @ 4041.0 | SL:4046.0 | TP1:4038.0 TP2:4036.0 TP3:4033.0
@@ -78,3 +74,7 @@
 [2026-07-31 16:29:03] Heartbeat: 0 aktif islem | Bakiye: 609.10 USD
 [2026-07-31 16:29:33] Heartbeat: 0 aktif islem | Bakiye: 609.10 USD
 [2026-07-31 16:30:03] Heartbeat: 0 aktif islem | Bakiye: 609.10 USD
+[2026-07-31 16:30:33] Heartbeat: 0 aktif islem | Bakiye: 609.10 USD
+[2026-07-31 16:31:03] Heartbeat: 0 aktif islem | Bakiye: 609.10 USD
+[2026-07-31 16:31:34] Heartbeat: 0 aktif islem | Bakiye: 609.10 USD
+[2026-07-31 16:32:04] Heartbeat: 0 aktif islem | Bakiye: 609.10 USD
