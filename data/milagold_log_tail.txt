@@ -1,9 +1,3 @@
-2026-07-31 06:38:29.212 | T4 | SELL@4074.0 | order_send cagrilacak
-2026-07-31 06:38:29.225 | T5 | SELL@4074.0 | order_send sonucu: basarili
-[2026-07-31 06:38:29] Islem acildi: 961185787 | SELL @ 4074.0 | SL:4079.0 | TP1:4071.0 TP2:4069.0 TP3:4066.0
-[2026-07-31 06:38:29] Hafizadaki sinyal girildi: ticket=961185787
-[2026-07-31 06:38:31] Heartbeat: 1 aktif islem | Bakiye: 616.74 USD
-[2026-07-31 06:39:01] Heartbeat: 1 aktif islem | Bakiye: 616.74 USD
 2026-07-31 06:39:20.643 | T3 | SELL@4076.0 | signal.json okundu (MT5 agent)
 [2026-07-31 06:39:20] Yeni sinyal geldi, bekleyen emir iptal ediliyor: ticket=961185787 (SELL @ 4074.0)
 [2026-07-31 06:39:20] Bekleyen emir iptal edildi: ticket=961185787
@@ -78,3 +72,9 @@
 [2026-07-31 07:06:10] Heartbeat: 1 aktif islem | Bakiye: 616.74 USD
 [2026-07-31 07:06:40] Heartbeat: 1 aktif islem | Bakiye: 616.74 USD
 [2026-07-31 07:07:10] Heartbeat: 1 aktif islem | Bakiye: 616.74 USD
+2026-07-31 07:07:39.073 | T3 | SELL@4075.0 | signal.json okundu (MT5 agent)
+[2026-07-31 07:07:39] Yeni sinyal daha kotu entry, sl_level=0. Eski pozisyon tutuldu, sinyal hafizaya alindi: #None@4075.0
+[2026-07-31 07:07:41] Heartbeat: 1 aktif islem | Bakiye: 616.74 USD
+[2026-07-31 07:08:11] Heartbeat: 1 aktif islem | Bakiye: 616.74 USD
+[2026-07-31 07:08:41] Heartbeat: 1 aktif islem | Bakiye: 616.74 USD
+[2026-07-31 07:09:11] Heartbeat: 1 aktif islem | Bakiye: 616.74 USD
