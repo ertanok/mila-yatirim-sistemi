@@ -1,80 +1,80 @@
-[2026-07-31 12:27:32] Heartbeat: 1 aktif islem | Bakiye: 609.66 USD
-[2026-07-31 12:28:02] Heartbeat: 1 aktif islem | Bakiye: 609.66 USD
-[2026-07-31 12:28:33] Heartbeat: 1 aktif islem | Bakiye: 609.66 USD
-[2026-07-31 12:29:03] Heartbeat: 1 aktif islem | Bakiye: 609.66 USD
-[2026-07-31 12:29:33] Heartbeat: 1 aktif islem | Bakiye: 609.66 USD
-[2026-07-31 12:30:03] Heartbeat: 1 aktif islem | Bakiye: 609.66 USD
-[2026-07-31 12:30:33] Heartbeat: 1 aktif islem | Bakiye: 609.66 USD
-2026-07-31 12:30:46.026 | T3 | SELL@4076.0 | signal.json okundu (MT5 agent)
-[2026-07-31 12:30:46] Yeni sinyal geldi, bekleyen emir iptal ediliyor: ticket=961487735 (SELL @ 4076.0)
-[2026-07-31 12:30:46] Bekleyen emir iptal edildi: ticket=961487735
-[2026-07-31 12:30:46] Yeni sinyal alindi: #None SELL @ 4076.0
-[2026-07-31 12:30:46] EMA filtresi: SELL ONAYLANDI — fiyat=4053.91 <= EMA20=4059.20
-[2026-07-31 12:30:46] Streak filtresi: SELL ONAYLANDI — EMA100 streak=39 >= 13
-[2026-07-31 12:30:46] Emir turu: SELL_LIMIT (fiyat=4053.91 <= entry=4076.0)
-2026-07-31 12:30:46.081 | T4 | SELL@4076.0 | order_send cagrilacak
-2026-07-31 12:30:46.112 | T5 | SELL@4076.0 | order_send sonucu: basarili
-[2026-07-31 12:30:46] Islem acildi: 961525558 | SELL @ 4076.0 | SL:4081.0 | TP1:4073.0 TP2:4071.0 TP3:4068.0
-[2026-07-31 12:31:04] Heartbeat: 1 aktif islem | Bakiye: 609.66 USD
-[2026-07-31 12:31:34] Heartbeat: 1 aktif islem | Bakiye: 609.66 USD
-[2026-07-31 12:32:04] Heartbeat: 1 aktif islem | Bakiye: 609.66 USD
-[2026-07-31 12:32:34] Heartbeat: 1 aktif islem | Bakiye: 609.66 USD
-[2026-07-31 12:33:04] Heartbeat: 1 aktif islem | Bakiye: 609.66 USD
-[2026-07-31 12:33:35] Heartbeat: 1 aktif islem | Bakiye: 609.66 USD
-[2026-07-31 12:34:05] Heartbeat: 1 aktif islem | Bakiye: 609.66 USD
-[2026-07-31 12:34:35] Heartbeat: 1 aktif islem | Bakiye: 609.66 USD
-[2026-07-31 12:35:05] Heartbeat: 1 aktif islem | Bakiye: 609.66 USD
-[2026-07-31 12:35:35] Heartbeat: 1 aktif islem | Bakiye: 609.66 USD
-[2026-07-31 12:36:06] Heartbeat: 1 aktif islem | Bakiye: 609.66 USD
-[2026-07-31 12:36:36] Heartbeat: 1 aktif islem | Bakiye: 609.66 USD
-[2026-07-31 12:37:06] Heartbeat: 1 aktif islem | Bakiye: 609.66 USD
-[2026-07-31 12:37:36] Heartbeat: 1 aktif islem | Bakiye: 609.66 USD
-[2026-07-31 12:38:06] Heartbeat: 1 aktif islem | Bakiye: 609.66 USD
-[2026-07-31 12:38:37] Heartbeat: 1 aktif islem | Bakiye: 609.66 USD
-[2026-07-31 12:39:07] Heartbeat: 1 aktif islem | Bakiye: 609.66 USD
-[2026-07-31 12:39:37] Heartbeat: 1 aktif islem | Bakiye: 609.66 USD
-[2026-07-31 12:40:07] Heartbeat: 1 aktif islem | Bakiye: 609.66 USD
-[2026-07-31 12:40:37] Heartbeat: 1 aktif islem | Bakiye: 609.66 USD
-[2026-07-31 12:41:08] Heartbeat: 1 aktif islem | Bakiye: 609.66 USD
-[2026-07-31 12:41:38] Heartbeat: 1 aktif islem | Bakiye: 609.66 USD
-[2026-07-31 12:42:08] Heartbeat: 1 aktif islem | Bakiye: 609.66 USD
-[2026-07-31 12:42:38] Heartbeat: 1 aktif islem | Bakiye: 609.66 USD
-[2026-07-31 12:43:08] Heartbeat: 1 aktif islem | Bakiye: 609.66 USD
-[2026-07-31 12:43:39] Heartbeat: 1 aktif islem | Bakiye: 609.66 USD
-[2026-07-31 12:44:09] Heartbeat: 1 aktif islem | Bakiye: 609.66 USD
-[2026-07-31 12:44:39] Heartbeat: 1 aktif islem | Bakiye: 609.66 USD
-[2026-07-31 12:45:09] Heartbeat: 1 aktif islem | Bakiye: 609.66 USD
-[2026-07-31 12:45:40] Heartbeat: 1 aktif islem | Bakiye: 609.66 USD
-[2026-07-31 12:46:10] Heartbeat: 1 aktif islem | Bakiye: 609.66 USD
-[2026-07-31 12:46:38] Hata: symbol_info_tick None dondu
-[2026-07-31 12:46:43] Heartbeat: 1 aktif islem | Bakiye: ? USD
-[2026-07-31 12:46:43] Hata: symbol_info_tick None dondu
-[2026-07-31 12:46:48] Hata: symbol_info_tick None dondu
-[2026-07-31 12:46:53] Hata: symbol_info_tick None dondu
-[2026-07-31 12:46:58] Hata: symbol_info_tick None dondu
-[2026-07-31 12:47:03] Hata: symbol_info_tick None dondu
-[2026-07-31 12:47:08] Hata: symbol_info_tick None dondu
-[2026-07-31 12:47:13] Heartbeat: 1 aktif islem | Bakiye: ? USD
-[2026-07-31 12:47:13] Hata: symbol_info_tick None dondu
-[2026-07-31 12:47:18] Hata: symbol_info_tick None dondu
-[2026-07-31 12:47:23] Hata: symbol_info_tick None dondu
-[2026-07-31 12:47:28] Hata: symbol_info_tick None dondu
-[2026-07-31 12:47:33] Hata: symbol_info_tick None dondu
-[2026-07-31 12:47:38] Hata: symbol_info_tick None dondu
-[2026-07-31 12:47:43] Heartbeat: 1 aktif islem | Bakiye: ? USD
-[2026-07-31 12:47:43] Hata: symbol_info_tick None dondu
-[2026-07-31 12:47:48] Hata: symbol_info_tick None dondu
-[2026-07-31 12:47:54] Hata: symbol_info_tick None dondu
-[2026-07-31 12:47:59] Hata: symbol_info_tick None dondu
-[2026-07-31 12:48:04] Hata: symbol_info_tick None dondu
-[2026-07-31 12:48:09] Hata: symbol_info_tick None dondu
-[2026-07-31 12:48:14] Heartbeat: 1 aktif islem | Bakiye: ? USD
-[2026-07-31 12:48:14] Hata: symbol_info_tick None dondu
-[2026-07-31 12:48:19] Hata: symbol_info_tick None dondu
-[2026-07-31 12:48:24] Hata: symbol_info_tick None dondu
-[2026-07-31 12:48:29] Hata: symbol_info_tick None dondu
-[2026-07-31 12:48:34] Hata: symbol_info_tick None dondu
-[2026-07-31 12:48:39] Hata: symbol_info_tick None dondu
-[2026-07-31 12:48:44] Heartbeat: 1 aktif islem | Bakiye: ? USD
-[2026-07-31 12:48:44] Hata: symbol_info_tick None dondu
-[2026-07-31 12:48:49] Hata: symbol_info_tick None dondu
+[2026-07-31 12:49:55] open_trade: tick alinamadi
+[2026-07-31 12:49:55] [MilaGold] UYARI: Emir gonderilemedi (order_send None): SELL @ 4052. Sonraki dongude tekrar denenecek.
+[2026-07-31 12:49:55] Hata: symbol_info_tick None dondu
+[2026-07-31 12:50:00] Yeni sinyal alindi: #MANUEL SELL @ 4052
+[2026-07-31 12:50:00] Manuel emir: EMA/Streak filtreleri atlaniyor — SELL @ 4052
+[2026-07-31 12:50:00] open_trade: tick alinamadi
+[2026-07-31 12:50:00] [MilaGold] UYARI: Emir gonderilemedi (order_send None): SELL @ 4052. Sonraki dongude tekrar denenecek.
+[2026-07-31 12:50:00] Hata: symbol_info_tick None dondu
+[2026-07-31 12:50:05] Yeni sinyal alindi: #MANUEL SELL @ 4052
+[2026-07-31 12:50:05] Manuel emir: EMA/Streak filtreleri atlaniyor — SELL @ 4052
+[2026-07-31 12:50:05] open_trade: tick alinamadi
+[2026-07-31 12:50:05] [MilaGold] UYARI: Emir gonderilemedi (order_send None): SELL @ 4052. Sonraki dongude tekrar denenecek.
+[2026-07-31 12:50:05] Hata: symbol_info_tick None dondu
+[2026-07-31 12:50:10] Yeni sinyal alindi: #MANUEL SELL @ 4052
+[2026-07-31 12:50:10] Manuel emir: EMA/Streak filtreleri atlaniyor — SELL @ 4052
+[2026-07-31 12:50:10] open_trade: tick alinamadi
+[2026-07-31 12:50:10] [MilaGold] UYARI: Emir gonderilemedi (order_send None): SELL @ 4052. Sonraki dongude tekrar denenecek.
+[2026-07-31 12:50:10] Hata: symbol_info_tick None dondu
+[2026-07-31 12:50:15] Heartbeat: 1 aktif islem | Bakiye: ? USD
+[2026-07-31 12:50:15] Yeni sinyal alindi: #MANUEL SELL @ 4052
+[2026-07-31 12:50:15] Manuel emir: EMA/Streak filtreleri atlaniyor — SELL @ 4052
+[2026-07-31 12:50:15] open_trade: tick alinamadi
+[2026-07-31 12:50:15] [MilaGold] UYARI: Emir gonderilemedi (order_send None): SELL @ 4052. Sonraki dongude tekrar denenecek.
+[2026-07-31 12:50:16] Hata: symbol_info_tick None dondu
+[2026-07-31 12:50:21] Yeni sinyal alindi: #MANUEL SELL @ 4052
+[2026-07-31 12:50:21] Manuel emir: EMA/Streak filtreleri atlaniyor — SELL @ 4052
+[2026-07-31 12:50:21] open_trade: tick alinamadi
+[2026-07-31 12:50:21] [MilaGold] UYARI: Emir gonderilemedi (order_send None): SELL @ 4052. Sonraki dongude tekrar denenecek.
+[2026-07-31 12:50:21] Hata: symbol_info_tick None dondu
+[2026-07-31 12:50:26] Yeni sinyal alindi: #MANUEL SELL @ 4052
+[2026-07-31 12:50:26] Manuel emir: EMA/Streak filtreleri atlaniyor — SELL @ 4052
+[2026-07-31 12:50:26] open_trade: tick alinamadi
+[2026-07-31 12:50:26] [MilaGold] UYARI: Emir gonderilemedi (order_send None): SELL @ 4052. Sonraki dongude tekrar denenecek.
+[2026-07-31 12:50:26] Hata: symbol_info_tick None dondu
+[2026-07-31 12:50:31] Yeni sinyal alindi: #MANUEL SELL @ 4052
+[2026-07-31 12:50:31] Manuel emir: EMA/Streak filtreleri atlaniyor — SELL @ 4052
+[2026-07-31 12:50:31] open_trade: tick alinamadi
+[2026-07-31 12:50:31] [MilaGold] UYARI: Emir gonderilemedi (order_send None): SELL @ 4052. Sonraki dongude tekrar denenecek.
+[2026-07-31 12:50:31] Hata: symbol_info_tick None dondu
+[2026-07-31 12:50:36] Yeni sinyal alindi: #MANUEL SELL @ 4052
+[2026-07-31 12:50:36] Manuel emir: EMA/Streak filtreleri atlaniyor — SELL @ 4052
+[2026-07-31 12:50:37] open_trade: tick alinamadi
+[2026-07-31 12:50:37] [MilaGold] UYARI: Emir gonderilemedi (order_send None): SELL @ 4052. Sonraki dongude tekrar denenecek.
+[2026-07-31 12:50:37] Hata: symbol_info_tick None dondu
+[2026-07-31 12:50:42] Yeni sinyal alindi: #MANUEL SELL @ 4052
+[2026-07-31 12:50:42] Manuel emir: EMA/Streak filtreleri atlaniyor — SELL @ 4052
+[2026-07-31 12:50:42] open_trade: tick alinamadi
+[2026-07-31 12:50:42] [MilaGold] UYARI: Emir gonderilemedi (order_send None): SELL @ 4052. Sonraki dongude tekrar denenecek.
+[2026-07-31 12:50:43] Hata: symbol_info_tick None dondu
+[2026-07-31 12:50:48] Heartbeat: 1 aktif islem | Bakiye: ? USD
+[2026-07-31 12:50:48] Yeni sinyal alindi: #MANUEL SELL @ 4052
+[2026-07-31 12:50:48] Manuel emir: EMA/Streak filtreleri atlaniyor — SELL @ 4052
+[2026-07-31 12:50:48] open_trade: tick alinamadi
+[2026-07-31 12:50:48] [MilaGold] UYARI: Emir gonderilemedi (order_send None): SELL @ 4052. Sonraki dongude tekrar denenecek.
+[2026-07-31 12:50:48] Hata: symbol_info_tick None dondu
+[2026-07-31 12:52:10] MilaGold MT5 Agent basliyor...
+[2026-07-31 12:52:10] MT5 baglandi. Bakiye: 609.66 USD
+[2026-07-31 12:52:10] Orphan bekleyen emir alindi: ticket=961525558 SELL @ 4076.0
+[2026-07-31 12:52:11] Baslangic bakiyesi: 609.66 USD
+[2026-07-31 12:52:11] Hazir. 1 aktif islem devralindi. signal.json bekleniyor...
+2026-07-31 12:52:11.309 | T3 | SELL@4052 | signal.json okundu (MT5 agent)
+[2026-07-31 12:52:11] Yeni sinyal geldi, bekleyen emir iptal ediliyor: ticket=961525558 (SELL @ 4076.0)
+[2026-07-31 12:52:11] Bekleyen emir iptal edildi: ticket=961525558
+[2026-07-31 12:52:11] Yeni sinyal alindi: #MANUEL SELL @ 4052
+[2026-07-31 12:52:11] Manuel emir: EMA/Streak filtreleri atlaniyor — SELL @ 4052
+[2026-07-31 12:52:11] Emir turu: SELL_STOP (fiyat=4056.54 > entry=4052.0)
+2026-07-31 12:52:11.507 | T4 | SELL@4052.0 | order_send cagrilacak
+2026-07-31 12:52:11.526 | T5 | SELL@4052.0 | order_send sonucu: basarili
+[2026-07-31 12:52:11] Islem acildi: 961546261 | SELL @ 4052.0 | SL:4057.0 | TP1:4049.0 TP2:4047.0 TP3:4044.0
+[2026-07-31 12:52:41] Heartbeat: 1 aktif islem | Bakiye: 609.66 USD
+2026-07-31 12:52:44.829 | T3 | SELL@4053 | signal.json okundu (MT5 agent)
+[2026-07-31 12:52:44] Yeni sinyal geldi, bekleyen emir iptal ediliyor: ticket=961546261 (SELL @ 4052)
+[2026-07-31 12:52:44] Bekleyen emir iptal edildi: ticket=961546261
+[2026-07-31 12:52:44] Yeni sinyal alindi: #MANUEL SELL @ 4053
+[2026-07-31 12:52:44] Manuel emir: EMA/Streak filtreleri atlaniyor — SELL @ 4053
+[2026-07-31 12:52:44] Emir turu: SELL_STOP (fiyat=4056.14 > entry=4053.0)
+2026-07-31 12:52:44.861 | T4 | SELL@4053.0 | order_send cagrilacak
+2026-07-31 12:52:44.881 | T5 | SELL@4053.0 | order_send sonucu: basarili
+[2026-07-31 12:52:44] Islem acildi: 961546542 | SELL @ 4053.0 | SL:4058.0 | TP1:4050.0 TP2:4048.0 TP3:4045.0
+[2026-07-31 12:53:12] Heartbeat: 1 aktif islem | Bakiye: 609.66 USD
