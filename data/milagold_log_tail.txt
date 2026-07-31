@@ -1,7 +1,3 @@
-[2026-07-31 12:50:10] open_trade: tick alinamadi
-[2026-07-31 12:50:10] [MilaGold] UYARI: Emir gonderilemedi (order_send None): SELL @ 4052. Sonraki dongude tekrar denenecek.
-[2026-07-31 12:50:10] Hata: symbol_info_tick None dondu
-[2026-07-31 12:50:15] Heartbeat: 1 aktif islem | Bakiye: ? USD
 [2026-07-31 12:50:15] Yeni sinyal alindi: #MANUEL SELL @ 4052
 [2026-07-31 12:50:15] Manuel emir: EMA/Streak filtreleri atlaniyor — SELL @ 4052
 [2026-07-31 12:50:15] open_trade: tick alinamadi
@@ -78,3 +74,7 @@
 [2026-07-31 12:58:44] Heartbeat: 1 aktif islem | Bakiye: 609.66 USD
 [2026-07-31 12:59:14] Heartbeat: 1 aktif islem | Bakiye: 609.66 USD
 [2026-07-31 12:59:44] Heartbeat: 1 aktif islem | Bakiye: 609.66 USD
+[2026-07-31 13:00:15] Heartbeat: 1 aktif islem | Bakiye: 609.66 USD
+[2026-07-31 13:00:45] Heartbeat: 1 aktif islem | Bakiye: 609.66 USD
+[2026-07-31 13:01:15] Heartbeat: 1 aktif islem | Bakiye: 609.66 USD
+[2026-07-31 13:01:45] Heartbeat: 1 aktif islem | Bakiye: 609.66 USD
