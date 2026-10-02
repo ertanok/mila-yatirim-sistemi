@@ -1,11 +1,11 @@
 {
-  "timestamp": "2026-10-02 10:32:24",
+  "timestamp": "2026-10-02 10:34:43",
   "ocr_agent": {
-    "status": "YAVAS",
-    "son_log_saniye": 113
+    "status": "AKTIF",
+    "son_log_saniye": 11
   },
   "mt5_agent": {
     "status": "AKTIF",
-    "son_log_saniye": 20
+    "son_log_saniye": 7
   }
 }
