@@ -9,7 +9,7 @@
 	KERNEL32!BaseThreadInitThunk [0x7ffff0214cb0+10]
 	ntdll!RtlUserThreadStart [0x7ffff13bedeb+2b]
 
-2026-10-03 23:05:40,655 | Dongu hatasi: Message: no such window: target window already closed
+2026-10-03 23:10:59,403 | Dongu hatasi: Message: no such window: target window already closed
 from unknown error: web view not found
   (Session info: chrome=152.0.7977.84)
 Stacktrace:
@@ -32,7 +32,7 @@ Stacktrace:
 	KERNEL32!BaseThreadInitThunk [0x7ffff0214cb0+10]
 	ntdll!RtlUserThreadStart [0x7ffff13bedeb+2b]
 
-2026-10-03 23:05:43,664 | Dongu hatasi: Message: no such window: target window already closed
+2026-10-03 23:11:02,415 | Dongu hatasi: Message: no such window: target window already closed
 from unknown error: web view not found
   (Session info: chrome=152.0.7977.84)
 Stacktrace:
@@ -55,7 +55,7 @@ Stacktrace:
 	KERNEL32!BaseThreadInitThunk [0x7ffff0214cb0+10]
 	ntdll!RtlUserThreadStart [0x7ffff13bedeb+2b]
 
-2026-10-03 23:05:46,671 | Dongu hatasi: Message: no such window: target window already closed
+2026-10-03 23:11:05,425 | Dongu hatasi: Message: no such window: target window already closed
 from unknown error: web view not found
   (Session info: chrome=152.0.7977.84)
 Stacktrace:
