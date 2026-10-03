@@ -1,80 +1,79 @@
-2026-10-03 17:32:14,977 | Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPConnectionPool(host='localhost', port=60850): Read timed out. (read timeout=120)")': /session/efaad293ba642641e88a930450ddf311/screenshot
-2026-10-03 17:34:14,997 | Dongu hatasi: HTTPConnectionPool(host='localhost', port=60850): Max retries exceeded with url: /session/efaad293ba642641e88a930450ddf311/screenshot (Caused by ReadTimeoutError("HTTPConnectionPool(host='localhost', port=60850): Read timed out. (read timeout=120)"))
-2026-10-03 17:38:18,057 | Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPConnectionPool(host='localhost', port=60850): Read timed out. (read timeout=120)")': /session/efaad293ba642641e88a930450ddf311/screenshot
-2026-10-03 17:40:18,095 | Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPConnectionPool(host='localhost', port=60850): Read timed out. (read timeout=120)")': /session/efaad293ba642641e88a930450ddf311/screenshot
-2026-10-03 17:42:18,113 | Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPConnectionPool(host='localhost', port=60850): Read timed out. (read timeout=120)")': /session/efaad293ba642641e88a930450ddf311/screenshot
-2026-10-03 17:44:18,153 | Dongu hatasi: HTTPConnectionPool(host='localhost', port=60850): Max retries exceeded with url: /session/efaad293ba642641e88a930450ddf311/screenshot (Caused by ReadTimeoutError("HTTPConnectionPool(host='localhost', port=60850): Read timed out. (read timeout=120)"))
-2026-10-03 17:48:21,218 | Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPConnectionPool(host='localhost', port=60850): Read timed out. (read timeout=120)")': /session/efaad293ba642641e88a930450ddf311/screenshot
-2026-10-03 17:50:21,237 | Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPConnectionPool(host='localhost', port=60850): Read timed out. (read timeout=120)")': /session/efaad293ba642641e88a930450ddf311/screenshot
-2026-10-03 17:52:21,266 | Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPConnectionPool(host='localhost', port=60850): Read timed out. (read timeout=120)")': /session/efaad293ba642641e88a930450ddf311/screenshot
-2026-10-03 17:54:21,291 | Dongu hatasi: HTTPConnectionPool(host='localhost', port=60850): Max retries exceeded with url: /session/efaad293ba642641e88a930450ddf311/screenshot (Caused by ReadTimeoutError("HTTPConnectionPool(host='localhost', port=60850): Read timed out. (read timeout=120)"))
-2026-10-03 17:58:24,331 | Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPConnectionPool(host='localhost', port=60850): Read timed out. (read timeout=120)")': /session/efaad293ba642641e88a930450ddf311/screenshot
-2026-10-03 18:00:24,347 | Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPConnectionPool(host='localhost', port=60850): Read timed out. (read timeout=120)")': /session/efaad293ba642641e88a930450ddf311/screenshot
-2026-10-03 18:02:24,370 | Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPConnectionPool(host='localhost', port=60850): Read timed out. (read timeout=120)")': /session/efaad293ba642641e88a930450ddf311/screenshot
-2026-10-03 18:04:24,392 | Dongu hatasi: HTTPConnectionPool(host='localhost', port=60850): Max retries exceeded with url: /session/efaad293ba642641e88a930450ddf311/screenshot (Caused by ReadTimeoutError("HTTPConnectionPool(host='localhost', port=60850): Read timed out. (read timeout=120)"))
-2026-10-03 18:08:27,451 | Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPConnectionPool(host='localhost', port=60850): Read timed out. (read timeout=120)")': /session/efaad293ba642641e88a930450ddf311/screenshot
-2026-10-03 18:10:27,479 | Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPConnectionPool(host='localhost', port=60850): Read timed out. (read timeout=120)")': /session/efaad293ba642641e88a930450ddf311/screenshot
-2026-10-03 18:12:27,491 | Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPConnectionPool(host='localhost', port=60850): Read timed out. (read timeout=120)")': /session/efaad293ba642641e88a930450ddf311/screenshot
-2026-10-03 18:14:27,513 | Dongu hatasi: HTTPConnectionPool(host='localhost', port=60850): Max retries exceeded with url: /session/efaad293ba642641e88a930450ddf311/screenshot (Caused by ReadTimeoutError("HTTPConnectionPool(host='localhost', port=60850): Read timed out. (read timeout=120)"))
-2026-10-03 18:18:30,566 | Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPConnectionPool(host='localhost', port=60850): Read timed out. (read timeout=120)")': /session/efaad293ba642641e88a930450ddf311/screenshot
-2026-10-03 18:20:30,589 | Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPConnectionPool(host='localhost', port=60850): Read timed out. (read timeout=120)")': /session/efaad293ba642641e88a930450ddf311/screenshot
-2026-10-03 18:22:30,610 | Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPConnectionPool(host='localhost', port=60850): Read timed out. (read timeout=120)")': /session/efaad293ba642641e88a930450ddf311/screenshot
-2026-10-03 18:24:30,631 | Dongu hatasi: HTTPConnectionPool(host='localhost', port=60850): Max retries exceeded with url: /session/efaad293ba642641e88a930450ddf311/screenshot (Caused by ReadTimeoutError("HTTPConnectionPool(host='localhost', port=60850): Read timed out. (read timeout=120)"))
-2026-10-03 18:28:33,669 | Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPConnectionPool(host='localhost', port=60850): Read timed out. (read timeout=120)")': /session/efaad293ba642641e88a930450ddf311/screenshot
-2026-10-03 18:30:33,714 | Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPConnectionPool(host='localhost', port=60850): Read timed out. (read timeout=120)")': /session/efaad293ba642641e88a930450ddf311/screenshot
-2026-10-03 18:32:33,765 | Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPConnectionPool(host='localhost', port=60850): Read timed out. (read timeout=120)")': /session/efaad293ba642641e88a930450ddf311/screenshot
-2026-10-03 18:34:33,796 | Dongu hatasi: HTTPConnectionPool(host='localhost', port=60850): Max retries exceeded with url: /session/efaad293ba642641e88a930450ddf311/screenshot (Caused by ReadTimeoutError("HTTPConnectionPool(host='localhost', port=60850): Read timed out. (read timeout=120)"))
-2026-10-03 18:38:36,863 | Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPConnectionPool(host='localhost', port=60850): Read timed out. (read timeout=120)")': /session/efaad293ba642641e88a930450ddf311/screenshot
-2026-10-03 18:40:36,898 | Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPConnectionPool(host='localhost', port=60850): Read timed out. (read timeout=120)")': /session/efaad293ba642641e88a930450ddf311/screenshot
-2026-10-03 18:42:36,944 | Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPConnectionPool(host='localhost', port=60850): Read timed out. (read timeout=120)")': /session/efaad293ba642641e88a930450ddf311/screenshot
-2026-10-03 18:44:36,976 | Dongu hatasi: HTTPConnectionPool(host='localhost', port=60850): Max retries exceeded with url: /session/efaad293ba642641e88a930450ddf311/screenshot (Caused by ReadTimeoutError("HTTPConnectionPool(host='localhost', port=60850): Read timed out. (read timeout=120)"))
-2026-10-03 18:48:40,060 | Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPConnectionPool(host='localhost', port=60850): Read timed out. (read timeout=120)")': /session/efaad293ba642641e88a930450ddf311/screenshot
-2026-10-03 18:50:40,087 | Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPConnectionPool(host='localhost', port=60850): Read timed out. (read timeout=120)")': /session/efaad293ba642641e88a930450ddf311/screenshot
-2026-10-03 18:52:40,119 | Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPConnectionPool(host='localhost', port=60850): Read timed out. (read timeout=120)")': /session/efaad293ba642641e88a930450ddf311/screenshot
-2026-10-03 18:54:40,162 | Dongu hatasi: HTTPConnectionPool(host='localhost', port=60850): Max retries exceeded with url: /session/efaad293ba642641e88a930450ddf311/screenshot (Caused by ReadTimeoutError("HTTPConnectionPool(host='localhost', port=60850): Read timed out. (read timeout=120)"))
-2026-10-03 18:58:43,213 | Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPConnectionPool(host='localhost', port=60850): Read timed out. (read timeout=120)")': /session/efaad293ba642641e88a930450ddf311/screenshot
-2026-10-03 19:00:43,230 | Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPConnectionPool(host='localhost', port=60850): Read timed out. (read timeout=120)")': /session/efaad293ba642641e88a930450ddf311/screenshot
-2026-10-03 19:02:43,252 | Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPConnectionPool(host='localhost', port=60850): Read timed out. (read timeout=120)")': /session/efaad293ba642641e88a930450ddf311/screenshot
-2026-10-03 19:04:43,278 | Dongu hatasi: HTTPConnectionPool(host='localhost', port=60850): Max retries exceeded with url: /session/efaad293ba642641e88a930450ddf311/screenshot (Caused by ReadTimeoutError("HTTPConnectionPool(host='localhost', port=60850): Read timed out. (read timeout=120)"))
-2026-10-03 19:08:46,336 | Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPConnectionPool(host='localhost', port=60850): Read timed out. (read timeout=120)")': /session/efaad293ba642641e88a930450ddf311/screenshot
-2026-10-03 19:10:46,361 | Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPConnectionPool(host='localhost', port=60850): Read timed out. (read timeout=120)")': /session/efaad293ba642641e88a930450ddf311/screenshot
-2026-10-03 19:12:46,376 | Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPConnectionPool(host='localhost', port=60850): Read timed out. (read timeout=120)")': /session/efaad293ba642641e88a930450ddf311/screenshot
-2026-10-03 19:14:46,422 | Dongu hatasi: HTTPConnectionPool(host='localhost', port=60850): Max retries exceeded with url: /session/efaad293ba642641e88a930450ddf311/screenshot (Caused by ReadTimeoutError("HTTPConnectionPool(host='localhost', port=60850): Read timed out. (read timeout=120)"))
-2026-10-03 19:18:49,477 | Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPConnectionPool(host='localhost', port=60850): Read timed out. (read timeout=120)")': /session/efaad293ba642641e88a930450ddf311/screenshot
-2026-10-03 19:20:49,503 | Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPConnectionPool(host='localhost', port=60850): Read timed out. (read timeout=120)")': /session/efaad293ba642641e88a930450ddf311/screenshot
-2026-10-03 19:22:49,528 | Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPConnectionPool(host='localhost', port=60850): Read timed out. (read timeout=120)")': /session/efaad293ba642641e88a930450ddf311/screenshot
-2026-10-03 19:24:49,570 | Dongu hatasi: HTTPConnectionPool(host='localhost', port=60850): Max retries exceeded with url: /session/efaad293ba642641e88a930450ddf311/screenshot (Caused by ReadTimeoutError("HTTPConnectionPool(host='localhost', port=60850): Read timed out. (read timeout=120)"))
-2026-10-03 19:28:52,621 | Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPConnectionPool(host='localhost', port=60850): Read timed out. (read timeout=120)")': /session/efaad293ba642641e88a930450ddf311/screenshot
-2026-10-03 19:30:52,645 | Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPConnectionPool(host='localhost', port=60850): Read timed out. (read timeout=120)")': /session/efaad293ba642641e88a930450ddf311/screenshot
-2026-10-03 19:32:52,667 | Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPConnectionPool(host='localhost', port=60850): Read timed out. (read timeout=120)")': /session/efaad293ba642641e88a930450ddf311/screenshot
-2026-10-03 19:34:52,694 | Dongu hatasi: HTTPConnectionPool(host='localhost', port=60850): Max retries exceeded with url: /session/efaad293ba642641e88a930450ddf311/screenshot (Caused by ReadTimeoutError("HTTPConnectionPool(host='localhost', port=60850): Read timed out. (read timeout=120)"))
-2026-10-03 19:38:55,746 | Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPConnectionPool(host='localhost', port=60850): Read timed out. (read timeout=120)")': /session/efaad293ba642641e88a930450ddf311/screenshot
-2026-10-03 19:40:55,771 | Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPConnectionPool(host='localhost', port=60850): Read timed out. (read timeout=120)")': /session/efaad293ba642641e88a930450ddf311/screenshot
-2026-10-03 19:42:55,799 | Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPConnectionPool(host='localhost', port=60850): Read timed out. (read timeout=120)")': /session/efaad293ba642641e88a930450ddf311/screenshot
-2026-10-03 19:44:55,824 | Dongu hatasi: HTTPConnectionPool(host='localhost', port=60850): Max retries exceeded with url: /session/efaad293ba642641e88a930450ddf311/screenshot (Caused by ReadTimeoutError("HTTPConnectionPool(host='localhost', port=60850): Read timed out. (read timeout=120)"))
-2026-10-03 19:48:58,873 | Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPConnectionPool(host='localhost', port=60850): Read timed out. (read timeout=120)")': /session/efaad293ba642641e88a930450ddf311/screenshot
-2026-10-03 19:50:58,899 | Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPConnectionPool(host='localhost', port=60850): Read timed out. (read timeout=120)")': /session/efaad293ba642641e88a930450ddf311/screenshot
-2026-10-03 19:52:58,927 | Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPConnectionPool(host='localhost', port=60850): Read timed out. (read timeout=120)")': /session/efaad293ba642641e88a930450ddf311/screenshot
-2026-10-03 19:54:58,956 | Dongu hatasi: HTTPConnectionPool(host='localhost', port=60850): Max retries exceeded with url: /session/efaad293ba642641e88a930450ddf311/screenshot (Caused by ReadTimeoutError("HTTPConnectionPool(host='localhost', port=60850): Read timed out. (read timeout=120)"))
-2026-10-03 19:59:02,006 | Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPConnectionPool(host='localhost', port=60850): Read timed out. (read timeout=120)")': /session/efaad293ba642641e88a930450ddf311/screenshot
-2026-10-03 20:01:02,023 | Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPConnectionPool(host='localhost', port=60850): Read timed out. (read timeout=120)")': /session/efaad293ba642641e88a930450ddf311/screenshot
-2026-10-03 20:03:02,059 | Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPConnectionPool(host='localhost', port=60850): Read timed out. (read timeout=120)")': /session/efaad293ba642641e88a930450ddf311/screenshot
-2026-10-03 20:05:02,080 | Dongu hatasi: HTTPConnectionPool(host='localhost', port=60850): Max retries exceeded with url: /session/efaad293ba642641e88a930450ddf311/screenshot (Caused by ReadTimeoutError("HTTPConnectionPool(host='localhost', port=60850): Read timed out. (read timeout=120)"))
-2026-10-03 20:09:05,138 | Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPConnectionPool(host='localhost', port=60850): Read timed out. (read timeout=120)")': /session/efaad293ba642641e88a930450ddf311/screenshot
-2026-10-03 20:11:05,160 | Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPConnectionPool(host='localhost', port=60850): Read timed out. (read timeout=120)")': /session/efaad293ba642641e88a930450ddf311/screenshot
-2026-10-03 20:13:05,173 | Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPConnectionPool(host='localhost', port=60850): Read timed out. (read timeout=120)")': /session/efaad293ba642641e88a930450ddf311/screenshot
-2026-10-03 20:15:05,200 | Dongu hatasi: HTTPConnectionPool(host='localhost', port=60850): Max retries exceeded with url: /session/efaad293ba642641e88a930450ddf311/screenshot (Caused by ReadTimeoutError("HTTPConnectionPool(host='localhost', port=60850): Read timed out. (read timeout=120)"))
-2026-10-03 20:19:08,256 | Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPConnectionPool(host='localhost', port=60850): Read timed out. (read timeout=120)")': /session/efaad293ba642641e88a930450ddf311/screenshot
-2026-10-03 20:21:08,280 | Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPConnectionPool(host='localhost', port=60850): Read timed out. (read timeout=120)")': /session/efaad293ba642641e88a930450ddf311/screenshot
-2026-10-03 20:23:08,305 | Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPConnectionPool(host='localhost', port=60850): Read timed out. (read timeout=120)")': /session/efaad293ba642641e88a930450ddf311/screenshot
-2026-10-03 20:25:08,323 | Dongu hatasi: HTTPConnectionPool(host='localhost', port=60850): Max retries exceeded with url: /session/efaad293ba642641e88a930450ddf311/screenshot (Caused by ReadTimeoutError("HTTPConnectionPool(host='localhost', port=60850): Read timed out. (read timeout=120)"))
-2026-10-03 20:29:11,433 | Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPConnectionPool(host='localhost', port=60850): Read timed out. (read timeout=120)")': /session/efaad293ba642641e88a930450ddf311/screenshot
-2026-10-03 20:31:11,464 | Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPConnectionPool(host='localhost', port=60850): Read timed out. (read timeout=120)")': /session/efaad293ba642641e88a930450ddf311/screenshot
-2026-10-03 20:33:11,478 | Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPConnectionPool(host='localhost', port=60850): Read timed out. (read timeout=120)")': /session/efaad293ba642641e88a930450ddf311/screenshot
-2026-10-03 20:35:11,508 | Dongu hatasi: HTTPConnectionPool(host='localhost', port=60850): Max retries exceeded with url: /session/efaad293ba642641e88a930450ddf311/screenshot (Caused by ReadTimeoutError("HTTPConnectionPool(host='localhost', port=60850): Read timed out. (read timeout=120)"))
-2026-10-03 20:39:14,557 | Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPConnectionPool(host='localhost', port=60850): Read timed out. (read timeout=120)")': /session/efaad293ba642641e88a930450ddf311/screenshot
-2026-10-03 20:41:14,593 | Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPConnectionPool(host='localhost', port=60850): Read timed out. (read timeout=120)")': /session/efaad293ba642641e88a930450ddf311/screenshot
-2026-10-03 20:43:14,614 | Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPConnectionPool(host='localhost', port=60850): Read timed out. (read timeout=120)")': /session/efaad293ba642641e88a930450ddf311/screenshot
-2026-10-03 20:45:14,649 | Dongu hatasi: HTTPConnectionPool(host='localhost', port=60850): Max retries exceeded with url: /session/efaad293ba642641e88a930450ddf311/screenshot (Caused by ReadTimeoutError("HTTPConnectionPool(host='localhost', port=60850): Read timed out. (read timeout=120)"))
-2026-10-03 20:49:17,691 | Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPConnectionPool(host='localhost', port=60850): Read timed out. (read timeout=120)")': /session/efaad293ba642641e88a930450ddf311/screenshot
-2026-10-03 20:51:17,713 | Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPConnectionPool(host='localhost', port=60850): Read timed out. (read timeout=120)")': /session/efaad293ba642641e88a930450ddf311/screenshot
+	chromedriver!GetHandleVerifier [0x7ff72e6c2f8b+41a69b]
+	chromedriver!GetHandleVerifier [0x7ff72e6f0132+447842]
+	chromedriver!GetHandleVerifier [0x7ff72e6e3e7e+43b58e]
+	chromedriver!GetHandleVerifier [0x7ff72e3a3f5e+fb66e]
+	chromedriver!(No symbol) [0x7ff72e1e419c]
+	chromedriver!(No symbol) [0x7ff72e1dfdd4]
+	chromedriver!(No symbol) [0x7ff72e1dff64]
+	chromedriver!(No symbol) [0x7ff72e1ca91c]
+	KERNEL32!BaseThreadInitThunk [0x7ffff0214cb0+10]
+	ntdll!RtlUserThreadStart [0x7ffff13bedeb+2b]
+
+2026-10-03 20:54:51,549 | Dongu hatasi: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=152.0.7977.84)
+Stacktrace:
+	chromedriver!GetHandleVerifier [0x7ff72e2ae035+5745]
+	chromedriver!(No symbol) [0x7ff72e1d6a90]
+	chromedriver!(No symbol) [0x7ff72e005d7d]
+	chromedriver!(No symbol) [0x7ff72dfdcd42]
+	chromedriver!(No symbol) [0x7ff72e090976]
+	chromedriver!(No symbol) [0x7ff72e0adddd]
+	chromedriver!(No symbol) [0x7ff72e052e4b]
+	chromedriver!(No symbol) [0x7ff72e053d83]
+	chromedriver!GetHandleVerifier [0x7ff72e6c2f8b+41a69b]
+	chromedriver!GetHandleVerifier [0x7ff72e6f0132+447842]
+	chromedriver!GetHandleVerifier [0x7ff72e6e3e7e+43b58e]
+	chromedriver!GetHandleVerifier [0x7ff72e3a3f5e+fb66e]
+	chromedriver!(No symbol) [0x7ff72e1e419c]
+	chromedriver!(No symbol) [0x7ff72e1dfdd4]
+	chromedriver!(No symbol) [0x7ff72e1dff64]
+	chromedriver!(No symbol) [0x7ff72e1ca91c]
+	KERNEL32!BaseThreadInitThunk [0x7ffff0214cb0+10]
+	ntdll!RtlUserThreadStart [0x7ffff13bedeb+2b]
+
+2026-10-03 20:54:54,569 | Dongu hatasi: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=152.0.7977.84)
+Stacktrace:
+	chromedriver!GetHandleVerifier [0x7ff72e2ae035+5745]
+	chromedriver!(No symbol) [0x7ff72e1d6a90]
+	chromedriver!(No symbol) [0x7ff72e005d7d]
+	chromedriver!(No symbol) [0x7ff72dfdcd42]
+	chromedriver!(No symbol) [0x7ff72e090976]
+	chromedriver!(No symbol) [0x7ff72e0adddd]
+	chromedriver!(No symbol) [0x7ff72e052e4b]
+	chromedriver!(No symbol) [0x7ff72e053d83]
+	chromedriver!GetHandleVerifier [0x7ff72e6c2f8b+41a69b]
+	chromedriver!GetHandleVerifier [0x7ff72e6f0132+447842]
+	chromedriver!GetHandleVerifier [0x7ff72e6e3e7e+43b58e]
+	chromedriver!GetHandleVerifier [0x7ff72e3a3f5e+fb66e]
+	chromedriver!(No symbol) [0x7ff72e1e419c]
+	chromedriver!(No symbol) [0x7ff72e1dfdd4]
+	chromedriver!(No symbol) [0x7ff72e1dff64]
+	chromedriver!(No symbol) [0x7ff72e1ca91c]
+	KERNEL32!BaseThreadInitThunk [0x7ffff0214cb0+10]
+	ntdll!RtlUserThreadStart [0x7ffff13bedeb+2b]
+
+2026-10-03 20:54:57,582 | Dongu hatasi: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=152.0.7977.84)
+Stacktrace:
+	chromedriver!GetHandleVerifier [0x7ff72e2ae035+5745]
+	chromedriver!(No symbol) [0x7ff72e1d6a90]
+	chromedriver!(No symbol) [0x7ff72e005d7d]
+	chromedriver!(No symbol) [0x7ff72dfdcd42]
+	chromedriver!(No symbol) [0x7ff72e090976]
+	chromedriver!(No symbol) [0x7ff72e0adddd]
+	chromedriver!(No symbol) [0x7ff72e052e4b]
+	chromedriver!(No symbol) [0x7ff72e053d83]
+	chromedriver!GetHandleVerifier [0x7ff72e6c2f8b+41a69b]
+	chromedriver!GetHandleVerifier [0x7ff72e6f0132+447842]
+	chromedriver!GetHandleVerifier [0x7ff72e6e3e7e+43b58e]
+	chromedriver!GetHandleVerifier [0x7ff72e3a3f5e+fb66e]
+	chromedriver!(No symbol) [0x7ff72e1e419c]
+	chromedriver!(No symbol) [0x7ff72e1dfdd4]
+	chromedriver!(No symbol) [0x7ff72e1dff64]
+	chromedriver!(No symbol) [0x7ff72e1ca91c]
+	KERNEL32!BaseThreadInitThunk [0x7ffff0214cb0+10]
+	ntdll!RtlUserThreadStart [0x7ffff13bedeb+2b]
