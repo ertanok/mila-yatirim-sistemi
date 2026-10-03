@@ -1,12 +1,3 @@
-	chromedriver!GetHandleVerifier [0x7ff6cd9604b1+41c1b1]
-	chromedriver!GetHandleVerifier [0x7ff6cd98e26b+449f6b]
-	chromedriver!GetHandleVerifier [0x7ff6cd98274e+43e44e]
-	chromedriver!GetHandleVerifier [0x7ff6cd6432fe+feffe]
-	chromedriver!(No symbol) [0x7ff6cd47cb55]
-	chromedriver!(No symbol) [0x7ff6cd477f64]
-	chromedriver!(No symbol) [0x7ff6cd4780f4]
-	chromedriver!(No symbol) [0x7ff6cd462e4c]
-	KERNEL32!BaseThreadInitThunk [0x7ffb35cc4cc0+10]
 	ntdll!RtlUserThreadStart [0x7ffb3727edbb+2b]
 
 2026-10-04 01:20:56,638 | Dongu hatasi: Message: no such window: target window already closed
@@ -77,3 +68,13 @@ Stacktrace:
 	chromedriver!(No symbol) [0x7ff6cd462e4c]
 	KERNEL32!BaseThreadInitThunk [0x7ffb35cc4cc0+10]
 	ntdll!RtlUserThreadStart [0x7ffb3727edbb+2b]
+
+2026-10-04 01:24:36,345 | EasyOCR yukleniyor...
+2026-10-04 01:24:36,347 | Using CPU. Note: This module is much faster with a GPU.
+2026-10-04 01:24:39,863 | EasyOCR hazir.
+2026-10-04 01:24:39,864 | ==================================================
+2026-10-04 01:24:39,865 | MilaGold OCR Agent - Signal GPT versiyonu
+2026-10-04 01:24:39,866 | ==================================================
+2026-10-04 01:24:40,333 | Chrome versiyonu (exe): 154.0.8037.93
+2026-10-04 01:24:40,335 | ChromeDriver cache'den: C:\MilaYatirim\mila-yatirim-sistemi\MilaGold\chromedriver_cache\154.0.8037.93\chromedriver.exe
+2026-10-04 01:24:40,336 | ChromeDriver: C:\MilaYatirim\mila-yatirim-sistemi\MilaGold\chromedriver_cache\154.0.8037.93\chromedriver.exe
