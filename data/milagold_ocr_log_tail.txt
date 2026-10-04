@@ -1,18 +1,18 @@
-2026-10-04 10:00:18,153 | Sayfa yenilendi.
-2026-10-04 10:00:21,281 | GOLD karti okunamadi (1). Ham: ['Vercel', 'Security Checkpo']
-2026-10-04 10:00:24,404 | GOLD karti okunamadi (2). Ham: ['Vercel', 'Security Checkpo']
-2026-10-04 10:00:27,497 | GOLD karti okunamadi (3). Ham: ['Vercel', 'Security Checkpo']
-2026-10-04 10:00:30,373 | GOLD karti okunamadi (4). Ham: ['Vercel', 'Security Checkpo']
-2026-10-04 10:00:33,115 | GOLD karti okunamadi (5). Ham: ['Vercel', 'Security Checkpo']
-2026-10-04 10:00:36,040 | GOLD karti okunamadi (6). Ham: ['Vercel', 'Security Checkpo']
-2026-10-04 10:00:38,930 | GOLD karti okunamadi (7). Ham: ['Vercel', 'Security Checkpo']
-2026-10-04 10:00:41,795 | GOLD karti okunamadi (8). Ham: ['Vercel', 'Security Checkpo']
-2026-10-04 10:00:44,696 | GOLD karti okunamadi (9). Ham: ['Vercel', 'Security Checkpo']
-2026-10-04 10:00:47,472 | GOLD karti okunamadi (10). Ham: ['Vercel', 'Security Checkpo']
-2026-10-04 10:00:47,473 | 10 kez ust uste okunamadi - sayfa yenileniyor...
-2026-10-04 10:00:55,547 | Sayfa yenilendi.
-2026-10-04 10:00:58,750 | GOLD karti okunamadi (1). Ham: ['Vercel', 'Security Checkpo']
-2026-10-04 10:01:00,763 | Dongu hatasi: Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
+	chromedriver!(No symbol) [0x7ff6cd312552]
+	chromedriver!(No symbol) [0x7ff6cd25c95b]
+	chromedriver!(No symbol) [0x7ff6cd25cfb2]
+	chromedriver!(No symbol) [0x7ff6cd25d5e5]
+	chromedriver!GetHandleVerifier [0x7ff6cd9604b1+41c1b1]
+	chromedriver!GetHandleVerifier [0x7ff6cd98e26b+449f6b]
+	chromedriver!GetHandleVerifier [0x7ff6cd98274e+43e44e]
+	chromedriver!GetHandleVerifier [0x7ff6cd6432fe+feffe]
+	chromedriver!(No symbol) [0x7ff6cd47cb55]
+	chromedriver!(No symbol) [0x7ff6cd25bd9a]
+	chromedriver!GetHandleVerifier [0x7ff6cd9f2b4f+4ae84f]
+	KERNEL32!BaseThreadInitThunk [0x7ffb35cc4cc0+10]
+	ntdll!RtlUserThreadStart [0x7ffb3727edbb+2b]
+
+2026-10-04 10:06:19,642 | Dongu hatasi: Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
 Stacktrace:
 	chromedriver!GetHandleVerifier [0x7ff6cd549d55+5a55]
 	chromedriver!(No symbol) [0x7ff6cd46f540]
@@ -34,7 +34,7 @@ Stacktrace:
 	KERNEL32!BaseThreadInitThunk [0x7ffb35cc4cc0+10]
 	ntdll!RtlUserThreadStart [0x7ffb3727edbb+2b]
 
-2026-10-04 10:01:03,770 | Dongu hatasi: Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
+2026-10-04 10:06:22,648 | Dongu hatasi: Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
 Stacktrace:
 	chromedriver!GetHandleVerifier [0x7ff6cd549d55+5a55]
 	chromedriver!(No symbol) [0x7ff6cd46f540]
@@ -56,7 +56,7 @@ Stacktrace:
 	KERNEL32!BaseThreadInitThunk [0x7ffb35cc4cc0+10]
 	ntdll!RtlUserThreadStart [0x7ffb3727edbb+2b]
 
-2026-10-04 10:01:06,781 | Dongu hatasi: Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
+2026-10-04 10:06:25,659 | Dongu hatasi: Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
 Stacktrace:
 	chromedriver!GetHandleVerifier [0x7ff6cd549d55+5a55]
 	chromedriver!(No symbol) [0x7ff6cd46f540]
