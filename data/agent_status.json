@@ -1,11 +1,11 @@
 {
-  "timestamp": "2026-11-16 04:53:34",
+  "timestamp": "2026-11-16 04:59:00",
   "ocr_agent": {
     "status": "DURDU",
-    "son_log_saniye": 3693741
+    "son_log_saniye": 3694067
   },
   "mt5_agent": {
     "status": "AKTIF",
-    "son_log_saniye": 0
+    "son_log_saniye": 26
   }
 }
